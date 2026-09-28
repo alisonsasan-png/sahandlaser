@@ -13,33 +13,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231E2A5E'/%3E%3Cpath d='M55 15 L30 55 L45 55 L40 85 L70 40 L55 40 Z' fill='%23A61C1C'/%3E%3C/svg%3E">
 
-<!-- ========== THEME VARIABLES ========== -->
 <style>
-  /* 6 Color Themes - RGB triplets for Tailwind opacity support */
-  :root, [data-theme="navy"] {
-    --brand: 30 42 94; --brand-dark: 19 28 66; --brand-light: 42 58 120;
-    --accent: 166 28 28; --accent-dark: 127 21 21; --accent-light: 192 40 40;
-  }
-  [data-theme="teal"] {
-    --brand: 15 118 110; --brand-dark: 17 94 89; --brand-light: 20 184 166;
-    --accent: 245 158 11; --accent-dark: 217 119 6; --accent-light: 251 191 36;
-  }
-  [data-theme="gold"] {
-    --brand: 28 25 23; --brand-dark: 12 10 9; --brand-light: 68 64 60;
-    --accent: 212 175 55; --accent-dark: 168 138 44; --accent-light: 229 193 88;
-  }
-  [data-theme="purple"] {
-    --brand: 76 29 149; --brand-dark: 59 15 122; --brand-light: 124 58 237;
-    --accent: 236 72 153; --accent-dark: 219 39 119; --accent-light: 244 114 182;
-  }
-  [data-theme="emerald"] {
-    --brand: 6 78 59; --brand-dark: 2 44 34; --brand-light: 5 150 105;
-    --accent: 132 204 22; --accent-dark: 101 163 13; --accent-light: 163 230 53;
-  }
-  [data-theme="cyan"] {
-    --brand: 51 65 85; --brand-dark: 30 41 59; --brand-light: 71 85 105;
-    --accent: 14 165 233; --accent-dark: 2 132 199; --accent-light: 56 189 248;
-  }
+  :root, [data-theme="navy"] { --brand: 30 42 94; --brand-dark: 19 28 66; --brand-light: 42 58 120; --accent: 166 28 28; --accent-dark: 127 21 21; --accent-light: 192 40 40; }
+  [data-theme="teal"] { --brand: 15 118 110; --brand-dark: 17 94 89; --brand-light: 20 184 166; --accent: 245 158 11; --accent-dark: 217 119 6; --accent-light: 251 191 36; }
+  [data-theme="gold"] { --brand: 28 25 23; --brand-dark: 12 10 9; --brand-light: 68 64 60; --accent: 212 175 55; --accent-dark: 168 138 44; --accent-light: 229 193 88; }
+  [data-theme="purple"] { --brand: 76 29 149; --brand-dark: 59 15 122; --brand-light: 124 58 237; --accent: 236 72 153; --accent-dark: 219 39 119; --accent-light: 244 114 182; }
+  [data-theme="emerald"] { --brand: 6 78 59; --brand-dark: 2 44 34; --brand-light: 5 150 105; --accent: 132 204 22; --accent-dark: 101 163 13; --accent-light: 163 230 53; }
+  [data-theme="cyan"] { --brand: 51 65 85; --brand-dark: 30 41 59; --brand-light: 71 85 105; --accent: 14 165 233; --accent-dark: 2 132 199; --accent-light: 56 189 248; }
 </style>
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -49,16 +29,8 @@
     theme: {
       extend: {
         colors: {
-          brand: {
-            DEFAULT: 'rgb(var(--brand) / <alpha-value>)',
-            dark: 'rgb(var(--brand-dark) / <alpha-value>)',
-            light: 'rgb(var(--brand-light) / <alpha-value>)',
-          },
-          accent: {
-            DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
-            dark: 'rgb(var(--accent-dark) / <alpha-value>)',
-            light: 'rgb(var(--accent-light) / <alpha-value>)',
-          },
+          brand: { DEFAULT: 'rgb(var(--brand) / <alpha-value>)', dark: 'rgb(var(--brand-dark) / <alpha-value>)', light: 'rgb(var(--brand-light) / <alpha-value>)' },
+          accent: { DEFAULT: 'rgb(var(--accent) / <alpha-value>)', dark: 'rgb(var(--accent-dark) / <alpha-value>)', light: 'rgb(var(--accent-light) / <alpha-value>)' },
         },
         fontFamily: { sans: ['Vazirmatn', 'system-ui', 'sans-serif'] },
       }
@@ -70,8 +42,7 @@
 
 <style>
   body { font-family: 'Vazirmatn', system-ui, sans-serif; }
-  [dir="ltr"] body, html[dir="ltr"] body { font-family: 'Inter', 'Vazirmatn', system-ui, sans-serif; }
-  
+  [dir="ltr"] body { font-family: 'Inter', 'Vazirmatn', system-ui, sans-serif; }
   .gradient-brand { background: linear-gradient(135deg, rgb(var(--brand)) 0%, rgb(var(--brand-light)) 50%, rgb(var(--brand-dark)) 100%); }
   .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); }
   .card-hover { transition: all .35s cubic-bezier(.4,0,.2,1); }
@@ -82,33 +53,26 @@
   ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
   .dark ::-webkit-scrollbar-thumb { background: #334155; }
 
-  /* Language buttons */
   .lang-btn { padding: .35rem .7rem; border-radius: .5rem; font-size: .75rem; cursor: pointer; transition: all .2s; border: none; font-family: inherit; font-weight: 600; }
   .lang-btn.active { background: rgb(var(--accent)); color: white; }
   .lang-btn:not(.active) { background: rgba(148,163,184,.15); color: #64748b; }
   .dark .lang-btn:not(.active) { color: #cbd5e1; }
   .lang-btn:not(.active):hover { background: rgba(148,163,184,.3); }
 
-  /* Color theme buttons */
-  .theme-btn {
-    width: 26px; height: 26px; border-radius: 999px; cursor: pointer;
-    border: 2px solid transparent; transition: all .2s;
-    position: relative; flex-shrink: 0;
-  }
+  .theme-btn { width: 26px; height: 26px; border-radius: 999px; cursor: pointer; border: 2px solid transparent; transition: all .2s; flex-shrink: 0; }
   .theme-btn:hover { transform: scale(1.15); }
   .theme-btn.active { border-color: rgb(var(--accent)); box-shadow: 0 0 0 3px rgba(var(--accent), .2); }
-  .theme-btn[data-theme="navy"]    { background: linear-gradient(135deg, #1E2A5E, #A61C1C); }
-  .theme-btn[data-theme="teal"]    { background: linear-gradient(135deg, #0F766E, #F59E0B); }
-  .theme-btn[data-theme="gold"]    { background: linear-gradient(135deg, #1C1917, #D4AF37); }
-  .theme-btn[data-theme="purple"]  { background: linear-gradient(135deg, #4C1D95, #EC4899); }
+  .theme-btn[data-theme="navy"] { background: linear-gradient(135deg, #1E2A5E, #A61C1C); }
+  .theme-btn[data-theme="teal"] { background: linear-gradient(135deg, #0F766E, #F59E0B); }
+  .theme-btn[data-theme="gold"] { background: linear-gradient(135deg, #1C1917, #D4AF37); }
+  .theme-btn[data-theme="purple"] { background: linear-gradient(135deg, #4C1D95, #EC4899); }
   .theme-btn[data-theme="emerald"] { background: linear-gradient(135deg, #064E3B, #84CC16); }
-  .theme-btn[data-theme="cyan"]    { background: linear-gradient(135deg, #334155, #0EA5E9); }
+  .theme-btn[data-theme="cyan"] { background: linear-gradient(135deg, #334155, #0EA5E9); }
 
-  /* 360 Viewer */
   .spin-viewer { position: relative; width: 100%; aspect-ratio: 1 / 1; background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 1.25rem; overflow: hidden; cursor: grab; user-select: none; touch-action: pan-y; }
   :root:not(.dark) .spin-viewer { background: linear-gradient(135deg, #f8fafc, #e2e8f0); }
   .spin-viewer.dragging { cursor: grabbing; }
-  .spin-viewer img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; pointer-events: none; opacity: 0; transition: opacity .12s; will-change: opacity; backface-visibility: hidden; }
+  .spin-viewer img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; pointer-events: none; opacity: 0; transition: opacity .12s; will-change: opacity; }
   .spin-viewer img.active { opacity: 1; }
   .badge-360 { position: absolute; top: 1rem; right: 1rem; background: rgb(var(--accent)); color: white; padding: .4rem .8rem; border-radius: 999px; font-size: .75rem; font-weight: 600; display: flex; align-items: center; gap: .35rem; z-index: 10; }
   .spin-hint { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,.75); color: white; padding: .5rem 1rem; border-radius: 999px; font-size: .8rem; display: flex; align-items: center; gap: .5rem; pointer-events: none; z-index: 10; transition: opacity .5s; }
@@ -145,39 +109,41 @@
   .view { display: none; }
   .view.active { display: block; }
 
-  /* Accessibility */
   *:focus-visible { outline: 3px solid rgb(var(--accent-light)); outline-offset: 2px; border-radius: 4px; }
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
   .skip-link { position: absolute; top: -100px; right: 0; background: rgb(var(--accent)); color: white; padding: .75rem 1.5rem; z-index: 9999; border-radius: 0 0 .5rem .5rem; font-weight: 600; transition: top .2s; }
   .skip-link:focus { top: 0; }
 
-  @media print {
-    header, footer, .spin-hint, .badge-360, .spin-progress, #comment-form, .lang-btn, .theme-bar { display: none !important; }
-    body { background: white !important; color: black !important; }
-  }
+  @media print { header, footer, .spin-hint, .badge-360, .spin-progress, #comment-form, .lang-btn, .top-bar { display: none !important; } body { background: white !important; color: black !important; } }
 
-  /* Comment form messages */
   .form-msg { display: none; padding: .75rem 1rem; border-radius: .5rem; font-size: .85rem; margin-bottom: .75rem; }
   .form-msg.show { display: block; }
   .form-msg.error { background: rgba(239,68,68,.15); color: #fca5a5; border: 1px solid rgba(239,68,68,.3); }
   .form-msg.success { background: rgba(34,197,94,.15); color: #86efac; border: 1px solid rgba(34,197,94,.3); }
+
+  .contact-item { display: flex; align-items: center; justify-content: space-between; padding: .75rem; border-radius: .5rem; transition: all .2s; gap: .5rem; }
+  .contact-item:hover { background: rgba(var(--accent), .08); }
+  .contact-actions { display: flex; gap: .35rem; flex-shrink: 0; }
+  .contact-actions a { width: 32px; height: 32px; border-radius: .5rem; display: flex; align-items: center; justify-content: center; color: white; transition: all .2s; font-size: .8rem; }
+  .contact-actions a:hover { transform: scale(1.1); }
+  .btn-call { background: rgb(var(--accent)); }
+  .btn-wa { background: #22c55e; }
+  .btn-tg { background: #0ea5e9; }
+
+  .dl-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem 1rem; background: rgb(var(--accent)); color: white; border-radius: .5rem; font-size: .8rem; font-weight: 600; transition: all .2s; }
+  .dl-btn:hover { background: rgb(var(--accent-dark)); transform: translateY(-2px); }
 </style>
 
 <script>
-  // Theme + Lang init (before render to avoid flash)
   (function() {
     try {
       const savedTheme = localStorage.getItem('colorTheme') || 'navy';
       document.documentElement.setAttribute('data-theme', savedTheme);
-
       const saved = localStorage.getItem('theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const mode = saved || (prefersDark ? 'dark' : 'light');
       if (mode === 'dark') document.documentElement.classList.add('dark');
       else document.documentElement.classList.remove('dark');
-
       const savedLang = localStorage.getItem('lang') || 'fa';
       document.documentElement.lang = savedLang;
       document.documentElement.dir = (savedLang === 'en' || savedLang === 'tr') ? 'ltr' : 'rtl';
@@ -193,25 +159,33 @@
 
 <a href="#main-content" class="skip-link">پرش به محتوای اصلی</a>
 
-<!-- ============ HEADER ============ -->
-<header class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg border-b border-slate-200 dark:border-slate-800">
+<!-- ============ TOP BAR: دانلود نرم‌افزار + تم + زبان ============ -->
+<div class="top-bar bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between gap-3 flex-wrap">
+    <!-- دانلود نرم‌افزار -->
+    <a href="#downloads" onclick="showHome();setTimeout(()=>document.getElementById('downloads').scrollIntoView({behavior:'smooth'}),100);return false;" class="flex items-center gap-2 px-3 py-1.5 bg-accent hover:bg-accent-dark text-white rounded-lg text-xs font-semibold transition-all">
+      <i class="fa-solid fa-download" aria-hidden="true"></i>
+      <span data-i18n="topbar_download">دانلود نرم‌افزارهای CypCut</span>
+    </a>
 
-  <!-- Theme color bar -->
-  <div class="bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center gap-3 overflow-x-auto">
-      <span class="text-xs text-slate-500 whitespace-nowrap font-semibold" data-i18n="theme_label">تم رنگی:</span>
-      <div class="flex gap-2 items-center" role="group" aria-label="انتخاب تم رنگی">
-        <button class="theme-btn active" data-theme="navy"    aria-label="تم سرمه‌ای"    title="سرمه‌ای"></button>
-        <button class="theme-btn"        data-theme="teal"    aria-label="تم فیروزه‌ای"  title="فیروزه‌ای"></button>
-        <button class="theme-btn"        data-theme="gold"    aria-label="تم طلایی"     title="طلایی"></button>
-        <button class="theme-btn"        data-theme="purple"  aria-label="تم بنفش"      title="بنفش"></button>
-        <button class="theme-btn"        data-theme="emerald" aria-label="تم زمرد"      title="زمرد"></button>
-        <button class="theme-btn"        data-theme="cyan"    aria-label="تم سیان"      title="سیان"></button>
+    <!-- تم‌های رنگی -->
+    <div class="flex items-center gap-2">
+      <span class="text-xs text-slate-500 whitespace-nowrap font-semibold hidden sm:inline" data-i18n="theme_label">تم رنگی:</span>
+      <div class="flex gap-1.5 items-center" role="group" aria-label="انتخاب تم رنگی">
+        <button class="theme-btn active" data-theme="navy" aria-label="سرمه‌ای" title="سرمه‌ای"></button>
+        <button class="theme-btn" data-theme="teal" aria-label="فیروزه‌ای" title="فیروزه‌ای"></button>
+        <button class="theme-btn" data-theme="gold" aria-label="طلایی" title="طلایی"></button>
+        <button class="theme-btn" data-theme="purple" aria-label="بنفش" title="بنفش"></button>
+        <button class="theme-btn" data-theme="emerald" aria-label="زمرد" title="زمرد"></button>
+        <button class="theme-btn" data-theme="cyan" aria-label="سیان" title="سیان"></button>
       </div>
-      <span class="text-xs text-slate-400 mr-auto whitespace-nowrap" id="theme-name-display">سرمه‌ای</span>
+      <span class="text-xs text-slate-400 whitespace-nowrap hidden md:inline" id="theme-name-display">سرمه‌ای</span>
     </div>
   </div>
+</div>
 
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-lg border-b border-slate-200 dark:border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
     <a href="#" onclick="showHome();return false;" class="flex items-center gap-3 shrink-0">
       <div class="w-11 h-11 rounded-xl gradient-brand flex items-center justify-center text-white font-bold shadow-lg">
@@ -223,16 +197,17 @@
       </div>
     </a>
 
-    <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+    <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
       <a href="#products" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_products">محصولات</a>
+      <a href="#downloads" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_downloads">دانلود نرم‌افزار</a>
       <a href="#repairs" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_repairs">تعمیرات</a>
-      <a href="#services" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_services">خدمات</a>
+      <a href="#international" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_international">مشتریان خارجی</a>
       <a href="#contact" onclick="showHome();return false;" class="hover:text-accent transition-colors" data-i18n="nav_contact">تماس</a>
     </nav>
 
     <div class="flex items-center gap-2">
       <div class="flex gap-1 bg-slate-100 dark:bg-slate-800 rounded-lg p-1" role="group" aria-label="انتخاب زبان">
-        <button class="lang-btn" data-lang="fa" aria-pressed="true"  onclick="setLang('fa')">FA</button>
+        <button class="lang-btn" data-lang="fa" aria-pressed="true" onclick="setLang('fa')">FA</button>
         <button class="lang-btn" data-lang="en" aria-pressed="false" onclick="setLang('en')">EN</button>
         <button class="lang-btn" data-lang="ar" aria-pressed="false" onclick="setLang('ar')">AR</button>
         <button class="lang-btn" data-lang="tr" aria-pressed="false" onclick="setLang('tr')">TR</button>
@@ -242,8 +217,8 @@
         <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
       </button>
 
-      <a href="#contact" onclick="showHome();return false;" class="hidden sm:flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-dark text-white text-sm font-semibold rounded-xl shadow-lg shadow-accent/25 transition-all">
-        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+      <a href="https://wa.me/989125855548?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%B3%D9%87%D9%86%D8%AF%20%D9%84%DB%8C%D8%B2%D8%B1%20%D8%AA%D9%85%D8%A7%D8%B3%20%D9%85%DB%8C%E2%80%8C%DA%AF%DB%8C%D8%B1%D9%85" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-2 px-4 py-2.5 bg-accent hover:bg-accent-dark text-white text-sm font-semibold rounded-xl shadow-lg transition-all">
+        <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
         <span data-i18n="cta_inquiry">استعلام قیمت</span>
       </a>
 
@@ -256,8 +231,9 @@
   <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
     <div class="flex flex-col px-6 py-4 gap-1">
       <a href="#products" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_products">محصولات</a>
+      <a href="#downloads" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_downloads">دانلود نرم‌افزار</a>
       <a href="#repairs" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_repairs">تعمیرات</a>
-      <a href="#services" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_services">خدمات</a>
+      <a href="#international" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_international">مشتریان خارجی</a>
       <a href="#contact" onclick="showHome();toggleMobile();return false;" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_contact">تماس</a>
     </div>
   </div>
@@ -290,8 +266,8 @@
             <i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i>
             <span data-i18n="hero_btn_products">مشاهده محصولات</span>
           </a>
-          <a href="#contact" class="px-7 py-3.5 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all flex items-center gap-2 shadow-xl shadow-accent/30">
-            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <a href="https://wa.me/989125855548?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%85" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all flex items-center gap-2 shadow-xl shadow-accent/30">
+            <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
             <span data-i18n="hero_btn_consult">مشاوره رایگان</span>
           </a>
         </div>
@@ -329,13 +305,11 @@
       <div class="text-center max-w-2xl mx-auto mb-14">
         <span class="text-accent font-semibold text-sm" data-i18n="products_tag">محصولات ما</span>
         <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="products_title">راهکارهای کامل لیزر فایبر</h2>
-        <p class="text-slate-500 dark:text-slate-400 leading-relaxed" data-i18n="products_desc">
-          تمام دستگاه‌ها به‌صورت سفارشی ساخته می‌شوند.
-        </p>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed" data-i18n="products_desc">تمام دستگاه‌ها به‌صورت سفارشی ساخته می‌شوند.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
+        <!-- CT — برش -->
         <a href="#product=CT-001" onclick="showProduct('CT-001');return false;" class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 block cursor-pointer">
           <div class="h-44 gradient-brand relative flex items-center justify-center overflow-hidden">
             <i class="fa-solid fa-scissors text-white/20 text-8xl group-hover:scale-110 transition-transform duration-500" aria-hidden="true"></i>
@@ -343,9 +317,7 @@
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-brand dark:text-white mb-2" data-i18n="cat_cutting">دستگاه‌های برش</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_cutting_desc">
-              برش دقیق ورق‌های فلزی. تک‌میز، کابین‌دار، روتاری و ربات.
-            </p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_cutting_desc">برش دقیق ورق‌های فلزی. تک‌میز، کابین‌دار، روتاری و ربات.</p>
             <div class="flex items-center gap-2 text-accent text-sm font-semibold">
               <span data-i18n="view_models">مشاهده مدل‌ها</span>
               <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform" aria-hidden="true"></i>
@@ -353,58 +325,152 @@
           </div>
         </a>
 
-        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70 cursor-not-allowed">
+        <!-- WL — جوش (به‌زودی) -->
+        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70">
           <div class="h-44 bg-gradient-to-br from-red-700 to-red-900 relative flex items-center justify-center overflow-hidden">
-            <i class="fa-solid fa-fire-flame-curved text-white/20 text-8xl group-hover:scale-110 transition-transform duration-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-fire-flame-curved text-white/20 text-8xl" aria-hidden="true"></i>
             <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">۵</span>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-brand dark:text-white mb-2" data-i18n="cat_welding">دستگاه‌های جوش</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_welding_desc">
-              جوش لیزری پرسرعت. پایه، مینی، هواخنک، نقطه‌ای و جوش طلا.
-            </p>
-            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold">
-              <span data-i18n="coming_soon">به‌زودی</span>
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_welding_desc">جوش لیزری پرسرعت. پایه، مینی، هواخنک، نقطه‌ای و جوش طلا.</p>
+            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold"><span data-i18n="coming_soon">به‌زودی</span><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
           </div>
         </div>
 
-        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70 cursor-not-allowed">
+        <!-- ML — حکاکی (به‌زودی) -->
+        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70">
           <div class="h-44 bg-gradient-to-br from-slate-700 to-slate-900 relative flex items-center justify-center overflow-hidden">
-            <i class="fa-solid fa-pen-nib text-white/20 text-8xl group-hover:scale-110 transition-transform duration-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-pen-nib text-white/20 text-8xl" aria-hidden="true"></i>
             <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">۸</span>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-brand dark:text-white mb-2" data-i18n="cat_marking">دستگاه‌های حکاکی</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_marking_desc">
-              حکاکی روی فلز و غیرفلز. روی میزی، پرتابل، UV و MOPA.
-            </p>
-            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold">
-              <span data-i18n="coming_soon">به‌زودی</span>
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_marking_desc">حکاکی روی فلز و غیرفلز. روی میزی، پرتابل، UV و MOPA.</p>
+            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold"><span data-i18n="coming_soon">به‌زودی</span><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
           </div>
         </div>
 
-        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70 cursor-not-allowed">
+        <!-- CL — تمیزکاری (به‌زودی) -->
+        <div class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 opacity-70">
           <div class="h-44 bg-gradient-to-br from-emerald-700 to-emerald-900 relative flex items-center justify-center overflow-hidden">
-            <i class="fa-solid fa-spray-can-sparkles text-white/20 text-8xl group-hover:scale-110 transition-transform duration-500" aria-hidden="true"></i>
+            <i class="fa-solid fa-spray-can-sparkles text-white/20 text-8xl" aria-hidden="true"></i>
             <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">۴</span>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold text-brand dark:text-white mb-2" data-i18n="cat_cleaning">دستگاه‌های تمیزکاری</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_cleaning_desc">
-              حذف زنگ، رنگ و آلودگی بدون آسیب سطح.
-            </p>
-            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold">
-              <span data-i18n="coming_soon">به‌زودی</span>
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4" data-i18n="cat_cleaning_desc">حذف زنگ، رنگ و آلودگی بدون آسیب سطح.</p>
+            <div class="flex items-center gap-2 text-slate-400 text-sm font-semibold"><span data-i18n="coming_soon">به‌زودی</span><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOADS — دانلود نرم‌افزارها ============ -->
+  <section id="downloads" class="py-20 bg-slate-100 dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+        </span>
+        <span class="text-accent font-semibold text-sm block" data-i18n="dl_tag">نرم‌افزارهای تخصصی</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="dl_title">دانلود نرم‌افزار CypCut</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed" data-i18n="dl_desc">
+          نرم‌افزارهای تخصصی کنترل دستگاه‌های برش لیزر فایبر فلزات. نسخه‌های مختلف CypCut به‌صورت رایگان.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Software 1 -->
+        <div class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl shrink-0">
+              <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-bold text-lg text-brand dark:text-white mb-1">CypCut 2000C</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">فایبر برش فلزات — نسخه کامل</p>
+              <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">v6.3.765.10</span>
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">100 MB</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1Sdyabvt3Gi5BCkmeU2mPs4ACNniGj-6_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="dl-btn">
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                <span data-i18n="dl_btn">دانلود</span>
+              </a>
             </div>
           </div>
         </div>
 
+        <!-- Software 2 -->
+        <div class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl shrink-0">
+              <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-bold text-lg text-brand dark:text-white mb-1">CYP CUT</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">فایبر برش فلزات</p>
+              <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">v6.3.702.8A</span>
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">26 MB</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1tGIvsV55K227LUYmm3kA2NIBbBdm_8zh/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="dl-btn">
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                <span data-i18n="dl_btn">دانلود</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software 3 -->
+        <div class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl shrink-0">
+              <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-bold text-lg text-brand dark:text-white mb-1">CYP CUT</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">فایبر برش فلزات</p>
+              <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">v6.3.712.9</span>
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">31 MB</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1tpPdQ1sWxvqiGicOrIOVV9Sr70mKSoiQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="dl-btn">
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                <span data-i18n="dl_btn">دانلود</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software 4 -->
+        <div class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 card-hover">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl shrink-0">
+              <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-bold text-lg text-brand dark:text-white mb-1">CYP CUT</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">فایبر برش فلزات</p>
+              <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">v6.3.739.7</span>
+                <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">37 MB</span>
+              </div>
+              <a href="https://drive.google.com/file/d/1vvem8RF3jKZH7lGRllu6LXv-q8XAcGOb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="dl-btn">
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                <span data-i18n="dl_btn">دانلود</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <p class="text-center text-xs text-slate-500 dark:text-slate-400 mt-6">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <span data-i18n="dl_note">همه نرم‌افزارها از Google Drive دانلود می‌شوند. برای راهنمای نصب با پشتیبانی تماس بگیرید.</span>
+      </p>
     </div>
   </section>
 
@@ -432,40 +498,162 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
         <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
-          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4">
-            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-          </div>
+          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
           <h3 class="font-bold text-lg text-white mb-2" data-i18n="repair_1_title">تعمیر سورس لیزر</h3>
           <p class="text-sm text-slate-300 leading-relaxed" data-i18n="repair_1_desc">تعمیر انواع سورس‌های Raycus, Max, JPT و IPG</p>
         </div>
         <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
-          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4">
-            <i class="fa-solid fa-crosshairs" aria-hidden="true"></i>
-          </div>
+          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i></div>
           <h3 class="font-bold text-lg text-white mb-2" data-i18n="repair_2_title">تعمیر هد جوش و برش</h3>
           <p class="text-sm text-slate-300 leading-relaxed" data-i18n="repair_2_desc">تعمیر هد اتوفوکوس، لنز و گالوانومتر</p>
         </div>
         <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
-          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4">
-            <i class="fa-solid fa-gears" aria-hidden="true"></i>
-          </div>
+          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
           <h3 class="font-bold text-lg text-white mb-2" data-i18n="repair_3_title">تأمین قطعات یدکی</h3>
           <p class="text-sm text-slate-300 leading-relaxed" data-i18n="repair_3_desc">سورس، چیلر، هد، لنز و برد کنترلی — همه برندها</p>
         </div>
         <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
-          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4">
-            <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
-          </div>
+          <div class="w-14 h-14 rounded-2xl bg-accent/20 text-accent-light flex items-center justify-center text-2xl mb-4"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
           <h3 class="font-bold text-lg text-white mb-2" data-i18n="repair_4_title">تعویض در ۲ روز</h3>
           <p class="text-sm text-slate-300 leading-relaxed" data-i18n="repair_4_desc">تعویض یا تعمیر قطعه در کمتر از ۲ روز</p>
         </div>
       </div>
 
-      <div class="text-center">
-        <a href="tel:03131320012" class="inline-flex items-center gap-3 px-8 py-4 bg-white text-brand hover:bg-slate-100 rounded-xl font-bold text-lg shadow-2xl transition-all">
-          <i class="fa-solid fa-phone-volume text-accent" aria-hidden="true"></i>
-          <span data-i18n="repairs_cta">تماس فوری با پشتیبانی</span>
+      <div class="text-center flex flex-wrap justify-center gap-3">
+        <a href="tel:+989198023032" class="inline-flex items-center gap-3 px-6 py-4 bg-accent hover:bg-accent-dark rounded-xl font-bold text-white shadow-2xl transition-all">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <span data-i18n="repairs_cta_call">تماس فوری با پشتیبانی</span>
         </a>
+        <a href="https://wa.me/989198023032?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%20%D8%AA%D8%B9%D9%85%DB%8C%D8%B1%20%D8%AF%D8%A7%D8%B1%D9%85" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-bold text-white shadow-2xl transition-all">
+          <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
+          <span data-i18n="repairs_cta_wa">واتساپ پشتیبانی</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERNATIONAL CUSTOMERS ============ -->
+  <section id="international" class="py-20 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+        </span>
+        <span class="text-accent font-semibold text-sm block" data-i18n="intl_tag">مشتریان بین‌المللی</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="intl_title">International Customer Service</h2>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed" data-i18n="intl_desc">
+          برای مشتریان خارج از ایران — ترکیه، عراق، امارات، عربستان و سایر کشورها. فرم زیر را پر کنید تا کارشناسان ما از طریق واتساپ با شما تماس بگیرند.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8">
+        <form id="intl-form" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="intl-country" class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+                <i class="fa-solid fa-flag text-accent" aria-hidden="true"></i>
+                <span data-i18n="intl_country">کشور شما</span> *
+              </label>
+              <select id="intl-country" required class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-accent outline-none text-sm text-slate-900 dark:text-white">
+                <option value="">— انتخاب کنید —</option>
+                <option value="Turkey">🇹🇷 Türkiye / Turkey</option>
+                <option value="Iraq">🇮🇶 Iraq / عراق</option>
+                <option value="UAE">🇦🇪 UAE / امارات</option>
+                <option value="Saudi Arabia">🇸🇦 Saudi Arabia / السعودية</option>
+                <option value="Qatar">🇶🇦 Qatar / قطر</option>
+                <option value="Kuwait">🇰🇼 Kuwait / الكويت</option>
+                <option value="Oman">🇴🇲 Oman / عمان</option>
+                <option value="Bahrain">🇧🇭 Bahrain / البحرين</option>
+                <option value="Azerbaijan">🇦🇿 Azerbaijan / Azərbaycan</option>
+                <option value="Armenia">🇦🇲 Armenia</option>
+                <option value="Afghanistan">🇦🇫 Afghanistan / افغانستان</option>
+                <option value="Pakistan">🇵🇰 Pakistan / پاکستان</option>
+                <option value="Other">🌍 Other / سایر</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="intl-name" class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+                <i class="fa-solid fa-user text-accent" aria-hidden="true"></i>
+                <span data-i18n="intl_name">نام و نام خانوادگی</span> *
+              </label>
+              <input type="text" id="intl-name" required maxlength="100" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-accent outline-none text-sm text-slate-900 dark:text-white">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="intl-phone" class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+                <i class="fa-brands fa-whatsapp text-accent" aria-hidden="true"></i>
+                <span data-i18n="intl_phone">شماره واتساپ (با کد کشور)</span> *
+              </label>
+              <input type="tel" id="intl-phone" required dir="ltr" maxlength="20" placeholder="+90 5XX XXX XXXX" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-accent outline-none text-sm text-slate-900 dark:text-white text-left">
+            </div>
+
+            <div>
+              <label for="intl-email" class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+                <i class="fa-solid fa-envelope text-accent" aria-hidden="true"></i>
+                <span data-i18n="intl_email">ایمیل (اختیاری)</span>
+              </label>
+              <input type="email" id="intl-email" dir="ltr" maxlength="100" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-accent outline-none text-sm text-slate-900 dark:text-white text-left">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+              <i class="fa-solid fa-circle-question text-accent" aria-hidden="true"></i>
+              <span data-i18n="intl_type">نوع درخواست</span> *
+            </label>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+              <label class="cursor-pointer">
+                <input type="radio" name="intl-request-type" value="purchase" required class="peer sr-only">
+                <div class="p-3 rounded-xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 peer-checked:border-accent peer-checked:bg-accent/5 text-center transition-all">
+                  <i class="fa-solid fa-cart-shopping text-accent block mb-1" aria-hidden="true"></i>
+                  <span class="text-xs font-semibold" data-i18n="intl_type_purchase">خرید دستگاه</span>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intl-request-type" value="repair" required class="peer sr-only">
+                <div class="p-3 rounded-xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 peer-checked:border-accent peer-checked:bg-accent/5 text-center transition-all">
+                  <i class="fa-solid fa-screwdriver-wrench text-accent block mb-1" aria-hidden="true"></i>
+                  <span class="text-xs font-semibold" data-i18n="intl_type_repair">تعمیرات</span>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intl-request-type" value="parts" required class="peer sr-only">
+                <div class="p-3 rounded-xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 peer-checked:border-accent peer-checked:bg-accent/5 text-center transition-all">
+                  <i class="fa-solid fa-gears text-accent block mb-1" aria-hidden="true"></i>
+                  <span class="text-xs font-semibold" data-i18n="intl_type_parts">قطعات یدکی</span>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="intl-request-type" value="other" required class="peer sr-only">
+                <div class="p-3 rounded-xl bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 peer-checked:border-accent peer-checked:bg-accent/5 text-center transition-all">
+                  <i class="fa-solid fa-comments text-accent block mb-1" aria-hidden="true"></i>
+                  <span class="text-xs font-semibold" data-i18n="intl_type_other">سایر</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label for="intl-desc" class="block text-sm font-semibold mb-2 text-brand dark:text-white">
+              <i class="fa-solid fa-pen text-accent" aria-hidden="true"></i>
+              <span data-i18n="intl_desc_label">توضیحات درخواست</span> *
+            </label>
+            <textarea id="intl-desc" required rows="5" maxlength="2000" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:border-accent outline-none text-sm text-slate-900 dark:text-white resize-none" placeholder="مثال: دستگاه برش لیزر فایبر ۱۵۰۰ وات برای برش استیل..."></textarea>
+          </div>
+
+          <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-900/50 rounded-xl p-3 text-xs text-blue-800 dark:text-blue-300 leading-relaxed">
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            <span data-i18n="intl_note">پس از تکمیل فرم، به واتساپ منتقل می‌شوید و پیام آماده ارسال می‌شود. برای تعمیرات، لطفاً عکس دستگاه و پلاک آن را همراه داشته باشید.</span>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-600/30">
+            <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
+            <span data-i18n="intl_submit">ارسال درخواست از طریق واتساپ</span>
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -476,63 +664,132 @@
       <div class="text-center max-w-2xl mx-auto mb-14">
         <span class="text-accent font-semibold text-sm" data-i18n="contact_tag">تماس با ما</span>
         <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="contact_title">آماده همکاری با شما هستیم</h2>
+        <p class="text-slate-500 dark:text-slate-400" data-i18n="contact_desc">همه شماره‌ها با لینک تماس، واتساپ و تلگرام</p>
       </div>
 
-      <div class="grid lg:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-slate-950 p-7 rounded-2xl border border-slate-200 dark:border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-brand/10 text-brand dark:text-accent-light flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-building" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-bold text-lg text-brand dark:text-white mb-4" data-i18n="contact_office">دفتر مرکزی</h3>
-          <div class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
-            <div class="flex gap-3">
-              <i class="fa-solid fa-location-dot text-accent mt-1" aria-hidden="true"></i>
-              <span data-i18n="contact_address">اصفهان، خیابان خیام، خیابان عطاءالملک، بلوک ۲۴، پلاک ۳۳</span>
+      <div class="grid lg:grid-cols-2 gap-6">
+
+        <!-- ستون ۱: مدیریت و دفتر -->
+        <div class="bg-white dark:bg-slate-950 p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center gap-3 mb-4 pb-3 border-b border-slate-200 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-brand/10 text-brand dark:text-accent-light flex items-center justify-center">
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
             </div>
-            <div class="flex gap-3">
-              <i class="fa-solid fa-phone text-accent mt-1" aria-hidden="true"></i>
-              <div dir="ltr">031-31320012-3</div>
+            <h3 class="font-bold text-lg text-brand dark:text-white" data-i18n="contact_office">دفتر و مدیریت</h3>
+          </div>
+
+          <div class="space-y-1">
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">آدرس</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" data-i18n="contact_address">اصفهان، خیابان خیام، عطاءالملک، بلوک ۲۴، پلاک ۳۳</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">دفتر - خط ۱</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">031-31320012-3</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+983131320012" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/983131320012" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">دفتر - خط ۲</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">031-33878803-4</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+983133878803" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/983133878803" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-950 p-7 rounded-2xl border border-slate-200 dark:border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+        <!-- ستون ۲: فروش و پشتیبانی -->
+        <div class="bg-white dark:bg-slate-950 p-6 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center gap-3 mb-4 pb-3 border-b border-slate-200 dark:border-slate-800">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-bold text-lg text-brand dark:text-white" data-i18n="contact_sales">فروش، پشتیبانی و مالی</h3>
           </div>
-          <h3 class="font-bold text-lg text-brand dark:text-white mb-4" data-i18n="contact_sales">واحد فروش</h3>
-          <div class="space-y-3 text-sm text-slate-500 dark:text-slate-400" dir="ltr">
-            <div class="flex gap-3 justify-end"><span dir="ltr">0912-585-5548</span><i class="fa-solid fa-mobile-screen text-emerald-500 mt-1" aria-hidden="true"></i></div>
-            <div class="flex gap-3 justify-end"><span dir="ltr">0913-386-2673</span><i class="fa-solid fa-mobile-screen text-emerald-500 mt-1" aria-hidden="true"></i></div>
-          </div>
-          <div class="mt-4 flex gap-2">
-            <a href="https://wa.me/989125855548" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-lg flex items-center justify-center gap-1.5 transition-all">
-              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> واتساپ
-            </a>
-            <a href="https://t.me/+989125855548" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 bg-sky-500 hover:bg-sky-600 text-white text-xs font-semibold rounded-lg flex items-center justify-center gap-1.5 transition-all">
-              <i class="fa-brands fa-telegram" aria-hidden="true"></i> تلگرام
-            </a>
+
+          <div class="space-y-1">
+            <!-- فروش - ابطحی -->
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">فروش — آقای ابطحی</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">0913-386-2673</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+989133862673" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/989133862673?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%B3%D9%87%D9%86%D8%AF%20%D9%84%DB%8C%D8%B2%D8%B1" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://t.me/+989133862673" target="_blank" rel="noopener noreferrer" class="btn-tg" aria-label="تلگرام"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <!-- فروش - بلیغ -->
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">فروش — آقای بلیغ</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">0912-585-5548</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+989125855548" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/989125855548?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%B3%D9%87%D9%86%D8%AF%20%D9%84%DB%8C%D8%B2%D8%B1" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://t.me/+989125855548" target="_blank" rel="noopener noreferrer" class="btn-tg" aria-label="تلگرام"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <!-- تعمیرات -->
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">خدمات و تعمیرات — آقای بهرامی</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">0919-802-3032</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+989198023032" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/989198023032?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%20%D8%AA%D8%B9%D9%85%DB%8C%D8%B1" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://t.me/+989198023032" target="_blank" rel="noopener noreferrer" class="btn-tg" aria-label="تلگرام"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <!-- برش لیزر -->
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">خدمات برش لیزر — آقای شیری</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">0913-186-3032</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+989131863032" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/989131863032" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://t.me/+989131863032" target="_blank" rel="noopener noreferrer" class="btn-tg" aria-label="تلگرام"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <!-- حسابداری -->
+            <div class="contact-item">
+              <div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">حسابداری — خانم زمانی</div>
+                <div class="text-sm font-semibold text-slate-800 dark:text-slate-200" dir="ltr">0913-735-3032</div>
+              </div>
+              <div class="contact-actions">
+                <a href="tel:+989137353032" class="btn-call" aria-label="تماس"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="https://wa.me/989137353032" target="_blank" rel="noopener noreferrer" class="btn-wa" aria-label="واتساپ"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-950 p-7 rounded-2xl border border-slate-200 dark:border-slate-800">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl mb-4">
-            <i class="fa-solid fa-headset" aria-hidden="true"></i>
-          </div>
-          <h3 class="font-bold text-lg text-brand dark:text-white mb-4" data-i18n="contact_support">خدمات پس از فروش</h3>
-          <div class="space-y-3 text-sm text-slate-500 dark:text-slate-400" dir="ltr">
-            <div class="flex gap-3 justify-end"><span dir="ltr">0919-802-3032</span><i class="fa-solid fa-mobile-screen text-amber-500 mt-1" aria-hidden="true"></i></div>
-            <div class="flex gap-3 justify-end"><span dir="ltr">0913-186-3032</span><i class="fa-solid fa-mobile-screen text-amber-500 mt-1" aria-hidden="true"></i></div>
-          </div>
-          <a href="https://wa.me/989198023032" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2 bg-green-500 hover:bg-green-600 text-white text-xs font-semibold rounded-lg flex items-center justify-center gap-1.5 transition-all">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> واتساپ پشتیبانی
-          </a>
-        </div>
       </div>
     </div>
   </section>
 
 </div>
+<!-- ============ END VIEW HOME ============ -->
 
 <!-- ============ VIEW PRODUCT ============ -->
 <div id="view-product" class="view">
@@ -566,11 +823,11 @@
         <div class="grid grid-cols-2 gap-3 mb-6" id="product-advantages"></div>
 
         <div class="flex flex-wrap gap-3 mb-8">
-          <a id="wa-cta" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[180px] px-6 py-4 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-accent/25">
+          <a id="wa-cta" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[180px] px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
             <span data-i18n="cta_inquiry">استعلام قیمت</span>
           </a>
-          <a href="tel:03131320012" class="px-6 py-4 border-2 border-brand dark:border-white hover:bg-brand dark:hover:bg-white/10 text-brand dark:text-white font-semibold rounded-xl transition-all flex items-center gap-2">
+          <a id="phone-cta" href="#" class="px-6 py-4 border-2 border-brand dark:border-white hover:bg-brand dark:hover:bg-white/10 text-brand dark:text-white font-semibold rounded-xl transition-all flex items-center gap-2">
             <i class="fa-solid fa-phone" aria-hidden="true"></i>
             <span data-i18n="cta_call">تماس</span>
           </a>
@@ -624,12 +881,12 @@
             </div>
             <div>
               <label class="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1" data-i18n="comment_rating">امتیاز شما</label>
-              <div class="flex gap-1" id="star-rating" role="radiogroup" aria-label="امتیاز">
-                <i class="fa-solid fa-star star-input active" data-star="1" role="radio" aria-checked="false" tabindex="0"></i>
-                <i class="fa-solid fa-star star-input active" data-star="2" role="radio" aria-checked="false" tabindex="0"></i>
-                <i class="fa-solid fa-star star-input active" data-star="3" role="radio" aria-checked="false" tabindex="0"></i>
-                <i class="fa-solid fa-star star-input active" data-star="4" role="radio" aria-checked="false" tabindex="0"></i>
-                <i class="fa-solid fa-star star-input active" data-star="5" role="radio" aria-checked="true" tabindex="0"></i>
+              <div class="flex gap-1" id="star-rating">
+                <i class="fa-solid fa-star star-input active" data-star="1"></i>
+                <i class="fa-solid fa-star star-input active" data-star="2"></i>
+                <i class="fa-solid fa-star star-input active" data-star="3"></i>
+                <i class="fa-solid fa-star star-input active" data-star="4"></i>
+                <i class="fa-solid fa-star star-input active" data-star="5"></i>
               </div>
             </div>
             <div>
@@ -657,7 +914,7 @@
       <div class="relative">
         <h2 class="text-2xl md:text-3xl font-bold mb-3" data-i18n="cta_final_title">قیمت بر اساس نیاز شما تعیین می‌شود</h2>
         <p class="text-slate-200 mb-6 max-w-2xl mx-auto text-sm" data-i18n="cta_final_desc">برای دریافت قیمت دقیق، با کارشناسان ما تماس بگیرید.</p>
-        <a id="wa-cta-2" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-dark rounded-xl font-bold shadow-xl shadow-accent/30 transition-all">
+        <a id="wa-cta-2" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 rounded-xl font-bold shadow-xl transition-all">
           <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
           <span data-i18n="cta_final_btn">استعلام قیمت در واتساپ</span>
         </a>
@@ -685,16 +942,18 @@
       <div>
         <div class="font-bold text-white mb-4" data-i18n="footer_quick">لینک‌های سریع</div>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_products">محصولات</a></li>
-          <li><a href="#" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_repairs">تعمیرات</a></li>
-          <li><a href="#" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_contact">تماس</a></li>
+          <li><a href="#products" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_products">محصولات</a></li>
+          <li><a href="#downloads" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_downloads">دانلود نرم‌افزار</a></li>
+          <li><a href="#repairs" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_repairs">تعمیرات</a></li>
+          <li><a href="#contact" onclick="showHome();return false;" class="hover:text-accent-light transition-colors" data-i18n="nav_contact">تماس</a></li>
         </ul>
       </div>
       <div>
-        <div class="font-bold text-white mb-4" data-i18n="footer_contact">تماس</div>
+        <div class="font-bold text-white mb-4" data-i18n="footer_contact">تماس سریع</div>
         <ul class="space-y-2 text-sm">
           <li><i class="fa-solid fa-phone text-accent ml-2" aria-hidden="true"></i> 031-31320012-3</li>
           <li><i class="fa-solid fa-mobile-screen text-accent ml-2" aria-hidden="true"></i> 0912-585-5548</li>
+          <li><i class="fa-solid fa-globe text-accent ml-2" aria-hidden="true"></i> sahandlaser.com</li>
         </ul>
       </div>
     </div>
@@ -713,43 +972,28 @@ function escapeHtml(str) {
   div.textContent = String(str ?? '');
   return div.innerHTML;
 }
-
 const Storage = {
-  get(key, fallback = null) {
-    try { return localStorage.getItem(key) ?? fallback; }
-    catch (e) { return fallback; }
-  },
-  set(key, value) {
-    try { localStorage.setItem(key, value); return true; }
-    catch (e) { return false; }
-  }
+  get(key, fallback = null) { try { return localStorage.getItem(key) ?? fallback; } catch (e) { return fallback; } },
+  set(key, value) { try { localStorage.setItem(key, value); return true; } catch (e) { return false; } }
 };
-
 function getLocale() {
-  return currentLang === 'fa' ? 'fa-IR'
-       : currentLang === 'ar' ? 'ar-EG'
-       : currentLang === 'tr' ? 'tr-TR'
-       : 'en-US';
+  return currentLang === 'fa' ? 'fa-IR' : currentLang === 'ar' ? 'ar-EG' : currentLang === 'tr' ? 'tr-TR' : 'en-US';
 }
-
 function getFormattedDate() {
-  const locale = getLocale();
   try {
     const opts = { year: 'numeric', month: 'long', day: 'numeric' };
     if (currentLang === 'fa') opts.calendar = 'persian';
-    return new Intl.DateTimeFormat(locale + (currentLang === 'fa' ? '-u-ca-persian' : ''), opts).format(new Date());
-  } catch (e) {
-    return new Date().toLocaleDateString();
-  }
+    return new Intl.DateTimeFormat(getLocale() + (currentLang === 'fa' ? '-u-ca-persian' : ''), opts).format(new Date());
+  } catch (e) { return new Date().toLocaleDateString(); }
 }
 
 // ==================================================
-// [TRANSLATIONS] — fa, en, ar, tr
+// [TRANSLATIONS]
 // ==================================================
 const translations = {
   fa: {
     brand: 'سهند لیزر', brand_full: 'فناوران پرتو لیزر سهند',
-    nav_products: 'محصولات', nav_repairs: 'تعمیرات', nav_services: 'خدمات', nav_contact: 'تماس',
+    nav_products: 'محصولات', nav_downloads: 'دانلود نرم‌افزار', nav_repairs: 'تعمیرات', nav_international: 'مشتریان خارجی', nav_services: 'خدمات', nav_contact: 'تماس',
     cta_inquiry: 'استعلام قیمت', cta_call: 'تماس',
     hero_badge: '۱۳ سال تجربه • ۴ اختراع ملی • گارانتی ۱ ساله',
     hero_title_1: 'از ایده تا تولید،', hero_title_2: 'با مهندسی سهند لیزر',
@@ -763,6 +1007,11 @@ const translations = {
     cat_marking: 'دستگاه‌های حکاکی', cat_marking_desc: 'حکاکی روی فلز و غیرفلز. روی میزی، پرتابل، UV و MOPA.',
     cat_cleaning: 'دستگاه‌های تمیزکاری', cat_cleaning_desc: 'حذف زنگ، رنگ و آلودگی بدون آسیب سطح.',
     view_models: 'مشاهده مدل‌ها', coming_soon: 'به‌زودی',
+    dl_tag: 'نرم‌افزارهای تخصصی', dl_title: 'دانلود نرم‌افزار CypCut',
+    dl_desc: 'نرم‌افزارهای تخصصی کنترل دستگاه‌های برش لیزر فایبر فلزات. نسخه‌های مختلف CypCut به‌صورت رایگان.',
+    dl_btn: 'دانلود', dl_note: 'همه نرم‌افزارها از Google Drive دانلود می‌شوند. برای راهنمای نصب با پشتیبانی تماس بگیرید.',
+    topbar_download: 'دانلود نرم‌افزار CypCut',
+    theme_label: 'تم رنگی:',
     repairs_badge: 'پشتیبانی تخصصی همه برندها',
     repairs_title_1: 'دستگاه را از ما نخریدید؟', repairs_title_2: 'مشکلی نیست — ما پشتیبانی‌تان می‌کنیم.',
     repairs_desc: 'تیم فنی سهند لیزر آماده است تا انواع دستگاه‌های لیزر فایبر را — حتی از برندهای دیگر — تعمیر، سرویس و پشتیبانی کند.',
@@ -770,11 +1019,17 @@ const translations = {
     repair_2_title: 'تعمیر هد جوش و برش', repair_2_desc: 'تعمیر هد اتوفوکوس، لنز و گالوانومتر',
     repair_3_title: 'تأمین قطعات یدکی', repair_3_desc: 'سورس، چیلر، هد، لنز و برد کنترلی — همه برندها',
     repair_4_title: 'تعویض در ۲ روز', repair_4_desc: 'تعویض یا تعمیر قطعه در کمتر از ۲ روز',
-    repairs_cta: 'تماس فوری با پشتیبانی',
-    contact_tag: 'تماس با ما', contact_title: 'آماده همکاری با شما هستیم',
-    contact_office: 'دفتر مرکزی', contact_address: 'اصفهان، خیابان خیام، خیابان عطاءالملک، بلوک ۲۴، پلاک ۳۳',
-    contact_sales: 'واحد فروش', contact_support: 'خدمات پس از فروش',
-    footer_desc: 'مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.', footer_quick: 'لینک‌های سریع', footer_contact: 'تماس',
+    repairs_cta_call: 'تماس فوری با پشتیبانی', repairs_cta_wa: 'واتساپ پشتیبانی',
+    intl_tag: 'مشتریان بین‌المللی', intl_title: 'International Customer Service',
+    intl_desc: 'برای مشتریان خارج از ایران — ترکیه، عراق، امارات، عربستان و سایر کشورها. فرم زیر را پر کنید تا کارشناسان ما از طریق واتساپ با شما تماس بگیرند.',
+    intl_country: 'کشور شما', intl_name: 'نام و نام خانوادگی', intl_phone: 'شماره واتساپ (با کد کشور)', intl_email: 'ایمیل (اختیاری)',
+    intl_type: 'نوع درخواست', intl_type_purchase: 'خرید دستگاه', intl_type_repair: 'تعمیرات', intl_type_parts: 'قطعات یدکی', intl_type_other: 'سایر',
+    intl_desc_label: 'توضیحات درخواست', intl_note: 'پس از تکمیل فرم، به واتساپ منتقل می‌شوید و پیام آماده ارسال می‌شود. برای تعمیرات، لطفاً عکس دستگاه و پلاک آن را همراه داشته باشید.',
+    intl_submit: 'ارسال درخواست از طریق واتساپ',
+    contact_tag: 'تماس با ما', contact_title: 'آماده همکاری با شما هستیم', contact_desc: 'همه شماره‌ها با لینک تماس، واتساپ و تلگرام',
+    contact_office: 'دفتر و مدیریت', contact_address: 'اصفهان، خیابان خیام، عطاءالملک، بلوک ۲۴، پلاک ۳۳',
+    contact_sales: 'فروش، پشتیبانی و مالی',
+    footer_desc: 'مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.', footer_quick: 'لینک‌های سریع', footer_contact: 'تماس سریع',
     bc_home: 'خانه', bc_products: 'محصولات',
     badge_360: '۳۶۰ درجه', spin_hint: 'موس را بچرخانید', spin_help: 'برای دیدن از زوایای مختلف، موس را نگه دارید و بکشید',
     tab_specs: 'مشخصات فنی', tab_usage: 'کاربردها', tab_models: 'مدل‌ها', tab_desc: 'توضیحات',
@@ -782,19 +1037,16 @@ const translations = {
     comments_title: 'نظرات کاربران', comment_form_title: 'ثبت نظر شما',
     comment_name: 'نام شما', comment_rating: 'امتیاز شما', comment_text: 'نظر شما', comment_submit: 'ارسال نظر',
     no_comments: 'هنوز نظری ثبت نشده. اولین نظر را شما بنویسید!',
-    comment_success: 'نظر شما با موفقیت ثبت شد!',
-    comment_error: 'لطفاً نام و متن نظر را وارد کنید.',
-    comment_storage_error: 'متأسفانه ذخیره‌سازی در این مرورگر ممکن نیست.',
+    comment_success: 'نظر شما با موفقیت ثبت شد!', comment_error: 'لطفاً نام و متن نظر را وارد کنید.', comment_storage_error: 'متأسفانه ذخیره‌سازی در این مرورگر ممکن نیست.',
     cta_final_title: 'قیمت بر اساس نیاز شما تعیین می‌شود', cta_final_desc: 'برای دریافت قیمت دقیق، با کارشناسان ما تماس بگیرید.',
     cta_final_btn: 'استعلام قیمت در واتساپ',
     wa_inquiry: 'استعلام قیمت',
-    theme_label: 'تم رنگی:',
-    theme_navy: 'سرمه‌ای', theme_teal: 'فیروزه‌ای', theme_gold: 'طلایی',
-    theme_purple: 'بنفش', theme_emerald: 'زمرد', theme_cyan: 'سیان'
+    theme_navy: 'سرمه‌ای', theme_teal: 'فیروزه‌ای', theme_gold: 'طلایی', theme_purple: 'بنفش', theme_emerald: 'زمرد', theme_cyan: 'سیان',
+    product_not_found: 'این محصول به‌زودی اضافه می‌شود.'
   },
   en: {
     brand: 'Sahand Laser', brand_full: 'Sahand Laser Technology',
-    nav_products: 'Products', nav_repairs: 'Repairs', nav_services: 'Services', nav_contact: 'Contact',
+    nav_products: 'Products', nav_downloads: 'Downloads', nav_repairs: 'Repairs', nav_international: 'International', nav_services: 'Services', nav_contact: 'Contact',
     cta_inquiry: 'Get Quote', cta_call: 'Call',
     hero_badge: '13 Years Experience • 4 National Patents • 1-Year Warranty',
     hero_title_1: 'From Idea to Production,', hero_title_2: 'With Sahand Laser Engineering',
@@ -808,6 +1060,11 @@ const translations = {
     cat_marking: 'Marking Machines', cat_marking_desc: 'Marking on metal & non-metal. Desktop, portable, UV & MOPA.',
     cat_cleaning: 'Cleaning Machines', cat_cleaning_desc: 'Remove rust, paint & contamination without surface damage.',
     view_models: 'View Models', coming_soon: 'Coming Soon',
+    dl_tag: 'Software', dl_title: 'Download CypCut Software',
+    dl_desc: 'Specialized CNC software for fiber laser cutting machines. Multiple CypCut versions available for free.',
+    dl_btn: 'Download', dl_note: 'All software downloads from Google Drive. Contact support for installation guide.',
+    topbar_download: 'Download CypCut',
+    theme_label: 'Color theme:',
     repairs_badge: 'Specialized Support for All Brands',
     repairs_title_1: "Didn't Buy From Us?", repairs_title_2: "No Problem — We've Got You Covered.",
     repairs_desc: "Sahand Laser's technical team is ready to repair, service and support fiber laser machines — even from other brands.",
@@ -815,11 +1072,17 @@ const translations = {
     repair_2_title: 'Weld & Cut Head Repair', repair_2_desc: 'Autofocus head, lens & galvanometer repair',
     repair_3_title: 'Spare Parts Supply', repair_3_desc: 'Source, chiller, head, lens & control board — all brands',
     repair_4_title: '2-Day Replacement', repair_4_desc: 'Part replacement or repair in under 2 days',
-    repairs_cta: 'Call Support Now',
-    contact_tag: 'Contact Us', contact_title: 'Ready to Work With You',
-    contact_office: 'Head Office', contact_address: 'Isfahan, Khayyam St., Ata-ol-Molk St., Block 24, No. 33',
-    contact_sales: 'Sales Dept.', contact_support: 'After-Sales Support',
-    footer_desc: 'Specialized center for fiber laser sales and service in Iran.', footer_quick: 'Quick Links', footer_contact: 'Contact',
+    repairs_cta_call: 'Call Support Now', repairs_cta_wa: 'WhatsApp Support',
+    intl_tag: 'International Customers', intl_title: 'International Customer Service',
+    intl_desc: 'For customers outside Iran — Turkey, Iraq, UAE, Saudi Arabia and others. Fill the form and our team will contact you via WhatsApp.',
+    intl_country: 'Your Country', intl_name: 'Full Name', intl_phone: 'WhatsApp Number (with country code)', intl_email: 'Email (optional)',
+    intl_type: 'Request Type', intl_type_purchase: 'Buy Machine', intl_type_repair: 'Repair', intl_type_parts: 'Spare Parts', intl_type_other: 'Other',
+    intl_desc_label: 'Request Details', intl_note: 'After submitting, you will be redirected to WhatsApp with a pre-filled message. For repairs, please have photos of the machine and its nameplate ready.',
+    intl_submit: 'Send Request via WhatsApp',
+    contact_tag: 'Contact Us', contact_title: 'Ready to Work With You', contact_desc: 'All numbers with call, WhatsApp & Telegram links',
+    contact_office: 'Office & Management', contact_address: 'Isfahan, Khayyam St., Ata-ol-Molk St., Block 24, No. 33',
+    contact_sales: 'Sales, Support & Finance',
+    footer_desc: 'Specialized center for fiber laser sales and service in Iran.', footer_quick: 'Quick Links', footer_contact: 'Quick Contact',
     bc_home: 'Home', bc_products: 'Products',
     badge_360: '360°', spin_hint: 'Drag to rotate', spin_help: 'Hold and drag to view from different angles',
     tab_specs: 'Specifications', tab_usage: 'Applications', tab_models: 'Models', tab_desc: 'Description',
@@ -827,19 +1090,16 @@ const translations = {
     comments_title: 'Reviews', comment_form_title: 'Write a Review',
     comment_name: 'Your Name', comment_rating: 'Your Rating', comment_text: 'Your Review', comment_submit: 'Submit Review',
     no_comments: 'No reviews yet. Be the first!',
-    comment_success: 'Your review was submitted successfully!',
-    comment_error: 'Please enter your name and review text.',
-    comment_storage_error: 'Storage is not available in this browser.',
+    comment_success: 'Your review was submitted successfully!', comment_error: 'Please enter your name and review text.', comment_storage_error: 'Storage is not available in this browser.',
     cta_final_title: 'Price is Determined by Your Requirements', cta_final_desc: 'Contact our experts for an exact quote.',
     cta_final_btn: 'Get Quote on WhatsApp',
     wa_inquiry: 'Price inquiry',
-    theme_label: 'Color theme:',
-    theme_navy: 'Navy', theme_teal: 'Teal', theme_gold: 'Gold',
-    theme_purple: 'Purple', theme_emerald: 'Emerald', theme_cyan: 'Cyan'
+    theme_navy: 'Navy', theme_teal: 'Teal', theme_gold: 'Gold', theme_purple: 'Purple', theme_emerald: 'Emerald', theme_cyan: 'Cyan',
+    product_not_found: 'This product will be added soon.'
   },
   ar: {
     brand: 'سهند ليزر', brand_full: 'شركة سهند ليزر للتقنية',
-    nav_products: 'المنتجات', nav_repairs: 'الإصلاح', nav_services: 'الخدمات', nav_contact: 'اتصل بنا',
+    nav_products: 'المنتجات', nav_downloads: 'التحميل', nav_repairs: 'الإصلاح', nav_international: 'العملاء الدوليون', nav_services: 'الخدمات', nav_contact: 'اتصل بنا',
     cta_inquiry: 'طلب عرض', cta_call: 'اتصل',
     hero_badge: '١٣ سنة خبرة • ٤ براءات اختراع • ضمان سنة',
     hero_title_1: 'من الفكرة إلى الإنتاج،', hero_title_2: 'بهندسة سهند ليزر',
@@ -853,6 +1113,11 @@ const translations = {
     cat_marking: 'آلات النقش', cat_marking_desc: 'النقش على المعادن وغير المعادن.',
     cat_cleaning: 'آلات التنظيف', cat_cleaning_desc: 'إزالة الصدأ والطلاء دون الإضرار بالسطح.',
     view_models: 'عرض الموديلات', coming_soon: 'قريباً',
+    dl_tag: 'البرامج', dl_title: 'تحميل برنامج CypCut',
+    dl_desc: 'برامج متخصصة للتحكم في آلات القطع بالليزر. إصدارات متعددة من CypCut مجاناً.',
+    dl_btn: 'تحميل', dl_note: 'جميع البرامج من Google Drive. اتصل بالدعم للحصول على دليل التثبيت.',
+    topbar_download: 'تحميل CypCut',
+    theme_label: 'السمة:',
     repairs_badge: 'دعم متخصص لجميع العلامات',
     repairs_title_1: 'لم تشترِ منا؟', repairs_title_2: 'لا مشكلة — نحن ندعمك.',
     repairs_desc: 'فريق سهند ليزر جاهز لإصلاح وصيانة ودعم جميع آلات ليزر الألياف.',
@@ -860,11 +1125,17 @@ const translations = {
     repair_2_title: 'إصلاح رأس اللحام والقطع', repair_2_desc: 'إصلاح رأس التركيز التلقائي والعدسة',
     repair_3_title: 'توريد قطع الغيار', repair_3_desc: 'المصدر، المبرد، الرأس، العدسة — جميع العلامات',
     repair_4_title: 'استبدال في يومين', repair_4_desc: 'استبدال أو إصلاح القطعة في أقل من يومين',
-    repairs_cta: 'اتصل بالدعم الآن',
-    contact_tag: 'اتصل بنا', contact_title: 'مستعدون للعمل معك',
-    contact_office: 'المكتب الرئيسي', contact_address: 'أصفهان، شارع الخيام، شارع عطاء الملك، مبنى ٢٤، رقم ٣٣',
-    contact_sales: 'قسم البيع', contact_support: 'خدمة ما بعد البيع',
-    footer_desc: 'مركز متخصص لبيع وخدمة ليزر الألياف في إيران.', footer_quick: 'روابط سريعة', footer_contact: 'اتصل',
+    repairs_cta_call: 'اتصل بالدعم الآن', repairs_cta_wa: 'واتساب الدعم',
+    intl_tag: 'العملاء الدوليون', intl_title: 'خدمة العملاء الدوليين',
+    intl_desc: 'للعملاء خارج إيران — تركيا، العراق، الإمارات، السعودية وغيرها. املأ النموذج وسيتصل بك فريقنا عبر واتساب.',
+    intl_country: 'بلدك', intl_name: 'الاسم الكامل', intl_phone: 'رقم واتساب (مع رمز الدولة)', intl_email: 'البريد الإلكتروني (اختياري)',
+    intl_type: 'نوع الطلب', intl_type_purchase: 'شراء جهاز', intl_type_repair: 'إصلاح', intl_type_parts: 'قطع غيار', intl_type_other: 'أخرى',
+    intl_desc_label: 'تفاصيل الطلب', intl_note: 'بعد الإرسال، سيتم توجيهك إلى واتساب مع رسالة جاهزة. للإصلاح، يرجى تجهيز صور الجهاز ولوحته.',
+    intl_submit: 'إرسال الطلب عبر واتساب',
+    contact_tag: 'اتصل بنا', contact_title: 'مستعدون للعمل معك', contact_desc: 'جميع الأرقام مع روابط الاتصال والواتساب والتلغرام',
+    contact_office: 'المكتب والإدارة', contact_address: 'أصفهان، شارع الخيام، شارع عطاء الملك، مبنى ٢٤، رقم ٣٣',
+    contact_sales: 'البيع والدعم والمالية',
+    footer_desc: 'مركز متخصص لبيع وخدمة ليزر الألياف في إيران.', footer_quick: 'روابط سريعة', footer_contact: 'اتصال سريع',
     bc_home: 'الرئيسية', bc_products: 'المنتجات',
     badge_360: '٣٦٠°', spin_hint: 'اسحب للتدوير', spin_help: 'اضغط واسحب لمشاهدة من زوايا مختلفة',
     tab_specs: 'المواصفات', tab_usage: 'الاستخدامات', tab_models: 'الموديلات', tab_desc: 'الوصف',
@@ -872,23 +1143,20 @@ const translations = {
     comments_title: 'آراء المستخدمين', comment_form_title: 'اكتب رأيك',
     comment_name: 'اسمك', comment_rating: 'تقييمك', comment_text: 'رأيك', comment_submit: 'إرسال الرأي',
     no_comments: 'لا توجد آراء بعد.',
-    comment_success: 'تم إرسال رأيك بنجاح!',
-    comment_error: 'يرجى إدخال اسمك ونص رأيك.',
-    comment_storage_error: 'التخزين غير متوفر في هذا المتصفح.',
+    comment_success: 'تم إرسال رأيك بنجاح!', comment_error: 'يرجى إدخال اسمك ونص رأيك.', comment_storage_error: 'التخزين غير متوفر في هذا المتصفح.',
     cta_final_title: 'السعر يحدده احتياجاتك', cta_final_desc: 'اتصل بخبرائنا للحصول على عرض دقيق.',
     cta_final_btn: 'طلب عرض على واتساب',
     wa_inquiry: 'استفسار السعر',
-    theme_label: 'السمة:',
-    theme_navy: 'كحلي', theme_teal: 'فيروزي', theme_gold: 'ذهبي',
-    theme_purple: 'أرجواني', theme_emerald: 'زمردي', theme_cyan: 'سماوي'
+    theme_navy: 'كحلي', theme_teal: 'فيروزي', theme_gold: 'ذهبي', theme_purple: 'أرجواني', theme_emerald: 'زمردي', theme_cyan: 'سماوي',
+    product_not_found: 'سيتم إضافة هذا المنتج قريباً.'
   },
   tr: {
     brand: 'Sahand Laser', brand_full: 'Sahand Laser Teknoloji',
-    nav_products: 'Ürünler', nav_repairs: 'Onarım', nav_services: 'Hizmetler', nav_contact: 'İletişim',
+    nav_products: 'Ürünler', nav_downloads: 'İndir', nav_repairs: 'Onarım', nav_international: 'Uluslararası', nav_services: 'Hizmetler', nav_contact: 'İletişim',
     cta_inquiry: 'Fiyat Teklifi Al', cta_call: 'Ara',
     hero_badge: '13 Yıl Deneyim • 4 Ulusal Patent • 1 Yıl Garanti',
     hero_title_1: 'Fikirden Üretime,', hero_title_2: 'Sahand Laser Mühendisliği ile',
-    hero_desc: 'İran\'da fiber lazer ekipmanlarının satışı ve servisi için uzmanlaşmış merkez.',
+    hero_desc: "İran'da fiber lazer ekipmanlarının satışı ve servisi için uzmanlaşmış merkez.",
     hero_btn_products: 'Ürünleri Gör', hero_btn_consult: 'Ücretsiz Danışmanlık',
     hero_stat_1: 'Kurulu Makine', hero_stat_2: 'Yıl Deneyim', hero_stat_3: 'Yıl Satış Sonrası',
     trust_1: '4 Ulusal Patent', trust_2: 'Çin ve AB ile Ortaklık', trust_3: 'Ücretsiz Kurulum ve Eğitim', trust_4: '7 Gün Destek',
@@ -898,18 +1166,29 @@ const translations = {
     cat_marking: 'Markalama Makineleri', cat_marking_desc: 'Metal ve metal olmayan markalama. Masaüstü, taşınabilir, UV ve MOPA.',
     cat_cleaning: 'Temizleme Makineleri', cat_cleaning_desc: 'Yüzeye zarar vermeden pas, boya ve kiri temizleyin.',
     view_models: 'Modelleri Gör', coming_soon: 'Yakında',
+    dl_tag: 'Yazılımlar', dl_title: 'CypCut Yazılımını İndir',
+    dl_desc: 'Fiber lazer kesim makineleri için özel CNC yazılımı. Birden fazla CypCut sürümü ücretsiz.',
+    dl_btn: 'İndir', dl_note: 'Tüm yazılımlar Google Drive üzerinden. Kurulum kılavuzu için destekle iletişime geçin.',
+    topbar_download: 'CypCut İndir',
+    theme_label: 'Renk teması:',
     repairs_badge: 'Tüm Markalar için Uzman Destek',
     repairs_title_1: 'Bizden mi almadınız?', repairs_title_2: 'Sorun değil — Sizin yanınızdayız.',
-    repairs_desc: 'Sahand Laser teknik ekibi, diğer markaların fiber lazer makinelerini bile onarmaya, servis etmeye ve desteklemeye hazır.',
+    repairs_desc: 'Sahand Laser teknik ekibi, diğer markaların fiber lazer makinelerini bile onarmaya hazır.',
     repair_1_title: 'Lazer Kaynağı Onarımı', repair_1_desc: 'Tüm Raycus, Max, JPT ve IPG kaynaklarının onarımı',
     repair_2_title: 'Kaynak ve Kesim Kafası Onarımı', repair_2_desc: 'Otomatik odak kafası, lens ve galvanometre onarımı',
     repair_3_title: 'Yedek Parça Temini', repair_3_desc: 'Kaynak, soğutucu, kafa, lens ve kontrol kartı — tüm markalar',
     repair_4_title: '2 Günde Değişim', repair_4_desc: '2 günden kısa sürede parça değişimi veya onarımı',
-    repairs_cta: 'Hemen Desteği Ara',
-    contact_tag: 'İletişim', contact_title: 'Sizinle Çalışmaya Hazırız',
-    contact_office: 'Merkez Ofis', contact_address: 'İsfahan, Hayyam Cad., Ata-ol-Molk Cad., Blok 24, No. 33',
-    contact_sales: 'Satış Departmanı', contact_support: 'Satış Sonrası Destek',
-    footer_desc: 'İran\'da fiber lazer satışı ve servisi için uzman merkez.', footer_quick: 'Hızlı Bağlantılar', footer_contact: 'İletişim',
+    repairs_cta_call: 'Hemen Desteği Ara', repairs_cta_wa: 'WhatsApp Destek',
+    intl_tag: 'Uluslararası Müşteriler', intl_title: 'Uluslararası Müşteri Hizmetleri',
+    intl_desc: 'İran dışındaki müşteriler için — Türkiye, Irak, BAE, Suudi Arabistan ve diğerleri. Formu doldurun, ekibimiz WhatsApp üzerinden sizinle iletişime geçsin.',
+    intl_country: 'Ülkeniz', intl_name: 'Ad Soyad', intl_phone: 'WhatsApp Numaranız (ülke kodu ile)', intl_email: 'E-posta (isteğe bağlı)',
+    intl_type: 'Talep Türü', intl_type_purchase: 'Makine Satın Al', intl_type_repair: 'Onarım', intl_type_parts: 'Yedek Parça', intl_type_other: 'Diğer',
+    intl_desc_label: 'Talep Detayları', intl_note: 'Gönderdikten sonra WhatsApp\'a yönlendirileceksiniz ve mesaj hazır olacak. Onarım için lütfen makinenin ve plakasının fotoğraflarını hazır bulundurun.',
+    intl_submit: 'WhatsApp ile Talep Gönder',
+    contact_tag: 'İletişim', contact_title: 'Sizinle Çalışmaya Hazırız', contact_desc: 'Tüm numaralar arama, WhatsApp ve Telegram bağlantılarıyla',
+    contact_office: 'Ofis ve Yönetim', contact_address: 'İsfahan, Hayyam Cad., Ata-ol-Molk Cad., Blok 24, No. 33',
+    contact_sales: 'Satış, Destek ve Finans',
+    footer_desc: "İran'da fiber lazer satışı ve servisi için uzman merkez.", footer_quick: 'Hızlı Bağlantılar', footer_contact: 'Hızlı İletişim',
     bc_home: 'Anasayfa', bc_products: 'Ürünler',
     badge_360: '360°', spin_hint: 'Döndürmek için sürükle', spin_help: 'Farklı açılardan görmek için basılı tutup sürükleyin',
     tab_specs: 'Özellikler', tab_usage: 'Uygulamalar', tab_models: 'Modeller', tab_desc: 'Açıklama',
@@ -917,15 +1196,12 @@ const translations = {
     comments_title: 'Kullanıcı Yorumları', comment_form_title: 'Yorum Yaz',
     comment_name: 'Adınız', comment_rating: 'Puanınız', comment_text: 'Yorumunuz', comment_submit: 'Yorumu Gönder',
     no_comments: 'Henüz yorum yok. İlk yorumu siz yazın!',
-    comment_success: 'Yorumunuz başarıyla gönderildi!',
-    comment_error: 'Lütfen adınızı ve yorum metnini girin.',
-    comment_storage_error: 'Bu tarayıcıda depolama kullanılamıyor.',
+    comment_success: 'Yorumunuz başarıyla gönderildi!', comment_error: 'Lütfen adınızı ve yorum metnini girin.', comment_storage_error: 'Bu tarayıcıda depolama kullanılamıyor.',
     cta_final_title: 'Fiyat İhtiyaçlarınıza Göre Belirlenir', cta_final_desc: 'Kesin fiyat için uzmanlarımızla iletişime geçin.',
-    cta_final_btn: 'WhatsApp\'ta Fiyat Al',
+    cta_final_btn: "WhatsApp'ta Fiyat Al",
     wa_inquiry: 'Fiyat teklifi',
-    theme_label: 'Renk teması:',
-    theme_navy: 'Lacivert', theme_teal: 'Turkuaz', theme_gold: 'Altın',
-    theme_purple: 'Mor', theme_emerald: 'Zümrüt', theme_cyan: 'Camgöbeği'
+    theme_navy: 'Lacivert', theme_teal: 'Turkuaz', theme_gold: 'Altın', theme_purple: 'Mor', theme_emerald: 'Zümrüt', theme_cyan: 'Camgöbeği',
+    product_not_found: 'Bu ürün yakında eklenecektir.'
   }
 };
 
@@ -1021,7 +1297,7 @@ let currentProductId = null;
 let viewerController = null;
 
 // ==================================================
-// [THEME - Dark/Light]
+// [THEME]
 // ==================================================
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle('dark');
@@ -1031,23 +1307,12 @@ function toggleTheme() {
   if (icon) icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
   if (btn) btn.setAttribute('aria-pressed', String(isDark));
 }
-
-// ==================================================
-// [COLOR THEMES]
-// ==================================================
 function setColorTheme(themeName) {
   document.documentElement.setAttribute('data-theme', themeName);
   Storage.set('colorTheme', themeName);
-
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.theme === themeName);
-  });
-
-  // Update theme name display
+  document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.theme === themeName));
   const nameEl = document.getElementById('theme-name-display');
-  if (nameEl && translations[currentLang]) {
-    nameEl.textContent = translations[currentLang]['theme_' + themeName] || themeName;
-  }
+  if (nameEl && translations[currentLang]) nameEl.textContent = translations[currentLang]['theme_' + themeName] || themeName;
 }
 
 // ==================================================
@@ -1058,24 +1323,17 @@ function setLang(lang) {
   Storage.set('lang', lang);
   document.documentElement.lang = lang;
   document.documentElement.dir = (lang === 'en' || lang === 'tr') ? 'ltr' : 'rtl';
-
   document.querySelectorAll('.lang-btn').forEach(btn => {
     const isActive = btn.dataset.lang === lang;
     btn.classList.toggle('active', isActive);
     btn.setAttribute('aria-pressed', String(isActive));
   });
-
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.textContent = translations[lang][key];
-    }
+    if (translations[lang] && translations[lang][key] !== undefined) el.textContent = translations[lang][key];
   });
-
-  // Update theme label with new language
   const currentTheme = document.documentElement.getAttribute('data-theme') || 'navy';
   setColorTheme(currentTheme);
-
   if (currentProductId) renderProduct(currentProductId);
 }
 
@@ -1090,7 +1348,6 @@ function toggleMobile() {
   icon.className = isHidden ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
   if (btn) btn.setAttribute('aria-expanded', String(!isHidden));
 }
-
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     const menu = document.getElementById('mobile-menu');
@@ -1111,7 +1368,6 @@ function applyRoute() {
   const hash = window.location.hash;
   const homeView = document.getElementById('view-home');
   const productView = document.getElementById('view-product');
-
   if (hash.startsWith('#product=')) {
     const id = hash.substring(9);
     if (products[id]) {
@@ -1119,17 +1375,20 @@ function applyRoute() {
       homeView.classList.remove('active');
       productView.classList.add('active');
       renderProduct(id);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
+    } else {
+      console.warn(`[Router] محصول ${id} یافت نشد`);
+      alert((translations[currentLang] && translations[currentLang].product_not_found) || 'محصول یافت نشد');
     }
   }
   currentProductId = null;
   homeView.classList.add('active');
   productView.classList.remove('active');
-  if (hash && hash !== '#') {
+  if (hash && hash !== '#' && !hash.startsWith('#product=')) {
     history.replaceState(null, '', window.location.pathname);
   }
 }
-
 function showHome() {
   if (window.location.hash) {
     window.location.hash = '';
@@ -1138,11 +1397,13 @@ function showHome() {
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
 function showProduct(id) {
-  if (!products[id]) { console.warn(`[Router] محصول ${id} یافت نشد`); return; }
+  if (!products[id]) {
+    console.warn(`[Router] محصول ${id} یافت نشد`);
+    alert((translations[currentLang] && translations[currentLang].product_not_found) || 'محصول یافت نشد');
+    return;
+  }
   window.location.hash = `product=${id}`;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ==================================================
@@ -1151,9 +1412,7 @@ function showProduct(id) {
 function renderProduct(id) {
   const p = products[id];
   const lang = currentLang;
-
   document.title = `${p.title[lang] || p.title.fa} | سهند لیزر`;
-
   document.getElementById('breadcrumb-cat').textContent = p.category[lang] || p.category.fa;
   document.getElementById('product-code-display').textContent = p.code;
   document.getElementById('product-cat-badge').textContent = p.catBadge[lang] || p.catBadge.fa;
@@ -1164,6 +1423,7 @@ function renderProduct(id) {
   const waText = encodeURIComponent(`${waInquiry} ${p.code}`);
   document.getElementById('wa-cta').href = `https://wa.me/989125855548?text=${waText}`;
   document.getElementById('wa-cta-2').href = `https://wa.me/989125855548?text=${waText}`;
+  document.getElementById('phone-cta').href = `tel:+989125855548`;
 
   const viewer = document.getElementById('spin-viewer');
   viewer.innerHTML = `
@@ -1242,7 +1502,6 @@ function renderProduct(id) {
 
   document.querySelectorAll('.tab-btn').forEach((b, i) => b.classList.toggle('active', i === 0));
   document.querySelectorAll('.tab-content').forEach((c, i) => c.classList.toggle('active', i === 0));
-
   initViewer();
   loadComments();
 }
@@ -1254,13 +1513,11 @@ function initViewer() {
   if (viewerController) viewerController.abort();
   viewerController = new AbortController();
   const { signal } = viewerController;
-
   const viewer = document.getElementById('spin-viewer');
   if (!viewer) return;
   const images = viewer.querySelectorAll('img');
   const totalFrames = images.length;
   if (totalFrames === 0) return;
-
   const progressBar = document.getElementById('spin-progress');
   const counter = document.getElementById('spin-counter');
   const thumbs = document.querySelectorAll('#thumbnails-container .thumb');
@@ -1272,9 +1529,7 @@ function initViewer() {
     state.currentFrame = index;
     images.forEach((img, i) => img.classList.toggle('active', i === index));
     if (progressBar) progressBar.style.width = (((index + 1) / totalFrames) * 100) + '%';
-    if (counter) {
-      counter.textContent = `${(index + 1).toLocaleString(locale)} / ${totalFrames.toLocaleString(locale)}`;
-    }
+    if (counter) counter.textContent = `${(index + 1).toLocaleString(locale)} / ${totalFrames.toLocaleString(locale)}`;
     thumbs.forEach((t, i) => t.classList.toggle('active', i === index));
   }
 
@@ -1283,36 +1538,28 @@ function initViewer() {
     viewer.classList.add('dragging', 'has-interacted');
     e.preventDefault();
   }, { signal });
-
   document.addEventListener('mousemove', e => {
     if (!state.isDragging) return;
     showFrame(state.startFrame + Math.round((e.clientX - state.startX) / 80));
   }, { signal });
-
   document.addEventListener('mouseup', () => {
     state.isDragging = false;
     viewer.classList.remove('dragging');
   }, { signal });
-
   viewer.addEventListener('touchstart', e => {
     state.isDragging = true; state.startX = e.touches[0].clientX; state.startFrame = state.currentFrame;
     viewer.classList.add('has-interacted');
   }, { passive: true, signal });
-
   viewer.addEventListener('touchmove', e => {
     if (!state.isDragging) return;
     showFrame(state.startFrame + Math.round((e.touches[0].clientX - state.startX) / 80));
   }, { passive: true, signal });
-
   viewer.addEventListener('touchend', () => { state.isDragging = false; }, { signal });
-
   viewer.addEventListener('keydown', e => {
     if (e.key === 'ArrowLeft') showFrame(state.currentFrame - 1);
     if (e.key === 'ArrowRight') showFrame(state.currentFrame + 1);
   }, { signal });
-
   thumbs.forEach(t => t.addEventListener('click', () => showFrame(parseInt(t.dataset.index)), { signal }));
-
   showFrame(0);
 }
 
@@ -1331,27 +1578,21 @@ function switchTab(event, tabId) {
 // [COMMENTS]
 // ==================================================
 let selectedRating = 5;
-
 function loadComments() {
   if (!currentProductId) return;
   const storageKey = `comments_${currentProductId}`;
   let comments = [];
-  try { comments = JSON.parse(Storage.get(storageKey, '[]')); }
-  catch (e) { comments = []; }
-
+  try { comments = JSON.parse(Storage.get(storageKey, '[]')); } catch (e) { comments = []; }
   const list = document.getElementById('comments-list');
   const noComments = document.getElementById('no-comments');
   const countEl = document.getElementById('comments-count');
-
   countEl.textContent = comments.length.toLocaleString(getLocale());
-
   if (comments.length === 0) {
     list.innerHTML = '';
     noComments.style.display = 'block';
     return;
   }
   noComments.style.display = 'none';
-
   list.innerHTML = comments.map(c => `
     <div class="comment-card">
       <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
@@ -1372,28 +1613,16 @@ function loadComments() {
     </div>
   `).join('');
 }
-
 function setRating(rating) {
   selectedRating = rating;
   document.querySelectorAll('.star-input').forEach(s => {
-    const isActive = parseInt(s.dataset.star) <= rating;
-    s.classList.toggle('active', isActive);
+    s.classList.toggle('active', parseInt(s.dataset.star) <= rating);
     s.setAttribute('aria-checked', String(parseInt(s.dataset.star) === rating));
   });
 }
-
 document.addEventListener('click', e => {
-  if (e.target.classList.contains('star-input')) {
-    setRating(parseInt(e.target.dataset.star));
-  }
+  if (e.target.classList.contains('star-input')) setRating(parseInt(e.target.dataset.star));
 });
-document.addEventListener('keydown', e => {
-  if (e.target.classList?.contains('star-input') && (e.key === 'Enter' || e.key === ' ')) {
-    e.preventDefault();
-    setRating(parseInt(e.target.dataset.star));
-  }
-});
-
 function showFormMsg(type, key) {
   const el = document.getElementById(`comment-${type}`);
   if (!el) return;
@@ -1401,43 +1630,75 @@ function showFormMsg(type, key) {
   el.classList.add('show');
   setTimeout(() => el.classList.remove('show'), 4000);
 }
-
 function attachCommentForm() {
   const form = document.getElementById('comment-form');
   if (!form || form.dataset.attached === 'true') return;
   form.dataset.attached = 'true';
-
   form.addEventListener('submit', e => {
     e.preventDefault();
     if (!currentProductId) return;
-
     const nameEl = document.getElementById('comment-name');
     const textEl = document.getElementById('comment-text');
     const name = (nameEl?.value || '').trim();
     const text = (textEl?.value || '').trim();
-
     if (!name || !text) { showFormMsg('error', 'comment_error'); return; }
-
     const storageKey = `comments_${currentProductId}`;
     let comments = [];
-    try { comments = JSON.parse(Storage.get(storageKey, '[]')); }
-    catch (e) { comments = []; }
-
+    try { comments = JSON.parse(Storage.get(storageKey, '[]')); } catch (e) { comments = []; }
     comments.unshift({
       name: name.substring(0, 100),
       text: text.substring(0, 2000),
       rating: selectedRating,
       date: getFormattedDate()
     });
-
     if (!Storage.set(storageKey, JSON.stringify(comments))) {
       showFormMsg('error', 'comment_storage_error');
       return;
     }
-
     form.reset();
     showFormMsg('success', 'comment_success');
     loadComments();
+  });
+}
+
+// ==================================================
+// [INTERNATIONAL FORM]
+// ==================================================
+function attachIntlForm() {
+  const form = document.getElementById('intl-form');
+  if (!form || form.dataset.attached === 'true') return;
+  form.dataset.attached = 'true';
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const country = document.getElementById('intl-country').value;
+    const name = document.getElementById('intl-name').value.trim();
+    const phone = document.getElementById('intl-phone').value.trim();
+    const email = document.getElementById('intl-email').value.trim();
+    const type = (form.querySelector('input[name="intl-request-type"]:checked') || {}).value;
+    const desc = document.getElementById('intl-desc').value.trim();
+    if (!country || !name || !phone || !type || !desc) {
+      alert('Please fill all required fields.');
+      return;
+    }
+    const typeLabels = {
+      purchase: '🛒 Purchase Machine / خرید دستگاه',
+      repair: '🔧 Repair / تعمیرات',
+      parts: '⚙️ Spare Parts / قطعات یدکی',
+      other: '💬 Other / سایر'
+    };
+    const message = `🌍 *International Customer Request — Sahand Laser*
+
+🌐 Country: ${country}
+👤 Name: ${name}
+📱 WhatsApp: ${phone}${email ? `\n📧 Email: ${email}` : ''}
+🔖 Request Type: ${typeLabels[type] || type}
+
+📝 *Details:*
+${desc}
+
+---
+Sent from sahandlaser.com`;
+    window.open(`https://wa.me/989125855548?text=${encodeURIComponent(message)}`, '_blank');
   });
 }
 
@@ -1458,15 +1719,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeBtn = document.getElementById('theme-toggle');
   if (themeIcon) themeIcon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
   if (themeBtn) themeBtn.setAttribute('aria-pressed', String(isDark));
-
-  // Set initial color theme (already applied in head, just sync UI)
   const currentColorTheme = document.documentElement.getAttribute('data-theme') || 'navy';
   setColorTheme(currentColorTheme);
-
   setLang(currentLang);
   applyRoute();
   window.addEventListener('hashchange', applyRoute);
   attachCommentForm();
+  attachIntlForm();
 });
 </script>
 
