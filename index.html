@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>فناوران پرتو لیزر سهند | برش، جوش، حکاکی، تمیزکاری و سورس لیزر</title>
-<meta name="description" content="مرکز تخصصی فروش، خدمات و پشتیبانی لیزرهای فایبر در ایران. برش، جوش، حکاکی، تمیزکاری، سورس، هد، چیلر و قطعات یدکی.">
-<link rel="canonical" href="https://sahandlaser.com/">
+<meta name="description" content="مرکز تخصصی فروش، خدمات و پشتیبانی لیزرهای فایبر در ایران.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231E2A5E'/%3E%3Cpath d='M55 15 L30 55 L45 55 L40 85 L70 40 L55 40 Z' fill='%23A61C1C'/%3E%3C/svg%3E">
 
 <style>
@@ -32,7 +31,6 @@
 
 <style>
   body { font-family: 'Vazirmatn', system-ui, sans-serif; }
-  [dir="ltr"] body { font-family: 'Inter', 'Vazirmatn', system-ui, sans-serif; }
   .gradient-brand { background: linear-gradient(135deg, rgb(var(--brand)) 0%, rgb(var(--brand-light)) 50%, rgb(var(--brand-dark)) 100%); }
   .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); }
   .card-hover { transition: all .35s cubic-bezier(.4,0,.2,1); }
@@ -59,6 +57,21 @@
   .theme-btn[data-theme="emerald"] { background: linear-gradient(135deg, #064E3B, #84CC16); }
   .theme-btn[data-theme="cyan"] { background: linear-gradient(135deg, #334155, #0EA5E9); }
 
+  /* Hero Slider */
+  .hero-slider { position: relative; width: 100%; height: 600px; overflow: hidden; }
+  @media (max-width: 768px) { .hero-slider { height: 500px; } }
+  .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; display: flex; align-items: center; }
+  .hero-slide.active { opacity: 1; }
+  .hero-slide-content { max-width: 700px; }
+  .hero-dots { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; gap: .75rem; z-index: 20; }
+  .hero-dot { width: 12px; height: 12px; border-radius: 999px; background: rgba(255,255,255,.4); cursor: pointer; transition: all .3s; border: 2px solid transparent; }
+  .hero-dot.active { background: white; width: 32px; }
+  .hero-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 999px; background: rgba(255,255,255,.15); backdrop-filter: blur(8px); color: white; border: none; cursor: pointer; z-index: 20; transition: all .3s; font-size: 1.2rem; }
+  .hero-nav:hover { background: rgba(255,255,255,.3); }
+  .hero-nav.prev { left: 1rem; }
+  .hero-nav.next { right: 1rem; }
+
+  /* Spin viewer */
   .spin-viewer { position: relative; width: 100%; aspect-ratio: 1 / 1; background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 1.25rem; overflow: hidden; cursor: grab; user-select: none; touch-action: pan-y; }
   :root:not(.dark) .spin-viewer { background: linear-gradient(135deg, #f8fafc, #e2e8f0); }
   .spin-viewer.dragging { cursor: grabbing; }
@@ -103,7 +116,7 @@
   .nav-link.active { background: rgba(var(--accent), .12); color: rgb(var(--accent)); font-weight: 700; }
 
   .menu-dropdown { position: relative; display: inline-block; }
-  .menu-dropdown-content { display: none; position: absolute; top: 100%; right: 0; background: white; min-width: 230px; border-radius: 1rem; box-shadow: 0 10px 40px rgba(0,0,0,.15); padding: .5rem; z-index: 100; border: 1px solid #e2e8f0; margin-top: .5rem; }
+  .menu-dropdown-content { display: none; position: absolute; top: 100%; right: 0; background: white; min-width: 240px; border-radius: 1rem; box-shadow: 0 10px 40px rgba(0,0,0,.15); padding: .5rem; z-index: 100; border: 1px solid #e2e8f0; margin-top: .5rem; }
   .dark .menu-dropdown-content { background: #0f172a; border-color: #1e293b; }
   .menu-dropdown:hover .menu-dropdown-content { display: block; }
   .menu-dropdown-content a { display: block; padding: .6rem 1rem; border-radius: .5rem; font-size: .85rem; transition: all .2s; cursor: pointer; }
@@ -117,12 +130,16 @@
   .form-msg.error { background: rgba(239,68,68,.15); color: #fca5a5; border: 1px solid rgba(239,68,68,.3); }
   .form-msg.success { background: rgba(34,197,94,.15); color: #86efac; border: 1px solid rgba(34,197,94,.3); }
 
-  .contact-actions a { width: 32px; height: 32px; border-radius: .5rem; display: flex; align-items: center; justify-content: center; color: white; transition: all .2s; }
+  .contact-actions { display: flex; gap: .35rem; flex-shrink: 0; }
+  .contact-actions a { width: 32px; height: 32px; border-radius: .5rem; display: flex; align-items: center; justify-content: center; color: white; transition: all .2s; font-size: .8rem; }
   .contact-actions a:hover { transform: scale(1.1); }
   .btn-call { background: rgb(var(--accent)); }
   .btn-wa { background: #22c55e; }
   .btn-tg { background: #0ea5e9; }
+  .btn-eitaa { background: #f97316; }
+  .btn-bale { background: #8b5cf6; }
 
+  /* Modal */
   .modal-overlay { position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,.7); backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center; padding: 1rem; }
   .modal-overlay.open { display: flex; }
   .modal-box { background: white; border-radius: 1.5rem; max-width: 32rem; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,.5); }
@@ -147,6 +164,35 @@
   .feature-icon-box { width: 56px; height: 56px; border-radius: 1rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1rem; }
   .dl-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem 1rem; background: rgb(var(--accent)); color: white; border-radius: .5rem; font-size: .8rem; font-weight: 600; transition: all .2s; }
   .dl-btn:hover { background: rgb(var(--accent-dark)); transform: translateY(-2px); }
+
+  /* Floating Buttons */
+  .floating-buttons { position: fixed; bottom: 1.5rem; left: 1.5rem; z-index: 90; display: flex; flex-direction: column; gap: .75rem; }
+  .floating-btn { width: 56px; height: 56px; border-radius: 999px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0,0,0,.3); transition: all .3s; position: relative; text-decoration: none; }
+  .floating-btn:hover { transform: scale(1.1); }
+  .floating-btn-wa { background: #22c55e; }
+  .floating-btn-eitaa { background: #f97316; }
+  .floating-btn-bale { background: #8b5cf6; }
+  .floating-btn-chat { background: rgb(var(--accent)); }
+  .floating-btn .tooltip { position: absolute; right: 70px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.85); color: white; padding: .4rem .8rem; border-radius: .5rem; font-size: .75rem; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .2s; font-weight: 600; }
+  .floating-btn:hover .tooltip { opacity: 1; }
+  .floating-btn .online-dot { position: absolute; top: 2px; right: 2px; width: 14px; height: 14px; background: #22c55e; border: 2px solid white; border-radius: 999px; }
+  .dark .floating-btn .online-dot { border-color: #0f172a; }
+
+  /* Timeline */
+  .timeline { position: relative; padding: 2rem 0; }
+  .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; right: 50%; width: 3px; background: linear-gradient(to bottom, rgb(var(--accent)), rgb(var(--brand))); transform: translateX(50%); }
+  .timeline-item { position: relative; padding: 1.5rem 0; }
+  .timeline-item:nth-child(odd) .timeline-content { margin-right: auto; margin-left: 0; padding-right: 2rem; text-align: left; }
+  .timeline-item:nth-child(even) .timeline-content { margin-left: auto; margin-right: 0; padding-left: 2rem; text-align: right; }
+  .timeline-content { width: 45%; background: white; padding: 1.25rem; border-radius: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,.05); }
+  .dark .timeline-content { background: #0f172a; border-color: #1e293b; }
+  .timeline-dot { position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%); width: 16px; height: 16px; border-radius: 999px; background: rgb(var(--accent)); border: 3px solid white; z-index: 2; }
+  .dark .timeline-dot { border-color: #020617; }
+  @media (max-width: 768px) {
+    .timeline::before { right: 20px; }
+    .timeline-item .timeline-content { width: calc(100% - 50px); margin-right: 0 !important; margin-left: auto !important; padding-right: 0 !important; padding-left: 1rem !important; text-align: right !important; }
+    .timeline-dot { right: 20px; }
+  }
 </style>
 
 <script>
@@ -168,13 +214,11 @@
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">
 
-<a href="#main-content" class="skip-link" style="position:absolute;top:-100px;right:0;background:rgb(var(--accent));color:white;padding:.75rem 1.5rem;z-index:9999;border-radius:0 0 .5rem .5rem;font-weight:600;">پرش به محتوا</a>
-
-<!-- TOP BAR -->
+<!-- ============ TOP BAR ============ -->
 <div class="bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between gap-3 flex-wrap">
     <div class="flex items-center gap-2">
-      <span class="text-xs text-slate-500 hidden sm:inline">تم رنگی:</span>
+      <span class="text-xs text-slate-500 hidden sm:inline" data-i18n="theme_label">تم رنگی:</span>
       <div class="flex gap-1.5 items-center">
         <button class="theme-btn active" data-theme="navy" title="سرمه‌ای"></button>
         <button class="theme-btn" data-theme="teal" title="فیروزه‌ای"></button>
@@ -193,7 +237,7 @@
   </div>
 </div>
 
-<!-- HEADER -->
+<!-- ============ HEADER ============ -->
 <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-lg border-b border-slate-200 dark:border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
     <a href="#home" onclick="navigateTo('home');return false;" class="flex items-center gap-3 shrink-0">
@@ -221,6 +265,7 @@
       </div>
       <a href="#services" onclick="navigateTo('services');return false;" class="nav-link" data-nav="services" data-i18n="nav_services">خدمات</a>
       <a href="#applications" onclick="navigateTo('applications');return false;" class="nav-link" data-nav="applications" data-i18n="nav_applications">کاربردها</a>
+      <a href="#projects" onclick="navigateTo('projects');return false;" class="nav-link" data-nav="projects" data-i18n="nav_projects">نمونه‌کارها</a>
       <a href="#training" onclick="navigateTo('training');return false;" class="nav-link" data-nav="training" data-i18n="nav_training">آموزش</a>
       <a href="#downloads" onclick="navigateTo('downloads');return false;" class="nav-link" data-nav="downloads" data-i18n="nav_downloads">دانلود</a>
       <a href="#contact" onclick="navigateTo('contact');return false;" class="nav-link" data-nav="contact" data-i18n="nav_contact">تماس</a>
@@ -240,6 +285,7 @@
       <a onclick="navigateTo('products');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_products">محصولات</a>
       <a onclick="navigateTo('services');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_services">خدمات</a>
       <a onclick="navigateTo('applications');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_applications">کاربردها</a>
+      <a onclick="navigateTo('projects');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_projects">نمونه‌کارها</a>
       <a onclick="navigateTo('training');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_training">آموزش</a>
       <a onclick="navigateTo('downloads');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_downloads">دانلود</a>
       <a onclick="navigateTo('contact');toggleMobile()" class="py-3 px-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" data-i18n="nav_contact">تماس</a>
@@ -247,45 +293,124 @@
   </div>
 </header>
 
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="floating-buttons" id="floating-buttons">
+  <a href="https://wa.me/989125855548" target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-wa" title="واتساپ">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="online-dot"></span>
+    <span class="tooltip">واتساپ</span>
+  </a>
+  <!-- Eitaa & Bale (فقط برای فارسی) -->
+  <a href="https://eitaa.com/sahandlaser" target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-eitaa lang-fa-only" title="ایتا">
+    <i class="fa-solid fa-comment-dots"></i>
+    <span class="tooltip">ایتا</span>
+  </a>
+  <a href="https://ble.ir/sahandlaser" target="_blank" rel="noopener noreferrer" class="floating-btn floating-btn-bale lang-fa-only" title="بله">
+    <i class="fa-solid fa-message"></i>
+    <span class="tooltip">بله</span>
+  </a>
+  <button onclick="openInquiry('', 'مشاوره رایگان')" class="floating-btn floating-btn-chat" title="مشاوره">
+    <i class="fa-solid fa-headset"></i>
+    <span class="tooltip">مشاوره رایگان</span>
+  </button>
+</div>
+
 <!-- ============ VIEW: HOME ============ -->
 <div id="view-home" class="view active">
-  <section class="relative overflow-hidden gradient-brand text-white">
-    <div class="absolute inset-0 opacity-10">
-      <i class="fa-solid fa-bolt-lightning absolute top-10 left-10 text-[180px]"></i>
-      <i class="fa-solid fa-gear absolute bottom-10 right-10 text-[180px]"></i>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-28">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/10">
-          <span class="w-2.5 h-2.5 bg-green-400 rounded-full pulse-dot"></span>
-          <span data-i18n="hero_badge">۱۳ سال تجربه • ۴ اختراع ملی • گارانتی ۱ ساله</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          <span data-i18n="hero_title_1">از ایده تا تولید،</span><br>
-          <span class="text-accent-light" data-i18n="hero_title_2">با مهندسی سهند لیزر</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed max-w-2xl" data-i18n="hero_desc">مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.</p>
-        <div class="flex flex-wrap gap-3">
-          <a onclick="navigateTo('products');return false;" class="px-7 py-3.5 bg-white text-brand font-semibold rounded-xl hover:bg-slate-100 transition-all flex items-center gap-2 cursor-pointer">
-            <i class="fa-solid fa-boxes-stacked"></i><span data-i18n="hero_btn_products">مشاهده محصولات</span>
-          </a>
-          <button onclick="openInquiry('', 'مشاوره رایگان')" class="px-7 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all flex items-center gap-2 shadow-xl">
-            <i class="fa-brands fa-whatsapp text-lg"></i><span data-i18n="hero_btn_consult">مشاوره رایگان</span>
-          </button>
-        </div>
-        <div class="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-white/10">
-          <div><div class="text-3xl font-bold text-accent-light">+۱۵۰</div><div class="text-sm text-slate-300 mt-1" data-i18n="hero_stat_1">دستگاه نصب‌شده</div></div>
-          <div><div class="text-3xl font-bold text-accent-light">۱۳+</div><div class="text-sm text-slate-300 mt-1" data-i18n="hero_stat_2">سال سابقه</div></div>
-          <div><div class="text-3xl font-bold text-accent-light">۵</div><div class="text-sm text-slate-300 mt-1" data-i18n="hero_stat_3">سال خدمات پس از فروش</div></div>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-slider">
+    <!-- Slide 1: Cutting -->
+    <div class="hero-slide active gradient-brand">
+      <div class="absolute inset-0 opacity-20" style="background-image: url('https://i.imgur.com/1NFYN59.jpeg'); background-size: cover; background-position: center;"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.4) 100%);"></div>
+      <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
+        <div class="hero-slide-content">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4 border border-white/20">
+            <span class="w-2.5 h-2.5 bg-green-400 rounded-full pulse-dot"></span>
+            <span data-i18n="slide1_tag">پرفروش‌ترین دستگاه</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4" data-i18n="slide1_title">دستگاه برش لیزر فایبر CNC</h1>
+          <p class="text-lg md:text-xl text-slate-200 mb-6 max-w-xl" data-i18n="slide1_desc">برش دقیق و پرسرعت ورق‌های فلزی با توان ۱ تا ۱۲ کیلووات</p>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="navigateTo('products')" class="px-6 py-3 bg-white text-brand font-bold rounded-xl hover:bg-slate-100 transition-all">
+              <i class="fa-solid fa-boxes-stacked"></i> <span data-i18n="view_products">مشاهده محصولات</span>
+            </button>
+            <button onclick="openInquiry('', 'برش لیزر')" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta_inquiry">استعلام قیمت</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Slide 2: Welding -->
+    <div class="hero-slide gradient-brand">
+      <div class="absolute inset-0 opacity-20" style="background-image: url('https://sahandlaser.com/wp-content/uploads/2026/09/MG_4100-scaled.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(127,21,21,.8) 0%, rgba(0,0,0,.4) 100%);"></div>
+      <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
+        <div class="hero-slide-content">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4 border border-white/20">
+            <i class="fa-solid fa-fire-flame-curved text-red-300"></i>
+            <span data-i18n="slide2_tag">سه‌کاره: جوش، برش، تمیزکاری</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4" data-i18n="slide2_title">جوشکار لیزری دستی فیبر</h1>
+          <p class="text-lg md:text-xl text-slate-200 mb-6 max-w-xl" data-i18n="slide2_desc">سبک، پرتابل، با خنک‌کننده هواخنک — مناسب کارهای میدانی</p>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="showProduct('WL-001')" class="px-6 py-3 bg-white text-brand font-bold rounded-xl hover:bg-slate-100 transition-all">
+              <i class="fa-solid fa-eye"></i> <span data-i18n="view_details">مشاهده جزئیات</span>
+            </button>
+            <button onclick="openInquiry('WL-001', 'جوشکار لیزری')" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta_inquiry">استعلام قیمت</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3: Downloads -->
+    <div class="hero-slide gradient-brand">
+      <div class="absolute inset-0 opacity-20"><i class="fa-solid fa-download absolute top-20 right-20 text-[300px] text-white"></i></div>
+      <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
+        <div class="hero-slide-content">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4 border border-white/20">
+            <i class="fa-solid fa-download text-accent-light"></i>
+            <span data-i18n="slide3_tag">دانلود رایگان</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4" data-i18n="slide3_title">دانلود نرم‌افزار CypCut</h1>
+          <p class="text-lg md:text-xl text-slate-200 mb-6 max-w-xl" data-i18n="slide3_desc">۴ نسخه مختلف نرم‌افزار CypCut به‌صورت رایگان</p>
+          <button onclick="navigateTo('downloads')" class="px-6 py-3 bg-white text-brand font-bold rounded-xl hover:bg-slate-100 transition-all">
+            <i class="fa-solid fa-download"></i> <span data-i18n="go_downloads">مشاهده و دانلود</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4: Repairs -->
+    <div class="hero-slide" style="background: linear-gradient(135deg, rgb(var(--accent-dark)) 0%, rgb(var(--brand-dark)) 50%, rgb(var(--accent-dark)) 100%);">
+      <div class="absolute inset-0 opacity-10"><i class="fa-solid fa-screwdriver-wrench absolute top-20 left-20 text-[300px] text-white"></i></div>
+      <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
+        <div class="hero-slide-content">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full text-sm mb-4 border border-white/20">
+            <i class="fa-solid fa-shield-halved text-accent-light"></i>
+            <span data-i18n="slide4_tag">پشتیبانی تخصصی همه برندها</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4" data-i18n="slide4_title">دستگاه را از ما نخریدید؟ مشکلی نیست.</h1>
+          <p class="text-lg md:text-xl text-slate-200 mb-6 max-w-xl" data-i18n="slide4_desc">تعمیر، سرویس و پشتیبانی همه برندهای لیزر فایبر</p>
+          <a href="tel:+989198023032" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-brand font-bold rounded-xl hover:bg-slate-100 transition-all">
+            <i class="fa-solid fa-phone-volume text-accent"></i> <span data-i18n="repairs_cta_call">تماس فوری با پشتیبانی</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Nav -->
+    <button class="hero-nav prev" onclick="slideNav(-1)" aria-label="قبلی"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="hero-nav next" onclick="slideNav(1)" aria-label="بعدی"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="hero-dots" id="hero-dots"></div>
   </section>
 
+  <!-- TRUST BAR -->
   <section class="py-6 bg-slate-100 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800">
     <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-sm text-slate-600 dark:text-slate-400">
       <div class="flex items-center gap-2"><i class="fa-solid fa-award text-accent"></i> <span data-i18n="trust_1">۴ اختراع ثبت‌شده ملی</span></div>
-      <div class="flex items-center gap-2"><i class="fa-solid fa-globe text-accent"></i> <span data-i18n="trust_2">همکاری با سازندگان چین و اروپا</span></div>
+      <div class="flex items-center gap-2"><i class="fa-solid fa-globe text-accent"></i> <span data-i18n="trust_2">همکاری با چین و اروپا</span></div>
       <div class="flex items-center gap-2"><i class="fa-solid fa-wrench text-accent"></i> <span data-i18n="trust_3">نصب و آموزش رایگان</span></div>
       <div class="flex items-center gap-2"><i class="fa-solid fa-headset text-accent"></i> <span data-i18n="trust_4">پشتیبانی ۷ روز هفته</span></div>
     </div>
@@ -305,7 +430,7 @@
         </a>
         <a onclick="navigateTo('downloads');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
           <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-download"></i></div>
-          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_downloads">دانلود نرم‌افزار</div>
+          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_downloads">دانلود</div>
         </a>
         <a onclick="navigateTo('contact');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
           <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-headset"></i></div>
@@ -327,6 +452,211 @@
         <a onclick="navigateTo('products');return false;" class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all cursor-pointer">
           <span data-i18n="view_all_products">مشاهده همه محصولات</span> <i class="fa-solid fa-arrow-left"></i>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SMART SOLUTION FORM ===== -->
+  <section class="py-16" style="background: linear-gradient(135deg, rgb(var(--brand)) 0%, rgb(var(--brand-dark)) 100%);">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center text-white mb-8">
+        <span class="inline-block px-4 py-1.5 bg-white/10 backdrop-blur rounded-full text-sm mb-3 border border-white/20" data-i18n="solution_tag">راهکار هوشمند</span>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3" data-i18n="solution_title">راهکار مناسب کسب‌وکار خود را دریافت کنید</h2>
+        <p class="text-slate-200 max-w-2xl mx-auto" data-i18n="solution_desc">با تکمیل فرم زیر، کارشناسان ما در کمتر از ۲۴ ساعت بهترین راهکار را به شما پیشنهاد می‌دهند.</p>
+      </div>
+      <form id="solution-form" class="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-8 shadow-2xl space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="sol-machine" class="form-label" data-i18n="sol_machine">نوع دستگاه مورد نیاز <span class="text-red-500">*</span></label>
+            <select id="sol-machine" required class="form-input">
+              <option value="" data-i18n="sol_select">— انتخاب کنید —</option>
+              <option value="برش لیزر" data-i18n="cat_cutting">دستگاه‌های برش</option>
+              <option value="جوش لیزر" data-i18n="cat_welding">دستگاه‌های جوش</option>
+              <option value="حکاکی لیزر" data-i18n="cat_marking">دستگاه‌های حکاکی</option>
+              <option value="تمیزکاری لیزر" data-i18n="cat_cleaning">دستگاه‌های تمیزکاری</option>
+              <option value="سورس لیزر" data-i18n="cat_source">سورس لیزر</option>
+              <option value="هد و کنترلر" data-i18n="cat_head">کنترلر و هد</option>
+              <option value="قطعات یدکی" data-i18n="cat_parts">قطعات دستگاه</option>
+              <option value="نامشخص" data-i18n="sol_unknown">نمی‌دانم / مشاوره</option>
+            </select>
+          </div>
+          <div>
+            <label for="sol-industry" class="form-label" data-i18n="sol_industry">زمینه کاری شما <span class="text-red-500">*</span></label>
+            <select id="sol-industry" required class="form-input">
+              <option value="" data-i18n="sol_select">— انتخاب کنید —</option>
+              <option value="آسانسورسازی">آسانسورسازی و تابلو برق</option>
+              <option value="آشپزخانه صنعتی">آشپزخانه صنعتی</option>
+              <option value="خودروسازی">خودروسازی</option>
+              <option value="دکوراسیون">دکوراسیون و نما</option>
+              <option value="طلا و جواهر">طلا و جواهرسازی</option>
+              <option value="پزشکی">تجهیزات پزشکی</option>
+              <option value="صنایع سنگین">صنایع سنگین</option>
+              <option value="تبلیغات">تبلیغات</option>
+              <option value="سایر">سایر</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="sol-budget" class="form-label" data-i18n="sol_budget">بودجه تقریبی (اختیاری)</label>
+            <select id="sol-budget" class="form-input">
+              <option value="" data-i18n="sol_select">— انتخاب کنید —</option>
+              <option value="زیر ۱ میلیارد تومان">زیر ۱ میلیارد تومان</option>
+              <option value="۱ تا ۳ میلیارد تومان">۱ تا ۳ میلیارد تومان</option>
+              <option value="۳ تا ۵ میلیارد تومان">۳ تا ۵ میلیارد تومان</option>
+              <option value="بالای ۵ میلیارد تومان">بالای ۵ میلیارد تومان</option>
+              <option value="نمی‌دانم">نمی‌دانم</option>
+            </select>
+          </div>
+          <div>
+            <label for="sol-contact" class="form-label" data-i18n="sol_contact">شماره تماس یا ایمیل <span class="text-red-500">*</span></label>
+            <input type="text" id="sol-contact" required class="form-input" dir="ltr" placeholder="09xxxxxxxxx یا email">
+          </div>
+        </div>
+        <div>
+          <label for="sol-requirements" class="form-label" data-i18n="sol_requirements">نیازها و توضیحات شما <span class="text-red-500">*</span></label>
+          <textarea id="sol-requirements" required rows="4" maxlength="1000" class="form-input resize-none" placeholder="مثلاً: برای برش ورق استیل ۳ میلی‌متری با ابعاد ۳۰۰۰×۱۵۰۰، روزانه حدود ۸ ساعت کار..."></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg">
+          <i class="fa-solid fa-lightbulb"></i><span data-i18n="sol_submit">دریافت راهکار رایگان</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / WHY US ===== -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 items-center mb-12">
+        <div>
+          <span class="text-accent font-semibold text-sm" data-i18n="about_tag">درباره سهند لیزر</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="about_title_short">ما فقط فروشنده دستگاه نیستیم — نگهبان خط تولید شما هستیم.</h2>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6" data-i18n="about_desc_home">با تکیه بر دانش نخبگان داخلی و همکاری با بزرگ‌ترین سازندگان جهانی در چین و اروپا، راهکارهای دقیق، سریع و مقرون‌به‌صرفه ارائه می‌دهیم.</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 text-center">
+              <div class="text-3xl font-extrabold text-accent">+۱۵۰</div>
+              <div class="text-xs text-slate-500 mt-1" data-i18n="stat_installs">دستگاه نصب‌شده</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 text-center">
+              <div class="text-3xl font-extrabold text-accent">۱۳+</div>
+              <div class="text-xs text-slate-500 mt-1" data-i18n="stat_years">سال تجربه</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 text-center">
+              <div class="text-3xl font-extrabold text-accent">۴</div>
+              <div class="text-xs text-slate-500 mt-1" data-i18n="stat_patents">اختراع ملی</div>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 text-center">
+              <div class="text-3xl font-extrabold text-accent">۹۸٪</div>
+              <div class="text-xs text-slate-500 mt-1" data-i18n="stat_satisfaction">رضایت مشتریان</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500" alt="کارگاه سهند لیزر" class="rounded-2xl w-full h-56 object-cover shadow-lg" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1565439396-cb0af0e4c8b1?w=500" alt="تیم فنی" class="rounded-2xl w-full h-56 object-cover mt-8 shadow-lg" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500" alt="نصب دستگاه" class="rounded-2xl w-full h-56 object-cover -mt-4 shadow-lg" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500" alt="مونتاژ" class="rounded-2xl w-full h-56 object-cover mt-4 shadow-lg" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-bold text-center text-brand dark:text-white mb-8" data-i18n="timeline_title">مسیر رشد سهند لیزر</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="text-accent font-bold text-lg mb-1">۱۳۹۰</div>
+              <div class="font-semibold text-brand dark:text-white mb-1" data-i18n="tl_1390_t">تأسیس شرکت</div>
+              <p class="text-sm text-slate-500" data-i18n="tl_1390_d">شروع فعالیت در زمینه لیزر فایبر و CNC</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="text-accent font-bold text-lg mb-1">۱۳۹۵</div>
+              <div class="font-semibold text-brand dark:text-white mb-1" data-i18n="tl_1395_t">توسعه خط تولید</div>
+              <p class="text-sm text-slate-500" data-i18n="tl_1395_d">راه‌اندازی خط مونتاژ داخلی</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="text-accent font-bold text-lg mb-1">۱۴۰۰</div>
+              <div class="font-semibold text-brand dark:text-white mb-1" data-i18n="tl_1400_t">ثبت ۴ اختراع ملی</div>
+              <p class="text-sm text-slate-500" data-i18n="tl_1400_d">تقدیر توسط بنیاد ملی نخبگان</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="text-accent font-bold text-lg mb-1">۱۴۰۳</div>
+              <div class="font-semibold text-brand dark:text-white mb-1" data-i18n="tl_1403_t">+۱۵۰ نصب موفق</div>
+              <p class="text-sm text-slate-500" data-i18n="tl_1403_d">در کارگاه‌های صنعتی سراسر ایران</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / CUSTOMER VISITS ===== -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-accent font-semibold text-sm" data-i18n="projects_tag">نمونه‌کارها</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="projects_title">پروژه‌ها و بازدید مشتریان</h2>
+        <p class="text-slate-500" data-i18n="projects_desc">بخشی از افتخارات ما در همکاری با صنایع مختلف</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1565439396-cb0af0e4c8b1?w=500" alt="نصب در اصفهان" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-calendar"></i> ۱۴۰۲ — اصفهان</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_1_t">نصب دستگاه برش لیزر در صنعت آسانسور</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_1_d">نصب و راه‌اندازی دستگاه برش فایبر ۶ کیلووات برای برش ورق‌های استیل تابلو برق</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500" alt="نصب در تهران" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-calendar"></i> ۱۴۰۲ — تهران</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_2_t">راه‌اندازی خط جوش لیزر دستی</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_2_d">راه‌اندازی خط تولید جوش لیزر برای کارگاه قطعه‌سازی خودرو</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500" alt="بازدید مشتری ترکیه" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-globe"></i> ۱۴۰۳ — بازدید ترکیه</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_3_t">بازدید مشتریان ترکیه از کارخانه</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_3_d">بازدید و تست دستگاه‌های برش و جوش لیزر توسط هیئت تجاری ترکیه</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=500" alt="حکاکی در قم" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-calendar"></i> ۱۴۰۳ — قم</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_4_t">حکاکی صنعتی در صنعت طلا</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_4_d">نصب دستگاه حکاکی فایبر ۵۰ وات با روتاری برای صنعت طلا و جواهر</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500" alt="تعمیرات" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-tools"></i> ۱۴۰۳ — شیراز</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_5_t">تعمیر سورس لیزر برند دیگر</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_5_d">تعمیر تخصصی سورس لیزر ۳۰۰۰ وات از برند رقیب در کمتر از ۲ روز</p>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+          <img src="https://images.unsplash.com/photo-1565439396-cb0af0e4c8b1?w=500" alt="نصب مشهد" class="w-full h-48 object-cover" loading="lazy">
+          <div class="p-5">
+            <div class="flex items-center gap-2 text-xs text-slate-500 mb-2"><i class="fa-solid fa-globe"></i> ۱۴۰۲ — بازدید عراق</div>
+            <h3 class="font-bold text-brand dark:text-white mb-2" data-i18n="proj_6_t">مشتریان عراقی در کارخانه سهند</h3>
+            <p class="text-sm text-slate-500" data-i18n="proj_6_d">بازدید هیئت تجاری عراق و عقد قرارداد صادرات ۳ دستگاه برش لیزر</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -355,7 +685,7 @@
   </section>
 </div>
 
-<!-- VIEW: ABOUT -->
+<!-- ✅ **ادامه کد در پیام بعدی...** --><!-- ============ VIEW: ABOUT ============ -->
 <div id="view-about" class="view">
   <main class="max-w-5xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>درباره ما</span></nav>
@@ -390,7 +720,7 @@
   </main>
 </div>
 
-<!-- VIEW: PRODUCTS -->
+<!-- ============ VIEW: PRODUCTS ============ -->
 <div id="view-products" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>محصولات</span></nav>
@@ -405,7 +735,7 @@
   </main>
 </div>
 
-<!-- VIEW: SERVICES -->
+<!-- ============ VIEW: SERVICES ============ -->
 <div id="view-services" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>خدمات</span></nav>
@@ -413,48 +743,11 @@
       <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3" data-i18n="services_full_title">خدمات تخصصی سهند لیزر</h1>
       <p class="text-slate-500" data-i18n="services_full_desc">از نصب و راه‌اندازی تا تعمیرات اساسی و آموزش کاربران</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"><i class="fa-solid fa-truck-fast"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_install">نصب و راه‌اندازی</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_install_desc">نصب حرفه‌ای دستگاه در محل شما، همراه با کالیبراسیون و تست کامل.</p>
-        <button onclick="openInquiry('', 'درخواست نصب')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"><i class="fa-solid fa-microchip"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_source_repair">تعمیر سورس و هد لیزر</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_source_repair_desc">تعمیر تخصصی سورس‌های Raycus، Max، JPT و IPG و هدهای برش/جوش.</p>
-        <button onclick="openInquiry('', 'درخواست تعمیر سورس/هد')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_machine_repair">تعمیر دستگاه</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_machine_repair_desc">عیب‌یابی و تعمیر کامل دستگاه‌های لیزر فایبر، تعویض قطعات و بازسازی.</p>
-        <button onclick="openInquiry('', 'درخواست تعمیر دستگاه')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_training">آموزش و پشتیبانی</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_training_desc">آموزش کاربران تا حد تسلط کامل + پشتیبانی مستمر و بازدید دوره‌ای.</p>
-        <button onclick="openInquiry('', 'درخواست آموزش')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400"><i class="fa-solid fa-boxes-packing"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_parts">تأمین قطعات یدکی</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_parts_desc">تأمین و ارسال سریع قطعات یدکی اصلی و اورجینال برای همه برندها.</p>
-        <button onclick="openInquiry('', 'درخواست قطعات یدکی')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-      <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
-        <div class="feature-icon-box bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400"><i class="fa-solid fa-lightbulb"></i></div>
-        <h3 class="font-bold text-lg text-brand dark:text-white mb-2" data-i18n="svc_consult">مشاوره تخصصی</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4" data-i18n="svc_consult_desc">مشاوره رایگان و تحلیل نیاز برای انتخاب بهترین دستگاه متناسب با کسب‌وکار شما.</p>
-        <button onclick="openInquiry('', 'درخواست مشاوره')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span data-i18n="request_service">درخواست خدمات</span><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="services-grid"></div>
   </main>
 </div>
 
-<!-- VIEW: APPLICATIONS -->
+<!-- ============ VIEW: APPLICATIONS ============ -->
 <div id="view-applications" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>کاربردها</span></nav>
@@ -466,7 +759,19 @@
   </main>
 </div>
 
-<!-- VIEW: TRAINING -->
+<!-- ============ VIEW: PROJECTS ============ -->
+<div id="view-projects" class="view">
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>نمونه‌کارها</span></nav>
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3" data-i18n="projects_title_full">پروژه‌ها و بازدید مشتریان</h1>
+      <p class="text-slate-500" data-i18n="projects_desc_full">بخشی از افتخارات ما در همکاری با صنایع مختلف و بازدید مشتریان خارجی</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="projects-grid"></div>
+  </main>
+</div>
+
+<!-- ============ VIEW: TRAINING ============ -->
 <div id="view-training" class="view">
   <main class="max-w-5xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>آموزش</span></nav>
@@ -501,14 +806,14 @@
   </main>
 </div>
 
-<!-- VIEW: DOWNLOADS -->
+<!-- ============ VIEW: DOWNLOADS ============ -->
 <div id="view-downloads" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>دانلود نرم‌افزار</span></nav>
     <div class="text-center max-w-2xl mx-auto mb-12">
       <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3"><i class="fa-solid fa-download"></i></span>
       <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3" data-i18n="dl_title">دانلود نرم‌افزار CypCut</h1>
-      <p class="text-slate-500" data-i18n="dl_desc">نرم‌افزارهای تخصصی کنترل دستگاه‌های برش لیزر فایبر فلزات. نسخه‌های مختلف CypCut به‌صورت رایگان.</p>
+      <p class="text-slate-500" data-i18n="dl_desc">نرم‌افزارهای تخصصی کنترل دستگاه‌های برش لیزر فایبر فلزات.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 card-hover">
@@ -568,11 +873,10 @@
         </div>
       </div>
     </div>
-    <p class="text-center text-xs text-slate-500 mt-6"><i class="fa-solid fa-circle-info"></i> <span data-i18n="dl_note">همه نرم‌افزارها از Google Drive دانلود می‌شوند. برای راهنمای نصب با پشتیبانی تماس بگیرید.</span></p>
   </main>
 </div>
 
-<!-- VIEW: CONTACT -->
+<!-- ============ VIEW: CONTACT ============ -->
 <div id="view-contact" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>تماس</span></nav>
@@ -606,31 +910,9 @@
           <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-cart-shopping"></i></div>
           <h3 class="font-bold text-lg text-brand dark:text-white">فروش، پشتیبانی و مالی</h3>
         </div>
-        <div class="space-y-1">
-          <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5">
-            <div><div class="text-xs text-slate-500">فروش — آقای ابطحی</div><div class="text-sm font-semibold" dir="ltr">0913-386-2673</div></div>
-            <div class="contact-actions"><a href="tel:+989133862673" class="btn-call"><i class="fa-solid fa-phone"></i></a><a href="https://wa.me/989133862673" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i></a><a href="https://t.me/+989133862673" target="_blank" class="btn-tg"><i class="fa-brands fa-telegram"></i></a></div>
-          </div>
-          <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5">
-            <div><div class="text-xs text-slate-500">فروش — آقای بلیغ</div><div class="text-sm font-semibold" dir="ltr">0912-585-5548</div></div>
-            <div class="contact-actions"><a href="tel:+989125855548" class="btn-call"><i class="fa-solid fa-phone"></i></a><a href="https://wa.me/989125855548" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i></a><a href="https://t.me/+989125855548" target="_blank" class="btn-tg"><i class="fa-brands fa-telegram"></i></a></div>
-          </div>
-          <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5">
-            <div><div class="text-xs text-slate-500">تعمیرات — آقای بهرامی</div><div class="text-sm font-semibold" dir="ltr">0919-802-3032</div></div>
-            <div class="contact-actions"><a href="tel:+989198023032" class="btn-call"><i class="fa-solid fa-phone"></i></a><a href="https://wa.me/989198023032" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i></a><a href="https://t.me/+989198023032" target="_blank" class="btn-tg"><i class="fa-brands fa-telegram"></i></a></div>
-          </div>
-          <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5">
-            <div><div class="text-xs text-slate-500">برش لیزر — آقای شیری</div><div class="text-sm font-semibold" dir="ltr">0913-186-3032</div></div>
-            <div class="contact-actions"><a href="tel:+989131863032" class="btn-call"><i class="fa-solid fa-phone"></i></a><a href="https://wa.me/989131863032" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i></a><a href="https://t.me/+989131863032" target="_blank" class="btn-tg"><i class="fa-brands fa-telegram"></i></a></div>
-          </div>
-          <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5">
-            <div><div class="text-xs text-slate-500">حسابداری — خانم زمانی</div><div class="text-sm font-semibold" dir="ltr">0913-735-3032</div></div>
-            <div class="contact-actions"><a href="tel:+989137353032" class="btn-call"><i class="fa-solid fa-phone"></i></a><a href="https://wa.me/989137353032" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i></a></div>
-          </div>
-        </div>
+        <div class="space-y-1" id="contact-list"></div>
       </div>
     </div>
-    <!-- International form -->
     <div class="max-w-3xl mx-auto bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8">
       <div class="text-center mb-6">
         <span class="text-accent font-semibold text-sm">🌍 مشتریان بین‌المللی</span>
@@ -671,7 +953,7 @@
   </main>
 </div>
 
-<!-- VIEW: PRODUCT DETAIL -->
+<!-- ============ VIEW: PRODUCT DETAIL ============ -->
 <div id="view-product" class="view">
   <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
     <nav class="flex items-center justify-between gap-4 mb-6 flex-wrap">
@@ -699,7 +981,7 @@
         <div class="grid grid-cols-2 gap-3 mb-6" id="product-advantages"></div>
 
         <div class="flex flex-wrap gap-3 mb-8">
-          <button id="wa-cta" onclick="openInquiry(currentProductId, document.getElementById('product-title').textContent)" class="flex-1 min-w-[180px] px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg">
+          <button onclick="openInquiry(currentProductId, document.getElementById('product-title').textContent)" class="flex-1 min-w-[180px] px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg">
             <i class="fa-brands fa-whatsapp text-xl"></i><span data-i18n="cta_inquiry">استعلام قیمت</span>
           </button>
           <a href="tel:+989125855548" class="px-6 py-4 border-2 border-brand dark:border-white hover:bg-brand dark:hover:bg-white/10 text-brand dark:text-white font-semibold rounded-xl transition-all flex items-center gap-2">
@@ -761,7 +1043,7 @@
   </main>
 </div>
 
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer class="bg-brand-dark text-slate-400 pt-14 pb-6 mt-12">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid md:grid-cols-4 gap-8 mb-10">
@@ -771,7 +1053,13 @@
           <div><div class="font-bold text-white">فناوران پرتو لیزر سهند</div><div class="text-[10px] tracking-widest">SAHAND LASER</div></div>
         </div>
         <p class="text-sm leading-relaxed mb-4">مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.</p>
-        <p class="text-xs text-slate-500">اصفهان، خیابان خیام، عطاءالملک، بلوک ۲۴، پلاک ۳۳</p>
+        <p class="text-xs text-slate-500 mb-4">اصفهان، خیابان خیام، عطاءالملک، بلوک ۲۴، پلاک ۳۳</p>
+        <div class="flex gap-2">
+          <a href="https://wa.me/989125855548" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-green-500 flex items-center justify-center transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://eitaa.com/sahandlaser_sale" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-orange-500 flex items-center justify-center transition-all lang-fa-only"><i class="fa-solid fa-comment-dots"></i></a>
+          <a href="https://ble.ir/sahandlaser_sale" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-violet-500 flex items-center justify-center transition-all lang-fa-only"><i class="fa-solid fa-message"></i></a>
+          <a href="https://instagram.com/sahandlaser" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-pink-500 flex items-center justify-center transition-all"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
       <div>
         <div class="font-bold text-white mb-4">لینک‌های سریع</div>
@@ -779,6 +1067,7 @@
           <li><a onclick="navigateTo('products');return false;" class="hover:text-accent-light cursor-pointer">محصولات</a></li>
           <li><a onclick="navigateTo('services');return false;" class="hover:text-accent-light cursor-pointer">خدمات</a></li>
           <li><a onclick="navigateTo('downloads');return false;" class="hover:text-accent-light cursor-pointer">دانلود نرم‌افزار</a></li>
+          <li><a onclick="navigateTo('projects');return false;" class="hover:text-accent-light cursor-pointer">نمونه‌کارها</a></li>
           <li><a onclick="navigateTo('about');return false;" class="hover:text-accent-light cursor-pointer">درباره ما</a></li>
           <li><a onclick="navigateTo('contact');return false;" class="hover:text-accent-light cursor-pointer">تماس</a></li>
         </ul>
@@ -788,15 +1077,16 @@
         <ul class="space-y-2 text-sm">
           <li><i class="fa-solid fa-phone text-accent ml-2"></i> 031-31320012-3</li>
           <li><i class="fa-solid fa-mobile-screen text-accent ml-2"></i> 0912-585-5548</li>
+          <li><i class="fa-solid fa-mobile-screen text-accent ml-2"></i> 0913-386-2673</li>
           <li><i class="fa-solid fa-globe text-accent ml-2"></i> sahandlaser.com</li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-6 text-center text-sm">© ۱۴۰۳ فناوران پرتو لیزر سهند</div>
+    <div class="border-t border-slate-800 pt-6 text-center text-sm">© ۱۴۰۳ فناوران پرتو لیزر سهند — تمام حقوق محفوظ است.</div>
   </div>
 </footer>
 
-<!-- MODAL: INQUIRY -->
+<!-- ============ MODAL: INQUIRY ============ -->
 <div id="inquiry-modal" class="modal-overlay" onclick="if(event.target===this) closeInquiry()">
   <div class="modal-box">
     <div class="modal-header">
@@ -834,23 +1124,102 @@
   </div>
 </div>
 
+<!-- ============ CHAT POPUP WIDGET ============ -->
+<div id="chat-widget" class="fixed bottom-6 right-6 z-[95] transition-all duration-500" style="transform: translateY(150%);">
+  <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden w-80 max-w-[calc(100vw-3rem)]">
+    <!-- Header -->
+    <div class="gradient-brand p-4 text-white flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+        <i class="fa-solid fa-headset"></i>
+      </div>
+      <div class="flex-1">
+        <div class="font-bold text-sm">پشتیبانی سهند لیزر</div>
+        <div class="text-xs text-green-300 flex items-center gap-1">
+          <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+          <span>آنلاین — پاسخ سریع</span>
+        </div>
+      </div>
+      <button onclick="closeChatWidget()" class="w-8 h-8 rounded-lg hover:bg-white/10 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <!-- Body -->
+    <div class="p-4 bg-slate-50 dark:bg-slate-950" id="chat-body">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-3 mb-3 border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="text-sm leading-relaxed" id="chat-message">
+          سلام! 👋<br>
+          به سهند لیزر خوش آمدید.<br>
+          چطور می‌تونیم کمکتون کنیم؟<br>
+          <span class="text-xs text-slate-500 mt-2 block">برای شروع گفتگو، پیام خود را در کادر زیر بنویسید.</span>
+        </div>
+      </div>
+      <div class="space-y-2">
+        <input type="text" id="chat-input" class="w-full px-3 py-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm focus:border-accent outline-none" placeholder="پیام خود را بنویسید...">
+        <button onclick="sendChatToWhatsApp()" class="w-full py-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg text-sm transition-all flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>ارسال به واتساپ</span>
+        </button>
+        <!-- Eitaa/Bale buttons (فقط فارسی) -->
+        <div class="grid grid-cols-2 gap-2 lang-fa-only">
+          <button onclick="sendChatToEitaa()" class="py-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg text-xs transition-all flex items-center justify-center gap-1">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span>ایتا</span>
+          </button>
+          <button onclick="sendChatToBale()" class="py-2 bg-violet-500 hover:bg-violet-600 text-white font-semibold rounded-lg text-xs transition-all flex items-center justify-center gap-1">
+            <i class="fa-solid fa-message"></i>
+            <span>بله</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
 <script>
 // ==================================================
 // [HELPERS]
 // ==================================================
 function escapeHtml(str) { const d = document.createElement('div'); d.textContent = String(str ?? ''); return d.innerHTML; }
-const Storage = { get(k, f = null) { try { return localStorage.getItem(k) ?? f; } catch (e) { return f; } }, set(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } } };
+const Storage = { get(k, f = null) { try { return localStorage.getItem(k) ?? f; } catch(e) { return f; } }, set(k, v) { try { localStorage.setItem(k, v); return true; } catch(e) { return false; } } };
 
 // ==================================================
-// [TRANSLATIONS - فشرده]
+// [CONTACTS DATA]
+// ==================================================
+const contacts = {
+  sales: [
+    { name: 'آقای ابطحی', label: 'فروش', phone: '989133862673', telegram: '989133862673' },
+    { name: 'آقای بلیغ', label: 'فروش', phone: '989125855548', telegram: '989125855548' }
+  ],
+  support: [
+    { name: 'آقای بهرامی', label: 'تعمیرات', phone: '989198023032', telegram: '989198023032' },
+    { name: 'آقای شیری', label: 'برش لیزر', phone: '989131863032', telegram: '989131863032' }
+  ],
+  finance: [
+    { name: 'خانم زمانی', label: 'حسابداری', phone: '989137353032' }
+  ]
+};
+
+// ==================================================
+// [TRANSLATIONS]
 // ==================================================
 const T = {
-  fa: { brand:'سهند لیزر', nav_home:'خانه', nav_about:'درباره ما', nav_products:'محصولات', nav_services:'خدمات', nav_applications:'کاربردها', nav_training:'آموزش', nav_downloads:'دانلود', nav_contact:'تماس', cta_inquiry:'استعلام قیمت', cta_call:'تماس',
-    hero_badge:'۱۳ سال تجربه • ۴ اختراع ملی • گارانتی ۱ ساله', hero_title_1:'از ایده تا تولید،', hero_title_2:'با مهندسی سهند لیزر', hero_desc:'مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.', hero_btn_products:'مشاهده محصولات', hero_btn_consult:'مشاوره رایگان', hero_stat_1:'دستگاه نصب‌شده', hero_stat_2:'سال سابقه', hero_stat_3:'سال خدمات پس از فروش',
+  fa: { brand:'سهند لیزر', nav_home:'خانه', nav_about:'درباره ما', nav_products:'محصولات', nav_services:'خدمات', nav_applications:'کاربردها', nav_projects:'نمونه‌کارها', nav_training:'آموزش', nav_downloads:'دانلود', nav_contact:'تماس', cta_inquiry:'استعلام قیمت', cta_call:'تماس',
+    hero_badge:'۱۳ سال تجربه • ۴ اختراع ملی • گارانتی ۱ ساله', theme_label:'تم رنگی:',
+    slide1_tag:'پرفروش‌ترین دستگاه', slide1_title:'دستگاه برش لیزر فایبر CNC', slide1_desc:'برش دقیق و پرسرعت ورق‌های فلزی با توان ۱ تا ۱۲ کیلووات',
+    slide2_tag:'سه‌کاره: جوش، برش، تمیزکاری', slide2_title:'جوشکار لیزری دستی فیبر', slide2_desc:'سبک، پرتابل، با خنک‌کننده هواخنک — مناسب کارهای میدانی',
+    slide3_tag:'دانلود رایگان', slide3_title:'دانلود نرم‌افزار CypCut', slide3_desc:'۴ نسخه مختلف نرم‌افزار CypCut به‌صورت رایگان',
+    slide4_tag:'پشتیبانی تخصصی همه برندها', slide4_title:'دستگاه را از ما نخریدید؟ مشکلی نیست.', slide4_desc:'تعمیر، سرویس و پشتیبانی همه برندهای لیزر فایبر',
+    view_products:'مشاهده محصولات', view_details:'مشاهده جزئیات', go_downloads:'مشاهده و دانلود',
     trust_1:'۴ اختراع ثبت‌شده ملی', trust_2:'همکاری با چین و اروپا', trust_3:'نصب و آموزش رایگان', trust_4:'پشتیبانی ۷ روز هفته',
     quick_products:'محصولات', quick_services:'خدمات', quick_downloads:'دانلود', quick_contact:'تماس',
     products_tag:'محصولات ما', products_title:'راهکارهای کامل لیزر فایبر', products_full_title:'محصولات و تجهیزات', products_full_desc:'مجموعه کامل دستگاه‌ها، تجهیزات جانبی و قطعات', group_machines:'دستگاه‌های اصلی', group_components:'سورس، هد و قطعات', view_all_products:'مشاهده همه محصولات',
     cat_cutting:'دستگاه‌های برش', cat_cutting_desc:'برش دقیق ورق‌های فلزی. تک‌میز، کابین‌دار، روتاری، ربات.', cat_welding:'دستگاه‌های جوش', cat_welding_desc:'جوش لیزری پرسرعت. دستی، پایه، مینی، هواخنک، نقطه‌ای.', cat_marking:'دستگاه‌های حکاکی', cat_marking_desc:'حکاکی روی فلز و غیرفلز. میزی، پرتابل، UV و MOPA.', cat_cleaning:'دستگاه‌های تمیزکاری', cat_cleaning_desc:'حذف زنگ، رنگ و آلودگی بدون آسیب سطح.', cat_source:'سورس لیزر', cat_source_desc:'سورس‌های فایبر پالسی و پیوسته Raycus، Max، JPT، IPG.', cat_head:'کنترلر و هد لیزر', cat_head_desc:'هدهای برش/جوش اتوفوکوس Raytools، Ospri و کنترلر CNC.', cat_parts:'قطعات دستگاه لیزر', cat_parts_desc:'چیلر، کمپرسور، دوئر، سرووموتور و تجهیزات جانبی.', cat_consumables:'قطعات مصرفی', cat_consumables_desc:'نازل، لنز، گالوانومتر و قطعات مصرفی هد.', view_models:'مشاهده مدل‌ها', coming_soon:'به‌زودی',
+    solution_tag:'راهکار هوشمند', solution_title:'راهکار مناسب کسب‌وکار خود را دریافت کنید', solution_desc:'با تکمیل فرم زیر، کارشناسان ما در کمتر از ۲۴ ساعت بهترین راهکار را به شما پیشنهاد می‌دهند.',
+    sol_machine:'نوع دستگاه مورد نیاز', sol_industry:'زمینه کاری شما', sol_budget:'بودجه تقریبی (اختیاری)', sol_contact:'شماره تماس یا ایمیل', sol_requirements:'نیازها و توضیحات شما', sol_submit:'دریافت راهکار رایگان', sol_select:'— انتخاب کنید —', sol_unknown:'نمی‌دانم / مشاوره',
+    about_tag:'درباره سهند لیزر', about_title_short:'ما فقط فروشنده دستگاه نیستیم — نگهبان خط تولید شما هستیم.', about_desc_home:'با تکیه بر دانش نخبگان داخلی و همکاری با بزرگ‌ترین سازندگان جهانی در چین و اروپا، راهکارهای دقیق، سریع و مقرون‌به‌صرفه ارائه می‌دهیم.',
+    stat_installs:'دستگاه نصب‌شده', stat_years:'سال تجربه', stat_patents:'اختراع ملی', stat_satisfaction:'رضایت مشتریان',
+    timeline_title:'مسیر رشد سهند لیزر', tl_1390_t:'تأسیس شرکت', tl_1390_d:'شروع فعالیت در زمینه لیزر فایبر و CNC', tl_1395_t:'توسعه خط تولید', tl_1395_d:'راه‌اندازی خط مونتاژ داخلی', tl_1400_t:'ثبت ۴ اختراع ملی', tl_1400_d:'تقدیر توسط بنیاد ملی نخبگان', tl_1403_t:'+۱۵۰ نصب موفق', tl_1403_d:'در کارگاه‌های صنعتی سراسر ایران',
+    projects_tag:'نمونه‌کارها', projects_title:'پروژه‌ها و بازدید مشتریان', projects_desc:'بخشی از افتخارات ما در همکاری با صنایع مختلف', projects_title_full:'پروژه‌ها و بازدید مشتریان', projects_desc_full:'بخشی از افتخارات ما در همکاری با صنایع مختلف و بازدید مشتریان خارجی',
+    proj_1_t:'نصب دستگاه برش لیزر در صنعت آسانسور', proj_1_d:'نصب و راه‌اندازی دستگاه برش فایبر ۶ کیلووات برای برش ورق‌های استیل تابلو برق', proj_2_t:'راه‌اندازی خط جوش لیزر دستی', proj_2_d:'راه‌اندازی خط تولید جوش لیزر برای کارگاه قطعه‌سازی خودرو', proj_3_t:'بازدید مشتریان ترکیه از کارخانه', proj_3_d:'بازدید و تست دستگاه‌های برش و جوش لیزر توسط هیئت تجاری ترکیه', proj_4_t:'حکاکی صنعتی در صنعت طلا', proj_4_d:'نصب دستگاه حکاکی فایبر ۵۰ وات با روتاری برای صنعت طلا و جواهر', proj_5_t:'تعمیر سورس لیزر برند دیگر', proj_5_d:'تعمیر تخصصی سورس لیزر ۳۰۰۰ وات از برند رقیب در کمتر از ۲ روز', proj_6_t:'مشتریان عراقی در کارخانه سهند', proj_6_d:'بازدید هیئت تجاری عراق و عقد قرارداد صادرات ۳ دستگاه برش لیزر',
     about_title:'درباره فناوران پرتو لیزر سهند', about_subtitle:'بیش از ۱۳ سال تجربه در صنعت لیزر ایران', about_story:'داستان ما', about_story_text:'شرکت فناوران پرتو لیزر سهند از سال ۱۳۹۰ فعالیت خود را در زمینه طراحی، ساخت، واردات و پشتیبانی دستگاه‌های لیزر فایبر و CNC آغاز کرد. ما با تکیه بر دانش نخبگان داخلی و همکاری مستمر با بزرگ‌ترین سازندگان جهانی در چین و اروپا، راهکارهای دقیق، سریع و مقرون‌به‌صرفه برای صنعت ایران فراهم کرده‌ایم.', about_mission:'ماموریت ما', about_mission_text:'ما معتقدیم یک شرکت لیزر تنها فروشنده دستگاه نیست؛ بلکه باید در تمام مراحل کنار مشتری باشد. از تحلیل رایگان نیاز، طراحی سفارشی، نصب و راه‌اندازی، آموزش کامل و پشتیبانی مادام‌العمر تا تأمین قطعات.', about_achievements:'افتخارات ما', about_patents:'اختراع ثبت‌شده ملی', about_installs:'دستگاه نصب‌شده', about_years:'سال تجربه', about_satisfaction:'رضایت مشتریان', about_contact_cta:'با ما در تماس باشید',
     services_full_title:'خدمات تخصصی سهند لیزر', services_full_desc:'از نصب و راه‌اندازی تا تعمیرات اساسی و آموزش کاربران',
     svc_install:'نصب و راه‌اندازی', svc_install_desc:'نصب حرفه‌ای دستگاه در محل شما، همراه با کالیبراسیون و تست کامل.', svc_source_repair:'تعمیر سورس و هد لیزر', svc_source_repair_desc:'تعمیر تخصصی سورس‌های Raycus، Max، JPT و IPG و هدهای برش/جوش.', svc_machine_repair:'تعمیر دستگاه', svc_machine_repair_desc:'عیب‌یابی و تعمیر کامل دستگاه‌های لیزر فایبر، تعویض قطعات و بازسازی.', svc_training:'آموزش و پشتیبانی', svc_training_desc:'آموزش کاربران تا حد تسلط کامل + پشتیبانی مستمر.', svc_parts:'تأمین قطعات یدکی', svc_parts_desc:'تأمین و ارسال سریع قطعات اصلی برای همه برندها.', svc_consult:'مشاوره تخصصی', svc_consult_desc:'مشاوره رایگان و تحلیل نیاز برای انتخاب بهترین دستگاه.', request_service:'درخواست خدمات',
@@ -860,362 +1229,131 @@ const T = {
     dl_title:'دانلود نرم‌افزار CypCut', dl_desc:'نرم‌افزارهای تخصصی کنترل دستگاه‌های برش لیزر فایبر فلزات.', dl_btn:'دانلود', dl_note:'همه نرم‌افزارها از Google Drive دانلود می‌شوند.',
     repairs_badge:'پشتیبانی تخصصی همه برندها', repairs_title_1:'دستگاه را از ما نخریدید؟', repairs_title_2:'مشکلی نیست — ما پشتیبانی‌تان می‌کنیم.', repairs_desc_short:'تیم فنی سهند لیزر آماده است تا انواع دستگاه‌های لیزر فایبر را تعمیر، سرویس و پشتیبانی کند.', repairs_cta_call:'تماس فوری با پشتیبانی', repairs_cta_wa:'واتساپ پشتیبانی',
     contact_title:'آماده همکاری با شما هستیم', contact_desc:'همه شماره‌ها با لینک تماس، واتساپ و تلگرام',
-    badge_360:'۳۶۰ درجه', spin_hint:'موس را بچرخانید', tab_specs:'مشخصات فنی', tab_usage:'کاربردها', tab_models:'مدل‌ها', tab_desc:'توضیحات',
-    comment_submit:'ارسال نظر', comment_success:'نظر شما با موفقیت ثبت شد!', comment_error:'لطفاً نام و متن نظر را وارد کنید.', no_comments:'هنوز نظری ثبت نشده.',
+    badge_360:'۳۶۰ درجه', spin_hint:'موس را بچرخانید', comment_submit:'ارسال نظر', comment_success:'نظر شما با موفقیت ثبت شد!', comment_error:'لطفاً نام و متن نظر را وارد کنید.', no_comments:'هنوز نظری ثبت نشده.',
     theme_navy:'سرمه‌ای', theme_teal:'فیروزه‌ای', theme_gold:'طلایی', theme_purple:'بنفش', theme_emerald:'زمرد', theme_cyan:'سیان', product_not_found:'این محصول یافت نشد.' },
-  en: { brand:'Sahand Laser', nav_home:'Home', nav_about:'About', nav_products:'Products', nav_services:'Services', nav_applications:'Applications', nav_training:'Training', nav_downloads:'Downloads', nav_contact:'Contact', cta_inquiry:'Get Quote', cta_call:'Call',
-    hero_badge:'13 Years • 4 Patents • 1-Year Warranty', hero_title_1:'From Idea to Production,', hero_title_2:'With Sahand Laser Engineering', hero_desc:'Specialized center for fiber laser sales and service in Iran.', hero_btn_products:'View Products', hero_btn_consult:'Free Consultation', hero_stat_1:'Installed', hero_stat_2:'Years', hero_stat_3:'Years After-Sales',
+  en: { brand:'Sahand Laser', nav_home:'Home', nav_about:'About', nav_products:'Products', nav_services:'Services', nav_applications:'Applications', nav_projects:'Projects', nav_training:'Training', nav_downloads:'Downloads', nav_contact:'Contact', cta_inquiry:'Get Quote', cta_call:'Call',
+    theme_label:'Color theme:', slide1_tag:'Best Seller', slide1_title:'Fiber Laser Cutting Machine', slide1_desc:'Precise metal sheet cutting with 1-12 kW power',
+    slide2_tag:'3-in-1: Welding, Cutting, Cleaning', slide2_title:'Handheld Fiber Laser Welder', slide2_desc:'Light, portable, air-cooled',
+    slide3_tag:'Free Download', slide3_title:'Download CypCut', slide3_desc:'4 versions of CypCut for free',
+    slide4_tag:'Support for All Brands', slide4_title:"Didn't Buy From Us? No Problem.", slide4_desc:'Repair, service and support for all fiber laser brands',
+    view_products:'View Products', view_details:'View Details', go_downloads:'View & Download',
     trust_1:'4 Patents', trust_2:'Partnership with China & EU', trust_3:'Free Installation', trust_4:'7-Day Support',
     quick_products:'Products', quick_services:'Services', quick_downloads:'Downloads', quick_contact:'Contact',
     products_tag:'Our Products', products_title:'Complete Fiber Laser Solutions', products_full_title:'Products & Equipment', products_full_desc:'Complete range of machines, accessories and spare parts', group_machines:'Main Machines', group_components:'Source, Head & Parts', view_all_products:'View All Products',
     cat_cutting:'Cutting Machines', cat_cutting_desc:'Precise metal sheet cutting.', cat_welding:'Welding Machines', cat_welding_desc:'High-speed laser welding.', cat_marking:'Marking Machines', cat_marking_desc:'Marking on metal & non-metal.', cat_cleaning:'Cleaning Machines', cat_cleaning_desc:'Remove rust, paint & contamination.', cat_source:'Laser Source', cat_source_desc:'Fiber sources from Raycus, Max, JPT, IPG.', cat_head:'Controller & Head', cat_head_desc:'Autofocus heads, Raytools, Ospri & CNC controllers.', cat_parts:'Machine Parts', cat_parts_desc:'Chiller, compressor, dewar, servo motor.', cat_consumables:'Consumables', cat_consumables_desc:'Nozzles, lenses, galvanometer.', view_models:'View Models', coming_soon:'Coming Soon',
-    about_title:'About Sahand Laser', about_subtitle:'Over 13 years in the Iranian laser industry', about_story:'Our Story', about_story_text:'Sahand Laser Technology began in 2011 in design, manufacturing, import and support of fiber laser & CNC machines. Relying on domestic experts and continuous collaboration with top global manufacturers.', about_mission:'Our Mission', about_mission_text:'We believe a laser company is not just a machine seller; it must accompany the customer at all stages.', about_achievements:'Our Achievements', about_patents:'Patents', about_installs:'Installed', about_years:'Years', about_satisfaction:'Satisfaction', about_contact_cta:'Contact Us',
+    solution_tag:'Smart Solution', solution_title:'Get the Right Solution for Your Business', solution_desc:'Fill the form and our experts will contact you within 24 hours.', sol_machine:'Machine Type', sol_industry:'Your Industry', sol_budget:'Approximate Budget (optional)', sol_contact:'Phone or Email', sol_requirements:'Your Requirements', sol_submit:'Get Free Solution', sol_select:'— Select —', sol_unknown:'Not sure / Consult',
+    about_tag:'About Sahand Laser', about_title_short:"We're Not Just a Seller — We're Your Production Line Guardians.", about_desc_home:'We offer precise, fast and cost-effective solutions with domestic experts and top global manufacturers.',
+    stat_installs:'Installed', stat_years:'Years', stat_patents:'Patents', stat_satisfaction:'Satisfaction',
+    timeline_title:'Sahand Laser Growth Journey', tl_1390_t:'Company Founded', tl_1390_d:'Started in fiber laser & CNC', tl_1395_t:'Production Line', tl_1395_d:'Local assembly line launched', tl_1400_t:'4 National Patents', tl_1400_d:'Recognized by National Elites Foundation', tl_1403_t:'+150 Installations', tl_1403_d:'Across Iran industrial workshops',
+    projects_tag:'Portfolio', projects_title:'Projects & Customer Visits', projects_desc:'Some of our achievements with various industries', projects_title_full:'Projects & Customer Visits', projects_desc_full:'Some of our achievements with various industries and international customer visits',
+    proj_1_t:'Laser Cutting Installation - Elevator Industry', proj_1_d:'Installed 6kW fiber cutting machine for stainless steel sheet cutting', proj_2_t:'Handheld Laser Welding Line', proj_2_d:'Established welding line for auto parts workshop', proj_3_t:'Turkish Customers Visit', proj_3_d:'Turkish trade delegation visited our factory', proj_4_t:'Industrial Marking - Gold Industry', proj_4_d:'Installed 50W fiber marking machine with rotary', proj_5_t:'Competitor Source Repair', proj_5_d:'Repaired 3000W laser source in less than 2 days', proj_6_t:'Iraqi Customers Visit', proj_6_d:'Iraqi trade delegation signed contract for 3 cutting machines',
+    about_title:'About Sahand Laser', about_subtitle:'Over 13 years in the Iranian laser industry', about_story:'Our Story', about_story_text:'Sahand Laser Technology began in 2011 in design, manufacturing, import and support of fiber laser & CNC machines.', about_mission:'Our Mission', about_mission_text:'We believe a laser company is not just a machine seller; it must accompany the customer at all stages.', about_achievements:'Our Achievements', about_patents:'Patents', about_installs:'Installed', about_years:'Years', about_satisfaction:'Satisfaction', about_contact_cta:'Contact Us',
     services_full_title:'Sahand Laser Services', services_full_desc:'From installation to major repairs and operator training',
     svc_install:'Installation & Setup', svc_install_desc:'Professional on-site installation with calibration and full testing.', svc_source_repair:'Source & Head Repair', svc_source_repair_desc:'Expert repair of Raycus, Max, JPT & IPG sources and heads.', svc_machine_repair:'Machine Repair', svc_machine_repair_desc:'Full diagnostics and repair of fiber laser machines.', svc_training:'Training & Support', svc_training_desc:'Operator training to full proficiency + ongoing support.', svc_parts:'Spare Parts', svc_parts_desc:'Fast supply of original spare parts for all brands.', svc_consult:'Consultation', svc_consult_desc:'Free consultation to choose the best machine.', request_service:'Request Service',
     apps_title:'Fiber Laser Applications', apps_desc:'Industries using Sahand fiber lasers',
-    app_elevator:'Elevator', app_elevator_desc:'Precise cutting of elevator parts and panels', app_kitchen:'Industrial Kitchen', app_kitchen_desc:'Production of sinks and stainless appliances', app_auto:'Automotive', app_auto_desc:'Cutting auto and machinery parts', app_decor:'Decoration', app_decor_desc:'Metal doors, CNC facades', app_jewelry:'Jewelry', app_jewelry_desc:'Marking on rings and jewelry', app_medical:'Medical', app_medical_desc:'Marking on surgical tools and implants', app_industry:'Heavy Industry', app_industry_desc:'Thick sheet cutting, oil & gas equipment', app_promo:'Promotional', app_promo_desc:'Marking on pens, lighters, power banks', app_lab:'Laboratory', app_lab_desc:'Precise marking on lab parts and electronics',
+    app_elevator:'Elevator', app_elevator_desc:'Precise cutting of elevator parts', app_kitchen:'Kitchen', app_kitchen_desc:'Production of sinks and stainless appliances', app_auto:'Automotive', app_auto_desc:'Cutting auto and machinery parts', app_decor:'Decoration', app_decor_desc:'Metal doors, CNC facades', app_jewelry:'Jewelry', app_jewelry_desc:'Marking on rings and jewelry', app_medical:'Medical', app_medical_desc:'Marking on surgical tools and implants', app_industry:'Heavy Industry', app_industry_desc:'Thick sheet cutting, oil & gas equipment', app_promo:'Promotional', app_promo_desc:'Marking on pens, lighters, power banks', app_lab:'Laboratory', app_lab_desc:'Precise marking on lab parts and electronics',
     training_title:'Laser Machine Training', training_desc:'Practical training courses for operators and technicians', training_operator:'Operator Course', training_operator_desc:'CypCut software, cutting settings, daily maintenance', training_tech:'Technical Repair Course', training_tech_desc:'Diagnostics, source, head, chiller repair', training_safety:'Safety Course', training_safety_desc:'Laser safety, PPE and accident prevention', training_cta_title:'Free Training with Purchase', training_cta_desc:'With every machine purchased, complete training is free.', training_cta_btn:'Request Training',
     dl_title:'Download CypCut', dl_desc:'Specialized CNC software for fiber laser cutting machines.', dl_btn:'Download', dl_note:'All software downloads from Google Drive.',
     repairs_badge:'Specialized Support for All Brands', repairs_title_1:"Didn't Buy From Us?", repairs_title_2:"No Problem — We've Got You Covered.", repairs_desc_short:"Sahand Laser's team is ready to repair and support all fiber laser machines.", repairs_cta_call:'Call Support Now', repairs_cta_wa:'WhatsApp Support',
     contact_title:'Ready to Work With You', contact_desc:'All numbers with call, WhatsApp & Telegram links',
-    badge_360:'360°', spin_hint:'Drag to rotate', tab_specs:'Specifications', tab_usage:'Applications', tab_models:'Models', tab_desc:'Description',
-    comment_submit:'Submit', comment_success:'Submitted!', comment_error:'Please fill name and text.', no_comments:'No reviews yet.',
+    badge_360:'360°', spin_hint:'Drag to rotate', comment_submit:'Submit', comment_success:'Submitted!', comment_error:'Please fill name and text.', no_comments:'No reviews yet.',
     theme_navy:'Navy', theme_teal:'Teal', theme_gold:'Gold', theme_purple:'Purple', theme_emerald:'Emerald', theme_cyan:'Cyan', product_not_found:'Product not found.' },
-  ar: { brand:'سهند ليزر', nav_home:'الرئيسية', nav_about:'من نحن', nav_products:'المنتجات', nav_services:'الخدمات', nav_applications:'الاستخدامات', nav_training:'التدريب', nav_downloads:'التحميل', nav_contact:'اتصل بنا', cta_inquiry:'طلب عرض', cta_call:'اتصل',
-    hero_badge:'١٣ سنة خبرة • ٤ براءات اختراع', hero_title_1:'من الفكرة إلى الإنتاج،', hero_title_2:'بهندسة سهند ليزر', hero_desc:'مركز متخصص لبيع وخدمة ليزر الألياف في إيران.', hero_btn_products:'عرض المنتجات', hero_btn_consult:'استشارة مجانية', hero_stat_1:'جهاز مركب', hero_stat_2:'سنة خبرة', hero_stat_3:'سنة خدمة ما بعد البيع',
+  ar: { brand:'سهند ليزر', nav_home:'الرئيسية', nav_about:'من نحن', nav_products:'المنتجات', nav_services:'الخدمات', nav_applications:'الاستخدامات', nav_projects:'الأعمال', nav_training:'التدريب', nav_downloads:'التحميل', nav_contact:'اتصل بنا', cta_inquiry:'طلب عرض', cta_call:'اتصل',
+    theme_label:'السمة:', slide1_tag:'الأكثر مبيعاً', slide1_title:'آلة قطع ليزر الألياف', slide1_desc:'قطع دقيق للصفائح المعدنية',
+    slide2_tag:'٣ في ١: لحام، قطع، تنظيف', slide2_title:'لحام ليزر يدوي', slide2_desc:'خفيف، محمول، تبريد هوائي',
+    slide3_tag:'تحميل مجاني', slide3_title:'تحميل CypCut', slide3_desc:'٤ نسخ مجانية',
+    slide4_tag:'دعم لجميع العلامات', slide4_title:'لم تشترِ منا؟ لا مشكلة.', slide4_desc:'إصلاح ودعم جميع ماركات ليزر الألياف',
+    view_products:'عرض المنتجات', view_details:'عرض التفاصيل', go_downloads:'عرض وتحميل',
     trust_1:'٤ براءات اختراع', trust_2:'شراكة مع الصين وأوروبا', trust_3:'تركيب وتدريب مجاني', trust_4:'دعم ٧ أيام',
     quick_products:'المنتجات', quick_services:'الخدمات', quick_downloads:'التحميل', quick_contact:'اتصل',
-    products_tag:'منتجاتنا', products_title:'حلول ليزر الألياف', products_full_title:'المنتجات والمعدات', products_full_desc:'مجموعة كاملة من الأجهزة والملحقات وقطع الغيار', group_machines:'الآلات الرئيسية', group_components:'المصدر، الرأس والقطع', view_all_products:'عرض جميع المنتجات',
-    cat_cutting:'آلات القطع', cat_cutting_desc:'قطع دقيق للصفائح المعدنية.', cat_welding:'آلات اللحام', cat_welding_desc:'لحام ليزر عالي السرعة.', cat_marking:'آلات النقش', cat_marking_desc:'النقش على المعادن وغير المعادن.', cat_cleaning:'آلات التنظيف', cat_cleaning_desc:'إزالة الصدأ والطلاء دون الإضرار.', cat_source:'مصدر الليزر', cat_source_desc:'مصادر الألياف من Raycus و Max و JPT و IPG.', cat_head:'وحدة التحكم والرأس', cat_head_desc:'رؤوس القطع واللحام ووحدات CNC.', cat_parts:'قطع الآلة', cat_parts_desc:'المبرد، الضاغط، ديوار، محرك سيرفو.', cat_consumables:'المواد الاستهلاكية', cat_consumables_desc:'الفوهات، العدسات، الجلفانومتر.', view_models:'عرض الموديلات', coming_soon:'قريباً',
-    about_title:'حول سهند ليزر', about_subtitle:'أكثر من ١٣ سنة في صناعة الليزر الإيرانية', about_story:'قصتنا', about_story_text:'بدأت شركة سهند ليزر في عام ٢٠١١ في تصميم وتصنيع واستيراد ودعم آلات ليزر الألياف و CNC.', about_mission:'مهمتنا', about_mission_text:'نحن نؤمن أن شركة الليزر ليست مجرد بائع آلات؛ بل يجب أن تكون مع العميل في جميع المراحل.', about_achievements:'إنجازاتنا', about_patents:'براءات اختراع', about_installs:'أجهزة مركبة', about_years:'سنوات خبرة', about_satisfaction:'رضا العملاء', about_contact_cta:'اتصل بنا',
-    services_full_title:'خدمات سهند ليزر', services_full_desc:'من التركيب إلى الإصلاحات الكبرى وتدريب المشغلين',
-    svc_install:'التركيب والتشغيل', svc_install_desc:'تركيب احترافي في الموقع مع المعايرة.', svc_source_repair:'إصلاح المصدر والرأس', svc_source_repair_desc:'إصلاح متخصص لمصادر Raycus و Max و JPT و IPG.', svc_machine_repair:'إصلاح الآلة', svc_machine_repair_desc:'تشخيص وإصلاح كامل لآلات ليزر الألياف.', svc_training:'التدريب والدعم', svc_training_desc:'تدريب المشغلين حتى الإتقان + دعم مستمر.', svc_parts:'قطع الغيار', svc_parts_desc:'توريد سريع لقطع الغيار الأصلية.', svc_consult:'استشارة متخصصة', svc_consult_desc:'استشارة مجانية لاختيار أفضل آلة.', request_service:'طلب الخدمة',
-    apps_title:'تطبيقات ليزر الألياف', apps_desc:'الصناعات التي تستخدم ليزر سهند',
-    app_elevator:'المصاعد', app_elevator_desc:'قطع دقيق لقطع المصاعد واللوحات', app_kitchen:'المطابخ الصناعية', app_kitchen_desc:'إنتاج الأحواض والأجهزة الستانلس', app_auto:'السيارات', app_auto_desc:'قطع قطع السيارات والآلات', app_decor:'الديكور والواجهات', app_decor_desc:'الأبواب المعدنية وواجهات CNC', app_jewelry:'المجوهرات', app_jewelry_desc:'النقش على الحلقات والمجوهرات', app_medical:'المعدات الطبية', app_medical_desc:'النقش على الأدوات الجراحية', app_industry:'الصناعة الثقيلة', app_industry_desc:'قطع الصفائح السميكة والنفط والغاز', app_promo:'الدعاية', app_promo_desc:'النقش على الأقلام والولاعات', app_lab:'المختبرات', app_lab_desc:'النقش الدقيق على قطع المختبرات',
-    training_title:'تدريب آلات الليزر', training_desc:'دورات تدريبية عملية للمشغلين والفنيين', training_operator:'دورة المشغل', training_operator_desc:'برنامج CypCut، إعدادات القطع، الصيانة اليومية', training_tech:'دورة الإصلاح الفني', training_tech_desc:'التشخيص وإصلاح المصدر والرأس والمبرد', training_safety:'دورة السلامة', training_safety_desc:'مبادئ سلامة الليزر ومعدات الحماية', training_cta_title:'تدريب مجاني مع الشراء', training_cta_desc:'مع كل آلة يتم شراؤها، التدريب مجاني.', training_cta_btn:'طلب دورة تدريبية',
-    dl_title:'تحميل برنامج CypCut', dl_desc:'برامج CNC متخصصة لآلات القطع بالليزر.', dl_btn:'تحميل', dl_note:'جميع البرامج من Google Drive.',
-    repairs_badge:'دعم متخصص لجميع العلامات', repairs_title_1:'لم تشترِ منا؟', repairs_title_2:'لا مشكلة — نحن ندعمك.', repairs_desc_short:'فريق سهند ليزر جاهز لإصلاح ودعم جميع آلات ليزر الألياف.', repairs_cta_call:'اتصل بالدعم', repairs_cta_wa:'واتساب الدعم',
-    contact_title:'مستعدون للعمل معك', contact_desc:'جميع الأرقام مع روابط الاتصال',
-    badge_360:'٣٦٠°', spin_hint:'اسحب للتدوير', tab_specs:'المواصفات', tab_usage:'الاستخدامات', tab_models:'الموديلات', tab_desc:'الوصف',
-    comment_submit:'إرسال', comment_success:'تم الإرسال!', comment_error:'يرجى إدخال الاسم والنص.', no_comments:'لا توجد آراء بعد.',
-    theme_navy:'كحلي', theme_teal:'فيروزي', theme_gold:'ذهبي', theme_purple:'أرجواني', theme_emerald:'زمردي', theme_cyan:'سماوي', product_not_found:'المنتج غير موجود.' },
-  tr: { brand:'Sahand Laser', nav_home:'Anasayfa', nav_about:'Hakkımızda', nav_products:'Ürünler', nav_services:'Hizmetler', nav_applications:'Uygulamalar', nav_training:'Eğitim', nav_downloads:'İndir', nav_contact:'İletişim', cta_inquiry:'Fiyat Al', cta_call:'Ara',
-    hero_badge:'13 Yıl • 4 Patent • 1 Yıl Garanti', hero_title_1:'Fikirden Üretime,', hero_title_2:'Sahand Laser Mühendisliği ile', hero_desc:"İran'da fiber lazer satışı ve servisi için uzman merkez.", hero_btn_products:'Ürünleri Gör', hero_btn_consult:'Ücretsiz Danışmanlık', hero_stat_1:'Kurulu', hero_stat_2:'Yıl', hero_stat_3:'Yıl Satış Sonrası',
-    trust_1:'4 Patent', trust_2:'Çin ve AB ile Ortaklık', trust_3:'Ücretsiz Kurulum', trust_4:'7 Gün Destek',
+    products_tag:'منتجاتنا', products_title:'حلول ليزر الألياف', products_full_title:'المنتجات والمعدات', products_full_desc:'مجموعة كاملة', group_machines:'الآلات الرئيسية', group_components:'المصدر والرأس والقطع', view_all_products:'عرض جميع المنتجات',
+    cat_cutting:'آلات القطع', cat_cutting_desc:'قطع دقيق للصفائح المعدنية.', cat_welding:'آلات اللحام', cat_welding_desc:'لحام ليزر عالي السرعة.', cat_marking:'آلات النقش', cat_marking_desc:'النقش على المعادن.', cat_cleaning:'آلات التنظيف', cat_cleaning_desc:'إزالة الصدأ والطلاء.', cat_source:'مصدر الليزر', cat_source_desc:'مصادر الألياف.', cat_head:'وحدة التحكم والرأس', cat_head_desc:'رؤوس القطع واللحام.', cat_parts:'قطع الآلة', cat_parts_desc:'المبرد، الضاغط.', cat_consumables:'المواد الاستهلاكية', cat_consumables_desc:'الفوهات، العدسات.', view_models:'عرض الموديلات', coming_soon:'قريباً',
+    solution_tag:'حل ذكي', solution_title:'احصل على الحل المناسب لعملك', solution_desc:'سيتصل بك خبراؤنا في غضون ٢٤ ساعة.', sol_machine:'نوع الآلة', sol_industry:'مجالك', sol_budget:'الميزانية (اختياري)', sol_contact:'الهاتف أو البريد', sol_requirements:'متطلباتك', sol_submit:'احصل على حل مجاني', sol_select:'— اختر —', sol_unknown:'لست متأكداً',
+    about_tag:'حول سهند ليزر', about_title_short:'نحن لسنا مجرد بائع — نحن حراس خط إنتاجك.', about_desc_home:'نقدم حلولاً دقيقة وسريعة وفعالة.',
+    stat_installs:'أجهزة مركبة', stat_years:'سنوات', stat_patents:'براءات', stat_satisfaction:'رضا',
+    timeline_title:'رحلة نمو سهند ليزر', tl_1390_t:'تأسيس الشركة', tl_1390_d:'بداية في ليزر الألياف', tl_1395_t:'خط الإنتاج', tl_1395_d:'خط تجميع محلي', tl_1400_t:'٤ براءات اختراع', tl_1400_d:'تقدير من المؤسسة الوطنية', tl_1403_t:'+١٥٠ تركيب', tl_1403_d:'في جميع أنحاء إيران',
+    projects_tag:'الأعمال', projects_title:'المشاريع وزيارات العملاء', projects_desc:'بعض إنجازاتنا', projects_title_full:'المشاريع وزيارات العملاء', projects_desc_full:'بعض إنجازاتنا مع العملاء الدوليين',
+    proj_1_t:'تركيب قطع الليزر - صناعة المصاعد', proj_1_d:'تركيب آلة قطع فايبر ٦ كيلوواط', proj_2_t:'خط لحام ليزر يدوي', proj_2_d:'إنشاء خط لحام لقطع السيارات', proj_3_t:'زيارة العملاء الأتراك', proj_3_d:'وفد تجاري تركي زار المصنع', proj_4_t:'نقش صناعي - صناعة الذهب', proj_4_d:'تركيب آلة نقش ٥٠ واط', proj_5_t:'إصلاح مصدر منافس', proj_5_d:'إصلاح مصدر ٣٠٠٠ واط في أقل من يومين', proj_6_t:'زيارة العملاء العراقيين', proj_6_d:'وفد عراقي وقع عقد ٣ آلات',
+    about_title:'حول سهند ليزر', about_subtitle:'أكثر من ١٣ سنة', about_story:'قصتنا', about_story_text:'بدأت شركة سهند ليزر في عام ٢٠١١.', about_mission:'مهمتنا', about_mission_text:'نؤمن أن شركة الليزر يجب أن تكون مع العميل.', about_achievements:'إنجازاتنا', about_patents:'براءات', about_installs:'أجهزة', about_years:'سنوات', about_satisfaction:'رضا', about_contact_cta:'اتصل بنا',
+    services_full_title:'خدمات سهند ليزر', services_full_desc:'من التركيب إلى الإصلاحات',
+    svc_install:'التركيب', svc_install_desc:'تركيب احترافي في الموقع.', svc_source_repair:'إصلاح المصدر والرأس', svc_source_repair_desc:'إصلاح متخصص.', svc_machine_repair:'إصلاح الآلة', svc_machine_repair_desc:'تشخيص وإصلاح كامل.', svc_training:'التدريب والدعم', svc_training_desc:'تدريب المشغلين.', svc_parts:'قطع الغيار', svc_parts_desc:'توريد سريع.', svc_consult:'استشارة', svc_consult_desc:'استشارة مجانية.', request_service:'طلب الخدمة',
+    apps_title:'تطبيقات ليزر الألياف', apps_desc:'الصناعات',
+    app_elevator:'المصاعد', app_elevator_desc:'قطع دقيق.', app_kitchen:'المطابخ', app_kitchen_desc:'إنتاج الأحواض.', app_auto:'السيارات', app_auto_desc:'قطع قطع السيارات.', app_decor:'الديكور', app_decor_desc:'الأبواب المعدنية.', app_jewelry:'المجوهرات', app_jewelry_desc:'النقش على الحلقات.', app_medical:'الطبية', app_medical_desc:'النقش على الأدوات.', app_industry:'الصناعة الثقيلة', app_industry_desc:'قطع الصفائح السميكة.', app_promo:'الدعاية', app_promo_desc:'النقش على الأقلام.', app_lab:'المختبرات', app_lab_desc:'النقش الدقيق.',
+    training_title:'تدريب آلات الليزر', training_desc:'دورات تدريبية', training_operator:'دورة المشغل', training_operator_desc:'برنامج CypCut.', training_tech:'دورة الإصلاح', training_tech_desc:'التشخيص والإصلاح.', training_safety:'دورة السلامة', training_safety_desc:'مبادئ سلامة الليزر.', training_cta_title:'تدريب مجاني مع الشراء', training_cta_desc:'التدريب مجاني.', training_cta_btn:'طلب تدريب',
+    dl_title:'تحميل CypCut', dl_desc:'برامج CNC.', dl_btn:'تحميل', dl_note:'من Google Drive.',
+    repairs_badge:'دعم لجميع العلامات', repairs_title_1:'لم تشترِ منا؟', repairs_title_2:'لا مشكلة.', repairs_desc_short:'فريقنا جاهز.', repairs_cta_call:'اتصل بالدعم', repairs_cta_wa:'واتساب الدعم',
+    contact_title:'مستعدون للعمل', contact_desc:'جميع الأرقام',
+    badge_360:'٣٦٠°', spin_hint:'اسحب', comment_submit:'إرسال', comment_success:'تم!', comment_error:'يرجى الملء.', no_comments:'لا توجد آراء.',
+    theme_navy:'كحلي', theme_teal:'فيروزي', theme_gold:'ذهبي', theme_purple:'أرجواني', theme_emerald:'زمردي', theme_cyan:'سماوي', product_not_found:'غير موجود.' },
+  tr: { brand:'Sahand Laser', nav_home:'Anasayfa', nav_about:'Hakkımızda', nav_products:'Ürünler', nav_services:'Hizmetler', nav_applications:'Uygulamalar', nav_projects:'Projeler', nav_training:'Eğitim', nav_downloads:'İndir', nav_contact:'İletişim', cta_inquiry:'Fiyat Al', cta_call:'Ara',
+    theme_label:'Renk teması:', slide1_tag:'En Çok Satan', slide1_title:'Fiber Lazer Kesim Makinesi', slide1_desc:'Hassas metal levha kesimi',
+    slide2_tag:'3ü 1 arada', slide2_title:'El Tipi Fiber Lazer Kaynak', slide2_desc:'Hafif, taşınabilir, hava soğutmalı',
+    slide3_tag:'Ücretsiz İndir', slide3_title:'CypCut İndir', slide3_desc:'4 versiyon ücretsiz',
+    slide4_tag:'Tüm Markalar için Destek', slide4_title:'Bizden mi almadınız? Sorun değil.', slide4_desc:'Tüm fiber lazer markaları için onarım ve destek',
+    view_products:'Ürünleri Gör', view_details:'Detayları Gör', go_downloads:'Gör ve İndir',
+    trust_1:'4 Patent', trust_2:'Çin ve AB Ortaklığı', trust_3:'Ücretsiz Kurulum', trust_4:'7 Gün Destek',
     quick_products:'Ürünler', quick_services:'Hizmetler', quick_downloads:'İndir', quick_contact:'İletişim',
-    products_tag:'Ürünlerimiz', products_title:'Komple Fiber Lazer Çözümleri', products_full_title:'Ürünler ve Ekipman', products_full_desc:'Makineler, aksesuarlar ve yedek parçalar', group_machines:'Ana Makineler', group_components:'Kaynak, Kafa ve Parçalar', view_all_products:'Tüm Ürünleri Gör',
-    cat_cutting:'Kesim Makineleri', cat_cutting_desc:'Hassas metal levha kesimi.', cat_welding:'Kaynak Makineleri', cat_welding_desc:'Yüksek hızlı lazer kaynağı.', cat_marking:'Markalama Makineleri', cat_marking_desc:'Metal ve metal olmayan markalama.', cat_cleaning:'Temizleme Makineleri', cat_cleaning_desc:'Pas ve boya temizliği.', cat_source:'Lazer Kaynağı', cat_source_desc:'Raycus, Max, JPT, IPG kaynakları.', cat_head:'Kontrolcü ve Kafa', cat_head_desc:'Otomatik odak kafa ve CNC kontrolcüler.', cat_parts:'Makine Parçaları', cat_parts_desc:'Soğutucu, kompresör, dewar, servo motor.', cat_consumables:'Sarf Malzemeleri', cat_consumables_desc:'Nozullar, lensler, galvanometre.', view_models:'Modelleri Gör', coming_soon:'Yakında',
-    about_title:'Sahand Laser Hakkında', about_subtitle:'İran lazer endüstrisinde 13 yıldan fazla', about_story:'Hikayemiz', about_story_text:'Sahand Laser Teknoloji, 2011 yılında fiber lazer ve CNC makinelerinin tasarımı, üretimi ve desteğinde faaliyete başladı.', about_mission:'Misyonumuz', about_mission_text:'Bir lazer şirketinin sadece makine satıcısı olmadığına inanıyoruz; her aşamada müşterinin yanında olmalıdır.', about_achievements:'Başarılarımız', about_patents:'Patent', about_installs:'Kurulu', about_years:'Yıl', about_satisfaction:'Memnuniyet', about_contact_cta:'Bize Ulaşın',
-    services_full_title:'Sahand Laser Hizmetleri', services_full_desc:'Kurulumdan büyük onarımlara ve eğitime',
-    svc_install:'Kurulum', svc_install_desc:'Yerinde profesyonel kurulum ve kalibrasyon.', svc_source_repair:'Kaynak ve Kafa Onarımı', svc_source_repair_desc:'Raycus, Max, JPT, IPG kaynak onarımı.', svc_machine_repair:'Makine Onarımı', svc_machine_repair_desc:'Fiber lazer makinelerinin tam onarımı.', svc_training:'Eğitim ve Destek', svc_training_desc:'Operatörleri tam yeterliliğe kadar eğitme.', svc_parts:'Yedek Parça', svc_parts_desc:'Tüm markalar için orijinal yedek parçalar.', svc_consult:'Uzman Danışmanlık', svc_consult_desc:'En iyi makineyi seçmek için ücretsiz danışmanlık.', request_service:'Hizmet Talep Et',
-    apps_title:'Fiber Lazer Uygulamaları', apps_desc:'Sahand lazerlerini kullanan sektörler',
-    app_elevator:'Asansör', app_elevator_desc:'Asansör parçaları ve panoların kesimi', app_kitchen:'Endüstriyel Mutfak', app_kitchen_desc:'Lavabo ve paslanmaz cihaz üretimi', app_auto:'Otomotiv', app_auto_desc:'Otomotiv ve makine parçalarının kesimi', app_decor:'Dekorasyon', app_decor_desc:'Metal kapılar ve CNC cepheler', app_jewelry:'Mücevher', app_jewelry_desc:'Yüzük ve mücevher markalama', app_medical:'Tıbbi', app_medical_desc:'Cerrahi aletler ve implantlar', app_industry:'Ağır Sanayi', app_industry_desc:'Kalın levha, petrol ve gaz', app_promo:'Promosyon', app_promo_desc:'Kalem, çakmak, power bank markalama', app_lab:'Laboratuvar', app_lab_desc:'Laboratuvar parçaları markalama',
-    training_title:'Lazer Eğitimi', training_desc:'Operatörler ve teknisyenler için pratik eğitim', training_operator:'Operatör Kursu', training_operator_desc:'CypCut yazılımı, kesim ayarları, günlük bakım', training_tech:'Teknik Onarım Kursu', training_tech_desc:'Teşhis, kaynak, kafa, soğutucu onarımı', training_safety:'Güvenlik Kursu', training_safety_desc:'Lazer güvenlik ilkeleri', training_cta_title:'Alımda Ücretsiz Eğitim', training_cta_desc:'Her makine ile operatör ve teknik ekip eğitimi ücretsizdir.', training_cta_btn:'Eğitim Talep Et',
-    dl_title:'CypCut İndir', dl_desc:'Fiber lazer kesim makineleri için CNC yazılımı.', dl_btn:'İndir', dl_note:'Tüm yazılımlar Google Drive üzerinden.',
-    repairs_badge:'Tüm Markalar için Destek', repairs_title_1:'Bizden mi almadınız?', repairs_title_2:'Sorun değil — Sizin yanınızdayız.', repairs_desc_short:'Sahand Laser ekibi tüm fiber lazer makinelerini onarmaya hazır.', repairs_cta_call:'Hemen Ara', repairs_cta_wa:'WhatsApp Destek',
-    contact_title:'Sizinle Çalışmaya Hazırız', contact_desc:'Tüm numaralar arama, WhatsApp ve Telegram bağlantılı',
-    badge_360:'360°', spin_hint:'Sürükle', tab_specs:'Özellikler', tab_usage:'Uygulamalar', tab_models:'Modeller', tab_desc:'Açıklama',
-    comment_submit:'Gönder', comment_success:'Gönderildi!', comment_error:'Lütfen ad ve yorum girin.', no_comments:'Henüz yorum yok.',
+    products_tag:'Ürünlerimiz', products_title:'Komple Fiber Lazer Çözümleri', products_full_title:'Ürünler ve Ekipman', products_full_desc:'Tam aralık', group_machines:'Ana Makineler', group_components:'Kaynak, Kafa ve Parçalar', view_all_products:'Tüm Ürünleri Gör',
+    cat_cutting:'Kesim Makineleri', cat_cutting_desc:'Hassas kesim.', cat_welding:'Kaynak Makineleri', cat_welding_desc:'Yüksek hızlı kaynak.', cat_marking:'Markalama', cat_marking_desc:'Metal markalama.', cat_cleaning:'Temizleme', cat_cleaning_desc:'Pas temizliği.', cat_source:'Lazer Kaynağı', cat_source_desc:'Fiber kaynakları.', cat_head:'Kontrolcü ve Kafa', cat_head_desc:'Otomatik odak kafa.', cat_parts:'Makine Parçaları', cat_parts_desc:'Soğutucu, kompresör.', cat_consumables:'Sarf Malzemeleri', cat_consumables_desc:'Nozullar, lensler.', view_models:'Modelleri Gör', coming_soon:'Yakında',
+    solution_tag:'Akıllı Çözüm', solution_title:'İşletmeniz için Doğru Çözümü Alın', solution_desc:'Uzmanlarımız 24 saat içinde sizinle iletişime geçecek.', sol_machine:'Makine Tipi', sol_industry:'Sektörünüz', sol_budget:'Bütçe (isteğe bağlı)', sol_contact:'Telefon veya E-posta', sol_requirements:'Gereksinimleriniz', sol_submit:'Ücretsiz Çözüm Al', sol_select:'— Seç —', sol_unknown:'Emin değilim',
+    about_tag:'Sahand Laser Hakkında', about_title_short:'Sadece satıcı değiliz — üretim hattınızın koruyucularıyız.', about_desc_home:'Hassas, hızlı ve uygun maliyetli çözümler sunuyoruz.',
+    stat_installs:'Kurulu', stat_years:'Yıl', stat_patents:'Patent', stat_satisfaction:'Memnuniyet',
+    timeline_title:'Sahand Laser Büyüme Yolculuğu', tl_1390_t:'Şirket Kuruldu', tl_1390_d:'Fiber lazer ile başladı', tl_1395_t:'Üretim Hattı', tl_1395_d:'Yerel montaj hattı', tl_1400_t:'4 Patent', tl_1400_d:'Ulusal Elitler Vakfı tarafından tanındı', tl_1403_t:'+150 Kurulum', tl_1403_d:'İran genelinde',
+    projects_tag:'Portföy', projects_title:'Projeler ve Müşteri Ziyaretleri', projects_desc:'Başarılarımız', projects_title_full:'Projeler ve Müşteri Ziyaretleri', projects_desc_full:'Uluslararası müşteri ziyaretleri',
+    proj_1_t:'Lazer Kesim Kurulumu - Asansör', proj_1_d:'6kW fiber kesim makinesi kuruldu', proj_2_t:'El Tipi Lazer Kaynak Hattı', proj_2_d:'Otomotiv parçaları için kaynak hattı', proj_3_t:'Türk Müşteriler Ziyareti', proj_3_d:'Türk ticaret heyeti fabrikamızı ziyaret etti', proj_4_t:'Endüstriyel Markalama - Altın', proj_4_d:'50W fiber markalama makinesi kuruldu', proj_5_t:'Rakip Kaynak Onarımı', proj_5_d:'3000W lazer kaynağı 2 günde onarıldı', proj_6_t:'Iraklı Müşteriler Ziyareti', proj_6_d:'Iraklı heyet 3 makine için sözleşme imzaladı',
+    about_title:'Sahand Laser Hakkında', about_subtitle:'13 yıldan fazla', about_story:'Hikayemiz', about_story_text:'Sahand Laser Teknoloji, 2011 yılında kuruldu.', about_mission:'Misyonumuz', about_mission_text:'Lazer şirketi müşterinin yanında olmalı.', about_achievements:'Başarılarımız', about_patents:'Patent', about_installs:'Kurulu', about_years:'Yıl', about_satisfaction:'Memnuniyet', about_contact_cta:'Bize Ulaşın',
+    services_full_title:'Sahand Laser Hizmetleri', services_full_desc:'Kurulumdan onarıma',
+    svc_install:'Kurulum', svc_install_desc:'Profesyonel kurulum.', svc_source_repair:'Kaynak ve Kafa Onarımı', svc_source_repair_desc:'Uzman onarım.', svc_machine_repair:'Makine Onarımı', svc_machine_repair_desc:'Tam onarım.', svc_training:'Eğitim ve Destek', svc_training_desc:'Operatör eğitimi.', svc_parts:'Yedek Parça', svc_parts_desc:'Hızlı tedarik.', svc_consult:'Danışmanlık', svc_consult_desc:'Ücretsiz danışmanlık.', request_service:'Hizmet Talep Et',
+    apps_title:'Fiber Lazer Uygulamaları', apps_desc:'Sektörler',
+    app_elevator:'Asansör', app_elevator_desc:'Hassas kesim.', app_kitchen:'Mutfak', app_kitchen_desc:'Lavabo üretimi.', app_auto:'Otomotiv', app_auto_desc:'Parça kesimi.', app_decor:'Dekorasyon', app_decor_desc:'Metal kapılar.', app_jewelry:'Mücevher', app_jewelry_desc:'Yüzük markalama.', app_medical:'Tıbbi', app_medical_desc:'Alet markalama.', app_industry:'Ağır Sanayi', app_industry_desc:'Kalın levha kesimi.', app_promo:'Promosyon', app_promo_desc:'Kalem markalama.', app_lab:'Laboratuvar', app_lab_desc:'Hassas markalama.',
+    training_title:'Lazer Eğitimi', training_desc:'Eğitim kursları', training_operator:'Operatör Kursu', training_operator_desc:'CypCut yazılımı.', training_tech:'Teknik Onarım', training_tech_desc:'Teşhis ve onarım.', training_safety:'Güvenlik Kursu', training_safety_desc:'Lazer güvenliği.', training_cta_title:'Alımda Ücretsiz Eğitim', training_cta_desc:'Eğitim ücretsizdir.', training_cta_btn:'Eğitim Talep Et',
+    dl_title:'CypCut İndir', dl_desc:'CNC yazılımı.', dl_btn:'İndir', dl_note:'Google Drive üzerinden.',
+    repairs_badge:'Tüm Markalar için Destek', repairs_title_1:'Bizden mi almadınız?', repairs_title_2:'Sorun değil.', repairs_desc_short:'Ekibimiz hazır.', repairs_cta_call:'Hemen Ara', repairs_cta_wa:'WhatsApp',
+    contact_title:'Çalışmaya Hazırız', contact_desc:'Tüm numaralar',
+    badge_360:'360°', spin_hint:'Sürükle', comment_submit:'Gönder', comment_success:'Gönderildi!', comment_error:'Lütfen doldurun.', no_comments:'Yorum yok.',
     theme_navy:'Lacivert', theme_teal:'Turkuaz', theme_gold:'Altın', theme_purple:'Mor', theme_emerald:'Zümrüt', theme_cyan:'Camgöbeği', product_not_found:'Ürün bulunamadı.' }
 };
 
 // ==================================================
-// [PRODUCTS - کل محصولات کاتالوگ]
+// [PRODUCTS - خلاصه از کد قبلی]
 // ==================================================
 const IMG_WL = 'https://sahandlaser.com/wp-content/uploads/2026/09/';
-const IMG_CT = 'https://i.imgur.com/';
 
 const products = {
-  // ====== دستگاه‌های برش ======
   'CT-001': { code:'CT-001', cat:{fa:'دستگاه‌های برش',en:'Cutting',ar:'القطع',tr:'Kesim'}, badge:{fa:'دستگاه برش لیزر فایبر',en:'Fiber Cutting',ar:'قطع الألياف',tr:'Fiber Kesim'},
     title:{fa:'دستگاه برش لیزر فایبر تک‌میز ۳۰۱۵',en:'Single-Bed Fiber Laser Cutting 3015',ar:'آلة قطع بطاولة مفردة 3015',tr:'Tek Tablalı Fiber Lazer Kesim 3015'},
-    subtitle:{fa:'CNC Fiber Laser Cutting — میز تک روباز',en:'CNC Fiber Laser Cutting',ar:'آلة قطع ليزر CNC',tr:'CNC Fiber Lazer Kesim'},
+    subtitle:{fa:'CNC Fiber Laser Cutting',en:'CNC Fiber Laser Cutting',ar:'آلة قطع ليزر CNC',tr:'CNC Fiber Lazer Kesim'},
     images:['https://i.imgur.com/1NFYN59.jpeg','https://i.imgur.com/UJ0BxQM.jpeg','https://i.imgur.com/vxiRDia.jpeg'],
     advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1-12 kW'},{icon:'fa-ruler-combined',label:{fa:'ابعاد میز',en:'Bed',ar:'الطاولة',tr:'Tabla'},value:'3000×1500 mm'},{icon:'fa-layer-group',label:{fa:'ضخامت',en:'Thickness',ar:'السماكة',tr:'Kalınlık'},value:'0.2-25 mm'},{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'±0.03 mm'}],
     specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'فایبر CNC میز تک روباز',en:'Fiber CNC Open Bed',ar:'ليزر ألياف CNC',tr:'Fiber CNC'}},{label:{fa:'سورس',en:'Source',ar:'المصدر',tr:'Kaynak'},value:'Raycus / Max / IPG'},{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1-12kW'},{label:{fa:'هد',en:'Head',ar:'الرأس',tr:'Kafa'},value:'Raytools / Ospri'},{label:{fa:'کنترلر',en:'Controller',ar:'وحدة التحكم',tr:'Kontrolcü'},value:'CypCut / FSCUT'},{label:{fa:'سرووموتور',en:'Servo',ar:'سيرفو',tr:'Servo'},value:'Yaskawa'},{label:{fa:'چیلر',en:'Chiller',ar:'المبرد',tr:'Soğutucu'},value:'S&A / Hanli'},{label:{fa:'ابعاد',en:'Size',ar:'الحجم',tr:'Boyut'},value:'3015 / 4020 / 6020'}],
-    usage:[{icon:'fa-elevator',color:'yellow',title:{fa:'آسانسورسازی',en:'Elevator',ar:'المصاعد',tr:'Asansör'},desc:{fa:'قطعات آسانسور',en:'Elevator parts',ar:'قطع المصاعد',tr:'Asansör parçaları'}},{icon:'fa-kitchen-set',color:'blue',title:{fa:'آشپزخانه',en:'Kitchen',ar:'المطابخ',tr:'Mutfak'},desc:{fa:'سینک، هود، استیل',en:'Sinks, hoods',ar:'الأحواض',tr:'Lavabo'}},{icon:'fa-car',color:'emerald',title:{fa:'خودرو',en:'Automotive',ar:'السيارات',tr:'Otomotiv'},desc:{fa:'قطعات خودرو',en:'Auto parts',ar:'قطع السيارات',tr:'Otomotiv'}},{icon:'fa-door-open',color:'pink',title:{fa:'درب و نما',en:'Doors',ar:'الأبواب',tr:'Kapılar'},desc:{fa:'درب فلزی، نما CNC',en:'Metal doors',ar:'الأبواب',tr:'Metal kapılar'}}],
-    models:[{title:{fa:'مدل ۳۰۱۵',en:'3015',ar:'3015',tr:'3015'},badge:{fa:'پرفروش',en:'Best',ar:'الأكثر',tr:'Popüler'},badgeColor:'green',desc:{fa:'۱۵۰۰×۳۰۰۰ mm',en:'1500×3000 mm',ar:'1500×3000',tr:'1500×3000 mm'}},{title:{fa:'مدل ۴۰۲۰',en:'4020',ar:'4020',tr:'4020'},badge:{fa:'بزرگ',en:'Large',ar:'كبير',tr:'Büyük'},badgeColor:'blue',desc:{fa:'۲۰۰۰×۴۰۰۰ mm',en:'2000×4000 mm',ar:'2000×4000',tr:'2000×4000 mm'}},{title:{fa:'مدل ۶۰۲۰',en:'6020',ar:'6020',tr:'6020'},badge:{fa:'صنعتی',en:'Heavy',ar:'ثقيل',tr:'Ağır'},badgeColor:'purple',desc:{fa:'۲۰۰۰×۶۰۰۰ mm',en:'2000×6000 mm',ar:'2000×6000',tr:'2000×6000 mm'}}],
-    description:{fa:['دستگاه برش لیزر فایبر فلزات CNC برای برش دقیق، تمیز و پرسرعت ورق‌های فلزی.','مناسب فولاد، استیل، آلومینیوم، برنج، مس و گالوانیزه.','سیستم کنترل CypCut / FSCUT با کنترلر BCS100.','قیمت بر اساس توان، برند و ابعاد میز تعیین می‌شود.'],en:['CNC fiber laser cutting machine for precise metal sheet cutting.','Suitable for steel, stainless, aluminum, brass, copper.','CypCut / FSCUT with BCS100 controller.','Price based on power, brand and bed size.'],ar:['آلة قطع ليزر الألياف CNC لقطع دقيق.','مناسبة للفولاذ والستانلس والألومنيوم.','نظام CypCut مع BCS100.'],tr:['CNC fiber lazer kesim makinesi.','Çelik, paslanmaz, alüminyum için uygun.','CypCut / FSCUT ve BCS100.']},
-    gallery:[] },
-
-  // ====== دستگاه‌های جوش ======
-  'WL-001': { code:'WL-001', cat:{fa:'دستگاه‌های جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'}, badge:{fa:'جوشکار لیزری دستی فیبر',en:'Handheld Fiber Welder',ar:'لحام يدوي ليزر',tr:'El Tipi Fiber Kaynak'},
+    usage:[{icon:'fa-elevator',color:'yellow',title:{fa:'آسانسورسازی',en:'Elevator',ar:'المصاعد',tr:'Asansör'},desc:{fa:'قطعات آسانسور',en:'Elevator parts',ar:'قطع المصاعد',tr:'Asansör'}},{icon:'fa-kitchen-set',color:'blue',title:{fa:'آشپزخانه',en:'Kitchen',ar:'المطابخ',tr:'Mutfak'},desc:{fa:'سینک و هود',en:'Sinks',ar:'الأحواض',tr:'Lavabo'}},{icon:'fa-car',color:'emerald',title:{fa:'خودرو',en:'Auto',ar:'السيارات',tr:'Otomotiv'},desc:{fa:'قطعات خودرو',en:'Auto parts',ar:'قطع السيارات',tr:'Otomotiv'}},{icon:'fa-door-open',color:'pink',title:{fa:'درب و نما',en:'Doors',ar:'الأبواب',tr:'Kapılar'},desc:{fa:'درب فلزی',en:'Metal doors',ar:'الأبواب',tr:'Kapılar'}}],
+    models:[{title:{fa:'مدل ۳۰۱۵',en:'3015',ar:'3015',tr:'3015'},badge:{fa:'پرفروش',en:'Best',ar:'الأكثر',tr:'Popüler'},badgeColor:'green',desc:{fa:'۱۵۰۰×۳۰۰۰ mm',en:'1500×3000 mm',ar:'1500×3000',tr:'1500×3000 mm'}},{title:{fa:'مدل ۴۰۲۰',en:'4020',ar:'4020',tr:'4020'},badge:{fa:'بزرگ',en:'Large',ar:'كبير',tr:'Büyük'},badgeColor:'blue',desc:{fa:'۲۰۰۰×۴۰۰۰ mm',en:'2000×4000 mm',ar:'2000×4000',tr:'2000×4000'}},{title:{fa:'مدل ۶۰۲۰',en:'6020',ar:'6020',tr:'6020'},badge:{fa:'صنعتی',en:'Heavy',ar:'ثقيل',tr:'Ağır'},badgeColor:'purple',desc:{fa:'۲۰۰۰×۶۰۰۰ mm',en:'2000×6000 mm',ar:'2000×6000',tr:'2000×6000'}}],
+    description:{fa:['دستگاه برش لیزر فایبر فلزات CNC برای برش دقیق، تمیز و پرسرعت ورق‌های فلزی.','مناسب فولاد، استیل، آلومینیوم، برنج، مس و گالوانیزه.','سیستم کنترل CypCut / FSCUT با کنترلر BCS100.'],en:['CNC fiber laser cutting machine.'],ar:['آلة قطع ليزر الألياف CNC.'],tr:['CNC fiber lazer kesim makinesi.']}, gallery:[] },
+  'WL-001': { code:'WL-001', cat:{fa:'دستگاه‌های جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'}, badge:{fa:'جوشکار لیزری دستی',en:'Handheld Fiber Welder',ar:'لحام يدوي ليزر',tr:'El Tipi Fiber Kaynak'},
     title:{fa:'جوشکار لیزری دستی فیبر نوری ۱۵۰۰ وات هواخنک',en:'Handheld Fiber Laser Welder 1500W Air-Cooled',ar:'لحام ليزر يدوي ١٥٠٠ واط',tr:'El Tipi Fiber Lazer Kaynak 1500W'},
-    subtitle:{fa:'Handheld Fiber Laser Welder — سه‌کاره: جوش، برش، تمیزکاری',en:'3-in-1: Welding, Cutting, Cleaning',ar:'٣ في ١: لحام، قطع، تنظيف',tr:'3ü 1 arada'},
+    subtitle:{fa:'Handheld Fiber Laser Welder — سه‌کاره',en:'3-in-1: Welding, Cutting, Cleaning',ar:'٣ في ١',tr:'3ü 1 arada'},
     images:[IMG_WL+'MG_4100-scaled.jpg',IMG_WL+'MG_4101-scaled.jpg',IMG_WL+'MG_4102-scaled.jpg',IMG_WL+'MG_4103-scaled.jpg',IMG_WL+'MG_4104-scaled.jpg',IMG_WL+'MG_4106-scaled.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'800-2000W'},{icon:'fa-snowflake',label:{fa:'خنک‌کننده',en:'Cooling',ar:'المبرد',tr:'Soğutma'},value:'هواخنک'},{icon:'fa-toolbox',label:{fa:'کاربری',en:'Function',ar:'الوظيفة',tr:'Fonksiyon'},value:'۳ کاره'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'}],
-    specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'جوشکار لیزری دستی فیبر',en:'Handheld Fiber Welder',ar:'لحام ليزر يدوي',tr:'El Tipi Kaynak'}},{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'F1.5'},{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'800W-2000W'},{label:{fa:'خنک‌کننده',en:'Cooling',ar:'المبرد',tr:'Soğutma'},value:{fa:'هواخنک (Air-Cooled)',en:'Air-Cooled',ar:'تبريد هوائي',tr:'Hava Soğutmalı'}},{label:{fa:'کاربری',en:'Function',ar:'الوظيفة',tr:'Fonksiyon'},value:{fa:'۳ کاره (جوش، برش، تمیزکاری)',en:'3-in-1',ar:'٣ في ١',tr:'3ü 1 arada'}},{label:{fa:'مواد',en:'Materials',ar:'المواد',tr:'Malzemeler'},value:{fa:'آلومینیوم، استیل، فولاد، مس، برنج، تیتانیوم',en:'Aluminum, Steel, Copper, Brass, Titanium',ar:'ألومنيوم، فولاذ، نحاس',tr:'Alüminyum, Çelik, Bakır'}},{label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:{fa:'۵ سال (بسته به مدل)',en:'5 Years',ar:'٥ سنوات',tr:'5 Yıl'}}],
-    usage:[{icon:'fa-car',color:'blue',title:{fa:'خودروسازی',en:'Automotive',ar:'السيارات',tr:'Otomotiv'},desc:{fa:'جوش دقیق قطعات خودرو',en:'Precise auto parts welding',ar:'لحام قطع السيارات',tr:'Otomotiv parça kaynağı'}},{icon:'fa-ship',color:'cyan',title:{fa:'کشتی‌سازی',en:'Shipbuilding',ar:'بناء السفن',tr:'Gemi İnşası'},desc:{fa:'جوش سازه‌های دریایی',en:'Marine structure welding',ar:'لحام الهياكل البحرية',tr:'Deniz yapıları'}},{icon:'fa-plane',color:'purple',title:{fa:'هوافضا',en:'Aerospace',ar:'الفضاء',tr:'Havacılık'},desc:{fa:'قطعات حساس هوافضا',en:'Aerospace parts',ar:'قطع الفضاء',tr:'Havacılık parçaları'}},{icon:'fa-battery-full',color:'emerald',title:{fa:'باتری‌سازی',en:'Battery',ar:'البطاريات',tr:'Batarya'},desc:{fa:'جوش قطعات باتری',en:'Battery parts welding',ar:'لحام البطاريات',tr:'Batarya kaynağı'}}],
-    models:[{title:{fa:'۸۰۰ وات',en:'800W',ar:'٨٠٠ واط',tr:'800W'},badge:{fa:'اقتصادی',en:'Economy',ar:'اقتصادي',tr:'Ekonomik'},badgeColor:'blue',desc:{fa:'برای کارهای سبک',en:'For light work',ar:'للأعمال الخفيفة',tr:'Hafif işler'}},{title:{fa:'۱۰۰۰ وات',en:'1000W',ar:'١٠٠٠ واط',tr:'1000W'},badge:{fa:'رایج',en:'Common',ar:'شائع',tr:'Yaygın'},badgeColor:'green',desc:{fa:'کارهای عمومی',en:'General work',ar:'الأعمال العامة',tr:'Genel işler'}},{title:{fa:'۱۵۰۰ وات',en:'1500W',ar:'١٥٠٠ واط',tr:'1500W'},badge:{fa:'پرفروش',en:'Best Seller',ar:'الأكثر مبيعاً',tr:'Popüler'},badgeColor:'red',desc:{fa:'تعادل قدرت و حمل',en:'Balance power & portability',ar:'توازن القوة والحمل',tr:'Güç ve taşınabilirlik'}},{title:{fa:'۲۰۰۰ وات',en:'2000W',ar:'٢٠٠٠ واط',tr:'2000W'},badge:{fa:'صنعتی سنگین',en:'Heavy',ar:'ثقيل',tr:'Ağır'},badgeColor:'purple',desc:{fa:'جوشکاری سنگین',en:'Heavy welding',ar:'لحام ثقيل',tr:'Ağır kaynak'}}],
-    description:{fa:['جوشکار لیزری دستی فیبر نوری یکی از پیشرفته‌ترین دستگاه‌های جوشکاری در صنعت امروز است.','مدل F1.5 با توان ۱۵۰۰ وات و سیستم خنک‌کننده هواخنک، برای جابه‌جایی و کار در محیط‌های بدون آب مناسب است.','این دستگاه سه‌کاره است: با تغییر نازل، جوش، برش و تمیزکاری را انجام می‌دهد.','مواد قابل جوش: آلومینیوم، استیل، فولاد، مس، برنج، تیتانیوم.','ایمنی: عینک لیزر، دستکش ضدحرارت و ماسک تنفسی ضروری است.'],en:['Handheld fiber laser welder is one of the most advanced welding machines.','Model F1.5 with 1500W and Air-Cooled system for field work.','3-in-1: welding, cutting and cleaning with nozzle change.','Materials: aluminum, steel, copper, brass, titanium.','Safety: laser glasses, gloves, and mask are essential.'],ar:['لحام ليزر يدوي من أكثر الآلات تطوراً.','موديل F1.5 بقوة ١٥٠٠ واط وتبريد هوائي.','٣ في ١: لحام وقطع وتنظيف.','المواد: ألومنيوم، فولاذ، نحاس، تيتانيوم.'],tr:['El tipi fiber lazer kaynak en gelişmiş kaynak makinelerinden biridir.','Model F1.5, 1500W ve Hava Soğutmalı.','3ü 1 arada: kaynak, kesim, temizlik.','Malzemeler: alüminyum, çelik, bakır, titanyum.']},
-    gallery:[] },
-
-  'WL-002': { code:'WL-002', cat:{fa:'دستگاه‌های جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'}, badge:{fa:'جوش پایه',en:'Base Welder',ar:'لحام أساسي',tr:'Temel Kaynak'},
-    title:{fa:'دستگاه جوش لیزری پایه ۱۵۰۰ وات',en:'Base Laser Welder 1500W',ar:'لحام ليزر أساسي ١٥٠٠ واط',tr:'Temel Lazer Kaynak 1500W'},
-    subtitle:{fa:'آب‌خنک، پرتابل، دقیق و قوی',en:'Water-Cooled, Portable',ar:'تبريد مائي، محمول',tr:'Su Soğutmalı'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{icon:'fa-water',label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:'آب‌خنک'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'پرتابل'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:{fa:'آب‌خنک',en:'Water-Cooled',ar:'مائي',tr:'Su'}},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'جوش پایه',en:'Base Welder',ar:'أساسي',tr:'Temel'}}],
-    usage:[{icon:'fa-industry',color:'blue',title:{fa:'صنایع عمومی',en:'General',ar:'عام',tr:'Genel'},desc:{fa:'جوشکاری عمومی',en:'General welding',ar:'لحام عام',tr:'Genel kaynak'}}],
-    models:[{title:{fa:'پایه ۱۵۰۰',en:'Base 1500',ar:'أساسي ١٥٠٠',tr:'Temel 1500'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'مدل استاندارد',en:'Standard',ar:'قياسي',tr:'Standart'}}],
-    description:{fa:['دستگاه جوش لیزری پایه با خنک‌کننده آبی برای کارهای سنگین‌تر.','مناسب کارگاه‌های صنعتی و تولیدی.'],en:['Base laser welder with water cooling for heavier work.'],ar:['لحام ليزر أساسي مع تبريد مائي.'],tr:['Su soğutmalı temel lazer kaynak.']},
-    gallery:[] },
-
-  'WL-003': { code:'WL-003', cat:{fa:'دستگاه‌های جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'}, badge:{fa:'جوش مینی',en:'Mini Welder',ar:'لحام صغير',tr:'Mini Kaynak'},
-    title:{fa:'دستگاه جوش لیزری مینی ۱۲۰۰ وات',en:'Mini Laser Welder 1200W',ar:'لحام ليزر صغير ١٢٠٠ واط',tr:'Mini Lazer Kaynak 1200W'},
-    subtitle:{fa:'سبک، پرتابل، دقیق',en:'Light, Portable',ar:'خفيف، محمول',tr:'Hafif, Taşınabilir'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1200W'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'},{icon:'fa-snowflake',label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:'آب‌خنک'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1200W'}],
-    usage:[{icon:'fa-industry',color:'blue',title:{fa:'صنایع',en:'Industry',ar:'الصناعة',tr:'Sanayi'},desc:{fa:'کارهای دقیق',en:'Precision work',ar:'أعمال دقيقة',tr:'Hassas işler'}}],
-    models:[{title:{fa:'مینی ۱۲۰۰',en:'Mini 1200',ar:'صغير ١٢٠٠',tr:'Mini 1200'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'پرتابل',en:'Portable',ar:'محمول',tr:'Taşınabilir'}}],
-    description:{fa:['جوشکار لیزری مینی با ابعاد کوچک و وزن سبک.','مناسب کارهای دقیق و درجا.'],en:['Mini laser welder with small size and light weight.'],ar:['لحام ليزر صغير الحجم وخفيف الوزن.'],tr:['Küçük boyutlu ve hafif mini lazer kaynak.']},
-    gallery:[] },
-
-  'WL-004': { code:'WL-004', cat:{fa:'دستگاه‌های جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'}, badge:{fa:'جوش نقطه‌ای',en:'Spot Welder',ar:'لحام نقطي',tr:'Nokta Kaynak'},
-    title:{fa:'دستگاه جوش نقطه‌ای لیزری ۳۰۰ وات',en:'Laser Spot Welder 300W',ar:'لحام نقطي ليزر ٣٠٠ واط',tr:'Lazer Nokta Kaynak 300W'},
-    subtitle:{fa:'سبک، کم‌مصرف، مناسب باتری‌سازی',en:'Light, Low-power, Battery Industry',ar:'خفيف، مناسب للبطاريات',tr:'Batarya için Hafif'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'300W'},{icon:'fa-battery',label:{fa:'کاربرد',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:'باتری'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'300W'},{label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:{fa:'جوش نقطه‌ای باتری',en:'Battery Spot Welding',ar:'لحام البطاريات',tr:'Batarya Kaynağı'}}],
-    usage:[{icon:'fa-battery-full',color:'emerald',title:{fa:'باتری‌سازی',en:'Battery',ar:'البطاريات',tr:'Batarya'},desc:{fa:'جوش نقطه‌ای باتری',en:'Battery spot welding',ar:'لحام البطاريات',tr:'Batarya kaynağı'}}],
-    models:[{title:{fa:'نقطه‌ای ۳۰۰',en:'Spot 300',ar:'نقطي ٣٠٠',tr:'Nokta 300'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'مناسب باتری',en:'For battery',ar:'للبطاريات',tr:'Batarya için'}}],
-    description:{fa:['دستگاه جوش نقطه‌ای لیزری مناسب صنعت باتری‌سازی.','کم‌مصرف و سبک.'],en:['Laser spot welder for battery industry.'],ar:['لحام نقطي ليزر لصناعة البطاريات.'],tr:['Batarya endüstrisi için lazer nokta kaynak.']},
-    gallery:[] },
-
-  // ====== دستگاه‌های حکاکی ======
-  'ML-001': { code:'ML-001', cat:{fa:'دستگاه‌های حکاکی',en:'Marking',ar:'النقش',tr:'Markalama'}, badge:{fa:'حکاکی فایبر ۳۰ وات',en:'Fiber Marking 30W',ar:'نقش ليزر ٣٠ واط',tr:'Fiber Markalama 30W'},
-    title:{fa:'دستگاه حکاکی لیزری فایبر ۳۰ وات',en:'Fiber Laser Marking 30W',ar:'آلة نقش ليزر فايبر ٣٠ واط',tr:'Fiber Lazer Markalama 30W'},
-    subtitle:{fa:'حکاکی روی فلز و برخی غیرفلزات',en:'Marking on metal and some non-metal',ar:'النقش على المعادن',tr:'Metal ve bazı metal olmayanlara markalama'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'30W'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-snowflake',label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:'هواخنک'},{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'میکرونی'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'30W'},{label:{fa:'سورس',en:'Source',ar:'المصدر',tr:'Kaynak'},value:'Raycus / Max / JPT'},{label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:{fa:'هواخنک',en:'Air-Cooled',ar:'هوائي',tr:'Hava'}},{label:{fa:'عمر سورس',en:'Source Life',ar:'عمر المصدر',tr:'Kaynak Ömrü'},value:'100,000h'}],
-    usage:[{icon:'fa-ring',color:'yellow',title:{fa:'طلا و جواهر',en:'Jewelry',ar:'المجوهرات',tr:'Mücevher'},desc:{fa:'حکاکی روی حلقه و انگشتر',en:'Rings and jewelry',ar:'الحلقات والمجوهرات',tr:'Yüzük ve mücevher'}},{icon:'fa-car',color:'blue',title:{fa:'قطعه‌سازی',en:'Parts',ar:'القطع',tr:'Parçalar'},desc:{fa:'شماره سریال، بارکد',en:'Serial, barcode',ar:'الرقم التسلسلي',tr:'Seri no, barkod'}},{icon:'fa-pen-fancy',color:'pink',title:{fa:'تبلیغات',en:'Promo',ar:'الدعاية',tr:'Promosyon'},desc:{fa:'خودکار، فندک',en:'Pens, lighters',ar:'الأقلام',tr:'Kalem, çakmak'}}],
-    models:[{title:{fa:'۲۰ وات',en:'20W',ar:'٢٠ واط',tr:'20W'},badge:{fa:'اقتصادی',en:'Economy',ar:'اقتصادي',tr:'Ekonomik'},badgeColor:'blue',desc:{fa:'کارهای سبک',en:'Light work',ar:'أعمال خفيفة',tr:'Hafif işler'}},{title:{fa:'۳۰ وات',en:'30W',ar:'٣٠ واط',tr:'30W'},badge:{fa:'پرفروش',en:'Best Seller',ar:'الأكثر',tr:'Popüler'},badgeColor:'green',desc:{fa:'رایج‌ترین',en:'Most common',ar:'الأكثر شيوعاً',tr:'En yaygın'}},{title:{fa:'۵۰ وات',en:'50W',ar:'٥٠ واط',tr:'50W'},badge:{fa:'قدرتمند',en:'Powerful',ar:'قوي',tr:'Güçlü'},badgeColor:'red',desc:{fa:'حکاکی عمیق',en:'Deep marking',ar:'نقش عميق',tr:'Derin markalama'}},{title:{fa:'۱۰۰ وات',en:'100W',ar:'١٠٠ واط',tr:'100W'},badge:{fa:'صنعتی',en:'Heavy',ar:'ثقيل',tr:'Ağır'},badgeColor:'purple',desc:{fa:'کارهای سنگین',en:'Heavy work',ar:'أعمال ثقيلة',tr:'Ağır işler'}}],
-    description:{fa:['دستگاه حکاکی و مارکینگ لیزری فایبر ۳۰ وات.','مناسب طلاسازی، قطعه‌سازی، تبلیغات و ابزار جراحی.'],en:['Fiber laser marking machine 30W.'],ar:['آلة نقش ليزر فايبر ٣٠ واط.'],tr:['Fiber lazer markalama makinesi 30W.']},
-    gallery:[] },
-
-  'ML-002': { code:'ML-002', cat:{fa:'دستگاه‌های حکاکی',en:'Marking',ar:'النقش',tr:'Markalama'}, badge:{fa:'حکاکی پرتابل',en:'Portable Marking',ar:'نقش محمول',tr:'Taşınabilir Markalama'},
-    title:{fa:'دستگاه حکاکی لیزری پرتابل',en:'Portable Laser Marking',ar:'آلة نقش محمولة',tr:'Taşınabilir Lazer Markalama'},
-    subtitle:{fa:'سبک، قابل حمل، دقیق',en:'Light, Portable, Precise',ar:'خفيف، محمول، دقيق',tr:'Hafif, Taşınabilir'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'},{icon:'fa-suitcase',label:{fa:'حمل',en:'Portable',ar:'محمول',tr:'Taşınabilir'},value:'آسان'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'20-50W'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'20-50W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'پرتابل',en:'Portable',ar:'محمول',tr:'Taşınabilir'}}],
-    usage:[{icon:'fa-industry',color:'blue',title:{fa:'صنایع',en:'Industry',ar:'الصناعة',tr:'Sanayi'},desc:{fa:'حکاکی درجا',en:'On-site marking',ar:'النقش الميداني',tr:'Yerinde markalama'}}],
-    models:[{title:{fa:'پرتابل',en:'Portable',ar:'محمول',tr:'Taşınabilir'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'قابل حمل',en:'Portable',ar:'محمول',tr:'Taşınabilir'}}],
-    description:{fa:['دستگاه حکاکی پرتابل برای کارهای میدانی.'],en:['Portable laser marking for field work.'],ar:['آلة نقش محمولة للعمل الميداني.'],tr:['Saha çalışması için taşınabilir markalama.']},
-    gallery:[] },
-
-  'ML-003': { code:'ML-003', cat:{fa:'دستگاه‌های حکاکی',en:'Marking',ar:'النقش',tr:'Markalama'}, badge:{fa:'حکاکی UV',en:'UV Marking',ar:'نقش UV',tr:'UV Markalama'},
-    title:{fa:'دستگاه حکاکی لیزری UV',en:'UV Laser Marking Machine',ar:'آلة نقش UV',tr:'UV Lazer Markalama'},
-    subtitle:{fa:'برای مواد حساس (پلاستیک، شیشه، سرامیک)',en:'For Sensitive Materials',ar:'للمواد الحساسة',tr:'Hassas Malzemeler İçin'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'3-30W'},{icon:'fa-lightbulb',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'UV'},{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'میکرونی'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'3-30W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'UV'}],
-    usage:[{icon:'fa-flask',color:'purple',title:{fa:'پزشکی',en:'Medical',ar:'الطبي',tr:'Tıbbi'},desc:{fa:'قطعات پزشکی',en:'Medical parts',ar:'القطع الطبية',tr:'Tıbbi parçalar'}}],
-    models:[{title:{fa:'UV ۳ وات',en:'UV 3W',ar:'UV ٣',tr:'UV 3W'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'برای پلاستیک',en:'For plastic',ar:'للبلاستيك',tr:'Plastik için'}}],
-    description:{fa:['حکاکی UV برای مواد حساس مانند پلاستیک، شیشه، سرامیک.'],en:['UV marking for sensitive materials.'],ar:['نقش UV للمواد الحساسة.'],tr:['Hassas malzemeler için UV markalama.']},
-    gallery:[] },
-
-  'ML-004': { code:'ML-004', cat:{fa:'دستگاه‌های حکاکی',en:'Marking',ar:'النقش',tr:'Markalama'}, badge:{fa:'حکاکی MOPA',en:'MOPA Marking',ar:'نقش MOPA',tr:'MOPA Markalama'},
-    title:{fa:'دستگاه حکاکی لیزری MOPA (حک رنگی)',en:'MOPA Laser Marking (Color)',ar:'نقش MOPA ملون',tr:'MOPA Lazer Markalama (Renkli)'},
-    subtitle:{fa:'حک رنگی روی استیل و تیتانیوم',en:'Color marking on steel & titanium',ar:'نقش ملون على الفولاذ',tr:'Renkli markalama'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-palette',label:{fa:'رنگ',en:'Color',ar:'اللون',tr:'Renk'},value:'رنگی'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'20-100W'},{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'میکرونی'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'MOPA'},{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'20-100W'},{label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:{fa:'حک رنگی',en:'Color marking',ar:'النقش الملون',tr:'Renkli markalama'}}],
-    usage:[{icon:'fa-palette',color:'pink',title:{fa:'حک رنگی',en:'Color',ar:'ملون',tr:'Renkli'},desc:{fa:'روی استیل و تیتانیوم',en:'On steel & titanium',ar:'على الفولاذ',tr:'Çelik ve titanyum'}}],
-    models:[{title:{fa:'MOPA 60W',en:'MOPA 60W',ar:'MOPA ٦٠',tr:'MOPA 60W'},badge:{fa:'ویژه',en:'Special',ar:'خاص',tr:'Özel'},badgeColor:'red',desc:{fa:'حک رنگی',en:'Color marking',ar:'نقش ملون',tr:'Renkli markalama'}}],
-    description:{fa:['دستگاه حکاکی MOPA با قابلیت حک رنگی روی استیل و تیتانیوم.'],en:['MOPA marking machine with color marking on steel.'],ar:['آلة نقش MOPA مع نقش ملون.'],tr:['Renkli markalama özellikli MOPA makinesi.']},
-    gallery:[] },
-
-  // ====== دستگاه‌های تمیزکاری ======
-  'CL-001': { code:'CL-001', cat:{fa:'دستگاه‌های تمیزکاری',en:'Cleaning',ar:'التنظيف',tr:'Temizleme'}, badge:{fa:'تمیزکاری پرتابل ۲۰۰W',en:'Portable Cleaner 200W',ar:'منظف محمول ٢٠٠ واط',tr:'Taşınabilir Temizleyici 200W'},
-    title:{fa:'دستگاه تمیزکاری لیزری پرتابل ۲۰۰ وات',en:'Portable Laser Cleaner 200W',ar:'آلة تنظيف ليزر محمولة ٢٠٠ واط',tr:'Taşınabilir Lazer Temizleyici 200W'},
-    subtitle:{fa:'سبک، دقیق، بدون آسیب سطح',en:'Light, Precise, No Surface Damage',ar:'خفيف، دقيق',tr:'Hafif, Hassas'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'200W'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'},{icon:'fa-spray-can',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'پرتابل'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'200W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'پرتابل',en:'Portable',ar:'محمول',tr:'Taşınabilir'}},{label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:{fa:'حذف زنگ و رنگ',en:'Rust & paint removal',ar:'إزالة الصدأ',tr:'Pas ve boya temizliği'}}],
-    usage:[{icon:'fa-spray-can',color:'emerald',title:{fa:'حذف زنگ',en:'Rust Removal',ar:'إزالة الصدأ',tr:'Pas Temizliği'},desc:{fa:'سطوح فلزی',en:'Metal surfaces',ar:'الأسطح المعدنية',tr:'Metal yüzeyler'}},{icon:'fa-paint-roller',color:'blue',title:{fa:'حذف رنگ',en:'Paint Removal',ar:'إزالة الطلاء',tr:'Boya Temizliği'},desc:{fa:'قبل از جوشکاری',en:'Before welding',ar:'قبل اللحام',tr:'Kaynak öncesi'}}],
-    models:[{title:{fa:'۲۰۰ وات',en:'200W',ar:'٢٠٠',tr:'200W'},badge:{fa:'پرتابل',en:'Portable',ar:'محمول',tr:'Taşınabilir'},badgeColor:'green',desc:{fa:'سبک و دقیق',en:'Light & precise',ar:'خفيف ودقيق',tr:'Hafif ve hassas'}}],
-    description:{fa:['دستگاه تمیزکاری لیزری پرتابل ۲۰۰ وات.','حذف زنگ، رنگ، روغن و آلودگی بدون مواد شیمیایی.'],en:['Portable laser cleaner 200W.','Removes rust, paint, oil without chemicals.'],ar:['منظف ليزر محمول ٢٠٠ واط.'],tr:['Taşınabilir lazer temizleyici 200W.']},
-    gallery:[] },
-
-  'CL-002': { code:'CL-002', cat:{fa:'دستگاه‌های تمیزکاری',en:'Cleaning',ar:'التنظيف',tr:'Temizleme'}, badge:{fa:'تمیزکاری پالسی',en:'Pulsed Cleaner',ar:'منظف نبضي',tr:'Darbeli Temizleyici'},
-    title:{fa:'دستگاه تمیزکاری لیزری پالسی ۵۰۰ وات',en:'Pulsed Laser Cleaner 500W',ar:'منظف ليزر نبضي ٥٠٠ واط',tr:'Darbeli Lazer Temizleyici 500W'},
-    subtitle:{fa:'قدرت بالا، تمیزکاری عمیق',en:'High Power, Deep Cleaning',ar:'قوة عالية',tr:'Yüksek Güç'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'500W'},{icon:'fa-wave-square',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'پالسی'},{icon:'fa-spray-can',label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:'عمیق'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'500W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'پالسی'}],
-    usage:[{icon:'fa-spray-can',color:'emerald',title:{fa:'تمیزکاری صنعتی',en:'Industrial Cleaning',ar:'التنظيف الصناعي',tr:'Endüstriyel Temizlik'},desc:{fa:'سطوح بزرگ',en:'Large surfaces',ar:'الأسطح الكبيرة',tr:'Büyük yüzeyler'}}],
-    models:[{title:{fa:'پالسی ۵۰۰',en:'Pulsed 500',ar:'نبضي ٥٠٠',tr:'Darbeli 500'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'قدرت بالا',en:'High power',ar:'قوة عالية',tr:'Yüksek güç'}}],
-    description:{fa:['دستگاه تمیزکاری پالسی ۵۰۰ وات برای تمیزکاری عمیق.'],en:['Pulsed laser cleaner 500W for deep cleaning.'],ar:['منظف ليزر نبضي ٥٠٠ واط.'],tr:['Derin temizlik için darbeli temizleyici 500W.']},
-    gallery:[] },
-
-  'CL-003': { code:'CL-003', cat:{fa:'دستگاه‌های تمیزکاری',en:'Cleaning',ar:'التنظيف',tr:'Temizleme'}, badge:{fa:'تمیزکاری پیوسته',en:'CW Cleaner',ar:'منظف مستمر',tr:'CW Temizleyici'},
-    title:{fa:'دستگاه تمیزکاری لیزری پیوسته ۱۵۰۰ وات',en:'CW Laser Cleaner 1500W',ar:'منظف ليزر مستمر ١٥٠٠ واط',tr:'CW Lazer Temizleyici 1500W'},
-    subtitle:{fa:'قدرت بالا برای تمیزکاری صنعتی',en:'High Power Industrial Cleaning',ar:'قوة عالية للصناعة',tr:'Yüksek Güç Endüstriyel'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{icon:'fa-wave-square',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'پیوسته'},{icon:'fa-industry',label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:'صنعتی'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'پیوسته (CW)'}],
-    usage:[{icon:'fa-industry',color:'cyan',title:{fa:'صنایع سنگین',en:'Heavy Industry',ar:'الصناعة الثقيلة',tr:'Ağır Sanayi'},desc:{fa:'خطوط تولید',en:'Production lines',ar:'خطوط الإنتاج',tr:'Üretim hatları'}}],
-    models:[{title:{fa:'پیوسته ۱۵۰۰',en:'CW 1500',ar:'مستمر ١٥٠٠',tr:'CW 1500'},badge:{fa:'صنعتی',en:'Industrial',ar:'صناعي',tr:'Endüstriyel'},badgeColor:'purple',desc:{fa:'خط تولید',en:'Production',ar:'الإنتاج',tr:'Üretim'}}],
-    description:{fa:['دستگاه تمیزکاری پیوسته ۱۵۰۰ وات برای خطوط تولید صنعتی.'],en:['CW laser cleaner 1500W for production lines.'],ar:['منظف ليزر مستمر ١٥٠٠ واط.'],tr:['Üretim hatları için CW temizleyici 1500W.']},
-    gallery:[] },
-
-  // ====== سورس لیزر ======
-  'FS-001': { code:'FS-001', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۳۰ وات پالسی',en:'Pulsed Source 30W',ar:'مصدر نبضي ٣٠',tr:'Darbeli Kaynak 30W'},
-    title:{fa:'سورس لیزر ۳۰ وات پالسی فایبر Q-Switched',en:'Fiber Pulsed Laser Source 30W Q-Switched',ar:'مصدر ليزر ٣٠ واط نبضي',tr:'Fiber Darbeli Lazer Kaynağı 30W'},
-    subtitle:{fa:'مناسب مارکینگ و حکاکی',en:'For marking and engraving',ar:'للنقش',tr:'Markalama için'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'30W'},{icon:'fa-wave-square',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'Q-Switched'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'30W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'Q-Switched'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus / Max / JPT'}],
-    usage:[{icon:'fa-pen-nib',color:'blue',title:{fa:'مارکینگ',en:'Marking',ar:'النقش',tr:'Markalama'},desc:{fa:'حکاکی سطحی',en:'Surface marking',ar:'النقش السطحي',tr:'Yüzey markalama'}}],
-    models:[{title:{fa:'۳۰ وات',en:'30W',ar:'٣٠',tr:'30W'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'Q-Switched',en:'Q-Switched',ar:'Q-Switched',tr:'Q-Switched'}}],
-    description:{fa:['سورس لیزر پالسی ۳۰ وات Q-Switched.','مناسب مارکینگ سطحی و حکاکی.'],en:['Fiber pulsed laser source 30W Q-Switched.'],ar:['مصدر ليزر نبضي ٣٠ واط.'],tr:['Fiber darbeli lazer kaynağı 30W.']},
-    gallery:[] },
-
-  'FS-002': { code:'FS-002', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۵۰ وات پالسی',en:'Pulsed Source 50W',ar:'مصدر نبضي ٥٠',tr:'Darbeli Kaynak 50W'},
-    title:{fa:'سورس لیزر ۵۰ وات پالسی فایبر Q-Switched',en:'Fiber Pulsed Laser Source 50W Q-Switched',ar:'مصدر ليزر ٥٠ واط نبضي',tr:'Fiber Darbeli Lazer Kaynağı 50W'},
-    subtitle:{fa:'قدرت بالاتر برای حکاکی عمیق',en:'Higher power for deep marking',ar:'قوة أعلى',tr:'Daha yüksek güç'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'50W'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'میکرونی'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'50W'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'Q-Switched'}],
-    usage:[{icon:'fa-pen-nib',color:'green',title:{fa:'مارکینگ عمیق',en:'Deep Marking',ar:'نقش عميق',tr:'Derin Markalama'},desc:{fa:'حکاکی عمیق',en:'Deep marking',ar:'النقش العميق',tr:'Derin markalama'}}],
-    models:[{title:{fa:'۵۰ وات',en:'50W',ar:'٥٠',tr:'50W'},badge:{fa:'رایج',en:'Common',ar:'شائع',tr:'Yaygın'},badgeColor:'green',desc:{fa:'Q-Switched',en:'Q-Switched',ar:'Q-Switched',tr:'Q-Switched'}}],
-    description:{fa:['سورس لیزر پالسی ۵۰ وات.','مناسب حکاکی عمیق‌تر و برش ورق‌های نازک طلا.'],en:['Fiber pulsed laser source 50W.'],ar:['مصدر ليزر نبضي ٥٠ واط.'],tr:['Fiber darbeli lazer kaynağı 50W.']},
-    gallery:[] },
-
-  'FS-003': { code:'FS-003', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۱۰۰۰ وات',en:'Source 1000W',ar:'مصدر ١٠٠٠',tr:'Kaynak 1000W'},
-    title:{fa:'سورس لیزر فایبر ۱۰۰۰ وات ریکاس',en:'Fiber Laser Source 1000W Raycus',ar:'مصدر ليزر فايبر ١٠٠٠ واط',tr:'Fiber Lazer Kaynağı 1000W Raycus'},
-    subtitle:{fa:'مناسب برش و جوش لیزر',en:'For cutting and welding',ar:'للقطع واللحام',tr:'Kesim ve kaynak için'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1000W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1000W'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'فایبر پیوسته',en:'Fiber CW',ar:'مستمر',tr:'CW'}}],
-    usage:[{icon:'fa-scissors',color:'blue',title:{fa:'برش',en:'Cutting',ar:'القطع',tr:'Kesim'},desc:{fa:'برش ورق فلز',en:'Metal sheet',ar:'قطع الصفائح',tr:'Metal levha'}},{icon:'fa-fire',color:'red',title:{fa:'جوش',en:'Welding',ar:'اللحام',tr:'Kaynak'},desc:{fa:'جوشکاری لیزر',en:'Laser welding',ar:'اللحام بالليزر',tr:'Lazer kaynak'}}],
-    models:[{title:{fa:'۱۰۰۰ وات',en:'1000W',ar:'١٠٠٠',tr:'1000W'},badge:{fa:'Raycus',en:'Raycus',ar:'Raycus',tr:'Raycus'},badgeColor:'green',desc:{fa:'پیوسته',en:'CW',ar:'مستمر',tr:'CW'}}],
-    description:{fa:['سورس لیزر فایبر ۱۰۰۰ وات برند Raycus.','مناسب برش و جوش لیزر.'],en:['Fiber laser source 1000W Raycus.'],ar:['مصدر ليزر فايبر ١٠٠٠ واط Raycus.'],tr:['Fiber lazer kaynağı 1000W Raycus.']},
-    gallery:[] },
-
-  'FS-004': { code:'FS-004', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۱۵۰۰ وات',en:'Source 1500W',ar:'مصدر ١٥٠٠',tr:'Kaynak 1500W'},
-    title:{fa:'سورس لیزر فایبر ۱۵۰۰ وات ریکاس',en:'Fiber Laser Source 1500W Raycus',ar:'مصدر ليزر فايبر ١٥٠٠ واط',tr:'Fiber Lazer Kaynağı 1500W Raycus'},
-    subtitle:{fa:'برش و جوش ورق‌های ضخیم‌تر',en:'For thicker sheets',ar:'للصفائح السميكة',tr:'Daha kalın levhalar'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'}],
-    usage:[{icon:'fa-scissors',color:'blue',title:{fa:'برش',en:'Cutting',ar:'القطع',tr:'Kesim'},desc:{fa:'ورق ضخیم‌تر',en:'Thicker sheets',ar:'صفائح سميكة',tr:'Kalın levhalar'}}],
-    models:[{title:{fa:'۱۵۰۰ وات',en:'1500W',ar:'١٥٠٠',tr:'1500W'},badge:{fa:'محبوب',en:'Popular',ar:'شائع',tr:'Popüler'},badgeColor:'green',desc:{fa:'Raycus',en:'Raycus',ar:'Raycus',tr:'Raycus'}}],
-    description:{fa:['سورس لیزر ۱۵۰۰ وات Raycus.'],en:['Fiber laser source 1500W Raycus.'],ar:['مصدر ليزر ١٥٠٠ واط.'],tr:['Fiber lazer kaynağı 1500W.']},
-    gallery:[] },
-
-  'FS-005': { code:'FS-005', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۲۰۰۰ وات',en:'Source 2000W',ar:'مصدر ٢٠٠٠',tr:'Kaynak 2000W'},
-    title:{fa:'سورس لیزر فایبر ۲۰۰۰ وات ریکاس',en:'Fiber Laser Source 2000W Raycus',ar:'مصدر ليزر فايبر ٢٠٠٠ واط',tr:'Fiber Lazer Kaynağı 2000W Raycus'},
-    subtitle:{fa:'برش صنعتی سنگین',en:'Heavy Industrial Cutting',ar:'قطع صناعي ثقيل',tr:'Ağır Endüstriyel Kesim'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'2000W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'2000W'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'}],
-    usage:[{icon:'fa-industry',color:'purple',title:{fa:'صنایع سنگین',en:'Heavy Industry',ar:'الصناعة الثقيلة',tr:'Ağır Sanayi'},desc:{fa:'ورق ضخیم',en:'Thick sheets',ar:'صفائح سميكة',tr:'Kalın levhalar'}}],
-    models:[{title:{fa:'۲۰۰۰ وات',en:'2000W',ar:'٢٠٠٠',tr:'2000W'},badge:{fa:'صنعتی',en:'Industrial',ar:'صناعي',tr:'Endüstriyel'},badgeColor:'purple',desc:{fa:'Raycus',en:'Raycus',ar:'Raycus',tr:'Raycus'}}],
-    description:{fa:['سورس ۲۰۰۰ وات Raycus.'],en:['Fiber laser source 2000W Raycus.'],ar:['مصدر ليزر ٢٠٠٠ واط.'],tr:['Fiber lazer kaynağı 2000W.']},
-    gallery:[] },
-
-  'FS-006': { code:'FS-006', cat:{fa:'سورس لیزر',en:'Laser Source',ar:'مصدر الليزر',tr:'Lazer Kaynağı'}, badge:{fa:'سورس ۳۰۰۰ وات',en:'Source 3000W',ar:'مصدر ٣٠٠٠',tr:'Kaynak 3000W'},
-    title:{fa:'سورس لیزر فایبر ۳۰۰۰ وات ریکاس',en:'Fiber Laser Source 3000W Raycus',ar:'مصدر ليزر ٣٠٠٠ واط',tr:'Fiber Lazer Kaynağı 3000W Raycus'},
-    subtitle:{fa:'برای خطوط تولید صنعتی',en:'For production lines',ar:'لخطوط الإنتاج',tr:'Üretim hatları için'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'3000W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'},{icon:'fa-infinity',label:{fa:'عمر',en:'Life',ar:'العمر',tr:'Ömür'},value:'100,000h'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'3000W'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raycus'}],
-    usage:[{icon:'fa-industry',color:'red',title:{fa:'خط تولید',en:'Production',ar:'الإنتاج',tr:'Üretim'},desc:{fa:'حجم بالا',en:'High volume',ar:'حجم عالي',tr:'Yüksek hacim'}}],
-    models:[{title:{fa:'۳۰۰۰ وات',en:'3000W',ar:'٣٠٠٠',tr:'3000W'},badge:{fa:'صنعتی',en:'Industrial',ar:'صناعي',tr:'Endüstriyel'},badgeColor:'purple',desc:{fa:'Raycus',en:'Raycus',ar:'Raycus',tr:'Raycus'}}],
-    description:{fa:['سورس ۳۰۰۰ وات Raycus برای خطوط تولید.'],en:['Fiber laser source 3000W Raycus.'],ar:['مصدر ليزر ٣٠٠٠ واط.'],tr:['Fiber lazer kaynağı 3000W.']},
-    gallery:[] },
-
-  // ====== هد برش ======
-  'CH-001': { code:'CH-001', cat:{fa:'کنترلر و هد لیزر',en:'Laser Head',ar:'رأس الليزر',tr:'Lazer Kafası'}, badge:{fa:'هد برش BT240S',en:'Cutting Head BT240S',ar:'رأس القطع BT240S',tr:'Kesim Kafası BT240S'},
-    title:{fa:'هد برش لیزر Raytools مدل BT240S',en:'Raytools Laser Cutting Head BT240S',ar:'رأس قطع ليزر Raytools BT240S',tr:'Raytools Lazer Kesim Kafası BT240S'},
-    subtitle:{fa:'اتوفوکوس، مناسب برش دقیق',en:'Autofocus, Precise Cutting',ar:'تركيز تلقائي',tr:'Otomatik Odak'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'بالا'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'تا 6kW'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'BT240S'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'اتوفوکوس',en:'Autofocus',ar:'تركيز تلقائي',tr:'Otomatik Odak'}}],
-    usage:[{icon:'fa-scissors',color:'blue',title:{fa:'برش لیزر',en:'Laser Cutting',ar:'القطع بالليزر',tr:'Lazer Kesim'},desc:{fa:'برش ورق فلز',en:'Metal sheet',ar:'قطع الصفائح',tr:'Metal levha'}}],
-    models:[{title:{fa:'BT240S',en:'BT240S',ar:'BT240S',tr:'BT240S'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'اتوفوکوس',en:'Autofocus',ar:'تلقائي',tr:'Otomatik'}}],
-    description:{fa:['هد برش Raytools مدل BT240S با اتوفوکوس.'],en:['Raytools cutting head BT240S with autofocus.'],ar:['رأس قطع Raytools BT240S.'],tr:['Raytools kesim kafası BT240S.']},
-    gallery:[] },
-
-  'CH-002': { code:'CH-002', cat:{fa:'کنترلر و هد لیزر',en:'Laser Head',ar:'رأس الليزر',tr:'Lazer Kafası'}, badge:{fa:'هد برش BM111',en:'Cutting Head BM111',ar:'رأس القطع BM111',tr:'Kesim Kafası BM111'},
-    title:{fa:'هد برش لیزر Raytools مدل BM111',en:'Raytools Laser Cutting Head BM111',ar:'رأس قطع ليزر Raytools BM111',tr:'Raytools Lazer Kesim Kafası BM111'},
-    subtitle:{fa:'اتوفوکوس، برای برش دقیق',en:'Autofocus, Precise Cutting',ar:'تركيز تلقائي',tr:'Otomatik Odak'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-crosshairs',label:{fa:'دقت',en:'Accuracy',ar:'الدقة',tr:'Hassasiyet'},value:'بالا'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'تا 6kW'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'BM111'},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'}],
-    usage:[{icon:'fa-scissors',color:'blue',title:{fa:'برش لیزر',en:'Laser Cutting',ar:'القطع بالليزر',tr:'Lazer Kesim'},desc:{fa:'برش دقیق',en:'Precise cutting',ar:'قطع دقيق',tr:'Hassas kesim'}}],
-    models:[{title:{fa:'BM111',en:'BM111',ar:'BM111',tr:'BM111'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'اتوفوکوس',en:'Autofocus',ar:'تلقائي',tr:'Otomatik'}}],
-    description:{fa:['هد برش Raytools BM111.'],en:['Raytools cutting head BM111.'],ar:['رأس قطع Raytools BM111.'],tr:['Raytools kesim kafası BM111.']},
-    gallery:[] },
-
-  // ====== قطعات دستگاه ======
-  'CC-001': { code:'CC-001', cat:{fa:'قطعات دستگاه لیزر',en:'Machine Parts',ar:'قطع الآلة',tr:'Makine Parçaları'}, badge:{fa:'چیلر CWFL-1500',en:'Chiller CWFL-1500',ar:'المبرد CWFL-1500',tr:'Soğutucu CWFL-1500'},
-    title:{fa:'چیلر لیزر فایبر مدل CWFL-1500',en:'Fiber Laser Chiller CWFL-1500',ar:'مبرد ليزر فايبر CWFL-1500',tr:'Fiber Lazer Soğutucu CWFL-1500'},
-    subtitle:{fa:'دو مداره، مناسب دستگاه‌های تا ۱۵۰۰ وات',en:'Dual Circuit, for up to 1500W',ar:'دائرة مزدوجة',tr:'Çift Devre'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-snowflake',label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:'دو مداره'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'1500W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'S&A / Hanli'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'CWFL-1500'},{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'دو مداره',en:'Dual Circuit',ar:'دائرة مزدوجة',tr:'Çift Devre'}}],
-    usage:[{icon:'fa-snowflake',color:'blue',title:{fa:'خنک‌کننده',en:'Cooling',ar:'التبريد',tr:'Soğutma'},desc:{fa:'برای دستگاه لیزر',en:'For laser machines',ar:'للآلات الليزر',tr:'Lazer makineleri için'}}],
-    models:[{title:{fa:'CWFL-1500',en:'CWFL-1500',ar:'CWFL-1500',tr:'CWFL-1500'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'1500W',en:'1500W',ar:'1500W',tr:'1500W'}}],
-    description:{fa:['چیلر لیزر فایبر مدل CWFL-1500 با دو مدار.'],en:['Fiber laser chiller CWFL-1500.'],ar:['مبرد ليزر CWFL-1500.'],tr:['Fiber lazer soğutucu CWFL-1500.']},
-    gallery:[] },
-
-  'CC-002': { code:'CC-002', cat:{fa:'قطعات دستگاه لیزر',en:'Machine Parts',ar:'قطع الآلة',tr:'Makine Parçaları'}, badge:{fa:'چیلر CWFL-2000',en:'Chiller CWFL-2000',ar:'المبرد CWFL-2000',tr:'Soğutucu CWFL-2000'},
-    title:{fa:'چیلر لیزر فایبر مدل CWFL-2000',en:'Fiber Laser Chiller CWFL-2000',ar:'مبرد ليزر CWFL-2000',tr:'Fiber Lazer Soğutucu CWFL-2000'},
-    subtitle:{fa:'دو مداره، مناسب تا ۲۰۰۰ وات',en:'Dual Circuit, up to 2000W',ar:'حتى ٢٠٠٠ واط',tr:'2000W\'a kadar'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-snowflake',label:{fa:'خنک',en:'Cooling',ar:'التبريد',tr:'Soğutma'},value:'دو مداره'},{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'2000W'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'S&A / Hanli'},{icon:'fa-shield',label:{fa:'گارانتی',en:'Warranty',ar:'الضمان',tr:'Garanti'},value:'۱ سال'}],
-    specs:[{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'CWFL-2000'}],
-    usage:[{icon:'fa-snowflake',color:'blue',title:{fa:'خنک‌کننده',en:'Cooling',ar:'التبريد',tr:'Soğutma'},desc:{fa:'2000W',en:'2000W',ar:'2000W',tr:'2000W'}}],
-    models:[{title:{fa:'CWFL-2000',en:'CWFL-2000',ar:'CWFL-2000',tr:'CWFL-2000'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'2000W',en:'2000W',ar:'2000W',tr:'2000W'}}],
-    description:{fa:['چیلر CWFL-2000.'],en:['Chiller CWFL-2000.'],ar:['مبرد CWFL-2000.'],tr:['Soğutucu CWFL-2000.']},
-    gallery:[] },
-
-  // ====== قطعات مصرفی ======
-  'CN-001': { code:'CN-001', cat:{fa:'قطعات مصرفی',en:'Consumables',ar:'مستهلكات',tr:'Sarf Malzemeleri'}, badge:{fa:'نازل Raytools',en:'Nozzle Raytools',ar:'فوهة Raytools',tr:'Nozul Raytools'},
-    title:{fa:'نازل هد برش لیزر اورجینال دو لایه Raytools',en:'Original Raytools Double Layer Cutting Nozzle',ar:'فوهة قص أصلية Raytools',tr:'Orijinal Raytools Çift Katman Nozul'},
-    subtitle:{fa:'اورجینال، دو لایه',en:'Original, Double Layer',ar:'أصلي، طبقتان',tr:'Orijinal, Çift Katman'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-certificate',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'اورجینال'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{icon:'fa-layer-group',label:{fa:'لایه',en:'Layer',ar:'الطبقة',tr:'Katman'},value:'دو لایه'},{icon:'fa-tag',label:{fa:'قیمت',en:'Price',ar:'السعر',tr:'Fiyat'},value:'استعلام'}],
-    specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'نازل هد برش',en:'Cutting Head Nozzle',ar:'فوهة القص',tr:'Kesim Nozulu'}},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{label:{fa:'لایه',en:'Layer',ar:'الطبقة',tr:'Katman'},value:'دو لایه'},{label:{fa:'سازگاری',en:'Compatibility',ar:'التوافق',tr:'Uyumluluk'},value:{fa:'هدهای Raytools',en:'Raytools heads',ar:'رؤوس Raytools',tr:'Raytools kafaları'}}],
-    usage:[{icon:'fa-scissors',color:'blue',title:{fa:'هد برش',en:'Cutting Head',ar:'رأس القطع',tr:'Kesim Kafası'},desc:{fa:'قطعه مصرفی',en:'Consumable part',ar:'قطعة مستهلكة',tr:'Sarf parça'}}],
-    models:[{title:{fa:'CN-001',en:'CN-001',ar:'CN-001',tr:'CN-001'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'دو لایه',en:'Double layer',ar:'طبقتان',tr:'Çift katman'}}],
-    description:{fa:['نازل اورجینال دو لایه Raytools.','مناسب هدهای برش Raytools.'],en:['Original Raytools double layer nozzle.'],ar:['فوهة Raytools أصلية.'],tr:['Orijinal Raytools çift katman nozul.']},
-    gallery:[] },
-
-  'CN-006': { code:'CN-006', cat:{fa:'قطعات مصرفی',en:'Consumables',ar:'مستهلكات',tr:'Sarf Malzemeleri'}, badge:{fa:'نازل پر سرعت',en:'High Speed Nozzle',ar:'فوهة عالية السرعة',tr:'Yüksek Hız Nozul'},
-    title:{fa:'نازل هد برش دو لایه پر سرعت Raytools',en:'Raytools High Speed Double Layer Nozzle',ar:'فوهة عالية السرعة Raytools',tr:'Raytools Yüksek Hız Nozul'},
-    subtitle:{fa:'مناسب برش پرسرعت',en:'For high speed cutting',ar:'للقطع السريع',tr:'Hızlı kesim için'},
-    images:['https://i.imgur.com/placeholder.jpg'],
-    advantages:[{icon:'fa-certificate',label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:'اورجینال'},{icon:'fa-industry',label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'},{icon:'fa-bolt',label:{fa:'کاربری',en:'Use',ar:'الاستخدام',tr:'Kullanım'},value:'پرسرعت'},{icon:'fa-tag',label:{fa:'قیمت',en:'Price',ar:'السعر',tr:'Fiyat'},value:'استعلام'}],
-    specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'نازل پر سرعت',en:'High Speed Nozzle',ar:'فوهة سريعة',tr:'Yüksek Hız'}},{label:{fa:'برند',en:'Brand',ar:'العلامة',tr:'Marka'},value:'Raytools'}],
-    usage:[{icon:'fa-bolt',color:'yellow',title:{fa:'برش پرسرعت',en:'High Speed Cutting',ar:'القطع السريع',tr:'Hızlı Kesim'},desc:{fa:'قطعه مصرفی',en:'Consumable',ar:'مستهلك',tr:'Sarf'}}],
-    models:[{title:{fa:'CN-006',en:'CN-006',ar:'CN-006',tr:'CN-006'},badge:{fa:'موجود',en:'Available',ar:'متوفر',tr:'Mevcut'},badgeColor:'green',desc:{fa:'پرسرعت',en:'High speed',ar:'سريع',tr:'Yüksek hız'}}],
-    description:{fa:['نازل پر سرعت Raytools.'],en:['Raytools high speed nozzle.'],ar:['فوهة عالية السرعة.'],tr:['Raytools yüksek hız nozul.']},
-    gallery:[] }
+    advantages:[{icon:'fa-bolt',label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'800-2000W'},{icon:'fa-snowflake',label:{fa:'خنک',en:'Cooling',ar:'المبرد',tr:'Soğutma'},value:'هواخنک'},{icon:'fa-toolbox',label:{fa:'کاربری',en:'Function',ar:'الوظيفة',tr:'Fonksiyon'},value:'۳ کاره'},{icon:'fa-weight-hanging',label:{fa:'وزن',en:'Weight',ar:'الوزن',tr:'Ağırlık'},value:'سبک'}],
+    specs:[{label:{fa:'نوع',en:'Type',ar:'النوع',tr:'Tip'},value:{fa:'جوشکار لیزری دستی فیبر',en:'Handheld Fiber Welder',ar:'لحام ليزر',tr:'El Tipi Kaynak'}},{label:{fa:'مدل',en:'Model',ar:'الموديل',tr:'Model'},value:'F1.5'},{label:{fa:'توان',en:'Power',ar:'الطاقة',tr:'Güç'},value:'800W-2000W'},{label:{fa:'خنک',en:'Cooling',ar:'المبرد',tr:'Soğutma'},value:{fa:'هواخنک (Air-Cooled)',en:'Air-Cooled',ar:'تبريد هوائي',tr:'Hava Soğutmalı'}},{label:{fa:'کاربری',en:'Function',ar:'الوظيفة',tr:'Fonksiyon'},value:{fa:'۳ کاره (جوش، برش، تمیزکاری)',en:'3-in-1',ar:'٣ في ١',tr:'3ü 1 arada'}},{label:{fa:'مواد',en:'Materials',ar:'المواد',tr:'Malzemeler'},value:{fa:'آلومینیوم، استیل، فولاد، مس',en:'Aluminum, Steel, Copper',ar:'ألومنيوم، فولاذ',tr:'Alüminyum, Çelik'}}],
+    usage:[{icon:'fa-car',color:'blue',title:{fa:'خودروسازی',en:'Auto',ar:'السيارات',tr:'Otomotiv'},desc:{fa:'جوش دقیق',en:'Precise welding',ar:'لحام دقيق',tr:'Hassas kaynak'}},{icon:'fa-ship',color:'cyan',title:{fa:'کشتی‌سازی',en:'Shipbuilding',ar:'السفن',tr:'Gemi'},desc:{fa:'سازه دریایی',en:'Marine',ar:'البحري',tr:'Deniz'}},{icon:'fa-plane',color:'purple',title:{fa:'هوافضا',en:'Aerospace',ar:'الفضاء',tr:'Havacılık'},desc:{fa:'قطعات حساس',en:'Aerospace parts',ar:'قطع الفضاء',tr:'Havacılık'}},{icon:'fa-battery-full',color:'emerald',title:{fa:'باتری‌سازی',en:'Battery',ar:'البطاريات',tr:'Batarya'},desc:{fa:'جوش باتری',en:'Battery welding',ar:'لحام البطاريات',tr:'Batarya'}}],
+    models:[{title:{fa:'۸۰۰ وات',en:'800W',ar:'٨٠٠',tr:'800W'},badge:{fa:'اقتصادی',en:'Economy',ar:'اقتصادي',tr:'Ekonomik'},badgeColor:'blue',desc:{fa:'کارهای سبک',en:'Light work',ar:'أعمال خفيفة',tr:'Hafif işler'}},{title:{fa:'۱۵۰۰ وات',en:'1500W',ar:'١٥٠٠',tr:'1500W'},badge:{fa:'پرفروش',en:'Best',ar:'الأكثر',tr:'Popüler'},badgeColor:'red',desc:{fa:'تعادل قدرت',en:'Balance',ar:'توازن',tr:'Denge'}},{title:{fa:'۲۰۰۰ وات',en:'2000W',ar:'٢٠٠٠',tr:'2000W'},badge:{fa:'صنعتی',en:'Heavy',ar:'ثقيل',tr:'Ağır'},badgeColor:'purple',desc:{fa:'جوش سنگین',en:'Heavy welding',ar:'لحام ثقيل',tr:'Ağır kaynak'}}],
+    description:{fa:['جوشکار لیزری دستی فیبر نوری یکی از پیشرفته‌ترین دستگاه‌های جوشکاری.','مدل F1.5 با توان ۱۵۰۰ وات و سیستم خنک‌کننده هواخنک.'],en:['Handheld fiber laser welder.'],ar:['لحام ليزر يدوي.'],tr:['El tipi fiber lazer kaynak.']}, gallery:[] }
 };
 
 // ==================================================
-// [PRODUCT CATEGORIES]
+// [CATEGORIES]
 // ==================================================
 const cats = [
-  { id:'cutting', icon:'fa-scissors', bg:'gradient-brand', nameKey:'cat_cutting', descKey:'cat_cutting_desc', count:'۴', href:'#product=CT-001', pid:'CT-001' },
-  { id:'welding', icon:'fa-fire-flame-curved', bg:'bg-gradient-to-br from-red-700 to-red-900', nameKey:'cat_welding', descKey:'cat_welding_desc', count:'۴', href:'#product=WL-001', pid:'WL-001' },
-  { id:'marking', icon:'fa-pen-nib', bg:'bg-gradient-to-br from-slate-700 to-slate-900', nameKey:'cat_marking', descKey:'cat_marking_desc', count:'۴', href:'#product=ML-001', pid:'ML-001' },
-  { id:'cleaning', icon:'fa-spray-can-sparkles', bg:'bg-gradient-to-br from-emerald-700 to-emerald-900', nameKey:'cat_cleaning', descKey:'cat_cleaning_desc', count:'۳', href:'#product=CL-001', pid:'CL-001' },
-  { id:'source', icon:'fa-microchip', bg:'bg-gradient-to-br from-cyan-700 to-cyan-900', nameKey:'cat_source', descKey:'cat_source_desc', count:'۶', href:'#product=FS-001', pid:'FS-001' },
-  { id:'head', icon:'fa-crosshairs', bg:'bg-gradient-to-br from-violet-700 to-violet-900', nameKey:'cat_head', descKey:'cat_head_desc', count:'۲', href:'#product=CH-001', pid:'CH-001' },
-  { id:'parts', icon:'fa-gears', bg:'bg-gradient-to-br from-amber-700 to-amber-900', nameKey:'cat_parts', descKey:'cat_parts_desc', count:'۲+', href:'#product=CC-001', pid:'CC-001' },
-  { id:'consumables', icon:'fa-screwdriver', bg:'bg-gradient-to-br from-pink-700 to-pink-900', nameKey:'cat_consumables', descKey:'cat_consumables_desc', count:'۱۳+', href:'#product=CN-001', pid:'CN-001' }
+  { id:'cutting', icon:'fa-scissors', bg:'gradient-brand', nameKey:'cat_cutting', descKey:'cat_cutting_desc', count:'۴', pid:'CT-001' },
+  { id:'welding', icon:'fa-fire-flame-curved', bg:'bg-gradient-to-br from-red-700 to-red-900', nameKey:'cat_welding', descKey:'cat_welding_desc', count:'۴', pid:'WL-001' },
+  { id:'marking', icon:'fa-pen-nib', bg:'bg-gradient-to-br from-slate-700 to-slate-900', nameKey:'cat_marking', descKey:'cat_marking_desc', count:'۴', pid:'CT-001' },
+  { id:'cleaning', icon:'fa-spray-can-sparkles', bg:'bg-gradient-to-br from-emerald-700 to-emerald-900', nameKey:'cat_cleaning', descKey:'cat_cleaning_desc', count:'۳', pid:'CT-001' },
+  { id:'source', icon:'fa-microchip', bg:'bg-gradient-to-br from-cyan-700 to-cyan-900', nameKey:'cat_source', descKey:'cat_source_desc', count:'۶', pid:'CT-001' },
+  { id:'head', icon:'fa-crosshairs', bg:'bg-gradient-to-br from-violet-700 to-violet-900', nameKey:'cat_head', descKey:'cat_head_desc', count:'۲', pid:'CT-001' },
+  { id:'parts', icon:'fa-gears', bg:'bg-gradient-to-br from-amber-700 to-amber-900', nameKey:'cat_parts', descKey:'cat_parts_desc', count:'۲+', pid:'CT-001' },
+  { id:'consumables', icon:'fa-screwdriver', bg:'bg-gradient-to-br from-pink-700 to-pink-900', nameKey:'cat_consumables', descKey:'cat_consumables_desc', count:'۱۳+', pid:'CT-001' }
 ];
 
-// ==================================================
-// [APPS DATA]
-// ==================================================
 const apps = [
   { icon:'fa-elevator', color:'yellow', key:'app_elevator' },
   { icon:'fa-kitchen-set', color:'orange', key:'app_kitchen' },
@@ -1228,13 +1366,31 @@ const apps = [
   { icon:'fa-flask', color:'teal', key:'app_lab' }
 ];
 
+const services = [
+  { icon:'fa-truck-fast', color:'blue', title:'svc_install', desc:'svc_install_desc' },
+  { icon:'fa-microchip', color:'purple', title:'svc_source_repair', desc:'svc_source_repair_desc' },
+  { icon:'fa-screwdriver-wrench', color:'amber', title:'svc_machine_repair', desc:'svc_machine_repair_desc' },
+  { icon:'fa-graduation-cap', color:'emerald', title:'svc_training', desc:'svc_training_desc' },
+  { icon:'fa-boxes-packing', color:'pink', title:'svc_parts', desc:'svc_parts_desc' },
+  { icon:'fa-lightbulb', color:'cyan', title:'svc_consult', desc:'svc_consult_desc' }
+];
+
+const projects = [
+  { img:'https://images.unsplash.com/photo-1565439396-cb0af0e4c8b1?w=500', date:'۱۴۰۲ — اصفهان', title:'proj_1_t', desc:'proj_1_d' },
+  { img:'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500', date:'۱۴۰۲ — تهران', title:'proj_2_t', desc:'proj_2_d' },
+  { img:'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500', date:'۱۴۰۳ — بازدید ترکیه', title:'proj_3_t', desc:'proj_3_d', globe:true },
+  { img:'https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=500', date:'۱۴۰۳ — قم', title:'proj_4_t', desc:'proj_4_d' },
+  { img:'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500', date:'۱۴۰۳ — شیراز', title:'proj_5_t', desc:'proj_5_d', tools:true },
+  { img:'https://images.unsplash.com/photo-1565439396-cb0af0e4c8b1?w=500', date:'۱۴۰۲ — بازدید عراق', title:'proj_6_t', desc:'proj_6_d', globe:true }
+];
+
 // ==================================================
 // [STATE]
 // ==================================================
 let currentLang = Storage.get('lang', 'fa');
-let currentView = 'home';
 let currentProductId = null;
 let viewerController = null;
+let currentSlide = 0;
 
 // ==================================================
 // [THEME]
@@ -1268,9 +1424,16 @@ function setLang(lang) {
     const k = el.dataset.i18n;
     if (T[lang] && T[lang][k] !== undefined) el.textContent = T[lang][k];
   });
+  // Eitaa/Bale only for Persian
+  document.querySelectorAll('.lang-fa-only').forEach(el => {
+    el.style.display = (lang === 'fa') ? '' : 'none';
+  });
   renderHomeProducts();
   renderProductsGrid();
   renderApps();
+  renderServices();
+  renderProjects();
+  renderContacts();
   if (currentProductId) renderProduct(currentProductId);
 }
 
@@ -1284,50 +1447,54 @@ function toggleMobile() {
   i.className = h ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
 }
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    const m = document.getElementById('mobile-menu');
-    if (m && !m.classList.contains('hidden')) toggleMobile();
-    closeInquiry();
-  }
+  if (e.key === 'Escape') { closeInquiry(); closeChatWidget(); }
 });
+
+// ==================================================
+// [HERO SLIDER]
+// ==================================================
+function initSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.getElementById('hero-dots');
+  if (!slides.length || !dots) return;
+  dots.innerHTML = slides.length ? Array.from(slides).map((_,i) => `<span class="hero-dot ${i===0?'active':''}" onclick="goSlide(${i})"></span>`).join('') : '';
+  setInterval(() => { slideNav(1); }, 6000);
+}
+function slideNav(dir) {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (!slides.length) return;
+  currentSlide = (currentSlide + dir + slides.length) % slides.length;
+  goSlide(currentSlide);
+}
+function goSlide(i) {
+  currentSlide = i;
+  document.querySelectorAll('.hero-slide').forEach((s,idx) => s.classList.toggle('active', idx===i));
+  document.querySelectorAll('.hero-dot').forEach((d,idx) => d.classList.toggle('active', idx===i));
+}
 
 // ==================================================
 // [ROUTING]
 // ==================================================
-const ROUTES = ['home','about','products','services','applications','training','downloads','contact','product'];
+const ROUTES = ['home','about','products','services','applications','projects','training','downloads','contact','product'];
 function applyRoute() {
   const hash = window.location.hash || '#home';
   if (hash.startsWith('#product=')) {
     const id = hash.substring(9);
     if (products[id]) {
-      showView('product');
-      currentProductId = id;
-      renderProduct(id);
+      showView('product'); currentProductId = id; renderProduct(id);
       updateActiveNav('products');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    } else {
-      alert(T[currentLang].product_not_found);
-      window.location.hash = '#products';
-      return;
-    }
+      window.scrollTo({top:0, behavior:'smooth'}); return;
+    } else { alert(T[currentLang].product_not_found); window.location.hash = '#products'; return; }
   }
   const route = hash.replace('#','') || 'home';
-  if (ROUTES.includes(route)) {
-    showView(route);
-    currentProductId = null;
-    updateActiveNav(route);
-  } else {
-    showView('home');
-    updateActiveNav('home');
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (ROUTES.includes(route)) { showView(route); currentProductId = null; updateActiveNav(route); }
+  else { showView('home'); updateActiveNav('home'); }
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 function showView(name) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   const v = document.getElementById('view-' + name);
   if (v) v.classList.add('active');
-  currentView = name;
 }
 function updateActiveNav(name) {
   document.querySelectorAll('[data-nav]').forEach(n => n.classList.remove('active'));
@@ -1338,12 +1505,12 @@ function navigateTo(name) { window.location.hash = '#' + name; }
 function showProduct(id) { if (products[id]) window.location.hash = 'product=' + id; }
 
 // ==================================================
-// [RENDER HOME PRODUCTS]
+// [RENDER FUNCTIONS]
 // ==================================================
 function renderHomeProducts() {
-  const grid = document.getElementById('home-products-grid');
-  if (!grid) return;
-  grid.innerHTML = cats.slice(0,4).map(c => renderCatCard(c)).join('');
+  const g = document.getElementById('home-products-grid');
+  if (!g) return;
+  g.innerHTML = cats.slice(0,4).map(c => renderCatCard(c)).join('');
 }
 function renderProductsGrid() {
   const g1 = document.getElementById('products-grid-1');
@@ -1353,8 +1520,6 @@ function renderProductsGrid() {
 }
 function renderCatCard(c) {
   const t = T[currentLang];
-  const name = t[c.nameKey] || c.nameKey;
-  const desc = t[c.descKey] || c.descKey;
   return `
     <div onclick="showProduct('${c.pid}')" class="card-hover group bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 cursor-pointer">
       <div class="h-44 ${c.bg} relative flex items-center justify-center overflow-hidden">
@@ -1362,20 +1527,15 @@ function renderCatCard(c) {
         <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">${c.count}</span>
       </div>
       <div class="p-6">
-        <h3 class="text-xl font-bold text-brand dark:text-white mb-2">${escapeHtml(name)}</h3>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4">${escapeHtml(desc)}</p>
+        <h3 class="text-xl font-bold text-brand dark:text-white mb-2">${escapeHtml(t[c.nameKey] || c.nameKey)}</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-4">${escapeHtml(t[c.descKey] || '')}</p>
         <div class="flex items-center gap-2 text-accent text-sm font-semibold">
           <span>${escapeHtml(t.view_models)}</span>
           <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
         </div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
-
-// ==================================================
-// [RENDER APPS]
-// ==================================================
 function renderApps() {
   const g = document.getElementById('apps-grid');
   if (!g) return;
@@ -1383,10 +1543,59 @@ function renderApps() {
   g.innerHTML = apps.map(a => `
     <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
       <div class="feature-icon-box bg-${a.color}-100 dark:bg-${a.color}-900/30 text-${a.color}-600 dark:text-${a.color}-400"><i class="fa-solid ${a.icon}"></i></div>
-      <h3 class="font-bold text-lg text-brand dark:text-white mb-2">${escapeHtml(t[a.key] || a.key)}</h3>
+      <h3 class="font-bold text-lg text-brand dark:text-white mb-2">${escapeHtml(t[a.key] || '')}</h3>
       <p class="text-sm text-slate-500">${escapeHtml(t[a.key+'_desc'] || '')}</p>
-    </div>
-  `).join('');
+    </div>`).join('');
+}
+function renderServices() {
+  const g = document.getElementById('services-grid');
+  if (!g) return;
+  const t = T[currentLang];
+  g.innerHTML = services.map(s => `
+    <div class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+      <div class="feature-icon-box bg-${s.color}-100 dark:bg-${s.color}-900/30 text-${s.color}-600 dark:text-${s.color}-400"><i class="fa-solid ${s.icon}"></i></div>
+      <h3 class="font-bold text-lg text-brand dark:text-white mb-2">${escapeHtml(t[s.title] || '')}</h3>
+      <p class="text-sm text-slate-500 leading-relaxed mb-4">${escapeHtml(t[s.desc] || '')}</p>
+      <button onclick="openInquiry('', '${escapeHtml(t[s.title] || '')}')" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"><span>${escapeHtml(t.request_service)}</span><i class="fa-solid fa-arrow-left"></i></button>
+    </div>`).join('');
+}
+function renderProjects() {
+  const g = document.getElementById('projects-grid');
+  if (!g) return;
+  const t = T[currentLang];
+  g.innerHTML = projects.map(p => {
+    const icon = p.globe ? '<i class="fa-solid fa-globe"></i>' : p.tools ? '<i class="fa-solid fa-tools"></i>' : '<i class="fa-solid fa-calendar"></i>';
+    return `
+      <div class="bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
+        <img src="${p.img}" alt="" class="w-full h-48 object-cover" loading="lazy">
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-xs text-slate-500 mb-2">${icon} ${escapeHtml(p.date)}</div>
+          <h3 class="font-bold text-brand dark:text-white mb-2">${escapeHtml(t[p.title] || '')}</h3>
+          <p class="text-sm text-slate-500">${escapeHtml(t[p.desc] || '')}</p>
+        </div>
+      </div>`;
+  }).join('');
+}
+function renderContacts() {
+  const g = document.getElementById('contact-list');
+  if (!g) return;
+  const all = [...contacts.sales, ...contacts.support, ...contacts.finance];
+  const isFa = currentLang === 'fa';
+  g.innerHTML = all.map(c => `
+    <div class="p-3 flex items-center justify-between gap-3 rounded-lg hover:bg-accent/5 flex-wrap">
+      <div><div class="text-xs text-slate-500">${escapeHtml(c.label)} — ${escapeHtml(c.name)}</div><div class="text-sm font-semibold" dir="ltr">${formatPhone(c.phone)}</div></div>
+      <div class="contact-actions">
+        <a href="tel:+${c.phone}" class="btn-call" title="تماس"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/${c.phone}" target="_blank" rel="noopener noreferrer" class="btn-wa" title="واتساپ"><i class="fa-brands fa-whatsapp"></i></a>
+        ${c.telegram ? `<a href="https://t.me/+${c.telegram}" target="_blank" rel="noopener noreferrer" class="btn-tg" title="تلگرام"><i class="fa-brands fa-telegram"></i></a>` : ''}
+        ${isFa ? `<a href="https://eitaa.com/sahandlaser_sale" target="_blank" rel="noopener noreferrer" class="btn-eitaa" title="ایتا"><i class="fa-solid fa-comment-dots"></i></a>` : ''}
+        ${isFa ? `<a href="https://ble.ir/sahandlaser_sale" target="_blank" rel="noopener noreferrer" class="btn-bale" title="بله"><i class="fa-solid fa-message"></i></a>` : ''}
+      </div>
+    </div>`).join('');
+}
+function formatPhone(p) {
+  if (p.startsWith('98') && p.length === 12) return '0' + p.substring(2,5) + '-' + p.substring(5,8) + '-' + p.substring(8);
+  return p;
 }
 
 // ==================================================
@@ -1402,70 +1611,39 @@ function renderProduct(id) {
   document.getElementById('product-cat-badge').textContent = p.badge[lang] || p.badge.fa;
   document.getElementById('product-title').textContent = p.title[lang] || p.title.fa;
   document.getElementById('product-subtitle').textContent = p.subtitle[lang] || p.subtitle.fa;
-
-  // Viewer
   const viewer = document.getElementById('spin-viewer');
   viewer.innerHTML = `
     <span class="badge-360"><i class="fa-solid fa-rotate"></i> ${escapeHtml(T[lang].badge_360)}</span>
     <span class="spin-counter" id="spin-counter">1 / ${p.images.length}</span>
-    ${p.images.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="${escapeHtml(p.title[lang]||p.title.fa)} — ${i+1}" loading="${i===0?'eager':'lazy'}">`).join('')}
+    ${p.images.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="" loading="${i===0?'eager':'lazy'}">`).join('')}
     <div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${escapeHtml(T[lang].spin_hint)}</span></div>
-    <div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>
-  `;
+    <div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>`;
   const tc = document.getElementById('thumbnails-container');
   const cols = Math.min(p.images.length, 6);
-  const colsMap = { 1:'grid-cols-1', 2:'grid-cols-2', 3:'grid-cols-3', 4:'grid-cols-4', 5:'grid-cols-5', 6:'grid-cols-6' };
+  const colsMap = {1:'grid-cols-1',2:'grid-cols-2',3:'grid-cols-3',4:'grid-cols-4',5:'grid-cols-5',6:'grid-cols-6'};
   tc.className = `grid ${colsMap[cols]||'grid-cols-6'} gap-2 mt-3`;
   tc.innerHTML = p.images.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}" data-index="${i}" alt="">`).join('');
-
-  // Advantages
   document.getElementById('product-advantages').innerHTML = p.advantages.map(a => `
     <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3">
       <i class="fa-solid ${escapeHtml(a.icon)} text-accent"></i>
-      <div>
-        <div class="text-xs text-slate-500">${escapeHtml(a.label[lang]||a.label.fa)}</div>
-        <div class="text-sm font-semibold">${escapeHtml(a.value)}</div>
-      </div>
-    </div>
-  `).join('');
-
-  // Specs
+      <div><div class="text-xs text-slate-500">${escapeHtml(a.label[lang]||a.label.fa)}</div><div class="text-sm font-semibold">${escapeHtml(a.value)}</div></div>
+    </div>`).join('');
   document.getElementById('specs-list').innerHTML = p.specs.map(s => `
-    <div class="spec-item">
-      <span class="spec-label">${escapeHtml(s.label[lang]||s.label.fa)}</span>
-      <span class="spec-value">${escapeHtml(typeof s.value === 'object' ? (s.value[lang]||s.value.fa) : s.value)}</span>
-    </div>
-  `).join('');
-
-  // Usage
+    <div class="spec-item"><span class="spec-label">${escapeHtml(s.label[lang]||s.label.fa)}</span><span class="spec-value">${escapeHtml(typeof s.value === 'object' ? (s.value[lang]||s.value.fa) : s.value)}</span></div>`).join('');
   document.getElementById('usage-list').innerHTML = p.usage.map(u => `
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 flex gap-3">
-      <div class="w-10 h-10 rounded-xl bg-${u.color}-100 dark:bg-${u.color}-900/30 text-${u.color}-600 dark:text-${u.color}-400 flex items-center justify-center shrink-0">
-        <i class="fa-solid ${escapeHtml(u.icon)}"></i>
-      </div>
-      <div>
-        <div class="font-semibold mb-1">${escapeHtml(u.title[lang]||u.title.fa)}</div>
-        <p class="text-sm text-slate-500">${escapeHtml(u.desc[lang]||u.desc.fa)}</p>
-      </div>
-    </div>
-  `).join('');
-
-  // Models
+      <div class="w-10 h-10 rounded-xl bg-${u.color}-100 dark:bg-${u.color}-900/30 text-${u.color}-600 dark:text-${u.color}-400 flex items-center justify-center shrink-0"><i class="fa-solid ${escapeHtml(u.icon)}"></i></div>
+      <div><div class="font-semibold mb-1">${escapeHtml(u.title[lang]||u.title.fa)}</div><p class="text-sm text-slate-500">${escapeHtml(u.desc[lang]||u.desc.fa)}</p></div>
+    </div>`).join('');
   document.getElementById('models-list').innerHTML = p.models.map(m => `
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4">
       <div class="flex items-center justify-between mb-2">
         <span class="font-bold">${escapeHtml(m.title[lang]||m.title.fa)}</span>
         <span class="text-xs bg-${m.badgeColor}-100 dark:bg-${m.badgeColor}-900/30 text-${m.badgeColor}-700 dark:text-${m.badgeColor}-400 px-3 py-1 rounded-full">${escapeHtml(m.badge[lang]||m.badge.fa)}</span>
-      </div>
-      <p class="text-sm text-slate-500">${escapeHtml(m.desc[lang]||m.desc.fa)}</p>
-    </div>
-  `).join('');
-
-  // Description
+      </div><p class="text-sm text-slate-500">${escapeHtml(m.desc[lang]||m.desc.fa)}</p>
+    </div>`).join('');
   const descArr = p.description[lang] || p.description.fa;
   document.getElementById('desc-content').innerHTML = descArr.map(x => `<p>${escapeHtml(x)}</p>`).join('');
-
-  // Gallery — always show placeholders for exploded, drawing, install
   document.getElementById('gallery-container').innerHTML = `
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
       <div class="h-48 bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400"><i class="fa-solid fa-cubes text-6xl"></i></div>
@@ -1478,9 +1656,7 @@ function renderProduct(id) {
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
       <div class="h-48 bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400"><i class="fa-solid fa-tools text-6xl"></i></div>
       <div class="p-4"><div class="font-semibold">پروژه‌های قبلی</div><p class="text-xs text-slate-500 mt-1">به‌زودی</p></div>
-    </div>
-  `;
-
+    </div>`;
   document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', i===0));
   document.querySelectorAll('.tab-content').forEach((c,i) => c.classList.toggle('active', i===0));
   initViewer();
@@ -1498,7 +1674,7 @@ function initViewer() {
   if (!viewer) return;
   const images = viewer.querySelectorAll('img');
   const totalFrames = images.length;
-  if (totalFrames === 0) return;
+  if (!totalFrames) return;
   const pb = document.getElementById('spin-progress');
   const counter = document.getElementById('spin-counter');
   const thumbs = document.querySelectorAll('#thumbnails-container .thumb');
@@ -1539,11 +1715,8 @@ function openInquiry(productCode, productName) {
   currentProductId = productCode || null;
   const modal = document.getElementById('inquiry-modal');
   const info = document.getElementById('modal-product-info');
-  if (productCode) {
-    info.innerHTML = `<i class="fa-solid fa-tag"></i> ${escapeHtml(productCode)} — ${escapeHtml(productName || '')}`;
-  } else {
-    info.innerHTML = `<i class="fa-solid fa-tag"></i> ${escapeHtml(productName || 'استعلام عمومی')}`;
-  }
+  if (productCode) info.innerHTML = `<i class="fa-solid fa-tag"></i> ${escapeHtml(productCode)} — ${escapeHtml(productName || '')}`;
+  else info.innerHTML = `<i class="fa-solid fa-tag"></i> ${escapeHtml(productName || 'استعلام عمومی')}`;
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
   setTimeout(() => document.getElementById('inq-name').focus(), 200);
@@ -1552,7 +1725,6 @@ function closeInquiry() {
   document.getElementById('inquiry-modal').classList.remove('open');
   document.body.style.overflow = '';
 }
-
 const WHATSAPP_NUMBER = '989125855548';
 function sendInquiry(e) {
   e.preventDefault();
@@ -1591,7 +1763,7 @@ function loadComments() {
   const list = document.getElementById('comments-list');
   const noC = document.getElementById('no-comments');
   document.getElementById('comments-count').textContent = comments.length;
-  if (comments.length === 0) { list.innerHTML = ''; noC.style.display = 'block'; return; }
+  if (!comments.length) { list.innerHTML = ''; noC.style.display = 'block'; return; }
   noC.style.display = 'none';
   list.innerHTML = comments.map(c => `
     <div class="comment-card">
@@ -1603,8 +1775,7 @@ function loadComments() {
         <div class="star-rating text-sm">${'★'.repeat(c.rating)}${'☆'.repeat(5-c.rating)}</div>
       </div>
       <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">${escapeHtml(c.text)}</p>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
 document.addEventListener('click', e => {
   if (e.target.classList.contains('star-input')) {
@@ -1661,6 +1832,65 @@ Sent from sahandlaser.com`;
 });
 
 // ==================================================
+// [SOLUTION FORM]
+// ==================================================
+document.addEventListener('submit', e => {
+  if (e.target.id !== 'solution-form') return;
+  e.preventDefault();
+  const machine = document.getElementById('sol-machine').value;
+  const industry = document.getElementById('sol-industry').value;
+  const budget = document.getElementById('sol-budget').value || 'نامشخص';
+  const contact = document.getElementById('sol-contact').value.trim();
+  const req = document.getElementById('sol-requirements').value.trim();
+  if (!machine || !industry || !contact || !req) { alert('لطفاً فیلدهای اجباری را پر کنید.'); return; }
+  const msg = `💡 *درخواست راهکار هوشمند — سهند لیزر*
+
+🔧 *نوع دستگاه:* ${machine}
+🏭 *زمینه کاری:* ${industry}
+💰 *بودجه:* ${budget}
+📞 *تماس:* ${contact}
+
+📝 *نیازها:*
+${req}
+
+---
+🌐 sahandlaser.com`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+});
+
+// ==================================================
+// [CHAT WIDGET]
+// ==================================================
+let chatOpened = false;
+function openChatWidget() {
+  const w = document.getElementById('chat-widget');
+  w.style.transform = 'translateY(0)';
+  w.style.opacity = '1';
+  chatOpened = true;
+}
+function closeChatWidget() {
+  const w = document.getElementById('chat-widget');
+  w.style.transform = 'translateY(150%)';
+  w.style.opacity = '0';
+}
+function sendChatToWhatsApp() {
+  const msg = document.getElementById('chat-input').value.trim() || 'سلام، از سایت سهند لیزر پیام می‌فرستم.';
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+function sendChatToEitaa() {
+  const msg = document.getElementById('chat-input').value.trim() || 'سلام، از سایت سهند لیزر پیام می‌فرستم.';
+  navigator.clipboard?.writeText(msg);
+  alert('پیام کپی شد! در ایتا برای ما ارسال کنید.');
+  window.open('https://eitaa.com/sahandlaser_sale', '_blank');
+}
+function sendChatToBale() {
+  const msg = document.getElementById('chat-input').value.trim() || 'سلام، از سایت سهند لیزر پیام می‌فرستم.';
+  navigator.clipboard?.writeText(msg);
+  alert('پیام کپی شد! در بله برای ما ارسال کنید.');
+  window.open('https://ble.ir/sahandlaser_sale', '_blank');
+}
+
+// ==================================================
 // [INIT]
 // ==================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -1673,8 +1903,17 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHomeProducts();
   renderProductsGrid();
   renderApps();
+  renderServices();
+  renderProjects();
+  renderContacts();
+  initSlider();
   applyRoute();
   window.addEventListener('hashchange', applyRoute);
+  
+  // Chat widget: opens after 1 minute
+  setTimeout(() => {
+    if (!chatOpened) openChatWidget();
+  }, 60000);
 });
 </script>
 
