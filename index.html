@@ -1455,8 +1455,20 @@ const legacyProductPages = {
   'CT-003':'https://sahandlaser.com/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D8%B4-%D9%84%DB%8C%D8%B2%D8%B1-%D8%AF%D9%88%D9%85%DB%8C%D8%B2-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-3015-%D8%A8%D8%A7-%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C/',
   'CT-009':'https://sahandlaser.com/%D9%84%DB%8C%D8%B2%D8%B1-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-%D8%A8%D8%A7-%D9%85%DB%8C%D8%B2-%D8%AF%D9%88%D9%85-%D9%88-%DA%A9%D8%A7%D9%88%D8%B1-%D8%A8%D8%A7-%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C/'
 };
-// This image is already used on the original Sahand Laser site for the welding hero.
-if (products['WL-001']) products['WL-001'].images = ['https://sahandlaser.com/wp-content/uploads/2026/09/MG_4100-scaled.jpg'];
+// Authentic product image sets recovered from the preserved V4 site build / original Sahand archive.
+if (products['CT-001']) products['CT-001'].images = [
+  'https://i.imgur.com/1NFYN59.jpeg',
+  'https://i.imgur.com/UJ0BxQM.jpeg',
+  'https://i.imgur.com/vxiRDia.jpeg'
+];
+if (products['WL-001']) products['WL-001'].images = [
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4100-scaled.jpg',
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4101-scaled.jpg',
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4102-scaled.jpg',
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4103-scaled.jpg',
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4104-scaled.jpg',
+  'https://sahandlaser.com/wp-content/uploads/2026/09/MG_4106-scaled.jpg'
+];
 function isPlaceholderImage(src){ return !src || src === PRODUCT_PLACEHOLDER || String(src).startsWith('data:image/svg+xml;base64,'); }
 
 const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}}];
@@ -1784,8 +1796,7 @@ function renderProduct(id) {
   document.getElementById('product-advantages').innerHTML = p.advantages.map(a => `
     <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3">
       <i class="fa-solid ${escapeHtml(a.icon)} text-accent"></i>
-      <div><div class="text-xs text-slate-500">${escapeHtml(a.label[lang]||a.label.fa)}</div><div class="text-sm font-semibold">${escapeHtml(a.value)}</div></div>
-    </div>`).join('');
+      <div><div class="text-xs text-slate-500">${escapeHtml(a.label[lang]||a.label.fa)}</div><div class="text-sm font-semibold">${escapeHtml(a.value)}</div></div>    </div>`).join('');
   document.getElementById('specs-list').innerHTML = p.specs.map(s => `
     <div class="spec-item"><span class="spec-label">${escapeHtml(s.label[lang]||s.label.fa)}</span><span class="spec-value">${escapeHtml(typeof s.value === 'object' ? (s.value[lang]||s.value.fa) : s.value)}</span></div>`).join('');
   document.getElementById('usage-list').innerHTML = p.usage.map(u => `
@@ -1796,7 +1807,8 @@ function renderProduct(id) {
   document.getElementById('models-list').innerHTML = p.models.map(m => `
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4">
       <div class="flex items-center justify-between mb-2"><span class="font-bold">${escapeHtml(m.title[lang]||m.title.fa)}</span><span class="text-xs bg-${m.badgeColor}-100 dark:bg-${m.badgeColor}-900/30 text-${m.badgeColor}-700 dark:text-${m.badgeColor}-400 px-3 py-1 rounded-full">${escapeHtml(m.badge[lang]||m.badge.fa)}</span></div><p class="text-sm text-slate-500">${escapeHtml(m.desc[lang]||m.desc.fa)}</p>
-    </div>`).join('');  const descArr = p.description[lang] || p.description.fa;
+    </div>`).join('');
+  const descArr = p.description[lang] || p.description.fa;
   document.getElementById('desc-content').innerHTML = descArr.map(x => `<p>${escapeHtml(x)}</p>`).join('');
 
   const gallery = Array.isArray(p.gallery) ? p.gallery.filter(Boolean) : [];
