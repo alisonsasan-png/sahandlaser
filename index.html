@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- Sahand Laser v6 — preservation-first build from v4 + Master Knowledge Base v1 | 2026-10-01 -->
+<!-- Sahand Laser V7 — rebuilt on preserved V6 structure + Master Knowledge Base v1 | 2026-10-01
+     Principle: preserve existing navigation/features, improve progressively, never invent technical specs. -->
 <html lang="fa" dir="rtl" data-theme="navy">
 <head>
 <meta charset="UTF-8">
@@ -9,6 +10,8 @@
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#1E2A5E">
+<meta name="author" content="فناوران پرتو لیزر سهند">
+<meta name="application-name" content="Sahand Laser">
 <link rel="canonical" href="https://sahandlaser.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fa_IR">
@@ -19,6 +22,22 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="فناوران پرتو لیزر سهند">
 <meta name="twitter:description" content="تجهیزات و خدمات تخصصی لیزر فایبر">
+<meta property="og:image" content="https://sahandlaser.com/wp-content/uploads/2026/09/MG_4100-scaled.jpg">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"فناوران پرتو لیزر سهند",
+  "alternateName":"Sahand Laser",
+  "url":"https://sahandlaser.com/",
+  "description":"طراحی، تأمین و پشتیبانی تجهیزات لیزر صنعتی، برش، جوش، حکاکی/مارکینگ و تمیزکاری لیزر فایبر.",
+  "address":{"@type":"PostalAddress","addressCountry":"IR","addressRegion":"اصفهان","streetAddress":"خیابان خیام، خیابان عطاءالملک، بلوک ۲۴، پلاک ۳۳"},
+  "contactPoint":[
+    {"@type":"ContactPoint","telephone":"+98-912-585-5548","contactType":"sales","availableLanguage":["fa","en"]},
+    {"@type":"ContactPoint","telephone":"+98-919-802-3032","contactType":"technical support","availableLanguage":["fa"]}
+  ]
+}
+</script>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231E2A5E'/%3E%3Cpath d='M55 15 L30 55 L45 55 L40 85 L70 40 L55 40 Z' fill='%23A61C1C'/%3E%3C/svg%3E">
 
 <style>
@@ -200,21 +219,17 @@
   .floating-btn .online-dot { position: absolute; top: 2px; right: 2px; width: 14px; height: 14px; background: #22c55e; border: 2px solid white; border-radius: 999px; }
   .dark .floating-btn .online-dot { border-color: #0f172a; }
 
-  /* Timeline */
-  .timeline { position: relative; padding: 2rem 0; }
-  .timeline::before { content: ''; position: absolute; top: 0; bottom: 0; right: 50%; width: 3px; background: linear-gradient(to bottom, rgb(var(--accent)), rgb(var(--brand))); transform: translateX(50%); }
-  .timeline-item { position: relative; padding: 1.5rem 0; }
-  .timeline-item:nth-child(odd) .timeline-content { margin-right: auto; margin-left: 0; padding-right: 2rem; text-align: left; }
-  .timeline-item:nth-child(even) .timeline-content { margin-left: auto; margin-right: 0; padding-left: 2rem; text-align: right; }
-  .timeline-content { width: 45%; background: white; padding: 1.25rem; border-radius: 1rem; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,.05); }
-  .dark .timeline-content { background: #0f172a; border-color: #1e293b; }
-  .timeline-dot { position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%); width: 16px; height: 16px; border-radius: 999px; background: rgb(var(--accent)); border: 3px solid white; z-index: 2; }
-  .dark .timeline-dot { border-color: #020617; }
-  @media (max-width: 768px) {
-    .timeline::before { right: 20px; }
-    .timeline-item .timeline-content { width: calc(100% - 50px); margin-right: 0 !important; margin-left: auto !important; padding-right: 0 !important; padding-left: 1rem !important; text-align: right !important; }
-    .timeline-dot { right: 20px; }
-  }
+  /* Timeline — horizontal by design, touch friendly */
+  .timeline { position: relative; display:flex; gap:1.25rem; padding:3.5rem .75rem 1.5rem; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:x mandatory; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
+  .timeline::before { content:''; position:absolute; top:2rem; right:2rem; left:2rem; height:3px; background:linear-gradient(90deg,rgb(var(--brand)),rgb(var(--accent))); border-radius:999px; }
+  .timeline-item { position:relative; flex:0 0 min(290px,82vw); padding:0; scroll-snap-align:center; }
+  .timeline-item:nth-child(odd) .timeline-content,.timeline-item:nth-child(even) .timeline-content { margin:0; padding:1.25rem; text-align:right; }
+  .timeline-content { width:100%; min-height:155px; background:white; padding:1.25rem; border-radius:1rem; border:1px solid #e2e8f0; box-shadow:0 8px 24px rgba(0,0,0,.06); }
+  .dark .timeline-content { background:#0f172a; border-color:#1e293b; }
+  .timeline-dot { position:absolute; top:-2.03rem; right:1.25rem; transform:none; width:18px; height:18px; border-radius:999px; background:rgb(var(--accent)); border:4px solid white; z-index:2; box-shadow:0 0 0 4px rgba(var(--accent),.12); }
+  .dark .timeline-dot { border-color:#020617; }
+  .timeline-hint { display:flex; align-items:center; justify-content:center; gap:.5rem; margin-top:.65rem; color:#64748b; font-size:.75rem; }
+  @media (max-width:768px){ .timeline{padding-top:3.25rem}.timeline::before{right:1.4rem;left:1.4rem}.timeline-item{flex-basis:78vw}.timeline-content{min-height:170px} }
 
   .catalog-filter{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
   .catalog-filter button{padding:.55rem .9rem;border-radius:.75rem;border:1px solid #cbd5e1;font-size:.78rem;font-weight:700;transition:.2s}
@@ -224,6 +239,10 @@
   .product-mini-card .visual{aspect-ratio:16/10;background:linear-gradient(135deg,rgb(var(--brand-dark)),rgb(var(--brand-light)));display:flex;align-items:center;justify-content:center;overflow:hidden}
   .product-mini-card .visual img{width:100%;height:100%;object-fit:contain;background:#fff}
   .download-group-title{display:flex;align-items:center;gap:.6rem;font-size:1.35rem;font-weight:800;margin:2.25rem 0 1rem;color:rgb(var(--brand))}
+
+  .spin-viewer.static-view{cursor:default;touch-action:auto}.spin-viewer.static-view .spin-progress,.spin-viewer.static-view .spin-hint{display:none}.image-status{position:absolute;bottom:1rem;right:1rem;z-index:10;background:rgba(15,23,42,.85);color:#fff;padding:.4rem .7rem;border-radius:999px;font-size:.7rem;font-weight:700}.image-status.real{background:rgba(5,150,105,.92)}
+  .support-hub-card{position:relative;overflow:hidden}.support-hub-card::after{content:'';position:absolute;width:110px;height:110px;border-radius:999px;background:rgba(var(--accent),.06);left:-35px;bottom:-45px}.support-hub-card>*{position:relative;z-index:1}
+  .archive-note{border:1px dashed #cbd5e1;background:#f8fafc;border-radius:1rem;padding:1.1rem}.dark .archive-note{border-color:#334155;background:#0f172a}
   .dark .download-group-title{color:#fff}
 </style>
 
@@ -479,26 +498,16 @@
     </div>
   </section>
 
-  <!-- Quick access -->
+  <!-- Quick access — preserved from original site, expanded from Master KB -->
   <section class="py-12 bg-white dark:bg-slate-950">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="#products" onclick="navigateTo('products');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
-          <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-boxes-stacked"></i></div>
-          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_products">محصولات</div>
-        </a>
-        <a href="#services" onclick="navigateTo('services');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
-          <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_services">خدمات</div>
-        </a>
-        <a href="#downloads" onclick="navigateTo('downloads');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
-          <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-download"></i></div>
-          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_downloads">دانلود</div>
-        </a>
-        <a href="#contact" onclick="navigateTo('contact');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 text-center border border-slate-200 dark:border-slate-800 cursor-pointer">
-          <div class="w-14 h-14 rounded-2xl gradient-brand flex items-center justify-center text-white text-2xl mx-auto mb-3"><i class="fa-solid fa-headset"></i></div>
-          <div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_contact">تماس</div>
-        </a>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <a href="#products" onclick="navigateTo('products');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-boxes-stacked"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_products">محصولات</div></a>
+        <a href="#services" onclick="navigateTo('services');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_services">خدمات</div></a>
+        <a href="#training" onclick="navigateTo('training');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-graduation-cap"></i></div><div class="font-bold text-brand dark:text-white text-sm">آموزش</div></a>
+        <a href="#downloads" onclick="navigateTo('downloads');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-download"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_downloads">دانلود</div></a>
+        <a href="#applications" onclick="navigateTo('applications');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-industry"></i></div><div class="font-bold text-brand dark:text-white text-sm">کاربردها</div></a>
+        <a href="#contact" onclick="navigateTo('contact');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-headset"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_contact">تماس</div></a>
       </div>
     </div>
   </section>
@@ -515,6 +524,21 @@
         <a href="#products" onclick="navigateTo('products');return false;" class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all cursor-pointer">
           <span data-i18n="view_all_products">مشاهده همه محصولات</span> <i class="fa-solid fa-arrow-left"></i>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support & learning hub — inspired by the original Sahand Laser structure -->
+  <section class="py-16 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10"><span class="text-accent font-semibold text-sm">مرکز پشتیبانی سهند لیزر</span><h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3 text-brand dark:text-white">آموزش، دانلود و راهنمای انتخاب در همان ساختار اصلی</h2><p class="text-sm text-slate-500 leading-7">این بخش بر مبنای ساختار سایت قبلی و بانک اطلاعاتی پروژه نگه داشته شده و به صفحات واقعی سایت متصل است.</p></div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <a href="#downloads" onclick="navigateTo('downloads');return false;" class="support-hub-card card-hover rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-blue-100 dark:bg-blue-900/30 text-blue-600"><i class="fa-solid fa-download"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">دانلود نرم‌افزار لیزر</h3><p class="text-sm text-slate-500 mt-2 leading-7">نسخه‌های CypCut، EZCad و درایورهای ثبت‌شده در پایگاه داده.</p></a>
+        <a href="#training" onclick="navigateTo('training');return false;" class="support-hub-card card-hover rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600"><i class="fa-solid fa-graduation-cap"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">آموزش تنظیمات و کار با دستگاه</h3><p class="text-sm text-slate-500 mt-2 leading-7">آموزش اپراتوری، نگهداری، عیب‌یابی و ایمنی طبق ساختار اصلی سایت.</p></a>
+        <a href="https://sahandlaser.com/designing/" target="_blank" rel="noopener noreferrer" class="support-hub-card card-hover rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-purple-100 dark:bg-purple-900/30 text-purple-600"><i class="fa-solid fa-pen-ruler"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">طرح‌های آماده لیزر</h3><p class="text-sm text-slate-500 mt-2 leading-7">دسترسی به آرشیو طرح‌های آماده موجود در وب‌سایت سهند لیزر.</p></a>
+        <button type="button" onclick="openInquiry('', 'مشاوره و استعلام قیمت')" class="support-hub-card card-hover text-right rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-amber-100 dark:bg-amber-900/30 text-amber-600"><i class="fa-solid fa-comments"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">مشاوره و استعلام قیمت</h3><p class="text-sm text-slate-500 mt-2 leading-7">ارتباط مستقیم با فروش برای انتخاب دستگاه و کانفیگ مناسب.</p></button>
+        <a href="#products" onclick="navigateTo('products');return false;" class="support-hub-card card-hover rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-rose-100 dark:bg-rose-900/30 text-rose-600"><i class="fa-solid fa-compass"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">راهنمای انتخاب دستگاه</h3><p class="text-sm text-slate-500 mt-2 leading-7">از نوع فرآیند تا توان سورس و تجهیزات جانبی، بر پایه داده‌های تأییدشده.</p></a>
+        <a href="#contact" onclick="navigateTo('contact');return false;" class="support-hub-card card-hover rounded-2xl p-6 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900"><div class="feature-icon-box bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600"><i class="fa-solid fa-circle-question"></i></div><h3 class="font-bold text-lg text-brand dark:text-white">پرسش فنی و پشتیبانی</h3><p class="text-sm text-slate-500 mt-2 leading-7">شماره‌های فروش، پشتیبانی، خدمات برش و حسابداری در صفحه تماس.</p></a>
       </div>
     </div>
   </section>
@@ -659,6 +683,7 @@
             </div>
           </div>
         </div>
+        <div class="timeline-hint"><i class="fa-solid fa-arrows-left-right"></i><span>در موبایل با انگشت و در دسکتاپ با اسکرول افقی حرکت کنید</span></div>
       </div>
     </div>
   </section>
@@ -710,8 +735,8 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-3xl font-extrabold text-accent-light mb-1">۴</div><div class="text-xs" data-i18n="about_patents">اختراع ثبت‌شده ملی</div></div>
         <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-2xl font-extrabold text-accent-light mb-1"><i class="fa-solid fa-industry"></i></div><div class="text-xs">پروژه‌های صنعتی و خدمات فنی</div></div>
-        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-3xl font-extrabold text-accent-light mb-1">۱۳+</div><div class="text-xs" data-i18n="about_years">سال تجربه</div></div>
-        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-3xl font-extrabold text-accent-light mb-1">۵ سال</div><div class="text-xs" data-i18n="about_satisfaction">رضایت مشتریان</div></div>
+        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-3xl font-extrabold text-accent-light mb-1">۱۳۹۰</div><div class="text-xs">سال آغاز فعالیت</div></div>
+        <div class="bg-white/10 rounded-2xl p-5 text-center backdrop-blur"><div class="text-2xl font-extrabold text-accent-light mb-1"><i class="fa-solid fa-headset"></i></div><div class="text-xs">پشتیبانی و خدمات فنی</div></div>
       </div>
     </div>
     <div class="text-center">
@@ -872,8 +897,7 @@
     <nav class="text-sm text-slate-500 mb-6"><a href="#home" onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>مرکز دانلود</span></nav>
     <div class="text-center max-w-3xl mx-auto mb-10">
       <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3"><i class="fa-solid fa-download"></i></span>
-      <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3">مرکز دانلود نرم‌افزار و درایور</h1>
-      <p class="text-slate-500 leading-7">آرشیو نسخه‌های CypCut، EZCad و درایورهای نصب. پیش از نصب نسخه جدید، سازگاری آن با کنترلر و سخت‌افزار دستگاه بررسی شود.</p>
+      <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3">مرکز دانلود نرم‌افزار و درایور</h1>      <p class="text-slate-500 leading-7">آرشیو نسخه‌های CypCut، EZCad و درایورهای نصب. پیش از نصب نسخه جدید، سازگاری آن با کنترلر و سخت‌افزار دستگاه بررسی شود.</p>
     </div>
     <div id="downloads-dynamic"></div>
   </main>
@@ -974,7 +998,7 @@
       <div>
         <div class="spin-viewer" id="spin-viewer" role="region" aria-label="360 degree product viewer" tabindex="0"></div>
         <div class="grid grid-cols-3 gap-2 mt-3" id="thumbnails-container"></div>
-        <p class="text-xs text-slate-500 mt-3 text-center"><i class="fa-solid fa-circle-info"></i> برای دیدن از زوایای مختلف، موس را نگه دارید و بکشید</p>
+        <p class="text-xs text-slate-500 mt-3 text-center"><i class="fa-solid fa-circle-info"></i> نمایش ۳۶۰ درجه فقط برای محصولاتی فعال می‌شود که چند فریم واقعی و تطبیق‌شده داشته باشند.</p>
       </div>
 
       <div>
@@ -989,6 +1013,9 @@
           </button>
           <a href="#contact" class="px-6 py-4 border-2 border-brand dark:border-white hover:bg-brand dark:hover:bg-white/10 text-brand dark:text-white font-semibold rounded-xl transition-all flex items-center gap-2">
             <i class="fa-solid fa-phone"></i><span data-i18n="cta_call">تماس</span>
+          </a>
+          <a id="legacy-product-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-5 py-4 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-semibold rounded-xl transition-all items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left"></i><span>صفحه محصول در سایت قبلی</span>
           </a>
         </div>
 
@@ -1055,7 +1082,7 @@
           <div class="w-11 h-11 rounded-xl bg-accent flex items-center justify-center text-white font-bold"><i class="fa-solid fa-bolt-lightning"></i></div>
           <div><div class="font-bold text-white">فناوران پرتو لیزر سهند</div><div class="text-[10px] tracking-widest">SAHAND LASER</div></div>
         </div>
-        <p class="text-sm leading-relaxed mb-4">مرکز تخصصی فروش و خدمات لیزرهای فایبر در ایران.</p>
+        <p class="text-sm leading-relaxed mb-4">از ایده تا تولید، با مهندسی سهند لیزر — تجهیزات و خدمات تخصصی لیزر صنعتی.</p>
         <p class="text-xs text-slate-500 mb-4"><a href="https://maps.google.com/?q=32.740321,51.586357" onclick="return openOfficeMap(event)" target="_blank" rel="noopener noreferrer" class="hover:text-accent-light">اصفهان، خیابان خیام، عطاءالملک، بلوک ۲۴، پلاک ۳۳</a></p>
         <div class="flex gap-2">
           <a href="https://wa.me/989125855548" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-green-500 flex items-center justify-center transition-all"><i class="fa-brands fa-whatsapp"></i></a>
@@ -1417,6 +1444,21 @@ const applicationDetails = {
   }
 };
 
+// ==================================================
+// [AUTHENTIC MEDIA + LEGACY PRODUCT REFERENCES]
+// Only verified Sahand-owned/public site media is attached here. No competitor images.
+// 360° is enabled only when a product has multiple real frames.
+// ==================================================
+const legacyProductPages = {
+  'CT-001':'https://sahandlaser.com/%D9%84%DB%8C%D8%B2%D8%B1-%D8%A8%D8%B1%D8%B4-%D9%81%D9%84%D8%B2%D8%A7%D8%AA-%D9%85%D8%AF%D9%84-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF/',
+  'CT-002':'https://sahandlaser.com/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D8%B4-%D9%84%DB%8C%D8%B2%D8%B1-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-%D8%AF%D9%88%D9%85%DB%8C%D8%B2-3015-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1/',
+  'CT-003':'https://sahandlaser.com/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D8%B4-%D9%84%DB%8C%D8%B2%D8%B1-%D8%AF%D9%88%D9%85%DB%8C%D8%B2-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-3015-%D8%A8%D8%A7-%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C/',
+  'CT-009':'https://sahandlaser.com/%D9%84%DB%8C%D8%B2%D8%B1-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-%D8%A8%D8%A7-%D9%85%DB%8C%D8%B2-%D8%AF%D9%88%D9%85-%D9%88-%DA%A9%D8%A7%D9%88%D8%B1-%D8%A8%D8%A7-%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C/'
+};
+// This image is already used on the original Sahand Laser site for the welding hero.
+if (products['WL-001']) products['WL-001'].images = ['https://sahandlaser.com/wp-content/uploads/2026/09/MG_4100-scaled.jpg'];
+function isPlaceholderImage(src){ return !src || src === PRODUCT_PLACEHOLDER || String(src).startsWith('data:image/svg+xml;base64,'); }
+
 const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}}];
 
 const projects = [];
@@ -1703,24 +1745,42 @@ function renderProduct(id) {
   const p = products[id];
   if (!p) return;
   const lang = currentLang;
-  document.title = (p.title[lang] || p.title.fa) + ' | سهند لیزر';
+  const title = p.title[lang] || p.title.fa;
+  document.title = title + ' | سهند لیزر';
   document.getElementById('breadcrumb-cat').textContent = p.cat[lang] || p.cat.fa;
   document.getElementById('product-code-display').textContent = p.code;
   document.getElementById('product-cat-badge').textContent = p.badge[lang] || p.badge.fa;
-  document.getElementById('product-title').textContent = p.title[lang] || p.title.fa;
+  document.getElementById('product-title').textContent = title;
   document.getElementById('product-subtitle').textContent = p.subtitle[lang] || p.subtitle.fa;
+
+  const frames = (p.images && p.images.length ? p.images : [PRODUCT_PLACEHOLDER]);
+  const realFrames = frames.filter(src => !isPlaceholderImage(src));
+  const has360 = realFrames.length > 1;
+  const hasRealImage = realFrames.length > 0;
   const viewer = document.getElementById('spin-viewer');
+  viewer.classList.toggle('static-view', !has360);
   viewer.innerHTML = `
-    <span class="badge-360"><i class="fa-solid fa-rotate"></i> ${escapeHtml(T[lang].badge_360)}</span>
-    <span class="spin-counter" id="spin-counter">1 / ${p.images.length}</span>
-    ${p.images.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="${escapeHtml((p.title[lang]||p.title.fa) + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
-    <div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${escapeHtml(T[lang].spin_hint)}</span></div>
-    <div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>`;
+    ${has360 ? `<span class="badge-360"><i class="fa-solid fa-rotate"></i> ${escapeHtml(T[lang].badge_360)}</span>` : ''}
+    ${has360 ? `<span class="spin-counter" id="spin-counter">1 / ${frames.length}</span>` : ''}
+    ${frames.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="${escapeHtml(title + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
+    <span class="image-status ${hasRealImage?'real':''}"><i class="fa-solid ${hasRealImage?'fa-camera':'fa-image'}"></i> ${hasRealImage?'تصویر واقعی سهند لیزر':'تصویر واقعی در حال تکمیل آرشیو'}</span>
+    ${has360 ? `<div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${escapeHtml(T[lang].spin_hint)}</span></div><div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>` : ''}`;
+
   const tc = document.getElementById('thumbnails-container');
-  const cols = Math.min(p.images.length, 6);
-  const colsMap = {1:'grid-cols-1',2:'grid-cols-2',3:'grid-cols-3',4:'grid-cols-4',5:'grid-cols-5',6:'grid-cols-6'};
-  tc.className = `grid ${colsMap[cols]||'grid-cols-6'} gap-2 mt-3`;
-  tc.innerHTML = p.images.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}" data-index="${i}" alt="${escapeHtml((p.title[lang]||p.title.fa) + ' - بندانگشتی ' + (i+1))}">`).join('');
+  if (frames.length > 1) {
+    const cols = Math.min(frames.length, 6), colsMap={1:'grid-cols-1',2:'grid-cols-2',3:'grid-cols-3',4:'grid-cols-4',5:'grid-cols-5',6:'grid-cols-6'};
+    tc.className = `grid ${colsMap[cols]||'grid-cols-6'} gap-2 mt-3`;
+    tc.innerHTML = frames.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}" data-index="${i}" alt="${escapeHtml(title + ' - بندانگشتی ' + (i+1))}">`).join('');
+  } else { tc.className='hidden'; tc.innerHTML=''; }
+
+  const legacyLink=document.getElementById('legacy-product-link');
+  if (legacyLink) {
+    const url=legacyProductPages[p.code];
+    legacyLink.href=url||'#';
+    legacyLink.classList.toggle('hidden',!url);
+    legacyLink.classList.toggle('inline-flex',!!url);
+  }
+
   document.getElementById('product-advantages').innerHTML = p.advantages.map(a => `
     <div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3">
       <i class="fa-solid ${escapeHtml(a.icon)} text-accent"></i>
@@ -1735,29 +1795,23 @@ function renderProduct(id) {
     </div>`).join('');
   document.getElementById('models-list').innerHTML = p.models.map(m => `
     <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4">
-      <div class="flex items-center justify-between mb-2">
-        <span class="font-bold">${escapeHtml(m.title[lang]||m.title.fa)}</span>
-        <span class="text-xs bg-${m.badgeColor}-100 dark:bg-${m.badgeColor}-900/30 text-${m.badgeColor}-700 dark:text-${m.badgeColor}-400 px-3 py-1 rounded-full">${escapeHtml(m.badge[lang]||m.badge.fa)}</span>
-      </div><p class="text-sm text-slate-500">${escapeHtml(m.desc[lang]||m.desc.fa)}</p>
-    </div>`).join('');
-  const descArr = p.description[lang] || p.description.fa;
+      <div class="flex items-center justify-between mb-2"><span class="font-bold">${escapeHtml(m.title[lang]||m.title.fa)}</span><span class="text-xs bg-${m.badgeColor}-100 dark:bg-${m.badgeColor}-900/30 text-${m.badgeColor}-700 dark:text-${m.badgeColor}-400 px-3 py-1 rounded-full">${escapeHtml(m.badge[lang]||m.badge.fa)}</span></div><p class="text-sm text-slate-500">${escapeHtml(m.desc[lang]||m.desc.fa)}</p>
+    </div>`).join('');  const descArr = p.description[lang] || p.description.fa;
   document.getElementById('desc-content').innerHTML = descArr.map(x => `<p>${escapeHtml(x)}</p>`).join('');
-  document.getElementById('gallery-container').innerHTML = `
-    <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
-      <div class="h-48 bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400"><i class="fa-solid fa-cubes text-6xl"></i></div>
-      <div class="p-4"><div class="font-semibold">نمای انفجاری</div><p class="text-xs text-slate-500 mt-1">به‌زودی</p></div>
-    </div>
-    <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
-      <div class="h-48 bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400"><i class="fa-solid fa-drafting-compass text-6xl"></i></div>
-      <div class="p-4"><div class="font-semibold">نقشه فنی</div><p class="text-xs text-slate-500 mt-1">به‌زودی</p></div>
-    </div>
-    <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
-      <div class="h-48 bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-400"><i class="fa-solid fa-tools text-6xl"></i></div>
-      <div class="p-4"><div class="font-semibold">پروژه‌های قبلی</div><p class="text-xs text-slate-500 mt-1">به‌زودی</p></div>
-    </div>`;
+
+  const gallery = Array.isArray(p.gallery) ? p.gallery.filter(Boolean) : [];
+  const galleryRoot=document.getElementById('gallery-container');
+  if (gallery.length) {
+    galleryRoot.className='grid md:grid-cols-3 gap-4';
+    galleryRoot.innerHTML=gallery.map((src,i)=>`<figure class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden"><img src="${escapeHtml(src)}" alt="${escapeHtml(title+' - گالری '+(i+1))}" class="w-full h-56 object-contain bg-white" loading="lazy"><figcaption class="p-3 text-xs text-slate-500">تصویر آرشیوی محصول</figcaption></figure>`).join('');
+  } else {
+    galleryRoot.className='block';
+    galleryRoot.innerHTML=`<div class="archive-note text-center"><i class="fa-solid fa-camera text-accent text-2xl mb-3"></i><div class="font-bold text-brand dark:text-white mb-2">گالری واقعی این محصول در حال انتقال از آرشیو قبلی است</div><p class="text-sm text-slate-500 leading-7">برای جلوگیری از نمایش تصویر یا مدل ساختگی، تا زمان تطبیق عکس واقعی با کد محصول هیچ نمای 3D یا تصویر جایگزین به‌عنوان محصول واقعی منتشر نمی‌شود.</p>${legacyProductPages[p.code]?`<a href="${escapeHtml(legacyProductPages[p.code])}" target="_blank" rel="noopener noreferrer" class="inline-flex mt-4 items-center gap-2 text-accent font-bold text-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> مشاهده صفحه آرشیوی این محصول</a>`:''}</div>`;
+  }
+
   document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', i===0));
   document.querySelectorAll('.tab-content').forEach((c,i) => c.classList.toggle('active', i===0));
-  initViewer();
+  if (has360) initViewer();
   loadComments();
 }
 
