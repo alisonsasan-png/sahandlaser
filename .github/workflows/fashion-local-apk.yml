@@ -7,6 +7,12 @@ on:
     paths:
       - 'buildsrc/**'
       - '.github/workflows/fashion-local-apk.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'buildsrc/**'
+      - '.github/workflows/fashion-local-apk.yml'
 
 jobs:
   build:
