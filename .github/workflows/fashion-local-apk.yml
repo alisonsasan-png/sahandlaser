@@ -39,6 +39,16 @@ jobs:
           base64 --decode FashionLocalAndroid-v0.1.zip.b64 > FashionLocalAndroid-v0.1.zip
           unzip -t FashionLocalAndroid-v0.1.zip
           unzip -q -o FashionLocalAndroid-v0.1.zip
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("fashion-local/app/build.gradle.kts")
+          s = p.read_text()
+          s = s.replace(
+              '    compileSdk = 35\n',
+              '    compileSdk = 35\n\n    compileOptions {\n        sourceCompatibility = JavaVersion.VERSION_17\n        targetCompatibility = JavaVersion.VERSION_17\n    }\n'
+          )
+          p.write_text(s)
+          PY
 
       - name: Install Android platform
         run: |
