@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>پیش‌نمایش اصلاحات ۳ اکتبر — سهند لیزر</title><style>html,body,iframe{width:100%;height:100%;margin:0;border:0}body{overflow:hidden}</style></head><body>
+<iframe id="site" src="./index.html" title="پیش‌نمایش سهند لیزر"></iframe>
+<script>
+const f=document.getElementById('site');
+const files=['assets/update/media-hero.js','assets/update/media-360.js','assets/update/media-exploded.js','assets/update/site-update-core.js'];
+f.addEventListener('load',async()=>{const d=f.contentDocument;for(const src of files){await new Promise((ok,fail)=>{const s=d.createElement('script');s.src=src;s.onload=ok;s.onerror=fail;d.body.appendChild(s);});}});
+</script></body></html>
