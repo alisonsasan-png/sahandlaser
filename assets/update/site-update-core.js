@@ -40,6 +40,23 @@ function addStyle(){
       .timeline-item{flex:0 0 78vw!important;scroll-snap-align:center!important}
     }
     .sahand-3d-card{border:1px solid rgba(var(--accent),.25);background:linear-gradient(135deg,rgba(var(--accent),.08),rgba(var(--brand),.08));border-radius:1.25rem;padding:1.25rem}
+    .sahand-live3d{height:520px;border-radius:1rem;overflow:hidden;background:radial-gradient(circle at 50% 35%,#eef5ff,#dce7f5);position:relative;touch-action:none;cursor:grab}
+    .dark .sahand-live3d{background:radial-gradient(circle at 50% 35%,#172554,#020617)}
+    .sahand-live3d:active{cursor:grabbing}
+    .sahand-live3d svg{width:100%;height:100%;display:block}
+    .sahand-live3d .m3-shadow{fill:#000;opacity:.16}
+    .sahand-live3d .m3-blue{fill:#1261a0;stroke:#073b66;stroke-width:2}
+    .sahand-live3d .m3-blue2{fill:#1976b9;stroke:#073b66;stroke-width:2}
+    .sahand-live3d .m3-dark{fill:#17212b;stroke:#07111b;stroke-width:2}
+    .sahand-live3d .m3-metal{fill:#b8c2cc;stroke:#52606d;stroke-width:1.5}
+    .sahand-live3d .m3-slat{stroke:#263746;stroke-width:2}
+    .sahand-live3d .m3-head{fill:#d6dee5;stroke:#34495e;stroke-width:2}
+    .sahand-live3d .m3-nozzle{fill:#b91c1c}
+    .sahand-live3d .m3-label{fill:#fff;font:bold 22px Arial,sans-serif;letter-spacing:1px}
+    .sahand-3d-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}
+    .sahand-3d-btn{border:1px solid #cbd5e1;border-radius:.7rem;padding:.45rem .75rem;font-weight:800;font-size:.78rem;background:#fff;color:#1e293b}
+    .dark .sahand-3d-btn{background:#0f172a;color:#fff;border-color:#334155}
+    @media(max-width:768px){.sahand-live3d{height:380px}}
     .sahand-media-card{border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;background:#fff}
     .dark .sahand-media-card{border-color:#334155;background:#0f172a}
     .sahand-media-card img{display:block;width:100%;height:230px;object-fit:contain;background:#f8fafc}
@@ -121,8 +138,56 @@ function enhanceNewProduct(){
   media.innerHTML=`<h3 class="text-xl font-extrabold text-brand dark:text-white mb-4">${mediaLabel('commercial')} / 360° / Exploded View</h3><div class="grid md:grid-cols-3 gap-4"><div class="sahand-media-card"><img src="${UPDATE.heroImg}" alt="Sahand Laser commercial product view"><div class="sahand-media-label">${mediaLabel('commercial')}</div></div><div class="sahand-media-card"><img src="${UPDATE.view360}" alt="Sahand Laser 360 degree presentation"><div class="sahand-media-label">${mediaLabel('v360')}</div></div><div class="sahand-media-card"><img src="${UPDATE.exploded}" alt="Sahand Laser exploded view"><div class="sahand-media-label">${mediaLabel('exploded')}</div></div></div>`;
   if(anchor?.parentNode) anchor.parentNode.insertBefore(media,anchor.nextSibling);
   const three=document.createElement('section'); three.id='sahand-3d-section'; three.className='mt-6 sahand-3d-card';
-  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-2"><i class="fa-solid fa-cube"></i><span>3D</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white mb-2">مدل سه‌بعدی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 leading-7">مدل سه‌بعدی این دستگاه در حال آماده‌سازی برای نمایش تعاملی در سایت است. محل نمایش برای چرخش ۳۶۰ درجه، زوم و توسعه Exploded View تعاملی از الان در صفحه محصول در نظر گرفته شده است.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-amber-500/15 text-amber-600 dark:text-amber-300 font-bold text-sm"><i class="fa-solid fa-hourglass-half ml-2"></i>در حال آماده‌سازی</div></div>`;
+  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-1"><i class="fa-solid fa-cube"></i><span>3D LIVE</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white">مدل سه‌بعدی تعاملی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 mt-1">با موس بکشید تا دستگاه بچرخد؛ با چرخ موس زوم کنید.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 font-bold text-sm"><i class="fa-solid fa-circle-check ml-2"></i>فعال</div></div>
+  <div id="sahand-live3d" class="sahand-live3d" aria-label="Interactive 3D visual model">
+    <svg viewBox="0 0 900 520" role="img">
+      <ellipse class="m3-shadow" cx="455" cy="430" rx="330" ry="45"/>
+      <g id="sahand-model3d">
+        <polygon class="m3-dark" points="145,330 625,330 770,270 292,270"/>
+        <polygon class="m3-blue" points="145,330 625,330 625,390 145,390"/>
+        <polygon class="m3-blue2" points="625,330 770,270 770,330 625,390"/>
+        <polygon class="m3-blue2" points="145,330 292,270 770,270 625,330"/>
+        <polygon class="m3-dark" points="215,310 605,310 690,278 302,278"/>
+        <g id="sahand-slats"></g>
+        <polygon class="m3-blue2" points="420,205 485,185 690,235 625,255"/>
+        <polygon class="m3-blue" points="420,205 485,185 485,245 420,266"/>
+        <polygon class="m3-blue2" points="485,185 690,235 690,294 485,245"/>
+        <rect class="m3-dark" x="500" y="205" width="58" height="110" rx="8"/>
+        <rect class="m3-metal" x="516" y="250" width="25" height="85" rx="6"/>
+        <rect class="m3-head" x="509" y="300" width="40" height="58" rx="8"/>
+        <polygon class="m3-nozzle" points="524,358 534,358 531,386 527,386"/>
+        <polygon class="m3-metal" points="704,240 748,228 748,370 704,382"/>
+        <polygon class="m3-dark" points="718,252 740,247 740,307 718,312"/>
+        <text class="m3-label" x="250" y="368">SAHAND LASER</text>
+      </g>
+    </svg>
+  </div>
+  <div class="sahand-3d-controls"><button class="sahand-3d-btn" id="m3-left">↺ چرخش چپ</button><button class="sahand-3d-btn" id="m3-reset">نمای اصلی</button><button class="sahand-3d-btn" id="m3-right">چرخش راست ↻</button><span class="text-xs text-slate-500 self-center mr-2">مدل بصری بر اساس فایل FreeCAD فعلی؛ نقشه ساخت تأییدشده نیست.</span></div>`;
   media.parentNode.insertBefore(three,media.nextSibling);
+  initLive3D();
+}
+
+
+function initLive3D(){
+  const box=document.getElementById('sahand-live3d'), model=document.getElementById('sahand-model3d'), slats=document.getElementById('sahand-slats');
+  if(!box||!model) return;
+  if(slats && !slats.childNodes.length){
+    let lines='';
+    for(let i=0;i<22;i++){const x=250+i*17; lines+='<line class="m3-slat" x1="'+x+'" y1="303" x2="'+(x+82)+'" y2="278"/>';}
+    slats.innerHTML=lines;
+  }
+  let rot=0, zoom=1, dragging=false, lastX=0;
+  const draw=()=>{model.setAttribute('transform','translate(450 270) scale('+zoom+') skewX('+(rot*.08)+') translate(-450 -270) rotate('+(rot*.025)+' 450 300)');};
+  const start=x=>{dragging=true;lastX=x;};
+  const move=x=>{if(!dragging)return;rot+=(x-lastX);lastX=x;draw();};
+  box.onpointerdown=e=>{box.setPointerCapture?.(e.pointerId);start(e.clientX);};
+  box.onpointermove=e=>move(e.clientX);
+  box.onpointerup=box.onpointercancel=()=>dragging=false;
+  box.onwheel=e=>{e.preventDefault();zoom=Math.max(.72,Math.min(1.45,zoom+(e.deltaY<0?.08:-.08)));draw();};
+  document.getElementById('m3-left')?.addEventListener('click',()=>{rot-=45;draw();});
+  document.getElementById('m3-right')?.addEventListener('click',()=>{rot+=45;draw();});
+  document.getElementById('m3-reset')?.addEventListener('click',()=>{rot=0;zoom=1;draw();});
+  draw();
 }
 
 function wrapRenderer(){
