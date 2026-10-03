@@ -1,0 +1,51 @@
+name: Apply Sahand site update 2026-10-03
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - site-update-2026-10-03
+    paths:
+      - .github/workflows/apply-site-update-2026-10-03.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout update branch
+        uses: actions/checkout@v4
+        with:
+          ref: site-update-2026-10-03
+          fetch-depth: 0
+
+      - name: Add update scripts to preserved V7 index
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          marker = '<!-- SAHAND UPDATE 2026-10-03 -->'
+          block = '''\n<!-- SAHAND UPDATE 2026-10-03 -->\n<script src="assets/update/media-hero.js"></script>\n<script src="assets/update/media-360.js"></script>\n<script src="assets/update/media-exploded.js"></script>\n<script src="assets/update/site-update-core.js"></script>\n'''
+          if marker not in s:
+              if '</body>' not in s:
+                  raise SystemExit('Could not find </body> in index.html')
+              s = s.replace('</body>', block + '</body>', 1)
+              p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit patched index on update branch
+        shell: bash
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html already contains the update loader"
+            exit 0
+          fi
+          git config user.name "Sahand Laser Site Update"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          git commit -m "Apply 2026-10-03 updates to preserved V7 index"
+          git push origin HEAD:site-update-2026-10-03
