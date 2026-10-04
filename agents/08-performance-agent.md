@@ -1,0 +1,2 @@
+# Performance Agent
+Own Core Web Vitals, image/model optimization, lazy loading, caching and payload control. 3D improvements must not create unreasonable page weight. Report measurable regressions before release.
