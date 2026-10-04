@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.4",
+  "updated": "2026-10-04",
+  "project": "Sahand Laser",
+  "policy": {
+    "database_first": true,
+    "no_guessing": true,
+    "original_media_immutable": true,
+    "site_derivatives_separate": true,
+    "embedded_phone_and_site_address_not_required_on_site_images": true,
+    "branding_rule": "برای نسخه سایت، لوگوی کوچک سهند در صورت نبود برندینگ اضافه شود؛ شماره/آدرس قدیمی داخل تصویر حذف یا کراپ شود بدون دستکاری فایل اصلی.",
+    "heavy_seo_frozen": true,
+    "real_product_paths_frozen": true
+  },
+  "cutting_products": [
+    {"id":"CT-001","model":"SH3015","configuration_fa":"استاندارد - تک‌میز","identity_status":"confirmed","specs_status":"current_site_confirmed"},
+    {"id":"CT-002","model":"SH3015","configuration_fa":"استاندارد - دومیز","identity_status":"confirmed","specs_status":"current_site_confirmed"},
+    {"id":"CT-003","model":"SH3015R","configuration_fa":"استاندارد - دومیز + روتاری","identity_status":"confirmed","specs_status":"current_site_confirmed"},
+    {"id":"CT-004","model":"SH6020","configuration_fa":"حرفه‌ای - تک‌میز","identity_status":"confirmed","specs_status":"current_site_confirmed"},
+    {"id":"CT-005","model":"SH6020","configuration_fa":"استاندارد - تک‌میز","identity_status":"confirmed_family_needs_final_page_mapping","specs_status":"review"},
+    {"id":"CT-006","model":"SH6020R","configuration_fa":"حرفه‌ای - دومیز + روتاری","identity_status":"confirmed","specs_status":"review"},
+    {"id":"CT-007","model":"SH6020R","configuration_fa":"حرفه‌ای - تک‌میز + روتاری","identity_status":"confirmed_separate_configuration","specs_status":"review"},
+    {"id":"CT-008","model":"SH6020C","configuration_fa":"حرفه‌ای - کابین‌دار","identity_status":"confirmed_rotary_claim_pending","specs_status":"review"},
+    {"id":"CT-009","model":"QG-6024DZ","configuration_fa":"لوله‌بر افقی سری استاندارد","identity_status":"confirmed_from_user_file","specs_status":"source_file_confirmed_with_accuracy_wording_conflict"},
+    {"id":"CT-010","model":null,"configuration_fa":"محصول جدید - مدل تجاری در حال تأیید","identity_status":"separate_record_model_pending","specs_status":"pending"}
+  ],
+  "component_and_equipment_catalog": [
+    {"id":"CP-SMC-ITV1050","category":"قطعات دستگاه برش","subcategory":"رگولاتور الکتروپنوماتیک","brand":"SMC","model":"ITV1050","title_fa":"رگولاتور الکتروپنوماتیک SMC ITV1050","verified_specs":"24V DC ±10%؛ پورت 1/8 اینچ؛ ورودی 0–10V یا 4–20mA","source_level":"user_media","status":"ثبت شده - نیازمند تطبیق کد دقیق با لیبل"},
+    {"id":"CP-SMC-ITV2050","category":"قطعات دستگاه برش","subcategory":"رگولاتور الکتروپنوماتیک","brand":"SMC","model":"ITV2050","title_fa":"رگولاتور الکتروپنوماتیک SMC ITV2050","verified_specs":"24V DC ±10%؛ پورت 1/4 اینچ؛ ورودی 0–10V یا 4–20mA","source_level":"user_media","status":"ثبت شده - نیازمند تطبیق کد دقیق با لیبل"},
+    {"id":"CP-RAY-BM110","category":"قطعات دستگاه برش","subcategory":"هد برش","brand":"RayTools","model":"BM110","title_fa":"هد برش فایبر RayTools BM110","verified_specs":"خانواده هد برش RayTools؛ جزئیات پوستر محلی نیازمند تطبیق رسمی","source_level":"user_media","status":"نیازمند تطبیق رسمی"},
+    {"id":"CP-RAY-BM111","category":"قطعات دستگاه برش","subcategory":"هد برش","brand":"RayTools","model":"BM111","title_fa":"هد برش فایبر RayTools BM111","verified_specs":"خانواده هد برش RayTools؛ اتوفوکوس طبق تصویر ارسالی","source_level":"user_media","status":"نیازمند تطبیق رسمی"},
+    {"id":"CP-TRA","category":"قطعات دستگاه برش","subcategory":"هد برش","brand":"نامشخص","model":"TRA","title_fa":"هد برش TRA","verified_specs":"برای برش تخت؛ پوستر 3–6kW و وزن 0.5–1kg را ذکر می‌کند","source_level":"user_media","status":"مدل/سازنده نیازمند تأیید"},
+    {"id":"CP-CERAMIC","category":"قطعات دستگاه برش","subcategory":"سرامیک هد برش","brand":"RayTools / BOCI / متفرقه","model":"Multiple","title_fa":"سرامیک هد برش لیزر فایبر","verified_specs":"مدل‌های متنوع؛ تصاویر D28/M11 و D32/M14 و نمونه RayTools/BOCI موجود","source_level":"user_media","status":"ثبت خانواده - سایزها جداگانه نگهداری شوند"},
+    {"id":"CP-LENS-BLT","category":"قطعات دستگاه برش","subcategory":"محافظ لنز","brand":"BOCI/BLT","model":"BLT Series","title_fa":"محافظ لنز سری BLT","verified_specs":"نمونه پوستر 32×5mm، 1064nm؛ دمای درج‌شده تا حدود 500°C","source_level":"user_media","status":"نیازمند تطبیق رسمی قبل از انتشار عدد دما"},
+    {"id":"CP-LENS-RAY","category":"قطعات دستگاه برش","subcategory":"محافظ لنز","brand":"RayTools","model":"Various","title_fa":"محافظ لنز RayTools","verified_specs":"نمونه پوستر 27.9×4.1mm، 1064nm؛ بسته‌بندی‌های RayTools Original موجود","source_level":"user_media","status":"ثبت خانواده"},
+    {"id":"CP-LENS-WSX","category":"قطعات دستگاه برش","subcategory":"محافظ لنز","brand":"WSX","model":"Various","title_fa":"محافظ لنز WSX","verified_specs":"نمونه پوستر 30×5mm، 1064nm","source_level":"user_media","status":"ثبت خانواده"},
+    {"id":"CTRL-FSCUT2000C","category":"قطعات دستگاه برش","subcategory":"کنترلر","brand":"BOCHU/Friendess","model":"FSCUT2000C","title_fa":"سیستم کنترل برش FSCUT2000C","verified_specs":"کنترلر open-loop برای برش فلز و غیرفلز","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CTRL-FSCUT2000E","category":"قطعات دستگاه برش","subcategory":"کنترلر","brand":"BOCHU/Friendess","model":"FSCUT2000E","title_fa":"سیستم کنترل برش FSCUT2000E","verified_specs":"EtherCAT، مناسب 1–4kW؛ BMC228B + BCL4566E + WKB V6","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CTRL-FSCUT4000E","category":"قطعات دستگاه برش","subcategory":"کنترلر","brand":"BOCHU/Friendess","model":"FSCUT4000E","title_fa":"سیستم کنترل برش FSCUT4000E","verified_specs":"EtherCAT؛ مناسب حدود 1.5–8kW؛ کنترل حرکت، لیزر و گاز برش","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"SRC-RAY-C1500","category":"قطعات دستگاه برش / جوش","subcategory":"سورس لیزر","brand":"Raycus","model":"RFL-C1500","title_fa":"سورس فایبر Raycus RFL-C1500","verified_specs":"1500W؛ CW/Modulated؛ 1080±5nm؛ بازه توان 10–100%؛ water cooling","source_level":"official_manual","status":"تأیید رسمی"},
+    {"id":"SRC-RAY-C3000S","category":"قطعات دستگاه برش","subcategory":"سورس لیزر","brand":"Raycus","model":"RFL-C3000S-HP","title_fa":"سورس فایبر Raycus RFL-C3000S-HP","verified_specs":"خانواده HP-Series؛ توان نامی حدود 3kW؛ کاربرد برش/جوش صنعتی","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"SRC-RAY-C6000S","category":"قطعات دستگاه برش","subcategory":"سورس لیزر","brand":"Raycus","model":"RFL-C6000S-HP","title_fa":"سورس فایبر Raycus RFL-C6000S-HP","verified_specs":"خروجی 6100±100W طبق راهنمای رسمی؛ 1080±5nm؛ water cooling؛ وزن <85kg","source_level":"official_manual","status":"تأیید رسمی"},
+    {"id":"CH-S&A-3000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"TEYU S&A","model":"CWFL-3000","title_fa":"چیلر فایبر S&A CWFL-3000","verified_specs":"برای سیستم فایبر 3kW؛ دقت کنترل معمول سری ±0.5°C","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CH-S&A-6000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"TEYU S&A","model":"CWFL-6000","title_fa":"چیلر فایبر S&A CWFL-6000","verified_specs":"برای سیستم فایبر 6kW؛ دقت کنترل معمول سری ±1°C","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CH-S&A-12000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"TEYU S&A","model":"CWFL-12000","title_fa":"چیلر فایبر S&A CWFL-12000","verified_specs":"برای سیستم فایبر 12kW؛ دقت کنترل معمول سری ±1°C","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CH-S&A-20000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"TEYU S&A","model":"CWFL-20000","title_fa":"چیلر فایبر S&A CWFL-20000","verified_specs":"برای سیستم فایبر 20kW؛ دقت کنترل معمول سری ±1.5°C","source_level":"official_web","status":"تأیید رسمی"},
+    {"id":"CH-HANLI-3000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"Hanli","model":"HL-3000","title_fa":"چیلر فایبر Hanli HL-3000","verified_specs":"تصویر/کاتالوگ کاربر موجود؛ ولتاژ 220V و داده‌های پوستر نیازمند تطبیق جدول مدل","source_level":"user_pdf_and_media","status":"نیازمند تطبیق مدل دقیق"},
+    {"id":"CH-HANLI-6000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"Hanli","model":"HL-6000","title_fa":"چیلر فایبر Hanli HL-6000","verified_specs":"تصویر/کاتالوگ کاربر موجود؛ پوستر 380V را ذکر می‌کند","source_level":"user_pdf_and_media","status":"نیازمند تطبیق مدل دقیق"},
+    {"id":"CH-HANLI-12000","category":"تجهیزات جانبی برش","subcategory":"چیلر","brand":"Hanli","model":"HL-12000","title_fa":"چیلر فایبر Hanli HL-12000","verified_specs":"تصویر/کاتالوگ کاربر موجود؛ پوستر 380V را ذکر می‌کند","source_level":"user_pdf_and_media","status":"نیازمند تطبیق مدل دقیق"},
+    {"id":"MK-FIBER-GENERIC","category":"دستگاه مارکینگ","subcategory":"فایبر مارکینگ","brand":"Sahand Laser","model":"Multiple","title_fa":"دستگاه حکاکی فایبر سهند لیزر","verified_specs":"30/50/70/100/120W در کاتالوگ؛ سورس Raycus/JPT/IPG؛ کنترلر BJJCZ؛ لنز Opex؛ دقت 0.03mm؛ سرعت تا 8000mm/s","source_level":"user_pdf","status":"تأیید از کاتالوگ سهند"},
+    {"id":"WELD-1500","category":"دستگاه جوش","subcategory":"handheld","brand":"Sahand/Various","model":"1500W","title_fa":"دستگاه جوش فایبر 1500 وات","verified_specs":"پوستر: 1.5kW، 1064nm، ضخامت درج‌شده 4mm، 10–40°C","source_level":"user_media","status":"اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند"},
+    {"id":"WELD-2000","category":"دستگاه جوش","subcategory":"handheld","brand":"Sahand/Various","model":"2000W","title_fa":"دستگاه جوش فایبر 2000 وات","verified_specs":"پوستر: 2kW، 1064nm، ضخامت درج‌شده 6mm، 10–40°C","source_level":"user_media","status":"اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند"},
+    {"id":"WELD-3000","category":"دستگاه جوش","subcategory":"handheld","brand":"Sahand/Various","model":"3000W","title_fa":"دستگاه جوش فایبر 3000 وات","verified_specs":"پوستر: 3kW، 1064nm، ضخامت درج‌شده 8mm، 10–40°C","source_level":"user_media","status":"اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند"},
+    {"id":"CLEAN-GENERIC","category":"دستگاه کلینینگ","subcategory":"فایبر کلینینگ","brand":"Sahand/Various","model":"Multiple","title_fa":"دستگاه تمیزکاری لیزری فایبر","verified_specs":"تصویر موجود؛ اعداد پوستر با متن جوش تداخل دارد و برای انتشار قابل اعتماد نیست","source_level":"user_media","status":"پوستر نیازمند اصلاح فنی"}
+  ],
+  "media_inventory_summary": {"total_files_seen":564,"images":529,"pdfs":5,"rar_archives":2,"exact_duplicate_groups":36,"near_duplicate_groups":21},
+  "source_urls": {
+    "BOCHU_FSCUT2000E":"https://www.bochu.com/pro_en/middle-power-ethercat-controller-fscut2000e/",
+    "BOCHU_PRODUCTS":"https://www.bochu.com/pro-center-en/",
+    "TEYU_CWFL":"https://www.teyuchiller.com/s-a-brand.html",
+    "RAYCUS_C3000":"https://en.raycuslaser.com/view/2134.html",
+    "RAYCUS_GUIDES":"https://en.raycuslaser.com/"
+  },
+  "open_issues": [
+    "برخی پوسترهای قدیمی متن ویژگی‌های محصول دیگری را کپی کرده‌اند؛ اعداد آن‌ها بدون منبع مستقل منتشر نشود.",
+    "مدل دقیق چند هد/چیلر/دستگاه جوش از روی تصویر به تنهایی قطعی نیست.",
+    "CT-005 تا CT-008 هنوز به تطبیق نهایی عکس/صفحه و مشخصات نیاز دارند.",
+    "پوستر دستگاه Cleaning دارای فیلد Welding Speed است و قبل از استفاده سایت باید بازطراحی شود."
+  ]
+}
