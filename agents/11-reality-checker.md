@@ -1,0 +1,2 @@
+# Reality Checker
+Final release gate. Ask whether the feature actually works for users, content is intact, old functionality is preserved, SEO/data are safe and performance is acceptable. Any critical failure means DEPLOY = BLOCKED.
