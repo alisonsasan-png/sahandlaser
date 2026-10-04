@@ -46,25 +46,19 @@ async function loadDB(){
  catch(e){console.warn('[Sahand] DB load failed; status fallback only',e);DB={products:{},offline_fallback:true}}
 }
 function loadI18n(){if(document.getElementById('sahand-i18n-completion-script'))return;const x=document.createElement('script');x.id='sahand-i18n-completion-script';x.src=I18N_URL;document.body.appendChild(x)}
-function stateOf(v){
- if(v&&typeof v==='object')return v.status||'pending';
- if(typeof v==='string')return v;
- return'pending';
-}
+function stateOf(v){if(v&&typeof v==='object')return v.status||'pending';if(typeof v==='string')return v;return'pending'}
 function applyDB(){
  if(typeof products==='undefined'||!DB)return;
  for(const[id,r]of Object.entries(DB.products||{})){
-  const p=products[id];if(!p)continue;
-  p.__sahandDb=r;
-  if(r.title)p.title=Object.assign({},p.title||{},r.title);
+  const p=products[id];if(!p)continue;p.__sahandDb=r;if(r.title)p.title=Object.assign({},p.title||{},r.title);
   const m=r.media||{};
   // Critical rule: normal gallery photos are never treated as 360 frames.
   if(m.main_image&&m.main_image_status==='verified')p.images=[m.main_image];
   if(Array.isArray(m.gallery)&&m.gallery.length&&m.gallery_status==='verified')p.gallery=m.gallery.slice();
-  const a=r.assets||{};
-  const v360=a.view_360;
-  if(v360&&typeof v360==='object'&&v360.status==='verified'&&Array.isArray(v360.frames)&&v360.frames.length>1){p.__sahand360Frames=v360.frames.slice()}
-  else p.__sahand360Frames=[];
+  // CT-010 old static 360/exploded graphics are reference placeholders, not a verified gallery.
+  if(id==='CT-010'&&m.gallery_status!=='verified')p.gallery=[];
+  const a=r.assets||{},v360=a.view_360;
+  if(v360&&typeof v360==='object'&&v360.status==='verified'&&Array.isArray(v360.frames)&&v360.frames.length>1)p.__sahand360Frames=v360.frames.slice();else p.__sahand360Frames=[];
   if(id==='CT-009'&&Array.isArray(p.specs))p.specs.forEach(x=>{const z=Object.values(x?.label||{}).join(' ');if(/دقت|تلرانس|accuracy|tolerance|دقة|hassas/i.test(z))x.value='≤ 0.05 mm'});
  }
 }
@@ -75,29 +69,12 @@ function assetStatus(v){const q=stateOf(v);if(q==='verified')return'verified';if
 function status(k){const c=['verified','current','source'].includes(k)?'ok':['partial','review','reference','visual'].includes(k)?'work':'pending';return`<span class="sahand-file-status ${c}">${esc(s(k))}</span>`}
 function card(icon,n,k){return`<div class="sahand-file-card"><div><i class="fa-solid ${icon} sahand-file-icon"></i><div class="sahand-file-name">${esc(n)}</div></div>${status(k)}</div>`}
 function enhance(id){
- if(!id||typeof products==='undefined'||!products[id]||products[id].categoryId!=='cutting')return;
- const v=document.getElementById('view-product');if(!v)return;
- v.querySelector('#sahand-cutting-product-file')?.remove();
- const r=rec(id),p=products[id],f=FALLBACK[id]||['—','pending','pending'],model=r?.model||f[0]||'—',a=r?.assets||{};
- const title=p.title?.[lang()]||p.title?.fa||id,variant=lang()==='fa'?(r?.configuration_fa||''):'';
- const sec=document.createElement('section');sec.id='sahand-cutting-product-file';sec.className='sahand-product-file';
- sec.innerHTML=`<div class="sahand-file-head"><div><div class="sahand-file-title">${esc(s('title'))}</div><div class="sahand-file-sub">${esc(id)} · ${esc(model)}${variant?' · '+esc(variant):''}</div><div class="sahand-file-db"><i class="fa-solid fa-database"></i> ${esc(s('db'))}</div></div><span class="product-code">${esc(id)}</span></div><div class="sahand-file-grid">${card('fa-images',s('photos'),photoStatus(r,id))}${card('fa-list-check',s('specs'),specStatus(r,id))}${card('fa-arrows-rotate',s('v360'),assetStatus(a.view_360))}${card('fa-ruler-combined',s('drawing'),assetStatus(a.technical_drawing))}${card('fa-cube',s('three'),assetStatus(a.three_d))}${card('fa-cubes-stacked',s('exploded'),assetStatus(a.exploded_view))}</div><div class="sahand-no-guess"><i class="fa-solid fa-shield-halved ml-1"></i> ${esc(title)}: ${esc(s('rule'))}</div>`;
- const anchor=document.getElementById('gallery-section')||v.querySelector('.tabs-container')||document.getElementById('comments-list')?.parentElement||v.lastElementChild;
- if(anchor?.parentNode)anchor.parentNode.insertBefore(sec,anchor.nextSibling);else v.appendChild(sec);
- window.SahandI18nCompletion?.apply(lang());
+ if(!id||typeof products==='undefined'||!products[id]||products[id].categoryId!=='cutting')return;const v=document.getElementById('view-product');if(!v)return;v.querySelector('#sahand-cutting-product-file')?.remove();
+ const r=rec(id),p=products[id],f=FALLBACK[id]||['—','pending','pending'],model=r?.model||f[0]||'—',a=r?.assets||{},title=p.title?.[lang()]||p.title?.fa||id,variant=lang()==='fa'?(r?.configuration_fa||''):'';
+ const sec=document.createElement('section');sec.id='sahand-cutting-product-file';sec.className='sahand-product-file';sec.innerHTML=`<div class="sahand-file-head"><div><div class="sahand-file-title">${esc(s('title'))}</div><div class="sahand-file-sub">${esc(id)} · ${esc(model)}${variant?' · '+esc(variant):''}</div><div class="sahand-file-db"><i class="fa-solid fa-database"></i> ${esc(s('db'))}</div></div><span class="product-code">${esc(id)}</span></div><div class="sahand-file-grid">${card('fa-images',s('photos'),photoStatus(r,id))}${card('fa-list-check',s('specs'),specStatus(r,id))}${card('fa-arrows-rotate',s('v360'),assetStatus(a.view_360))}${card('fa-ruler-combined',s('drawing'),assetStatus(a.technical_drawing))}${card('fa-cube',s('three'),assetStatus(a.three_d))}${card('fa-cubes-stacked',s('exploded'),assetStatus(a.exploded_view))}</div><div class="sahand-no-guess"><i class="fa-solid fa-shield-halved ml-1"></i> ${esc(title)}: ${esc(s('rule'))}</div>`;
+ const anchor=document.getElementById('gallery-section')||v.querySelector('.tabs-container')||document.getElementById('comments-list')?.parentElement||v.lastElementChild;if(anchor?.parentNode)anchor.parentNode.insertBefore(sec,anchor.nextSibling);else v.appendChild(sec);window.SahandI18nCompletion?.apply(lang());
 }
-function wrap(){
- if(typeof renderProduct!=='function'||renderProduct.__sahandDbOrganizer)return;
- const old=renderProduct;
- renderProduct=function(id){const x=old(id);setTimeout(()=>enhance(id),90);return x};
- renderProduct.__sahandDbOrganizer=true;
-}
-let tries=0;
-async function boot(){
- if(typeof products==='undefined'||typeof renderProduct!=='function'){if(++tries<80)setTimeout(boot,100);return}
- style();await loadDB();applyDB();loadI18n();wrap();
- const id=(typeof currentProductId!=='undefined'&&currentProductId)||decodeURIComponent((location.hash.match(/product=([^&]+)/)||[])[1]||'');
- if(id&&products[id])try{renderProduct(id)}catch(e){setTimeout(()=>enhance(id),120)}
-}
+function wrap(){if(typeof renderProduct!=='function'||renderProduct.__sahandDbOrganizer)return;const old=renderProduct;renderProduct=function(id){const x=old(id);setTimeout(()=>enhance(id),90);return x};renderProduct.__sahandDbOrganizer=true}
+let tries=0;async function boot(){if(typeof products==='undefined'||typeof renderProduct!=='function'){if(++tries<80)setTimeout(boot,100);return}style();await loadDB();applyDB();loadI18n();wrap();const id=(typeof currentProductId!=='undefined'&&currentProductId)||decodeURIComponent((location.hash.match(/product=([^&]+)/)||[])[1]||'');if(id&&products[id])try{renderProduct(id)}catch(e){setTimeout(()=>enhance(id),120)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
