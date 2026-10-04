@@ -5,6 +5,7 @@ on:
     paths:
       - 'tools/extract_sahand_media.py'
       - 'tools/extract_sahand_media_fast.py'
+      - 'tools/extract_sahand_media_inventory.py'
       - '.github/workflows/crawl-sahand-media.yml'
   workflow_dispatch:
 
@@ -25,10 +26,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install crawler dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests
 
-      - name: Crawl current SahandLaser site
-        run: python tools/extract_sahand_media_fast.py
+      - name: Extract complete WordPress image library
+        run: python tools/extract_sahand_media_inventory.py
 
       - name: Commit media inventory
         run: |
