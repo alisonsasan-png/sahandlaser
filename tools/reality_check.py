@@ -36,8 +36,9 @@ ck(ct.get('media',{}).get('gallery_status')!='verified','CT-010 fake/static gall
 # freeze risky migrations
 ck(db['policy'].get('heavy_seo_frozen') is True,'heavy SEO frozen')
 ck(db['policy'].get('real_product_paths_frozen') is True,'product path migration frozen')
-# Do not couple site UI to ordinary Drive share links
-ck('drive.google.com/file/d/' not in html,'no ordinary Google Drive file share links used as site image source')
+# Google Drive may legitimately be used for downloadable documents. It must not be used as an ordinary image CDN.
+drive_image_refs=re.findall(r'<img[^>]+src=["\']([^"\']*drive\.google\.com/file/d/[^"\']*)["\']',html,re.I)
+ck(not drive_image_refs,'no ordinary Google Drive share URL is used as an <img> source')
 print('# Sahand Laser Reality Check')
 print(f'Passed: {len(passed)}  Errors: {len(errors)}')
 for x in errors: print('ERROR:',x)
