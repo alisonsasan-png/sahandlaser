@@ -168,19 +168,31 @@ function enhanceNewProduct(){
 }
 
 
+let sahand3dLoading=false;
 function initLive3D(){
   const box=document.getElementById('sahand-live3d');
   if(!box) return;
-  if(window.SahandCT0103D && window.THREE){
-    try{ box.__sahand3d?.destroy?.(); }catch(e){}
-    window.SahandCT0103D.mount(box);
-    document.getElementById('m3-left')?.addEventListener('click',()=>box.__sahand3d?.left());
-    document.getElementById('m3-right')?.addEventListener('click',()=>box.__sahand3d?.right());
-    document.getElementById('m3-reset')?.addEventListener('click',()=>box.__sahand3d?.reset());
-  }else{
-    box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-slate-500">در حال بارگذاری موتور سه‌بعدی...</div>';
-    setTimeout(initLive3D,250);
-  }
+  const mount=()=>{
+    if(!document.getElementById('sahand-live3d')) return;
+    if(window.SahandCT0103D && window.THREE){
+      try{ box.__sahand3d?.destroy?.(); }catch(e){}
+      window.SahandCT0103D.mount(box);
+      document.getElementById('m3-left')?.addEventListener('click',()=>box.__sahand3d?.left());
+      document.getElementById('m3-right')?.addEventListener('click',()=>box.__sahand3d?.right());
+      document.getElementById('m3-reset')?.addEventListener('click',()=>box.__sahand3d?.reset());
+      sahand3dLoading=false;
+    }
+  };
+  if(window.THREE && window.SahandCT0103D){mount();return;}
+  box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-slate-500">در حال بارگذاری مدل سه‌بعدی...</div>';
+  if(sahand3dLoading) return;
+  sahand3dLoading=true;
+  const loadModel=()=>{
+    if(window.SahandCT0103D){mount();return;}
+    const m=document.createElement('script');m.src='assets/update/ct010-3d.js?v=20261004';m.onload=mount;m.onerror=()=>{sahand3dLoading=false;box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-red-500">خطا در بارگذاری فایل مدل سه‌بعدی</div>';};document.head.appendChild(m);
+  };
+  if(window.THREE){loadModel();return;}
+  const t=document.createElement('script');t.src='https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js';t.onload=loadModel;t.onerror=()=>{sahand3dLoading=false;box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-red-500">خطا در بارگذاری موتور سه‌بعدی</div>';};document.head.appendChild(t);
 }
 
 function wrapRenderer(){
