@@ -1,0 +1,2 @@
+# Frontend Engineer
+Implement scoped HTML/CSS/JS, product/category pages, navigation/search, responsive behavior and viewer integration. Follow Architect decisions. No unrelated redesign, homepage restructuring or database edits. Prefer isolated patches.
