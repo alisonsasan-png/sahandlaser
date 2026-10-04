@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'tools/extract_sahand_media.py'
+      - 'tools/extract_sahand_media_fast.py'
       - '.github/workflows/crawl-sahand-media.yml'
   workflow_dispatch:
 
@@ -27,7 +28,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Crawl current SahandLaser site
-        run: python tools/extract_sahand_media.py
+        run: python tools/extract_sahand_media_fast.py
 
       - name: Commit media inventory
         run: |
