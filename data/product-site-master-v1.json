@@ -1,8 +1,9 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "updated": "2026-10-04",
-  "source_master": "Sahand_Laser_Master_Knowledge_Base_v1_5.json",
-  "asset_contract_version": "1.0",
+  "source_master": "Sahand_Laser_Master_Knowledge_Base_v1_6.json",
+  "asset_contract_version": "1.1",
+  "review_tag": "REV-2026-10-04-V16",
   "policy": {
     "database_first": true,
     "no_guessing": true,
@@ -11,114 +12,61 @@
     "heavy_seo_frozen": true,
     "real_product_paths_frozen": true
   },
-  "asset_contract": {
-    "view_360": "Use {status:'verified',frames:[url,...]} only for a real product-specific frame sequence.",
-    "technical_drawing": "Use {status:'verified',url:'...'} only for a verified product-specific drawing.",
-    "exploded_view": "Use {status:'verified',url:'...'} only for a verified product-specific exploded asset.",
-    "three_d": "Use {status:'verified',url:'...'} for verified CAD/web model; visual_reconstruction is allowed only with an explicit visual-only note."
-  },
   "products": {
     "CT-001": {
       "model": "SH3015",
       "configuration_fa": "استاندارد - تک‌میز",
       "title": {"fa":"دستگاه برش لیزر فایبر تک‌میز SH3015","en":"SH3015 Single-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر بطاولة واحدة SH3015","tr":"SH3015 Tek Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed",
-      "specs_status": "current_site_confirmed",
-      "media": {"main_image":"https://sahandlaser.com/wp-content/uploads/2025/06/Single-table-laser-cutting-machine-3015-1.png","main_image_status":"verified","gallery_status":"partial"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "identity_status": "confirmed","specs_status": "current_site_confirmed","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image":"https://sahandlaser.com/wp-content/uploads/2025/06/Single-table-laser-cutting-machine-3015-1.png","main_image_status":"verified","gallery_status":"partial","source_reference":"rar2/دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"single","length":4.0,"width":2.58,"height":2.06,"work":"3000×1500"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-002": {
-      "model": "SH3015",
-      "configuration_fa": "استاندارد - دومیز",
-      "title": {"fa":"دستگاه برش لیزر دو میز فایبر SH3015","en":"SH3015 Dual-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر بطاولتين SH3015","tr":"SH3015 Çift Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed",
-      "specs_status": "current_site_confirmed",
-      "media": {
-        "main_image":"https://sahandlaser.com/wp-content/uploads/2025/05/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%D8%A8%D8%B1%D8%B4%D9%84%DB%8C%D8%B2%D8%B1%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%D8%AF%D9%88%D9%85%DB%8C%D8%B23015%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF_852719.jpg",
-        "gallery":["https://sahandlaser.com/wp-content/uploads/2022/10/S6-2.jpg","https://sahandlaser.com/wp-content/uploads/2022/09/S4-OK.jpg","https://sahandlaser.com/wp-content/uploads/2022/10/S10.jpg","https://sahandlaser.com/wp-content/uploads/2022/10/S3.jpg"],
-        "main_image_status":"verified",
-        "gallery_status":"verified"
-      },
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH3015","configuration_fa":"استاندارد - دومیز","title":{"fa":"دستگاه برش لیزر دو میز فایبر SH3015","en":"SH3015 Dual-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر بطاولتين SH3015","tr":"SH3015 Çift Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed","specs_status":"current_site_confirmed","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image":"https://sahandlaser.com/wp-content/uploads/2025/05/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%D8%A8%D8%B1%D8%B4%D9%84%DB%8C%D8%B2%D8%B1%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%D8%AF%D9%88%D9%85%DB%8C%D8%B23015%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF_852719.jpg","main_image_status":"verified","gallery_status":"partial","source_reference":"rar2/دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"dual","length":6.4,"width":2.72,"height":2.05,"work":"3000×1500 each"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-003": {
-      "model": "SH3015R",
-      "configuration_fa": "استاندارد - دومیز + روتاری",
-      "title": {"fa":"دستگاه برش لیزر دومیز فایبر با روتاری SH3015R","en":"SH3015R Dual-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولتين مع روتاري SH3015R","tr":"SH3015R Rotaryli Çift Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed",
-      "specs_status": "current_site_confirmed",
-      "media": {"main_image":"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-with-rotary-exchange-1-scaled.png","main_image_status":"verified","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH3015R","configuration_fa":"استاندارد - دومیز + روتاری","title":{"fa":"دستگاه برش لیزر دومیز فایبر با روتاری SH3015R","en":"SH3015R Dual-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولتين مع روتاري SH3015R","tr":"SH3015R Rotaryli Çift Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed","specs_status":"current_site_confirmed","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image":"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-with-rotary-exchange-1-scaled.png","main_image_status":"verified","gallery_status":"partial","source_reference":"rar2/دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"dual_rotary","length":6.65,"width":3.38,"height":2.06,"work":"3000×1500 + rotary"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-004": {
-      "model": "SH6020",
-      "configuration_fa": "حرفه‌ای - تک‌میز",
-      "title": {"fa":"دستگاه برش لیزر تک‌میز فایبر حرفه‌ای SH6020","en":"SH6020 Professional Single-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر احترافية بطاولة واحدة SH6020","tr":"SH6020 Profesyonel Tek Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed",
-      "specs_status": "current_site_confirmed",
-      "media": {"main_image":"https://sahandlaser.com/wp-content/uploads/2025/05/%D9%85%D8%B9%D8%B1%D9%81%DB%8C%D9%85%D8%AD%D8%B5%D9%88%D9%84_915904.jpg","main_image_status":"verified","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH6020","configuration_fa":"حرفه‌ای - تک‌میز","title":{"fa":"دستگاه برش لیزر تک‌میز فایبر حرفه‌ای SH6020","en":"SH6020 Professional Single-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر احترافية بطاولة واحدة SH6020","tr":"SH6020 Profesyonel Tek Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed","specs_status":"current_site_confirmed","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image":"https://sahandlaser.com/wp-content/uploads/2025/05/%D9%85%D8%B9%D8%B1%D9%81%DB%8C%D9%85%D8%AD%D8%B5%D9%88%D9%84_915904.jpg","main_image_status":"verified","gallery_status":"partial","source_reference":"rar2/معرفیمحصول_915904.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"pro_single","length":7.6,"width":3.64,"height":2.04,"work":"6020 professional"},"manufacturing_certified":false,"reference":"معرفیمحصول_915904.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-005": {
-      "model": "SH6020",
-      "configuration_fa": "استاندارد - تک‌میز",
-      "title": {"fa":"دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020","en":"SH6020 Standard Single-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر قياسية بطاولة واحدة SH6020","tr":"SH6020 Standart Tek Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed_family_needs_final_page_mapping",
-      "specs_status": "review",
-      "media": {"main_image_status":"pending","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH6020","configuration_fa":"استاندارد - تک‌میز","title":{"fa":"دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020","en":"SH6020 Standard Single-Table Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر قياسية بطاولة واحدة SH6020","tr":"SH6020 Standart Tek Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed_family_needs_final_page_mapping","specs_status":"review","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"mapped_source_available","gallery_status":"pending","source_reference":"rar2/دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"single","length":7.5,"width":3.64,"height":2.06,"work":"6020 standard"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-006": {
-      "model": "SH6020R",
-      "configuration_fa": "حرفه‌ای - دومیز + روتاری",
-      "title": {"fa":"دستگاه برش لیزر دو میز فایبر با روتاری SH6020R","en":"SH6020R Dual-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولتين مع روتاري SH6020R","tr":"SH6020R Rotaryli Çift Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed",
-      "specs_status": "review",
-      "media": {"main_image_status":"pending","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH6020R","configuration_fa":"حرفه‌ای - دومیز + روتاری","title":{"fa":"دستگاه برش لیزر دو میز فایبر با روتاری SH6020R","en":"SH6020R Dual-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولتين مع روتاري SH6020R","tr":"SH6020R Rotaryli Çift Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed","specs_status":"review","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"mapped_source_available","gallery_status":"pending","source_reference":"rar2/دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"dual_rotary","length":10.6,"width":3.78,"height":2.04,"work":"6020 + rotary"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-007": {
-      "model": "SH6020R",
-      "configuration_fa": "حرفه‌ای - تک‌میز + روتاری",
-      "title": {"fa":"دستگاه برش لیزر تک‌میز فایبر با روتاری SH6020R","en":"SH6020R Single-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولة واحدة مع روتاري SH6020R","tr":"SH6020R Rotaryli Tek Tablalı Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed_separate_configuration",
-      "specs_status": "review",
-      "media": {"main_image_status":"pending","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH6020R","configuration_fa":"حرفه‌ای - تک‌میز + روتاری","title":{"fa":"دستگاه برش لیزر تک‌میز فایبر با روتاری SH6020R","en":"SH6020R Single-Table Fiber Laser Cutting Machine with Rotary","ar":"ماكينة قطع فايبر ليزر بطاولة واحدة مع روتاري SH6020R","tr":"SH6020R Rotaryli Tek Tablalı Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed_separate_configuration","specs_status":"review","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"mapped_source_available","gallery_status":"pending","source_reference":"rar2/دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"single_rotary","length":7.8,"width":3.78,"height":2.04,"work":"6020 + rotary"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-008": {
-      "model": "SH6020C",
-      "configuration_fa": "حرفه‌ای - کابین‌دار",
-      "title": {"fa":"دستگاه برش لیزر فایبر کابین‌دار SH6020C","en":"SH6020C Enclosed Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر مغلقة SH6020C","tr":"SH6020C Kabinli Fiber Lazer Kesim Makinesi"},
-      "identity_status": "confirmed_rotary_claim_pending",
-      "specs_status": "review",
-      "media": {"main_image_status":"pending","gallery_status":"pending"},
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"SH6020C","configuration_fa":"حرفه‌ای - کابین‌دار","title":{"fa":"دستگاه برش لیزر فایبر کابین‌دار SH6020C","en":"SH6020C Enclosed Fiber Laser Cutting Machine","ar":"ماكينة قطع فايبر ليزر مغلقة SH6020C","tr":"SH6020C Kabinli Fiber Lazer Kesim Makinesi"},"identity_status":"confirmed_rotary_claim_pending","specs_status":"review","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"mapped_source_available","gallery_status":"pending","source_reference":"rar2/دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"cabin","length":11.34,"width":3.03,"height":2.41,"work":"6020 enclosed"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg","review_required":true},"exploded_view":{"status":"pending"}}
     },
     "CT-009": {
-      "model": "QG-6024DZ",
-      "configuration_fa": "لوله‌بر افقی سری استاندارد",
-      "title": {"fa":"دستگاه برش لیزری لوله افقی سری استاندارد QG-6024DZ","en":"QG-6024DZ Standard Horizontal Tube Laser Cutting Machine","ar":"ماكينة قطع أنابيب ليزر أفقية قياسية QG-6024DZ","tr":"QG-6024DZ Standart Yatay Lazer Boru Kesim Makinesi"},
-      "identity_status": "confirmed_from_user_file",
-      "specs_status": "source_file_confirmed_with_accuracy_wording_conflict",
-      "media": {"main_image_status":"pending","gallery_status":"pending"},
-      "verified_specs": {"laser_power":"3000–6000 W","tube_diameter":"20–240 mm","cut_thickness":"0.5–12 mm depending on material","tube_length":"up to 8 m","max_axis_speed":"up to 100 m/min","acceleration":"1.5G","total_power":"< 40 kW","machine_dimensions":"14 × 3.2 × 2.5 m","installation_space":"16 × 5 m","power_supply":"380V, 3-phase, 50Hz","controller":"CypCut 3000/5000 + TubePro/Tube CypCut","head":"BOCI autofocus","positioning_accuracy_display":"up to 0.05 mm"},
-      "accuracy_source_note": "متن/ویژگی‌ها کمتر از یا تا 0.05 mm را می‌گویند ولی یک جدول علامت متعارض دارد؛ تا رفع تعارض فقط «تا 0.05 mm» منتشر شود.",
-      "assets": {"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"pending"},"exploded_view":{"status":"pending"}}
+      "model":"QG-6024DZ","configuration_fa":"لوله‌بر افقی سری استاندارد","title":{"fa":"دستگاه برش لیزری لوله افقی سری استاندارد QG-6024DZ","en":"QG-6024DZ Standard Horizontal Tube Laser Cutting Machine","ar":"ماكينة قطع أنابيب ليزر أفقية قياسية QG-6024DZ","tr":"QG-6024DZ Standart Yatay Lazer Boru Kesim Makinesi"},"identity_status":"confirmed_from_user_file","specs_status":"source_file_confirmed_with_accuracy_wording_conflict","site_import_status":"ready_for_review","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"mapped_source_available","gallery_status":"pending","source_reference":"rar2/دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg"},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"visual_reconstruction","runtime":"assets/update/site-review-v16.js","profile":{"kind":"tube","length":14.0,"width":3.6,"height":2.25,"work":"tube 20–240 mm; up to 8 m"},"manufacturing_certified":false,"reference":"دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg + user DOCX","review_required":true},"exploded_view":{"status":"pending"}},
+      "verified_specs":{"laser_power":"3000–6000 W","tube_diameter":"20–240 mm","cut_thickness":"0.5–12 mm depending on material","tube_length":"up to 8 m","max_axis_speed":"up to 100 m/min","acceleration":"1.5G","total_power":"< 40 kW","machine_dimensions":"14 × 3.2 × 2.5 m","installation_space":"16 × 5 m","power_supply":"380V, 3-phase, 50Hz","controller":"CypCut 3000/5000 + TubePro/Tube CypCut","head":"BOCI autofocus","positioning_accuracy_display":"up to 0.05 mm"},
+      "accuracy_source_note":"فایل منبع در یک جدول علامت متعارض دارد؛ تا رفع تعارض فقط «تا 0.05 mm» نمایش داده شود."
     },
     "CT-010": {
-      "model": null,
-      "configuration_fa": "محصول جدید - مدل تجاری در حال تأیید",
-      "title": {"fa":"دستگاه برش لیزر فایبر سهند — مدل در حال تأیید","en":"Sahand Fiber Laser Cutting Machine — Model Pending Confirmation","ar":"ماكينة قطع فايبر ليزر سهند — الموديل قيد التأكيد","tr":"Sahand Fiber Lazer Kesim Makinesi — Model Onayı Bekleniyor"},
-      "identity_status": "separate_record_model_pending",
-      "specs_status": "pending",
-      "media": {"main_image_status":"reference_only","gallery_status":"reference_only"},
-      "assets": {
-        "view_360":{"status":"pending","frames":[]},
-        "technical_drawing":{"status":"pending"},
-        "three_d":{"status":"visual_reconstruction","runtime":"assets/update/ct010-3d.js","master_asset":"assets/3d/SahandLaser_FiberCutter_FINAL.FCMacro","manufacturing_certified":false,"note":"بازسازی تعاملی WebGL بر پایه هندسه و پارامترهای ماکروی FreeCAD؛ خروجی GLB/مدل تولیدی تأییدشده نیست."},
-        "exploded_view":{"status":"pending"}
-      }
+      "model":null,"configuration_fa":"محصول جدید - مدل تجاری در حال تأیید","title":{"fa":"دستگاه برش لیزر فایبر سهند — مدل در حال تأیید","en":"Sahand Fiber Laser Cutting Machine — Model Pending Confirmation","ar":"ماكينة قطع فايبر ليزر سهند — الموديل قيد التأكيد","tr":"Sahand Fiber Lazer Kesim Makinesi — Model Onayı Bekleniyor"},"identity_status":"separate_record_model_pending","specs_status":"pending","site_import_status":"hold_identity_pending","review_tag":"REV-2026-10-04-V16",
+      "media":{"main_image_status":"reference_only","gallery_status":"pending","source_reference":null},
+      "assets":{"view_360":{"status":"pending","frames":[]},"technical_drawing":{"status":"pending"},"three_d":{"status":"hold","manufacturing_certified":false,"note":"هویت/مرجع تصویری کافی نیست"},"exploded_view":{"status":"pending"}}
     }
   }
 }
