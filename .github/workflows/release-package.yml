@@ -1,0 +1,56 @@
+name: Build Sahand Laser release package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/**'
+      - 'data/product-site-master-v1.json'
+      - 'data/Sahand_Laser_Master_Knowledge_Base_v1_5.json'
+      - '.github/workflows/release-package.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Release gates
+        run: |
+          python tools/site_qa.py
+          python tools/reality_check.py
+      - name: Build downloadable static package
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          cp index.html dist/SahandLaser-Final.html
+          cp index.html dist/index.html
+          cp -R assets dist/assets
+          mkdir -p dist/data
+          cp data/product-site-master-v1.json dist/data/
+          cp data/Sahand_Laser_Master_Knowledge_Base_v1_5.json dist/data/
+          cat > dist/README.txt <<'TXT'
+          Sahand Laser static release package
+          - index.html: deployment entry
+          - SahandLaser-Final.html: downloadable HTML copy
+          - assets/: local site assets and CT-010 visual 3D runtime/source
+          - data/: synchronized v1.5 product database files
+
+          Heavy SEO path migration remains intentionally frozen.
+          TXT
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SahandLaser-Final-Static-Package
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
