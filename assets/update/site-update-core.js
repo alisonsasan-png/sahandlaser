@@ -138,37 +138,10 @@ function enhanceNewProduct(){
   media.innerHTML=`<h3 class="text-xl font-extrabold text-brand dark:text-white mb-4">${mediaLabel('commercial')} / 360° / Exploded View</h3><div class="grid md:grid-cols-3 gap-4"><div class="sahand-media-card"><img src="${UPDATE.heroImg}" alt="Sahand Laser commercial product view"><div class="sahand-media-label">${mediaLabel('commercial')}</div></div><div class="sahand-media-card"><img src="${UPDATE.view360}" alt="Sahand Laser 360 degree presentation"><div class="sahand-media-label">${mediaLabel('v360')}</div></div><div class="sahand-media-card"><img src="${UPDATE.exploded}" alt="Sahand Laser exploded view"><div class="sahand-media-label">${mediaLabel('exploded')}</div></div></div>`;
   if(anchor?.parentNode) anchor.parentNode.insertBefore(media,anchor.nextSibling);
   const three=document.createElement('section'); three.id='sahand-3d-section'; three.className='mt-6 sahand-3d-card';
-  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-2"><i class="fa-solid fa-cube"></i><span>3D</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white mb-2">مدل سه‌بعدی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 leading-7">جایگاه نمایش مدل سه‌بعدی این محصول آماده است. بعد از نهایی شدن طراحی دستگاه، مدل تأییدشده با قابلیت چرخش، زوم و نمایش تعاملی در همین قسمت قرار می‌گیرد.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-slate-500/10 text-slate-600 dark:text-slate-300 font-bold text-sm"><i class="fa-solid fa-cube ml-2"></i>مدل سه‌بعدی — به‌زودی</div></div><div class="mt-4 min-h-[220px] rounded-2xl border border-dashed border-slate-300 dark:border-slate-600 flex flex-col items-center justify-center text-center p-6 bg-white/40 dark:bg-slate-950/20"><i class="fa-solid fa-cube text-5xl text-slate-300 dark:text-slate-600 mb-4"></i><div class="font-extrabold text-brand dark:text-white">محل نمایش سه‌بعدی محصول</div><div class="text-xs text-slate-500 mt-2">3D / 360° / Zoom / Exploded View</div></div>`
+  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-2"><i class="fa-solid fa-cube"></i><span>3D</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white mb-2">مدل سه‌بعدی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 leading-7">جایگاه نمایش مدل سه‌بعدی این محصول آماده است. بعد از نهایی شدن طراحی دستگاه، مدل تأییدشده با قابلیت چرخش، زوم و نمایش تعاملی در همین قسمت قرار می‌گیرد.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-slate-500/10 text-slate-600 dark:text-slate-300 font-bold text-sm"><i class="fa-solid fa-cube ml-2"></i>مدل سه‌بعدی — به‌زودی</div></div><div class="mt-4 min-h-[220px] rounded-2xl border border-dashed border-slate-300 dark:border-slate-600 flex flex-col items-center justify-center text-center p-6 bg-white/40 dark:bg-slate-950/20"><i class="fa-solid fa-cube text-5xl text-slate-300 dark:text-slate-600 mb-4"></i><div class="font-extrabold text-brand dark:text-white">محل نمایش سه‌بعدی محصول</div><div class="text-xs text-slate-500 mt-2">3D / 360° / Zoom / Exploded View</div></div>`;
   media.parentNode.insertBefore(three,media.nextSibling);
 }
 
-
-let sahand3dLoading=false;
-function initLive3D(){
-  const box=document.getElementById('sahand-live3d');
-  if(!box) return;
-  const mount=()=>{
-    if(!document.getElementById('sahand-live3d')) return;
-    if(window.SahandCT0103D && window.THREE){
-      try{ box.__sahand3d?.destroy?.(); }catch(e){}
-      window.SahandCT0103D.mount(box);
-      document.getElementById('m3-left')?.addEventListener('click',()=>box.__sahand3d?.left());
-      document.getElementById('m3-right')?.addEventListener('click',()=>box.__sahand3d?.right());
-      document.getElementById('m3-reset')?.addEventListener('click',()=>box.__sahand3d?.reset());
-      sahand3dLoading=false;
-    }
-  };
-  if(window.THREE && window.SahandCT0103D){mount();return;}
-  box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-slate-500">در حال بارگذاری مدل سه‌بعدی...</div>';
-  if(sahand3dLoading) return;
-  sahand3dLoading=true;
-  const loadModel=()=>{
-    if(window.SahandCT0103D){mount();return;}
-    const m=document.createElement('script');m.src='assets/update/ct010-3d.js?v=20261004';m.onload=mount;m.onerror=()=>{sahand3dLoading=false;box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-red-500">خطا در بارگذاری فایل مدل سه‌بعدی</div>';};document.head.appendChild(m);
-  };
-  if(window.THREE){loadModel();return;}
-  const t=document.createElement('script');t.src='https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js';t.onload=loadModel;t.onerror=()=>{sahand3dLoading=false;box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-red-500">خطا در بارگذاری موتور سه‌بعدی</div>';};document.head.appendChild(t);
-}
 
 function wrapRenderer(){
   if(typeof renderProduct!=='function' || renderProduct.__sahandWrapped) return;
