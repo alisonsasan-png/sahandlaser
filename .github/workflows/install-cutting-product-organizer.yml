@@ -5,6 +5,7 @@ on:
     paths:
       - 'assets/update/cutting-product-organizer.js'
       - 'assets/update/product-asset-viewers.js'
+      - 'assets/update/site-stabilization.js'
       - 'data/cutting-product-registry-2026-10-04.json'
       - 'data/product-site-master-v1.json'
       - '.github/workflows/install-cutting-product-organizer.yml'
@@ -20,24 +21,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Wire database organizer and verified asset viewers into index
+      - name: Wire database organizer verified assets and stabilization into index
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text(encoding='utf-8')
           anchor='<script src="assets/update/site-update-core.js"></script>'
           organizer='<script src="assets/update/cutting-product-organizer.js?v=20261004b"></script>'
           viewers='<script src="assets/update/product-asset-viewers.js?v=20261004"></script>'
+          stable='<script src="assets/update/site-stabilization.js?v=20261004"></script>'
           if anchor not in s:
               raise SystemExit('site-update-core.js anchor not found')
-          # normalize old organizer tag to current version
-          import re
           s=re.sub(r'<script src="assets/update/cutting-product-organizer\.js\?v=[^"]+"></script>', organizer, s)
+          s=re.sub(r'<script src="assets/update/product-asset-viewers\.js\?v=[^"]+"></script>', viewers, s)
+          s=re.sub(r'<script src="assets/update/site-stabilization\.js\?v=[^"]+"></script>', stable, s)
           if organizer not in s:
               s=s.replace(anchor, anchor+'\n'+organizer, 1)
           if viewers not in s:
               s=s.replace(organizer, organizer+'\n'+viewers, 1)
+          if stable not in s:
+              s=s.replace(viewers, viewers+'\n'+stable, 1)
           p.write_text(s,encoding='utf-8')
           PY
 
@@ -47,6 +52,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html
           if ! git diff --cached --quiet; then
-            git commit -m "فعال‌سازی زیرساخت رسانه تاییدشده محصولات [skip ci]"
+            git commit -m "فعال‌سازی زیرساخت پایدار رسانه محصولات [skip ci]"
             git push
           fi
