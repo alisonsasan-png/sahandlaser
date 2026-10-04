@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-04",
+  "purpose": "Inventory and mapping of media already used on the current sahandlaser.com site. Page association is authoritative; filenames alone are not.",
+  "cutting_catalog_current_site": [
+    "تک میز استاندارد 3015",
+    "تک میز حرفه ای 3015",
+    "تک میز استاندارد 6020",
+    "تک میز حرفه ای 6020",
+    "دو میز استاندارد 3015",
+    "دو میز استاندارد 6020",
+    "دو میز حرفه ای 6020",
+    "تک میز 3015 استاندارد با روتاری",
+    "تک میز 6020 حرفه ای با روتاری",
+    "دومیز 3015 استاندارد با روتاری",
+    "دومیز 6020 حرفه ای با روتاری",
+    "کابین دار 3015 حرفه ای با روتاری",
+    "کابین دار 3015 حرفه ای",
+    "کابین دار 6020 حرفه ای",
+    "فایبر لوله بر / میز دوم و کاور"
+  ],
+  "mapped_to_new_site": {
+    "CT-001": {
+      "new_title": "دستگاه برش لیزر فایبر تک‌میز SH3015",
+      "source_page": "https://sahandlaser.com/product-test/",
+      "main_image": "https://sahandlaser.com/wp-content/uploads/2025/06/Single-table-laser-cutting-machine-3015-1.png",
+      "status": "already_applied"
+    },
+    "CT-002": {
+      "new_title": "دستگاه برش لیزر دو میز فایبر SH3015",
+      "main_image": "https://sahandlaser.com/wp-content/uploads/2025/05/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%D8%A8%D8%B1%D8%B4%D9%84%DB%8C%D8%B2%D8%B1%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%D8%AF%D9%88%D9%85%DB%8C%D8%B23015%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF_852719.jpg",
+      "status": "already_applied"
+    },
+    "CT-003": {
+      "new_title": "دستگاه برش لیزر دومیز فایبر با روتاری SH3015R",
+      "source_page": "https://sahandlaser.com/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D8%B4-%D9%84%DB%8C%D8%B2%D8%B1-%D8%AF%D9%88%D9%85%DB%8C%D8%B2-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-3015-%D8%A8%D8%A7-%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C/",
+      "main_image": "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-with-rotary-exchange-1-scaled.png",
+      "status": "verified_page_association"
+    },
+    "CT-004": {
+      "new_title": "دستگاه برش لیزر تک‌میز فایبر حرفه‌ای SH6020",
+      "source_page": "https://sahandlaser.com/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87-%D8%A8%D8%B1%D8%B4-%D9%84%DB%8C%D8%B2%D8%B1-%D9%81%D8%A7%DB%8C%D8%A8%D8%B1-%D8%AA%DA%A9-%D9%85%DB%8C%D8%B2-%D8%AD%D8%B1%D9%81%D9%87-%D8%A7%DB%8C-6020/",
+      "main_image": "https://sahandlaser.com/wp-content/uploads/2025/05/%D9%85%D8%B9%D8%B1%D9%81%DB%8C%D9%85%D8%AD%D8%B5%D9%88%D9%84_915904.jpg",
+      "status": "verified_page_association"
+    },
+    "CT-005": {
+      "new_title": "دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020",
+      "status": "source_page_found_media_url_pending"
+    },
+    "CT-006": {
+      "new_title": "دستگاه برش لیزر دو میز فایبر با روتاری SH6020R",
+      "status": "source_page_found_media_url_pending"
+    },
+    "CT-007": {
+      "new_title": "دستگاه برش لیزر تک‌میز فایبر با روتاری SH6020R",
+      "status": "mapping_pending"
+    },
+    "CT-008": {
+      "new_title": "دستگاه برش لیزر فایبر کابین‌دار SH6020C",
+      "status": "mapping_pending"
+    },
+    "CT-009": {
+      "new_title": "دستگاه برش لیزری لوله افقی سری استاندارد QG-6024DZ",
+      "status": "mapping_pending"
+    }
+  },
+  "shared_gallery_media": [
+    "https://sahandlaser.com/wp-content/uploads/2022/10/S6-2.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/09/S4-OK.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/10/S10.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/10/S3.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/09/SA1-3.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/09/SA1-4.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/10/SA1-6.jpg",
+    "https://sahandlaser.com/wp-content/uploads/2022/10/SA1-5.jpg"
+  ]
+}
