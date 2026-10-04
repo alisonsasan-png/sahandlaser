@@ -1,0 +1,62 @@
+/* Sahand Laser — verified product asset viewers v1 — 2026-10-04 */
+(function(){
+'use strict';
+let tries=0,lastId=null;
+const TXT={
+ fa:{verifiedAssets:'فایل‌های فنی تأییدشده',drawing:'نقشه فنی',exploded:'نمای انفجاری',visual3d:'مدل سه‌بعدی تعاملی — بازسازی بصری',visualNote:'این مدل برای نمایش وب و بررسی ظاهری است و نقشه ساخت یا مدل تولیدی تأییدشده محسوب نمی‌شود.',drag:'برای چرخش بکشید'},
+ en:{verifiedAssets:'Verified Technical Assets',drawing:'Technical Drawing',exploded:'Exploded View',visual3d:'Interactive 3D — Visual Reconstruction',visualNote:'This web model is for visual presentation and is not a manufacturing-certified CAD model.',drag:'Drag to rotate'},
+ ar:{verifiedAssets:'الملفات الفنية المؤكدة',drawing:'الرسم الفني',exploded:'المنظور التفجيري',visual3d:'نموذج 3D تفاعلي — إعادة بناء بصرية',visualNote:'هذا النموذج للعرض البصري على الويب وليس نموذج تصنيع معتمداً.',drag:'اسحب للتدوير'},
+ tr:{verifiedAssets:'Doğrulanmış Teknik Dosyalar',drawing:'Teknik Çizim',exploded:'Patlatılmış Görünüm',visual3d:'Etkileşimli 3D — Görsel Rekonstrüksiyon',visualNote:'Bu web modeli görsel sunum içindir; üretim onaylı CAD değildir.',drag:'Döndürmek için sürükleyin'}
+};
+function lang(){return (typeof currentLang!=='undefined'&&currentLang)||document.documentElement.lang||'fa'}
+function t(k){return(TXT[lang()]||TXT.fa)[k]||TXT.fa[k]}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function style(){if(document.getElementById('sahand-verified-asset-style'))return;const s=document.createElement('style');s.id='sahand-verified-asset-style';s.textContent=`
+.sahand-verified-assets{margin:1.5rem 0 2rem;border:1px solid #e2e8f0;border-radius:1.25rem;padding:1.25rem;background:#fff}.dark .sahand-verified-assets{background:#0f172a;border-color:#334155}.sahand-asset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.sahand-asset-card{border:1px solid #e2e8f0;border-radius:1rem;overflow:hidden;background:#f8fafc}.dark .sahand-asset-card{background:#020617;border-color:#334155}.sahand-asset-card img{width:100%;height:320px;object-fit:contain;background:#fff}.dark .sahand-asset-card img{background:#0f172a}.sahand-asset-cap{padding:.8rem 1rem;font-weight:800;color:rgb(var(--brand))}.dark .sahand-asset-cap{color:#fff}.sahand-visual-note{margin-top:.75rem;padding:.75rem 1rem;border-radius:.8rem;background:#fff7ed;color:#9a3412;font-size:.76rem;line-height:1.8;border:1px solid #fed7aa}.dark .sahand-visual-note{background:#7c2d1233;color:#fdba74;border-color:#9a3412}.sahand-explicit-360{position:relative}.sahand-explicit-360 .spin-hint{display:flex}@media(max-width:700px){.sahand-asset-grid{grid-template-columns:1fr}.sahand-asset-card img{height:250px}}
+`;document.head.appendChild(s)}
+function db(){return window.SAHAND_PRODUCT_DB||null}
+function rec(id){return db()?.products?.[id]||null}
+function objStatus(o){return o&&typeof o==='object'?o.status:null}
+function removeUnverifiedStaticMedia(id,r){
+ if(id!=='CT-010')return;
+ const a=r?.assets||{};
+ const hasVerified360=objStatus(a.view_360)==='verified';
+ const hasVerifiedExploded=objStatus(a.exploded_view)==='verified';
+ if(!hasVerified360&&!hasVerifiedExploded)document.getElementById('sahand-special-media')?.remove();
+}
+function labelVisual3d(id,r){
+ if(id!=='CT-010'||objStatus(r?.assets?.three_d)!=='visual_reconstruction')return;
+ const sec=document.getElementById('sahand-3d-section');if(!sec)return;
+ const heading=sec.querySelector('h2,h3,.text-xl,.text-2xl');if(heading)heading.textContent=t('visual3d');
+ let note=sec.querySelector('.sahand-visual-note');if(!note){note=document.createElement('div');note.className='sahand-visual-note';sec.appendChild(note)}note.textContent=t('visualNote');
+}
+function render360(id,r){
+ const a=r?.assets?.view_360;
+ if(!a||a.status!=='verified'||!Array.isArray(a.frames)||a.frames.length<2)return;
+ const viewer=document.getElementById('spin-viewer');if(!viewer)return;
+ const frames=a.frames.slice();
+ viewer.classList.add('sahand-explicit-360');
+ viewer.innerHTML=`<span class="badge-360"><i class="fa-solid fa-rotate"></i> 360°</span><span class="spin-counter" id="spin-counter">1 / ${frames.length}</span>${frames.map((src,i)=>`<img src="${esc(src)}" class="${i===0?'active':''}" alt="${esc(id+' 360 frame '+(i+1))}" loading="${i===0?'eager':'lazy'}" decoding="async">`).join('')}<div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${esc(t('drag'))}</span></div><div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>`;
+ const imgs=[...viewer.querySelectorAll('img')],pb=viewer.querySelector('#spin-progress'),counter=viewer.querySelector('#spin-counter');let cur=0,start=0,startFrame=0,drag=false;
+ function show(i){cur=((i%imgs.length)+imgs.length)%imgs.length;imgs.forEach((x,n)=>x.classList.toggle('active',n===cur));if(counter)counter.textContent=`${cur+1} / ${imgs.length}`;if(pb)pb.style.width=`${((cur+1)/imgs.length)*100}%`}
+ viewer.onpointerdown=e=>{drag=true;start=e.clientX;startFrame=cur;viewer.classList.add('dragging','has-interacted');viewer.setPointerCapture?.(e.pointerId)};
+ viewer.onpointermove=e=>{if(drag)show(startFrame+Math.round((e.clientX-start)/55))};
+ viewer.onpointerup=viewer.onpointercancel=()=>{drag=false;viewer.classList.remove('dragging')};
+ viewer.onkeydown=e=>{if(e.key==='ArrowLeft'){e.preventDefault();show(cur-1)}if(e.key==='ArrowRight'){e.preventDefault();show(cur+1)}};
+ show(0);
+}
+function renderFiles(id,r){
+ document.getElementById('sahand-verified-assets')?.remove();
+ const a=r?.assets||{},cards=[];
+ if(objStatus(a.technical_drawing)==='verified'&&a.technical_drawing.url)cards.push({url:a.technical_drawing.url,label:t('drawing')});
+ if(objStatus(a.exploded_view)==='verified'&&a.exploded_view.url)cards.push({url:a.exploded_view.url,label:t('exploded')});
+ if(!cards.length)return;
+ const sec=document.createElement('section');sec.id='sahand-verified-assets';sec.className='sahand-verified-assets';sec.innerHTML=`<h2 class="text-xl font-extrabold text-brand dark:text-white mb-4">${esc(t('verifiedAssets'))}</h2><div class="sahand-asset-grid">${cards.map(c=>`<a class="sahand-asset-card" href="${esc(c.url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(c.url)}" alt="${esc(id+' '+c.label)}" loading="lazy" decoding="async"><div class="sahand-asset-cap">${esc(c.label)}</div></a>`).join('')}</div>`;
+ const anchor=document.getElementById('sahand-cutting-product-file')||document.getElementById('gallery-section');if(anchor?.parentNode)anchor.parentNode.insertBefore(sec,anchor.nextSibling);
+}
+function apply(id){const r=rec(id);if(!r)return;style();removeUnverifiedStaticMedia(id,r);render360(id,r);renderFiles(id,r);setTimeout(()=>labelVisual3d(id,r),180)}
+function current(){return (typeof currentProductId!=='undefined'&&currentProductId)||decodeURIComponent((location.hash.match(/product=([^&]+)/)||[])[1]||'')}
+function tick(){const id=current();if(id&&id!==lastId){lastId=id;setTimeout(()=>apply(id),150)}else if(id)apply(id)}
+function boot(){if(!db()||typeof renderProduct!=='function'){if(++tries<100)setTimeout(boot,100);return}style();const old=renderProduct;if(!old.__sahandAssetViewer){renderProduct=function(id){const x=old(id);setTimeout(()=>apply(id),160);return x};renderProduct.__sahandAssetViewer=true}tick();window.addEventListener('hashchange',()=>{lastId=null;setTimeout(tick,120)})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();
