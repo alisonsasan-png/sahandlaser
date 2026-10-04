@@ -6,8 +6,20 @@ on:
       - 'index.html'
       - 'assets/update/**'
       - 'data/product-site-master-v1.json'
+      - 'data/Sahand_Laser_Master_Knowledge_Base_v1_5.json'
+      - 'data/README.md'
+      - 'PROJECT-MEMORY.md'
+      - 'CHANGE-POLICY.md'
       - 'tools/site_qa.py'
+      - 'tools/reality_check.py'
       - '.github/workflows/site-qa.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'assets/update/**'
+      - 'data/**'
+      - 'tools/site_qa.py'
+      - 'tools/reality_check.py'
   workflow_dispatch:
 
 permissions:
@@ -23,8 +35,22 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Run database translation button and link checks
+      - name: Validate JSON databases
+        run: |
+          python -m json.tool data/product-site-master-v1.json > /dev/null
+          python -m json.tool data/Sahand_Laser_Master_Knowledge_Base_v1_5.json > /dev/null
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/update/cutting-product-organizer.js
+          node --check assets/update/product-asset-viewers.js
+          node --check assets/update/site-stabilization.js
+          node --check assets/update/ct010-3d.js
+          node --check assets/update/site-update-core.js
+          node --check assets/update/i18n-completion.js
+      - name: Run database translation button link and release-gate checks
         run: python tools/site_qa.py
+      - name: Run independent Reality Check
+        run: python tools/reality_check.py
       - name: Publish QA summary
         if: always()
         run: |
