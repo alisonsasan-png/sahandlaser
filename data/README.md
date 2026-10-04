@@ -1,3 +1,9 @@
 # Site data
 
-`site-update-2026-10-03.json` is the repository-side delta for Master Knowledge Base v1.2. The full master knowledge base remains the project source of truth; this file records only the data needed by the current website update.
+بانک مرجع پروژه اکنون **Sahand_Laser_Master_Knowledge_Base_v1_3.json** است.
+
+- `data/product-site-master-v1.json`: لایه همگام‌سازی مستقیم محصولات برش CT-001 تا CT-010 با سایت؛ هر داده قطعی ابتدا اینجا/بانک مرجع ثبت می‌شود و سپس روی سایت اعمال می‌شود.
+- `site-update-2026-10-03.json`: سابقه تغییرات مرحله قبل (v1.2) و برای آرشیو نگه داشته شده است.
+- `current-site-media-inventory-2026-10-04.json`: نگاشت رسانه‌های بازیابی‌شده از سایت فعلی.
+
+قانون: داده مبهم یا متعارض با حدس تکمیل نمی‌شود و تا زمان تأیید با وضعیت pending/review باقی می‌ماند. سئوی سنگین و مهاجرت مسیرهای `#product` تا تثبیت محصولات متوقف است.
