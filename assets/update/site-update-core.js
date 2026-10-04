@@ -138,33 +138,8 @@ function enhanceNewProduct(){
   media.innerHTML=`<h3 class="text-xl font-extrabold text-brand dark:text-white mb-4">${mediaLabel('commercial')} / 360° / Exploded View</h3><div class="grid md:grid-cols-3 gap-4"><div class="sahand-media-card"><img src="${UPDATE.heroImg}" alt="Sahand Laser commercial product view"><div class="sahand-media-label">${mediaLabel('commercial')}</div></div><div class="sahand-media-card"><img src="${UPDATE.view360}" alt="Sahand Laser 360 degree presentation"><div class="sahand-media-label">${mediaLabel('v360')}</div></div><div class="sahand-media-card"><img src="${UPDATE.exploded}" alt="Sahand Laser exploded view"><div class="sahand-media-label">${mediaLabel('exploded')}</div></div></div>`;
   if(anchor?.parentNode) anchor.parentNode.insertBefore(media,anchor.nextSibling);
   const three=document.createElement('section'); three.id='sahand-3d-section'; three.className='mt-6 sahand-3d-card';
-  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-1"><i class="fa-solid fa-cube"></i><span>3D LIVE</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white">مدل سه‌بعدی تعاملی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 mt-1">با موس بکشید تا دستگاه بچرخد؛ با چرخ موس زوم کنید.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 font-bold text-sm"><i class="fa-solid fa-circle-check ml-2"></i>فعال</div></div>
-  <div id="sahand-live3d" class="sahand-live3d" aria-label="Interactive 3D visual model">
-    <svg viewBox="0 0 900 520" role="img">
-      <ellipse class="m3-shadow" cx="455" cy="430" rx="330" ry="45"/>
-      <g id="sahand-model3d">
-        <polygon class="m3-dark" points="145,330 625,330 770,270 292,270"/>
-        <polygon class="m3-blue" points="145,330 625,330 625,390 145,390"/>
-        <polygon class="m3-blue2" points="625,330 770,270 770,330 625,390"/>
-        <polygon class="m3-blue2" points="145,330 292,270 770,270 625,330"/>
-        <polygon class="m3-dark" points="215,310 605,310 690,278 302,278"/>
-        <g id="sahand-slats"></g>
-        <polygon class="m3-blue2" points="420,205 485,185 690,235 625,255"/>
-        <polygon class="m3-blue" points="420,205 485,185 485,245 420,266"/>
-        <polygon class="m3-blue2" points="485,185 690,235 690,294 485,245"/>
-        <rect class="m3-dark" x="500" y="205" width="58" height="110" rx="8"/>
-        <rect class="m3-metal" x="516" y="250" width="25" height="85" rx="6"/>
-        <rect class="m3-head" x="509" y="300" width="40" height="58" rx="8"/>
-        <polygon class="m3-nozzle" points="524,358 534,358 531,386 527,386"/>
-        <polygon class="m3-metal" points="704,240 748,228 748,370 704,382"/>
-        <polygon class="m3-dark" points="718,252 740,247 740,307 718,312"/>
-        <text class="m3-label" x="250" y="368">SAHAND LASER</text>
-      </g>
-    </svg>
-  </div>
-  <div class="sahand-3d-controls"><button class="sahand-3d-btn" id="m3-left">↺ چرخش چپ</button><button class="sahand-3d-btn" id="m3-reset">نمای اصلی</button><button class="sahand-3d-btn" id="m3-right">چرخش راست ↻</button><span class="text-xs text-slate-500 self-center mr-2">مدل بصری بر اساس فایل FreeCAD فعلی؛ نقشه ساخت تأییدشده نیست.</span></div>`;
+  three.innerHTML=`<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"><div><div class="inline-flex items-center gap-2 text-accent font-bold text-sm mb-2"><i class="fa-solid fa-cube"></i><span>3D</span></div><h3 class="text-xl font-extrabold text-brand dark:text-white mb-2">مدل سه‌بعدی دستگاه</h3><p class="text-sm text-slate-600 dark:text-slate-300 leading-7">جایگاه نمایش مدل سه‌بعدی این محصول آماده است. بعد از نهایی شدن طراحی دستگاه، مدل تأییدشده با قابلیت چرخش، زوم و نمایش تعاملی در همین قسمت قرار می‌گیرد.</p></div><div class="shrink-0 px-4 py-2 rounded-xl bg-slate-500/10 text-slate-600 dark:text-slate-300 font-bold text-sm"><i class="fa-solid fa-cube ml-2"></i>مدل سه‌بعدی — به‌زودی</div></div><div class="mt-4 min-h-[220px] rounded-2xl border border-dashed border-slate-300 dark:border-slate-600 flex flex-col items-center justify-center text-center p-6 bg-white/40 dark:bg-slate-950/20"><i class="fa-solid fa-cube text-5xl text-slate-300 dark:text-slate-600 mb-4"></i><div class="font-extrabold text-brand dark:text-white">محل نمایش سه‌بعدی محصول</div><div class="text-xs text-slate-500 mt-2">3D / 360° / Zoom / Exploded View</div></div>`
   media.parentNode.insertBefore(three,media.nextSibling);
-  initLive3D();
 }
 
 
