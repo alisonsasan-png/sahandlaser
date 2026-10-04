@@ -1,0 +1,33 @@
+name: Sahand Laser site QA
+
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'assets/update/**'
+      - 'data/product-site-master-v1.json'
+      - 'tools/site_qa.py'
+      - '.github/workflows/site-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run database translation button and link checks
+        run: python tools/site_qa.py
+      - name: Publish QA summary
+        if: always()
+        run: |
+          if [ -f /tmp/sahand-site-qa-report.md ]; then
+            cat /tmp/sahand-site-qa-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
