@@ -169,25 +169,18 @@ function enhanceNewProduct(){
 
 
 function initLive3D(){
-  const box=document.getElementById('sahand-live3d'), model=document.getElementById('sahand-model3d'), slats=document.getElementById('sahand-slats');
-  if(!box||!model) return;
-  if(slats && !slats.childNodes.length){
-    let lines='';
-    for(let i=0;i<22;i++){const x=250+i*17; lines+='<line class="m3-slat" x1="'+x+'" y1="303" x2="'+(x+82)+'" y2="278"/>';}
-    slats.innerHTML=lines;
+  const box=document.getElementById('sahand-live3d');
+  if(!box) return;
+  if(window.SahandCT0103D && window.THREE){
+    try{ box.__sahand3d?.destroy?.(); }catch(e){}
+    window.SahandCT0103D.mount(box);
+    document.getElementById('m3-left')?.addEventListener('click',()=>box.__sahand3d?.left());
+    document.getElementById('m3-right')?.addEventListener('click',()=>box.__sahand3d?.right());
+    document.getElementById('m3-reset')?.addEventListener('click',()=>box.__sahand3d?.reset());
+  }else{
+    box.innerHTML='<div class="h-full flex items-center justify-center text-sm font-bold text-slate-500">در حال بارگذاری موتور سه‌بعدی...</div>';
+    setTimeout(initLive3D,250);
   }
-  let rot=0, zoom=1, dragging=false, lastX=0;
-  const draw=()=>{model.setAttribute('transform','translate(450 270) scale('+zoom+') skewX('+(rot*.08)+') translate(-450 -270) rotate('+(rot*.025)+' 450 300)');};
-  const start=x=>{dragging=true;lastX=x;};
-  const move=x=>{if(!dragging)return;rot+=(x-lastX);lastX=x;draw();};
-  box.onpointerdown=e=>{box.setPointerCapture?.(e.pointerId);start(e.clientX);};
-  box.onpointermove=e=>move(e.clientX);
-  box.onpointerup=box.onpointercancel=()=>dragging=false;
-  box.onwheel=e=>{e.preventDefault();zoom=Math.max(.72,Math.min(1.45,zoom+(e.deltaY<0?.08:-.08)));draw();};
-  document.getElementById('m3-left')?.addEventListener('click',()=>{rot-=45;draw();});
-  document.getElementById('m3-right')?.addEventListener('click',()=>{rot+=45;draw();});
-  document.getElementById('m3-reset')?.addEventListener('click',()=>{rot=0;zoom=1;draw();});
-  draw();
 }
 
 function wrapRenderer(){
