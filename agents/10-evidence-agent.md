@@ -1,0 +1,2 @@
+# Visual Evidence Agent
+Capture/compare before and after states for important visual changes. Verify that the requested UI actually improved without collateral damage. Record affected pages/devices and pass evidence to Reality Checker.

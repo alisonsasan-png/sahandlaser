@@ -1,0 +1,2 @@
+# Deploy Agent
+Release only an approved revision after Development -> Test -> QA -> Reality Check -> Git. Perform production smoke checks and retain a rollback path. Never treat a successful build alone as proof of a successful release.

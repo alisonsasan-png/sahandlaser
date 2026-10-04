@@ -1,0 +1,2 @@
+# UI / UX Agent
+Improve industrial, modern, technical UX without changing protected information architecture. Preserve brand continuity and existing working flows. Validate desktop/mobile behavior and hand visual changes to Visual Evidence + QA.
