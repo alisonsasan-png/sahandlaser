@@ -5,6 +5,8 @@
 const UPDATE={
   banner:'https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400.jpg',
   ct001:'https://sahandlaser.com/wp-content/uploads/2025/06/Single-table-laser-cutting-machine-3015-1.png',
+  ct003:'https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-with-rotary-exchange-1-scaled.png',
+  ct004:'https://sahandlaser.com/wp-content/uploads/2025/05/%D9%85%D8%B9%D8%B1%D9%81%DB%8C%D9%85%D8%AD%D8%B5%D9%88%D9%84_915904.jpg',
   ct002:[
     'https://sahandlaser.com/wp-content/uploads/2025/05/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%D8%A8%D8%B1%D8%B4%D9%84%DB%8C%D8%B2%D8%B1%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%D8%AF%D9%88%D9%85%DB%8C%D8%B23015%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF_852719.jpg',
     'https://sahandlaser.com/wp-content/uploads/2022/10/S6-2.jpg',
@@ -80,6 +82,8 @@ function applyBanner(){
 function patchData(){
   if(typeof products==='undefined' || typeof cats==='undefined') return false;
   if(products['CT-001']) products['CT-001'].images=[UPDATE.ct001];
+  if(products['CT-003']) products['CT-003'].images=[UPDATE.ct003];
+  if(products['CT-004']) products['CT-004'].images=[UPDATE.ct004];
   if(products['CT-002']){
     products['CT-002'].images=UPDATE.ct002.slice();
     products['CT-002'].gallery=UPDATE.ct002Samples.slice();
