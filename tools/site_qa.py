@@ -31,7 +31,7 @@ def lang_keys(text,marker,lang):
     root=balanced(text,p);m=re.search(r'\b'+re.escape(lang)+r'\s*:\s*\{',root)
     if not m:return set()
     block=balanced(root,m.start())
-    return set(re.findall(r'(?:^|[,\n]\s*)["\']?([A-Za-z0-9_]+)["\']?\s*:',block,re.M))
+    return set(re.findall(r'(?:^|[{,\n]\s*)["\']?([A-Za-z0-9_]+)["\']?\s*:',block,re.M))
 for f in [INDEX,DB,ORG,I18N]:check(f.exists(),f'file exists: {f.relative_to(ROOT)}')
 if errors:print('\n'.join(errors));sys.exit(1)
 html=INDEX.read_text(encoding='utf-8');org=ORG.read_text(encoding='utf-8');i18n=I18N.read_text(encoding='utf-8');db=json.loads(DB.read_text(encoding='utf-8'))
