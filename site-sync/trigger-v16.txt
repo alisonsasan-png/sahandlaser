@@ -1,0 +1,2 @@
+2026-10-05T10:48+03:30
+Purpose: apply scoped v1.6 runtime/cache synchronization on work/site-sync-v16-2026-10-05.
