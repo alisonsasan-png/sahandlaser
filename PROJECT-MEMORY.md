@@ -76,3 +76,10 @@ The user approved continuous execution without intermediate approval for:
 
 ## Current checkpoint — 2026-10-05
 Work is continuing on branch `work/site-sync-v16-2026-10-05`. A formal checkpoint exists at `checkpoints/2026-10-05-site-sync-v16.md`. The live `main` site must remain unchanged until the branch passes QA + Reality Check and the resulting diff is reviewed.
+
+### Continuation status — repaired v1.6
+- The originally committed v1.6 master was not merely mis-encoded; it was truncated near the first component record and contained a corrupted Persian character.
+- Recovery was performed conservatively from the complete UTF-8 v1.5 master plus only the already-recorded v1.6 deltas: CT-001..CT-010 media mappings, 3D metadata, schema version and the site-update policy flag.
+- The recovery workflow verifies that verification state, Drive archive, component catalog, welding families, media summary, source URLs and open issues remain byte-for-byte equivalent at the parsed JSON data level to v1.5.
+- Rebuilt v1.6 JSON validation, semantic reconstruction checks, scoped runtime patching and JavaScript syntax checks passed in the repair workflow.
+- Full repository QA + independent Reality Check is the next release gate before any PR or merge to `main`.
