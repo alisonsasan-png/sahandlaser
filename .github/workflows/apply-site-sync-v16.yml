@@ -16,6 +16,74 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+
+      - name: Rebuild complete UTF-8 master v1.6 safely
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          base_path = Path('data/Sahand_Laser_Master_Knowledge_Base_v1_5.json')
+          out_path = Path('data/Sahand_Laser_Master_Knowledge_Base_v1_6.json')
+          data = json.loads(base_path.read_text(encoding='utf-8'))
+
+          data['schema_version'] = '1.6'
+          data.setdefault('policy', {})['site_update_allowed_after_user_approval'] = False
+
+          enrich = {
+            'CT-001': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-001_SH3015.glb','obj_file':'CT-001_SH3015.obj','reference':'دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg','manufacturing_certified':False}
+            },
+            'CT-002': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg','rar2/دستگاهبرشلیزرفایبردومیز3015استاندارد_937676.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-002_SH3015.glb','obj_file':'CT-002_SH3015.obj','reference':'دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg','manufacturing_certified':False}
+            },
+            'CT-003': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-003_SH3015R.glb','obj_file':'CT-003_SH3015R.obj','reference':'دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg','manufacturing_certified':False}
+            },
+            'CT-004': {
+              'media_mapping_2026_10_04': ['rar2/معرفیمحصول_915904.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-004_SH6020.glb','obj_file':'CT-004_SH6020.obj','reference':'معرفیمحصول_915904.jpg','manufacturing_certified':False}
+            },
+            'CT-005': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg','rar2/دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_743437.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-005_SH6020.glb','obj_file':'CT-005_SH6020.obj','reference':'دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg','manufacturing_certified':False}
+            },
+            'CT-006': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-006_SH6020R.glb','obj_file':'CT-006_SH6020R.obj','reference':'دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg','manufacturing_certified':False}
+            },
+            'CT-007': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-007_SH6020R.glb','obj_file':'CT-007_SH6020R.obj','reference':'دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg','manufacturing_certified':False}
+            },
+            'CT-008': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-008_SH6020C.glb','obj_file':'CT-008_SH6020C.obj','reference':'دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg','manufacturing_certified':False}
+            },
+            'CT-009': {
+              'media_mapping_2026_10_04': ['rar2/دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg'],
+              'three_d_asset': {'status':'visual_web_model_ready','glb_file':'CT-009_QG-6024DZ.glb','obj_file':'CT-009_QG-6024DZ.obj','reference':'دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg + user DOCX','manufacturing_certified':False}
+            },
+            'CT-010': {
+              'media_mapping_2026_10_04': [],
+              'three_d_asset': {'status':'hold','reason':'commercial model identity pending'}
+            }
+          }
+
+          products = {p['id']: p for p in data.get('cutting_products', [])}
+          expected = [f'CT-{i:03d}' for i in range(1, 11)]
+          if sorted(products) != expected:
+              raise SystemExit(f'Unexpected cutting product IDs: {sorted(products)}')
+          for pid, patch in enrich.items():
+              products[pid].update(patch)
+
+          out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(f'Rebuilt {out_path} as valid UTF-8 from v1.5 + verified v1.6 deltas')
+          PY
+
       - name: Apply scoped runtime/cache patch
         run: |
           python - <<'PY'
@@ -51,20 +119,36 @@ jobs:
           s=s.replace('senkronize veritabanı v1.5','senkronize veritabanı v1.6')
           p.write_text(s,encoding='utf-8')
           PY
-      - name: Validate patched files
+
+      - name: Validate rebuilt master and patched files
         run: |
           node --check assets/update/cutting-product-organizer.js
           node --check assets/update/site-stabilization.js
           python -m json.tool data/product-site-master-v1.json > /dev/null
           python -m json.tool data/Sahand_Laser_Master_Knowledge_Base_v1_6.json > /dev/null
-      - name: Commit scoped patch
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          v15=json.loads(Path('data/Sahand_Laser_Master_Knowledge_Base_v1_5.json').read_text(encoding='utf-8'))
+          v16=json.loads(Path('data/Sahand_Laser_Master_Knowledge_Base_v1_6.json').read_text(encoding='utf-8'))
+          assert v16['schema_version']=='1.6'
+          assert [p['id'] for p in v16['cutting_products']]==[f'CT-{i:03d}' for i in range(1,11)]
+          assert v16['cutting_products'][-1]['three_d_asset']['status']=='hold'
+          assert v16['policy']['site_update_allowed_after_user_approval'] is False
+          for key in ['verification_state','drive_archive','component_and_equipment_catalog','welding_offering_families','media_inventory_summary','source_urls','open_issues']:
+              assert v16[key]==v15[key], f'Unexpected change in {key}'
+          assert v16['component_and_equipment_catalog'][0]['title_fa']=='رگولاتور الکتروپنوماتیک SMC ITV1050'
+          print('Semantic v1.6 reconstruction checks passed')
+          PY
+
+      - name: Commit repaired master and scoped patch
         run: |
           git config user.name "sahandlaser-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html assets/update/site-stabilization.js assets/update/cutting-product-organizer.js
+          git add data/Sahand_Laser_Master_Knowledge_Base_v1_6.json index.html assets/update/site-stabilization.js assets/update/cutting-product-organizer.js
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "site: sync v1.6 runtime and bust stale cache [skip ci]"
+            git commit -m "data/site: repair v1.6 UTF-8 master and sync scoped runtime [skip ci]"
             git push
           fi
