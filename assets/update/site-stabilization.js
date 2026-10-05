@@ -1,4 +1,4 @@
-/* Sahand Laser — responsive/performance stabilization — 2026-10-04 v1.6 loader */
+/* Sahand Laser — responsive/performance stabilization — 2026-10-05 v1.6 loader */
 (function(){
 'use strict';
 function addStyle(){if(document.getElementById('sahand-stabilization-style'))return;const s=document.createElement('style');s.id='sahand-stabilization-style';s.textContent=`
@@ -10,6 +10,7 @@ function wrapWideContent(root=document){root.querySelectorAll('table').forEach(t
 function closeMobileAfterNav(){document.addEventListener('click',e=>{const a=e.target.closest('#mobile-menu a,[data-nav]');if(!a)return;const m=document.getElementById('mobile-menu');if(m&&!m.classList.contains('hidden')&&typeof toggleMobile==='function')toggleMobile()})}
 function observeChanges(){const mo=new MutationObserver(ms=>{for(const m of ms)for(const n of m.addedNodes){if(n.nodeType!==1)continue;optimizeImages(n);secureLinks(n);wrapWideContent(n)}});mo.observe(document.body,{childList:true,subtree:true})}
 function loadV16(){if(document.getElementById('sahand-review-v16-script'))return;const s=document.createElement('script');s.id='sahand-review-v16-script';s.src='assets/update/site-review-v16.js?v=20261005v16';s.defer=true;document.body.appendChild(s)}
-function boot(){addStyle();optimizeImages();secureLinks();wrapWideContent();closeMobileAfterNav();observeChanges();loadV16()}
+function loadWL002(){if(document.getElementById('sahand-wl002-showcase-script'))return;const s=document.createElement('script');s.id='sahand-wl002-showcase-script';s.src='assets/update/wl002-showcase.js?v=20261005wl002';s.defer=true;document.body.appendChild(s)}
+function boot(){addStyle();optimizeImages();secureLinks();wrapWideContent();closeMobileAfterNav();observeChanges();loadV16();loadWL002()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
