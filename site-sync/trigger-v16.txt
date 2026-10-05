@@ -1,2 +1,0 @@
-2026-10-05 continuation-run-2
-Purpose: rebuild truncated v1.6 master as valid UTF-8 from v1.5 + verified v1.6 deltas, validate it, then apply scoped runtime/cache synchronization on work/site-sync-v16-2026-10-05.
