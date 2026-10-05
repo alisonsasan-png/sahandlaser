@@ -3,7 +3,7 @@
 ## Official operating model
 SAHAND LASER AI AGENCY is the official development workflow. Work is preservation-first, database-first, evidence-driven, and deploys only after QA + Reality Check.
 
-## Repository baseline — 2026-10-04
+## Repository baseline — 2026-10-05
 - Repository: `alisonsasan-png/sahandlaser`
 - Default branch: `main`
 - Site entry: `index.html` (large static SPA)
@@ -12,10 +12,10 @@ SAHAND LASER AI AGENCY is the official development workflow. Work is preservatio
 - 3D source: `assets/3d/`
 - QA tooling: `tools/site_qa.py` and `.github/workflows/site-qa.yml`
 - Media crawler/inventory tooling exists and WordPress Media Library inventory is already generated.
-- PR #6 (AI Agency workflow) is merged.
+- AI Agency workflow is active.
 
 ## Authoritative data rules
-- `data/README.md` declares `Sahand_Laser_Master_Knowledge_Base_v1_5.json` as current master knowledge base.
+- `data/README.md` declares `Sahand_Laser_Master_Knowledge_Base_v1_6.json` as current master knowledge base.
 - `data/product-site-master-v1.json` is the direct site synchronization layer for CT-001..CT-010.
 - Database-first and no-guessing policies are active.
 - Original media remains immutable; web derivatives are separate.
@@ -25,22 +25,28 @@ SAHAND LASER AI AGENCY is the official development workflow. Work is preservatio
 ## Current media/data state
 - Current working archive indexed: 529 images + 5 PDFs from the files supplied in this project session.
 - Duplicate analysis exists: exact and near-duplicate groups are tracked.
-- Google Drive archive root exists and is organized by machine/components/sources/chillers/welding/marking/articles/documents/review.
+- Google Drive archive root exists and is organized by machine/components/sources/chillers/welding/marking/articles/documents/review/database/3D.
 - WordPress Media Library inventory: 789 original attachments and generated sizes are indexed separately.
 
 ## Current product state
 - CT-001..CT-004: identities confirmed; current-site specs confirmed; media mapping varies.
 - CT-005..CT-008: identities exist; specs/media require final mapping/review; do not guess.
 - CT-009 QG-6024DZ: source-confirmed specs; accuracy wording conflict must remain safely worded.
-- CT-010: commercial model pending; FreeCAD macro is a visual reference master, not manufacturing-certified. The WebGL model is a procedural reconstruction based on that geometry and remains visual-only.
+- CT-010: commercial model pending; keep on hold until identity is confirmed.
+
+## 3D state
+- Generated visual-web GLB/OBJ packages exist for CT-001..CT-009 and nine provisional variants in the Drive archive.
+- These are visual reconstructions, not manufacturing-certified CAD.
+- Current site runtime still uses procedural Three.js reconstructions; migration to the generated GLB assets is a planned site-sync step and must only activate verified canonical mappings.
+- CT-010 remains held.
 
 ## Protected requirements
 Preserve existing navigation, languages, themes, forms, comments, downloads, applications, products, product assets and useful existing imagery. Training and Downloads must remain available. Do not move all products to the homepage. Preserve URLs unless an Architect-approved migration exists. Existing WordPress production site `sahandlaser.com` must not be modified during GitHub Pages development.
 
 ## 3D policy
 - Current FreeCAD visual master: `assets/3d/SahandLaser_FiberCutter_FINAL.FCMacro`
-- Current CT-010 web reconstruction: `assets/update/ct010-3d.js`
-- The web model must remain explicitly labeled as a visual reconstruction until exact CAD/GLB output is verified.
+- Legacy CT-010 web reconstruction: `assets/update/ct010-3d.js`
+- All current web 3D models must remain explicitly labeled as visual reconstructions until exact CAD/GLB output is verified for engineering use.
 - Viewer must support desktop mouse and mobile touch rotation, zoom, reset and responsive operation.
 - 360, exploded view and technical drawing assets are product-specific and cannot be guessed or reused as if verified.
 
@@ -60,7 +66,7 @@ The user approved continuous execution without intermediate approval for:
 3. Database/product reconciliation.
 4. Restore/preserve site structure.
 5. Product pages + real media.
-6. CT-010 3D first, then repeatable pipeline.
+6. Canonical product 3D pipeline with visual-only disclosure.
 7. Reusable 360 / exploded / technical drawing infrastructure.
 8. Responsive/mobile fixes.
 9. Performance optimization.
@@ -68,4 +74,5 @@ The user approved continuous execution without intermediate approval for:
 11. Base SEO/AEO after data stabilization, while heavy SEO/path migration stays frozen.
 12. Final HTML + GitHub + deployment.
 
-If a decision genuinely requires the user, mark it Pending and continue with unrelated work.
+## Current checkpoint — 2026-10-05
+Work is continuing on branch `work/site-sync-v16-2026-10-05`. A formal checkpoint exists at `checkpoints/2026-10-05-site-sync-v16.md`. The live `main` site must remain unchanged until the branch passes QA + Reality Check and the resulting diff is reviewed.
