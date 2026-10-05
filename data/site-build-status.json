@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-05",
+  "stage": "clean_build_stage_7",
+  "status": "implemented_pending_asset_binding",
+  "completed": [
+    "clean_runtime_shell",
+    "database_driven_product_catalog",
+    "public_product_identity_gate",
+    "product_search_and_family_filters",
+    "product_detail_template",
+    "verified_specs_only_rendering",
+    "360_viewer_runtime_when_local_frames_exist",
+    "separate_technical_drawing_section",
+    "separate_exploded_view_section",
+    "separate_3d_section",
+    "sample_works_instead_of_repetitive_gallery",
+    "training_section_preserved",
+    "downloads_section_preserved",
+    "legacy_external_media_blocked_from_runtime",
+    "debug_quick_check_mode"
+  ],
+  "pending": [
+    "bind_verified_local_media_to_each_product",
+    "bind_verified_360_frames",
+    "bind_verified_technical_drawings",
+    "bind_verified_exploded_views",
+    "bind_verified_3d_models",
+    "add_training_records_after_database_verification",
+    "add_download_records_after_database_verification",
+    "select_future_production_domain"
+  ],
+  "runtime_pipeline": ["database", "build", "quick_check", "deploy"],
+  "legacy_multi_agent_pipeline": false
+}

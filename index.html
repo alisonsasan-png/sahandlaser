@@ -3,29 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="نسخه جدید و مستقل وب‌سایت سهند لیزر؛ بازسازی‌شده بر پایه دیتابیس پروژه.">
-  <title>سهند لیزر | نسخه جدید</title>
+  <meta name="description" content="وب‌سایت جدید سهند لیزر؛ کاتالوگ دیتابیس‌محور تجهیزات لیزر صنعتی.">
+  <meta name="theme-color" content="#0a0d12">
+  <title>سهند لیزر | تجهیزات لیزر صنعتی</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="#home" aria-label="سهند لیزر">سهند لیزر</a>
-      <nav class="nav" aria-label="ناوبری اصلی">
+      <a class="brand" href="#home" aria-label="سهند لیزر - خانه">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>سهند لیزر</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">منو</button>
+      <nav class="nav" id="main-nav" aria-label="ناوبری اصلی">
         <a href="#home">خانه</a>
         <a href="#products">محصولات</a>
-        <a href="#database">وضعیت دیتابیس</a>
+        <a href="#training">آموزش‌ها</a>
+        <a href="#downloads">دانلودها</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
-      <div class="wrap">
-        <span class="eyebrow">NEW CLEAN BUILD</span>
-        <h1>نسخه جدید سایت، مستقل و دیتابیس‌محور</h1>
-        <p>این نسخه از صفر ساخته شده و فقط از داده‌های ثبت‌شده پروژه استفاده می‌کند. هیچ وابستگی اجرایی به sahandlaser.com ندارد.</p>
-        <a class="button" href="#products">مشاهده محصولات ثبت‌شده</a>
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">SAHAND LASER</span>
+          <h1>کاتالوگ جدید تجهیزات لیزر صنعتی</h1>
+          <p>نسخه جدید سایت از روی دیتابیس پروژه ساخته می‌شود؛ اطلاعات تأییدنشده حدس زده نمی‌شوند و فایل‌های قدیمی فقط به‌عنوان آرشیو باقی می‌مانند.</p>
+          <div class="hero-actions">
+            <a class="button" href="#products">مشاهده محصولات</a>
+            <a class="button button-ghost" href="#training">آموزش‌ها</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="خلاصه کاتالوگ">
+          <div class="metric"><strong id="hero-product-count">—</strong><span>محصول قابل نمایش</span></div>
+          <div class="metric"><strong>360°</strong><span>ساختار آماده برای نمایش تعاملی</span></div>
+          <div class="metric"><strong>3D</strong><span>بخش مستقل برای مدل سه‌بعدی</span></div>
+        </div>
       </div>
     </section>
 
@@ -33,34 +51,75 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="eyebrow">DATABASE FIRST</span>
+            <span class="eyebrow">PRODUCT CATALOG</span>
             <h2>محصولات</h2>
+            <p class="muted">فقط رکوردهایی که هویت محصول در دیتابیس مشخص شده‌اند نمایش داده می‌شوند.</p>
           </div>
           <p id="product-count" class="muted">در حال خواندن دیتابیس…</p>
         </div>
+
+        <div class="catalog-tools" aria-label="ابزارهای فهرست محصولات">
+          <label class="search-box">
+            <span class="sr-only">جستجوی محصول</span>
+            <input id="product-search" type="search" placeholder="جستجو بر اساس مدل یا نوع دستگاه…" autocomplete="off">
+          </label>
+          <div id="product-filters" class="filters" role="group" aria-label="فیلتر محصولات"></div>
+        </div>
+
         <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <div id="catalog-empty" class="empty-state" hidden>محصولی با این فیلتر پیدا نشد.</div>
       </div>
     </section>
 
     <section class="section section-alt" id="product-detail" hidden>
       <div class="wrap">
-        <button class="text-button" id="back-to-products" type="button">بازگشت به محصولات</button>
+        <button class="text-button" id="back-to-products" type="button">← بازگشت به محصولات</button>
         <div id="detail-root"></div>
       </div>
     </section>
 
-    <section class="section" id="database">
-      <div class="wrap database-card">
-        <span class="eyebrow">SOURCE OF TRUTH</span>
-        <h2>وضعیت داده‌ها</h2>
-        <p>اطلاعات دارای وضعیت‌های confirmed، review و pending هستند. نسخه جدید هیچ مورد بررسی‌نشده‌ای را به‌صورت حدسی کامل نمی‌کند.</p>
-        <div id="db-status" class="status-line">در حال بررسی فایل داده…</div>
+    <section class="section" id="training">
+      <div class="wrap split-section">
+        <div>
+          <span class="eyebrow">TRAINING</span>
+          <h2>آموزش‌ها</h2>
+          <p class="muted">ساختار این بخش در نسخه جدید حفظ شده است. محتوای آموزشی فقط پس از ثبت و تأیید در دیتابیس منتشر می‌شود.</p>
+        </div>
+        <div class="soft-card">
+          <strong>بخش آماده است</strong>
+          <p>آموزش راه‌اندازی، نگهداری، تنظیمات و نکات فنی در این قسمت قرار می‌گیرند.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="downloads">
+      <div class="wrap split-section">
+        <div>
+          <span class="eyebrow">DOWNLOADS</span>
+          <h2>دانلودها</h2>
+          <p class="muted">کاتالوگ‌ها، راهنماها و فایل‌های فنی بعد از تطبیق با رکورد محصول در این بخش قرار می‌گیرند.</p>
+        </div>
+        <div class="soft-card">
+          <strong>بدون فایل ساختگی</strong>
+          <p>تا زمانی که فایل به محصول درست متصل نشده باشد، لینک دانلودی نمایش داده نمی‌شود.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section debug-section" id="debug-panel" hidden>
+      <div class="wrap debug-card">
+        <span class="eyebrow">QUICK CHECK</span>
+        <h2>وضعیت ساخت</h2>
+        <pre id="debug-output">در حال بررسی…</pre>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">Sahand Laser — clean rebuild</div>
+    <div class="wrap footer-row">
+      <span>سهند لیزر</span>
+      <span class="muted">نسخه جدید مستقل و دیتابیس‌محور</span>
+    </div>
   </footer>
 
   <script src="app.js" defer></script>
