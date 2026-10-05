@@ -1,21 +1,15 @@
-# Site data
+# Data — Active Clean Rebuild
 
-بانک مرجع پروژه اکنون **Sahand_Laser_Master_Knowledge_Base_v1_6.json** است.
+Active factual source: `Sahand_Laser_Master_Knowledge_Base_v1_6.json`.
+Website projection: `product-site-master-v1.json`.
+Approved product-page design reference: `product-page-layout-revisions.json`.
+Current project behavior is defined by `project-runtime-policy-v2.json`.
 
-- `data/Sahand_Laser_Master_Knowledge_Base_v1_6.json`: بانک مرجع فعلی پروژه؛ شامل وضعیت محصولات برش، قطعات/تجهیزات، آرشیو رسانه، منابع، موارد نیازمند بررسی، وضعیت مدل‌های سه‌بعدی و قواعد عدم حدس.
-- `data/Sahand_Laser_Master_Knowledge_Base_v1_5.json`: نسخه قبلی بانک مرجع و فقط برای سابقه/بازگشت نگه داشته شده است.
-- `data/product-site-master-v1.json`: لایه همگام‌سازی مستقیم محصولات برش CT-001 تا CT-010 با سایت؛ هر داده قطعی ابتدا در بانک مرجع و سپس در این لایه ثبت می‌شود و بعد روی سایت اعمال می‌شود.
-- `data/Sahand_Site_Import_Staging_2026-10-04.json`: لایه staging برای بازبینی و انتقال کنترل‌شده داده‌های محصول به سایت.
-- `data/cutting-product-registry-2026-10-04.json`: رجیستری وضعیت رسانه/مشخصات محصولات برش.
-- `data/current-site-media-inventory-2026-10-04.json`: نگاشت رسانه‌های بازیابی‌شده از سایت فعلی.
-- `data/sahandlaser-media-full.json` و `.csv`: موجودی کامل WordPress Media Library سایت فعلی.
-- `site-update-2026-10-03.json`: سابقه تغییرات مرحله قبل و فقط برای آرشیو نگه داشته شده است.
+Rules:
+- `sahandlaser.com` is out of scope unless the user explicitly asks to inspect a specific part.
+- Legacy URLs inside historical records are reference-only, never runtime dependencies.
+- Do not guess pending/review records.
+- No mandatory 14-agent pipeline, Reality Checker chain, or Heretic benchmark gate.
+- Default flow: Database -> Build -> Quick Check -> Deploy.
 
-## قواعد قطعی
-1. Database first: ابتدا بانک، سپس سایت.
-2. No guessing: داده مبهم یا متعارض با حدس تکمیل نمی‌شود و تا تأیید `pending/review` می‌ماند.
-3. فایل اصلی رسانه دست‌نخورده می‌ماند؛ نسخه مخصوص سایت جدا ساخته می‌شود.
-4. عکس تأییدنشده، 360، نقشه فنی، Exploded View یا 3D به محصولی نسبت داده نمی‌شود.
-5. مدل‌های سه‌بعدی فعلی برای وب **بازسازی بصری** هستند و CAD تأییدشده برای ساخت صنعتی محسوب نمی‌شوند.
-6. سئوی سنگین و مهاجرت مسیرهای `#product` تا تثبیت کامل محصول‌ها متوقف است.
-7. Google Drive آرشیو اصلی رسانه است؛ برای نمایش در سایت از URL مناسب وب/هاست استاتیک استفاده می‌شود، نه لینک اشتراک معمول Drive.
+The complete pre-clean repository is recoverable from `archive/pre-clean-rebuild-2026-10-05`.

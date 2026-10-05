@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0",
+  "updated": "2026-10-05",
+  "project": "Sahand Laser new independent website",
+  "scope": {
+    "sahandlaser_com": "out_of_scope_unless_user_explicitly_requests_specific_inspection",
+    "future_production_domain": "pending_user_selection",
+    "github_role": "development_and_staging"
+  },
+  "active_pipeline": ["database","build","quick_check","deploy"],
+  "process_rules": {
+    "database_first": true,
+    "no_guessing": true,
+    "verified_assets_only": true,
+    "routine_small_change_requires_heavy_qa": false,
+    "mandatory_multi_agent_pipeline": false,
+    "mandatory_reality_checker_chain": false,
+    "mandatory_heretic_benchmark_gate": false,
+    "legacy_external_urls_are_runtime_dependencies": false,
+    "destructive_changes_require_recovery_point_first": true
+  },
+  "recovery": {
+    "archive_branch": "archive/pre-clean-rebuild-2026-10-05",
+    "pre_clean_main_commit": "d7ded4a8d012649b1ac06dcf7d977bc9a9beb10f"
+  }
+}
