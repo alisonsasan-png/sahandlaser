@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.6",
+  "updated": "2026-10-04",
+  "project": "Sahand Laser",
+  "policy": {
+    "database_first": true,
+    "no_guessing": true,
+    "original_media_immutable": true,
+    "site_derivatives_separate": true,
+    "embedded_phone_and_site_address_not_required_on_site_images": true,
+    "branding_rule": "برای نسخه سایت، لوگوی کوچک سهند در صورت نبود برندینگ اضافه شود؛ شماره/آدرس قدیمی داخل تصویر حذف یا کراپ شود بدون دستکاری فایل اصلی.",
+    "heavy_seo_frozen": true,
+    "real_product_paths_frozen": true,
+    "site_update_allowed_after_user_approval": false
+  },
+  "cutting_products": [
+    {
+      "id": "CT-001",
+      "model": "SH3015",
+      "configuration_fa": "استاندارد - تک‌میز",
+      "identity_status": "confirmed",
+      "specs_status": "current_site_confirmed",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-001_SH3015.glb",
+        "obj_file": "CT-001_SH3015.obj",
+        "reference": "دستگاهبرشلیزرتکمیزاستاندارد3015_881784.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-002",
+      "model": "SH3015",
+      "configuration_fa": "استاندارد - دومیز",
+      "identity_status": "confirmed",
+      "specs_status": "current_site_confirmed",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg",
+        "rar2/دستگاهبرشلیزرفایبردومیز3015استاندارد_937676.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-002_SH3015.glb",
+        "obj_file": "CT-002_SH3015.obj",
+        "reference": "دستگاهبرشلیزرفایبردومیز3015استاندارد_852719.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-003",
+      "model": "SH3015R",
+      "configuration_fa": "استاندارد - دومیز + روتاری",
+      "identity_status": "confirmed",
+      "specs_status": "current_site_confirmed",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-003_SH3015R.glb",
+        "obj_file": "CT-003_SH3015R.obj",
+        "reference": "دستگاهبرشلیزرفایبردومیز3015استانداردباروتاری_139534.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-004",
+      "model": "SH6020",
+      "configuration_fa": "حرفه‌ای - تک‌میز",
+      "identity_status": "confirmed",
+      "specs_status": "current_site_confirmed",
+      "media_mapping_2026_10_04": [
+        "rar2/معرفیمحصول_915904.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-004_SH6020.glb",
+        "obj_file": "CT-004_SH6020.obj",
+        "reference": "معرفیمحصول_915904.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-005",
+      "model": "SH6020",
+      "configuration_fa": "استاندارد - تک‌میز",
+      "identity_status": "confirmed_family_needs_final_page_mapping",
+      "specs_status": "review",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg",
+        "rar2/دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_743437.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-005_SH6020.glb",
+        "obj_file": "CT-005_SH6020.obj",
+        "reference": "دستگاهبرشلیزرفایبرتکمیزاستاندارد6020_544927.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-006",
+      "model": "SH6020R",
+      "configuration_fa": "حرفه‌ای - دومیز + روتاری",
+      "identity_status": "confirmed",
+      "specs_status": "review",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-006_SH6020R.glb",
+        "obj_file": "CT-006_SH6020R.obj",
+        "reference": "دستگاهبرشلیزرفایبردومیز6020حرفهایباروتاری_820245.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-007",
+      "model": "SH6020R",
+      "configuration_fa": "حرفه‌ای - تک‌میز + روتاری",
+      "identity_status": "confirmed_separate_configuration",
+      "specs_status": "review",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-007_SH6020R.glb",
+        "obj_file": "CT-007_SH6020R.obj",
+        "reference": "دستگاهبرشلیزرفایبرتکمیز6020حرفهایباروتاری_546827.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-008",
+      "model": "SH6020C",
+      "configuration_fa": "حرفه‌ای - کابین‌دار",
+      "identity_status": "confirmed_rotary_claim_pending",
+      "specs_status": "review",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-008_SH6020C.glb",
+        "obj_file": "CT-008_SH6020C.obj",
+        "reference": "دستگاهبرشلیزرفایبرکابیندار6020حرفهای_734405.jpg",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-009",
+      "model": "QG-6024DZ",
+      "configuration_fa": "لوله‌بر افقی سری استاندارد",
+      "identity_status": "confirmed_from_user_file",
+      "specs_status": "source_file_confirmed_with_accuracy_wording_conflict",
+      "media_mapping_2026_10_04": [
+        "rar2/دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg"
+      ],
+      "three_d_asset": {
+        "status": "visual_web_model_ready",
+        "glb_file": "CT-009_QG-6024DZ.glb",
+        "obj_file": "CT-009_QG-6024DZ.obj",
+        "reference": "دستگاهبرشلیزریلولهافقیاستاندارد_152488.jpg + user DOCX",
+        "manufacturing_certified": false
+      }
+    },
+    {
+      "id": "CT-010",
+      "model": null,
+      "configuration_fa": "محصول جدید - مدل تجاری در حال تأیید",
+      "identity_status": "separate_record_model_pending",
+      "specs_status": "pending",
+      "media_mapping_2026_10_04": [],
+      "three_d_asset": {
+        "status": "hold",
+        "reason": "commercial model identity pending"
+      }
+    }
+  ],
+  "component_and_equipment_catalog": [
+    {
+      "id": "CP-SMC-ITV1050",
+      "category": "قطعات دستگاه برش",
+      "subcategory": "رگولاتور الکتروپنوماتیک",
+      "brand": "SMC",
+      "model": "ITV1050",
+      "title_fa": "رگولاتور الکتروپنوماتیڮ� SMC ITV1050",
+      "verified_specs": "SMC ITV1000 family: 24VDC ±10%; 
