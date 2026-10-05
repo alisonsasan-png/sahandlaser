@@ -7,7 +7,7 @@ on:
       - 'assets/update/**'
       - 'data/product-site-master-v1.json'
       - 'data/Sahand_Site_Import_Staging_2026-10-04.json'
-      - 'data/Sahand_Laser_Master_Knowledge_Base_v1_5.json'
+      - 'data/Sahand_Laser_Master_Knowledge_Base_v1_6.json'
       - 'data/README.md'
       - 'PROJECT-MEMORY.md'
       - 'CHANGE-POLICY.md'
@@ -40,7 +40,7 @@ jobs:
         run: |
           python -m json.tool data/product-site-master-v1.json > /dev/null
           python -m json.tool data/Sahand_Site_Import_Staging_2026-10-04.json > /dev/null
-          python -m json.tool data/Sahand_Laser_Master_Knowledge_Base_v1_5.json > /dev/null
+          python -m json.tool data/Sahand_Laser_Master_Knowledge_Base_v1_6.json > /dev/null
       - name: Validate JavaScript syntax
         run: |
           node --check assets/update/cutting-product-organizer.js
