@@ -1,0 +1,70 @@
+name: Apply Sahand site sync v1.6
+
+on:
+  push:
+    paths:
+      - 'site-sync/trigger-v16.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  patch-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Apply scoped runtime/cache patch
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          replacements={
+            '<script src="assets/update/site-update-core.js"></script>':'<script src="assets/update/site-update-core.js?v=20261005v16"></script>',
+            '<script src="assets/update/cutting-product-organizer.js?v=20261004b"></script>':'<script src="assets/update/cutting-product-organizer.js?v=20261005v16"></script>',
+            '<script src="assets/update/product-asset-viewers.js?v=20261004"></script>':'<script src="assets/update/product-asset-viewers.js?v=20261005v16"></script>',
+            '<script src="assets/update/site-stabilization.js?v=20261004"></script>':'<script src="assets/update/site-stabilization.js?v=20261005v16"></script>',
+          }
+          changed=False
+          for old,new in replacements.items():
+              if old in s:
+                  s=s.replace(old,new)
+                  changed=True
+          if not changed:
+              print('No index cache patch needed')
+          p.write_text(s,encoding='utf-8')
+
+          p=Path('assets/update/site-stabilization.js')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace("assets/update/site-review-v16.js?v=20261004v16","assets/update/site-review-v16.js?v=20261005v16")
+          p.write_text(s,encoding='utf-8')
+
+          p=Path('assets/update/cutting-product-organizer.js')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace("data/product-site-master-v1.json?v=20261004b","data/product-site-master-v1.json?v=20261005v16")
+          s=s.replace('بانک اطلاعاتی v1.5','بانک اطلاعاتی v1.6')
+          s=s.replace('synchronized database v1.5','synchronized database v1.6')
+          s=s.replace('قاعدة البيانات المتزامنة v1.5','قاعدة البيانات المتزامنة v1.6')
+          s=s.replace('senkronize veritabanı v1.5','senkronize veritabanı v1.6')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Validate patched files
+        run: |
+          node --check assets/update/cutting-product-organizer.js
+          node --check assets/update/site-stabilization.js
+          python -m json.tool data/product-site-master-v1.json > /dev/null
+          python -m json.tool data/Sahand_Laser_Master_Knowledge_Base_v1_6.json > /dev/null
+      - name: Commit scoped patch
+        run: |
+          git config user.name "sahandlaser-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html assets/update/site-stabilization.js assets/update/cutting-product-organizer.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "site: sync v1.6 runtime and bust stale cache [skip ci]"
+            git push
+          fi
