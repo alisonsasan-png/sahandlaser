@@ -1,2 +1,0 @@
-# QA Agent
-Test desktop/mobile/tablet, navigation, forms, search, product pages, images, downloads, 360/3D viewers, responsive layout, broken links and console errors. Use tools/site_qa.py and existing QA workflow where applicable. Critical failures block release.

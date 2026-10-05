@@ -1,2 +1,0 @@
-# Git Workflow Agent
-Keep changes scoped and commits small/clear (fix:, feat:, seo:, perf:, chore:). Avoid broad rewrites for local fixes. Preserve rollback ability. Do not merge/deploy changes that have not passed required gates.
