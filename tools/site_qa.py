@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 INDEX=ROOT/'index.html'
 DB=ROOT/'data/product-site-master-v1.json'
 STAGING=ROOT/'data/Sahand_Site_Import_Staging_2026-10-04.json'
-MASTER_ARCHIVE=ROOT/'data/Sahand_Laser_Master_Knowledge_Base_v1_5.json'
+MASTER=ROOT/'data/Sahand_Laser_Master_Knowledge_Base_v1_6.json'
 ORG=ROOT/'assets/update/cutting-product-organizer.js'
 ASSETS=ROOT/'assets/update/product-asset-viewers.js'
 STABLE=ROOT/'assets/update/site-stabilization.js'
@@ -42,11 +42,14 @@ def lang_keys(text,marker,lang):
     if not m:return set()
     block=balanced(root,m.start())
     return set(re.findall(r'(?:^|[{,\n]\s*)["\']?([A-Za-z0-9_]+)["\']?\s*:',block,re.M))
-files=[INDEX,DB,STAGING,MASTER_ARCHIVE,ORG,ASSETS,STABLE,REVIEW,I18N,MEMORY,POLICY]
+files=[INDEX,DB,STAGING,MASTER,ORG,ASSETS,STABLE,REVIEW,I18N,MEMORY,POLICY]
 for f in files:check(f.exists(),f'file exists: {f.relative_to(ROOT)}')
 if errors:print('\n'.join(errors));sys.exit(1)
-html=INDEX.read_text(encoding='utf-8');org=ORG.read_text(encoding='utf-8');assets=ASSETS.read_text(encoding='utf-8');stable=STABLE.read_text(encoding='utf-8');review=REVIEW.read_text(encoding='utf-8');i18n=I18N.read_text(encoding='utf-8');memory=MEMORY.read_text(encoding='utf-8');db=json.loads(DB.read_text(encoding='utf-8'));staging=json.loads(STAGING.read_text(encoding='utf-8'))
+html=INDEX.read_text(encoding='utf-8');org=ORG.read_text(encoding='utf-8');assets=ASSETS.read_text(encoding='utf-8');stable=STABLE.read_text(encoding='utf-8');review=REVIEW.read_text(encoding='utf-8');i18n=I18N.read_text(encoding='utf-8');memory=MEMORY.read_text(encoding='utf-8');db=json.loads(DB.read_text(encoding='utf-8'));staging=json.loads(STAGING.read_text(encoding='utf-8'));master=json.loads(MASTER.read_text(encoding='utf-8'))
 # v1.6 database gates
+check(master.get('schema_version')=='1.6','master knowledge base schema is v1.6')
+check(master.get('policy',{}).get('database_first') is True,'master database-first policy is enabled')
+check(master.get('policy',{}).get('no_guessing') is True,'master no-guessing policy is enabled')
 check(db.get('schema_version')=='1.2','site projection schema is v1.2')
 check(db.get('source_master')=='Sahand_Laser_Master_Knowledge_Base_v1_6.json','site DB points to master v1.6')
 check(db.get('review_tag')=='REV-2026-10-04-V16','site DB has v1.6 review tag')
@@ -56,7 +59,7 @@ check(db.get('policy',{}).get('verified_assets_only') is True,'verified-assets-o
 check(staging.get('rules',{}).get('no_guessing') is True,'staging no-guessing rule is enabled')
 check(staging.get('rules',{}).get('family_shared_specs_not_exact_BOM') is True,'family specs are not treated as exact BOM')
 check(len(staging.get('cutting_products',[]))==10,'runtime staging contains CT-001..CT-010')
-check('v1_5' in memory or 'v1.5' in memory or 'v1_6' in memory or 'v1.6' in memory,'PROJECT-MEMORY references current/previous database generation')
+check('v1_6' in memory or 'v1.6' in memory,'PROJECT-MEMORY references v1.6')
 for code in [f'CT-{i:03d}' for i in range(1,11)]:
     r=db.get('products',{}).get(code);check(isinstance(r,dict),f'{code} exists in site database')
     if not isinstance(r,dict):continue
