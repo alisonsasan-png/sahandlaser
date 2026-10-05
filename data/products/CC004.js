@@ -1,0 +1,158 @@
+window.SAHAND_PRODUCTS["CC004"] = {
+  "code": "CC004",
+  "categoryId": "parts",
+  "cat": {
+    "fa": "چیلر و قطعات دستگاه",
+    "en": "Chillers & Parts",
+    "ar": "المبردات والقطع",
+    "tr": "Soğutucular ve Parçalar"
+  },
+  "badge": {
+    "fa": "چیلر دستگاه برش",
+    "en": "Chillers & Parts",
+    "ar": "Chillers & Parts",
+    "tr": "Chillers & Parts"
+  },
+  "title": {
+    "fa": "چیلر فایبر Hanli HL-1500",
+    "en": "چیلر لیزر فایبر 1500 وات Hanli HL",
+    "ar": "چیلر لیزر فایبر 1500 وات Hanli HL",
+    "tr": "چیلر لیزر فایبر 1500 وات Hanli HL"
+  },
+  "subtitle": {
+    "fa": "Laser Component / Spare Part",
+    "en": "Laser Component / Spare Part",
+    "ar": "Laser Component / Spare Part",
+    "tr": "Laser Component / Spare Part"
+  },
+  "images": [
+    "products/CC004/images/562e194722fa.webp"
+  ],
+  "advantages": [],
+  "specs": [
+    {
+      "label": {
+        "fa": "برند",
+        "en": "برند",
+        "ar": "برند",
+        "tr": "برند"
+      },
+      "value": "Hanli",
+      "scope": "identity"
+    },
+    {
+      "label": {
+        "fa": "مدل / خانواده",
+        "en": "مدل / خانواده",
+        "ar": "مدل / خانواده",
+        "tr": "مدل / خانواده"
+      },
+      "value": "HL-1500",
+      "scope": "identity"
+    }
+  ],
+  "usage": [
+    {
+      "icon": "fa-gears",
+      "color": "blue",
+      "title": {
+        "fa": "پشتیبانی دستگاه",
+        "en": "Machine support",
+        "ar": "Machine support",
+        "tr": "Machine support"
+      },
+      "desc": {
+        "fa": "انتخاب و استفاده بر اساس نیاز فنی دستگاه",
+        "en": "Selected according to machine requirements",
+        "ar": "Selected according to machine requirements",
+        "tr": "Selected according to machine requirements"
+      }
+    }
+  ],
+  "models": [
+    {
+      "title": {
+        "fa": "CC004",
+        "en": "CC004",
+        "ar": "CC004",
+        "tr": "CC004"
+      },
+      "badge": {
+        "fa": "کانفیگ",
+        "en": "Variant",
+        "ar": "Variant",
+        "tr": "Variant"
+      },
+      "badgeColor": "blue",
+      "desc": {
+        "fa": "چیلر دستگاه برش",
+        "en": "چیلر دستگاه برش",
+        "ar": "چیلر دستگاه برش",
+        "tr": "چیلر دستگاه برش"
+      }
+    }
+  ],
+  "description": {
+    "fa": [
+      "چیلر لیزر فایبر 1500 وات Hanli HL در بانک قطعات سهند لیزر ثبت شده است."
+    ],
+    "en": [
+      "This product is part of the Sahand Laser catalog. Final specifications depend on the selected configuration and project requirements."
+    ],
+    "ar": [
+      "هذا المنتج ضمن كتالوج سهند ليزر. تعتمد المواصفات النهائية على التجهيز المختار ومتطلبات المشروع."
+    ],
+    "tr": [
+      "Bu ürün Sahand Laser kataloğundadır. Nihai teknik özellikler seçilen konfigürasyona ve proje ihtiyacına göre belirlenir."
+    ]
+  },
+  "gallery": [],
+  "media": {
+    "images": [
+      "products/CC004/images/562e194722fa.webp"
+    ],
+    "frames360": [],
+    "model": null,
+    "technical": null,
+    "exploded": null,
+    "works": []
+  },
+  "legacySpecs": [
+    {
+      "label": {
+        "fa": "کد کالا",
+        "en": "کد کالا",
+        "ar": "کد کالا",
+        "tr": "کد کالا"
+      },
+      "value": "CC004"
+    },
+    {
+      "label": {
+        "fa": "دسته",
+        "en": "دسته",
+        "ar": "دسته",
+        "tr": "دسته"
+      },
+      "value": "چیلر دستگاه برش"
+    },
+    {
+      "label": {
+        "fa": "قیمت ثبت‌شده",
+        "en": "قیمت ثبت‌شده",
+        "ar": "قیمت ثبت‌شده",
+        "tr": "قیمت ثبت‌شده"
+      },
+      "value": "تماس بگیرید"
+    }
+  ],
+  "review": "خانواده تأیید؛ پیکربندی نهایی وابسته به پلاک",
+  "reference": {
+    "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+    "sourceLevel": "user_pdf_and_media",
+    "status": "review_before_numeric_publication",
+    "sourceId": "CH-HANLI-1500"
+  },
+  "technicalReference": null,
+  "referenceSpecs": "مدل در آرشیو رسانه‌ای سهند موجود است؛ کاتالوگ Hanli موجود و خانواده صنعتی تأیید شده، اما پسوند مدل/پیکربندی باید از پلاک دستگاه تطبیق شود."
+};
