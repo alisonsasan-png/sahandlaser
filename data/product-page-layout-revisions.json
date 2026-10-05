@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-10-05",
+  "project": "Sahand Laser",
+  "records": [
+    {
+      "revision_id": "PDP-REV-2026-10-05-01",
+      "status": "approved_design_reference",
+      "source": "corrected local preview",
+      "product_binding": null,
+      "note_fa": "این رکورد فقط نسخه اصلاح‌شده و مورد تأیید چیدمان صفحه محصول را نگه می‌دارد و تا زمان تطبیق قطعی با شناسه محصول، مشخصات هیچ محصولی را بازنویسی نمی‌کند.",
+      "layout": {
+        "top_section": {
+          "primary_visual": "interactive_360",
+          "frame_count": 12,
+          "interaction": [
+            "mouse_drag",
+            "touch_swipe"
+          ],
+          "side_content": "verified_useful_specs_only"
+        },
+        "lower_sections": [
+          {
+            "id": "technical_drawing",
+            "display": "separate_large_section"
+          },
+          {
+            "id": "exploded_view",
+            "display": "separate_large_section"
+          },
+          {
+            "id": "interactive_3d",
+            "display": "separate_large_section"
+          },
+          {
+            "id": "sample_works",
+            "display": "replace_repetitive_gallery",
+            "verified_media_only": true
+          }
+        ],
+        "remove_or_avoid": [
+          "repetitive_complementary_gallery",
+          "duplicate_small_cards_for_large_sections",
+          "unverified_or_meaningless_specs"
+        ]
+      },
+      "asset_references": {
+        "interactive_360": {
+          "status": "approved_in_preview",
+          "frame_count": 12,
+          "angle_step_degrees": 30
+        },
+        "technical_drawing": {
+          "status": "available_in_working_files",
+          "usage": "catalog_dimensional_reference_only"
+        },
+        "exploded_view": {
+          "status": "approved_visual_reference",
+          "verification_required_before_product_claims": true
+        },
+        "interactive_3d": {
+          "status": "visual_reconstruction_available",
+          "manufacturing_certified": false
+        }
+      },
+      "site_publish_status": "not_published",
+      "database_only": true
+    }
+  ]
+}
