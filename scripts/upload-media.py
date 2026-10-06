@@ -1,0 +1,108 @@
+"""Upload one verified image bundle with explicit TLS; never delete remote files."""
+import ftplib
+import hashlib
+import io
+import os
+import re
+import ssl
+import stat
+import urllib.parse
+import urllib.request
+import zipfile
+
+LIMIT = 100 * 1024 * 1024
+ALLOWED = {'.webp', '.png', '.jpg', '.jpeg', '.glb'}
+
+def unpack(data, expected):
+    if len(data) > LIMIT or not re.fullmatch(r'[a-fA-F0-9]{64}', expected):
+        raise ValueError('Invalid bundle size or SHA-256')
+    if hashlib.sha256(data).hexdigest() != expected.lower():
+        raise ValueError('Bundle SHA-256 mismatch')
+    result = {}
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        if len(z.infolist()) > 200:
+            raise ValueError('Too many entries')
+        total = 0
+        for item in z.infolist():
+            name = item.filename
+            if item.is_dir():
+                raise ValueError('Use a flat bundle without directories')
+            if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', name):
+                raise ValueError('Invalid filename')
+            if name.rsplit('.', 1)[-1].lower() not in {x[1:] for x in ALLOWED}:
+                raise ValueError('Unsupported media type')
+            if stat.S_ISLNK(item.external_attr >> 16) or name.lower() in result:
+                raise ValueError('Symlink or duplicate filename')
+            total += item.file_size
+            if total > LIMIT:
+                raise ValueError('Expanded bundle too large')
+            result[name.lower()] = (name, z.read(item))
+    if not result:
+        raise ValueError('Empty bundle')
+    return list(result.values())
+
+class HTTPSOnly(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if urllib.parse.urlsplit(newurl).scheme != 'https':
+            raise ValueError('HTTPS required')
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+def read_url(url):
+    parts = urllib.parse.urlsplit(url)
+    if parts.scheme != 'https' or parts.username or parts.password or not parts.hostname:
+        raise ValueError('HTTPS URL required')
+    opener = urllib.request.build_opener(HTTPSOnly())
+    with opener.open(url, timeout=60) as response:
+        data = response.read(LIMIT + 1)
+    if len(data) > LIMIT:
+        raise ValueError('Download too large')
+    return data
+
+def main():
+    required = ['MEDIA_FTP_HOST', 'MEDIA_FTP_USER', 'MEDIA_FTP_PASSWORD',
+                'MEDIA_FTP_DIRECTORY', 'MEDIA_PUBLIC_BASE_URL', 'BUNDLE_URL', 'BUNDLE_SHA256']
+    if any(not os.environ.get(k) for k in required):
+        raise ValueError('Configure all media connection secrets first')
+    files = unpack(read_url(os.environ['BUNDLE_URL']), os.environ['BUNDLE_SHA256'])
+    host = os.environ['MEDIA_FTP_HOST']
+    if not re.fullmatch(r'[A-Za-z0-9.-]+', host):
+        raise ValueError('FTP host must be a hostname, not a URL')
+    target = os.environ['MEDIA_FTP_DIRECTORY']
+    if not target or '..' in target.split('/'):
+        raise ValueError('Invalid media directory')
+    public = os.environ['MEDIA_PUBLIC_BASE_URL'].rstrip('/')
+    if urllib.parse.urlsplit(public).scheme != 'https':
+        raise ValueError('Public media URL must use HTTPS')
+    uploaded = skipped = 0
+    with ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=60) as ftp:
+        ftp.connect(host, 21)
+        ftp.login(os.environ['MEDIA_FTP_USER'], os.environ['MEDIA_FTP_PASSWORD'])
+        ftp.prot_p()
+        # Directory must already exist; deployment does not traverse/create site folders.
+        ftp.cwd(target)
+        for name, data in files:
+            existing = hashlib.sha256()
+            try:
+                ftp.retrbinary('RETR ' + name, existing.update)
+                same = existing.hexdigest() == hashlib.sha256(data).hexdigest()
+            except ftplib.error_perm as error:
+                if not str(error).startswith('550'):
+                    raise
+                same = False
+            if same:
+                skipped += 1
+            else:
+                ftp.storbinary('STOR ' + name, io.BytesIO(data))
+                uploaded += 1
+            served = read_url(public + '/' + urllib.parse.quote(name))
+            if hashlib.sha256(served).digest() != hashlib.sha256(data).digest():
+                raise ValueError('Public verification failed for ' + name)
+    print(f'Verified {len(files)} media files; uploaded {uploaded}; unchanged {skipped}.')
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception:
+        # Never expose signed download URLs, FTP usernames, or credential-bearing errors.
+        print('Media upload failed. Check connection secrets, bundle checksum, directory and public URL.')
+        raise SystemExit(1)
