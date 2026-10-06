@@ -693,7 +693,7 @@ function initViewer() {
     state.currentFrame = i;
     images.forEach((img,idx) => img.classList.toggle('active', idx===i));
     if (pb) pb.style.width = (((i+1)/totalFrames)*100)+'%';
-    if (counter) counter.textContent = `${i+1} / ${totalFrames}`;
+    if (counter) counter.textContent = images[i].dataset.angle !== undefined ? `${images[i].dataset.angle}° · ${i+1} / ${totalFrames}` : `${i+1} / ${totalFrames}`;
     thumbs.forEach((t,idx) => t.classList.toggle('active', idx===i));
   }
   viewer.addEventListener('mousedown', e => { state.isDragging=true; state.startX=e.clientX; state.startFrame=state.currentFrame; viewer.classList.add('dragging','has-interacted'); e.preventDefault(); }, {signal});
@@ -1020,14 +1020,21 @@ function renderProduct(id) {
   document.getElementById('product-subtitle').textContent = p.subtitle[currentLang] || p.subtitle.fa;
   document.getElementById('product-review-note').textContent = p.review || '';
   const spin = Array.isArray(p.media.frames360) && p.media.frames360.length > 1;
-  const pictures = spin ? p.media.frames360 : p.media.images;
+  // Numeric orbit order is independent of filenames' array order and page direction.
+  const orbitAngle = image => {
+    const match = image.match(/frame-(\d{3})\.[^/?#]+(?:[?#].*)?$/);
+    return match ? Number(match[1]) : null;
+  };
+  const numberedOrbit = spin && p.media.frames360.every(image => orbitAngle(image) !== null);
+  const pictures = spin ? (numberedOrbit ? [...p.media.frames360].sort((a, b) => orbitAngle(a) - orbitAngle(b)) : p.media.frames360) : p.media.images;
   const viewer = document.getElementById('spin-viewer');
   viewer.classList.toggle('static-view', !spin);
   viewer.classList.remove('has-interacted');
-  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${i + 1}" loading="${i ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
+  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
   if (spin) viewer.innerHTML += `<span class="badge-360">360°</span><span class="spin-counter" id="spin-counter">1 / ${pictures.length}</span><div class="spin-progress"><div id="spin-progress"></div></div>`;
   const thumbs = document.getElementById('thumbnails-container');
-  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="تصویر ${i + 1}"><img src="${assetUrl(image)}" alt="" class="w-full h-full object-contain"></button>`).join('') : '';
+  thumbs.classList.toggle('ordered-orbit', numberedOrbit);
+  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${numberedOrbit ? orbitAngle(image) + '°' : 'تصویر ' + (i + 1)}"><img src="${assetUrl(image)}" alt="" class="w-full h-full object-contain">${numberedOrbit ? `<span class="orbit-angle">${orbitAngle(image)}°</span>` : ''}</button>`).join('') : '';
   document.getElementById('product-media-caption').textContent = p.media.caption ? (p.media.caption[currentLang] || p.media.caption.fa) : spin ? 'نمای ۳۶۰ درجه' : p.media.review ? 'تصویر آرشیوی این پیکربندی؛ تطبیق نهایی در حال بررسی است.' : pictures.length ? 'تصویر مرجع محصول از آرشیو سهند لیزر' : '';
   if (viewerController) viewerController.abort();
   viewerController = new AbortController();

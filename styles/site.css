@@ -3398,3 +3398,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid #3b82f6; outline-offs
 .product-downloads a{display:inline-block;padding:12px 18px;border:1px solid rgb(var(--accent) / .3);border-radius:10px;color:rgb(var(--accent));font-weight:600}
 .product-large-section p{line-height:2;margin:12px 0}
 @media(max-width:640px){.model-stage:has(.product-model-frame){height:540px}}
+
+/* Keep numeric orbit angles ascending in every site language. */
+#thumbnails-container.ordered-orbit { direction: ltr; }
+#thumbnails-container.ordered-orbit .thumb { position: relative; }
+#thumbnails-container .orbit-angle { position: absolute; bottom: 2px; right: 2px; padding: 1px 4px; border-radius: 3px; background: rgba(15,23,42,.85); color: white; font-size: 10px; line-height: 1.4; }
+#spin-counter { direction: ltr; unicode-bidi: isolate; }
