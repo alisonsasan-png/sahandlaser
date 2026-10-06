@@ -14,7 +14,7 @@ window.SAHAND_PRODUCTS["CT-005"] = {
     "tr": "Laser Cutting"
   },
   "title": {
-    "fa": "دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020",
+    "fa": "دستگاه برش لیزر فایبر تک‌میز استاندارد 6020",
     "en": "SH6020 Standard Single-Table Fiber Laser Cutting Machine",
     "ar": "SH6020 Standard Single-Table Fiber Laser Cutting Machine",
     "tr": "SH6020 Standard Single-Table Fiber Laser Cutting Machine"
@@ -127,8 +127,9 @@ window.SAHAND_PRODUCTS["CT-005"] = {
   ],
   "description": {
     "fa": [
-      "دستگاه برای برش دقیق ورق‌های فولادی، استنلس استیل، آلومینیوم، مس و برنج طراحی شده است.",
-      "توان سورس و تجهیزات جانبی بر اساس ضخامت، متریال و ظرفیت تولید انتخاب می‌شود."
+      "دستگاه برش لیزر فایبر ۶۰۲۰ استاندارد با یک میز باز برای فرآوری ورق‌های فلزی معرفی می‌شود. در تصاویر مرجع، بستر تیغه‌ای، پل متحرک، کالسکه هد و کنسول کنترل مستقل دیده می‌شود.",
+      "انتخاب توان سورس، هد، گاز کمکی و تجهیزات جانبی بر اساس جنس ورق، ضخامت و ظرفیت تولید انجام می‌شود؛ نتیجه برش باید با آزمون نمونه در پیکربندی انتخابی ارزیابی شود.",
+      "این محصول مستقل از مدل حرفه‌ای ۶۰۲۰ و مدل‌های روتاری است. ابعاد مفید، ابعاد نصب، وزن و مشخصات عملکردی پس از تطبیق سند همین پیکربندی اعلام می‌شوند."
     ],
     "en": [
       "This product is part of the Sahand Laser catalog. Final specifications depend on the selected configuration and project requirements."
@@ -255,7 +256,7 @@ window.SAHAND_PRODUCTS["CT-005"] = {
       "value": "سه‌فاز ۳۸۰ ولت"
     }
   ],
-  "review": "تطبیق مشخصات و رسانهٔ اختصاصی این پیکربندی هنوز در حال بررسی است.",
+  "review": "مدل استاندارد تک‌میز؛ مشخصات نهایی بر اساس پیکربندی سفارش تطبیق داده می‌شود. تصاویر آموزشی، نقشه ساخت یا تعمیر دستگاه نیستند.",
   "reference": {
     "source": "Sahand_Site_Import_Staging_2026-10-04.json",
     "status": "review"
