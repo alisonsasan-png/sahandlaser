@@ -26,11 +26,11 @@ window.SAHAND_PRODUCTS["CT-005"] = {
     "tr": "CNC Fiber Laser Cutting"
   },
   "images": [
-    "products/CT-005/images/reference.webp",
-    "products/CT-005/images/banner.webp",
-    "products/CT-005/images/technical.webp",
-    "products/CT-005/images/exploded.webp",
-    "products/CT-005/images/cutaway.webp"
+    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/reference.webp",
+    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/banner.webp",
+    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
+    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
+    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp"
   ],
   "advantages": [],
   "specs": [
@@ -147,17 +147,17 @@ window.SAHAND_PRODUCTS["CT-005"] = {
   "gallery": [],
   "media": {
     "images": [
-      "products/CT-005/images/reference.webp",
-      "products/CT-005/images/banner.webp",
-      "products/CT-005/images/technical.webp",
-      "products/CT-005/images/exploded.webp",
-      "products/CT-005/images/cutaway.webp"
+      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/reference.webp",
+      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/banner.webp",
+      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
+      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
+      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp"
     ],
     "frames360": [],
     "model": "products/CT-005/models/75a8ef234e5b.glb",
-    "technical": "products/CT-005/images/technical.webp",
-    "exploded": "products/CT-005/images/exploded.webp",
-    "cutaway": "products/CT-005/images/cutaway.webp",
+    "technical": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
+    "exploded": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
+    "cutaway": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp",
     "notes": {
       "technical": {
         "fa": "طرح فنی مفهومی برای معرفی محصول است و نقشه ساخت یا ابعاد قطعی دستگاه محسوب نمی‌شود.",
