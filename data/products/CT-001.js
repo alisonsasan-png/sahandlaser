@@ -234,6 +234,7 @@ window.SAHAND_PRODUCTS["CT-001"] = {
     "review": false,
     "modelType": "visual_web_model_not_manufacturing_cad",
     "viewer": "./assets/products/CT-001/viewer.html",
+    "modelPreview": "./assets/products/CT-001/model-preview.webp",
     "caption": {
       "fa": "۱۲ نمای بازسازی‌شده برای بررسی ظاهری دستگاه؛ عکس‌های کارگاه مرجع مدل‌سازی هستند.",
       "en": "12 reconstructed views for visual inspection.",

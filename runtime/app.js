@@ -1071,6 +1071,18 @@ function renderLargeSections(p) {
     const frame = document.createElement('iframe');
     frame.title = productTitle(p);
     frame.loading = 'lazy';
+    frame.onload = () => {
+      const doc = frame.contentDocument;
+      if (!doc || doc.querySelector('canvas') || !p.media.modelPreview) return;
+      const poster = doc.createElement('img');
+      poster.src = assetUrl(p.media.modelPreview);
+      poster.alt = productTitle(p);
+      poster.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;object-fit:contain;background:#edf1f5';
+      doc.body.prepend(poster);
+      const status = doc.getElementById('status');
+      if (status) status.textContent = ({fa:'نمای ثابت مدل؛ نمایش تعاملی در این مرورگر در دسترس نیست.',en:'Model preview: interactive 3D is unavailable in this browser.',ar:'معاينة ثابتة؛ العرض التفاعلي غير متاح في هذا المتصفح.',tr:'Model önizlemesi: bu tarayıcıda etkileşimli 3B kullanılamıyor.'})[currentLang];
+      doc.querySelectorAll('button').forEach(button => { button.disabled = true; });
+    };
     frame.src = assetUrl(p.media.viewer);
     frame.className = 'product-model-frame';
     stage.replaceChildren(frame);
