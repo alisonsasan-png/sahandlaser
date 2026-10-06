@@ -155,7 +155,7 @@ const cats = [
     "bg": "gradient-brand",
     "nameKey": "cat_cutting",
     "descKey": "cat_cutting_desc",
-    "count": "9",
+    "count": "10",
     "pid": "CT-001"
   },
   {
@@ -173,7 +173,7 @@ const cats = [
     "bg": "bg-gradient-to-br from-slate-700 to-slate-900",
     "nameKey": "cat_marking",
     "descKey": "cat_marking_desc",
-    "count": "9",
+    "count": "10",
     "pid": "ML-001"
   },
   {
@@ -1030,7 +1030,7 @@ function renderProduct(id) {
   const viewer = document.getElementById('spin-viewer');
   viewer.classList.toggle('static-view', !spin);
   viewer.classList.remove('has-interacted');
-  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
+  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i && !spin ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
   if (spin) viewer.innerHTML += `<span class="badge-360">360°</span><span class="spin-counter" id="spin-counter">1 / ${pictures.length}</span><div class="spin-progress"><div id="spin-progress"></div></div>`;
   const thumbs = document.getElementById('thumbnails-container');
   thumbs.classList.toggle('ordered-orbit', numberedOrbit);
