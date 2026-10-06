@@ -26,8 +26,11 @@ window.SAHAND_PRODUCTS["CT-005"] = {
     "tr": "CNC Fiber Laser Cutting"
   },
   "images": [
-    "products/CT-005/images/3ad250dd57c8.webp",
-    "products/CT-005/images/142e9e8087b4.webp"
+    "products/CT-005/images/reference.webp",
+    "products/CT-005/images/banner.webp",
+    "products/CT-005/images/technical.webp",
+    "products/CT-005/images/exploded.webp",
+    "products/CT-005/images/cutaway.webp"
   ],
   "advantages": [],
   "specs": [
@@ -144,13 +147,31 @@ window.SAHAND_PRODUCTS["CT-005"] = {
   "gallery": [],
   "media": {
     "images": [
-      "products/CT-005/images/3ad250dd57c8.webp",
-      "products/CT-005/images/142e9e8087b4.webp"
+      "products/CT-005/images/reference.webp",
+      "products/CT-005/images/banner.webp",
+      "products/CT-005/images/technical.webp",
+      "products/CT-005/images/exploded.webp",
+      "products/CT-005/images/cutaway.webp"
     ],
     "frames360": [],
     "model": "products/CT-005/models/75a8ef234e5b.glb",
-    "technical": null,
-    "exploded": null,
+    "technical": "products/CT-005/images/technical.webp",
+    "exploded": "products/CT-005/images/exploded.webp",
+    "cutaway": "products/CT-005/images/cutaway.webp",
+    "notes": {
+      "technical": {
+        "fa": "طرح فنی مفهومی برای معرفی محصول است و نقشه ساخت یا ابعاد قطعی دستگاه محسوب نمی‌شود.",
+        "en": "Conceptual technical illustration for product presentation; not manufacturing CAD or final dimensions."
+      },
+      "exploded": {
+        "fa": "نمای انفجاری آموزشی بر اساس تصویر مرجع محصول تهیه شده و برای تعمیر یا مونتاژ واقعی استفاده نمی‌شود.",
+        "en": "Educational exploded view based on the reference image; not intended for actual repair or assembly."
+      },
+      "cutaway": {
+        "fa": "نمای مقطع آموزشی و شماتیک است؛ اجزای داخلی برای توضیح محصول ساده‌سازی شده‌اند.",
+        "en": "Educational schematic cutaway; internal components are simplified for product explanation."
+      }
+    },
     "works": [],
     "review": true,
     "modelType": "visual_web_model_not_manufacturing_cad"
