@@ -84,7 +84,7 @@
 </script>
 <link rel="stylesheet" href="styles/site.css">
 <script src="site-config.js"></script>
-<script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}for(const p of ["vendor/fontawesome.css","vendor/fonts.css"]){const l=document.createElement("link");l.rel="stylesheet";l.href=assetUrl(p);l.dataset.hostAsset=p;document.head.append(l);}</script>
+<script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}for(const p of ["vendor/fontawesome.css","vendor/fonts.css"]){const l=document.createElement("link");l.rel="stylesheet";l.href=assetUrl(p);l.dataset.hostAsset=p;document.head.append(l);}</script>
 </head>
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">

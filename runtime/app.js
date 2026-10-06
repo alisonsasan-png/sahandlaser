@@ -1028,7 +1028,7 @@ function renderProduct(id) {
   if (spin) viewer.innerHTML += `<span class="badge-360">360°</span><span class="spin-counter" id="spin-counter">1 / ${pictures.length}</span><div class="spin-progress"><div id="spin-progress"></div></div>`;
   const thumbs = document.getElementById('thumbnails-container');
   thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="تصویر ${i + 1}"><img src="${assetUrl(image)}" alt="" class="w-full h-full object-contain"></button>`).join('') : '';
-  document.getElementById('product-media-caption').textContent = spin ? 'نمای ۳۶۰ درجه' : p.media.review ? 'تصویر آرشیوی این پیکربندی؛ تطبیق نهایی در حال بررسی است.' : pictures.length ? 'تصویر مرجع محصول از آرشیو سهند لیزر' : '';
+  document.getElementById('product-media-caption').textContent = p.media.caption ? (p.media.caption[currentLang] || p.media.caption.fa) : spin ? 'نمای ۳۶۰ درجه' : p.media.review ? 'تصویر آرشیوی این پیکربندی؛ تطبیق نهایی در حال بررسی است.' : pictures.length ? 'تصویر مرجع محصول از آرشیو سهند لیزر' : '';
   if (viewerController) viewerController.abort();
   viewerController = new AbortController();
   if (spin) initViewer();
@@ -1063,6 +1063,19 @@ function renderLargeSections(p) {
   }
   sections.innerHTML += `<section class="product-large-section" id="product-model"><h2>مدل سه‌بعدی تعاملی</h2>${p.media.model ? '<p class="source-note">مدل نمایشی وب برای بررسی فرم دستگاه؛ نقشهٔ ساخت یا CAD مهندسی نیست.</p><div class="model-toolbar"><button type="button" data-model-reset aria-label="بازنشانی نما" title="بازنشانی نما"><i class="fa-solid fa-rotate-left"></i></button><button type="button" data-model-rotate aria-pressed="false" aria-label="چرخش خودکار" title="چرخش خودکار"><i class="fa-solid fa-rotate"></i></button></div><div class="model-stage" id="model-stage"><div class="model-status">در حال آماده‌سازی مدل...</div></div>' : '<p class="section-empty">مدل قابل تطبیق با این محصول هنوز ثبت نشده است.</p>'}</section>`;
   sections.innerHTML += `<section class="product-large-section" id="product-works"><h2>نمونه‌کارهای این دستگاه</h2>${p.media.works.length ? p.media.works.map(image => `<img src="${assetUrl(image)}" alt="نمونه‌کار ${label(productTitle(p))}" loading="lazy">`).join('') : '<p class="section-empty">نمونه‌کار اختصاصی تأییدشده هنوز ثبت نشده است.</p>'}</section>`;
+  for (const item of p.editorial || []) sections.innerHTML += `<section class="product-large-section"><h2>${label(item.title)}</h2>${item.paragraphs.map(text => `<p>${label(text)}</p>`).join('')}</section>`;
+  if (p.downloads?.length) sections.innerHTML += `<section class="product-large-section"><h2>${label({fa:'دانلودهای محصول',en:'Product downloads',ar:'تنزيلات المنتج',tr:'Ürün indirmeleri'})}</h2><div class="product-downloads">${p.downloads.map(file => `<a class="cta-btn" href="${assetUrl(file.path)}" download>${label(file.title)}</a>`).join('')}</div></section>`;
+  if (p.media.viewer) {
+    const stage = document.getElementById('model-stage');
+    stage.previousElementSibling?.remove();
+    const frame = document.createElement('iframe');
+    frame.title = productTitle(p);
+    frame.loading = 'lazy';
+    frame.src = assetUrl(p.media.viewer);
+    frame.className = 'product-model-frame';
+    stage.replaceChildren(frame);
+    return;
+  }
   if (!p.media.model) return;
   const stage = document.getElementById('model-stage');
   const revision = modelRevision;
