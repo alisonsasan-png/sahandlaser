@@ -1,6 +1,6 @@
 window.SAHAND_CONFIG = {
   assetBaseUrl: '../sahand-assets/',
-  siteUrl: 'https://sahandlaser.com/',
+  siteUrl: 'https://alisonsasan-png.github.io/sahandlaser/',
   whatsappNumber: '989125855548',
   previewOnly: true,
   hostingStatus: 'awaiting-pouyasazan-access'
