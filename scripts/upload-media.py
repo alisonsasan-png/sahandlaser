@@ -5,6 +5,7 @@ import io
 import os
 import re
 import ssl
+import base64
 import stat
 import urllib.parse
 import urllib.request
@@ -58,12 +59,48 @@ def read_url(url):
         raise ValueError('Download too large')
     return data
 
+def read_github_blob(repo, sha):
+    if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', repo or ''):
+        raise ValueError('Invalid GitHub repository')
+    if not re.fullmatch(r'[a-fA-F0-9]{40}', sha or ''):
+        raise ValueError('Invalid Git blob SHA')
+    token = os.environ.get('GITHUB_TOKEN')
+    if not token:
+        raise ValueError('GitHub token required')
+    url = 'https://api.github.com/repos/' + repo + '/git/blobs/' + sha
+    request = urllib.request.Request(
+        url,
+        headers={
+            'Authorization': 'Bearer ' + token,
+            'Accept': 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28',
+        },
+    )
+    with urllib.request.urlopen(request, timeout=60) as response:
+        payload = response.read(LIMIT + 1024)
+    if len(payload) > LIMIT + 1024:
+        raise ValueError('Blob response too large')
+    import json
+    body = json.loads(payload.decode('utf-8'))
+    if body.get('encoding') != 'base64' or not isinstance(body.get('content'), str):
+        raise ValueError('Unexpected blob encoding')
+    data = base64.b64decode(body['content'], validate=False)
+    if len(data) > LIMIT:
+        raise ValueError('Blob too large')
+    return data
+
 def main():
     required = ['MEDIA_FTP_HOST', 'MEDIA_FTP_USER', 'MEDIA_FTP_PASSWORD',
-                'MEDIA_FTP_DIRECTORY', 'MEDIA_PUBLIC_BASE_URL', 'BUNDLE_URL', 'BUNDLE_SHA256']
+                'MEDIA_FTP_DIRECTORY', 'MEDIA_PUBLIC_BASE_URL', 'BUNDLE_SHA256']
     if any(not os.environ.get(k) for k in required):
         raise ValueError('Configure all media connection secrets first')
-    files = unpack(read_url(os.environ['BUNDLE_URL']), os.environ['BUNDLE_SHA256'])
+    if os.environ.get('BUNDLE_BLOB_SHA'):
+        data = read_github_blob(os.environ['GITHUB_REPOSITORY'], os.environ['BUNDLE_BLOB_SHA'])
+    elif os.environ.get('BUNDLE_URL'):
+        data = read_url(os.environ['BUNDLE_URL'])
+    else:
+        raise ValueError('Bundle source required')
+    files = unpack(data, os.environ['BUNDLE_SHA256'])
     host = os.environ['MEDIA_FTP_HOST']
     if not re.fullmatch(r'[A-Za-z0-9.-]+', host):
         raise ValueError('FTP host must be a hostname, not a URL')

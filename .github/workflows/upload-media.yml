@@ -4,7 +4,11 @@ on:
     inputs:
       bundle_url:
         description: 'Temporary HTTPS URL of flat media ZIP (no credentials)'
-        required: true
+        required: false
+        type: string
+      bundle_blob_sha:
+        description: 'Optional Git blob SHA of flat media ZIP, created outside the repo tree'
+        required: false
         type: string
       bundle_sha256:
         description: 'Expected SHA-256 of media ZIP'
@@ -29,6 +33,7 @@ jobs:
       - name: Upload changed media and verify public bytes
         env:
           BUNDLE_URL: ${{ inputs.bundle_url }}
+          BUNDLE_BLOB_SHA: ${{ inputs.bundle_blob_sha }}
           BUNDLE_SHA256: ${{ inputs.bundle_sha256 }}
           MEDIA_FTP_HOST: ${{ secrets.MEDIA_FTP_HOST }}
           MEDIA_FTP_USER: ${{ secrets.MEDIA_FTP_USER }}
