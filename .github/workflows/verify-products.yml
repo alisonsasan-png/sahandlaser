@@ -2,7 +2,7 @@ name: Verify product viewers
 
 on:
   push:
-    branches: [main, work/site-fixes-2026-10-07]
+    branches: ['work/**']
     paths:
       - 'runtime/**'
       - 'styles/**'
@@ -12,6 +12,10 @@ on:
       - 'index.html'
       - 'package*.json'
       - '.github/workflows/verify-products.yml'
+
+concurrency:
+  group: product-viewer-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -26,12 +30,6 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Generate clean dependency lock
-        run: |
-          dependency_dir=$(mktemp -d)
-          cp package.json "$dependency_dir/"
-          (cd "$dependency_dir" && npm install --package-lock-only --ignore-scripts)
-          cp "$dependency_dir/package-lock.json" package-lock.json
       - run: npm ci
       - run: npm run build:viewer
       - run: npm test
@@ -47,14 +45,6 @@ jobs:
             sleep 1
           done
           node tests/mobile-model.cjs
-      - name: Verification evidence
-        if: always()
-        run: |
-          node <<'NODE'
-          const fs = require('node:fs');
-          const files = ['package-lock.json', 'runtime/product-viewer.bundle.js', 'test-results/model-CT-001-390.png', 'test-results/model-CT-010-390.png', 'test-results/model-CT-001-1280.png', 'test-results/model-CT-010-1280.png'];
-          for (const file of files) if (fs.existsSync(file)) console.log('PRODUCT_EVIDENCE=' + JSON.stringify({file, data: fs.readFileSync(file).toString('base64')}));
-          NODE
       - uses: actions/upload-artifact@v4
         if: always()
         with:
