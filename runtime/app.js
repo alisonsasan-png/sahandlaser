@@ -954,7 +954,6 @@ let modelObserver = null;
 let modelRevision = 0;
 let inquiryProduct = null;
 let inquiryFocus = null;
-let modelScriptPromise = null;
 if (!T[currentLang]) currentLang = 'fa';
 T.fa.slide1_title = 'سهند لیزر';
 T.en.slide1_title = 'Sahand Laser';
@@ -1146,32 +1145,6 @@ function renderLargeSections(p) {
     }
     return;
   }
-  if (!p.media.model) return;
-  const stage = document.getElementById('model-stage');
-  const revision = modelRevision;
-  modelObserver = new IntersectionObserver(async ([entry]) => {
-    if (!entry.isIntersecting) return;
-    modelObserver?.disconnect();
-    try {
-      if (!window.SahandModelViewer) {
-        modelScriptPromise ||= new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = new URL('runtime/model-viewer.js', document.baseURI).href;
-          script.onload = resolve;
-          script.onerror = () => { modelScriptPromise = null; reject(new Error('Model runtime unavailable')); };
-          document.head.append(script);
-        });
-        await modelScriptPromise;
-      }
-      if (revision !== modelRevision) return;
-      const dispose = await window.SahandModelViewer(stage, assetUrl(p.media.model));
-      if (revision !== modelRevision) dispose();
-      else modelDispose = dispose;
-    } catch (error) {
-      if (stage.isConnected) stage.innerHTML = '<p class="model-status">نمایش سه‌بعدی در این مرورگر در دسترس نیست؛ تصاویر محصول در بالای صفحه موجودند.</p>';
-    }
-  }, { rootMargin: '150px' });
-  modelObserver.observe(stage);
 }
 
 function openInquiry(code, name) {
