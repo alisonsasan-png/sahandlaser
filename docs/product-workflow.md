@@ -14,6 +14,8 @@
 
 آزمون‌های فعلی:
 
+ساخت نمایشگر با `npm install` و سپس `npm run build:viewer` انجام می‌شود. نسخه‌های ابزار ساخت در package.json ثابت شده‌اند؛ این ابزارها فقط برای توسعه‌اند و صفحه منتشرشده نیازمند node_modules نیست.
+
 ```sh
 node tests/spin-order.cjs
 node tests/product-assets.cjs
