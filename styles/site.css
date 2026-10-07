@@ -3393,11 +3393,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid #3b82f6; outline-offs
 }
 
 /* SH3015 assets reuse the existing product layout and theme. */
-.product-model-frame{display:block;width:100%;height:100%;border:0;border-radius:12px}
+.product-model-frame{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.model-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.model-start{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);padding:12px 20px;max-width:calc(100% - 32px);border-radius:6px;background:rgb(var(--accent));color:white;font-weight:600;white-space:nowrap}
+.model-toolbar{flex-wrap:wrap}
+.model-toolbar button{width:44px;height:44px}
+.model-toolbar button:disabled{opacity:.4;cursor:default}
+.model-toolbar button[aria-pressed="true"]{background:rgb(var(--accent));color:white}
 .product-downloads{display:flex;gap:12px;flex-wrap:wrap}
 .product-downloads a{display:inline-block;padding:12px 18px;border:1px solid rgb(var(--accent) / .3);border-radius:10px;color:rgb(var(--accent));font-weight:600}
 .product-large-section p{line-height:2;margin:12px 0}
-@media(max-width:640px){.model-stage:has(.product-model-frame){height:540px}}
+@media(max-width:640px){.model-stage{height:auto;aspect-ratio:1.15;min-height:240px;max-height:420px}}
 
 /* Keep numeric orbit angles ascending in every site language. */
 #thumbnails-container.ordered-orbit { direction: ltr; }
