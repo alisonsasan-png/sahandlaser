@@ -27,20 +27,38 @@ def unpack(data, expected):
         for item in z.infolist():
             name = item.filename
             if item.is_dir():
-                raise ValueError('Use a flat bundle without directories')
-            if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', name):
+                continue
+            parts = name.split('/')
+            if len(parts) > 6 or any(not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', p) for p in parts):
                 raise ValueError('Invalid filename')
             if name.rsplit('.', 1)[-1].lower() not in {x[1:] for x in ALLOWED}:
                 raise ValueError('Unsupported media type')
-            if stat.S_ISLNK(item.external_attr >> 16) or name.lower() in result:
+            normal = '/'.join(parts)
+            if stat.S_ISLNK(item.external_attr >> 16) or normal.lower() in result:
                 raise ValueError('Symlink or duplicate filename')
             total += item.file_size
             if total > LIMIT:
                 raise ValueError('Expanded bundle too large')
-            result[name.lower()] = (name, z.read(item))
+            result[normal.lower()] = (normal, z.read(item))
     if not result:
         raise ValueError('Empty bundle')
     return list(result.values())
+
+def ensure_remote_dir(ftp, path):
+    start = ftp.pwd()
+    try:
+        for part in path.split('/'):
+            if not part:
+                continue
+            try:
+                ftp.cwd(part)
+            except ftplib.error_perm as error:
+                if not str(error).startswith('550'):
+                    raise
+                ftp.mkd(part)
+                ftp.cwd(part)
+    finally:
+        ftp.cwd(start)
 
 class HTTPSOnly(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
@@ -115,12 +133,17 @@ def main():
         ftp.connect(host, 21)
         ftp.login(os.environ['MEDIA_FTP_USER'], os.environ['MEDIA_FTP_PASSWORD'])
         ftp.prot_p()
-        # Directory must already exist; deployment does not traverse/create site folders.
+        # Base directory must already exist; product/media subdirectories are created below it.
         ftp.cwd(target)
+        base_dir = ftp.pwd()
         for name, data in files:
+            directory, filename = name.rsplit('/', 1) if '/' in name else ('', name)
+            if directory:
+                ensure_remote_dir(ftp, directory)
+                ftp.cwd(directory)
             existing = hashlib.sha256()
             try:
-                ftp.retrbinary('RETR ' + name, existing.update)
+                ftp.retrbinary('RETR ' + filename, existing.update)
                 same = existing.hexdigest() == hashlib.sha256(data).hexdigest()
             except ftplib.error_perm as error:
                 if not str(error).startswith('550'):
@@ -129,9 +152,12 @@ def main():
             if same:
                 skipped += 1
             else:
-                ftp.storbinary('STOR ' + name, io.BytesIO(data))
+                ftp.storbinary('STOR ' + filename, io.BytesIO(data))
                 uploaded += 1
-            served = read_url(public + '/' + urllib.parse.quote(name))
+            if directory:
+                ftp.cwd(base_dir)
+            served_path = '/'.join(urllib.parse.quote(p) for p in name.split('/'))
+            served = read_url(public + '/' + served_path)
             if hashlib.sha256(served).digest() != hashlib.sha256(data).digest():
                 raise ValueError('Public verification failed for ' + name)
     print(f'Verified {len(files)} media files; uploaded {uploaded}; unchanged {skipped}.')
