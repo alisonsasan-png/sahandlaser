@@ -20,9 +20,14 @@ if (params.get('poster')) {
 const offsets = {base:[0,0,0],table:[0,.7,0],gantry:[0,1.2,0],carriage:[0,1.65,.2],console:[1,.45,0],cable:[0,1.9,0],light:[-.5,1.1,0],rails:[0,.2,0],fasteners:[0,.12,0],services:[0,1.6,0]};
 let renderer;
 let visible = true;
+let syncRendering = () => {};
 addEventListener('message', event => {
-  if (event.origin === location.origin && event.source === parent && event.data?.type === 'model-visibility') visible = event.data.visible === true;
+  if (event.origin === location.origin && event.source === parent && event.data?.type === 'model-visibility') {
+    visible = event.data.visible === true;
+    syncRendering();
+  }
 });
+addEventListener('visibilitychange', () => syncRendering());
 async function init() {
   renderer = new THREE.WebGLRenderer({antialias:true});
   renderer.setPixelRatio(Math.min(devicePixelRatio, innerWidth <= 640 ? 1.5 : 2));
@@ -94,10 +99,26 @@ async function init() {
   poster.hidden = status.hidden = true;
   buttons.forEach(button => { button.disabled = false; });
   document.getElementById('explode').disabled = !supportsExplode;
-  renderer.setAnimationLoop(() => {
-    if (!visible || document.hidden) return;
+  const render = () => {
     controls.update();
     renderer.render(scene,camera);
+  };
+  syncRendering = () => renderer.setAnimationLoop(visible && !document.hidden ? render : null);
+  syncRendering();
+  addEventListener('pageshow', () => syncRendering());
+  addEventListener('pagehide', event => {
+    renderer.setAnimationLoop(null);
+    if (event.persisted) return;
+    controls.dispose();
+    model.traverse(object => {
+      object.geometry?.dispose();
+      for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
+        if (!material) continue;
+        for (const value of Object.values(material)) if (value?.isTexture) value.dispose();
+        material.dispose();
+      }
+    });
+    renderer.dispose();
   });
 }
 init().catch(() => {
