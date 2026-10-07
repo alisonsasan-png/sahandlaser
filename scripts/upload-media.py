@@ -165,7 +165,7 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except Exception:
+    except Exception as error:
         # Never expose signed download URLs, FTP usernames, or credential-bearing errors.
-        print('Media upload failed. Check connection secrets, bundle checksum, directory and public URL.')
+        print('Media upload failed. Safe error: ' + error.__class__.__name__ + ': ' + str(error))
         raise SystemExit(1)
