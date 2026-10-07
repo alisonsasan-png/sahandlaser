@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product 3D Viewer</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#edf1f5;font:14px Tahoma,sans-serif;color:#19374f}
+canvas{display:block;width:100%;height:100%;touch-action:none}
+#poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#status{position:absolute;bottom:12px;left:12px;right:12px;text-align:center;background:#fff;padding:8px;border-radius:4px;line-height:1.7;pointer-events:none}
+[hidden]{display:none!important}
+</style>
+<img id="poster" hidden alt="">
+<div id="status" role="status"></div>
+<button id="rotate" hidden disabled aria-pressed="false"></button>
+<button id="explode" hidden disabled aria-pressed="false"></button>
+<button id="reset" hidden disabled></button>
+<script src="product-viewer.bundle.js?v=mobile3d-20261006"></script>
+</html>
