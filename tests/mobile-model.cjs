@@ -24,7 +24,7 @@ fs.mkdirSync(output, {recursive:true});
           await page.locator('.model-start').click();
         }
         const iframe = page.frameLocator('.product-model-frame');
-        await iframe.locator('#reset:not([disabled])').waitFor({timeout:30000});
+        await iframe.locator('#reset:not([disabled])').waitFor({state:'attached',timeout:30000});
         const canvas = iframe.locator('canvas');
         assert.equal(await canvas.count(),1);
         const capture = await canvas.screenshot();
