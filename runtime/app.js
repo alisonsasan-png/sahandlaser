@@ -1073,27 +1073,70 @@ function renderLargeSections(p) {
   sections.innerHTML += `<section class="product-large-section" id="product-works"><h2>نمونه‌کارهای این دستگاه</h2>${p.media.works.length ? p.media.works.map(image => `<img src="${assetUrl(image)}" alt="نمونه‌کار ${label(productTitle(p))}" loading="lazy">`).join('') : '<p class="section-empty">نمونه‌کار اختصاصی تأییدشده هنوز ثبت نشده است.</p>'}</section>`;
   for (const item of p.editorial || []) sections.innerHTML += `<section class="product-large-section"><h2>${label(item.title)}</h2>${item.paragraphs.map(text => `<p>${label(text)}</p>`).join('')}</section>`;
   if (p.downloads?.length) sections.innerHTML += `<section class="product-large-section"><h2>${label({fa:'دانلودهای محصول',en:'Product downloads',ar:'تنزيلات المنتج',tr:'Ürün indirmeleri'})}</h2><div class="product-downloads">${p.downloads.map(file => `<a class="cta-btn" href="${assetUrl(file.path)}" download>${label(file.title)}</a>`).join('')}</div></section>`;
-  if (p.media.viewer) {
+  if (p.media.model) {
     const stage = document.getElementById('model-stage');
-    stage.previousElementSibling?.remove();
+    const revision = modelRevision;
+    const observers = [];
+    const toolbar = stage.previousElementSibling;
+    stage.after(toolbar);
+    toolbar.insertAdjacentHTML('beforeend', '<button type="button" data-model-explode aria-pressed="false" aria-label="جداکردن مجموعه‌ها" title="جداکردن مجموعه‌ها"><i class="fa-solid fa-layer-group"></i></button>');
     const frame = document.createElement('iframe');
     frame.title = productTitle(p);
-    frame.loading = 'lazy';
     frame.onload = () => {
+      if (revision !== modelRevision || !stage.isConnected) return;
       const doc = frame.contentDocument;
-      if (!doc || doc.querySelector('canvas') || !p.media.modelPreview) return;
-      const poster = doc.createElement('img');
-      poster.src = assetUrl(p.media.modelPreview);
-      poster.alt = productTitle(p);
-      poster.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;object-fit:contain;background:#edf1f5';
-      doc.body.prepend(poster);
-      const status = doc.getElementById('status');
-      if (status) status.textContent = ({fa:'نمای ثابت مدل؛ نمایش تعاملی در این مرورگر در دسترس نیست.',en:'Model preview: interactive 3D is unavailable in this browser.',ar:'معاينة ثابتة؛ العرض التفاعلي غير متاح في هذا المتصفح.',tr:'Model önizlemesi: bu tarayıcıda etkileşimli 3B kullanılamıyor.'})[currentLang];
-      doc.querySelectorAll('button').forEach(button => { button.disabled = true; });
+      if (!doc) return;
+      for (const [selector, id] of [['reset', 'reset'], ['rotate', 'rotate'], ['explode', 'explode']]) {
+        const button = toolbar.querySelector(`[data-model-${selector}]`);
+        const target = doc.getElementById(id);
+        button.onclick = () => {
+          target?.click();
+          button.setAttribute('aria-pressed', target?.getAttribute('aria-pressed') || 'false');
+        };
+        const sync = () => {
+          button.disabled = !target || target.disabled;
+          if (selector !== 'reset') button.setAttribute('aria-pressed', target?.getAttribute('aria-pressed') || 'false');
+        };
+        sync();
+        if (target) {
+          const observer = new MutationObserver(sync);
+          observer.observe(target, { attributes: true, attributeFilter: ['disabled', 'aria-pressed'] });
+          observers.push(observer);
+        }
+      }
+      const visibility = new IntersectionObserver(([entry]) => {
+        frame.contentWindow?.postMessage({ type: 'model-visibility', visible: entry.isIntersecting }, location.origin);
+      });
+      visibility.observe(stage);
+      observers.push(visibility);
     };
-    frame.src = assetUrl(p.media.viewer);
     frame.className = 'product-model-frame';
-    stage.replaceChildren(frame);
+    toolbar.querySelectorAll('button').forEach(button => { button.disabled = true; });
+    const start = () => {
+      if (revision !== modelRevision || !stage.isConnected) return;
+      const url = new URL('runtime/product-viewer.html', document.baseURI);
+      url.searchParams.set('model', new URL(assetUrl(p.media.model), document.baseURI).href);
+      if (p.media.modelPreview) url.searchParams.set('poster', new URL(assetUrl(p.media.modelPreview), document.baseURI).href);
+      url.searchParams.set('lang', currentLang);
+      frame.src = url.href;
+      stage.replaceChildren(frame);
+    };
+    modelDispose = () => {
+      observers.forEach(observer => observer.disconnect());
+      frame.onload = null;
+      frame.remove();
+    };
+    if (matchMedia('(max-width: 640px)').matches) {
+      stage.innerHTML = `${p.media.modelPreview ? `<img class="model-poster" src="${assetUrl(p.media.modelPreview)}" alt="${label(productTitle(p))}" loading="lazy">` : ''}<button type="button" class="model-start">${label({fa:'نمایش مدل سه‌بعدی',en:'View 3D model',ar:'عرض النموذج ثلاثي الأبعاد',tr:'3B modeli görüntüle'})}</button>`;
+      stage.querySelector('.model-start').onclick = start;
+    } else {
+      modelObserver = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        modelObserver.disconnect();
+        start();
+      }, { rootMargin: '150px' });
+      modelObserver.observe(stage);
+    }
     return;
   }
   if (!p.media.model) return;
