@@ -26,6 +26,12 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Generate clean dependency lock
+        run: |
+          dependency_dir=$(mktemp -d)
+          cp package.json "$dependency_dir/"
+          (cd "$dependency_dir" && npm install --package-lock-only --ignore-scripts)
+          cp "$dependency_dir/package-lock.json" package-lock.json
       - run: npm ci
       - run: npm run build:viewer
       - run: npm test
@@ -45,6 +51,8 @@ jobs:
         if: always()
         with:
           name: product-viewer-screenshots
-          path: test-results/*.png
+          path: |
+            test-results/*.png
+            package-lock.json
           if-no-files-found: ignore
           retention-days: 7
