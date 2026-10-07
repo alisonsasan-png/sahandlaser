@@ -32,6 +32,7 @@ jobs:
           sparse-checkout-cone-mode: false
       - name: Upload changed media and verify public bytes
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           BUNDLE_URL: ${{ inputs.bundle_url }}
           BUNDLE_BLOB_SHA: ${{ inputs.bundle_blob_sha }}
           BUNDLE_SHA256: ${{ inputs.bundle_sha256 }}
