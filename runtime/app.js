@@ -1075,7 +1075,7 @@ function renderLargeSections(p) {
     const note = p.media.notes?.[key];
     sections.innerHTML += `<section class="product-large-section" id="product-${key}"><h2>${title}</h2>${p.media[key] ? `${note ? `<p class="source-note">${label(note)}</p>` : ''}<img src="${assetUrl(p.media[key])}" alt="${title} ${label(productTitle(p))}" loading="lazy">` : '<p class="section-empty">فایل اختصاصی تأییدشده برای این مدل هنوز ثبت نشده است.</p>'}</section>`;
   }
-  sections.innerHTML += `<section class="product-large-section" id="product-model"><h2>مدل سه‌بعدی تعاملی</h2>${p.media.model ? '<p class="source-note">مدل نمایشی وب برای بررسی فرم دستگاه؛ نقشهٔ ساخت یا CAD مهندسی نیست.</p><div class="model-toolbar"><button type="button" data-model-reset aria-label="بازنشانی نما" title="بازنشانی نما"><i class="fa-solid fa-rotate-left"></i></button><button type="button" data-model-rotate aria-pressed="false" aria-label="چرخش خودکار" title="چرخش خودکار"><i class="fa-solid fa-rotate"></i></button></div><div class="model-stage" id="model-stage"><div class="model-status">در حال آماده‌سازی مدل...</div></div>' : '<p class="section-empty">مدل قابل تطبیق با این محصول هنوز ثبت نشده است.</p>'}</section>`;
+  sections.innerHTML += `<section class="product-large-section" id="product-model"><h2>مدل سه‌بعدی تعاملی</h2>${p.media.model ? '<p class="source-note">مدل نمایشی وب برای بررسی فرم دستگاه؛ نقشهٔ ساخت یا CAD مهندسی نیست.</p><div class="model-toolbar"><button type="button" data-model-reset aria-label="بازنشانی نما" title="بازنشانی نما"><span aria-hidden="true">↺</span></button><button type="button" data-model-rotate aria-pressed="false" aria-label="چرخش خودکار" title="چرخش خودکار"><span aria-hidden="true">⟳</span></button></div><div class="model-stage" id="model-stage"><div class="model-status">در حال آماده‌سازی مدل...</div></div>' : '<p class="section-empty">مدل قابل تطبیق با این محصول هنوز ثبت نشده است.</p>'}</section>`;
   sections.innerHTML += `<section class="product-large-section" id="product-works"><h2>نمونه‌کارهای این دستگاه</h2>${p.media.works.length ? p.media.works.map(image => `<img src="${assetUrl(image)}" alt="نمونه‌کار ${label(productTitle(p))}" loading="lazy">`).join('') : '<p class="section-empty">نمونه‌کار اختصاصی تأییدشده هنوز ثبت نشده است.</p>'}</section>`;
   for (const item of p.editorial || []) sections.innerHTML += `<section class="product-large-section"><h2>${label(item.title)}</h2>${item.paragraphs.map(text => `<p>${label(text)}</p>`).join('')}</section>`;
   if (p.downloads?.length) sections.innerHTML += `<section class="product-large-section"><h2>${label({fa:'دانلودهای محصول',en:'Product downloads',ar:'تنزيلات المنتج',tr:'Ürün indirmeleri'})}</h2><div class="product-downloads">${p.downloads.map(file => `<a class="cta-btn" href="${assetUrl(file.path)}" download>${label(file.title)}</a>`).join('')}</div></section>`;
@@ -1085,7 +1085,7 @@ function renderLargeSections(p) {
     const observers = [];
     const toolbar = stage.previousElementSibling;
     stage.after(toolbar);
-    toolbar.insertAdjacentHTML('beforeend', '<button type="button" data-model-explode aria-pressed="false" aria-label="جداکردن مجموعه‌ها" title="جداکردن مجموعه‌ها"><i class="fa-solid fa-layer-group"></i></button>');
+    toolbar.insertAdjacentHTML('beforeend', '<button type="button" data-model-explode aria-pressed="false" aria-label="جداکردن مجموعه‌ها" title="جداکردن مجموعه‌ها"><span aria-hidden="true">⇅</span></button>');
     const frame = document.createElement('iframe');
     frame.title = productTitle(p);
     frame.onload = () => {
@@ -1097,7 +1097,7 @@ function renderLargeSections(p) {
         const target = doc.getElementById(id);
         button.onclick = () => {
           target?.click();
-          button.setAttribute('aria-pressed', target?.getAttribute('aria-pressed') || 'false');
+          if (selector !== 'reset') button.setAttribute('aria-pressed', target?.getAttribute('aria-pressed') || 'false');
         };
         const sync = () => {
           button.disabled = !target || target.disabled;
