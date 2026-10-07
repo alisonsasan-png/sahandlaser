@@ -3397,7 +3397,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #3b82f6; outline-offs
 .model-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .model-start{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);padding:12px 20px;max-width:calc(100% - 32px);border-radius:6px;background:rgb(var(--accent));color:white;font-weight:600;white-space:normal}
 .model-toolbar{flex-wrap:wrap}
-.model-toolbar button{width:44px;height:44px;flex:0 0 44px}
+.model-toolbar button{width:44px;height:44px;flex:0 0 44px;font-size:22px;line-height:1}
 .model-toolbar button:disabled{opacity:.4;cursor:default}
 .model-toolbar button[aria-pressed="true"]{background:rgb(var(--accent));color:white}
 .product-downloads{display:flex;gap:12px;flex-wrap:wrap}
