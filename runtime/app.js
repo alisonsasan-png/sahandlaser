@@ -702,6 +702,13 @@ function initViewer() {
   viewer.addEventListener('touchstart', e => { state.isDragging=true; state.startX=e.touches[0].clientX; state.startFrame=state.currentFrame; viewer.classList.add('has-interacted'); }, {passive:true, signal});
   viewer.addEventListener('touchmove', e => { if (!state.isDragging) return; showFrame(state.startFrame + Math.round((e.touches[0].clientX-state.startX)/80)); }, {passive:true, signal});
   viewer.addEventListener('touchend', () => { state.isDragging=false; }, {signal});
+  viewer.addEventListener('touchcancel', () => { state.isDragging=false; }, {signal});
+  viewer.addEventListener('keydown', event => {
+    const next = {ArrowRight: state.currentFrame + 1, ArrowLeft: state.currentFrame - 1, Home: 0, End: totalFrames - 1}[event.key];
+    if (next === undefined) return;
+    event.preventDefault();
+    showFrame(next);
+  }, {signal});
   thumbs.forEach(t => t.addEventListener('click', () => showFrame(parseInt(t.dataset.index)), {signal}));
   showFrame(0);
 }
