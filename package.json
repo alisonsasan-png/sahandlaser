@@ -1,0 +1,12 @@
+{
+  "name": "sahandlaser-site",
+  "private": true,
+  "scripts": {
+    "build:viewer": "node scripts/build-product-viewer.mjs",
+    "test": "node tests/spin-order.cjs && node tests/product-assets.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "three": "0.186.1"
+  }
+}
