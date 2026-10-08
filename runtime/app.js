@@ -1168,7 +1168,7 @@ document.addEventListener('keydown', event => {
 });
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('catalog-search').addEventListener('input', () => renderAllProducts());
-  document.querySelectorAll('img[data-icon]').forEach(img => { img.src = assetUrl('icons/' + img.dataset.icon + '.svg'); });
+  document.querySelectorAll('img[data-icon]').forEach(img => { img.src = assetUrl('./icons/' + img.dataset.icon + '.svg'); });
   document.querySelectorAll('[data-hero-image]').forEach(el => {
     const p = products[el.dataset.heroImage];
     if (p?.media.images.length) el.style.backgroundImage = `url('${assetUrl(p.media.images[0])}')`;
