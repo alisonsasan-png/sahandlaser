@@ -14,10 +14,10 @@ window.SAHAND_PRODUCTS["ML-007"] = {
     "tr": "Laser Marking"
   },
   "title": {
-    "fa": "دستگاه حکاکی لیزر رومیزی",
-    "en": "Desktop Laser Marking Machine",
-    "ar": "Desktop Laser Marking Machine",
-    "tr": "Desktop Laser Marking Machine"
+    "fa": "دستگاه حکاکی رومیزی فایبر",
+    "en": "Desktop Fiber Laser Marking Machine",
+    "ar": "آلة وسم ليزر ألياف مكتبية",
+    "tr": "Masaüstü Fiber Lazer Markalama Makinesi"
   },
   "subtitle": {
     "fa": "Laser Marking / Engraving",
@@ -25,7 +25,13 @@ window.SAHAND_PRODUCTS["ML-007"] = {
     "ar": "Laser Marking / Engraving",
     "tr": "Laser Marking / Engraving"
   },
-  "images": [],
+  "images": [
+    "./assets/products/ML-007/commercial-v1.jpg",
+    "./assets/products/ML-007/_MG_4184.jpg",
+    "./assets/products/ML-007/_MG_4171.jpg",
+    "./assets/products/ML-007/_MG_4206.jpg",
+    "./assets/products/ML-007/_MG_4218.jpg"
+  ],
   "advantages": [],
   "specs": [],
   "usage": [
@@ -117,12 +123,24 @@ window.SAHAND_PRODUCTS["ML-007"] = {
   },
   "gallery": [],
   "media": {
-    "images": [],
+    "images": [
+      "./assets/products/ML-007/commercial-v1.jpg",
+      "./assets/products/ML-007/_MG_4184.jpg",
+      "./assets/products/ML-007/_MG_4171.jpg",
+      "./assets/products/ML-007/_MG_4206.jpg",
+      "./assets/products/ML-007/_MG_4218.jpg"
+    ],
     "frames360": [],
     "model": null,
     "technical": null,
     "exploded": null,
-    "works": []
+    "works": [],
+    "caption": {
+      "fa": "عکس‌های واقعی ارسالی از دستگاه؛ توان و پیکربندی دقیق هنوز ثبت نشده است.",
+      "en": "User-supplied photographs of the machine; exact power and configuration are not yet recorded.",
+      "ar": "صور حقيقية مرسلة للجهاز؛ القدرة والتجهيز الدقيق غير مسجلين بعد.",
+      "tr": "Kullanıcının gönderdiği gerçek cihaz fotoğrafları; güç ve konfigürasyon henüz kayıtlı değil."
+    }
   },
   "legacySpecs": [
     {
@@ -144,9 +162,18 @@ window.SAHAND_PRODUCTS["ML-007"] = {
       "value": "EZCad — بسته به کنترلر"
     }
   ],
-  "review": "مشخصات و تصویر اختصاصی این مدل پیش از انتشار نهایی باید تطبیق داده شود.",
+  "review": "عکس و فرم دستگاه تطبیق داده شد؛ مدل تجاری، توان، ابعاد و کانفیگ دقیق هنوز تأیید نشده است.",
   "reference": {
-    "source": "SahandLaser_Rebuilt_V7.html",
-    "status": "legacy_review"
+    "source": "User-supplied photographs, 2026-10-07",
+    "status": "photo_matched_specs_pending",
+    "gallery_files": [
+      "_MG_4184.jpg",
+      "_MG_4171.jpg",
+      "_MG_4206.jpg",
+      "_MG_4218.jpg"
+    ],
+    "reference_only_files": [
+      "_MG_4186.jpg"
+    ]
   }
 };

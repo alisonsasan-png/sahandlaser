@@ -1,5 +1,5 @@
-window.SAHAND_PRODUCTS["ML-005"] = {
-  "code": "ML-005",
+window.SAHAND_PRODUCTS["ML-009"] = {
+  "code": "ML-009",
   "categoryId": "marking",
   "cat": {
     "fa": "دستگاه‌های حکاکی و مارکینگ",
@@ -14,10 +14,10 @@ window.SAHAND_PRODUCTS["ML-005"] = {
     "tr": "Laser Marking"
   },
   "title": {
-    "fa": "دستگاه حکاکی پرتابل فایبر",
-    "en": "Portable Fiber Laser Marking Machine",
-    "ar": "آلة وسم ليزر ألياف محمولة",
-    "tr": "Taşınabilir Fiber Lazer Markalama Makinesi"
+    "fa": "دستگاه حکاکی میزدار فایبر",
+    "en": "Floor-Standing Fiber Laser Marking Machine",
+    "ar": "آلة وسم ليزر ألياف بقاعدة",
+    "tr": "Kabinli Fiber Lazer Markalama Makinesi"
   },
   "subtitle": {
     "fa": "Laser Marking / Engraving",
@@ -26,12 +26,12 @@ window.SAHAND_PRODUCTS["ML-005"] = {
     "tr": "Laser Marking / Engraving"
   },
   "images": [
-    "./assets/products/ML-005/commercial-v1.jpg",
-    "./assets/products/ML-005/_MG_4146.jpg",
-    "./assets/products/ML-005/_MG_4149.jpg",
-    "./assets/products/ML-005/_MG_4150.jpg",
-    "./assets/products/ML-005/_MG_4162.jpg",
-    "./assets/products/ML-005/_MG_4165.jpg"
+    "./assets/products/ML-009/commercial-v1.jpg",
+    "./assets/products/ML-009/_MG_4266.jpg",
+    "./assets/products/ML-009/_MG_4239.jpg",
+    "./assets/products/ML-009/_MG_4269.jpg",
+    "./assets/products/ML-009/_MG_4270.jpg",
+    "./assets/products/ML-009/_MG_4275.jpg"
   ],
   "advantages": [],
   "specs": [],
@@ -85,29 +85,7 @@ window.SAHAND_PRODUCTS["ML-005"] = {
       }
     }
   ],
-  "models": [
-    {
-      "title": {
-        "fa": "Portable",
-        "en": "Portable",
-        "ar": "Portable",
-        "tr": "Portable"
-      },
-      "badge": {
-        "fa": "کانفیگ",
-        "en": "Variant",
-        "ar": "Variant",
-        "tr": "Variant"
-      },
-      "badgeColor": "blue",
-      "desc": {
-        "fa": "مدل ثبت‌شده در کاتالوگ",
-        "en": "مدل ثبت‌شده در کاتالوگ",
-        "ar": "مدل ثبت‌شده در کاتالوگ",
-        "tr": "مدل ثبت‌شده در کاتالوگ"
-      }
-    }
-  ],
+  "models": [],
   "description": {
     "fa": [
       "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال."
@@ -125,12 +103,12 @@ window.SAHAND_PRODUCTS["ML-005"] = {
   "gallery": [],
   "media": {
     "images": [
-      "./assets/products/ML-005/commercial-v1.jpg",
-      "./assets/products/ML-005/_MG_4146.jpg",
-      "./assets/products/ML-005/_MG_4149.jpg",
-      "./assets/products/ML-005/_MG_4150.jpg",
-      "./assets/products/ML-005/_MG_4162.jpg",
-      "./assets/products/ML-005/_MG_4165.jpg"
+      "./assets/products/ML-009/commercial-v1.jpg",
+      "./assets/products/ML-009/_MG_4266.jpg",
+      "./assets/products/ML-009/_MG_4239.jpg",
+      "./assets/products/ML-009/_MG_4269.jpg",
+      "./assets/products/ML-009/_MG_4270.jpg",
+      "./assets/products/ML-009/_MG_4275.jpg"
     ],
     "frames360": [],
     "model": null,
@@ -144,40 +122,21 @@ window.SAHAND_PRODUCTS["ML-005"] = {
       "tr": "Kullanıcının gönderdiği gerçek cihaz fotoğrafları; güç ve konfigürasyon henüz kayıtlı değil."
     }
   },
-  "legacySpecs": [
-    {
-      "label": {
-        "fa": "مدل/توان",
-        "en": "مدل/توان",
-        "ar": "مدل/توان",
-        "tr": "مدل/توان"
-      },
-      "value": "Portable"
-    },
-    {
-      "label": {
-        "fa": "نرم‌افزار",
-        "en": "نرم‌افزار",
-        "ar": "نرم‌افزار",
-        "tr": "نرم‌افزار"
-      },
-      "value": "EZCad — بسته به کنترلر"
-    }
-  ],
+  "legacySpecs": [],
   "review": "عکس و فرم دستگاه تطبیق داده شد؛ مدل تجاری، توان، ابعاد و کانفیگ دقیق هنوز تأیید نشده است.",
   "reference": {
     "source": "User-supplied photographs, 2026-10-07",
     "status": "photo_matched_specs_pending",
     "gallery_files": [
-      "_MG_4146.jpg",
-      "_MG_4149.jpg",
-      "_MG_4150.jpg",
-      "_MG_4162.jpg",
-      "_MG_4165.jpg"
+      "_MG_4266.jpg",
+      "_MG_4239.jpg",
+      "_MG_4269.jpg",
+      "_MG_4270.jpg",
+      "_MG_4275.jpg"
     ],
     "reference_only_files": [
-      "_MG_4158.jpg",
-      "_MG_4160.jpg"
+      "_MG_4246.jpg"
     ]
-  }
+  },
+  "downloads": []
 };

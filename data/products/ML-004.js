@@ -14,10 +14,10 @@ window.SAHAND_PRODUCTS["ML-004"] = {
     "tr": "Laser Marking"
   },
   "title": {
-    "fa": "دستگاه حکاکی لیزر UV",
-    "en": "UV Laser Marking Machine",
-    "ar": "UV Laser Marking Machine",
-    "tr": "UV Laser Marking Machine"
+    "fa": "دستگاه حکاکی میزدار UV",
+    "en": "Floor-Standing UV Laser Marking Machine",
+    "ar": "آلة وسم ليزر UV بقاعدة",
+    "tr": "Kabinli UV Lazer Markalama Makinesi"
   },
   "subtitle": {
     "fa": "Laser Marking / Engraving",
@@ -25,7 +25,13 @@ window.SAHAND_PRODUCTS["ML-004"] = {
     "ar": "Laser Marking / Engraving",
     "tr": "Laser Marking / Engraving"
   },
-  "images": [],
+  "images": [
+    "./assets/products/ML-004/commercial-v1.jpg",
+    "./assets/products/ML-004/_MG_4350.jpg",
+    "./assets/products/ML-004/_MG_4353.jpg",
+    "./assets/products/ML-004/_MG_4354.jpg",
+    "./assets/products/ML-004/_MG_4357.jpg"
+  ],
   "advantages": [],
   "specs": [],
   "usage": [
@@ -117,12 +123,24 @@ window.SAHAND_PRODUCTS["ML-004"] = {
   },
   "gallery": [],
   "media": {
-    "images": [],
+    "images": [
+      "./assets/products/ML-004/commercial-v1.jpg",
+      "./assets/products/ML-004/_MG_4350.jpg",
+      "./assets/products/ML-004/_MG_4353.jpg",
+      "./assets/products/ML-004/_MG_4354.jpg",
+      "./assets/products/ML-004/_MG_4357.jpg"
+    ],
     "frames360": [],
     "model": null,
     "technical": null,
     "exploded": null,
-    "works": []
+    "works": [],
+    "caption": {
+      "fa": "عکس‌های واقعی ارسالی از دستگاه؛ توان و پیکربندی دقیق هنوز ثبت نشده است.",
+      "en": "User-supplied photographs of the machine; exact power and configuration are not yet recorded.",
+      "ar": "صور حقيقية مرسلة للجهاز؛ القدرة والتجهيز الدقيق غير مسجلين بعد.",
+      "tr": "Kullanıcının gönderdiği gerçek cihaz fotoğrafları; güç ve konfigürasyon henüz kayıtlı değil."
+    }
   },
   "legacySpecs": [
     {
@@ -144,9 +162,18 @@ window.SAHAND_PRODUCTS["ML-004"] = {
       "value": "EZCad — بسته به کنترلر"
     }
   ],
-  "review": "مشخصات و تصویر اختصاصی این مدل پیش از انتشار نهایی باید تطبیق داده شود.",
+  "review": "عکس و فرم دستگاه تطبیق داده شد؛ مدل تجاری، توان، ابعاد و کانفیگ دقیق هنوز تأیید نشده است.",
   "reference": {
-    "source": "SahandLaser_Rebuilt_V7.html",
-    "status": "legacy_review"
+    "source": "User-supplied photographs, 2026-10-07",
+    "status": "photo_matched_specs_pending",
+    "gallery_files": [
+      "_MG_4350.jpg",
+      "_MG_4353.jpg",
+      "_MG_4354.jpg",
+      "_MG_4357.jpg"
+    ],
+    "reference_only_files": [
+      "_MG_4347.jpg"
+    ]
   }
 };
