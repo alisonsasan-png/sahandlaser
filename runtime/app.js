@@ -148,80 +148,14 @@ for (const p of Object.values(products)) p.images = p.media.images.map(assetUrl)
 // ==================================================
 // [CATEGORIES]
 // ==================================================
-const cats = [
-  {
-    "id": "cutting",
-    "icon": "fa-scissors",
-    "bg": "gradient-brand",
-    "nameKey": "cat_cutting",
-    "descKey": "cat_cutting_desc",
-    "count": "10",
-    "pid": "CT-001"
-  },
-  {
-    "id": "welding",
-    "icon": "fa-fire-flame-curved",
-    "bg": "bg-gradient-to-br from-red-700 to-red-900",
-    "nameKey": "cat_welding",
-    "descKey": "cat_welding_desc",
-    "count": "13",
-    "pid": "WL-001"
-  },
-  {
-    "id": "marking",
-    "icon": "fa-pen-nib",
-    "bg": "bg-gradient-to-br from-slate-700 to-slate-900",
-    "nameKey": "cat_marking",
-    "descKey": "cat_marking_desc",
-    "count": "10",
-    "pid": "ML-001"
-  },
-  {
-    "id": "cleaning",
-    "icon": "fa-spray-can-sparkles",
-    "bg": "bg-gradient-to-br from-emerald-700 to-emerald-900",
-    "nameKey": "cat_cleaning",
-    "descKey": "cat_cleaning_desc",
-    "count": "5",
-    "pid": "CL-001"
-  },
-  {
-    "id": "source",
-    "icon": "fa-microchip",
-    "bg": "bg-gradient-to-br from-cyan-700 to-cyan-900",
-    "nameKey": "cat_source",
-    "descKey": "cat_source_desc",
-    "count": "12",
-    "pid": "FS001"
-  },
-  {
-    "id": "head",
-    "icon": "fa-crosshairs",
-    "bg": "bg-gradient-to-br from-violet-700 to-violet-900",
-    "nameKey": "cat_head",
-    "descKey": "cat_head_desc",
-    "count": "17",
-    "pid": "CH001"
-  },
-  {
-    "id": "parts",
-    "icon": "fa-gears",
-    "bg": "bg-gradient-to-br from-amber-700 to-amber-900",
-    "nameKey": "cat_parts",
-    "descKey": "cat_parts_desc",
-    "count": "13",
-    "pid": "CC001"
-  },
-  {
-    "id": "consumables",
-    "icon": "fa-screwdriver",
-    "bg": "bg-gradient-to-br from-pink-700 to-pink-900",
-    "nameKey": "cat_consumables",
-    "descKey": "cat_consumables_desc",
-    "count": "15",
-    "pid": "CN001"
-  }
-];
+const catalogStructure = window.SAHAND_CATALOG;
+if (!catalogStructure) throw new Error('Catalog structure is required before runtime/app.js');
+const cats = catalogStructure.categories.map(category => ({
+  ...category,
+  pid: category.featuredProduct,
+  count: String(Object.values(products).filter(product => product.categoryId === category.id).length)
+}));
+const categoryById = new Map(cats.map(category => [category.id, category]));
 
 const apps = [
   { id:'elevator', icon:'fa-elevator', color:'yellow', key:'app_elevator' },
@@ -328,7 +262,7 @@ function mediaOrientationClass(src) {
   return SIDEWAYS_GALLERY_FILES.has(clean.substring(clean.lastIndexOf('/') + 1)) ? ' media-rotate-ccw' : '';
 }
 
-const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}},{"icon":"fa-wand-magic-sparkles","color":"orange","title":{"fa":"طراحی و ساخت دستگاه لیزر","en":"Laser Machine Design & Manufacturing","ar":"تصميم وتصنيع أجهزة الليزر","tr":"Lazer Makinesi Tasarımı ve Üretimi"},"desc":{"fa":"طراحی و ساخت سفارشی دستگاه‌های برش، جوش و مارکینگ متناسب با نیاز پروژه.","en":"Custom design and manufacturing of cutting, welding and marking systems.","ar":"تصميم وتصنيع مخصص لأنظمة القطع واللحام والوسم.","tr":"Kesim, kaynak ve markalama sistemlerinin özel tasarımı ve üretimi."}},{"icon":"fa-fire-flame-curved","color":"rose","title":{"fa":"خدمات جوش لیزر","en":"Laser Welding Service","ar":"خدمة اللحام بالليزر","tr":"Lazer Kaynak Hizmeti"},"desc":{"fa":"جوش لیزری قطعات با کنترل پارامترهای فرآیند و گاز محافظ، متناسب با جنس و کاربرد قطعه.","en":"Laser welding with process and shielding-gas control for the part and its application.","ar":"لحام بالليزر مع التحكم في العملية والغاز الواقي وفق القطعة وتطبيقها.","tr":"Parça ve uygulamaya uygun proses ve koruyucu gaz kontrollü lazer kaynağı."}]
+const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}},{"icon":"fa-wand-magic-sparkles","color":"orange","title":{"fa":"طراحی و ساخت دستگاه لیزر","en":"Laser Machine Design & Manufacturing","ar":"تصميم وتصنيع أجهزة الليزر","tr":"Lazer Makinesi Tasarımı ve Üretimi"},"desc":{"fa":"طراحی و ساخت سفارشی دستگاه‌های برش، جوش و مارکینگ متناسب با نیاز پروژه.","en":"Custom design and manufacturing of cutting, welding and marking systems.","ar":"تصميم وتصنيع مخصص لأنظمة القطع واللحام والوسم.","tr":"Kesim, kaynak ve markalama sistemlerinin özel tasarımı ve üretimi."}},{"icon":"fa-fire-flame-curved","color":"rose","title":{"fa":"خدمات جوش لیزر","en":"Laser Welding Service","ar":"خدمة اللحام بالليزر","tr":"Lazer Kaynak Hizmeti"},"desc":{"fa":"جوش لیزری قطعات با کنترل پارامترهای فرآیند و گاز محافظ، متناسب با جنس و کاربرد قطعه.","en":"Laser welding with process and shielding-gas control for the part and its application.","ar":"لحام بالليزر مع التحكم في العملية والغاز الواقي وفق القطعة وتطبيقها.","tr":"Parça ve uygulamaya uygun proses ve koruyucu gaz kontrollü lazer kaynağı."}}];
 
 const projects = [];
 
@@ -483,7 +417,7 @@ function updateActiveNav(name) {
   if (a) a.classList.add('active');
 }
 function navigateTo(name) { window.location.hash = '#' + name; }
-function showProduct(id) { if (products[id]) window.location.hash = 'product=' + id; }
+function showProduct(id) { if (products[id]) window.location.hash = catalogStructure.productRoute(id); }
 function showApplication(id) { if (applicationDetails[id]) window.location.hash = 'application=' + id; }
 function openCategory(id) {
   navigateTo('products');
