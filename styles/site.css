@@ -3311,6 +3311,7 @@ video {
   .product-mini-card{display:flex;flex-direction:column;height:100%}
   .product-mini-card .visual{aspect-ratio:16/10;background:linear-gradient(135deg,rgb(var(--brand-dark)),rgb(var(--brand-light)));display:flex;align-items:center;justify-content:center;overflow:hidden}
   .product-mini-card .visual img{width:100%;height:100%;object-fit:contain;background:#fff}
+.media-rotate-ccw{transform:rotate(-90deg) scale(.74);transform-origin:center}
   .download-group-title{display:flex;align-items:center;gap:.6rem;font-size:1.35rem;font-weight:800;margin:2.25rem 0 1rem;color:rgb(var(--brand))}
 
   .spin-viewer.static-view{cursor:default;touch-action:auto}.spin-viewer.static-view .spin-progress,.spin-viewer.static-view .spin-hint{display:none}.image-status{position:absolute;bottom:1rem;right:1rem;z-index:10;background:rgba(15,23,42,.85);color:#fff;padding:.4rem .7rem;border-radius:999px;font-size:.7rem;font-weight:700}.image-status.real{background:rgba(5,150,105,.92)}

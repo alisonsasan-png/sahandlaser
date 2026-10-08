@@ -315,6 +315,18 @@ const legacyProductPages = {
 };
 // Authentic product image sets recovered from the preserved V4 site build / original Sahand archive.
 function isPlaceholderImage(src){ return !src || src === PRODUCT_PLACEHOLDER || String(src).startsWith('data:image/svg+xml;base64,'); }
+// These camera exports contain sideways pixels with EXIF orientation=1.
+// Rotate only at presentation time so original photographs remain untouched.
+const SIDEWAYS_GALLERY_FILES = new Set([
+  '_MG_4350.jpg','_MG_4353.jpg','_MG_4354.jpg','_MG_4357.jpg',
+  '_MG_4146.jpg','_MG_4149.jpg','_MG_4150.jpg','_MG_4165.jpg',
+  '_MG_4171.jpg','_MG_4206.jpg','_MG_4218.jpg',
+  '_MG_4239.jpg','_MG_4266.jpg','_MG_4269.jpg','_MG_4270.jpg','_MG_4275.jpg'
+]);
+function mediaOrientationClass(src) {
+  const clean = String(src || '').split(/[?#]/)[0];
+  return SIDEWAYS_GALLERY_FILES.has(clean.substring(clean.lastIndexOf('/') + 1)) ? ' media-rotate-ccw' : '';
+}
 
 const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}}];
 
@@ -480,7 +492,7 @@ function renderAllProducts(filter='all') {
   const lang=currentLang;
   const items=Object.values(products).filter(p=>filter==='all'||p.categoryId===filter);
   g.innerHTML=items.map(p=>`<article class="product-mini-card bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
-    <button type="button" onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${escapeHtml(p.title[lang]||p.title.fa)}"><img src="${escapeHtml(p.images[0]||PRODUCT_PLACEHOLDER)}" alt="${escapeHtml(p.title[lang]||p.title.fa)}" loading="lazy"></button>
+    <button type="button" onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${escapeHtml(p.title[lang]||p.title.fa)}"><img class="${mediaOrientationClass(p.images[0])}" src="${escapeHtml(p.images[0]||PRODUCT_PLACEHOLDER)}" alt="${escapeHtml(p.title[lang]||p.title.fa)}" loading="lazy"></button>
     <div class="p-5 flex-1 flex flex-col"><div class="flex items-center justify-between gap-2 mb-2"><span class="product-code">${escapeHtml(p.code)}</span><span class="text-[11px] text-slate-500">${escapeHtml(p.cat[lang]||p.cat.fa)}</span></div><h3 class="font-bold text-brand dark:text-white leading-7 mb-2">${escapeHtml(p.title[lang]||p.title.fa)}</h3><p class="text-xs text-slate-500 leading-6 mb-4">${escapeHtml((p.description[lang]||p.description.fa||[])[0]||'')}</p><button type="button" onclick="showProduct('${p.code}')" class="mt-auto inline-flex items-center gap-2 text-accent font-bold text-sm">${escapeHtml(T[lang].view_details)} <i class="fa-solid fa-arrow-left"></i></button></div>
   </article>`).join('');
 }
@@ -618,7 +630,7 @@ function renderProduct(id) {
   viewer.innerHTML = `
     ${has360 ? `<span class="badge-360"><i class="fa-solid fa-rotate"></i> ${escapeHtml(T[lang].badge_360)}</span>` : ''}
     ${has360 ? `<span class="spin-counter" id="spin-counter">1 / ${frames.length}</span>` : ''}
-    ${frames.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="${escapeHtml(title + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
+    ${frames.map((src,i) => `<img src="${escapeHtml(src)}" class="${i===0?'active ':''}${mediaOrientationClass(src)}" alt="${escapeHtml(title + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
     <span class="image-status ${hasRealImage?'real':''}"><i class="fa-solid ${hasRealImage?'fa-camera':'fa-image'}"></i> ${hasRealImage?'تصویر واقعی سهند لیزر':'تصویر واقعی در حال تکمیل آرشیو'}</span>
     ${has360 ? `<div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${escapeHtml(T[lang].spin_hint)}</span></div><div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>` : ''}`;
 
@@ -626,7 +638,7 @@ function renderProduct(id) {
   if (frames.length > 1) {
     const cols = Math.min(frames.length, 6), colsMap={1:'grid-cols-1',2:'grid-cols-2',3:'grid-cols-3',4:'grid-cols-4',5:'grid-cols-5',6:'grid-cols-6'};
     tc.className = `grid ${colsMap[cols]||'grid-cols-6'} gap-2 mt-3`;
-    tc.innerHTML = frames.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}" data-index="${i}" alt="${escapeHtml(title + ' - بندانگشتی ' + (i+1))}">`).join('');
+    tc.innerHTML = frames.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}${mediaOrientationClass(src)}" data-index="${i}" alt="${escapeHtml(title + ' - بندانگشتی ' + (i+1))}">`).join('');
   } else { tc.className='hidden'; tc.innerHTML=''; }
 
   const legacyLink=document.getElementById('legacy-product-link');
@@ -660,7 +672,7 @@ function renderProduct(id) {
   const galleryRoot=document.getElementById('gallery-container');
   if (gallery.length) {
     galleryRoot.className='grid md:grid-cols-3 gap-4';
-    galleryRoot.innerHTML=gallery.map((src,i)=>`<figure class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden"><img src="${escapeHtml(src)}" alt="${escapeHtml(title+' - گالری '+(i+1))}" class="w-full h-56 object-contain bg-white" loading="lazy"><figcaption class="p-3 text-xs text-slate-500">تصویر آرشیوی محصول</figcaption></figure>`).join('');
+    galleryRoot.innerHTML=gallery.map((src,i)=>`<figure class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden"><img src="${escapeHtml(src)}" alt="${escapeHtml(title+' - گالری '+(i+1))}" class="w-full h-56 object-contain bg-white${mediaOrientationClass(src)}" loading="lazy"><figcaption class="p-3 text-xs text-slate-500">تصویر آرشیوی محصول</figcaption></figure>`).join('');
   } else {
     galleryRoot.className='block';
     galleryRoot.innerHTML=`<div class="archive-note text-center"><i class="fa-solid fa-camera text-accent text-2xl mb-3"></i><div class="font-bold text-brand dark:text-white mb-2">گالری واقعی این محصول در حال انتقال از آرشیو قبلی است</div><p class="text-sm text-slate-500 leading-7">برای جلوگیری از نمایش تصویر یا مدل ساختگی، تا زمان تطبیق عکس واقعی با کد محصول هیچ نمای 3D یا تصویر جایگزین به‌عنوان محصول واقعی منتشر نمی‌شود.</p>${legacyProductPages[p.code]?`<a href="${escapeHtml(legacyProductPages[p.code])}" target="_blank" rel="noopener noreferrer" class="inline-flex mt-4 items-center gap-2 text-accent font-bold text-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> مشاهده صفحه آرشیوی این محصول</a>`:''}</div>`;
@@ -978,7 +990,7 @@ function renderCatCard(category) {
   return `<article class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800">
     <button class="w-full text-start" onclick="openCategory('${category.id}')" aria-label="${label(T[currentLang][category.nameKey])}">
       <div class="h-44 relative flex items-center justify-center overflow-hidden bg-slate-100">
-        ${p ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" class="w-full h-full object-contain" loading="lazy">` : `<i class="fa-solid ${category.icon} text-slate-400 text-5xl"></i>`}
+        ${p ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" class="w-full h-full object-contain${mediaOrientationClass(p.media.images[0])}" loading="lazy">` : `<i class="fa-solid ${category.icon} text-slate-400 text-5xl"></i>`}
         <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">${category.count}</span>
       </div>
       <div class="p-6"><h3 class="text-xl font-bold text-brand dark:text-white mb-2">${label(T[currentLang][category.nameKey])}</h3>
@@ -996,7 +1008,7 @@ function renderAllProducts(filter = activeCatalogFilter) {
   document.getElementById('catalog-count').textContent = `${items.length} محصول`;
   root.innerHTML = items.length ? items.map(p => `<article class="product-mini-card bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
     <button onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${label(productTitle(p))}">
-      ${p.media.images.length ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" loading="lazy">` : '<div class="media-empty"><i class="fa-regular fa-image"></i><span class="text-xs">تصویر اختصاصی در انتظار تطبیق</span></div>'}
+      ${p.media.images.length ? `<img class="${mediaOrientationClass(p.media.images[0])}" src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" loading="lazy">` : '<div class="media-empty"><i class="fa-regular fa-image"></i><span class="text-xs">تصویر اختصاصی در انتظار تطبیق</span></div>'}
     </button><div class="p-5 flex-1 flex flex-col"><div class="flex items-center justify-between gap-2 mb-2"><span class="product-code">${label(p.code)}</span><span class="text-[11px] text-slate-500">${label(p.cat)}</span></div>
     <h3 class="font-bold text-brand dark:text-white leading-7 mb-2">${label(productTitle(p))}</h3>
     <p class="text-xs text-slate-500 leading-6 mb-4">${label((p.description[currentLang] || p.description.fa || [])[0] || '')}</p>
@@ -1030,11 +1042,11 @@ function renderProduct(id) {
   const viewer = document.getElementById('spin-viewer');
   viewer.classList.toggle('static-view', !spin);
   viewer.classList.remove('has-interacted');
-  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i && !spin ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
+  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img src="${assetUrl(image)}" class="${i === 0 ? 'active ' : ''}${mediaOrientationClass(image)}" alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i && !spin ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
   if (spin) viewer.innerHTML += `<span class="badge-360">360°</span><span class="spin-counter" id="spin-counter">1 / ${pictures.length}</span><div class="spin-progress"><div id="spin-progress"></div></div>`;
   const thumbs = document.getElementById('thumbnails-container');
   thumbs.classList.toggle('ordered-orbit', numberedOrbit);
-  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${numberedOrbit ? orbitAngle(image) + '°' : 'تصویر ' + (i + 1)}"><img src="${assetUrl(image)}" alt="" class="w-full h-full object-contain">${numberedOrbit ? `<span class="orbit-angle">${orbitAngle(image)}°</span>` : ''}</button>`).join('') : '';
+  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${numberedOrbit ? orbitAngle(image) + '°' : 'تصویر ' + (i + 1)}"><img src="${assetUrl(image)}" alt="" class="w-full h-full object-contain${mediaOrientationClass(image)}">${numberedOrbit ? `<span class="orbit-angle">${orbitAngle(image)}°</span>` : ''}</button>`).join('') : '';
   document.getElementById('product-media-caption').textContent = p.media.caption ? (p.media.caption[currentLang] || p.media.caption.fa) : spin ? 'نمای ۳۶۰ درجه' : p.media.review ? 'تصویر آرشیوی این پیکربندی؛ تطبیق نهایی در حال بررسی است.' : pictures.length ? 'تصویر مرجع محصول از آرشیو سهند لیزر' : '';
   if (viewerController) viewerController.abort();
   viewerController = new AbortController();
