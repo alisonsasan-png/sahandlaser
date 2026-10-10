@@ -1,0 +1,1077 @@
+[
+  {
+    "code": "CT-001",
+    "imageCount": 1,
+    "technical": true,
+    "exploded": true,
+    "reference": {
+      "source": "https://sahandlaser.com/product-test/",
+      "researchDate": "2026-10-06",
+      "status": "catalog_options_and_user_measured_body"
+    }
+  },
+  {
+    "code": "CT-002",
+    "imageCount": 2,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "current_site_confirmed"
+    }
+  },
+  {
+    "code": "CT-003",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "current_site_confirmed"
+    }
+  },
+  {
+    "code": "CT-004",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "current_site_confirmed"
+    }
+  },
+  {
+    "code": "CT-005",
+    "imageCount": 2,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "review"
+    }
+  },
+  {
+    "code": "CT-006",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "review"
+    }
+  },
+  {
+    "code": "CT-007",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "review"
+    }
+  },
+  {
+    "code": "CT-008",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "review"
+    }
+  },
+  {
+    "code": "CT-009",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "status": "source_file_confirmed_with_accuracy_wording_conflict"
+    }
+  },
+  {
+    "code": "CT-010",
+    "imageCount": 1,
+    "technical": true,
+    "exploded": true,
+    "reference": {
+      "source": "User reference images; Sahand standard family; TRUMPF process guide; Friendess manual",
+      "researchDate": "2026-10-06",
+      "status": "user_identified_nominal_work_area_estimated_visual_envelope"
+    }
+  },
+  {
+    "code": "WL-001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-002",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-003",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-004",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-005",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-006",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-007",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-008",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-009",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "WL-010",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-002",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-003",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-004",
+    "imageCount": 4,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "User-supplied photographs, 2026-10-07",
+      "status": "photo_matched_specs_pending",
+      "gallery_files": [
+        "_MG_4350.jpg",
+        "_MG_4353.jpg",
+        "_MG_4354.jpg",
+        "_MG_4357.jpg"
+      ],
+      "reference_only_files": [
+        "_MG_4347.jpg"
+      ]
+    }
+  },
+  {
+    "code": "ML-005",
+    "imageCount": 5,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "User-supplied photographs, 2026-10-07",
+      "status": "photo_matched_specs_pending",
+      "gallery_files": [
+        "_MG_4146.jpg",
+        "_MG_4149.jpg",
+        "_MG_4150.jpg",
+        "_MG_4162.jpg",
+        "_MG_4165.jpg"
+      ],
+      "reference_only_files": [
+        "_MG_4158.jpg",
+        "_MG_4160.jpg"
+      ]
+    }
+  },
+  {
+    "code": "ML-006",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-007",
+    "imageCount": 4,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "User-supplied photographs, 2026-10-07",
+      "status": "photo_matched_specs_pending",
+      "gallery_files": [
+        "_MG_4184.jpg",
+        "_MG_4171.jpg",
+        "_MG_4206.jpg",
+        "_MG_4218.jpg"
+      ],
+      "reference_only_files": [
+        "_MG_4186.jpg"
+      ]
+    }
+  },
+  {
+    "code": "ML-008",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "ML-009",
+    "imageCount": 5,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "User-supplied photographs, 2026-10-07",
+      "status": "photo_matched_specs_pending",
+      "gallery_files": [
+        "_MG_4266.jpg",
+        "_MG_4239.jpg",
+        "_MG_4269.jpg",
+        "_MG_4270.jpg",
+        "_MG_4275.jpg"
+      ],
+      "reference_only_files": [
+        "_MG_4246.jpg"
+      ]
+    }
+  },
+  {
+    "code": "CL-001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CL-002",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CL-003",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CL-004",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN002",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN003",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN004",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN006",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN007",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN008",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN009",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN010",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN011",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN012",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CN013",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CC001",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web+user_media",
+      "status": "ready",
+      "sourceId": "CH-SA-1500"
+    }
+  },
+  {
+    "code": "CC002",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web+user_media",
+      "status": "ready",
+      "sourceId": "CH-SA-2000"
+    }
+  },
+  {
+    "code": "CC003",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CH-S&A-3000"
+    }
+  },
+  {
+    "code": "CC004",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf_and_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CH-HANLI-1500"
+    }
+  },
+  {
+    "code": "CC005",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf_and_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CH-HANLI-2000"
+    }
+  },
+  {
+    "code": "CC006",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf_and_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CH-HANLI-3000"
+    }
+  },
+  {
+    "code": "FS001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "FS002",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "FS003",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media/manual+official_family",
+      "status": "review_before_numeric_publication",
+      "sourceId": "SRC-RAY-C1000"
+    }
+  },
+  {
+    "code": "FS004",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_manual",
+      "status": "ready",
+      "sourceId": "SRC-RAY-C1500"
+    }
+  },
+  {
+    "code": "FS005",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media/manual+official_family",
+      "status": "review_before_numeric_publication",
+      "sourceId": "SRC-RAY-C2000"
+    }
+  },
+  {
+    "code": "FS006",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "FS007",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "FS008",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CH001",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CH002",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BM109"
+    }
+  },
+  {
+    "code": "CH003",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_manual",
+      "status": "ready",
+      "sourceId": "CP-RAY-BM111"
+    }
+  },
+  {
+    "code": "CH004",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CH005",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "SahandLaser_Rebuilt_V7.html",
+      "status": "legacy_review"
+    }
+  },
+  {
+    "code": "CP-SMC-ITV1050",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web+user_media",
+      "status": "ready",
+      "sourceId": "CP-SMC-ITV1050"
+    }
+  },
+  {
+    "code": "CP-SMC-ITV2050",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web+user_media",
+      "status": "ready",
+      "sourceId": "CP-SMC-ITV2050"
+    }
+  },
+  {
+    "code": "CP-RAY-BM110",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_manual",
+      "status": "ready",
+      "sourceId": "CP-RAY-BM110"
+    }
+  },
+  {
+    "code": "CP-TRA",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-TRA"
+    }
+  },
+  {
+    "code": "CP-CERAMIC",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-CERAMIC"
+    }
+  },
+  {
+    "code": "CP-LENS-BLT",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-LENS-BLT"
+    }
+  },
+  {
+    "code": "CP-LENS-RAY",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-LENS-RAY"
+    }
+  },
+  {
+    "code": "CP-LENS-WSX",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-LENS-WSX"
+    }
+  },
+  {
+    "code": "CTRL-FSCUT2000C",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CTRL-FSCUT2000C"
+    }
+  },
+  {
+    "code": "CTRL-FSCUT2000E",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CTRL-FSCUT2000E"
+    }
+  },
+  {
+    "code": "CTRL-FSCUT4000E",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CTRL-FSCUT4000E"
+    }
+  },
+  {
+    "code": "SRC-RAY-C3000S",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "SRC-RAY-C3000S"
+    }
+  },
+  {
+    "code": "SRC-RAY-C6000S",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_manual",
+      "status": "ready",
+      "sourceId": "SRC-RAY-C6000S"
+    }
+  },
+  {
+    "code": "CH-S&A-6000",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CH-S&A-6000"
+    }
+  },
+  {
+    "code": "CH-S&A-12000",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CH-S&A-12000"
+    }
+  },
+  {
+    "code": "CH-S&A-20000",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "official_web",
+      "status": "ready",
+      "sourceId": "CH-S&A-20000"
+    }
+  },
+  {
+    "code": "CH-HANLI-6000",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf_and_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CH-HANLI-6000"
+    }
+  },
+  {
+    "code": "CH-HANLI-12000",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf_and_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CH-HANLI-12000"
+    }
+  },
+  {
+    "code": "MK-FIBER-GENERIC",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf",
+      "status": "review_before_numeric_publication",
+      "sourceId": "MK-FIBER-GENERIC"
+    }
+  },
+  {
+    "code": "WELD-1500",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "WELD-1500"
+    }
+  },
+  {
+    "code": "WELD-2000",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "WELD-2000"
+    }
+  },
+  {
+    "code": "WELD-3000",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "WELD-3000"
+    }
+  },
+  {
+    "code": "CLEAN-GENERIC",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CLEAN-GENERIC"
+    }
+  },
+  {
+    "code": "CP-RAY-BM114E",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BM114E"
+    }
+  },
+  {
+    "code": "CP-RAY-BM115",
+    "imageCount": 1,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BM115"
+    }
+  },
+  {
+    "code": "CP-RAY-BM115E",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BM115E"
+    }
+  },
+  {
+    "code": "CP-RAY-BM116E",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BM116E"
+    }
+  },
+  {
+    "code": "CP-RAY-BT220",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BT220"
+    }
+  },
+  {
+    "code": "CP-RAY-BT240",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media",
+      "status": "review_before_numeric_publication",
+      "sourceId": "CP-RAY-BT240"
+    }
+  },
+  {
+    "code": "SRC-RAY-C4000S",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_media/manual+official_family",
+      "status": "review_before_numeric_publication",
+      "sourceId": "SRC-RAY-C4000S"
+    }
+  },
+  {
+    "code": "SRC-RAY-QCW150",
+    "imageCount": 0,
+    "technical": false,
+    "exploded": false,
+    "reference": {
+      "source": "Sahand_Site_Import_Staging_2026-10-04.json",
+      "sourceLevel": "user_pdf",
+      "status": "review_before_numeric_publication",
+      "sourceId": "SRC-RAY-QCW150"
+    }
+  }
+]
