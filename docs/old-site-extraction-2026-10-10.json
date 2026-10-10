@@ -1,0 +1,1989 @@
+Warning: truncated output (original token count: 1999654)
+... 6950037 bytes omitted ...
+
+{
+    "extractedAt":  "2026-10-10T09:50:07.2276394+03:30",
+    "source":  "https://sahandlaser.com/",
+    "readonly":  true,
+    "pages":  [
+                  {
+                      "id":  8889,
+                      "slug":  "product-test",
+                      "link":  "https://sahandlaser.com/product-test/",
+                      "title":  "product test",
+                      "content":  "\t\t\u003cdiv data-elementor-type=\"wp-page\" data-elementor-id=\"8889\" class=\"elementor elementor-8889\" data-elementor-post-type=\"page\"\u003e\n\t\t\t\t\t\t\u003csection class=\"elementor-section elementor-top-section elementor-element elementor-element-d91945d elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default\" data-id=\"d91945d\" data-element_type=\"section\" data-e-type=\"section\" data-settings=\"{\u0026quot;stretch_section\u0026quot;:\u0026quot;section-stretched\u0026quot;}\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-default\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ee71c7b\" data-id=\"ee71c7b\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-b4aeb50 elementor-widget elementor-widget-html\" data-id=\"b4aeb50\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003cstyle\u003e\r\n  .breadcrumb {\r\n    padding: 16px 24px;\r\n    font-size: 15px;\r\n    background: #ffffff;\r\n    color: #444;\r\n    direction: rtl;\r\n    direction: center;\r\n  }\r\n\r\n  .breadcrumb a {\r\n    color: #000;\r\n    text-decoration: none;\r\n    transition: color 0.2s;\r\n  }\r\n\r\n  .breadcrumb a:hover {\r\n    color: #0b548e;\r\n  }\r\n\r\n  .breadcrumb a.active {\r\n    color: #e51e28;\r\n    font-weight: bold;\r\n  }\r\n\r\n  .breadcrumb-separator {\r\n    margin: 0 6px;\r\n    color: #999;\r\n  }\r\n\u003c/style\u003e\r\n\r\n\u003cnav class=\"breadcrumb\"\u003e\r\n  \u003ca href=\"sahandlaser.com\"\u003eخانه\u003c/a\u003e\r\n  \u003cspan class=\"breadcrumb-separator\"\u003e›\u003c/span\u003e\r\n  \u003ca href=\"https://sahandlaser.com/laser-cutting-machine/\"\u003eمحصول دستگاه برش لیزر\u003c/a\u003e\r\n  \u003cspan class=\"breadcrumb-separator\"\u003e›\u003c/span\u003e\r\n  \u003ca href=\"#\" class=\"active\"\u003e  دستگاه برش لیزر فایبرر 3015 استاندارد\u003c/a\u003e\r\n\u003c/nav\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\u003csection class=\"elementor-section elementor-top-section elementor-element elementor-element-2339502 elementor-section-full_width elementor-section-content-middle elementor-section-stretched elementor-section-height-default elementor-section-height-default\" data-id=\"2339502\" data-element_type=\"section\" data-e-type=\"section\" data-settings=\"{\u0026quot;stretch_section\u0026quot;:\u0026quot;section-stretched\u0026quot;}\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-default\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b8ca668\" data-id=\"b8ca668\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003csection class=\"elementor-section elementor-inner-section elementor-element elementor-element-7309026 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default\" data-id=\"7309026\" data-element_type=\"section\" data-e-type=\"section\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-default\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-340dd10\" data-id=\"340dd10\" data-element_type=\"column\" data-e-type=\"column\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-650f97b elementor-widget-tablet__width-initial elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"650f97b\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003cdiv class=\"product-gallery\"\u003e\r\n  \u003cdiv class=\"main-image-wrapper\"\u003e\r\n    \u003cdiv class=\"main-image\"\u003e\r\n      \u003cimg decoding=\"async\" id=\"current\" src=\"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-Standard-1-scaled.webp\" alt=\"Main Product\" onclick=\"openLightbox(this.src)\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"thumbnails\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-Standard-1-scaled.webp\" alt=\"Thumb 1\" onclick=\"selectImage(this)\"\u003e\r\n       \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-Standard-2-scaled.webp\" alt=\"Thumb 1\" onclick=\"selectImage(this)\"\u003e\r\n        \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-machine-3015-Standard-3-scaled.webp\" alt=\"Thumb 1\" onclick=\"selectImage(this)\"\u003e\r\n      \r\n      \u003c!-- دکمه دانلود به صورت عمودی در ستون تصاویر کوچک --\u003e\r\n     \r\n    \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\u003c/div\u003e\r\n\r\n\u003c!-- Lightbox --\u003e\r\n\u003cdiv id=\"lightbox\" onclick=\"closeLightbox()\"\u003e\r\n  \u003cimg decoding=\"async\" id=\"lightbox-img\" src=\"\" alt=\"Expanded Image\"\u003e\r\n\u003c/div\u003e\r\n\r\n\u003cstyle\u003e\r\n.product-gallery {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n  font-family: \u0027Vazirmatn\u0027, sans-serif;\r\n}\r\n\r\n.main-image-wrapper {\r\n  display: flex;\r\n  flex-direction: row-reverse; /* تصاویر کوچک سمت راست */\r\n  align-items: flex-start;\r\n  gap: 15px;\r\n}\r\n\r\n.main-image img {\r\n  width:500px;\r\n  height: auto;\r\n  border-radius: 20px;\r\n  cursor: pointer;\r\n  transition: transform 0.3s;\r\n}\r\n\r\n.thumbnails {\r\n  display: flex;\r\n  flex-direction: column; /* تصاویر کوچک به صورت ستونی */\r\n  gap: 10px;\r\n  align-items: center;\r\n}\r\n\r\n/* تصاویر کوچک */\r\n.thumbnails img {\r\n  width: 65px;\r\n  height: auto;\r\n  cursor: pointer;\r\n  border-radius: 10px;\r\n  transition: transform 0.3s, border 0.3s;\r\n}\r\n\r\n.thumbnails img:hover, .thumbnails img.selected {\r\n  border: 2px solid #0b548e;\r\n  border-radius: 10px;\r\n  transform: scale(1.1);\r\n}\r\n\r\n/* دکمه دانلود عمودی (حالت دسکتاپ) */\r\n.catalog-download {\r\n  width: 60px;\r\n  height: 120px;\r\n  margin-top: 10px;\r\n  background: #e51e28;\r\n  color: #fff;\r\n  border-radius: 10px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  font-weight: bold;\r\n  text-decoration: none;\r\n  text-align: center;\r\n  writing-mode: vertical-rl;\r\n  transform: rotate(180deg);\r\n  transition: background 0.3s;\r\n}\r\n.catalog-download:hover {\r\n  background: #c91821;\r\n  color: #fff;\r\n}\r\n\r\n/* Lightbox */\r\n#lightbox {\r\n  display: none;\r\n  position: fixed;\r\n  top:0;\r\n  left:0;\r\n  width:100%;\r\n  height:100%;\r\n  background: rgba(0,0,0,0.8);\r\n  justify-content: center;\r\n  align-items: center;\r\n  z-index: 9999;\r\n}\r\n#lightbox img {\r\n  max-width: 90%;\r\n  max-height: 90%;\r\n}\r\n\r\n/* --- ریسپانسیو موبایل/تبلت --- */\r\n@media (max-width: 768px) {\r\n  .main-image-wrapper {\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  .main-image img {\r\n    width: 100%;\r\n    max-width: 520px;\r\n  }\r\n  .thumbnails {\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n  }\r\n  .thumbnails img {\r\n    width: 80px;\r\n    height: auto;\r\n  }\r\n  .catalog-download {\r\n    width: auto;\r\n    height: auto;\r\n    padding: 12px 20px;\r\n    margin-top: 15px;\r\n    writing-mode: horizontal-tb;\r\n    transform: none;\r\n    border-radius: 30px;\r\n  }\r\n}\r\n\u003c/style\u003e\r\n\r\n\u003cscript\u003e\r\nfunction selectImage(element) {\r\n  document.getElementById(\u0027current\u0027).src = element.src;\r\n\r\n  const thumbnails = document.querySelectorAll(\u0027.thumbnails img\u0027);\r\n  thumbnails.forEach(thumb =\u003e thumb.classList.remove(\u0027selected\u0027));\r\n  element.classList.add(\u0027selected\u0027);\r\n}\r\n\r\n// مقداردهی اولیه: اولین تصویر انتخاب شده باشد\r\ndocument.querySelector(\u0027.thumbnails img\u0027).classList.add(\u0027selected\u0027);\r\n\r\n// Lightbox\r\nfunction openLightbox(src) {\r\n  document.getElementById(\u0027lightbox-img\u0027).src = src;\r\n  document.getElementById(\u0027lightbox\u0027).style.display = \u0027flex\u0027;\r\n}\r\n\r\nfunction closeLightbox() {\r\n  document.getElementById(\u0027lightbox\u0027).style.display = \u0027none\u0027;\r\n}\r\n\u003c/script\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003csection class=\"elementor-section elementor-inner-section elementor-element elementor-element-89a53f5 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"89a53f5\" data-element_type=\"section\" data-e-type=\"section\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-custom\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e638d29\" data-id=\"e638d29\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-2c98729 elementor-widget elementor-widget-heading\" data-id=\"2c98729\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003ch2 class=\"elementor-heading-title elementor-size-default\"\u003eاشتراک گذاری:\u003c/h2\u003e\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5d13d51\" data-id=\"5d13d51\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-50d9726 elementor-share-buttons--view-icon elementor-share-buttons--shape-circle elementor-share-buttons--align-center elementor-widget__width-initial elementor-share-buttons--skin-gradient elementor-grid-0 elementor-share-buttons--color-official elementor-widget elementor-widget-share-buttons\" data-id=\"50d9726\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"share-buttons.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-grid\"\u003e\n\t\t\t\t\t\t\t\t\u003cdiv class=\"elementor-grid-item\"\u003e\n\t\t\t\t\t\t\u003cdiv\n\t\t\t\t\t\t\tclass=\"elementor-share-btn elementor-share-btn_telegram\"\n\t\t\t\t\t\t\trole=\"button\"\n\t\t\t\t\t\t\ttabindex=\"0\"\n\t\t\t\t\t\t\taria-label=\"اشتراک گذاری در telegram\"\n\t\t\t\t\t\t\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003cspan class=\"elementor-share-btn__icon\"\u003e\n\t\t\t\t\t\t\t\t\u003ci class=\"fab fa-telegram\" aria-hidden=\"true\"\u003e\u003c/i\u003e\t\t\t\t\t\t\t\u003c/span\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\t\t\u003cdiv class=\"elementor-grid-item\"\u003e\n\t\t\t\t\t\t\u003cdiv\n\t\t\t\t\t\t\tclass=\"elementor-share-btn elementor-share-btn_whatsapp\"\n\t\t\t\t\t\t\trole=\"button\"\n\t\t\t\t\t\t\ttabindex=\"0\"\n\t\t\t\t\t\t\taria-label=\"اشتراک گذاری در whatsapp\"\n\t\t\t\t\t\t\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003cspan class=\"elementor-share-btn__icon\"\u003e\n\t\t\t\t\t\t\t\t\u003ci class=\"fab fa-whatsapp\" aria-hidden=\"true\"\u003e\u003c/i\u003e\t\t\t\t\t\t\t\u003c/span\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\t\t\t\u003cdiv class=\"elementor-grid-item\"\u003e\n\t\t\t\t\t\t\u003cdiv\n\t\t\t\t\t\t\tclass=\"elementor-share-btn elementor-share-btn_email\"\n\t\t\t\t\t\t\trole=\"button\"\n\t\t\t\t\t\t\ttabindex=\"0\"\n\t\t\t\t\t\t\taria-label=\"اشتراک گذاری در email\"\n\t\t\t\t\t\t\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003cspan class=\"elementor-share-btn__icon\"\u003e\n\t\t\t\t\t\t\t\t\u003ci class=\"fas fa-envelope\" aria-hidden=\"true\"\u003e\u003c/i\u003e\t\t\t\t\t\t\t\u003c/span\u003e\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5248dc1\" data-id=\"5248dc1\" data-element_type=\"column\" data-e-type=\"column\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-12bb9c1 elementor-widget elementor-widget-heading\" data-id=\"12bb9c1\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003ch2 class=\"elementor-heading-title elementor-size-default\"\u003eدستگاه برش لیزر فایبر تک میز SH3015\u003c/h2\u003e\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-6ebedfa elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-initial elementor-widget elementor-widget-divider\" data-id=\"6ebedfa\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"divider.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-divider\"\u003e\n\t\t\t\u003cspan class=\"elementor-divider-separator\"\u003e\n\t\t\t\t\t\t\t\u003cspan class=\"elementor-divider__text elementor-divider__element\"\u003e\n\t\t\t\tFiber Laser Cutting Machine 3015\t\t\t\t\u003c/span\u003e\n\t\t\t\t\t\t\u003c/span\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-0520a6e elementor-widget elementor-widget-text-editor\" data-id=\"0520a6e\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"text-editor.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\t\t\u003cp\u003eدستگاه برش لیزر فایبر سری استاندارد از شرکت DZ Laser بوده که به سفارش شرکت سهند لیزر تولید و ارائه شده است. این دستگاه با هدف استفاده در شرکت های تولیدی و خدماتی سفارشی سازی شده است و استفاده از قطعات با کیفیت و دقیق، طول عمر بالا و قیمت رقابتی مد نظر ما بوده است.\u003c/p\u003e\u003cp\u003eشرکت سهند لیزر به عنوان نماینده انحصاری شرکت DZLASER با بیش از 5 سال تجربه فروش و ارائه دستگاه های لیزر ساخت شرکت DZ Laser می توانیم بهترین لیزرهای برش فایبر را برای اهداف گوناگون سفارشی سازی و ارائه نماییم.\u003c/p\u003e\t\t\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-5e05090 elementor-widget elementor-widget-heading\" data-id=\"5e05090\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"heading.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003ch2 class=\"elementor-heading-title elementor-size-default\"\u003eویژگی‌ها:\u003c/h2\u003e\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003csection class=\"elementor-section elementor-inner-section elementor-element elementor-element-2a5d04e elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"2a5d04e\" data-element_type=\"section\" data-e-type=\"section\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-custom\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e80fcf1\" data-id=\"e80fcf1\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-b0a49ce elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"b0a49ce\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n      direction: rtl;\r\n      margin: 0; /* ✅ فاصله پیش‌فرض صفحه حذف شد */\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 10px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n      margin-bottom: 10px;\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 12px;\r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 38px;\r\n      height: 38px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 15px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: center;\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 8px 12px;\r\n      }\r\n      .icon {\r\n        margin: 0 0 8px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003e\tشاسی ساخته شده از پروفیل و ورق آهن 10 میلیمتر \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-268524f\" data-id=\"268524f\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-4330de8 elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"4330de8\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n \r\n      direction: rtl;\r\n      margin: 0;\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 15px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n      margin-bottom: 10px;\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 16px;\r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 42px;\r\n      height: 42px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 16.5px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: center;\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 15px;\r\n      }\r\n      .icon {\r\n        margin: 0 0 12px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003eشاسی تنش گیری شده و ماشین کاری شده با دقت 0.02 \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\u003csection class=\"elementor-section elementor-inner-section elementor-element elementor-element-bc70dad elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"bc70dad\" data-element_type=\"section\" data-e-type=\"section\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-custom\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-563bc88\" data-id=\"563bc88\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-4b9ab14 elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"4b9ab14\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n      direction: rtl;\r\n      margin: 0;\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 10px;  /* ⬅️ مقدار قبلی 20px بود، کمترش کردم */\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 12px;\r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 38px;\r\n      height: 38px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 15px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: center;\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 8px 12px; /* ⬅️ در موبایل هم کمتر شد */\r\n      }\r\n      .icon {\r\n        margin: 0 0 8px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003eمحور حرکتی از پروفیل آلومینیوم هوایی ضخیم \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2153d47\" data-id=\"2153d47\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-79ec0a2 elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"79ec0a2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n \r\n      direction: rtl;\r\n      margin: 0;\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 15px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 16px;\r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 42px;\r\n      height: 42px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 16.5px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: center;\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 15px;\r\n      }\r\n      .icon {\r\n        margin: 0 0 12px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003eکنترلر سیپکات 2000 شبکه و هد برش Boci\u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\u003csection class=\"elementor-section elementor-inner-section elementor-element elementor-element-f347d47 elementor-section-boxed elementor-section-height-default elementor-section-height-default\" data-id=\"f347d47\" data-element_type=\"section\" data-e-type=\"section\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-container elementor-column-gap-custom\"\u003e\n\t\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1a9d4cb\" data-id=\"1a9d4cb\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-7e230d2 elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"7e230d2\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n      direction: rtl;\r\n      margin: 0;\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 10px;  /* ⬅️ مقدار قبلی 20px بود، کمترش کردم */\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 12px;\r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 38px;\r\n      height: 38px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 15px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: center;\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 8px 12px; /* ⬅️ در موبایل هم کمتر شد */\r\n      }\r\n      .icon {\r\n        margin: 0 0 8px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003eمناسب برای لیزرهای 1500 و 3000 وات \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-03f2b0c\" data-id=\"03f2b0c\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-4550017 elementor-widget__width-initial elementor-widget elementor-widget-html\" data-id=\"4550017\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\u003c!DOCTYPE html\u003e\r\n\u003chtml lang=\"fa\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"UTF-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /\u003e\r\n  \u003ctitle\u003eکادر با آیکن و متن\u003c/title\u003e\r\n  \u003cstyle\u003e\r\n    body {\r\n      font-family: \u0027Yekan\u0027, Tahoma, sans-serif;\r\n      background-color: #f9f9f9;\r\n      direction: rtl;\r\n      margin: 0;\r\n    }\r\n\r\n    .info-box {\r\n      background-color: #eef5ff; /* آبی خیلی روشن */\r\n      border-radius: 12px;\r\n      padding: 10px 10px;  \r\n      display: flex;\r\n      flex-direction: row;   /* لوگو سمت چپ */\r\n      align-items: center;\r\n      justify-content: flex-start; /* چسبیده به چپ */\r\n      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);\r\n      transition: box-shadow 0.3s, background-color 0.3s;\r\n      max-width: 500px;\r\n    }\r\n\r\n    .info-box:hover {\r\n      background-color: #d9e9ff;\r\n      box-shadow: 0 5px 16px rgba(11, 61, 145, 0.15);\r\n    }\r\n\r\n    .icon {\r\n      margin-left: 12px;  /* فاصله بین لوگو و متن */\r\n      margin-right: 0; \r\n      flex-shrink: 0;\r\n    }\r\n\r\n    .icon img {\r\n      width: 38px;\r\n      height: 38px;\r\n      object-fit: contain;\r\n      transition: transform 0.3s ease;\r\n      filter: brightness(0) saturate(100%) invert(18%) sepia(86%) saturate(692%) hue-rotate(186deg) brightness(94%) contrast(90%);\r\n    }\r\n\r\n    .info-box:hover .icon img {\r\n      transform: scale(1.05);\r\n    }\r\n\r\n    .text {\r\n      font-size: 15px;\r\n      color: #0b3d91;\r\n      font-weight: 500;\r\n      text-align: right; /* متن راست‌چین */\r\n    }\r\n\r\n    @media (max-width: 600px) {\r\n      .info-box {\r\n        flex-direction: column;\r\n        text-align: center;\r\n        padding: 8px 12px; \r\n      }\r\n      .icon {\r\n        margin: 0 0 8px 0;\r\n      }\r\n    }\r\n  \u003c/style\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\r\n  \u003cdiv class=\"info-box\"\u003e\r\n    \u003cdiv class=\"icon\"\u003e\r\n      \u003cimg decoding=\"async\" src=\"https://sahandlaser.com/wp-content/uploads/2025/06/High-quality-icon.png\" alt=\"آیکن\"\u003e\r\n    \u003c/div\u003e\r\n    \u003cdiv class=\"text\"\u003eمناسب برای واحدهای تولیدی و خدماتی \u003c/div\u003e\r\n  \u003c/div\u003e\r\n\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/section\u003e\n\t\t\t\t\t\u003c/div\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d5eed13\" data-id=\"d5eed13\" data-element_type=\"column\" data-e-type=\"column\" data-settings=\"{\u0026quot;background_background\u0026quot;:\u0026quot;classic\u0026quot;}\"\u003e\n\t\t\t\u003cdiv class=\"elementor-widget-wrap elementor-element-populated\"\u003e\n\t\t\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-a171ad3 elementor-position-inline-start elementor-view-default elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"a171ad3\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-wrapper\"\u003e\n\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-icon\"\u003e\n\t\t\t\t\u003cspan  class=\"elementor-icon\"\u003e\n\t\t\t\t\u003csvg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"Layer_1\" x=\"0px\" y=\"0px\" width=\"535px\" height=\"780px\" viewBox=\"0 0 535 780\" xml:space=\"preserve\"\u003e  \u003cimage id=\"image0\" width=\"535\" height=\"780\" x=\"0\" y=\"0\" xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhcAAAMMCAYAAADgv4WkAAAAIGNIUk0AAHomAACAhAAA+gAAAIDo AAB1MAAA6mAAADqYAAAXcJy6UTwAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAALiMAAC4jAXil P3YAAAO4elRYdFJhdyBwcm9maWxlIHR5cGUgeG1wAABIiZ1WW5arOAz81ypmCSDZkr0cEuBvzpnP Wf5UyekkNEmmb4cDMX5IpdIL+ffvf+Qv/ObSu9jV9mgx+ezmF69RdHL16uHdN1tVt/1yueyqmO9e OFPDalltKmtMxbC3eZfSYgkcrBZL2Wpx/EOgGQ6p2m6bTnaNZks0x0FfqcxnnfjuV9/CuCbUADTF d+KwZSzctyeShxjMXXii3E/oVFtZ6yRKcHvklLluNukKPBMuzoR1zM3mVqxax+oVs2p5644VxXOy LrriZbYF2wLPYuDo26U38xQo3JaqpRT/ZppKLtK8FgXXZAvM2SN/ugV26ZaII/V3XomBSBTPdSgA orCAf8hINJgFDVw/ogAEuAqOUO/JVAdD2PG17rOAsD1ALFENYp99QYLPeFPZ9nARxiYYrjClAU+S l3Tv30XiiL0gYAIE9SuNl2E9N+JZcbDS9TQVWofg+SwY8dRgCRDBYI4m+RnwG+7T8YcN8pqXsiIF /kRFkyM3ELi+MMSilBo+XPJauLySfhTODA04HXv2qhkGe5KMdKX4wagwZoZ+6iiMlApB5EErlex+ PWXXmSuQTUn0zKStZungAYS1aX+jopYy/qnglneVuYbUzIyrteA5ZcYpnpjRC97BEu7pIHZ1hkx3 jz7EylFuim0ptqVYT4Htls7vxVZhjvmAOr+C/FPRMmRnCizumecrxaWjO8coujWDcUMOEMeJajLI XLvy+M3qgcbeHuiFFY5Zv0NtZ0rxRJigTKHeo072AuQAzpqDEIExw5t3LjLaIYohmIRsGUkgm6Jk bEI49uwRC6zHOn54GGqN0jhyYxDtqKMojphDOPINI6pGVAoOauKIvOsJAcPQ4l4TvhAcGgZGAs2J 5BUj1OnwE27gYFsYmFhgIWAe6KzRACRtDgv7hhNTx8Zu1NRO6OjTPlonEF2f0coz3Dtf5caXZWMq ZA1I5sTBzkpXBEgZ2NCjkSIcIqQKuU3YLUPRSfq9BTyjQntOrwFd9EeLkOxU0BLzsW8gQjoMe1Si hZq/+kfS/ZTGEJQ8PG9/EyenMPlmtnyy+7PZRwASAWfXAfaQqD8vLSlOhjyWT9SWArEzLS+ZqvTo T6oji6N8qI77n9AvI3eBg0W8/Jp6fGj9KkXPGSpHBG+p/98aKUfuf0+9HLn/2JieueMp8kYFo7Bl g775R/f7591T0mTv/ZhrPCefvshO4vPr8SH++ZM529FYevHhXmleulvHN7f8B3dbunrwPRPBAAAj 60lEQVR42u3debTnd1nY8c/3t97fvXdmbiYTMgkNARJICLIlgFAQ1INUhIMQVhsWQWvaWCFWRcrR UgoKajwYSkE5rJFUKGWx2FSQVUTSw2ERhDQkSIBksk9muetv+/YP9I96jud8nvS5505mXq+/nzz5 3t9d5n1/f9ynadu2AABk6ez0AwAAxxdxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCk EhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCk EhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCk EhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx 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 70lfjOw+aXOzF5lfa0Yfq539/J1/d2lk9+vb9tq7+RLtqI8sP/Blkfmzt7beWDu7WLZCv3D259PQ s3cD/9yMu7GjaLf3N6of5ouTzQsjuy+ZtB8NPQzeuQAAcokLACCVuAAAUokLACCVuAAAUokLACCV uAAAUokLACCVuAAAUokLACCVuAAAUoX+zj8cT3646Q4j8xcsnvGI2tm3rN1w9U5/fHdXZ2u8UDu7 tLYW+hly2sZWE3qWfv8nq3evnP3lyO73dPddVjv7F/M7fyey+71tux6Zj3jG6rfeFJn/+EkPqP4c 7Z/Mfy+ye3E8D/2C2gvcFjk8jP3z9I3p0VfUzroVsv28cwEApBIXAEAqcQEApBIXAEAqcQEApBIX AEAqcQEApBIXAEAqcQEApBIXAEAqcQEApGraNvDH3uE4cnGz8i8i8z9+6hl/Vjv7tVuv/9HI7t9q Nz6/06/HPzi/abq1s6/cc8q3I7vPWt04MzI/KvXnX2ZN7BbFar9+frXfuz6y+++OrF0amb+63HFV 7ey7gj+0X9o01fdcXnyfB/xqZPf0eze+ITK/a3l39bPcMOi+JrL7rQcP/Kfa2U/7h2/beecCAEgl LgCAVOICAEglLgCAVOICAEglLgCAVOICAEglLgCAVOICAEglLgCAVOICAEglLgCAVLFLP3AcWS7j UFyfvLle/f3yuJXT3hrZ/Zym+eHI/AfadmO7Xpcvt+2sdvbtoz0fjOzuD4b/LjLfHVffuSq9eewW VW9c/WGWpWl7dmT3qct7PhqZ37vWfqh29tKm+ZXI7ne27XdrZy9pmssiu89bWqk+cldKKZMy3qyd /czBuy6P7HaM7NjinQsAIJW4AABSiQsAIJW4AABSiQsAIJW4AABSiQsAIJW4AABSiQsAIJW4AABS iQsAIFXjz7Fzorq0WXhKZP7pu+51Ve3s4jx0cqFcM5++NjL/kvXv/4dtfXEqvaFpHh2Zf/ri6f87 Mt+f1P986kZ/lLX1p5Xm9SdOSimlzDrz0PzmoP5/cEtnejSy+wtHbq3+2vpCad8U2f2xtt2KvTKc KLxzAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkqv/j+nDc id1/aOfj6tlR4G5FKaWc3Ru+IjL/i03z32tn/0vbfu1uvTwVbi7ly5H5w217fWR+qWnPrp0dxj6d pTvbvrtKTS/2ME1bf1tk1GmWI7tPOfm0J9bOrh6644rgh3rr3Xh5OAF45wIASCUuAIBU4gIASCUu AIBU4gIASCUuAIBU4gIASCUuAIBU4gIASCUuAIBU4gIASOW2CCesTvC2SOnOqkfnW5uh1UvT6TAy //Q9Z/5R7ezPNM0TIrv/pG0ntbOXt+00svv9w1M+GJm/12T267WzK20/srqMuoPq2X6vfraUUu7a uis0vzbsf7t29q8PHXhVZPdny/wDtbOfb9vtO7jCCcU7FwBAKnEBAKQSFwBAKnEBAKQSFwBAKnEB AKQSFwBAKnEBAKQSFwBAKnEBAKQSFwBAKnEBAKRyuIwTWOxwWdupP1zWKaF7XqU/G4fmV8blMbWz P9bd9fLgC3NZcL7a18Z3vj8y//jlU19RO7vZ9prI7kPd+tmtXvlGZPfNpX95ZP5zazdeUTv7zrbd iuz+jcgwJPHOBQCQSlwAAKnEBQCQSlwAAKnEBQCQSlwAAKnEBQCQSlwAAKnEBQCQSlwAAKnEBQCQ ym0RTmBtbLypvxfSLbFbIf3goywGTpfcf3nx1ZHdr2iaP62d/d22vS6y++rSfjUyf/7S4Ora2fX1 jWsjuz935MY/rp39ail/Gdn9mbYNHZd5SWQY7gG8cwEApBIXAEAqcQEApBIXAEAqcQEApBIXAEAq cQEApBIXAEAqcQEApBIXAEAqcQEApHJbhBPW4c4wNH/baLl6dtYMQrv709i34mavt1E7e0tnfkvo Wfaf9tOB8csiuz/ZtqErKs9smsfVzn44uPtZkWEgxDsXAEAqcQEApBIXAEAqcQEApBIXAEAqcQEA pBIXAEAqcQEApBIXAEAqcQEApBIXAEAqcQEApGqCt37guPGjg5W9kfldk/E5tbODMl+PPU33zsj0 ZqccrJ39u/l69ZGzUkq5xg8F4P+Tdy4AgFTiAgBIJS4AgFTiAgBIJS4AgFTiAgBIJS4AgFTiAgBI JS4AgFTiAgBIJS4AgFRuiwAAqbxzAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCk EhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCk EhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcA QCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpxAQCkEhcAQCpx AQCkEhcAQCpxAQCkEhcAQKr/C+5bL7t2MqHQAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI1LTA4LTE4 VDEyOjQ5OjM5KzAwOjAwEImW/gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNS0wOC0xOFQxMjo0OToz OSswMDowMGHULkIAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjUtMDgtMThUMTI6NDk6MzkrMDA6 MDA2wQ+dAAAAAElFTkSuQmCC\"\u003e\u003c/image\u003e\u003c/svg\u003e\t\t\t\t\u003c/span\u003e\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-content\"\u003e\n\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\u003cp class=\"elementor-icon-box-description\"\u003e\n\t\t\t\t\t\tبرند: DZ LASER\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-127a02c elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"127a02c\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"divider.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-divider\"\u003e\n\t\t\t\u003cspan class=\"elementor-divider-separator\"\u003e\n\t\t\t\t\t\t\u003c/span\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-e6f356a elementor-position-inline-start elementor-view-default elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"e6f356a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-wrapper\"\u003e\n\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-icon\"\u003e\n\t\t\t\t\u003cspan  class=\"elementor-icon\"\u003e\n\t\t\t\t\u003csvg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"Layer_1\" data-name=\"Layer 1\" viewBox=\"0 0 313 313\"\u003e\u003cimage width=\"313\" height=\"313\" xlink:href=\"data:image/png;base64,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aX8vse38yUtO60XaX7dP+nUWU571d1QhuXhpk5zdCfF9t1h03K171QySa5OcrZd7nFLx8X1/ZxuSixckh+SQHJKLGiSH5JAckosaJIfkkBySixokh+SQHJKLGiSH5JAckosaJIfkkBySixokh+SQHJKLGiSH5JAckosaJIfkkBySixokh+SQHJKLGiSH5JAckosaJIfkkBySixokh+SQHJKLGiSH5JAckouaNsnZu14huTRAckguepAckkNySC5q2iRnrwy7p9FofGGhyPM3rFq1qraR7/kEVwaepU1yWi9SR09KbuqQG+sc7d/+/WORXLy0SU6j90AYHx+fmZycjDLawVd5t9ZDcgejlwbXetLn8tG+otHnJiYmahtte70nb/47I7l4KZRcikFyB6MSiDn6HZFcOiA5GyR3ML4UYot+RySXDsOjo6NPLfYO6jFGO/3IyIgeOrNX/m6atGhK2+/V72+8Ook5+h3zktPvL3lK5kdydQMRsU0lpxucU41uf5R6eK9fMYlwvu5p1O1wWfz6iS3Zd8y+rx5RIPLb5lcMxMUWyaWSD9tckVAuMvxMOVJymZlr+w9J/kRyZeTJt/8bDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA34f+iEWDajardAAAAAAElFTkSuQmCC\"\u003e\u003c/image\u003e\u003c/svg\u003e\t\t\t\t\u003c/span\u003e\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-content\"\u003e\n\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\u003cp class=\"elementor-icon-box-description\"\u003e\n\t\t\t\t\t\tمدل دستگاه: استاندارد - تک میز\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-cc7a667 elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"cc7a667\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"divider.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-divider\"\u003e\n\t\t\t\u003cspan class=\"elementor-divider-separator\"\u003e\n\t\t\t\t\t\t\u003c/span\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-7643eab elementor-position-inline-start elementor-view-default elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"7643eab\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-wrapper\"\u003e\n\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-icon\"\u003e\n\t\t\t\t\u003cspan  class=\"elementor-icon\"\u003e\n\t\t\t\t\u003csvg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"Layer_1\" x=\"0px\" y=\"0px\" width=\"300px\" height=\"300px\" viewBox=\"0 0 300 300\" xml:space=\"preserve\"\u003e  \u003cimage id=\"image0\" width=\"300\" height=\"300\" x=\"0\" y=\"0\" xlink:href=\"data:image/png;base64,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 MDowMCDwzdQAAAAASUVORK5CYII=\"\u003e\u003c/image\u003e\u003c/svg\u003e\t\t\t\t\u003c/span\u003e\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-content\"\u003e\n\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\u003cp class=\"elementor-icon-box-description\"\u003e\n\t\t\t\t\t\tگارانتی: 12 ماه\t\t\t\t\t\u003c/p\u003e\n\t\t\t\t\n\t\t\t\u003c/div\u003e\n\t\t\t\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-6b3b59a elementor-widget-divider--view-line elementor-widget elementor-widget-divider\" data-id=\"6b3b59a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"divider.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-divider\"\u003e\n\t\t\t\u003cspan class=\"elementor-divider-separator\"\u003e\n\t\t\t\t\t\t\u003c/span\u003e\n\t\t\u003c/div\u003e\n\t\t\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003c/div\u003e\n\t\t\t\t\u003cdiv class=\"elementor-element elementor-element-46487eb elementor-position-inline-start elementor-view-default elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box\" data-id=\"46487eb\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"icon-box.default\"\u003e\n\t\t\t\t\u003cdiv class=\"elementor-widget-container\"\u003e\n\t\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-wrapper\"\u003e\n\n\t\t\t\t\t\t\u003cdiv class=\"elementor-icon-box-icon\"\u003e\n\t\t\t\t\u003cspan  class=\"elementor-icon\"\u003e\n\t\t\t\t\u003csvg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"Layer_1\" data-name=\"Layer 1\" viewBox=\"0 0 133 125\"\u003e\u003cimage width=\"300\" height=\"300\" transform=\"scale(.44 .42)\" xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADnCAYAAAB8DJiVAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAGj2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDUgNzkuMTY0NTkwLCAyMDIwLzEyLzA5LTExOjU3OjQ0ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDI1LTA4LTE4VDE2OjIxOjM0KzAzOjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyNS0wOC0xOFQxNjozOTozOSswMzozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNS0wOC0xOFQxNjozOTozOSswMzozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MDAwNDI5Zi03YWU0LTk3NGYtODQ3ZC04OTdlOWMzMjY4N2EiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozOTlhZTZhOC1hMWUxLTFlNDQtYTZhYS0xZTEwMjU0ZTI3ODciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplMTE3OGU0Ni0wM2U1LTdiNDMtYjc5OS03Y2YzMmRhNTg5NDAiPiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT5hZG9iZTpkb2NpZDpwaG90b3Nob3A6NjVhNmE0YjAtNjU0Mi1lMTRiLThmZmEtOGQwMGE3OTQ5MmU4PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZTExNzhlNDYtMDNlNS03YjQzLWI3OTktN2NmMzJkYTU4OTQwIiBzdEV2dDp3aGVuPSIyMDI1LTA4LTE4VDE2OjIxOjM0KzAzOjMwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuMSAoV2luZG93cykiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjYwMDA0MjlmLTdhZTQtOTc0Zi04NDdkLTg5N2U5YzMyNjg3YSIgc3RFdnQ6d2hlbj0iMjAyNS0wOC0xOFQxNjozOTozOSswMzozMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjEgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjuQUvoAABLJSURBVHja7Z172E1VHsdfROkyk0tKVKbccolMk6KLUaFINY2YropKZbox9ehKaApJYTw1oauYZBQxJfXGFPvVFYmKJCrl1oVc6j3zW/P+zvOcObP3PmvvvdY+a+39/ePz9Dzh7L3XWZ+z1v6t3/qtkkwmUwIA0AMaAQAIBgAEAwBAMAAgGAAQDAAAwQCAYABAMAAABAMAggEAwQAAEAwACAYABAMAQDAAIBgAEAyNAEBKBXOqVUsTtYkWxFlEf2IkMZmYRSwg3iGWE58RXxEbiC+J9cRK4gPiLWIeMZUYT9xO/IloRzQg9kpLe0IwCFaL6EYMJeYQnxA7iYwmNhKLiYnElURLCAbBkkYdoicxhUeeTBH5jniTuINoBcEgmM00I+4n1oYVokyvbD8TM4jzIBgEs4mG/C60tcijVRAWERdAMAhmMpWIgcQmi8TKZyaPvBAMghnFMUSpxWLl8j3RD4JBMFPoTHybELlymWBbiB+CJU+wS4ndCZQry3ziQAgGwYrBFQkWK5fXiOoQDILFyZlEuWFhd53M4CAOBINgsaxvfZeS0SuXkRAMgummMqceZVLKGRAMgunk9hTLJficqAnBIJgOWhc5Yrgrh5+LHL6HYBBMOS/E0Hl3EO8SzxMjiBs5UbgLcTJzEtGROJfoS9xFPMYh9Q0x3OMeXliHYBBMGadqzG5fzDJ15wDKvhHusz7vA7uJmM5TOh2j7nQIBsFUMlOTYP00h7/Fhs6PNN17awgGwVTQgt97dHTSRzTfextiu6Z7HwfBIJgK/qrxfWY7b+vXde+Parx3kX95MASDYFGoSnyoOWhwi6Z7F51/i+Z77wXBIFgUTgqTEhWQpZqy1q+OIaL4JASDYFEYHNPa0pke1/8V75Buy7J3IjpwpFCEyg/xCZK8FcN9rzUp2x6C2SfY3JgEm8LXa8JrWw8RrxIrfHZI7+AOXsb//jZOZapCnBLjwnM7CAbBwr7DfBVTsRoR7FhCbIvY2cu5juKaGAW7GYJBsDC0S3neoSyTIBgEC0MfyCPFm6bsFYNgdgk2AvJIr4fVhWAQLCjTIY807SEYBAtCFY7OQR45ekAwCBa0nvw6iCPNAAgGwYLW3fgB4kgzAoJBsCCcEEOKlCxbeDRd7VScB7aKF5jFOWE7DalUNRGCQbAgdCtSyWpxCMN43sksDuU7ljiKo3Ri2noA18QQKVKH8UgrUqgucSrOHJtZpKntbAgGwYJwWYwhbhGtvIpopGg9qQaX8xbTtvdjXAuDYBBMmhs1d8j3eVv/UTFstxGJxM9oLoC6jK8FwSCYFEM1ibWKywTsV4RnOpGTgn…212152 tokens truncated….svg_.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1105,
+                      "date":  "2022-03-12T23:13:35",
+                      "slug":  "5-3",
+                      "title":  "5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/5.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1104,
+                      "date":  "2022-03-12T23:06:56",
+                      "slug":  "4-3",
+                      "title":  "4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/4.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1103,
+                      "date":  "2022-03-12T23:01:10",
+                      "slug":  "3-3",
+                      "title":  "3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/3.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1102,
+                      "date":  "2022-03-12T22:43:22",
+                      "slug":  "1-3",
+                      "title":  "1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1072,
+                      "date":  "2022-03-11T22:23:31",
+                      "slug":  "%d9%86%d9%85%d8%a7%db%8c%d8%b4%da%af%d8%a7%d9%87",
+                      "title":  "نمایشگاه",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/نمایشگاه.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1071,
+                      "date":  "2022-03-11T22:21:24",
+                      "slug":  "%d9%81%d8%b1%d9%88%d8%b4-2",
+                      "title":  "فروش 2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/فروش-2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1070,
+                      "date":  "2022-03-11T22:19:49",
+                      "slug":  "%d9%81%d8%b1%d9%88%d8%b4",
+                      "title":  "فروش",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/فروش.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1069,
+                      "date":  "2022-03-11T22:17:20",
+                      "slug":  "%d8%b7%d8%b1%d8%a7%d8%ad%db%8c",
+                      "title":  "طراحی",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/طراحی.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1068,
+                      "date":  "2022-03-11T22:15:10",
+                      "slug":  "%d9%86%d8%ae%d8%a8%da%af%d8%a7%d9%86",
+                      "title":  "نخبگان",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/نخبگان.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1067,
+                      "date":  "2022-03-11T22:15:05",
+                      "slug":  "%d8%a7%d8%ae%d8%aa%d8%b1%d8%a7%d8%b9",
+                      "title":  "اختراع",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/اختراع.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1066,
+                      "date":  "2022-03-11T22:14:45",
+                      "slug":  "%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87",
+                      "title":  "جشنواره",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/جشنواره.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1065,
+                      "date":  "2022-03-11T22:09:45",
+                      "slug":  "14001121000038_test_photon",
+                      "title":  "14001121000038_Test_PhotoN",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/14001121000038_Test_PhotoN.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1064,
+                      "date":  "2022-03-11T22:06:44",
+                      "slug":  "1625924636-12-4",
+                      "title":  "1625924636-12-4-",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/1625924636-12-4-.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1063,
+                      "date":  "2022-03-11T22:05:33",
+                      "slug":  "3028307",
+                      "title":  "3028307",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/3028307.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1062,
+                      "date":  "2022-03-11T22:03:10",
+                      "slug":  "ww",
+                      "title":  "WW",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/WW.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1057,
+                      "date":  "2022-03-11T21:48:45",
+                      "slug":  "photo_2022-03-11_21-48-29",
+                      "title":  "photo_2022-03-11_21-48-29",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/photo_2022-03-11_21-48-29.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1019,
+                      "date":  "2022-03-11T19:05:13",
+                      "slug":  "photo_2022-03-11_19-04-31",
+                      "title":  "photo_2022-03-11_19-04-31",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/photo_2022-03-11_19-04-31.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  1003,
+                      "date":  "2022-03-11T14:45:09",
+                      "slug":  "non-metal-marking-orange",
+                      "title":  "non metal marking orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/non-metal-marking-orange.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  999,
+                      "date":  "2022-03-11T14:39:34",
+                      "slug":  "non-metals-orange",
+                      "title":  "non metals orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/non-metals-orange.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  998,
+                      "date":  "2022-03-11T14:36:41",
+                      "slug":  "welding-icon-orange",
+                      "title":  "welding icon orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/welding-icon-orange.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  997,
+                      "date":  "2022-03-11T14:36:24",
+                      "slug":  "marking-orange-2",
+                      "title":  "marking orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/marking-orange-1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  996,
+                      "date":  "2022-03-11T14:35:49",
+                      "slug":  "marking-orange",
+                      "title":  "marking orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/marking-orange.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  995,
+                      "date":  "2022-03-11T14:35:24",
+                      "slug":  "cutting-icon-orange",
+                      "title":  "cutting icon orange",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/cutting-icon-orange.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  994,
+                      "date":  "2022-03-11T14:32:45",
+                      "slug":  "cutting-icon",
+                      "title":  "cutting icon",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/cutting-icon.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  985,
+                      "date":  "2022-03-11T14:12:14",
+                      "slug":  "3ok",
+                      "title":  "3ok",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/3ok.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  946,
+                      "date":  "2022-03-11T11:52:16",
+                      "slug":  "2ok",
+                      "title":  "2ok",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/2ok.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  928,
+                      "date":  "2022-03-11T11:28:50",
+                      "slug":  "1ok-lite",
+                      "title":  "1ok lite",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/1ok-lite.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  926,
+                      "date":  "2022-03-11T11:28:03",
+                      "slug":  "1ok",
+                      "title":  "1ok",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/1ok.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  920,
+                      "date":  "2022-03-11T10:53:44",
+                      "slug":  "whatsapp-icon-ok-2-300x300-2",
+                      "title":  "Whatsapp-icon-ok-2-300\u0026#215;300-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/Whatsapp-icon-ok-2-300x300-2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  918,
+                      "date":  "2022-03-11T10:31:45",
+                      "slug":  "logo-white1",
+                      "title":  "logo-white1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2022/03/logo-white1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  886,
+                      "date":  "2021-09-29T12:54:16",
+                      "slug":  "team-4-item-bg-2",
+                      "title":  "team-4-item-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/team-4-item-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  884,
+                      "date":  "2021-09-29T12:52:43",
+                      "slug":  "about-bg-2",
+                      "title":  "about-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/about-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  880,
+                      "date":  "2021-09-29T12:49:30",
+                      "slug":  "h4-servicebg-2",
+                      "title":  "h4-servicebg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/h4-servicebg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  876,
+                      "date":  "2021-09-29T12:48:43",
+                      "slug":  "5-2",
+                      "title":  "5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/5.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  875,
+                      "date":  "2021-09-29T12:48:40",
+                      "slug":  "4-2",
+                      "title":  "4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/4.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  874,
+                      "date":  "2021-09-29T12:48:38",
+                      "slug":  "3-2",
+                      "title":  "3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/3.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  873,
+                      "date":  "2021-09-29T12:48:36",
+                      "slug":  "2-2",
+                      "title":  "2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  872,
+                      "date":  "2021-09-29T12:48:33",
+                      "slug":  "1-2",
+                      "title":  "1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  855,
+                      "date":  "2021-09-28T12:43:09",
+                      "slug":  "pricing-bg-2",
+                      "title":  "pricing-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/pricing-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  854,
+                      "date":  "2021-09-28T12:33:03",
+                      "slug":  "h2-team-8-2",
+                      "title":  "h2-team-8",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/h2-team-8.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  853,
+                      "date":  "2021-09-28T12:32:13",
+                      "slug":  "h2-team-4-2",
+                      "title":  "h2-team-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/h2-team-4.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  852,
+                      "date":  "2021-09-28T12:31:17",
+                      "slug":  "h2-team-6-2",
+                      "title":  "h2-team-6",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/h2-team-6.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  851,
+                      "date":  "2021-09-28T12:22:48",
+                      "slug":  "home-2-project-five-1",
+                      "title":  "home-2-project-five-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-2-project-five-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  850,
+                      "date":  "2021-09-28T12:22:16",
+                      "slug":  "home-2-project-four-1",
+                      "title":  "home-2-project-four-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-2-project-four-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  849,
+                      "date":  "2021-09-28T12:21:29",
+                      "slug":  "home-2-project-three-1",
+                      "title":  "home-2-project-three-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-2-project-three-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  848,
+                      "date":  "2021-09-28T12:20:40",
+                      "slug":  "home-2-project-two-1",
+                      "title":  "home-2-project-two-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-2-project-two-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  822,
+                      "date":  "2021-09-27T15:52:25",
+                      "slug":  "home-4-project-2-2",
+                      "title":  "home-4-project-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-4-project-2.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  821,
+                      "date":  "2021-09-27T15:51:32",
+                      "slug":  "home-4-project-1-2",
+                      "title":  "home-4-project-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/home-4-project-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  820,
+                      "date":  "2021-09-27T15:49:38",
+                      "slug":  "project-4-2",
+                      "title":  "project-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/project-4.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  819,
+                      "date":  "2021-09-27T15:47:22",
+                      "slug":  "project-3-2",
+                      "title":  "project-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/project-3.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  818,
+                      "date":  "2021-09-27T15:46:01",
+                      "slug":  "project-2-2",
+                      "title":  "project-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/project-2.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  817,
+                      "date":  "2021-09-27T15:44:08",
+                      "slug":  "project-1-2",
+                      "title":  "project-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/project-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  808,
+                      "date":  "2021-09-26T02:03:23",
+                      "slug":  "banner-3",
+                      "title":  "banner",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/banner-e1632820173730.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  807,
+                      "date":  "2021-09-26T02:01:34",
+                      "slug":  "header-logo-1-3",
+                      "title":  "header-logo-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/header-logo-1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  806,
+                      "date":  "2021-09-26T02:00:14",
+                      "slug":  "footer-image-4",
+                      "title":  "footer-image",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/09/footer-image.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  797,
+                      "date":  "2021-05-11T16:16:21",
+                      "slug":  "footer-image-3",
+                      "title":  "footer-image",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2021/05/footer-image.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  734,
+                      "date":  "2020-12-31T14:29:31",
+                      "slug":  "footer-image",
+                      "title":  "footer-image",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/footer-image.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  789,
+                      "date":  "2020-12-15T23:53:16",
+                      "slug":  "image-compare-2",
+                      "title":  "image-compare-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/image-compare-2.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  788,
+                      "date":  "2020-12-15T23:53:14",
+                      "slug":  "image-compare-1",
+                      "title":  "image-compare-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/image-compare-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  787,
+                      "date":  "2020-12-14T02:04:28",
+                      "slug":  "testi-hat",
+                      "title":  "testi-hat",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/testi-hat.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  786,
+                      "date":  "2020-12-14T02:04:26",
+                      "slug":  "testi-four",
+                      "title":  "testi-four",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/testi-four.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  785,
+                      "date":  "2020-12-14T01:58:38",
+                      "slug":  "team-4-item-bg",
+                      "title":  "team-4-item-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/team-4-item-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  504,
+                      "date":  "2020-12-14T01:57:59",
+                      "slug":  "h4-teambg",
+                      "title":  "h4-teambg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-teambg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  775,
+                      "date":  "2020-12-14T01:56:45",
+                      "slug":  "h4-probg",
+                      "title":  "h4-probg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-probg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  774,
+                      "date":  "2020-12-14T01:50:10",
+                      "slug":  "h4-video",
+                      "title":  "h4-video",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-video.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  773,
+                      "date":  "2020-12-14T01:42:22",
+                      "slug":  "header-seven-logo",
+                      "title":  "header-seven-logo",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/header-seven-logo.png",
+                      "alt_text":  "induxter",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  487,
+                      "date":  "2020-12-14T01:39:12",
+                      "slug":  "home-4-project-2",
+                      "title":  "home-4-project-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-4-project-2.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  772,
+                      "date":  "2020-12-14T01:38:52",
+                      "slug":  "home-4-project-1",
+                      "title":  "home-4-project-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-4-project-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  771,
+                      "date":  "2020-12-14T01:36:22",
+                      "slug":  "h4-servicebg",
+                      "title":  "h4-servicebg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-servicebg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  770,
+                      "date":  "2020-12-14T01:35:43",
+                      "slug":  "about-bg",
+                      "title":  "about-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/about-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  769,
+                      "date":  "2020-12-14T01:35:06",
+                      "slug":  "h4-about",
+                      "title":  "h4-about",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-about.png",
+                      "alt_text":  "about",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  768,
+                      "date":  "2020-12-14T01:34:20",
+                      "slug":  "5",
+                      "title":  "5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/5.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  481,
+                      "date":  "2020-12-14T01:34:18",
+                      "slug":  "4",
+                      "title":  "4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/4.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  767,
+                      "date":  "2020-12-14T01:34:17",
+                      "slug":  "3",
+                      "title":  "3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/3.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  479,
+                      "date":  "2020-12-14T01:34:16",
+                      "slug":  "2",
+                      "title":  "2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  478,
+                      "date":  "2020-12-14T01:34:14",
+                      "slug":  "1",
+                      "title":  "1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  766,
+                      "date":  "2020-12-14T01:31:57",
+                      "slug":  "h4-s3-m3",
+                      "title":  "h4-s3-m3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s3-m3.png",
+                      "alt_text":  "Man Three",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  764,
+                      "date":  "2020-12-14T01:31:53",
+                      "slug":  "h4-s2-m2",
+                      "title":  "h4-s2-m2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s2-m2.png",
+                      "alt_text":  "Man Two",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  763,
+                      "date":  "2020-12-14T01:31:50",
+                      "slug":  "h4-s1-m1",
+                      "title":  "h4-s1-m1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s1-m1.png",
+                      "alt_text":  "man One",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  474,
+                      "date":  "2020-12-14T01:30:59",
+                      "slug":  "h4-s3",
+                      "title":  "h4-s3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s3-e1632743872111.jpg",
+                      "alt_text":  "Image Three",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  762,
+                      "date":  "2020-12-14T01:30:57",
+                      "slug":  "h4-s2",
+                      "title":  "h4-s2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s2-e1632743611960.jpg",
+                      "alt_text":  "Image 2",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  471,
+                      "date":  "2020-12-14T01:30:54",
+                      "slug":  "h4-s1",
+                      "title":  "h4-s1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/h4-s1-e1632743455184.jpg",
+                      "alt_text":  "Image 1",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  761,
+                      "date":  "2020-12-14T01:29:02",
+                      "slug":  "placeholder-png-2",
+                      "title":  "placeholder.png",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/placeholder.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  760,
+                      "date":  "2020-12-14T01:29:01",
+                      "slug":  "pricing-bg-png",
+                      "title":  "pricing-bg.png",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/pricing-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  466,
+                      "date":  "2020-12-14T01:28:59",
+                      "slug":  "home-2-project-five-1-jpg",
+                      "title":  "home-2-project-five-1.jpg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-2-project-five-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  759,
+                      "date":  "2020-12-14T01:28:58",
+                      "slug":  "home-2-project-four-1-jpg",
+                      "title":  "home-2-project-four-1.jpg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-2-project-four-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  758,
+                      "date":  "2020-12-14T01:28:57",
+                      "slug":  "home-2-project-three-1-jpg",
+                      "title":  "home-2-project-three-1.jpg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-2-project-three-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  765,
+                      "date":  "2020-12-14T01:28:56",
+                      "slug":  "home-2-project-two-1-jpg",
+                      "title":  "home-2-project-two-1.jpg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-2-project-two-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  462,
+                      "date":  "2020-12-14T01:28:55",
+                      "slug":  "home-2-project-one-1-jpg",
+                      "title":  "home-2-project-one-1.jpg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/home-2-project-one-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  757,
+                      "date":  "2020-12-14T01:28:53",
+                      "slug":  "sign-png",
+                      "title":  "sign.png",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/12/sign.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  756,
+                      "date":  "2020-10-17T23:31:18",
+                      "slug":  "footer-image-2",
+                      "title":  "footer-image",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/10/footer-image.png",
+                      "alt_text":  "footer image",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  720,
+                      "date":  "2020-08-25T12:19:57",
+                      "slug":  "header-logo-3-2",
+                      "title":  "header-logo-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/header-logo-3.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  711,
+                      "date":  "2020-08-25T11:09:35",
+                      "slug":  "header-logo-2-2",
+                      "title":  "header-logo-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/header-logo-2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  706,
+                      "date":  "2020-08-11T14:30:50",
+                      "slug":  "sign-2",
+                      "title":  "sign",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/sign.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  693,
+                      "date":  "2020-08-11T11:04:43",
+                      "slug":  "header-logo-1-2",
+                      "title":  "header-logo-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/header-logo-1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  692,
+                      "date":  "2020-08-11T11:04:10",
+                      "slug":  "preloader-2",
+                      "title":  "preloader",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/preloader.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  549,
+                      "date":  "2020-08-04T14:49:14",
+                      "slug":  "banner-2",
+                      "title":  "banner",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/banner.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  526,
+                      "date":  "2020-08-04T11:22:46",
+                      "slug":  "home-3-about1111",
+                      "title":  "home-3-about1111",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-3-about1111.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  519,
+                      "date":  "2020-08-04T08:41:58",
+                      "slug":  "home-3-slider-3333",
+                      "title":  "home-3-slider-3333",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-3-slider-3333.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  518,
+                      "date":  "2020-08-04T08:37:13",
+                      "slug":  "home-3-slider-2222",
+                      "title":  "home-3-slider-2222",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-3-slider-2222.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  516,
+                      "date":  "2020-08-04T08:33:01",
+                      "slug":  "home-3-slider-1111",
+                      "title":  "home-3-slider-1111",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-3-slider-1111.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  490,
+                      "date":  "2020-08-03T12:11:40",
+                      "slug":  "home-2-slider-3333",
+                      "title":  "home-2-slider-3333",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-2-slider-3333.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  489,
+                      "date":  "2020-08-03T12:08:19",
+                      "slug":  "home-2-slider-2222",
+                      "title":  "home-2-slider-2222",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-2-slider-2222.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  488,
+                      "date":  "2020-08-03T12:04:50",
+                      "slug":  "home-2-slider-1111",
+                      "title":  "home-2-slider-1111",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-2-slider-1111.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  485,
+                      "date":  "2020-08-03T10:58:23",
+                      "slug":  "home-one-pjoject-bg1",
+                      "title":  "home-one-pjoject-bg1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-one-pjoject-bg1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  483,
+                      "date":  "2020-08-03T10:56:24",
+                      "slug":  "home-one-slider-3333",
+                      "title":  "home-one-slider-3333",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-one-slider-3333.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  482,
+                      "date":  "2020-08-03T10:54:44",
+                      "slug":  "home-one-slider-2222",
+                      "title":  "home-one-slider-2222",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-one-slider-2222.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  480,
+                      "date":  "2020-08-03T10:48:08",
+                      "slug":  "home-one-slider-1111",
+                      "title":  "home-one-slider-1111",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/08/home-one-slider-1111.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  472,
+                      "date":  "2020-07-30T12:46:47",
+                      "slug":  "home-one-testimonial-image1",
+                      "title":  "home-one-testimonial-image1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/07/home-one-testimonial-image1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  6,
+                      "date":  "2020-07-27T09:11:51",
+                      "slug":  "woocommerce-placeholder",
+                      "title":  "woocommerce-placeholder",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/woocommerce-placeholder.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  429,
+                      "date":  "2020-07-03T01:37:07",
+                      "slug":  "woocommerce-placeholder-2",
+                      "title":  "woocommerce-placeholder",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/07/woocommerce-placeholder.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  423,
+                      "date":  "2020-06-18T12:17:31",
+                      "slug":  "err0r-404-bg",
+                      "title":  "err0r-404-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/err0r-404-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  392,
+                      "date":  "2020-06-18T11:06:40",
+                      "slug":  "marker",
+                      "title":  "marker",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/marker.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  357,
+                      "date":  "2020-06-18T04:30:04",
+                      "slug":  "pricing-bg",
+                      "title":  "pricing-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/pricing-bg.png",
+                      "alt_text":  "pricebg",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  341,
+                      "date":  "2020-06-17T22:39:27",
+                      "slug":  "contact-info-bg",
+                      "title":  "contact-info-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/contact-info-bg.png",
+                      "alt_text":  "contact-info",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  339,
+                      "date":  "2020-06-17T22:36:23",
+                      "slug":  "blog-2-bg",
+                      "title":  "blog-2-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-2-bg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  336,
+                      "date":  "2020-06-17T22:31:48",
+                      "slug":  "home-3-team-4",
+                      "title":  "home-3-team-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-team-4.jpg",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  335,
+                      "date":  "2020-06-17T22:31:47",
+                      "slug":  "home-3-team-3",
+                      "title":  "home-3-team-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-team-3.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  334,
+                      "date":  "2020-06-17T22:31:46",
+                      "slug":  "home-3-team-2",
+                      "title":  "home-3-team-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-team-2.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  333,
+                      "date":  "2020-06-17T22:31:45",
+                      "slug":  "home-3-team-1",
+                      "title":  "home-3-team-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-team-1.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  331,
+                      "date":  "2020-06-17T22:15:43",
+                      "slug":  "home-3-about",
+                      "title":  "home-3-about",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-about.png",
+                      "alt_text":  "about",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  330,
+                      "date":  "2020-06-17T22:15:24",
+                      "slug":  "home-3-about-bg",
+                      "title":  "home-3-about-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-about-bg.jpg",
+                      "alt_text":  "bg img",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  327,
+                      "date":  "2020-06-17T22:12:06",
+                      "slug":  "home-3-slider-3",
+                      "title":  "home-3-slider-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-slider-3.jpg",
+                      "alt_text":  "slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  326,
+                      "date":  "2020-06-17T22:12:04",
+                      "slug":  "home-3-slider-2",
+                      "title":  "home-3-slider-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-slider-2.jpg",
+                      "alt_text":  "slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  325,
+                      "date":  "2020-06-17T22:12:03",
+                      "slug":  "home-3-slider-1",
+                      "title":  "home-3-slider-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-3-slider-1.jpg",
+                      "alt_text":  "slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  318,
+                      "date":  "2020-06-17T21:55:06",
+                      "slug":  "h2-award-6",
+                      "title":  "h2-award-6",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-award-6.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  317,
+                      "date":  "2020-06-17T21:55:05",
+                      "slug":  "h2-award-3",
+                      "title":  "h2-award-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-award-3.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  316,
+                      "date":  "2020-06-17T21:55:04",
+                      "slug":  "h2-award-2",
+                      "title":  "h2-award-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-award-2.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  315,
+                      "date":  "2020-06-17T21:55:03",
+                      "slug":  "h2-awaer-5",
+                      "title":  "h2-awaer-5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-awaer-5.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  314,
+                      "date":  "2020-06-17T21:55:02",
+                      "slug":  "h2-awaed-4",
+                      "title":  "h2-awaed-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-awaed-4.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  313,
+                      "date":  "2020-06-17T21:55:01",
+                      "slug":  "h2-1ward-1",
+                      "title":  "h2-1ward-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-1ward-1.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  310,
+                      "date":  "2020-06-17T21:48:16",
+                      "slug":  "h2-team-8",
+                      "title":  "h2-team-8",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-8.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  309,
+                      "date":  "2020-06-17T21:48:15",
+                      "slug":  "h2-team-7",
+                      "title":  "h2-team-7",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-7.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  308,
+                      "date":  "2020-06-17T21:48:15",
+                      "slug":  "h2-team-6",
+                      "title":  "h2-team-6",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-6.jpg",
+                      "alt_text":  "iamge",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  307,
+                      "date":  "2020-06-17T21:48:14",
+                      "slug":  "h2-team-5",
+                      "title":  "h2-team-5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-5.jpg",
+                      "alt_text":  "team",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  306,
+                      "date":  "2020-06-17T21:48:13",
+                      "slug":  "h2-team-4",
+                      "title":  "h2-team-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-4.png",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  305,
+                      "date":  "2020-06-17T21:48:12",
+                      "slug":  "h2-team-3",
+                      "title":  "h2-team-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-3.png",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  304,
+                      "date":  "2020-06-17T21:48:12",
+                      "slug":  "h2-team-2",
+                      "title":  "h2-team-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-2.png",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  303,
+                      "date":  "2020-06-17T21:48:11",
+                      "slug":  "h2-team-1",
+                      "title":  "h2-team-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-1.png",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  302,
+                      "date":  "2020-06-17T21:46:50",
+                      "slug":  "h2-team-bg",
+                      "title":  "h2-team-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-team-bg.png",
+                      "alt_text":  "teambg",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  299,
+                      "date":  "2020-06-17T21:41:55",
+                      "slug":  "home-2-project-two-2",
+                      "title":  "home-2-project-two",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-two-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  298,
+                      "date":  "2020-06-17T21:41:54",
+                      "slug":  "home-2-project-twelve-2",
+                      "title":  "home-2-project-twelve",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-twelve-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  297,
+                      "date":  "2020-06-17T21:41:53",
+                      "slug":  "home-2-project-three-2",
+                      "title":  "home-2-project-three",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-three-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  296,
+                      "date":  "2020-06-17T21:41:52",
+                      "slug":  "home-2-project-ten-2",
+                      "title":  "home-2-project-ten",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-ten-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  295,
+                      "date":  "2020-06-17T21:41:52",
+                      "slug":  "home-2-project-six-2",
+                      "title":  "home-2-project-six",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-six-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  294,
+                      "date":  "2020-06-17T21:41:51",
+                      "slug":  "home-2-project-seven-2",
+                      "title":  "home-2-project-seven",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-seven-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  293,
+                      "date":  "2020-06-17T21:41:50",
+                      "slug":  "home-2-project-one-2",
+                      "title":  "home-2-project-one",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-one-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  292,
+                      "date":  "2020-06-17T21:41:49",
+                      "slug":  "home-2-project-nine-2",
+                      "title":  "home-2-project-nine",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-nine-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  291,
+                      "date":  "2020-06-17T21:41:49",
+                      "slug":  "home-2-project-four-2",
+                      "title":  "home-2-project-four",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-four-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  290,
+                      "date":  "2020-06-17T21:41:48",
+                      "slug":  "home-2-project-five-2",
+                      "title":  "home-2-project-five",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-five-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  289,
+                      "date":  "2020-06-17T21:41:47",
+                      "slug":  "home-2-project-eleven-2",
+                      "title":  "home-2-project-eleven",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-eleven-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  288,
+                      "date":  "2020-06-17T21:41:46",
+                      "slug":  "home-2-project-eight-2",
+                      "title":  "home-2-project-eight",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-project-eight-1.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  287,
+                      "date":  "2020-06-17T21:40:00",
+                      "slug":  "home-2-award-bg",
+                      "title":  "home-2-award-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-award-bg.png",
+                      "alt_text":  "award bg",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  286,
+                      "date":  "2020-06-17T21:36:47",
+                      "slug":  "home-2-about",
+                      "title":  "home-2-about",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-about.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  285,
+                      "date":  "2020-06-17T21:35:55",
+                      "slug":  "h2-about-bg",
+                      "title":  "h2-about-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/h2-about-bg.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  283,
+                      "date":  "2020-06-17T21:33:22",
+                      "slug":  "home-2-slider-3",
+                      "title":  "home-2-slider-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-slider-3.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  282,
+                      "date":  "2020-06-17T21:33:20",
+                      "slug":  "home-2-slider-2",
+                      "title":  "home-2-slider-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-slider-2.jpg",
+                      "alt_text":  "slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  281,
+                      "date":  "2020-06-17T21:33:19",
+                      "slug":  "home-2-slider-1",
+                      "title":  "home-2-slider-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-2-slider-1.jpg",
+                      "alt_text":  "slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  273,
+                      "date":  "2020-06-17T21:24:29",
+                      "slug":  "home-one-award-two",
+                      "title":  "home-one-award-two",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-two.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  271,
+                      "date":  "2020-06-17T21:24:28",
+                      "slug":  "home-one-award-six",
+                      "title":  "home-one-award-six",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-six.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  272,
+                      "date":  "2020-06-17T21:24:28",
+                      "slug":  "home-one-award-three",
+                      "title":  "home-one-award-three",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-three.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  270,
+                      "date":  "2020-06-17T21:24:27",
+                      "slug":  "home-one-award-one",
+                      "title":  "home-one-award-one",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-one.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  269,
+                      "date":  "2020-06-17T21:24:26",
+                      "slug":  "home-one-award-four",
+                      "title":  "home-one-award-four",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-four.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  268,
+                      "date":  "2020-06-17T21:24:26",
+                      "slug":  "home-one-award-five",
+                      "title":  "home-one-award-five",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-award-five.png",
+                      "alt_text":  "award",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  267,
+                      "date":  "2020-06-17T21:23:03",
+                      "slug":  "home-one-testimonial-image",
+                      "title":  "home-one-testimonial-image",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-testimonial-image.png",
+                      "alt_text":  "testimonial",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  266,
+                      "date":  "2020-06-17T21:21:11",
+                      "slug":  "team-member-3",
+                      "title":  "team-member-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/team-member-3.jpg",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  265,
+                      "date":  "2020-06-17T21:21:08",
+                      "slug":  "team-member-2",
+                      "title":  "team-member-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/team-member-2.jpg",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  264,
+                      "date":  "2020-06-17T21:21:06",
+                      "slug":  "team-member-1",
+                      "title":  "team-member-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/team-member-1.jpg",
+                      "alt_text":  "member",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  262,
+                      "date":  "2020-06-17T21:16:13",
+                      "slug":  "home-one-pjoject-bg",
+                      "title":  "home-one-pjoject-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-pjoject-bg.jpg",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  261,
+                      "date":  "2020-06-17T21:15:12",
+                      "slug":  "project-4",
+                      "title":  "project-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/project-4.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  260,
+                      "date":  "2020-06-17T21:15:11",
+                      "slug":  "project-3",
+                      "title":  "project-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/project-3.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  259,
+                      "date":  "2020-06-17T21:15:10",
+                      "slug":  "project-2",
+                      "title":  "project-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/project-2.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  258,
+                      "date":  "2020-06-17T21:15:10",
+                      "slug":  "project-1",
+                      "title":  "project-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/project-1.jpg",
+                      "alt_text":  "project",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  257,
+                      "date":  "2020-06-17T21:13:02",
+                      "slug":  "home-one-service-bg",
+                      "title":  "home-one-service-bg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-service-bg.jpg",
+                      "alt_text":  "srvicebg",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  255,
+                      "date":  "2020-06-17T21:10:27",
+                      "slug":  "service-three",
+                      "title":  "service-three",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/service-three.jpg",
+                      "alt_text":  "service three",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  256,
+                      "date":  "2020-06-17T21:10:27",
+                      "slug":  "service-two-2",
+                      "title":  "service-two",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/service-two.jpg",
+                      "alt_text":  "service two",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  254,
+                      "date":  "2020-06-17T21:10:26",
+                      "slug":  "service-one-2",
+                      "title":  "service-one",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/service-one.jpg",
+                      "alt_text":  "service-one",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  253,
+                      "date":  "2020-06-17T21:10:25",
+                      "slug":  "service-four",
+                      "title":  "service-four",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/service-four.jpg",
+                      "alt_text":  "image",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  251,
+                      "date":  "2020-06-17T21:09:05",
+                      "slug":  "sign",
+                      "title":  "sign",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/sign.png",
+                      "alt_text":  "sign",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  250,
+                      "date":  "2020-06-17T21:08:38",
+                      "slug":  "left-image-one",
+                      "title":  "left-image-one",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/left-image-one.jpg",
+                      "alt_text":  "left image",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  157,
+                      "date":  "2020-06-17T11:57:08",
+                      "slug":  "home-one-slider-3",
+                      "title":  "home-one-slider-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-slider-3.jpg",
+                      "alt_text":  "home slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  156,
+                      "date":  "2020-06-17T11:57:07",
+                      "slug":  "home-one-slider-2",
+                      "title":  "home-one-slider-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-slider-2.jpg",
+                      "alt_text":  "home slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  155,
+                      "date":  "2020-06-17T11:57:05",
+                      "slug":  "home-one-slider-1",
+                      "title":  "home-one-slider-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/home-one-slider-1.jpg",
+                      "alt_text":  "home slider",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  152,
+                      "date":  "2020-06-17T11:56:07",
+                      "slug":  "placeholder-png",
+                      "title":  "placeholder.png",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/placeholder.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  144,
+                      "date":  "2020-06-17T11:48:53",
+                      "slug":  "header-logo-2",
+                      "title":  "header-logo-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/header-logo-2.png",
+                      "alt_text":  "logo",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  141,
+                      "date":  "2020-06-17T11:47:37",
+                      "slug":  "header-logo-3",
+                      "title":  "header-logo-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/header-logo-3.png",
+                      "alt_text":  "logo",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  114,
+                      "date":  "2020-06-17T11:35:58",
+                      "slug":  "footer-logo-1",
+                      "title":  "footer-logo-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/footer-logo-1.png",
+                      "alt_text":  "footer logo",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  112,
+                      "date":  "2020-06-17T11:32:13",
+                      "slug":  "banner",
+                      "title":  "banner",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/banner.jpg",
+                      "alt_text":  "banner",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  111,
+                      "date":  "2020-06-17T11:29:09",
+                      "slug":  "header-logo-1",
+                      "title":  "header-logo-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/header-logo-1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  110,
+                      "date":  "2020-06-17T11:27:41",
+                      "slug":  "preloader",
+                      "title":  "preloader",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/preloader.png",
+                      "alt_text":  "preloader",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  85,
+                      "date":  "2020-06-17T04:53:06",
+                      "slug":  "ctabg",
+                      "title":  "ctabg",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/ctabg.png",
+                      "alt_text":  "ctabg",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  80,
+                      "date":  "2020-06-17T04:39:38",
+                      "slug":  "blog-details",
+                      "title":  "blog-details",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-details.jpg",
+                      "alt_text":  "blog details",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  78,
+                      "date":  "2020-06-17T04:37:59",
+                      "slug":  "blog-7",
+                      "title":  "blog-7",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-7.jpg",
+                      "alt_text":  "blog 7",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  77,
+                      "date":  "2020-06-17T04:37:58",
+                      "slug":  "blog-6",
+                      "title":  "blog-6",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-6.jpg",
+                      "alt_text":  "blog-7",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  76,
+                      "date":  "2020-06-17T04:37:56",
+                      "slug":  "blog-5",
+                      "title":  "blog-5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-5.jpg",
+                      "alt_text":  "blog",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  75,
+                      "date":  "2020-06-17T04:37:55",
+                      "slug":  "blog-4",
+                      "title":  "blog-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-4.jpg",
+                      "alt_text":  "blog",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  74,
+                      "date":  "2020-06-17T04:37:54",
+                      "slug":  "blog-3",
+                      "title":  "blog-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-3.jpg",
+                      "alt_text":  "blog",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  73,
+                      "date":  "2020-06-17T04:37:52",
+                      "slug":  "blog-2",
+                      "title":  "blog-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-2.jpg",
+                      "alt_text":  "blog",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  72,
+                      "date":  "2020-06-17T04:37:51",
+                      "slug":  "blog-1",
+                      "title":  "blog-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/blog-1.jpg",
+                      "alt_text":  "blog",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  69,
+                      "date":  "2020-06-16T14:03:31",
+                      "slug":  "product-8",
+                      "title":  "product-8",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-8.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  68,
+                      "date":  "2020-06-16T14:03:28",
+                      "slug":  "product-7",
+                      "title":  "product-7",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-7.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  67,
+                      "date":  "2020-06-16T14:03:26",
+                      "slug":  "product-6",
+                      "title":  "product-6",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-6.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  66,
+                      "date":  "2020-06-16T14:03:24",
+                      "slug":  "product-5",
+                      "title":  "product-5",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-5.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  65,
+                      "date":  "2020-06-16T14:03:21",
+                      "slug":  "product-4",
+                      "title":  "product-4",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-4.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  64,
+                      "date":  "2020-06-16T14:03:18",
+                      "slug":  "product-3",
+                      "title":  "product-3",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-3.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  63,
+                      "date":  "2020-06-16T14:03:15",
+                      "slug":  "product-2",
+                      "title":  "product-2",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-2.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  },
+                  {
+                      "id":  62,
+                      "date":  "2020-06-16T14:03:12",
+                      "slug":  "product-1",
+                      "title":  "product-1",
+                      "source_url":  "https://sahandlaser.com/wp-content/uploads/2020/06/product-1.png",
+                      "alt_text":  "",
+                      "caption":  ""
+                  }
+              ],
+    "homepageUploadUrls":  [
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/1280px-IPG_Photonics_logo.svg_.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/back1.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/cropped-sahandlogo-ok-180x180.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/cropped-sahandlogo-ok-192x192.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/cropped-sahandlogo-ok-270x270.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/cropped-sahandlogo-ok-32x32.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/raycus.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/raytools-ok.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/03/wavelength-opto-electronic.png",
+                               "https://sahandlaser.com/wp-content/uploads/2022/09/لوگو-شرکت-2.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/balad-logo.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/factorys.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/factorys-1024x205.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/factorys-1536x307.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/factorys-300x60.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/factorys-768x154.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/google-maps-logo.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/Laser-cleaning-machine.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/Laser-engraving-machine.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/Laser-welding-machine.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand-1024x287.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand-1536x430.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand-300x84.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand-600x168.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/logo-sahand-768x215.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/06/Single-table-laser-cutting-machine-3015-1.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/Consulting-icon-2.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/download-icon.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/Frequently-Asked-Questions-icon-2.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/guide-icon-2.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/HANLI-LOGO_preview_rev_1.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/Isfahan-University-of-Technology.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/Template-icon.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/Training-in-regulations-2.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/اطلس-پمپ-اصفهان.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/ایمن-آب.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/بالین-تک.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/پژوهشگاه-مواد-و-انرژی-تهران.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/پویا-نیستانک.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/پیستون-سازی-تبریز.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/دانشگاه-انوشیروانی.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/دانشگاه-خواجه-نصیر-الدین-طوسی.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-تولیدی-قاب-آرتا-تهران.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-تولیدی-قالب-سازان-ستاک-اصفهان_preview_rev_1.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-رعد.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-سامانه-های-نوین-افرا-شیراز.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-سایپا.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-صنایع-قطعات-الکترونیک-ایران.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-صنعت-چوب-آسیاگستر-تهران.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شرکت-کیان-الکترونیک-اصفهان.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/شهرداری-اصفهان.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/صنایع-نورا-لایه-نگار.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/فردا-موتورز-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/لاسیتک-سازی-دنا.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/07/مرکز-تحقیقات-صنعت-نفت-تهران.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/esfahan-university-logo.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400.jpg",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400-1024x533.jpg",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400-1536x800.jpg",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400-300x156.jpg",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400-768x400.jpg",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/kind-of-machiines-1-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-cutting-services-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-marking-services-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/laser-welding-servicespng-1-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Parts-sales-1-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-1024x724.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-1536x1086.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-2048x1448.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-300x212.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-768x543.png",
+                               "https://sahandlaser.com/wp-content/uploads/2025/08/Technical-service-1-scaled.png",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/css/post-448.css?ver=1791307150",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/css/post-5814.css?ver=1791307151",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/css/post-6338.css?ver=1791307151",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/css/post-978.css?ver=1791307151",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1748774018",
+                               "https://sahandlaser.com/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1748774021"
+                           ]
+}
+
