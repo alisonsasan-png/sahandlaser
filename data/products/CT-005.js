@@ -14,7 +14,7 @@ window.SAHAND_PRODUCTS["CT-005"] = {
     "tr": "Laser Cutting"
   },
   "title": {
-    "fa": "دستگاه برش لیزر فایبر تک‌میز استاندارد 6020",
+    "fa": "دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020",
     "en": "SH6020 Standard Single-Table Fiber Laser Cutting Machine",
     "ar": "SH6020 Standard Single-Table Fiber Laser Cutting Machine",
     "tr": "SH6020 Standard Single-Table Fiber Laser Cutting Machine"
@@ -26,11 +26,8 @@ window.SAHAND_PRODUCTS["CT-005"] = {
     "tr": "CNC Fiber Laser Cutting"
   },
   "images": [
-    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/reference.webp",
-    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/banner.webp",
-    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
-    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
-    "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp"
+    "products/CT-005/images/3ad250dd57c8.webp",
+    "products/CT-005/images/142e9e8087b4.webp"
   ],
   "advantages": [],
   "specs": [
@@ -130,9 +127,8 @@ window.SAHAND_PRODUCTS["CT-005"] = {
   ],
   "description": {
     "fa": [
-      "دستگاه برش لیزر فایبر ۶۰۲۰ استاندارد با یک میز باز برای فرآوری ورق‌های فلزی معرفی می‌شود. در تصاویر مرجع، بستر تیغه‌ای، پل متحرک، کالسکه هد و کنسول کنترل مستقل دیده می‌شود.",
-      "انتخاب توان سورس، هد، گاز کمکی و تجهیزات جانبی بر اساس جنس ورق، ضخامت و ظرفیت تولید انجام می‌شود؛ نتیجه برش باید با آزمون نمونه در پیکربندی انتخابی ارزیابی شود.",
-      "این محصول مستقل از مدل حرفه‌ای ۶۰۲۰ و مدل‌های روتاری است. ابعاد مفید، ابعاد نصب، وزن و مشخصات عملکردی پس از تطبیق سند همین پیکربندی اعلام می‌شوند."
+      "دستگاه برای برش دقیق ورق‌های فولادی، استنلس استیل، آلومینیوم، مس و برنج طراحی شده است.",
+      "توان سورس و تجهیزات جانبی بر اساس ضخامت، متریال و ظرفیت تولید انتخاب می‌شود."
     ],
     "en": [
       "This product is part of the Sahand Laser catalog. Final specifications depend on the selected configuration and project requirements."
@@ -147,31 +143,13 @@ window.SAHAND_PRODUCTS["CT-005"] = {
   "gallery": [],
   "media": {
     "images": [
-      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/reference.webp",
-      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/banner.webp",
-      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
-      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
-      "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp"
+      "products/CT-005/images/3ad250dd57c8.webp",
+      "products/CT-005/images/142e9e8087b4.webp"
     ],
     "frames360": [],
     "model": "products/CT-005/models/75a8ef234e5b.glb",
-    "technical": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/technical.webp",
-    "exploded": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/exploded.webp",
-    "cutaway": "https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/cutaway.webp",
-    "notes": {
-      "technical": {
-        "fa": "طرح فنی مفهومی برای معرفی محصول است و نقشه ساخت یا ابعاد قطعی دستگاه محسوب نمی‌شود.",
-        "en": "Conceptual technical illustration for product presentation; not manufacturing CAD or final dimensions."
-      },
-      "exploded": {
-        "fa": "نمای انفجاری آموزشی بر اساس تصویر مرجع محصول تهیه شده و برای تعمیر یا مونتاژ واقعی استفاده نمی‌شود.",
-        "en": "Educational exploded view based on the reference image; not intended for actual repair or assembly."
-      },
-      "cutaway": {
-        "fa": "نمای مقطع آموزشی و شماتیک است؛ اجزای داخلی برای توضیح محصول ساده‌سازی شده‌اند.",
-        "en": "Educational schematic cutaway; internal components are simplified for product explanation."
-      }
-    },
+    "technical": null,
+    "exploded": null,
     "works": [],
     "review": true,
     "modelType": "visual_web_model_not_manufacturing_cad"
@@ -277,7 +255,7 @@ window.SAHAND_PRODUCTS["CT-005"] = {
       "value": "سه‌فاز ۳۸۰ ولت"
     }
   ],
-  "review": "مدل استاندارد تک‌میز؛ مشخصات نهایی بر اساس پیکربندی سفارش تطبیق داده می‌شود. تصاویر آموزشی، نقشه ساخت یا تعمیر دستگاه نیستند.",
+  "review": "تطبیق مشخصات و رسانهٔ اختصاصی این پیکربندی هنوز در حال بررسی است.",
   "reference": {
     "source": "Sahand_Site_Import_Staging_2026-10-04.json",
     "status": "review"

@@ -1,0 +1,831 @@
+{
+  "summary": {
+    "products": 95,
+    "references": 117,
+    "counts": {
+      "missing-local-bytes": 56,
+      "local-present": 61
+    }
+  },
+  "results": [
+    {
+      "product": "CC001",
+      "field": "images[0]",
+      "path": "products/CC001/images/97685bb106e7.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CC002",
+      "field": "images[0]",
+      "path": "products/CC002/images/19f9bf692916.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CC003",
+      "field": "images[0]",
+      "path": "products/CC003/images/fb0de083e60d.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CC004",
+      "field": "images[0]",
+      "path": "products/CC004/images/562e194722fa.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CC005",
+      "field": "images[0]",
+      "path": "products/CC005/images/02402781126b.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CC006",
+      "field": "images[0]",
+      "path": "products/CC006/images/4f22f0a8bf67.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH-HANLI-12000",
+      "field": "images[0]",
+      "path": "products/CH-HANLI-12000/images/f210a55249f7.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH-HANLI-6000",
+      "field": "images[0]",
+      "path": "products/CH-HANLI-6000/images/dad63d039879.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH-S&A-12000",
+      "field": "images[0]",
+      "path": "products/CH-S&A-12000/images/c3dd5be21914.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH-S&A-20000",
+      "field": "images[0]",
+      "path": "products/CH-S&A-20000/images/b53bebd4d15a.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH-S&A-6000",
+      "field": "images[0]",
+      "path": "products/CH-S&A-6000/images/656ffbfc335c.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH002",
+      "field": "images[0]",
+      "path": "products/CH002/images/ed199abb3be5.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CH003",
+      "field": "images[0]",
+      "path": "products/CH003/images/2726aaeccaa1.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CP-CERAMIC",
+      "field": "images[0]",
+      "path": "products/CP-CERAMIC/images/997e25a96f39.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CP-RAY-BM110",
+      "field": "images[0]",
+      "path": "products/CP-RAY-BM110/images/45292c88beee.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CP-RAY-BM115",
+      "field": "images[0]",
+      "path": "products/CP-RAY-BM115/images/2afb6d4ab5b7.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CP-SMC-ITV1050",
+      "field": "images[0]",
+      "path": "products/CP-SMC-ITV1050/images/7f07a4ec2159.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CP-SMC-ITV2050",
+      "field": "images[0]",
+      "path": "products/CP-SMC-ITV2050/images/5e93a9cc608a.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-001",
+      "field": "images[0]",
+      "path": "./assets/products/CT-001/cover.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[0]",
+      "path": "./assets/products/CT-001/frame-000.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[1]",
+      "path": "./assets/products/CT-001/frame-030.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[2]",
+      "path": "./assets/products/CT-001/frame-060.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[3]",
+      "path": "./assets/products/CT-001/frame-090.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[4]",
+      "path": "./assets/products/CT-001/frame-120.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[5]",
+      "path": "./assets/products/CT-001/frame-150.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[6]",
+      "path": "./assets/products/CT-001/frame-180.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[7]",
+      "path": "./assets/products/CT-001/frame-210.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[8]",
+      "path": "./assets/products/CT-001/frame-240.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[9]",
+      "path": "./assets/products/CT-001/frame-270.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[10]",
+      "path": "./assets/products/CT-001/frame-300.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "frames360[11]",
+      "path": "./assets/products/CT-001/frame-330.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "model",
+      "path": "./assets/products/CT-001/model.glb",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "technical",
+      "path": "./assets/products/CT-001/technical.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "exploded",
+      "path": "./assets/products/CT-001/exploded.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-001",
+      "field": "viewer",
+      "path": "./assets/products/CT-001/viewer.html",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "modelPreview",
+      "path": "./assets/products/CT-001/model-preview.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "download",
+      "path": "./assets/products/CT-001/technical.pdf",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "download",
+      "path": "./assets/products/CT-001/model.glb",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-001",
+      "field": "download",
+      "path": "./assets/products/CT-001/exploded.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-002",
+      "field": "images[0]",
+      "path": "products/CT-002/images/cb1024b79293.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-002",
+      "field": "images[1]",
+      "path": "products/CT-002/images/5b61726a0747.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-002",
+      "field": "model",
+      "path": "products/CT-002/models/ec02215f28f4.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-002",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-003",
+      "field": "images[0]",
+      "path": "products/CT-003/images/537c74422c92.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-003",
+      "field": "model",
+      "path": "products/CT-003/models/098d8d35e383.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-003",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-004",
+      "field": "images[0]",
+      "path": "products/CT-004/images/988ee65c51f8.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-004",
+      "field": "model",
+      "path": "products/CT-004/models/7aa768622513.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-004",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-005",
+      "field": "images[0]",
+      "path": "products/CT-005/images/3ad250dd57c8.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-005",
+      "field": "images[1]",
+      "path": "products/CT-005/images/142e9e8087b4.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-005",
+      "field": "model",
+      "path": "products/CT-005/models/75a8ef234e5b.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-005",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-006",
+      "field": "images[0]",
+      "path": "products/CT-006/images/ba5d02af6138.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-006",
+      "field": "model",
+      "path": "products/CT-006/models/09c599e85368.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-006",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-007",
+      "field": "images[0]",
+      "path": "products/CT-007/images/7819610b58b0.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-007",
+      "field": "model",
+      "path": "products/CT-007/models/99abdf4f3251.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-007",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-008",
+      "field": "images[0]",
+      "path": "products/CT-008/images/968c775d3305.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-008",
+      "field": "model",
+      "path": "products/CT-008/models/9dd2c4a8bc79.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-008",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-009",
+      "field": "images[0]",
+      "path": "products/CT-009/images/62fb9d3529fe.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-009",
+      "field": "model",
+      "path": "products/CT-009/models/e80b3a7d83a6.glb",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-009",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-010",
+      "field": "images[0]",
+      "path": "./assets/products/CT-010/cover.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[0]",
+      "path": "./assets/products/CT-010/frame-000.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[1]",
+      "path": "./assets/products/CT-010/frame-030.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[2]",
+      "path": "./assets/products/CT-010/frame-060.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[3]",
+      "path": "./assets/products/CT-010/frame-090.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[4]",
+      "path": "./assets/products/CT-010/frame-120.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[5]",
+      "path": "./assets/products/CT-010/frame-150.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[6]",
+      "path": "./assets/products/CT-010/frame-180.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[7]",
+      "path": "./assets/products/CT-010/frame-210.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[8]",
+      "path": "./assets/products/CT-010/frame-240.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[9]",
+      "path": "./assets/products/CT-010/frame-270.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[10]",
+      "path": "./assets/products/CT-010/frame-300.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "frames360[11]",
+      "path": "./assets/products/CT-010/frame-330.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "model",
+      "path": "./assets/products/CT-010/model.glb",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "viewer",
+      "path": "./assets/products/CT-010/viewer.html",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "modelPreview",
+      "path": "./assets/products/CT-010/model-preview.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "technical",
+      "path": "./assets/products/CT-010/technical.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "exploded",
+      "path": "./assets/products/CT-010/exploded.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "modelType",
+      "path": "visual_web_model_not_manufacturing_cad",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CT-010",
+      "field": "download",
+      "path": "./assets/products/CT-010/technical.pdf",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "download",
+      "path": "./assets/products/CT-010/model.glb",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "download",
+      "path": "./assets/products/CT-010/exploded.webp",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CT-010",
+      "field": "download",
+      "path": "./assets/products/CT-010/research-fa.md",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "CTRL-FSCUT2000C",
+      "field": "images[0]",
+      "path": "products/CTRL-FSCUT2000C/images/cbcdfe389200.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CTRL-FSCUT2000E",
+      "field": "images[0]",
+      "path": "products/CTRL-FSCUT2000E/images/a153240ae74b.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "CTRL-FSCUT4000E",
+      "field": "images[0]",
+      "path": "products/CTRL-FSCUT4000E/images/db1b30bbab1b.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "FS004",
+      "field": "images[0]",
+      "path": "products/FS004/images/f5a1705bda31.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "ML-004",
+      "field": "images[0]",
+      "path": "./assets/products/ML-004/_MG_4350.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-004",
+      "field": "images[1]",
+      "path": "./assets/products/ML-004/_MG_4353.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-004",
+      "field": "images[2]",
+      "path": "./assets/products/ML-004/_MG_4354.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-004",
+      "field": "images[3]",
+      "path": "./assets/products/ML-004/_MG_4357.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-005",
+      "field": "images[0]",
+      "path": "./assets/products/ML-005/_MG_4146.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-005",
+      "field": "images[1]",
+      "path": "./assets/products/ML-005/_MG_4149.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-005",
+      "field": "images[2]",
+      "path": "./assets/products/ML-005/_MG_4150.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-005",
+      "field": "images[3]",
+      "path": "./assets/products/ML-005/_MG_4162.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-005",
+      "field": "images[4]",
+      "path": "./assets/products/ML-005/_MG_4165.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-007",
+      "field": "images[0]",
+      "path": "./assets/products/ML-007/_MG_4184.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-007",
+      "field": "images[1]",
+      "path": "./assets/products/ML-007/_MG_4171.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-007",
+      "field": "images[2]",
+      "path": "./assets/products/ML-007/_MG_4206.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-007",
+      "field": "images[3]",
+      "path": "./assets/products/ML-007/_MG_4218.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-009",
+      "field": "images[0]",
+      "path": "./assets/products/ML-009/_MG_4266.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-009",
+      "field": "images[1]",
+      "path": "./assets/products/ML-009/_MG_4239.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-009",
+      "field": "images[2]",
+      "path": "./assets/products/ML-009/_MG_4269.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-009",
+      "field": "images[3]",
+      "path": "./assets/products/ML-009/_MG_4270.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "ML-009",
+      "field": "images[4]",
+      "path": "./assets/products/ML-009/_MG_4275.jpg",
+      "override": null,
+      "status": "local-present"
+    },
+    {
+      "product": "SRC-RAY-C3000S",
+      "field": "images[0]",
+      "path": "products/SRC-RAY-C3000S/images/0f5df0385ce0.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "SRC-RAY-C6000S",
+      "field": "images[0]",
+      "path": "products/SRC-RAY-C6000S/images/9f5e9c3e7107.webp",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "site",
+      "field": "dependency",
+      "path": "vendor/fontawesome.css",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "site",
+      "field": "dependency",
+      "path": "vendor/fonts.css",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "site",
+      "field": "dependency",
+      "path": "icons/eitaa.svg",
+      "override": null,
+      "status": "missing-local-bytes"
+    },
+    {
+      "product": "site",
+      "field": "dependency",
+      "path": "icons/bale.svg",
+      "override": null,
+      "status": "missing-local-bytes"
+    }
+  ]
+}

@@ -5,7 +5,6 @@ window.SAHAND_CONFIG = {
   previewOnly: true,
   hostingStatus: 'awaiting-pouyasazan-access'
 };
-
 window.SAHAND_ASSET_OVERRIDES = Object.assign({}, window.SAHAND_ASSET_OVERRIDES, {
   'products/CT-005/images/reference.webp': 'https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/reference.webp',
   'products/CT-005/images/banner.webp': 'https://alisonsasan-png.github.io/sahandlaser/products/CT-005/images/banner.webp',

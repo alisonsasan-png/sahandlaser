@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const root=path.resolve(__dirname,'..');const context={window:{SAHAND_PRODUCTS:{}}};vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(root,'site-config.js'),'utf8'),context);
+for(const file of fs.readdirSync(path.join(root,'data/products')))if(file.endsWith('.js'))vm.runInContext(fs.readFileSync(path.join(root,'data/products',file),'utf8'),context);
+const results=[];function add(product,field,value){if(typeof value!=='string'||!value)return;const override=context.window.SAHAND_ASSET_OVERRIDES?.[value];const external=/^(https?:|data:|blob:)/.test(value);const local=value.startsWith('./');const file=local?path.resolve(root,value):path.resolve(root,context.window.SAHAND_CONFIG.assetBaseUrl,value);results.push({product,field,path:value,override:override||null,status:override||external?'remote-unverified':fs.existsSync(file)?'local-present':'missing-local-bytes'});}
+for(const p of Object.values(context.window.SAHAND_PRODUCTS)){for(const [field,value] of Object.entries(p.media||{})){if(Array.isArray(value))value.forEach((v,i)=>add(p.code,field+'['+i+']',v));else add(p.code,field,value);}for(const d of p.downloads||[])add(p.code,'download',d.path);}
+for(const f of ['vendor/fontawesome.css','vendor/fonts.css','icons/eitaa.svg','icons/bale.svg'])add('site','dependency',f);
+const summary={products:Object.keys(context.window.SAHAND_PRODUCTS).length,references:results.length,counts:results.reduce((a,r)=>(a[r.status]=(a[r.status]||0)+1,a),{})};
+fs.writeFileSync(path.join(root,'docs/asset-audit-2026-10-08.json'),JSON.stringify({summary,results},null,2)+'\n');console.log(JSON.stringify(summary));

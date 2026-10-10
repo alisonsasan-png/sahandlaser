@@ -148,14 +148,80 @@ for (const p of Object.values(products)) p.images = p.media.images.map(assetUrl)
 // ==================================================
 // [CATEGORIES]
 // ==================================================
-const catalogStructure = window.SAHAND_CATALOG;
-if (!catalogStructure) throw new Error('Catalog structure is required before runtime/app.js');
-const cats = catalogStructure.categories.map(category => ({
-  ...category,
-  pid: category.featuredProduct,
-  count: String(Object.values(products).filter(product => product.categoryId === category.id).length)
-}));
-const categoryById = new Map(cats.map(category => [category.id, category]));
+const cats = [
+  {
+    "id": "cutting",
+    "icon": "fa-scissors",
+    "bg": "gradient-brand",
+    "nameKey": "cat_cutting",
+    "descKey": "cat_cutting_desc",
+    "count": "10",
+    "pid": "CT-001"
+  },
+  {
+    "id": "welding",
+    "icon": "fa-fire-flame-curved",
+    "bg": "bg-gradient-to-br from-red-700 to-red-900",
+    "nameKey": "cat_welding",
+    "descKey": "cat_welding_desc",
+    "count": "13",
+    "pid": "WL-001"
+  },
+  {
+    "id": "marking",
+    "icon": "fa-pen-nib",
+    "bg": "bg-gradient-to-br from-slate-700 to-slate-900",
+    "nameKey": "cat_marking",
+    "descKey": "cat_marking_desc",
+    "count": "10",
+    "pid": "ML-001"
+  },
+  {
+    "id": "cleaning",
+    "icon": "fa-spray-can-sparkles",
+    "bg": "bg-gradient-to-br from-emerald-700 to-emerald-900",
+    "nameKey": "cat_cleaning",
+    "descKey": "cat_cleaning_desc",
+    "count": "5",
+    "pid": "CL-001"
+  },
+  {
+    "id": "source",
+    "icon": "fa-microchip",
+    "bg": "bg-gradient-to-br from-cyan-700 to-cyan-900",
+    "nameKey": "cat_source",
+    "descKey": "cat_source_desc",
+    "count": "12",
+    "pid": "FS001"
+  },
+  {
+    "id": "head",
+    "icon": "fa-crosshairs",
+    "bg": "bg-gradient-to-br from-violet-700 to-violet-900",
+    "nameKey": "cat_head",
+    "descKey": "cat_head_desc",
+    "count": "17",
+    "pid": "CH001"
+  },
+  {
+    "id": "parts",
+    "icon": "fa-gears",
+    "bg": "bg-gradient-to-br from-amber-700 to-amber-900",
+    "nameKey": "cat_parts",
+    "descKey": "cat_parts_desc",
+    "count": "13",
+    "pid": "CC001"
+  },
+  {
+    "id": "consumables",
+    "icon": "fa-screwdriver",
+    "bg": "bg-gradient-to-br from-pink-700 to-pink-900",
+    "nameKey": "cat_consumables",
+    "descKey": "cat_consumables_desc",
+    "count": "15",
+    "pid": "CN001"
+  }
+];
 
 const apps = [
   { id:'elevator', icon:'fa-elevator', color:'yellow', key:'app_elevator' },
@@ -249,25 +315,13 @@ const legacyProductPages = {
 };
 // Authentic product image sets recovered from the preserved V4 site build / original Sahand archive.
 function isPlaceholderImage(src){ return !src || src === PRODUCT_PLACEHOLDER || String(src).startsWith('data:image/svg+xml;base64,'); }
-// These camera exports contain sideways pixels with EXIF orientation=1.
-// Rotate only at presentation time so original photographs remain untouched.
-const SIDEWAYS_GALLERY_FILES = new Set([
-  '_MG_4350.jpg','_MG_4353.jpg','_MG_4354.jpg','_MG_4357.jpg',
-  '_MG_4146.jpg','_MG_4149.jpg','_MG_4150.jpg','_MG_4165.jpg',
-  '_MG_4171.jpg','_MG_4206.jpg','_MG_4218.jpg',
-  '_MG_4239.jpg','_MG_4266.jpg','_MG_4269.jpg','_MG_4270.jpg','_MG_4275.jpg'
-]);
-function mediaOrientationClass(src) {
-  const clean = String(src || '').split(/[?#]/)[0];
-  return SIDEWAYS_GALLERY_FILES.has(clean.substring(clean.lastIndexOf('/') + 1)) ? ' media-rotate-ccw' : '';
-}
 
-const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}},{"icon":"fa-wand-magic-sparkles","color":"orange","title":{"fa":"طراحی و ساخت دستگاه لیزر","en":"Laser Machine Design & Manufacturing","ar":"تصميم وتصنيع أجهزة الليزر","tr":"Lazer Makinesi Tasarımı ve Üretimi"},"desc":{"fa":"طراحی و ساخت سفارشی دستگاه‌های برش، جوش و مارکینگ متناسب با نیاز پروژه.","en":"Custom design and manufacturing of cutting, welding and marking systems.","ar":"تصميم وتصنيع مخصص لأنظمة القطع واللحام والوسم.","tr":"Kesim, kaynak ve markalama sistemlerinin özel tasarımı ve üretimi."}},{"icon":"fa-fire-flame-curved","color":"rose","title":{"fa":"خدمات جوش لیزر","en":"Laser Welding Service","ar":"خدمة اللحام بالليزر","tr":"Lazer Kaynak Hizmeti"},"desc":{"fa":"جوش لیزری قطعات با کنترل پارامترهای فرآیند و گاز محافظ، متناسب با جنس و کاربرد قطعه.","en":"Laser welding with process and shielding-gas control for the part and its application.","ar":"لحام بالليزر مع التحكم في العملية والغاز الواقي وفق القطعة وتطبيقها.","tr":"Parça ve uygulamaya uygun proses ve koruyucu gaz kontrollü lazer kaynağı."}}];
+const services = [{"icon":"fa-truck-fast","color":"blue","title":{"fa":"نصب و راه‌اندازی","en":"Installation & Commissioning","ar":"التركيب والتشغيل","tr":"Kurulum ve Devreye Alma"},"desc":{"fa":"نصب، کالیبراسیون، تست و تحویل دستگاه در محل پروژه.","en":"Installation, calibration, testing and commissioning.","ar":"التركيب والمعايرة والاختبار والتشغيل.","tr":"Kurulum, kalibrasyon, test ve devreye alma."}},{"icon":"fa-microchip","color":"purple","title":{"fa":"تعمیر سورس و هد لیزر","en":"Laser Source & Head Repair","ar":"إصلاح مصدر ورأس الليزر","tr":"Lazer Kaynağı ve Kafa Onarımı"},"desc":{"fa":"عیب‌یابی و تعمیر تخصصی سورس، هد و اجزای مرتبط.","en":"Specialized diagnostics and repair of laser sources and heads.","ar":"فحص وإصلاح متخصص لمصادر ورؤوس الليزر.","tr":"Lazer kaynakları ve kafalarının uzman onarımı."}},{"icon":"fa-screwdriver-wrench","color":"amber","title":{"fa":"تعمیر دستگاه لیزر","en":"Laser Machine Repair","ar":"إصلاح أجهزة الليزر","tr":"Lazer Makinesi Onarımı"},"desc":{"fa":"تعمیر و سرویس دستگاه‌های لیزر، از جمله بسیاری از دستگاه‌های عرضه‌شده توسط مجموعه‌های دیگر.","en":"Repair and service for laser machines, including many third-party supplied systems.","ar":"إصلاح وصيانة أجهزة الليزر بما فيها العديد من الأنظمة الموردة من جهات أخرى.","tr":"Diğer tedarikçilerin birçok sistemi dahil lazer makineleri için servis ve onarım."}},{"icon":"fa-graduation-cap","color":"emerald","title":{"fa":"آموزش اپراتور و فنی","en":"Operator & Technical Training","ar":"تدريب المشغل والفني","tr":"Operatör ve Teknik Eğitim"},"desc":{"fa":"آموزش اپراتوری، تنظیمات برش، نگهداری، عیب‌یابی و ایمنی.","en":"Operator training, cutting settings, maintenance, troubleshooting and safety.","ar":"تدريب التشغيل والإعدادات والصيانة واستكشاف الأعطال والسلامة.","tr":"Operatör eğitimi, kesim ayarları, bakım, arıza tespiti ve güvenlik."}},{"icon":"fa-boxes-packing","color":"pink","title":{"fa":"تأمین قطعات یدکی","en":"Spare Parts Supply","ar":"توريد قطع الغيار","tr":"Yedek Parça Tedariki"},"desc":{"fa":"تأمین سورس، هد، چیلر، نازل و قطعات مصرفی و یدکی.","en":"Supply of sources, heads, chillers, nozzles and spare/consumable parts.","ar":"توريد المصادر والرؤوس والمبردات والفوهات وقطع الغيار.","tr":"Kaynak, kafa, chiller, nozul ve yedek/sarf parça tedariği."}},{"icon":"fa-lightbulb","color":"cyan","title":{"fa":"مشاوره تخصصی","en":"Technical Consulting","ar":"استشارة فنية","tr":"Teknik Danışmanlık"},"desc":{"fa":"تحلیل نیاز، انتخاب توان، ابعاد میز، نوع هد، سورس و کانفیگ مناسب.","en":"Needs analysis and configuration selection.","ar":"تحليل الاحتياج واختيار التجهيز المناسب.","tr":"İhtiyaç analizi ve uygun konfigürasyon seçimi."}},{"icon":"fa-scissors","color":"red","title":{"fa":"خدمات برش لیزر","en":"Laser Cutting Service","ar":"خدمة القطع بالليزر","tr":"Lazer Kesim Hizmeti"},"desc":{"fa":"خدمات برش لیزر قطعات و ورق‌های فلزی بر اساس ظرفیت و برنامه تولید.","en":"Laser cutting services for metal sheets and parts.","ar":"خدمات قطع الليزر للصفائح والقطع المعدنية.","tr":"Metal sac ve parçalar için lazer kesim hizmeti."}},{"icon":"fa-pen-nib","color":"indigo","title":{"fa":"خدمات حکاکی و مارکینگ","en":"Laser Marking & Engraving Service","ar":"خدمة الوسم والحفر بالليزر","tr":"Lazer Markalama ve Gravür"},"desc":{"fa":"حکاکی و مارکینگ متن، لوگو، سریال، QR و علائم فنی روی قطعات مناسب.","en":"Marking and engraving of text, logos, serials, QR codes and technical marks.","ar":"وسم وحفر النصوص والشعارات والأرقام وQR والعلامات الفنية.","tr":"Metin, logo, seri, QR ve teknik işaret markalama/gravür hizmeti."}}];
 
 const projects = [];
 
 
-const downloadGroups = [{"id":"cypcut","title":"نرم‌افزار CypCut دستگاه برش لیزر","icon":"fa-scissors","items":[{"name":"CypCut","version":"6.3.765.10","size":"100 MB","url":"https://drive.google.com/file/d/1Sdyabvt3Gi5BCkmeU2mPs4ACNniGj-6_/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.702.8A","size":"26 MB","url":"https://drive.google.com/file/d/1tGIvsV55K227LUYmm3kA2NIBbBdm_8zh/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.712.9","size":"31 MB","url":"https://drive.google.com/file/d/1tpPdQ1sWxvqiGicOrIOVV9Sr70mKSoiQ/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.739.7","size":"37 MB","url":"https://drive.google.com/file/d/1vvem8RF3jKZH7lGRllu6LXv-q8XAcGOb/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.761.4","size":"52 MB","url":"https://drive.google.com/file/d/1TPBZGwfQdmTewdikitezxw4aMV3mqMZ8/view?usp=sharing","status":null},{"name":"CypCut","version":"6.2.436","size":"21 MB","url":"https://drive.google.com/file/d/1rAhng7bvWtSj3ltUFxY2dNi6YDhISJyX/view?usp=drive_link","status":null},{"name":"CypCut","version":"6.3.649.7","size":"22 MB","url":"https://drive.google.com/file/d/1-rY1lFGu-YDlddOEN0A6gvlmxWKnGTyE/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.658.10","size":"25 MB","url":"https://drive.google.com/file/d/1WL1ZJTt1Acm9gvJkgBO1qKa4sYVyfBWW/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.712.4","size":"27 MB","url":"https://drive.google.com/file/d/1hLTZfM2jbOK5H0xV-LW8m04Ord_Lc7gZ/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.723.3","size":"28 MB","url":"https://drive.google.com/file/d/1Bp2mRuhftNxVw6xKuvJEL_Yo9kfyxkNB/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.724.1","size":"37 MB","url":"https://drive.google.com/file/d/1qGFo3areWwmjiCNdyTEEwTIa4WS-_xYI/view?usp=sharing","status":null},{"name":"CypCut","version":"6.4.940.2","size":"24 MB","url":"https://drive.google.com/file/d/1e187Yrg-DcSVsyGKlZC2AS-K3G57CV3o/view?usp=sharing","status":null},{"name":"CypCut","version":"1.0.391.4-2","size":"20 MB","url":"https://drive.google.com/file/d/1_k2NvXg9CfnKYu6kefxvHJxZZO45nW0e/view?usp=sharing","status":null}]},{"id":"ezcad","title":"نرم‌افزار EZCad دستگاه فایبر مارکینگ","icon":"fa-pen-nib","items":[{"name":"EZCad","version":"2.5.3","size":"12 MB","url":"https://drive.google.com/file/d/1AvEGtvqdyctSc2QCg_kG6C-sR7orjlK0/view?usp=sharing"},{"name":"EZCad","version":"2.7.6","size":"2.61 MB","url":"https://drive.google.com/file/d/1pDo3K3aeGDbPnjpYnwb_wgmNlmlajnFl/view?usp=sharing"},{"name":"EZCad","version":"2.14.9","size":"4 MB","url":"https://drive.google.com/file/d/1ZvBdHScAJ8elWiPAPu6mjNBVf_UJ4kev/view?usp=sharing"},{"name":"EZCad","version":"2.14.10","size":"30 MB","url":"https://drive.google.com/file/d/1W8-rcJ8oaNnCwmZGG3sQ6fYQtvKnEmw4/view?usp=sharing"},{"name":"EZCad","version":"2.14.11","size":"2.87 MB","url":"https://drive.google.com/file/d/1K9f-Illdjm4bQs7k_yBk4u0ETkZMaINL/view?usp=sharing"},{"name":"EZCad","version":"2.14.13","size":"29 MB","url":"https://drive.google.com/file/d/1ESZ5pb1F9f5-mMZ-kzSkqIxKcTbQmPRC/view?usp=sharing"},{"name":"EZCad","version":"2.14.16","size":"2.86 MB","url":"https://drive.google.com/file/d/1Q2Q9Hn8X1AD4XXydLsCoVYBHoqzgY0Vj/view?usp=sharing"}]},{"id":"drivers","title":"درایورهای نصب EZCad","icon":"fa-microchip","items":[{"name":"EZCad Driver","version":null,"size":"3.7 MB","url":"https://drive.google.com/file/d/10lpsYJk7Qb1Misjkis_bbVV1nMoBTFS2/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"2.81 MB","url":"https://drive.google.com/file/d/14nxx2Ii9yoF16LUlnsnFNbGpGoA6X0DG/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"15.7 MB","url":"https://drive.google.com/file/d/1g6CXNfyqmzVroq8-zU2CiwzVT5ju7ODo/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"6.68 MB","url":"https://drive.google.com/file/d/1Iv-p0cu9qBSXt6IgiqkKFRzqR8KKGcgQ/view?usp=sharing"}]}];
+const downloadGroups = [{"id":"cypcut","title":"نرم‌افزار CypCut دستگاه برش لیزر","icon":"fa-scissors","items":[{"name":"CypCut","version":"6.3.765.10","size":"100 MB","url":"https://drive.google.com/file/d/1Sdyabvt3Gi5BCkmeU2mPs4ACNniGj-6_/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.702.8A","size":"26 MB","url":"https://drive.google.com/file/d/1tGIvsV55K227LUYmm3kA2NIBbBdm_8zh/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.712.9","size":"31 MB","url":"https://drive.google.com/file/d/1tpPdQ1sWxvqiGicOrIOVV9Sr70mKSoiQ/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.739.7","size":"37 MB","url":"https://drive.google.com/file/d/1vvem8RF3jKZH7lGRllu6LXv-q8XAcGOb/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.761.4","size":"52 MB","url":"https://drive.google.com/file/d/1TPBZGwfQdmTewdikitezxw4aMV3mqMZ8/view?usp=sharing","status":null},{"name":"CypCut","version":"6.2.436","size":"21 MB","url":"https://drive.google.com/file/d/1rAhng7bvWtSj3ltUFxY2dNi6YDhISJyX/view?usp=drive_link","status":null},{"name":"CypCut","version":"6.3.649.7","size":"22 MB","url":"https://drive.google.com/file/d/1-rY1lFGu-YDlddOEN0A6gvlmxWKnGTyE/view?usp=sharing","status":null},{"name":"CypCut","version":"6.3.658.10","size":"25 MB","url":"https://drive.google.com/file/d/1WL1ZJTt1Acm9gvJkgBO1qKa4sYVyfBWW/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.712.4","size":"27 MB","url":"https://drive.google.com/file/d/1hLTZfM2jbOK5H0xV-LW8m04Ord_Lc7gZ/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.723.3","size":"28 MB","url":"https://drive.google.com/file/d/1Bp2mRuhftNxVw6xKuvJEL_Yo9kfyxkNB/view?usp=sharing","status":null},{"name":"CypCut","version":"6.1.724.1","size":"37 MB","url":"https://drive.google.com/file/d/1qGFo3areWwmjiCNdyTEEwTIa4WS-_xYI/view?usp=sharing","status":null},{"name":"CypCut","version":"6.4.940.2","size":"24 MB","url":"https://drive.google.com/file/d/1e187Yrg-DcSVsyGKlZC2AS-K3G57CV3o/view?usp=sharing","status":null},{"name":"CypCut","version":"1.0.391.4-2","size":"20 MB","url":null,"status":"موجود در سایت فعلی؛ لینک مستقیم در این بانک هنوز استخراج نشده"}]},{"id":"ezcad","title":"نرم‌افزار EZCad دستگاه فایبر مارکینگ","icon":"fa-pen-nib","items":[{"name":"EZCad","version":"2.5.3","size":"12 MB","url":"https://drive.google.com/file/d/1AvEGtvqdyctSc2QCg_kG6C-sR7orjlK0/view?usp=sharing"},{"name":"EZCad","version":"2.7.6","size":"2.61 MB","url":"https://drive.google.com/file/d/1pDo3K3aeGDbPnjpYnwb_wgmNlmlajnFl/view?usp=sharing"},{"name":"EZCad","version":"2.14.9","size":"4 MB","url":"https://drive.google.com/file/d/1ZvBdHScAJ8elWiPAPu6mjNBVf_UJ4kev/view?usp=sharing"},{"name":"EZCad","version":"2.14.10","size":"30 MB","url":"https://drive.google.com/file/d/1W8-rcJ8oaNnCwmZGG3sQ6fYQtvKnEmw4/view?usp=sharing"},{"name":"EZCad","version":"2.14.11","size":"2.87 MB","url":"https://drive.google.com/file/d/1K9f-Illdjm4bQs7k_yBk4u0ETkZMaINL/view?usp=sharing"},{"name":"EZCad","version":"2.14.13","size":"29 MB","url":"https://drive.google.com/file/d/1ESZ5pb1F9f5-mMZ-kzSkqIxKcTbQmPRC/view?usp=sharing"},{"name":"EZCad","version":"2.14.16","size":"2.86 MB","url":"https://drive.google.com/file/d/1Q2Q9Hn8X1AD4XXydLsCoVYBHoqzgY0Vj/view?usp=sharing"}]},{"id":"drivers","title":"درایورهای نصب EZCad","icon":"fa-microchip","items":[{"name":"EZCad Driver","version":null,"size":"3.7 MB","url":"https://drive.google.com/file/d/10lpsYJk7Qb1Misjkis_bbVV1nMoBTFS2/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"2.81 MB","url":"https://drive.google.com/file/d/14nxx2Ii9yoF16LUlnsnFNbGpGoA6X0DG/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"15.7 MB","url":"https://drive.google.com/file/d/1g6CXNfyqmzVroq8-zU2CiwzVT5ju7ODo/view?usp=sharing"},{"name":"EZCad Driver","version":null,"size":"6.68 MB","url":"https://drive.google.com/file/d/1Iv-p0cu9qBSXt6IgiqkKFRzqR8KKGcgQ/view?usp=sharing"}]}];
 
 // ==================================================
 // [STATE]
@@ -417,7 +471,7 @@ function updateActiveNav(name) {
   if (a) a.classList.add('active');
 }
 function navigateTo(name) { window.location.hash = '#' + name; }
-function showProduct(id) { if (products[id]) window.location.hash = catalogStructure.productRoute(id); }
+function showProduct(id) { if (products[id]) window.location.hash = 'product=' + id; }
 function showApplication(id) { if (applicationDetails[id]) window.location.hash = 'application=' + id; }
 function openCategory(id) {
   navigateTo('products');
@@ -433,7 +487,7 @@ function renderAllProducts(filter='all') {
   const lang=currentLang;
   const items=Object.values(products).filter(p=>filter==='all'||p.categoryId===filter);
   g.innerHTML=items.map(p=>`<article class="product-mini-card bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
-    <button type="button" onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${escapeHtml(p.title[lang]||p.title.fa)}"><img class="${mediaOrientationClass(p.images[0])}" src="${escapeHtml(p.images[0]||PRODUCT_PLACEHOLDER)}" alt="${escapeHtml(p.title[lang]||p.title.fa)}" loading="lazy"></button>
+    <button type="button" onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${escapeHtml(p.title[lang]||p.title.fa)}"><img src="${escapeHtml(p.images[0]||PRODUCT_PLACEHOLDER)}" alt="${escapeHtml(p.title[lang]||p.title.fa)}" loading="lazy"></button>
     <div class="p-5 flex-1 flex flex-col"><div class="flex items-center justify-between gap-2 mb-2"><span class="product-code">${escapeHtml(p.code)}</span><span class="text-[11px] text-slate-500">${escapeHtml(p.cat[lang]||p.cat.fa)}</span></div><h3 class="font-bold text-brand dark:text-white leading-7 mb-2">${escapeHtml(p.title[lang]||p.title.fa)}</h3><p class="text-xs text-slate-500 leading-6 mb-4">${escapeHtml((p.description[lang]||p.description.fa||[])[0]||'')}</p><button type="button" onclick="showProduct('${p.code}')" class="mt-auto inline-flex items-center gap-2 text-accent font-bold text-sm">${escapeHtml(T[lang].view_details)} <i class="fa-solid fa-arrow-left"></i></button></div>
   </article>`).join('');
 }
@@ -571,7 +625,7 @@ function renderProduct(id) {
   viewer.innerHTML = `
     ${has360 ? `<span class="badge-360"><i class="fa-solid fa-rotate"></i> ${escapeHtml(T[lang].badge_360)}</span>` : ''}
     ${has360 ? `<span class="spin-counter" id="spin-counter">1 / ${frames.length}</span>` : ''}
-    ${frames.map((src,i) => `<img src="${escapeHtml(src)}" class="${i===0?'active ':''}${mediaOrientationClass(src)}" alt="${escapeHtml(title + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
+    ${frames.map((src,i) => `<img src="${escapeHtml(src)}" ${i===0?'class="active"':''} alt="${escapeHtml(title + ' - تصویر ' + (i+1))}" loading="${i===0?'eager':'lazy'}">`).join('')}
     <span class="image-status ${hasRealImage?'real':''}"><i class="fa-solid ${hasRealImage?'fa-camera':'fa-image'}"></i> ${hasRealImage?'تصویر واقعی سهند لیزر':'تصویر واقعی در حال تکمیل آرشیو'}</span>
     ${has360 ? `<div class="spin-hint"><i class="fa-solid fa-arrows-left-right"></i><span>${escapeHtml(T[lang].spin_hint)}</span></div><div class="spin-progress"><div class="spin-progress-bar" id="spin-progress"></div></div>` : ''}`;
 
@@ -579,7 +633,7 @@ function renderProduct(id) {
   if (frames.length > 1) {
     const cols = Math.min(frames.length, 6), colsMap={1:'grid-cols-1',2:'grid-cols-2',3:'grid-cols-3',4:'grid-cols-4',5:'grid-cols-5',6:'grid-cols-6'};
     tc.className = `grid ${colsMap[cols]||'grid-cols-6'} gap-2 mt-3`;
-    tc.innerHTML = frames.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}${mediaOrientationClass(src)}" data-index="${i}" alt="${escapeHtml(title + ' - بندانگشتی ' + (i+1))}">`).join('');
+    tc.innerHTML = frames.map((src,i) => `<img src="${escapeHtml(src)}" class="thumb ${i===0?'active':''}" data-index="${i}" alt="${escapeHtml(title + ' - بندانگشتی ' + (i+1))}">`).join('');
   } else { tc.className='hidden'; tc.innerHTML=''; }
 
   const legacyLink=document.getElementById('legacy-product-link');
@@ -613,7 +667,7 @@ function renderProduct(id) {
   const galleryRoot=document.getElementById('gallery-container');
   if (gallery.length) {
     galleryRoot.className='grid md:grid-cols-3 gap-4';
-    galleryRoot.innerHTML=gallery.map((src,i)=>`<figure class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden"><img src="${escapeHtml(src)}" alt="${escapeHtml(title+' - گالری '+(i+1))}" class="w-full h-56 object-contain bg-white${mediaOrientationClass(src)}" loading="lazy"><figcaption class="p-3 text-xs text-slate-500">تصویر آرشیوی محصول</figcaption></figure>`).join('');
+    galleryRoot.innerHTML=gallery.map((src,i)=>`<figure class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden"><img src="${escapeHtml(src)}" alt="${escapeHtml(title+' - گالری '+(i+1))}" class="w-full h-56 object-contain bg-white" loading="lazy"><figcaption class="p-3 text-xs text-slate-500">تصویر آرشیوی محصول</figcaption></figure>`).join('');
   } else {
     galleryRoot.className='block';
     galleryRoot.innerHTML=`<div class="archive-note text-center"><i class="fa-solid fa-camera text-accent text-2xl mb-3"></i><div class="font-bold text-brand dark:text-white mb-2">گالری واقعی این محصول در حال انتقال از آرشیو قبلی است</div><p class="text-sm text-slate-500 leading-7">برای جلوگیری از نمایش تصویر یا مدل ساختگی، تا زمان تطبیق عکس واقعی با کد محصول هیچ نمای 3D یا تصویر جایگزین به‌عنوان محصول واقعی منتشر نمی‌شود.</p>${legacyProductPages[p.code]?`<a href="${escapeHtml(legacyProductPages[p.code])}" target="_blank" rel="noopener noreferrer" class="inline-flex mt-4 items-center gap-2 text-accent font-bold text-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> مشاهده صفحه آرشیوی این محصول</a>`:''}</div>`;
@@ -954,7 +1008,7 @@ function renderCatCard(category) {
   return `<article class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800">
     <button class="w-full text-start" onclick="openCategory('${category.id}')" aria-label="${label(T[currentLang][category.nameKey])}">
       <div class="h-44 relative flex items-center justify-center overflow-hidden bg-slate-100">
-        ${p ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" class="w-full h-full object-contain${mediaOrientationClass(p.media.images[0])}" loading="lazy">` : `<i class="fa-solid ${category.icon} text-slate-400 text-5xl"></i>`}
+        ${p ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" class="w-full h-full object-contain" loading="lazy">` : `<i class="fa-solid ${category.icon} text-slate-400 text-5xl"></i>`}
         <span class="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">${category.count}</span>
       </div>
       <div class="p-6"><h3 class="text-xl font-bold text-brand dark:text-white mb-2">${label(T[currentLang][category.nameKey])}</h3>
@@ -972,7 +1026,7 @@ function renderAllProducts(filter = activeCatalogFilter) {
   document.getElementById('catalog-count').textContent = `${items.length} محصول`;
   root.innerHTML = items.length ? items.map(p => `<article class="product-mini-card bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover">
     <button onclick="showProduct('${p.code}')" class="visual w-full" aria-label="${label(productTitle(p))}">
-      ${p.media.images.length ? `<img class="${mediaOrientationClass(p.media.images[0])}" src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" loading="lazy">` : '<div class="media-empty"><i class="fa-regular fa-image"></i><span class="text-xs">تصویر اختصاصی در انتظار تطبیق</span></div>'}
+      ${p.media.images.length ? `<img src="${assetUrl(p.media.images[0])}" alt="${label(productTitle(p))}" loading="lazy">` : '<div class="media-empty"><i class="fa-regular fa-image"></i><span class="text-xs">تصویر اختصاصی در انتظار تطبیق</span></div>'}
     </button><div class="p-5 flex-1 flex flex-col"><div class="flex items-center justify-between gap-2 mb-2"><span class="product-code">${label(p.code)}</span><span class="text-[11px] text-slate-500">${label(p.cat)}</span></div>
     <h3 class="font-bold text-brand dark:text-white leading-7 mb-2">${label(productTitle(p))}</h3>
     <p class="text-xs text-slate-500 leading-6 mb-4">${label((p.description[currentLang] || p.description.fa || [])[0] || '')}</p>
@@ -1006,11 +1060,11 @@ function renderProduct(id) {
   const viewer = document.getElementById('spin-viewer');
   viewer.classList.toggle('static-view', !spin);
   viewer.classList.remove('has-interacted');
-  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img ${spin && i ? `data-src="${assetUrl(image)}"` : `src="${assetUrl(image)}"`} decoding="async" class="${i === 0 ? 'active ' : ''}${mediaOrientationClass(image)}" alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
+  viewer.innerHTML = pictures.length ? pictures.map((image, i) => `<img ${spin && i ? `data-src="${assetUrl(image)}"` : `src="${assetUrl(image)}"`} decoding="async" ${i === 0 ? 'class="active"' : ''} alt="${label(title)} - ${numberedOrbit ? orbitAngle(image) + '°' : i + 1}" ${numberedOrbit ? `data-angle="${orbitAngle(image)}"` : ''} loading="${i ? 'lazy' : 'eager'}">`).join('') : '<div class="media-empty"><i class="fa-regular fa-image"></i><span>تصویر اختصاصی این مدل هنوز تأیید نشده است.</span></div>';
   if (spin) viewer.innerHTML += `<span class="badge-360">360°</span><span class="spin-counter" id="spin-counter">1 / ${pictures.length}</span><div class="spin-progress"><div id="spin-progress"></div></div>`;
   const thumbs = document.getElementById('thumbnails-container');
   thumbs.classList.toggle('ordered-orbit', numberedOrbit);
-  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${numberedOrbit ? orbitAngle(image) + '°' : 'تصویر ' + (i + 1)}"><img ${spin && i ? `data-src="${assetUrl(image)}"` : `src="${assetUrl(image)}"`} loading="lazy" decoding="async" alt="" class="w-full h-full object-contain${mediaOrientationClass(image)}">${numberedOrbit ? `<span class="orbit-angle">${orbitAngle(image)}°</span>` : ''}</button>`).join('') : '';
+  thumbs.innerHTML = pictures.length > 1 ? pictures.map((image, i) => `<button type="button" class="thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${numberedOrbit ? orbitAngle(image) + '°' : 'تصویر ' + (i + 1)}"><img ${spin && i ? `data-src="${assetUrl(image)}"` : `src="${assetUrl(image)}"`} loading="lazy" decoding="async" alt="" class="w-full h-full object-contain">${numberedOrbit ? `<span class="orbit-angle">${orbitAngle(image)}°</span>` : ''}</button>`).join('') : '';
   document.getElementById('product-media-caption').textContent = p.media.caption ? (p.media.caption[currentLang] || p.media.caption.fa) : spin ? 'نمای ۳۶۰ درجه' : p.media.review ? 'تصویر آرشیوی این پیکربندی؛ تطبیق نهایی در حال بررسی است.' : pictures.length ? 'تصویر مرجع محصول از آرشیو سهند لیزر' : '';
   if (viewerController) viewerController.abort();
   viewerController = new AbortController();
@@ -1168,7 +1222,7 @@ document.addEventListener('keydown', event => {
 });
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('catalog-search').addEventListener('input', () => renderAllProducts());
-  document.querySelectorAll('img[data-icon]').forEach(img => { img.src = assetUrl('./icons/' + img.dataset.icon + '.svg'); });
+  document.querySelectorAll('img[data-icon]').forEach(img => { img.src = assetUrl('icons/' + img.dataset.icon + '.svg'); });
   document.querySelectorAll('[data-hero-image]').forEach(el => {
     const p = products[el.dataset.heroImage];
     if (p?.media.images.length) el.style.backgroundImage = `url('${assetUrl(p.media.images[0])}')`;

@@ -3311,7 +3311,6 @@ video {
   .product-mini-card{display:flex;flex-direction:column;height:100%}
   .product-mini-card .visual{aspect-ratio:16/10;background:linear-gradient(135deg,rgb(var(--brand-dark)),rgb(var(--brand-light)));display:flex;align-items:center;justify-content:center;overflow:hidden}
   .product-mini-card .visual img{width:100%;height:100%;object-fit:contain;background:#fff}
-.media-rotate-ccw{transform:rotate(-90deg) scale(.74);transform-origin:center}
   .download-group-title{display:flex;align-items:center;gap:.6rem;font-size:1.35rem;font-weight:800;margin:2.25rem 0 1rem;color:rgb(var(--brand))}
 
   .spin-viewer.static-view{cursor:default;touch-action:auto}.spin-viewer.static-view .spin-progress,.spin-viewer.static-view .spin-hint{display:none}.image-status{position:absolute;bottom:1rem;right:1rem;z-index:10;background:rgba(15,23,42,.85);color:#fff;padding:.4rem .7rem;border-radius:999px;font-size:.7rem;font-weight:700}.image-status.real{background:rgba(5,150,105,.92)}
@@ -3333,7 +3332,7 @@ body { overflow-wrap: anywhere; }
 #view-product h1 { font-size: 28px; line-height: 1.7; }
 #view-product .spin-viewer { aspect-ratio: 4 / 3; height: auto; background: #f1f3f5; border-radius: 8px; }
 #view-product .spin-viewer img { object-fit: contain; }
-#thumbnails-container { display: flex; gap: 8px; overflow-x: auto; padding: 4px; }
+#thumbnails-container { display: flex; gap: 8px; overflow-x: auto; padding: 4px; max-width: 100%; overscroll-behavior-inline: contain; }
 #thumbnails-container:empty { display: none; }
 #thumbnails-container .thumb { width: 76px; height: 58px; flex: 0 0 76px; object-fit: contain; }
 .media-empty { display: grid; place-content: center; text-align: center; gap: 14px; height: 100%; color: #64748b; padding: 24px; background: #f1f3f5; }
@@ -3394,14 +3393,21 @@ button:focus-visible, a:focus-visible { outline: 3px solid #3b82f6; outline-offs
 }
 
 /* SH3015 assets reuse the existing product layout and theme. */
-.product-model-frame{display:block;width:100%;height:100%;border:0;border-radius:12px}
+.product-model-frame{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.model-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.model-start{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);padding:12px 20px;max-width:calc(100% - 32px);border-radius:6px;background:rgb(var(--accent));color:white;font-weight:600;white-space:normal}
+.model-toolbar{flex-wrap:wrap}
+.model-toolbar button{width:44px;height:44px;flex:0 0 44px;font-size:22px;line-height:1}
+.model-toolbar button:disabled{opacity:.4;cursor:default}
+.model-toolbar button[aria-pressed="true"]{background:rgb(var(--accent));color:white}
 .product-downloads{display:flex;gap:12px;flex-wrap:wrap}
 .product-downloads a{display:inline-block;padding:12px 18px;border:1px solid rgb(var(--accent) / .3);border-radius:10px;color:rgb(var(--accent));font-weight:600}
 .product-large-section p{line-height:2;margin:12px 0}
-@media(max-width:640px){.model-stage:has(.product-model-frame){height:540px}}
+@media(max-width:640px){.model-stage{height:auto;aspect-ratio:1.15;min-height:240px;max-height:420px}}
 
 /* Keep numeric orbit angles ascending in every site language. */
 #thumbnails-container.ordered-orbit { direction: ltr; }
 #thumbnails-container.ordered-orbit .thumb { position: relative; }
 #thumbnails-container .orbit-angle { position: absolute; bottom: 2px; right: 2px; padding: 1px 4px; border-radius: 3px; background: rgba(15,23,42,.85); color: white; font-size: 10px; line-height: 1.4; }
 #spin-counter { direction: ltr; unicode-bidi: isolate; }
+.product-downloads a { max-width: 100%; overflow-wrap: anywhere; }

@@ -26,7 +26,6 @@ window.SAHAND_PRODUCTS["ML-004"] = {
     "tr": "Laser Marking / Engraving"
   },
   "images": [
-    "./assets/products/ML-004/commercial-v1.jpg",
     "./assets/products/ML-004/_MG_4350.jpg",
     "./assets/products/ML-004/_MG_4353.jpg",
     "./assets/products/ML-004/_MG_4354.jpg",
@@ -124,7 +123,6 @@ window.SAHAND_PRODUCTS["ML-004"] = {
   "gallery": [],
   "media": {
     "images": [
-      "./assets/products/ML-004/commercial-v1.jpg",
       "./assets/products/ML-004/_MG_4350.jpg",
       "./assets/products/ML-004/_MG_4353.jpg",
       "./assets/products/ML-004/_MG_4354.jpg",
