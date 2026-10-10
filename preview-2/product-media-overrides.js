@@ -1,6 +1,6 @@
 (function () {
   const products = window.SAHAND_PRODUCTS;
-  const codes = ['CT-001', 'ML-004', 'ML-005', 'ML-007', 'ML-009'];
+  const codes = ['CT-002', 'CT-001', 'ML-004', 'ML-005', 'ML-007', 'ML-009'];
   for (const p of Object.values(products)) {
     if (p.media) { p.media.frames360 = []; p.media.model = null; }
   }
