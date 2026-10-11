@@ -1,1 +1,1696 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Preview 10</title><style>html,body{margin:0;height:100%;background:#f4f7fb}iframe{width:100%;height:100%;border:0;display:block}</style></head><body><iframe title="Sahand Laser Preview 10" src="../preview-experiments/site.html?taxonomy=&amp;theme=white#home"></iframe></body></html>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#050b13">
+<title>سهند لیزر | یک شب بارانی در اصفهان — نسخه پیشرفته</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#050b13;color:#edf6ff;font-family:Tahoma,sans-serif;
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+#viewport{position:fixed;inset:0}
+canvas{display:block;touch-action:none}
+
+/* Header */
+header{
+  position:fixed;top:0;left:0;right:0;padding:22px 28px;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  pointer-events:none;background:linear-gradient(#040b16c9,transparent);
+  z-index:2;transition:opacity .4s;
+}
+.brand{font-weight:700;font-size:19px;letter-spacing:1px;text-shadow:0 2px 12px #000}
+.brand small{display:block;color:#82b7d1;font-size:9px;letter-spacing:4px;margin-top:8px}
+.place{text-align:left;color:#a7bfd1;font-size:11px;line-height:2}
+.place b{color:#e8cda4;font-weight:400;letter-spacing:3px}
+
+/* Title */
+.title{
+  position:fixed;right:28px;top:100px;pointer-events:none;z-index:2;
+  max-width:320px;text-shadow:0 2px 20px #000;transition:opacity .4s;
+}
+.title span{font-size:10px;color:#78c9e7;letter-spacing:2px}
+.title h1{font-size:24px;line-height:1.6;margin:9px 0}
+.title p{font-size:11px;color:#b1c5d4;line-height:2;max-width:250px}
+
+/* Toolbar */
+.toolbar{
+  position:fixed;bottom:22px;left:22px;z-index:3;
+  display:flex;gap:6px;flex-wrap:wrap;max-width:600px;
+  transition:opacity .4s;
+}
+button{
+  font:inherit;font-size:11px;color:#c8ddeb;
+  background:#0a1828b8;backdrop-filter:blur(10px);
+  border:1px solid #688ca44d;border-radius:8px;
+  padding:10px 13px;cursor:pointer;touch-action:manipulation;
+  transition:all .2s;
+}
+button:hover{background:#19384bcc;transform:translateY(-1px)}
+button:focus-visible{outline:2px solid #6fddff;outline-offset:4px}
+button.active{background:#1d4560cc;border-color:#6fddffcc}
+
+/* Controls hint */
+.controls{
+  position:fixed;right:22px;bottom:22px;z-index:3;
+  background:#071423b8;backdrop-filter:blur(12px);
+  padding:14px 18px;border:1px solid #56778d3d;border-radius:12px;
+  font-size:11px;color:#a7c0d1;line-height:2;max-width:240px;
+  transition:opacity .4s;
+}
+.controls b{color:white;font-weight:400}
+.controls kbd{
+  display:inline-block;padding:1px 5px;
+  border:1px solid #7196b34d;border-radius:4px;
+  font-family:inherit;color:#e1f1fc;font-size:10px;
+}
+.controls.hidden{opacity:0;pointer-events:none}
+
+/* Touch pad */
+.touch-pad{
+  display:none;position:fixed;bottom:96px;right:20px;z-index:3;
+  grid-template-columns:repeat(3,45px);grid-template-rows:repeat(2,43px);
+  gap:5px;direction:ltr;
+}
+.touch-pad button{padding:4px;font-size:18px;border-radius:10px}
+.touch-pad .up{grid-column:2}
+.touch-pad .left{grid-column:1;grid-row:2}
+.touch-pad .down{grid-column:2;grid-row:2}
+.touch-pad .right{grid-column:3;grid-row:2}
+
+/* Status */
+.status{
+  position:fixed;bottom:6px;left:24px;color:#6f8ba2;
+  font-size:9px;pointer-events:none;z-index:3;
+}
+
+/* Loading */
+.loading{
+  position:fixed;inset:0;z-index:8;background:#050b13;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:20px;transition:opacity .6s;
+  pointer-events:none;
+}
+.loading.done{opacity:0}
+.loading .ring{
+  width:50px;height:50px;border:1px solid #23455c;
+  border-top:2px solid #75dafc;border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+.loading h2{font-size:16px;color:#d7e8f2;font-weight:400;margin:0;letter-spacing:1px}
+.loading p{font-size:12px;color:#9ab6ca;max-width:350px;text-align:center;line-height:2;margin:0}
+.loading .progress{
+  width:260px;height:3px;background:#16293a;border-radius:999px;overflow:hidden;
+}
+.loading .progress-bar{
+  height:100%;background:linear-gradient(90deg,#75dafc,#c9a976);
+  width:0%;transition:width .3s;
+}
+#loading[hidden]{display:none!important}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Error */
+.error{
+  display:none;position:fixed;inset:25% 10%;z-index:10;
+  background:#11273ae8;padding:25px;border:1px solid #87b2d7;
+  border-radius:14px;font-size:13px;line-height:2;
+}
+
+/* Story caption */
+.story-caption{
+  position:fixed;bottom:105px;left:50%;transform:translateX(-50%);
+  z-index:3;color:#ffe2b9;font-size:14px;text-align:center;
+  background:#06121eaa;padding:10px 20px;border-radius:9px;
+  max-width:80vw;pointer-events:none;transition:opacity .3s;
+  backdrop-filter:blur(8px);border:1px solid #c9a97633;
+}
+
+/* Info panel (for hotspot) */
+.info-panel{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);
+  z-index:20;background:#0a1a2ae8;backdrop-filter:blur(14px);
+  border:1px solid #6fddff55;border-radius:16px;
+  padding:22px;max-width:420px;width:calc(100vw - 40px);
+  opacity:0;pointer-events:none;transition:all .3s;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+.info-panel.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.info-panel h3{margin:0 0 12px;font-size:17px;color:#d7fcff}
+.info-panel p{margin:0 0 14px;font-size:13px;line-height:2;color:#b1c5d4}
+.info-panel .close{
+  position:absolute;top:12px;left:12px;
+  width:30px;height:30px;border-radius:8px;
+  background:#1a2c3c;border:1px solid #6fddff44;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:14px;color:#d7fcff;
+}
+.info-panel .close:hover{background:#2a4a5e}
+.info-panel .actions{display:flex;gap:8px;margin-top:14px}
+.info-panel .actions button{flex:1;padding:10px;font-size:12px}
+
+/* Inside room: fade title */
+.inside-room .title{opacity:.25}
+.inside-room .controls{opacity:.4}
+
+/* Coarse pointer */
+@media(pointer:coarse){
+  .touch-pad{display:grid}
+  .controls{display:none}
+}
+
+/* Mobile */
+@media(max-width:650px){
+  header{padding:18px}
+  .brand{font-size:16px}
+  .brand small{font-size:8px;letter-spacing:3px}
+  .title{right:18px;top:85px;max-width:200px}
+  .title h1{font-size:19px}
+  .title p{font-size:10px}
+  .toolbar{left:10px;bottom:22px;gap:4px;max-width:250px}
+  .toolbar button{font-size:10px;padding:9px 10px}
+  .place{font-size:9px}
+  .status{left:12px;font-size:8px}
+  .touch-pad{bottom:120px;right:12px}
+  .story-caption{bottom:190px;font-size:11px}
+  .info-panel{padding:18px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .loading .ring{animation:none}
+  .loading{transition:none}
+  *{transition:none!important}
+}
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div id="viewport" aria-label="صحنه سه‌بعدی کارگاه سهند در شب بارانی"></div>
+
+<!-- Header -->
+<header>
+  <div class="brand">
+    سهند لیزر
+    <small>SAHAND LASER / NIGHT SHIFT</small>
+  </div>
+  <div class="place">
+    <b>ISFAHAN</b><br>
+    پیش‌نمایش ۱۰ · صحنه‌ی هنری سه‌بعدی
+  </div>
+</header>
+
+<!-- Title -->
+<div class="title">
+  <span>THE WORKSHOP AFTER DARK</span>
+  <h1>وقتی شهر آرام می‌شود،<br>نور هنوز می‌بُرد.</h1>
+  <p>کارگاه خیالی سهند در یک شب بارانی اصفهان؛ به ویترین نزدیک شو و دستگاه را ببین.</p>
+</div>
+
+<!-- Toolbar -->
+<div class="toolbar" role="toolbar" aria-label="کنترل صحنه">
+  <button id="visit" title="ورود به کارگاه">🚪 بریم داخل کارگاه</button>
+  <button id="reset" title="بازگشت به نمای اول">↺ نمای اول</button>
+  <button id="pause" aria-pressed="false" title="توقف/ادامه">⏸ توقف</button>
+  <button id="quality" title="تغییر کیفیت">🎬 کیفیت: سینمایی</button>
+  <button id="weather" title="تغییر آب و هوا">🌧️ بارانی</button>
+  <button id="time" title="تغییر زمان">🌙 شب</button>
+  <button id="sound" aria-pressed="false" title="صدا">🔇 صدا</button>
+  <button id="screenshot" title="عکس گرفتن">📷 عکس</button>
+  <button id="fullscreen" title="تمام صفحه">⛶</button>
+  <button id="help" title="راهنما">؟</button>
+</div>
+
+<!-- Controls hint -->
+<div class="controls" id="controls-hint">
+  <b>قدم بزن و کشف کن</b><br>
+  <kbd>W</kbd> جلو · <kbd>S</kbd> عقب · <kbd>A</kbd> چپ · <kbd>D</kbd> راست<br>
+  کشیدن موس: چرخش دوربین · <kbd>Shift</kbd> تندتر<br>
+  <kbd>R</kbd> نمای اول · <kbd>Esc</kbd> توقف · <kbd>F</kbd> تمام صفحه
+</div>
+
+<!-- Touch pad -->
+<div class="touch-pad" aria-label="کنترل حرکت لمسی">
+  <button class="up" data-key="KeyW" aria-label="حرکت جلو">↑</button>
+  <button class="left" data-key="KeyA" aria-label="حرکت چپ">←</button>
+  <button class="down" data-key="KeyS" aria-label="حرکت عقب">↓</button>
+  <button class="right" data-key="KeyD" aria-label="حرکت راست">→</button>
+</div>
+
+<div id="story-caption" class="story-caption" aria-live="polite"></div>
+<div class="status" id="machine-status">در حال بارگذاری مدل دستگاه سهند…</div>
+
+<!-- Loading -->
+<div id="loading" class="loading">
+  <div class="ring"></div>
+  <h2>سهند لیزر</h2>
+  <p id="load-status">ساخت نور، باران و بازتاب‌ها…</p>
+  <div class="progress"><div class="progress-bar" id="load-progress"></div></div>
+</div>
+
+<!-- Error -->
+<div id="error" class="error" role="alert"></div>
+
+<!-- Info Panel (hotspot) -->
+<div class="info-panel" id="info-panel">
+  <button class="close" onclick="closeInfoPanel()" aria-label="بستن">×</button>
+  <h3 id="info-title"></h3>
+  <p id="info-text"></p>
+  <div class="actions">
+    <button onclick="navigateToSite('#products')">مشاهده محصولات</button>
+    <button onclick="closeInfoPanel()">بستن</button>
+  </div>
+</div>
+
+<script>
+window.addEventListener('error', function(e) {
+  document.getElementById('loading').hidden = true;
+  const box = document.getElementById('error');
+  box.style.display = 'block';
+  box.textContent = 'نمایش سه‌بعدی اجرا نشد. WebGL و اتصال به Three.js را بررسی کنید. جزئیات: ' + e.message;
+});
+window.addEventListener('unhandledrejection', function(e) {
+  document.getElementById('loading').hidden = true;
+  const box = document.getElementById('error');
+  box.style.display = 'block';
+  box.textContent = 'خطای بارگذاری صحنه: ' + String(e.reason);
+});
+setTimeout(function() {
+  if (!document.getElementById('loading').hidden) {
+    document.getElementById('load-status').textContent = 'بارگذاری طول کشیده است؛ اتصال را بررسی کنید.';
+  }
+}, 20000);
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { Reflector } from 'three/addons/objects/Reflector.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+// ============================================================
+// [SETUP]
+// ============================================================
+const status = document.getElementById('load-status');
+const progressBar = document.getElementById('load-progress');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mobile = matchMedia('(pointer:coarse)').matches;
+
+function setProgress(p, msg) {
+  progressBar.style.width = p + '%';
+  if (msg) status.textContent = msg;
+}
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x040911);
+scene.fog = new THREE.FogExp2(0x091524, 0.025);
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: !mobile,
+  powerPreference: 'high-performance'
+});
+renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.25 : 1.6));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.getElementById('viewport').append(renderer.domElement);
+
+const camera = new THREE.PerspectiveCamera(48, innerWidth / innerHeight, 0.1, 110);
+
+// ============================================================
+// [POST-PROCESSING]
+// ============================================================
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.48, 1.15);
+composer.addPass(bloom);
+
+// Vignette shader
+const VignetteShader = {
+  uniforms: {
+    tDiffuse: { value: null },
+    offset: { value: 1.0 },
+    darkness: { value: 1.1 }
+  },
+  vertexShader: `
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform sampler2D tDiffuse;
+    uniform float offset;
+    uniform float darkness;
+    varying vec2 vUv;
+    void main() {
+      vec4 texel = texture2D(tDiffuse, vUv);
+      vec2 uv = (vUv - vec2(0.5)) * vec2(offset);
+      float vignette = 1.0 - dot(uv, uv) * darkness;
+      texel.rgb *= clamp(vignette, 0.3, 1.0);
+      gl_FragColor = texel;
+    }
+  `
+};
+const vignettePass = new ShaderPass(VignetteShader);
+composer.addPass(vignettePass);
+composer.addPass(new OutputPass());
+
+setProgress(15, 'ساخت نور و آسمان…');
+
+// ============================================================
+// [LIGHTS]
+// ============================================================
+const hemi = new THREE.HemisphereLight(0x8eaece, 0x1c1719, 1.0);
+scene.add(hemi);
+
+const moon = new THREE.DirectionalLight(0x6e9fff, 1.3);
+moon.position.set(-9, 16, 9);
+moon.castShadow = true;
+moon.shadow.mapSize.set(mobile ? 512 : 1024, mobile ? 512 : 1024);
+moon.shadow.camera.left = -18;
+moon.shadow.camera.right = 18;
+moon.shadow.camera.top = 18;
+moon.shadow.camera.bottom = -18;
+moon.shadow.bias = -0.0003;
+scene.add(moon);
+
+// ============================================================
+// [MATERIALS]
+// ============================================================
+const mats = {
+  brick: new THREE.MeshStandardMaterial({ color: 0x453830, roughness: 0.88 }),
+  concrete: new THREE.MeshStandardMaterial({ color: 0x37414b, roughness: 0.68 }),
+  metal: new THREE.MeshStandardMaterial({ color: 0x3f4e5d, metalness: 0.8, roughness: 0.3 }),
+  dark: new THREE.MeshStandardMaterial({ color: 0x111923, metalness: 0.5, roughness: 0.3 }),
+  white: new THREE.MeshStandardMaterial({ color: 0xe4e7e8, metalness: 0.2, roughness: 0.3 }),
+  blue: new THREE.MeshStandardMaterial({ color: 0x174a86, metalness: 0.5, roughness: 0.28 }),
+  copper: new THREE.MeshStandardMaterial({ color: 0xb78546, metalness: 0.7, roughness: 0.32 }),
+  steel: new THREE.MeshStandardMaterial({ color: 0x8899aa, metalness: 0.9, roughness: 0.15 })
+};
+
+// ============================================================
+// [HELPERS]
+// ============================================================
+function box(w, h, d, mat, x = 0, y = 0, z = 0, parent = scene) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true;
+  m.receiveShadow = true;
+  parent.add(m);
+  return m;
+}
+
+function cylinder(rt, rb, h, mat, x, y, z, parent = scene, segments = 16) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(rt, rb, h, segments), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true;
+  parent.add(m);
+  return m;
+}
+
+function canvasTexture(w, h, paint) {
+  const c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
+  paint(c.getContext('2d'), w, h);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
+function textPlane(text, w, h, color, x, y, z, font = 'bold 82px sans-serif', bg = null, emission = 1) {
+  const tex = canvasTexture(1536, 256, (ctx, ww, hh) => {
+    if (bg) {
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, ww, hh);
+    }
+    ctx.font = font;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = color;
+    ctx.fillText(text, ww / 2, hh / 2);
+  });
+  const mat = new THREE.MeshBasicMaterial({
+    map: tex,
+    transparent: !bg,
+    toneMapped: false,
+    color: new THREE.Color().setScalar(emission),
+    depthWrite: false
+  });
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+  m.position.set(x, y, z);
+  scene.add(m);
+  return m;
+}
+
+// ============================================================
+// [STARS — آسمون پرستاره]
+// ============================================================
+const starsGeo = new THREE.BufferGeometry();
+const starCount = 800;
+const starPos = new Float32Array(starCount * 3);
+const starColors = new Float32Array(starCount * 3);
+for (let i = 0; i < starCount; i++) {
+  const r = 60 + Math.random() * 30;
+  const theta = Math.random() * Math.PI * 2;
+  const phi = Math.random() * Math.PI * 0.5;
+  starPos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+  starPos[i * 3 + 1] = r * Math.cos(phi);
+  starPos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+  const c = Math.random();
+  starColors[i * 3] = c > 0.8 ? 1 : 0.7 + Math.random() * 0.2;
+  starColors[i * 3 + 1] = c > 0.8 ? 0.95 : 0.75 + Math.random() * 0.2;
+  starColors[i * 3 + 2] = c > 0.8 ? 0.85 : 0.9 + Math.random() * 0.1;
+}
+starsGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+starsGeo.setAttribute('color', new THREE.BufferAttribute(starColors, 3));
+const stars = new THREE.Points(starsGeo, new THREE.PointsMaterial({
+  size: 0.35,
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.9,
+  depthWrite: false,
+  toneMapped: false
+}));
+scene.add(stars);
+
+// ============================================================
+// [GROUND + REFLECTION]
+// ============================================================
+const noise = canvasTexture(512, 512, (ctx, w, h) => {
+  ctx.fillStyle = '#62666a';
+  ctx.fillRect(0, 0, w, h);
+  for (let i = 0; i < 24000; i++) {
+    const c = 65 + Math.random() * 100;
+    ctx.fillStyle = `rgb(${c},${c},${c})`;
+    ctx.fillRect(Math.random() * w, Math.random() * h, Math.random() * 3 + 1, 1);
+  }
+});
+noise.wrapS = noise.wrapT = THREE.RepeatWrapping;
+noise.repeat.set(10, 12);
+noise.colorSpace = THREE.NoColorSpace;
+
+const groundReflector = new Reflector(new THREE.PlaneGeometry(48, 45), {
+  clipBias: 0.003,
+  textureWidth: mobile ? 512 : 1024,
+  textureHeight: mobile ? 512 : 1024,
+  color: 0x64798a
+});
+groundReflector.rotation.x = -Math.PI / 2;
+groundReflector.position.set(0, 0.006, 5);
+scene.add(groundReflector);
+
+const asphalt = new THREE.MeshStandardMaterial({
+  color: 0x111a24,
+  roughness: 0.24,
+  metalness: 0.6,
+  transparent: true,
+  opacity: 0.62,
+  bumpMap: noise,
+  bumpScale: 0.025
+});
+const road = new THREE.Mesh(new THREE.PlaneGeometry(48, 45), asphalt);
+road.rotation.x = -Math.PI / 2;
+road.position.set(0, 0.014, 5);
+road.receiveShadow = true;
+scene.add(road);
+
+// Puddles
+for (let i = 0; i < 20; i++) {
+  const puddle = new THREE.Mesh(
+    new THREE.CircleGeometry(0.5 + Math.random() * 1.2, 40),
+    new THREE.MeshPhysicalMaterial({
+      color: 0x1f4358,
+      metalness: 0.95,
+      roughness: 0.05,
+      transparent: true,
+      opacity: 0.24,
+      clearcoat: 1
+    })
+  );
+  puddle.rotation.x = -Math.PI / 2;
+  puddle.scale.set(1.5 + Math.random(), 0.6 + Math.random() * 0.5, 1);
+  puddle.position.set((Math.random() - 0.5) * 25, 0.02, 1 + Math.random() * 14);
+  scene.add(puddle);
+}
+
+setProgress(30, 'ساخت کارگاه و پنجره‌ها…');
+
+// ============================================================
+// [WORKSHOP BUILDING]
+// ============================================================
+box(17, 0.14, 2.6, mats.concrete, 0, 0.08, -0.9);
+for (let x = -8; x < 8; x += 0.8) {
+  box(0.77, 0.03, 1.3, new THREE.MeshStandardMaterial({ color: 0x5c6063, roughness: 0.6 }), x, 0.165, -0.75);
+}
+
+// Walls
+box(13, 0.2, 8.3, new THREE.MeshStandardMaterial({ color: 0x8b8172, roughness: 0.42 }), 0, 0.23, -6);
+box(13, 4.9, 0.35, mats.brick, 0, 2.65, -10);
+box(0.35, 4.9, 8.3, mats.brick, -6.5, 2.65, -6);
+box(0.35, 4.9, 8.3, mats.brick, 6.5, 2.65, -6);
+box(14, 0.35, 9, mats.concrete, 0, 5.12, -6.1);
+
+// Brick texture
+const brickTex = canvasTexture(512, 512, (ctx, w, h) => {
+  ctx.fillStyle = '#302a28';
+  ctx.fillRect(0, 0, w, h);
+  for (let row = 0; row < 16; row++) {
+    for (let col = -1; col < 9; col++) {
+      ctx.fillStyle = `rgb(${66 + Math.random() * 18},${51 + Math.random() * 14},${41 + Math.random() * 12})`;
+      ctx.fillRect(col * 65 + (row % 2) * 32, row * 32, 62, 29);
+    }
+  }
+});
+brickTex.wrapS = brickTex.wrapT = THREE.RepeatWrapping;
+brickTex.repeat.set(4, 2);
+mats.brick.map = brickTex;
+
+// Top facade
+box(14, 1.15, 0.6, mats.brick, 0, 4.6, -1.9);
+box(0.5, 4.3, 0.5, mats.brick, -6.5, 2.25, -1.9);
+box(0.5, 4.3, 0.5, mats.brick, 6.5, 2.25, -1.9);
+
+// Glass windows
+const glass = new THREE.MeshPhysicalMaterial({
+  color: 0xb2dfeb,
+  metalness: 0,
+  roughness: 0.08,
+  transparent: true,
+  opacity: 0.12,
+  side: THREE.DoubleSide,
+  depthWrite: false
+});
+
+const entryDoor = new THREE.Group();
+entryDoor.position.set(1.25, 0, -1.8);
+scene.add(entryDoor);
+
+for (let x = -5.8; x < 4; x += 2.35) {
+  box(0.055, 3.9, 0.06, mats.dark, x, 2.17, -1.83);
+  const pane = new THREE.Mesh(new THREE.PlaneGeometry(2.28, 3.85), glass);
+  pane.renderOrder = 3;
+  if (Math.abs(x - 1.25) < 0.01) {
+    pane.position.set(1.14, 2.18, 0);
+    entryDoor.add(pane);
+    box(0.035, 3.86, 0.04, mats.metal, 0, 2.18, 0, entryDoor);
+    box(0.035, 3.86, 0.04, mats.metal, 2.28, 2.18, 0, entryDoor);
+    box(0.05, 0.6, 0.04, mats.metal, 2.1, 1.8, 0.05, entryDoor);
+  } else {
+    pane.position.set(x + 1.16, 2.18, -1.8);
+    scene.add(pane);
+  }
+}
+
+box(12.5, 0.07, 0.09, mats.metal, 0, 0.29, -1.79);
+box(12.5, 0.07, 0.09, mats.metal, 0, 4.1, -1.79);
+
+// Rain streaks on glass
+for (let x = -4.9; x < 6; x += 2.5) {
+  const streak = new THREE.Mesh(
+    new THREE.PlaneGeometry(0.012, 0.7 + Math.random() * 1.2),
+    new THREE.MeshBasicMaterial({ color: 0x9acadb, transparent: true, opacity: 0.14 })
+  );
+  streak.position.set(x, 2.5, -1.76);
+  scene.add(streak);
+}
+
+// Decorative band above door
+const tile = canvasTexture(256, 128, (ctx, w, h) => {
+  ctx.fillStyle = '#154c5d';
+  ctx.fillRect(0, 0, w, h);
+  ctx.strokeStyle = '#c5a973';
+  ctx.lineWidth = 2;
+  for (let x = 0; x < w; x += 32) {
+    ctx.beginPath();
+    ctx.moveTo(x, 64);
+    ctx.lineTo(x + 16, 25);
+    ctx.lineTo(x + 32, 64);
+    ctx.lineTo(x + 16, 103);
+    ctx.closePath();
+    ctx.stroke();
+  }
+});
+const band = new THREE.Mesh(
+  new THREE.PlaneGeometry(13, 0.3),
+  new THREE.MeshStandardMaterial({ map: tile, roughness: 0.45 })
+);
+band.position.set(0, 4.05, -1.55);
+scene.add(band);
+
+// Main sign
+box(9.5, 0.91, 0.18, mats.dark, 0, 4.7, -1.47);
+textPlane('Sahand Laser', 8.4, 1.4, '#d7fcff', 0, 4.72, -1.35, '500 140px sans-serif', null, 2.5);
+textPlane('سهند لیزر · اصفهان', 4, 0.52, '#e7bd88', 0, 4.26, -1.32, '48px Tahoma', null, 1.8);
+
+const signLight = new THREE.PointLight(0x37d4ff, 9, 13, 2);
+signLight.position.set(0, 4, -0.2);
+scene.add(signLight);
+
+// Interior warm lights
+const warm = new THREE.PointLight(0xffb965, 30, 16, 2);
+warm.position.set(-1, 4, -5);
+warm.castShadow = !mobile;
+if (warm.shadow) warm.shadow.mapSize.set(512, 512);
+scene.add(warm);
+
+const warm2 = new THREE.PointLight(0xffd7a0, 18, 12, 2);
+warm2.position.set(4, 3.8, -7);
+scene.add(warm2);
+
+// Fluorescent lamps inside
+for (const x of [-3, 2.8]) {
+  box(2.3, 0.03, 0.35, new THREE.MeshStandardMaterial({
+    color: 0xfff3d5,
+    emissive: 0xffcb85,
+    emissiveIntensity: 4
+  }), x, 4.65, -6);
+}
+
+// Wall sign inside
+textPlane('کارگاه ساخت و خدمات لیزر', 5, 0.7, '#b9a183', -1, 3.2, -9.78, 'bold 75px Tahoma', '#2b2925');
+
+// Shelves
+function shelf(x, z) {
+  const g = new THREE.Group();
+  scene.add(g);
+  g.position.set(x, 0, z);
+  for (const dx of [-0.85, 0.85]) {
+    for (const dz of [-0.35, 0.35]) {
+      box(0.06, 3.3, 0.06, mats.metal, dx, 1.9, dz, g);
+    }
+  }
+  for (let level = 0; level < 4; level++) {
+    const y = 0.48 + level * 0.82;
+    box(1.9, 0.07, 0.8, mats.metal, 0, y, 0, g);
+    for (let n = 0; n < 5; n++) {
+      const part = new THREE.Mesh(
+        new THREE.TorusGeometry(0.11 + Math.random() * 0.05, 0.035, 8, 16),
+        mats.metal
+      );
+      part.rotation.x = Math.PI / 2;
+      part.position.set(-0.6 + n * 0.3, y + 0.07, Math.random() * 0.4 - 0.2);
+      g.add(part);
+    }
+    box(0.45, 0.17, 0.32, mats.copper, 0.2, y + 0.14, 0.12, g);
+  }
+}
+shelf(4.6, -6.5);
+shelf(4.6, -8.1);
+
+// Metal sheets stack
+for (let i = 0; i < 8; i++) {
+  const panel = box(
+    0.045, 2.2, 1.1,
+    new THREE.MeshStandardMaterial({ color: 0x7d8792, metalness: 0.8, roughness: 0.32 }),
+    -5 + i * 0.09, 1.6, -7.8
+  );
+  panel.rotation.z = -0.15;
+}
+
+setProgress(45, 'ساخت دستگاه لیزر…');
+
+// ============================================================
+// [LASER MACHINE — با انیمیشن هد]
+// ============================================================
+const machineGroup = new THREE.Group();
+machineGroup.position.set(-0.8, 0.32, -5.7);
+scene.add(machineGroup);
+
+// Base
+box(3.7, 0.78, 2.4, mats.white, 0, 0.6, 0, machineGroup);
+box(3.5, 0.48, 2.42, mats.blue, 0, 0.7, 0, machineGroup);
+box(3.6, 0.12, 2.4, mats.metal, 0, 1.1, 0, machineGroup);
+
+// Bed slats
+for (let i = 0; i < 28; i++) {
+  box(0.065, 0.09, 2.23, mats.dark, -1.65 + i * 0.12, 1.19, 0, machineGroup);
+}
+
+// Cutting head (moving)
+const headGroup = new THREE.Group();
+headGroup.position.set(0.1, 1.6, 0);
+machineGroup.add(headGroup);
+box(0.18, 0.9, 2.6, mats.white, 0, 0, 0, headGroup);
+box(0.4, 0.45, 0.4, mats.blue, 0, -0.1, 0.15, headGroup);
+cylinder(0.06, 0.035, 0.25, mats.copper, 0, -0.37, 0.15, headGroup, 12);
+
+// Cutting light
+const cutLight = new THREE.PointLight(0xff9e36, 10, 4, 2);
+cutLight.position.set(-0.55, 1.62, -5.45);
+scene.add(cutLight);
+
+// Smoke/steam particles
+const smokeCount = mobile ? 20 : 40;
+const smokeGeo = new THREE.BufferGeometry();
+const smokePos = new Float32Array(smokeCount * 3);
+const smokeVel = [];
+for (let i = 0; i < smokeCount; i++) {
+  smokePos[i * 3] = 0;
+  smokePos[i * 3 + 1] = 0;
+  smokePos[i * 3 + 2] = 0;
+  smokeVel.push({
+    x: (Math.random() - 0.5) * 0.3,
+    y: 0.4 + Math.random() * 0.3,
+    z: (Math.random() - 0.5) * 0.3,
+    age: Math.random(),
+    life: 1.5 + Math.random() * 1
+  });
+}
+smokeGeo.setAttribute('position', new THREE.BufferAttribute(smokePos, 3));
+
+const smokeTex = canvasTexture(64, 64, (ctx, w, h) => {
+  const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+  grad.addColorStop(0, 'rgba(220,220,230,0.6)');
+  grad.addColorStop(0.5, 'rgba(180,180,190,0.25)');
+  grad.addColorStop(1, 'rgba(150,150,160,0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+});
+
+const smoke = new THREE.Points(smokeGeo, new THREE.PointsMaterial({
+  size: 0.35,
+  color: 0xcccccc,
+  map: smokeTex,
+  transparent: true,
+  opacity: 0.35,
+  depthWrite: false,
+  blending: THREE.AdditiveBlending
+}));
+smoke.position.set(-0.55, 1.55, -5.45);
+scene.add(smoke);
+
+// Sparks
+const sparkCount = mobile ? 90 : 170;
+const sparkPos = new Float32Array(sparkCount * 3);
+const sparkVel = [];
+for (let i = 0; i < sparkCount; i++) {
+  sparkVel.push({
+    x: (Math.random() - 0.5) * 1.9,
+    y: Math.random() * 2.7 + 1,
+    z: (Math.random() - 0.5) * 1.8,
+    age: Math.random() * 0.7
+  });
+}
+const sparkGeometry = new THREE.BufferGeometry();
+sparkGeometry.setAttribute('position', new THREE.BufferAttribute(sparkPos, 3));
+
+const dot = canvasTexture(64, 64, (ctx, w, h) => {
+  const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+  grad.addColorStop(0, '#ffffff');
+  grad.addColorStop(0.2, '#fff2bc');
+  grad.addColorStop(0.5, '#ff8c2a');
+  grad.addColorStop(1, 'rgba(255,80,0,0)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+});
+
+const sparks = new THREE.Points(sparkGeometry, new THREE.PointsMaterial({
+  size: 0.055,
+  color: 0xffcc76,
+  map: dot,
+  transparent: true,
+  depthWrite: false,
+  blending: THREE.AdditiveBlending,
+  toneMapped: false
+}));
+scene.add(sparks);
+
+setProgress(60, 'ساخت باران و آب…');
+
+// ============================================================
+// [RAIN]
+// ============================================================
+const rainCount = mobile ? 850 : 1900;
+const rainPos = new Float32Array(rainCount * 6);
+const rainSpeed = new Float32Array(rainCount);
+for (let i = 0; i < rainCount; i++) {
+  rainPos[i * 6] = (Math.random() - 0.5) * 35;
+  rainPos[i * 6 + 1] = Math.random() * 15;
+  rainPos[i * 6 + 2] = (Math.random() - 0.5) * 30 + 7;
+  rainSpeed[i] = 7 + Math.random() * 6;
+}
+const rainGeo = new THREE.BufferGeometry();
+rainGeo.setAttribute('position', new THREE.BufferAttribute(rainPos, 3));
+const rain = new THREE.LineSegments(rainGeo, new THREE.LineBasicMaterial({
+  color: 0x9bbbd4,
+  transparent: true,
+  opacity: 0.22,
+  depthWrite: false
+}));
+scene.add(rain);
+rain.visible = !reduced;
+
+// Ripples
+const ripples = [];
+for (let i = 0; i < 28; i++) {
+  const ring = new THREE.Mesh(
+    new THREE.RingGeometry(0.07, 0.081, 22),
+    new THREE.MeshBasicMaterial({
+      color: 0x74abc6,
+      transparent: true,
+      opacity: 0.15,
+      depthWrite: false
+    })
+  );
+  ring.rotation.x = -Math.PI / 2;
+  ring.position.set((Math.random() - 0.5) * 23, 0.025, Math.random() * 14 + 1);
+  scene.add(ring);
+  ripples.push({ mesh: ring, phase: Math.random() });
+}
+
+// ============================================================
+// [STREET LAMPS]
+// ============================================================
+function streetLamp(x, z) {
+  cylinder(0.065, 0.085, 7, mats.dark, x, 3.5, z);
+  box(1.1, 0.07, 0.11, mats.metal, x + 0.43, 6.98, z);
+  const glowMat = new THREE.MeshStandardMaterial({
+    color: 0xc6e6ff,
+    emissive: 0x82b8ff,
+    emissiveIntensity: 6
+  });
+  box(0.7, 0.025, 0.25, glowMat, x + 0.65, 6.9, z);
+  const lamp = new THREE.PointLight(0x82b8ff, 36, 22, 2);
+  lamp.position.set(x + 0.6, 6.6, z);
+  scene.add(lamp);
+}
+streetLamp(-8, 4);
+streetLamp(10, 10);
+
+// ============================================================
+// [NEIGHBORING BUILDINGS]
+// ============================================================
+for (const side of [-1, 1]) {
+  box(9, 9, 10, mats.brick, side * 12, 4.5, -6);
+  for (let floor = 0; floor < 3; floor++) {
+    for (let i = 0; i < 3; i++) {
+      const m = new THREE.MeshStandardMaterial({
+        color: 0x304856,
+        emissive: Math.random() > 0.45 ? 0x665033 : 0x132331,
+        emissiveIntensity: 0.8
+      });
+      box(1.05, 1.7, 0.05, m, side * 12 + (i - 1) * 2.3, 1.8 + floor * 2.6, -0.94);
+    }
+  }
+}
+
+// Street sign
+box(1.5, 0.65, 0.08, mats.blue, -7.2, 2, -0.4);
+textPlane('خیابان خیام', 1.4, 0.6, '#dceaf6', -7.2, 2, -0.3, 'bold 100px Tahoma');
+
+setProgress(75, 'ساخت شخصیت…');
+
+// ============================================================
+// [CHARACTER — بدون سرباز، شخصیت ساده]
+// ============================================================
+const human = new THREE.Group();
+human.position.set(-1.4, 0.02, 5.1);
+scene.add(human);
+
+const coatMat = new THREE.MeshStandardMaterial({ color: 0x2c4a63, roughness: 0.87 });
+const pantsMat = new THREE.MeshStandardMaterial({ color: 0x1a2530, roughness: 0.9 });
+const skinMat = new THREE.MeshStandardMaterial({ color: 0xb58769, roughness: 0.72 });
+const bootsMat = new THREE.MeshStandardMaterial({ color: 0x0d1219, roughness: 0.32 });
+const scarfMat = new THREE.MeshStandardMaterial({ color: 0x8b2e2e, roughness: 0.85 });
+
+// Body
+const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.22, 0.46, 6, 12), coatMat);
+body.position.y = 1.2;
+body.castShadow = true;
+human.add(body);
+
+const hem = new THREE.Mesh(new THREE.CylinderGeometry(0.23, 0.29, 0.38, 14), coatMat);
+hem.position.y = 0.91;
+hem.castShadow = true;
+human.add(hem);
+
+// Neck
+cylinder(0.06, 0.08, 0.13, skinMat, 0, 1.6, 0, human);
+
+// Scarf
+const scarf = new THREE.Mesh(new THREE.TorusGeometry(0.11, 0.05, 8, 20), scarfMat);
+scarf.rotation.x = Math.PI / 2;
+scarf.position.y = 1.66;
+scarf.castShadow = true;
+human.add(scarf);
+
+// Head
+const head = new THREE.Mesh(new THREE.SphereGeometry(0.145, 16, 12), skinMat);
+head.scale.set(0.9, 1.18, 0.92);
+head.position.y = 1.78;
+head.castShadow = true;
+human.add(head);
+
+// Hair
+const hair = new THREE.Mesh(
+  new THREE.SphereGeometry(0.15, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.56),
+  new THREE.MeshStandardMaterial({ color: 0x1a1210, roughness: 0.9 })
+);
+hair.position.set(0, 1.84, 0);
+human.add(hair);
+
+// Limbs
+function limb(parent, x, y, z, upperLen, lowerLen, mat) {
+  const pivot = new THREE.Group();
+  pivot.position.set(x, y, z);
+  parent.add(pivot);
+
+  const upper = new THREE.Mesh(new THREE.CapsuleGeometry(0.075, upperLen - 0.15, 4, 10), mat);
+  upper.position.y = -upperLen / 2;
+  upper.castShadow = true;
+  pivot.add(upper);
+
+  const lower = new THREE.Group();
+  lower.position.y = -upperLen;
+  pivot.add(lower);
+
+  const lowerMesh = new THREE.Mesh(new THREE.CapsuleGeometry(0.06, lowerLen - 0.12, 4, 10), mat);
+  lowerMesh.position.y = -lowerLen / 2;
+  lowerMesh.castShadow = true;
+  lower.add(lowerMesh);
+
+  return { pivot, lower };
+}
+
+const leftLeg = limb(human, -0.12, 0.88, 0, 0.38, 0.38, pantsMat);
+const rightLeg = limb(human, 0.12, 0.88, 0, 0.38, 0.38, pantsMat);
+
+// Boots
+for (const leg of [leftLeg, rightLeg]) {
+  box(0.15, 0.11, 0.28, bootsMat, 0, -0.39, -0.06, leg.lower);
+}
+
+const leftArm = limb(human, -0.27, 1.49, 0, 0.28, 0.27, coatMat);
+const rightArm = limb(human, 0.27, 1.49, 0, 0.28, 0.27, coatMat);
+rightArm.pivot.rotation.z = -0.25;
+rightArm.pivot.rotation.x = -0.4;
+rightArm.lower.rotation.x = -1.25;
+
+// Hands
+for (const arm of [leftArm, rightArm]) {
+  const hand = new THREE.Mesh(new THREE.SphereGeometry(0.06, 10, 8), skinMat);
+  hand.position.y = -0.28;
+  arm.lower.add(hand);
+}
+
+// Umbrella
+const umbrella = new THREE.Group();
+umbrella.position.set(0.33, 0, -0.13);
+human.add(umbrella);
+
+cylinder(0.012, 0.012, 1.15, mats.metal, 0, 1.83, 0, umbrella, 8);
+
+const canopyMat = new THREE.MeshPhysicalMaterial({
+  color: 0xc9e4ec,
+  transparent: true,
+  opacity: 0.22,
+  roughness: 0.11,
+  metalness: 0.07,
+  side: THREE.DoubleSide,
+  depthWrite: false
+});
+const canopy = new THREE.Mesh(
+  new THREE.SphereGeometry(0.85, 32, 14, 0, Math.PI * 2, 0, Math.PI / 2),
+  canopyMat
+);
+canopy.scale.y = 0.45;
+canopy.position.y = 2.37;
+canopy.renderOrder = 4;
+umbrella.add(canopy);
+
+// Umbrella ribs
+const ribsMat = new THREE.LineBasicMaterial({ color: 0xb0c5d0, transparent: true, opacity: 0.72 });
+for (let i = 0; i < 8; i++) {
+  const points = [];
+  const a = i * Math.PI / 4;
+  for (let j = 0; j <= 16; j++) {
+    const t = j / 16 * Math.PI / 2;
+    points.push(new THREE.Vector3(
+      Math.sin(t) * 0.85 * Math.cos(a),
+      2.37 + Math.cos(t) * 0.85 * 0.45,
+      Math.sin(t) * 0.85 * Math.sin(a)
+    ));
+  }
+  const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), ribsMat);
+  umbrella.add(line);
+}
+
+// Umbrella tip
+cylinder(0.017, 0.017, 0.12, mats.dark, 0, 2.8, 0, umbrella, 8);
+
+setProgress(85, 'آماده‌سازی نهایی…');
+
+// ============================================================
+// [ANIMATION STATE]
+// ============================================================
+let doorOpen = 0;
+let visited = false;
+let tour = { stage: 'manual', index: 0, time: 0 };
+const routePoints = [
+  new THREE.Vector3(2.4, 0, 1),
+  new THREE.Vector3(2.4, 0, -1.05),
+  new THREE.Vector3(2.4, 0, -3.4)
+];
+const caption = document.getElementById('story-caption');
+
+function say(text) {
+  if (caption.textContent !== text) caption.textContent = text;
+}
+
+function startVisit() {
+  clearInput();
+  paused = false;
+  updatePause();
+  visited = false;
+  tour = { stage: 'approach', index: 0, time: 0 };
+  say('از باران به نور کارگاه…');
+  document.getElementById('visit').textContent = '🎬 نمایش دوباره';
+}
+
+function cancelVisit() {
+  if (tour.stage !== 'manual') {
+    tour.stage = 'manual';
+    tour.time = 0;
+    say('کنترل حرکت در دست شماست.');
+  }
+}
+
+function startReaction() {
+  tour.stage = 'react';
+  tour.time = 0;
+  visited = true;
+  say('واو! از نزدیک خیلی جذابه!');
+  keys.clear();
+}
+
+function yawTowards(direction, dt) {
+  const target = Math.atan2(-direction.x, -direction.z);
+  const diff = THREE.MathUtils.euclideanModulo(target - human.rotation.y + Math.PI, Math.PI * 2) - Math.PI;
+  human.rotation.y += diff * Math.min(1, dt * 7);
+}
+
+function constrainMove(previous, next) {
+  next.x = THREE.MathUtils.clamp(next.x, -9, 9);
+  next.z = THREE.MathUtils.clamp(next.z, -9.1, 15);
+  const crossing = (previous.z + 1.8) * (next.z + 1.8) <= 0;
+  if (crossing && (next.x < 1.55 || next.x > 3.25 || doorOpen < 0.75)) {
+    next.z = previous.z;
+  }
+  if (next.z < -1.8) {
+    next.x = THREE.MathUtils.clamp(next.x, -5.9, 5.9);
+    if (
+      (next.x > -3.25 && next.x < 1.65 && next.z < -3.9 && next.z > -7.8) ||
+      (next.x > 3.5 && next.z < -5.5) ||
+      (next.x < -4 && next.z < -6.6)
+    ) {
+      next.x = previous.x;
+      next.z = previous.z;
+    }
+  }
+  return next;
+}
+
+// ============================================================
+// [TOUR STATE MACHINE]
+// ============================================================
+let yaw = 0;
+let pitch = 0.15;
+let walking = 0;
+let phase = 0;
+let drag = null;
+let paused = false;
+let quality = true;
+let currentWeather = 'rain';
+let currentTime = 'night';
+let soundEnabled = false;
+let audioContext = null;
+let rainSound = null;
+
+const keys = new Set();
+
+function clearInput() {
+  keys.clear();
+  drag = null;
+}
+
+// ============================================================
+// [KEYBOARD]
+// ============================================================
+window.addEventListener('keydown', e => {
+  if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ShiftLeft', 'ShiftRight'].includes(e.code)) {
+    e.preventDefault();
+    keys.add(e.code);
+  }
+  if (e.code === 'KeyR') reset();
+  if (e.code === 'Escape') { paused = !paused; updatePause(); }
+  if (e.code === 'KeyF') toggleFullscreen();
+  if (e.code === 'KeyH') toggleHelp();
+});
+
+window.addEventListener('keyup', e => keys.delete(e.code));
+window.addEventListener('blur', clearInput);
+
+// ============================================================
+// [MOUSE / POINTER]
+// ============================================================
+renderer.domElement.addEventListener('pointerdown', e => {
+  drag = { x: e.clientX, y: e.clientY };
+  renderer.domElement.setPointerCapture(e.pointerId);
+});
+
+renderer.domElement.addEventListener('pointermove', e => {
+  if (!drag) return;
+  yaw -= (e.clientX - drag.x) * 0.004;
+  pitch = THREE.MathUtils.clamp(pitch + (e.clientY - drag.y) * 0.002, -0.15, 0.6);
+  drag = { x: e.clientX, y: e.clientY };
+});
+
+renderer.domElement.addEventListener('pointerup', () => drag = null);
+renderer.domElement.addEventListener('pointercancel', () => drag = null);
+
+// Touch pad
+document.querySelectorAll('[data-key]').forEach(b => {
+  b.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    keys.add(b.dataset.key);
+    b.setPointerCapture(e.pointerId);
+  });
+  for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+    b.addEventListener(type, () => keys.delete(b.dataset.key));
+  }
+});
+
+// ============================================================
+// [RESET]
+// ============================================================
+function reset() {
+  clearInput();
+  tour = { stage: 'manual', index: 0, time: 0 };
+  visited = false;
+  doorOpen = 0;
+  human.position.set(-1.4, 0.02, 5.1);
+  human.rotation.y = 0;
+  yaw = 0;
+  pitch = 0.15;
+  camera.position.set(-1.4, 3.5, 11.6);
+  if (umbrella.parent !== human) human.attach(umbrella);
+  umbrella.position.set(0.33, 0, -0.13);
+  umbrella.rotation.set(0, 0, 0);
+  umbrella.scale.set(1, 1, 1);
+  say('برای دیدن ورود و واکنش، «بریم داخل کارگاه» را بزن.');
+}
+
+// ============================================================
+// [BUTTONS]
+// ============================================================
+document.getElementById('reset').onclick = reset;
+document.getElementById('visit').onclick = () => { reset(); startVisit(); };
+
+function updatePause() {
+  const btn = document.getElementById('pause');
+  btn.textContent = paused ? '▶ ادامه' : '⏸ توقف';
+  btn.setAttribute('aria-pressed', String(paused));
+}
+document.getElementById('pause').onclick = () => { paused = !paused; clearInput(); updatePause(); };
+
+document.getElementById('quality').onclick = () => {
+  quality = !quality;
+  renderer.setPixelRatio(quality ? Math.min(devicePixelRatio, mobile ? 1.25 : 1.6) : 0.85);
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setPixelRatio(renderer.getPixelRatio());
+  composer.setSize(innerWidth, innerHeight);
+  bloom.enabled = quality;
+  document.getElementById('quality').textContent = quality ? '🎬 کیفیت: سینمایی' : '⚡ کیفیت: سبک';
+};
+
+// Weather toggle
+document.getElementById('weather').onclick = () => {
+  const btn = document.getElementById('weather');
+  if (currentWeather === 'rain') {
+    currentWeather = 'clear';
+    rain.visible = false;
+    scene.fog.density = 0.015;
+    btn.textContent = '☀️ صاف';
+  } else if (currentWeather === 'clear') {
+    currentWeather = 'fog';
+    rain.visible = false;
+    scene.fog.density = 0.06;
+    btn.textContent = '🌫️ مه‌آلود';
+  } else {
+    currentWeather = 'rain';
+    rain.visible = true;
+    scene.fog.density = 0.025;
+    btn.textContent = '🌧️ بارانی';
+  }
+};
+
+// Time toggle (day/night)
+document.getElementById('time').onclick = () => {
+  const btn = document.getElementById('time');
+  if (currentTime === 'night') {
+    currentTime = 'day';
+    scene.background = new THREE.Color(0x1a3a5c);
+    moon.color.setHex(0xffffff);
+    moon.intensity = 2.0;
+    hemi.intensity = 2.0;
+    stars.visible = false;
+    btn.textContent = '☀️ روز';
+  } else {
+    currentTime = 'night';
+    scene.background = new THREE.Color(0x040911);
+    moon.color.setHex(0x6e9fff);
+    moon.intensity = 1.3;
+    hemi.intensity = 1.0;
+    stars.visible = true;
+    btn.textContent = '🌙 شب';
+  }
+};
+
+// Sound toggle
+document.getElementById('sound').onclick = () => {
+  const btn = document.getElementById('sound');
+  soundEnabled = !soundEnabled;
+  if (soundEnabled) {
+    if (!audioContext) {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    startRainSound();
+    btn.textContent = '🔊 صدا';
+    btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
+  } else {
+    stopRainSound();
+    btn.textContent = '🔇 صدا';
+    btn.classList.remove('active');
+    btn.setAttribute('aria-pressed', 'false');
+  }
+};
+
+function startRainSound() {
+  if (!audioContext) return;
+  const bufferSize = 2 * audioContext.sampleRate;
+  const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+  const output = noiseBuffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) {
+    output[i] = Math.random() * 2 - 1;
+  }
+  const whiteNoise = audioContext.createBufferSource();
+  whiteNoise.buffer = noiseBuffer;
+  whiteNoise.loop = true;
+
+  const filter = audioContext.createBiquadFilter();
+  filter.type = 'lowpass';
+  filter.frequency.value = 800;
+
+  const gain = audioContext.createGain();
+  gain.gain.value = 0.08;
+
+  whiteNoise.connect(filter);
+  filter.connect(gain);
+  gain.connect(audioContext.destination);
+  whiteNoise.start();
+  rainSound = { source: whiteNoise, gain, filter };
+}
+
+function stopRainSound() {
+  if (rainSound) {
+    try { rainSound.source.stop(); } catch (e) {}
+    rainSound = null;
+  }
+}
+
+// Screenshot
+document.getElementById('screenshot').onclick = () => {
+  composer.render();
+  const dataUrl = renderer.domElement.toDataURL('image/png');
+  const link = document.createElement('a');
+  link.download = 'sahand-laser-scene-' + Date.now() + '.png';
+  link.href = dataUrl;
+  link.click();
+  say('📸 عکس گرفته شد!');
+};
+
+// Fullscreen
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen?.();
+  } else {
+    document.exitFullscreen?.();
+  }
+}
+document.getElementById('fullscreen').onclick = toggleFullscreen;
+
+// Help toggle
+function toggleHelp() {
+  document.getElementById('controls-hint').classList.toggle('hidden');
+}
+document.getElementById('help').onclick = toggleHelp;
+
+// ============================================================
+// [INFO PANEL — Hotspot]
+// ============================================================
+window.closeInfoPanel = function () {
+  document.getElementById('info-panel').classList.remove('open');
+};
+
+window.navigateToSite = function (hash) {
+  window.location.href = 'https://sahandlaser.com/' + (hash || '');
+};
+
+// Raycaster for hotspot click
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+renderer.domElement.addEventListener('click', (e) => {
+  if (drag) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObject(machineGroup, true);
+  if (intersects.length > 0) {
+    showMachineInfo();
+  }
+});
+
+function showMachineInfo() {
+  document.getElementById('info-title').textContent = 'دستگاه برش لیزر فایبر CNC';
+  document.getElementById('info-text').textContent = 'دستگاه برش لیزر فایبر فلزات CNC با توان ۱ تا ۱۲ کیلووات. مناسب برای برش دقیق و پرسرعت ورق‌های فولادی، استیل، آلومینیوم و گالوانیزه.';
+  document.getElementById('info-panel').classList.add('open');
+}
+
+// ============================================================
+// [PASSING CARS — ماشین‌های عبوری]
+// ============================================================
+function createCar(color = 0xaa3333) {
+  const car = new THREE.Group();
+  box(1.8, 0.5, 3.8, new THREE.MeshStandardMaterial({ color, metalness: 0.7, roughness: 0.35 }), 0, 0.55, 0, car);
+  box(1.5, 0.4, 2.0, new THREE.MeshStandardMaterial({ color: 0x1a1a1a, metalness: 0.5, roughness: 0.3 }), 0, 1.0, 0.2, car);
+  const headlight = new THREE.PointLight(0xfff5cc, 5, 8, 2);
+  headlight.position.set(0, 0.5, -1.9);
+  car.add(headlight);
+  const taillight = new THREE.Mesh(
+    new THREE.PlaneGeometry(1.4, 0.15),
+    new THREE.MeshBasicMaterial({ color: 0xff2222 })
+  );
+  taillight.position.set(0, 0.5, 1.91);
+  car.add(taillight);
+  car.position.set(-14, 0, 9);
+  scene.add(car);
+  return car;
+}
+
+const cars = [createCar(0xaa3333), createCar(0x3344aa), createCar(0x222222)];
+cars.forEach((c, i) => {
+  c.visible = i === 0;
+  c.userData = { active: i === 0, speed: 4 + Math.random() * 2 };
+});
+
+let nextCarTime = 3;
+
+// ============================================================
+// [ANIMATION LOOP]
+// ============================================================
+const clock = new THREE.Clock();
+const desired = new THREE.Vector3();
+const look = new THREE.Vector3();
+let elapsed = 0;
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.035);
+  if (document.hidden) return;
+
+  if (!paused) {
+    elapsed += dt;
+
+    // Movement input
+    const forward = (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0) - (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0);
+    const strafe = (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) - (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0);
+    const dir = new THREE.Vector3(strafe, 0, -forward);
+
+    if (dir.lengthSq() > 0) {
+      cancelVisit();
+      dir.normalize().applyAxisAngle(new THREE.Vector3(0, 1, 0), yaw);
+    }
+
+    // Tour logic
+    if (tour.stage === 'approach' || tour.stage === 'enter') {
+      const target = routePoints[tour.index];
+      dir.copy(target).sub(human.position);
+      dir.y = 0;
+      if (dir.length() < 0.12) {
+        if (tour.index === 0) { tour.index = 1; say('درِ شیشه‌ای به‌آرامی باز می‌شود.'); }
+        else if (tour.index === 1) { tour.stage = 'door'; say('از اینجا وارد کارگاه می‌شویم.'); }
+        else startReaction();
+        dir.set(0, 0, 0);
+      } else {
+        dir.normalize();
+      }
+    } else if (tour.stage === 'door') {
+      dir.set(0, 0, 0);
+      if (doorOpen > 0.85) { tour.stage = 'enter'; tour.index = 2; }
+    } else if (tour.stage === 'react') {
+      dir.set(0, 0, 0);
+    }
+
+    const active = dir.lengthSq() > 0;
+    walking = THREE.MathUtils.damp(walking, active ? 1 : 0, 9, dt);
+
+    if (active) {
+      const previous = human.position.clone();
+      const next = previous.clone().addScaledVector(
+        dir,
+        dt * ((keys.has('ShiftLeft') || keys.has('ShiftRight')) && tour.stage === 'manual' ? 2.1 : 1.45)
+      );
+      constrainMove(previous, next);
+      human.position.copy(next);
+      yawTowards(dir, dt);
+    }
+
+    // Leg animation
+    phase += dt * (active ? 8 : 2);
+    const step = Math.sin(phase) * 0.5 * walking;
+    leftLeg.pivot.rotation.x = step;
+    rightLeg.pivot.rotation.x = -step;
+    leftLeg.lower.rotation.x = Math.max(0, -Math.sin(phase)) * 0.6 * walking;
+    rightLeg.lower.rotation.x = Math.max(0, Math.sin(phase)) * 0.6 * walking;
+    leftArm.pivot.rotation.x = -step * 0.7;
+    body.rotation.z = Math.sin(phase) * 0.015 * walking;
+    umbrella.rotation.z = Math.sin(elapsed * 2) * 0.014 + step * 0.025;
+
+    // Visitor logic (door, indoors)
+    updateVisitor(dt);
+
+    // Rain animation
+    if (currentWeather === 'rain' && !reduced) {
+      for (let i = 0; i < rainCount; i++) {
+        const k = i * 6;
+        rainPos[k + 1] -= rainSpeed[i] * dt;
+        rainPos[k] += 0.3 * dt;
+        if (rainPos[k + 1] < 0.04 || (rainPos[k + 2] < -1.4 && Math.abs(rainPos[k]) < 7 && rainPos[k + 1] < 5.5)) {
+          rainPos[k + 1] = 12 + Math.random() * 5;
+          rainPos[k] = (Math.random() - 0.5) * 35;
+          rainPos[k + 2] = (Math.random() - 0.5) * 30 + 7;
+        }
+        rainPos[k + 3] = rainPos[k] - 0.015;
+        rainPos[k + 4] = rainPos[k + 1] + 0.19 + rainSpeed[i] * 0.018;
+        rainPos[k + 5] = rainPos[k + 2];
+      }
+      rainGeo.attributes.position.needsUpdate = true;
+
+      // Ripples
+      for (const r of ripples) {
+        r.phase = (r.phase + dt * 0.7) % 1;
+        r.mesh.scale.setScalar(0.3 + r.phase * 3);
+        r.mesh.material.opacity = (1 - r.phase) * 0.14;
+      }
+    }
+
+    // Machine cutting animation
+    const cuttingActive = Math.sin(elapsed * 1.8) > -0.6;
+    const headX = Math.sin(elapsed * 0.8) * 1.2;
+    headGroup.position.x = headX;
+    cutLight.position.x = headX - 0.8 + 0.25;
+
+    // Sparks
+    for (let i = 0; i < sparkCount; i++) {
+      const v = sparkVel[i];
+      v.age += dt;
+      if (v.age > 0.7) v.age = 0;
+      const age = v.age;
+      const k = i * 3;
+      sparkPos[k] = headX - 0.65 + v.x * age;
+      sparkPos[k + 1] = 1.62 + v.y * age - 4 * age * age;
+      sparkPos[k + 2] = -5.45 + v.z * age;
+    }
+    sparkGeometry.attributes.position.needsUpdate = true;
+    sparks.visible = cuttingActive && !reduced;
+    cutLight.intensity = reduced ? 5 : (cuttingActive ? 9 + Math.sin(elapsed * 3) * 0.7 : 1);
+
+    // Smoke animation
+    for (let i = 0; i < smokeCount; i++) {
+      const v = smokeVel[i];
+      v.age += dt;
+      if (v.age > v.life) {
+        v.age = 0;
+        smokePos[i * 3] = (Math.random() - 0.5) * 0.3;
+        smokePos[i * 3 + 1] = 0;
+        smokePos[i * 3 + 2] = (Math.random() - 0.5) * 0.3;
+      }
+      smokePos[i * 3] += v.x * dt;
+      smokePos[i * 3 + 1] += v.y * dt;
+      smokePos[i * 3 + 2] += v.z * dt;
+    }
+    smokeGeo.attributes.position.needsUpdate = true;
+    smoke.position.x = headX - 0.65 + 0.1;
+
+    // Star twinkle
+    if (currentTime === 'night' && !reduced) {
+      stars.material.opacity = 0.7 + Math.sin(elapsed * 2) * 0.15;
+    }
+
+    // Passing cars
+    nextCarTime -= dt;
+    if (nextCarTime <= 0 && cars.some(c => !c.userData.active)) {
+      const inactiveCar = cars.find(c => !c.userData.active);
+      if (inactiveCar) {
+        inactiveCar.userData.active = true;
+        inactiveCar.visible = true;
+        inactiveCar.position.set(-14, 0, 9);
+      }
+      nextCarTime = 6 + Math.random() * 8;
+    }
+
+    cars.forEach(car => {
+      if (!car.userData.active) return;
+      car.position.x += car.userData.speed * dt;
+      if (car.position.x > 16) {
+        car.userData.active = false;
+        car.visible = false;
+      }
+    });
+  }
+
+  // Camera
+  const inside = human.position.z < -2.05;
+  if (tour.stage === 'react') {
+    desired.set(4.25, 2.35, -5.1);
+    look.set(0.5, 1.42, -4.8);
+  } else {
+    const distance = inside ? 2.8 : 6.6;
+    desired.set(
+      Math.sin(yaw) * distance,
+      inside ? 2.35 : 3.2 + pitch * 3,
+      Math.cos(yaw) * distance
+    ).add(human.position);
+    if (inside) {
+      desired.x = THREE.MathUtils.clamp(desired.x, -5.8, 5.8);
+      desired.z = THREE.MathUtils.clamp(desired.z, -9, -2.1);
+    }
+    look.copy(human.position).add(
+      new THREE.Vector3(-Math.sin(yaw) * 1.4, 1.5, -Math.cos(yaw) * 1.4)
+    );
+  }
+
+  camera.position.lerp(desired, 1 - Math.exp(-dt * 3.5));
+  camera.lookAt(look);
+
+  composer.render();
+}
+
+// ============================================================
+// [VISITOR UPDATE — منطق ورود به کارگاه]
+// ============================================================
+function updateVisitor(dt) {
+  const indoors = human.position.z < -2.05;
+  const nearDoor = Math.hypot(human.position.x - 2.4, human.position.z + 1.8) < 2.7 || tour.stage === 'enter';
+
+  doorOpen = THREE.MathUtils.damp(doorOpen, nearDoor ? 1 : 0, 5, dt);
+  entryDoor.position.x = 1.25 + doorOpen * 2.28;
+
+  const floor = indoors ? 0.34 : (human.position.z < 0.3 ? 0.18 : 0.02);
+  human.position.y = floor;
+
+  document.body.classList.toggle('inside-room', indoors);
+
+  // Umbrella transition
+  if (indoors && umbrella.parent === human) {
+    scene.attach(umbrella);
+    say('چتر را کنار در می‌گذاریم و دستگاه را می‌بینیم.');
+  }
+  if (umbrella.parent === scene) {
+    umbrella.position.lerp(new THREE.Vector3(3.35, 0.26, -2.55), 1 - Math.exp(-dt * 6));
+    umbrella.quaternion.slerp(new THREE.Quaternion(), 1 - Math.exp(-dt * 6));
+    umbrella.scale.x = umbrella.scale.z = THREE.MathUtils.damp(umbrella.scale.x, 0.16, 5, dt);
+  }
+  if (!indoors && umbrella.parent === scene) {
+    human.attach(umbrella);
+    umbrella.position.set(0.33, 0, -0.13);
+    umbrella.rotation.set(0, 0, 0);
+    umbrella.scale.set(1, 1, 1);
+  }
+
+  // Walking / reaction
+  if (tour.stage === 'react') {
+    tour.time += dt;
+    const t = tour.time;
+    walking = THREE.MathUtils.damp(walking, 0, 12, dt);
+    yawTowards(new THREE.Vector3(-0.8 - human.position.x, 0, -5.8 - human.position.z), dt);
+
+    if (t > 6.2) {
+      tour.stage = 'manual';
+      say('حالا خودت داخل کارگاه قدم بزن.');
+    }
+  } else if (indoors && !visited && Math.hypot(human.position.x - 2.4, human.position.z + 3.4) < 0.8) {
+    startReaction();
+  }
+}
+
+// ============================================================
+// [RESIZE]
+// ============================================================
+window.addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setSize(innerWidth, innerHeight);
+});
+
+document.addEventListener('visibilitychange', clearInput);
+
+// ============================================================
+// [START]
+// ============================================================
+reset();
+setProgress(100, 'آماده!');
+status.textContent = 'صحنه آماده است';
+document.getElementById('loading').classList.add('done');
+setTimeout(() => document.getElementById('loading').hidden = true, 700);
+
+animate();
+</script>
+</body>
+</html>
