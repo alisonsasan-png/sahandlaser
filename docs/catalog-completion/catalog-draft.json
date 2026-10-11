@@ -60,9 +60,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CC001/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-1500",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web+user_media",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 1.5kW; دقت کنترل اعلامی خانواده ±0.5°C; dual-temperature CWFL family.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -124,9 +139,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CC002/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-2000",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web+user_media",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 2kW; دقت کنترل اعلامی خانواده ±0.5°C; dual-temperature CWFL family.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -192,6 +222,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-3000",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 3kW؛ دقت کنترل معمول سری ±0.5°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -234,6 +273,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "HL-1500",
+        "brand": "Hanli",
+        "sourceLevel": "user_pdf_and_media",
+        "previousStatus": "خانواده تأیید؛ پیکربندی نهایی وابسته به پلاک",
+        "previousFacts": "مدل در آرشیو رسانه‌ای سهند موجود است؛ کاتالوگ Hanli موجود و خانواده صنعتی تأیید شده، اما پسوند مدل/پیکربندی باید از پلاک دستگاه تطبیق شود.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -276,6 +324,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "HL-2000",
+        "brand": "Hanli",
+        "sourceLevel": "user_pdf_and_media",
+        "previousStatus": "خانواده تأیید؛ پیکربندی نهایی وابسته به پلاک",
+        "previousFacts": "مدل در آرشیو رسانه‌ای سهند موجود است؛ کاتالوگ Hanli موجود و خانواده صنعتی تأیید شده، اما پسوند مدل/پیکربندی باید از پلاک دستگاه تطبیق شود.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -325,6 +382,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "HL-3000",
+        "brand": "Hanli",
+        "sourceLevel": "user_pdf_and_media",
+        "previousStatus": "نیازمند تطبیق مدل دقیق",
+        "previousFacts": "تصویر/کاتالوگ کاربر موجود؛ ولتاژ 220V و داده‌های پوستر نیازمند تطبیق جدول مدل",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -374,6 +440,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "HL-12000",
+        "brand": "Hanli",
+        "sourceLevel": "user_pdf_and_media",
+        "previousStatus": "نیازمند تطبیق مدل دقیق",
+        "previousFacts": "تصویر/کاتالوگ کاربر موجود؛ پوستر 380V را ذکر می‌کند",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -423,6 +498,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "HL-6000",
+        "brand": "Hanli",
+        "sourceLevel": "user_pdf_and_media",
+        "previousStatus": "نیازمند تطبیق مدل دقیق",
+        "previousFacts": "تصویر/کاتالوگ کاربر موجود؛ پوستر 380V را ذکر می‌کند",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -482,6 +566,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-12000",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 12kW؛ دقت کنترل معمول سری ±1°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -541,6 +634,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-20000",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 20kW؛ دقت کنترل معمول سری ±1.5°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -600,6 +702,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "CWFL-6000",
+        "brand": "TEYU S&A",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "برای سیستم فایبر 6kW؛ دقت کنترل معمول سری ±1°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -670,9 +781,24 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CH002/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM109",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Auto focus; media indicates ≤1500W",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -762,6 +888,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM111",
+        "brand": "RayTools",
+        "sourceLevel": "official_manual",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "RayTools BM111: 3.3kW auto-focus series; focus travel about 22mm; range +10 to -12mm; accuracy 0.05mm; D30 lens group; QBH/QD interfaces; driver acceleration up to 10m/s²; speed up to 10m/min; drawer protective lens design.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1058,6 +1193,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "Multiple",
+        "brand": "Sahand/Various",
+        "sourceLevel": "user_media",
+        "previousStatus": "پوستر نیازمند اصلاح فنی",
+        "previousFacts": "تصویر موجود؛ اعداد پوستر با متن جوش تداخل دارد و برای انتشار قابل اعتماد نیست",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1474,6 +1618,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "Multiple",
+        "brand": "RayTools / BOCI / متفرقه",
+        "sourceLevel": "user_media",
+        "previousStatus": "ثبت خانواده - سایزها جداگانه نگهداری شوند",
+        "previousFacts": "مدل‌های متنوع؛ تصاویر D28/M11 و D32/M14 و نمونه RayTools/BOCI موجود",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1523,6 +1676,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BLT Series",
+        "brand": "BOCI/BLT",
+        "sourceLevel": "user_media",
+        "previousStatus": "نیازمند تطبیق رسمی قبل از انتشار عدد دما",
+        "previousFacts": "نمونه پوستر 32×5mm، 1064nm؛ دمای درج‌شده تا حدود 500°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1567,6 +1729,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "Various",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "ثبت خانواده",
+        "previousFacts": "نمونه پوستر 27.9×4.1mm، 1064nm؛ بسته‌بندی‌های RayTools Original موجود",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1611,6 +1782,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "Various",
+        "brand": "WSX",
+        "sourceLevel": "user_media",
+        "previousStatus": "ثبت خانواده",
+        "previousFacts": "نمونه پوستر 30×5mm، 1064nm",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1634,11 +1814,6 @@
           "scope": "identity"
         },
         {
-          "label": "فوکوس",
-          "value": "خودکار",
-          "scope": "family_reference"
-        },
-        {
           "label": "رده توان سری",
           "value": "3.3kW",
           "scope": "family_reference"
@@ -1646,11 +1821,6 @@
         {
           "label": "کورس فوکوس",
           "value": "حدود 22mm",
-          "scope": "family_reference"
-        },
-        {
-          "label": "بازه فوکوس خودکار",
-          "value": "+10 تا -12mm",
           "scope": "family_reference"
         },
         {
@@ -1672,6 +1842,54 @@
           "label": "خنک‌کاری",
           "value": "آبی",
           "scope": "family_reference"
+        },
+        {
+          "label": "فوکوس",
+          "value": "خودکار",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "حداکثر توان ورودی فیبر در نسخه دفترچه",
+          "value": "3.3 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "بازه فوکوس خودکار",
+          "value": "+10 تا −12 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "دقت تنظیم فوکوس",
+          "value": "0.05 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "قطر گروه لنز",
+          "value": "D30",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "رابط فیبر نسخه دفترچه",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "طول کانونی کولیمیشن، گزینه‌ها",
+          "value": "75 / 100 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "طول کانونی فوکوس، گزینه‌ها",
+          "value": "125 / 155 / 200 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
         }
       ],
       "images": [],
@@ -1688,7 +1906,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
+          "title": "RayTools BM110 Manual V2.0, 2023-11-28",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -1697,9 +1921,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-RAY-BM110/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM110",
+        "brand": "RayTools",
+        "sourceLevel": "official_manual",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "RayTools BM110: auto-focus cutting head; 3.3kW series; focus travel about 22mm; auto-focus +10 to -12mm; adjustment accuracy 0.05mm; D30 lens group; QBH interface; water-cooled.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1742,6 +1981,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM114-E",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Auto focus; media indicates ≤6000W",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1784,6 +2032,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM115",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Auto focus; media indicates 6/8/12kW variants",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1826,6 +2083,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM115-E",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Auto focus; media indicates 6/8/12kW variants",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1868,6 +2134,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BM116-E",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Auto focus; media indicates 6/8/12kW variants",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1910,6 +2185,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BT220",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Manual focus; media indicates ≤2000W",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1952,6 +2236,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "BT240",
+        "brand": "RayTools",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل از آرشیو تأیید؛ عدد توان قبل از انتشار با دیتاشیت رسمی تطبیق شود",
+        "previousFacts": "Manual focus; media indicates ≤4000W",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1993,6 +2286,30 @@
           "label": "بازه فشار در بعضی پیکربندی‌ها",
           "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
           "scope": "family_reference"
+        },
+        {
+          "label": "کارکرد",
+          "value": "تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "بازه تنظیم فشار در خانواده ITV105x",
+          "value": "0.005–0.9 MPa",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "اندازه اتصال‌های معرفی‌شده سری",
+          "value": "1/8 یا 1/4 اینچ، بسته به پسوند",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "نوع فرمان",
+          "value": "گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
         }
       ],
       "images": [],
@@ -2009,7 +2326,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
+          "title": "SMC ITV Series catalog, base ITV105x family selection table",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2018,9 +2341,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-SMC-ITV1050/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "ITV1050",
+        "brand": "SMC",
+        "sourceLevel": "official_web+user_media",
+        "previousStatus": "خانواده رسمی تأیید شد؛ پسوند دقیق قطعه از روی لیبل برای انتشار نهایی لازم است",
+        "previousFacts": "SMC ITV1000 family: 24VDC ±10%; input options 4–20mA / 0–20mA / 0–5V / 0–10V depending suffix; set pressure range option up to 0.9MPa; IP65; exact port/input depend full part number.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2062,6 +2400,30 @@
           "label": "بازه فشار در بعضی پیکربندی‌ها",
           "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
           "scope": "family_reference"
+        },
+        {
+          "label": "کارکرد",
+          "value": "تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "بازه تنظیم فشار در خانواده ITV205x",
+          "value": "0.005–0.9 MPa",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "اندازه اتصال‌های معرفی‌شده سری",
+          "value": "1/4 یا 3/8 اینچ، بسته به پسوند",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
+        },
+        {
+          "label": "نوع فرمان",
+          "value": "گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل",
+          "scope": "manufacturer_manual",
+          "source": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf"
         }
       ],
       "images": [],
@@ -2078,7 +2440,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
+          "title": "SMC ITV Series catalog, base ITV205x family selection table",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2090,6 +2458,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "ITV2050",
+        "brand": "SMC",
+        "sourceLevel": "official_web+user_media",
+        "previousStatus": "خانواده رسمی تأیید شد؛ پسوند دقیق قطعه از روی لیبل برای انتشار نهایی لازم است",
+        "previousFacts": "SMC ITV2000 family: 24VDC ±10%; input options 4–20mA / 0–10V depending suffix; common port sizes include 1/4 and 3/8; set pressure option up to 0.9MPa; IP65; exact values depend full part number.",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2132,6 +2509,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "TRA",
+        "brand": "نامشخص",
+        "sourceLevel": "user_media",
+        "previousStatus": "مدل/سازنده نیازمند تأیید",
+        "previousFacts": "برای برش تخت؛ پوستر 3–6kW و وزن 0.5–1kg را ذکر می‌کند",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2191,6 +2577,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "FSCUT2000C",
+        "brand": "BOCHU/Friendess",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "کنترلر open-loop برای برش فلز و غیرفلز",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2282,9 +2677,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CTRL-FSCUT2000E/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "FSCUT2000E",
+        "brand": "BOCHU/Friendess",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "EtherCAT، مناسب 1–4kW؛ BMC228B + BCL4566E + WKB V6",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2321,6 +2731,42 @@
           "label": "کنترل",
           "value": "حرکت، لیزر و گاز برش",
           "scope": "family_reference"
+        },
+        {
+          "label": "ساختار ارتباطی",
+          "value": "EtherCAT",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
+        },
+        {
+          "label": "کاربرد کنترل",
+          "value": "حرکت محورها، لیزر و گاز برش",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
+        },
+        {
+          "label": "برد اصلی در نسخه مرجع",
+          "value": "BMC228B",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
+        },
+        {
+          "label": "برد ترمینال، نسخه سازگار با BLT",
+          "value": "BCL4568E",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
+        },
+        {
+          "label": "برد ترمینال، نسخه غیر BLT",
+          "value": "BCL4566E",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
+        },
+        {
+          "label": "رابط برد اصلی",
+          "value": "PCI Express 2.0 (Gen2)",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf"
         }
       ],
       "images": [],
@@ -2337,7 +2783,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf",
+          "title": "FSCUT4000E Installation Manual V1.3, PDF pages 8–12",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2349,6 +2801,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "FSCUT4000E",
+        "brand": "BOCHU/Friendess",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "EtherCAT؛ مناسب حدود 1.5–8kW؛ کنترل حرکت، لیزر و گاز برش",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2465,6 +2926,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C1000",
+        "brand": "Raycus",
+        "sourceLevel": "user_media/manual+official_family",
+        "previousStatus": "ثبت و منبع‌دار",
+        "previousFacts": "1000W continuous-wave fiber source; archive media present",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2536,9 +3006,24 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/FS004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C1500",
+        "brand": "Raycus",
+        "sourceLevel": "official_manual",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "1500W؛ CW/Modulated؛ 1080±5nm؛ بازه توان 10–100%؛ water cooling",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2581,6 +3066,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C2000",
+        "brand": "Raycus",
+        "sourceLevel": "user_media/manual+official_family",
+        "previousStatus": "ثبت و منبع‌دار",
+        "previousFacts": "2000W continuous-wave fiber source; archive media present",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2728,6 +3222,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "Multiple",
+        "brand": "Sahand Laser",
+        "sourceLevel": "user_pdf",
+        "previousStatus": "تأیید از کاتالوگ سهند",
+        "previousFacts": "30/50/70/100/120W در کاتالوگ؛ سورس Raycus/JPT/IPG؛ کنترلر BJJCZ؛ لنز Opex؛ دقت 0.03mm؛ سرعت تا 8000mm/s",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2913,7 +3416,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [
         "./assets/products/ML-004/commercial-v1.jpg",
@@ -2963,7 +3472,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-005/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [
         "./assets/products/ML-005/commercial-v1.jpg",
@@ -3056,7 +3571,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-007/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [
         "./assets/products/ML-007/commercial-v1.jpg",
@@ -3194,6 +3715,48 @@
           "label": "کاربرد مرجع",
           "value": "برش / جوش صنعتی",
           "scope": "family_reference"
+        },
+        {
+          "label": "توان خروجی نسخه دفترچه",
+          "value": "3100 ±100 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "نوع خروجی",
+          "value": "CW / Modulated",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "بازه تنظیم توان",
+          "value": "10–100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080 ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "آبی",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "وزن نسخه دفترچه",
+          "value": "کمتر از 70 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "رابط فیبر نسخه دفترچه",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         }
       ],
       "images": [],
@@ -3210,7 +3773,13 @@
         "رابط فیبر و روش کنترل دستگاه چیست؟",
         "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+          "title": "Raycus HP Series guide, PDF page 10; RFL-C3000S-HP column",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -3222,6 +3791,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C3000S-HP",
+        "brand": "Raycus",
+        "sourceLevel": "official_web",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "خانواده HP-Series؛ توان نامی حدود 3kW؛ کاربرد برش/جوش صنعتی",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3243,6 +3821,48 @@
           "label": "مدل / خانواده",
           "value": "RFL-C4000S-HP",
           "scope": "identity"
+        },
+        {
+          "label": "توان خروجی نسخه دفترچه",
+          "value": "4100 ±100 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "نوع خروجی",
+          "value": "CW / Modulated",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "بازه تنظیم توان",
+          "value": "10–100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080 ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "آبی",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "وزن نسخه دفترچه",
+          "value": "کمتر از 75 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "رابط فیبر نسخه دفترچه",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         }
       ],
       "images": [],
@@ -3259,11 +3879,26 @@
         "رابط فیبر و روش کنترل دستگاه چیست؟",
         "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+          "title": "Raycus HP Series guide, PDF page 10; RFL-C4000S-HP column",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C4000S-HP",
+        "brand": "Raycus",
+        "sourceLevel": "user_media/manual+official_family",
+        "previousStatus": "ثبت و منبع‌دار",
+        "previousFacts": "HP-Series continuous-wave source; official family guide covers 2–6kW",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3292,19 +3927,51 @@
           "scope": "family_reference"
         },
         {
-          "label": "طول موج",
-          "value": "1080آ±5nm",
+          "label": "وزن اعلامی",
+          "value": "کمتر از 85kg",
           "scope": "family_reference"
+        },
+        {
+          "label": "توان خروجی نسخه دفترچه",
+          "value": "6100 ±100 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "نوع خروجی",
+          "value": "CW / Modulated",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "بازه تنظیم توان",
+          "value": "10–100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080 ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         },
         {
           "label": "خنک‌کاری",
           "value": "آبی",
-          "scope": "family_reference"
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         },
         {
-          "label": "وزن اعلامی",
-          "value": "کمتر از 85kg",
-          "scope": "family_reference"
+          "label": "وزن نسخه دفترچه",
+          "value": "کمتر از 85 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
+          "label": "رابط فیبر نسخه دفترچه",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         }
       ],
       "images": [],
@@ -3321,7 +3988,13 @@
         "رابط فیبر و روش کنترل دستگاه چیست؟",
         "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+          "title": "Raycus HP Series guide, PDF page 10; RFL-C6000S-HP column",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -3333,6 +4006,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-C6000S-HP",
+        "brand": "Raycus",
+        "sourceLevel": "official_manual",
+        "previousStatus": "تأیید رسمی",
+        "previousFacts": "خروجی 6100±100W طبق راهنمای رسمی؛ 1080±5nm؛ water cooling؛ وزن <85kg",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3466,6 +4148,15 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "RFL-QCW150/1500",
+        "brand": "Raycus",
+        "sourceLevel": "user_pdf",
+        "previousStatus": "ثبت و منبع‌دار",
+        "previousFacts": "QCW source; user guide supplied; intended for pulsed/QCW processing and spot-welding style applications",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3533,6 +4224,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "1500W",
+        "brand": "Sahand/Various",
+        "sourceLevel": "user_media",
+        "previousStatus": "اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند",
+        "previousFacts": "پوستر: 1.5kW، 1064nm، ضخامت درج‌شده 4mm، 10–40°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3594,6 +4294,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "2000W",
+        "brand": "Sahand/Various",
+        "sourceLevel": "user_media",
+        "previousStatus": "اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند",
+        "previousFacts": "پوستر: 2kW، 1064nm، ضخامت درج‌شده 6mm، 10–40°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3655,6 +4364,15 @@
         }
       },
       "availableLegacyMedia": [],
+      "masterEvidence": {
+        "model": "3000W",
+        "brand": "Sahand/Various",
+        "sourceLevel": "user_media",
+        "previousStatus": "اطلاعات پوستر - نیازمند تطبیق دستگاه واقعی سهند",
+        "previousFacts": "پوستر: 3kW، 1064nm، ضخامت درج‌شده 8mm، 10–40°C",
+        "source": "Sahand_Laser_Database_v1_6.xlsx",
+        "date": "2026-10-04"
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
