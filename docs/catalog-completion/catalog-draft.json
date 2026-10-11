@@ -1,0 +1,5643 @@
+{
+  "version": 2,
+  "date": "2026-10-11",
+  "products": [
+    {
+      "code": "CC001",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-1500",
+      "description": [
+        "چیلر لیزر فایبر مدل CWFL-1500 در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-1500",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 1.5kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل اعلامی خانواده",
+          "value": "±0.5°C",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کنترل دما",
+          "value": "دو مدار / دو دما در خانواده CWFL",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های سایت/cwfl1500-lite.png",
+          "sha256": "6d9f2a4cda764ef3d33c735de1421a876e0d577c4f513f1e1e9fd88b49f10bab",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CC002",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-2000",
+      "description": [
+        "چیلر لیزر فایبر مدل CWFL-2000 در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-2000",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 2kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل اعلامی خانواده",
+          "value": "±0.5°C",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کنترل دما",
+          "value": "دو مدار / دو دما در خانواده CWFL",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های سایت/cwfl2000-lite.png",
+          "sha256": "079d81ac1b99bcbbaf1b2c1fcddb9b0e4aac7616fa0b671fc516ead42be42566",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CC003",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-3000",
+      "description": [
+        "چیلر لیزر فایبر مدل CWFL-3000 در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-3000",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 3kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل معمول سری",
+          "value": "±0.5°C",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های سایت/cwfl3000-lite.png",
+          "sha256": "c4371cb9adb3d96e0497e3514f2e4434f421e3ba0bbc61b82e332cebfee095a1",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CC003/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "named product artwork",
+          "visualReview": true
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CC004",
+      "category": "parts",
+      "name": "چیلر فایبر Hanli HL-1500",
+      "description": [
+        "چیلر لیزر فایبر 1500 وات Hanli HL در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Hanli",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "HL-1500",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CC005",
+      "category": "parts",
+      "name": "چیلر فایبر Hanli HL-2000",
+      "description": [
+        "چیلر لیزر فایبر 2000 وات Hanli HL در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Hanli",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "HL-2000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CC006",
+      "category": "parts",
+      "name": "چیلر فایبر Hanli HL-3000",
+      "description": [
+        "چیلر لیزر فایبر 3000 وات Hanli HL در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Hanli",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "HL-3000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-3000.jpg",
+          "sha256": "9f7c42df6fc6e4c1ad3320ad79b7b408f17a864b6f911c8167fd9b525e2849b3",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "category": "parts",
+      "name": "چیلر فایبر Hanli HL-12000",
+      "description": [
+        "چیلر فایبر Hanli HL-12000",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Hanli",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "HL-12000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-12000.jpg",
+          "sha256": "fd7ccbb16cc3a519850e8e3c53be980f6422f25f2641e862143a6ab05569a655",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "category": "parts",
+      "name": "چیلر فایبر Hanli HL-6000",
+      "description": [
+        "چیلر فایبر Hanli HL-6000",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Hanli",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "HL-6000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-6000.jpg",
+          "sha256": "0d9561dd605466af68e432557825f8e19e43bf90d010eaa6b5fdb227c7de8e15",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH-S&A-12000",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-12000",
+      "description": [
+        "چیلر فایبر S&A CWFL-12000",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-12000",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 12kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل معمول سری",
+          "value": "±1°C",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/12000-S&A.jpg",
+          "sha256": "580d459068123c943249c7f60a0780f018215cfb3185630d0a06cb3b65244443",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH-S&A-20000",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-20000",
+      "description": [
+        "چیلر فایبر S&A CWFL-20000",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-20000",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 20kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل معمول سری",
+          "value": "±1.5°C",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/20000-S&A.jpg",
+          "sha256": "2a49565bfc5ad478c179a8973e925e33d078d8bb97740f3120a532b1266bc0a4",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH-S&A-6000",
+      "category": "parts",
+      "name": "چیلر فایبر S&A CWFL-6000",
+      "description": [
+        "چیلر فایبر S&A CWFL-6000",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "TEYU S&A",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "CWFL-6000",
+          "scope": "identity"
+        },
+        {
+          "label": "کاربرد سری",
+          "value": "سیستم فایبر 6kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت کنترل معمول سری",
+          "value": "±1°C",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/6000-S&A.jpg",
+          "sha256": "f5d5dd613354869e784508a9e4da29208e3b5281b63de4368aa8c268ed687f2d",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH001",
+      "category": "head",
+      "name": "هد برش ریتولز مدل BT240S",
+      "description": [
+        "هد برش ریتولز مدل BT240S در بانک قطعات سهند لیزر ثبت شده است.",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH002",
+      "category": "head",
+      "name": "هد برش RayTools BM109",
+      "description": [
+        "هد برش ریتولز مدل BM109 در بانک قطعات سهند لیزر ثبت شده است.",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM109",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH003",
+      "category": "head",
+      "name": "هد برش فایبر RayTools BM111",
+      "description": [
+        "هد برش ریتولز مدل BM111 در بانک قطعات سهند لیزر ثبت شده است.",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM111",
+          "scope": "identity"
+        },
+        {
+          "label": "فوکوس",
+          "value": "خودکار",
+          "scope": "family_reference"
+        },
+        {
+          "label": "رده توان سری",
+          "value": "3.3kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کورس فوکوس",
+          "value": "حدود 22mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه فوکوس",
+          "value": "+10 تا -12mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت تنظیم",
+          "value": "0.05mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "گروه لنز",
+          "value": "D30",
+          "scope": "family_reference"
+        },
+        {
+          "label": "رابط‌های سری",
+          "value": "QBH / QD",
+          "scope": "family_reference"
+        },
+        {
+          "label": "محافظ لنز",
+          "value": "طراحی کشویی",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "3.3kW",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Cutting Head/BM---111.jpg",
+          "sha256": "384d48cf3e01753c91946d0e27b8e8ec5bf9cefdfcc9b0bec8f5c2c5c06d2327",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH004",
+      "category": "head",
+      "name": "هد برش ریتولز مدل BM114",
+      "description": [
+        "هد برش ریتولز مدل BM114 در بانک قطعات سهند لیزر ثبت شده است.",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CH005",
+      "category": "head",
+      "name": "هد برش ریتولز مدل BM115",
+      "description": [
+        "هد برش ریتولز مدل BM115 در بانک قطعات سهند لیزر ثبت شده است.",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CL-001",
+      "category": "cleaning",
+      "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
+      "description": [
+        "انتخاب پالسی یا پیوسته باید بر اساس سطح، آلودگی و حساسیت قطعه انجام شود.",
+        "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "200 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "200 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "روش خنک‌کاری",
+        "هد پاک‌سازی",
+        "عرض اسکن",
+        "طول کابل",
+        "نوع کاربری",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "پاک‌سازی سطح در کاربرد سازگار با نوع لیزر",
+        "آماده‌سازی یا پاک‌سازی موضعی قطعه با پارامترهای مناسب"
+      ],
+      "consultationQuestions": [
+        "لایه موردنظر زنگ، رنگ یا آلودگی دیگری است؟",
+        "متریال زیرین و حساسیت آن چیست؟",
+        "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CL-002",
+      "category": "cleaning",
+      "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
+      "description": [
+        "انتخاب پالسی یا پیوسته باید بر اساس سطح، آلودگی و حساسیت قطعه انجام شود.",
+        "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "500 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "500 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "روش خنک‌کاری",
+        "هد پاک‌سازی",
+        "عرض اسکن",
+        "طول کابل",
+        "نوع کاربری",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "پاک‌سازی سطح در کاربرد سازگار با نوع لیزر",
+        "آماده‌سازی یا پاک‌سازی موضعی قطعه با پارامترهای مناسب"
+      ],
+      "consultationQuestions": [
+        "لایه موردنظر زنگ، رنگ یا آلودگی دیگری است؟",
+        "متریال زیرین و حساسیت آن چیست؟",
+        "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CL-003",
+      "category": "cleaning",
+      "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
+      "description": [
+        "انتخاب پالسی یا پیوسته باید بر اساس سطح، آلودگی و حساسیت قطعه انجام شود.",
+        "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "1000 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "1000 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "روش خنک‌کاری",
+        "هد پاک‌سازی",
+        "عرض اسکن",
+        "طول کابل",
+        "نوع کاربری",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "پاک‌سازی سطح در کاربرد سازگار با نوع لیزر",
+        "آماده‌سازی یا پاک‌سازی موضعی قطعه با پارامترهای مناسب"
+      ],
+      "consultationQuestions": [
+        "لایه موردنظر زنگ، رنگ یا آلودگی دیگری است؟",
+        "متریال زیرین و حساسیت آن چیست؟",
+        "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CL-004",
+      "category": "cleaning",
+      "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
+      "description": [
+        "انتخاب پالسی یا پیوسته باید بر اساس سطح، آلودگی و حساسیت قطعه انجام شود.",
+        "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "1500 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "1500 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "روش خنک‌کاری",
+        "هد پاک‌سازی",
+        "عرض اسکن",
+        "طول کابل",
+        "نوع کاربری",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "پاک‌سازی سطح در کاربرد سازگار با نوع لیزر",
+        "آماده‌سازی یا پاک‌سازی موضعی قطعه با پارامترهای مناسب"
+      ],
+      "consultationQuestions": [
+        "لایه موردنظر زنگ، رنگ یا آلودگی دیگری است؟",
+        "متریال زیرین و حساسیت آن چیست؟",
+        "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "category": "cleaning",
+      "name": "دستگاه تمیزکاری لیزری فایبر",
+      "description": [
+        "دستگاه تمیزکاری لیزری فایبر",
+        "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "روش خنک‌کاری",
+        "هد پاک‌سازی",
+        "عرض اسکن",
+        "طول کابل",
+        "نوع کاربری",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "پاک‌سازی سطح در کاربرد سازگار با نوع لیزر",
+        "آماده‌سازی یا پاک‌سازی موضعی قطعه با پارامترهای مناسب"
+      ],
+      "consultationQuestions": [
+        "لایه موردنظر زنگ، رنگ یا آلودگی دیگری است؟",
+        "متریال زیرین و حساسیت آن چیست؟",
+        "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN001",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال دو لایه برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN002",
+      "category": "consumables",
+      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "description": [
+        "نازل اورجینال هد برش لیزر TRA برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN003",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال تک لایه برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN004",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال تک لایه برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN006",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN007",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN008",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "description": [
+        "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN009",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "description": [
+        "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111 در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN010",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "description": [
+        "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN011",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال دو لایه Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN012",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CN013",
+      "category": "consumables",
+      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "description": [
+        "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools در بانک قطعات سهند لیزر ثبت شده است.",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-CERAMIC",
+      "category": "head",
+      "name": "سرامیک هد برش لیزر فایبر",
+      "description": [
+        "سرامیک هد برش لیزر فایبر",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools / BOCI / متفرقه",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Ceramic Ring/Ceramic-Ring.jpg",
+          "sha256": "76d0a197dccc792eb666062a6cc6d2339427f31e586a3d49c45ce2545cfb6c49",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "category": "consumables",
+      "name": "محافظ لنز سری BLT",
+      "description": [
+        "محافظ لنز سری BLT",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "BOCI/BLT",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BLT Series",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser Lens/BLT.jpg",
+          "sha256": "60fa692b6a2b58e1ac20f1fea735e2fb600a1e1333219ef701d890052542c92e",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "category": "consumables",
+      "name": "محافظ لنز RayTools",
+      "description": [
+        "محافظ لنز RayTools",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser Lens/RAYTOOLS.jpg",
+          "sha256": "222a71aa9ab020020e8cd706a4a01dd9d113241cc7059b20c8ac69cbbe9278eb",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "category": "consumables",
+      "name": "محافظ لنز WSX",
+      "description": [
+        "محافظ لنز WSX",
+        "قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "WSX",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تعویض قطعات مصرفی در مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل کامل هد و شماره قطعه چیست؟",
+        "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
+        "نوع فرایند و پارامترهای کاری چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser Lens/WSX.jpg",
+          "sha256": "c2893dede751536f30fe9fdd64f6c7970d1039ea84670750eb7eeca1f0b6ea81",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "category": "head",
+      "name": "هد برش فایبر RayTools BM110",
+      "description": [
+        "هد برش فایبر RayTools BM110",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM110",
+          "scope": "identity"
+        },
+        {
+          "label": "فوکوس",
+          "value": "خودکار",
+          "scope": "family_reference"
+        },
+        {
+          "label": "رده توان سری",
+          "value": "3.3kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کورس فوکوس",
+          "value": "حدود 22mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه فوکوس خودکار",
+          "value": "+10 تا -12mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "دقت تنظیم",
+          "value": "0.05mm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "گروه لنز",
+          "value": "D30",
+          "scope": "family_reference"
+        },
+        {
+          "label": "رابط",
+          "value": "QBH",
+          "scope": "family_reference"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "آبی",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "3.3kW",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Cutting Head/BM---110.jpg",
+          "sha256": "8c0a5f61b8506a488e63a5e3c096d39eb1ffbfbd4df9fca0c09b92a411b0f3ac",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "category": "head",
+      "name": "هد برش RayTools BM114-E",
+      "description": [
+        "هد برش RayTools BM114-E",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM114-E",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "category": "head",
+      "name": "هد برش RayTools BM115",
+      "description": [
+        "هد برش RayTools BM115",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM115",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "category": "head",
+      "name": "هد برش RayTools BM115-E",
+      "description": [
+        "هد برش RayTools BM115-E",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM115-E",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "category": "head",
+      "name": "هد برش RayTools BM116-E",
+      "description": [
+        "هد برش RayTools BM116-E",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BM116-E",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "category": "head",
+      "name": "هد برش RayTools BT220",
+      "description": [
+        "هد برش RayTools BT220",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BT220",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "category": "head",
+      "name": "هد برش RayTools BT240",
+      "description": [
+        "هد برش RayTools BT240",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "RayTools",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "BT240",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "category": "parts",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "description": [
+        "رگولاتور الکتروپنوماتیک SMC ITV1050",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "SMC",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "ITV1050",
+          "scope": "identity"
+        },
+        {
+          "label": "تغذیه خانواده ITV1000",
+          "value": "24V DC آ±10%",
+          "scope": "family_reference"
+        },
+        {
+          "label": "درجه حفاظت خانواده",
+          "value": "IP65",
+          "scope": "family_reference"
+        },
+        {
+          "label": "گزینه‌های سیگنال ورودی",
+          "value": "4–20mA / 0–20mA / 0–5V / 0–10V؛ وابسته به پسوند",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه فشار در بعضی پیکربندی‌ها",
+          "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Electro-Pneumatic/ITV---1050.jpg",
+          "sha256": "d9f7318277663dae14682b5606fc67d5249fdb2297391f89364c551eb77b112e",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "category": "parts",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "description": [
+        "رگولاتور الکتروپنوماتیک SMC ITV2050",
+        "قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "SMC",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "ITV2050",
+          "scope": "identity"
+        },
+        {
+          "label": "تغذیه خانواده ITV2000",
+          "value": "24V DC آ±10%",
+          "scope": "family_reference"
+        },
+        {
+          "label": "درجه حفاظت خانواده",
+          "value": "IP65",
+          "scope": "family_reference"
+        },
+        {
+          "label": "گزینه‌های سیگنال ورودی",
+          "value": "4–20mA / 0–10V؛ وابسته به پسوند",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه فشار در بعضی پیکربندی‌ها",
+          "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "پشتیبانی از عملکرد و نگهداری دستگاه سازگار"
+      ],
+      "consultationQuestions": [
+        "مدل قطعه و دستگاه میزبان چیست؟",
+        "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
+        "ابعاد و نوع اتصال فعلی چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Electro-Pneumatic/ITV---2050.jpg",
+          "sha256": "1c4f9a55165cfa915c696fdd7f19d91d18df9c338ac8230fd10b92dec7de20de",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CP-TRA",
+      "category": "head",
+      "name": "هد برش TRA",
+      "description": [
+        "هد برش TRA",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "نامشخص",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "TRA",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "category": "head",
+      "name": "سیستم کنترل برش FSCUT2000C",
+      "description": [
+        "سیستم کنترل برش FSCUT2000C",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "BOCHU/Friendess",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "FSCUT2000C",
+          "scope": "identity"
+        },
+        {
+          "label": "نوع کنترل",
+          "value": "Open-loop",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کاربرد مرجع",
+          "value": "برش فلز و غیرفلز",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser System/2000C.jpg",
+          "sha256": "638cc5ac6aa69925a37784fee99ea667a4ce0269b3d4220dcd93885330a76859",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "category": "head",
+      "name": "سیستم کنترل برش FSCUT2000E",
+      "description": [
+        "سیستم کنترل برش FSCUT2000E",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "BOCHU/Friendess",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "FSCUT2000E",
+          "scope": "identity"
+        },
+        {
+          "label": "شبکه کنترل",
+          "value": "EtherCAT",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه توان کاربرد",
+          "value": "1–4kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "اجزای مرجع",
+          "value": "BMC228B + BCL4566E + WKB V6",
+          "scope": "family_reference"
+        },
+        {
+          "label": "ساختار ارتباطی",
+          "value": "EtherCAT",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2020/05/FSCUT2000E-Installation-User-ManualV1.0-230309.pdf"
+        },
+        {
+          "label": "کاربرد کنترل",
+          "value": "حرکت محورها، لیزر و گاز برش",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2020/05/FSCUT2000E-Installation-User-ManualV1.0-230309.pdf"
+        },
+        {
+          "label": "اجزای نسخه دفترچه",
+          "value": "BMC228A، BCL4566E و WKB V6",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2020/05/FSCUT2000E-Installation-User-ManualV1.0-230309.pdf"
+        },
+        {
+          "label": "نسخه مرجع",
+          "value": "V1.0، 230309؛ با نسخه BMC228B یکسان نیست",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2020/05/FSCUT2000E-Installation-User-ManualV1.0-230309.pdf"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "1–4kW",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [
+        {
+          "url": "https://d.fscut.com/wordpress-fscut/2020/05/FSCUT2000E-Installation-User-ManualV1.0-230309.pdf",
+          "title": "FSCUT2000E Installation Manual V1.0 / BMC228A",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser System/2000E.jpg",
+          "sha256": "c9379f73eb286234b9e3bf38cc52e919898097c874ef6efc6e6c39c126a3b5d7",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "category": "head",
+      "name": "سیستم کنترل برش FSCUT4000E",
+      "description": [
+        "سیستم کنترل برش FSCUT4000E",
+        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "BOCHU/Friendess",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "FSCUT4000E",
+          "scope": "identity"
+        },
+        {
+          "label": "شبکه کنترل",
+          "value": "EtherCAT",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه توان کاربرد",
+          "value": "حدود 1.5–8kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کنترل",
+          "value": "حرکت، لیزر و گاز برش",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "حدود 1.5–8kW",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
+      ],
+      "consultationQuestions": [
+        "شماره مدل و نسخه قطعه فعلی چیست؟",
+        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
+        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Laser System/4000-E.jpg",
+          "sha256": "87f24b735659ba94626a312f2894b86ecf2f140c37ae888950143228147183b4",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS001",
+      "category": "source",
+      "name": "سورس لیزر 30 وات پالسی فایبر Q-Switched",
+      "description": [
+        "سورس لیزر 30 وات پالسی فایبر Q-Switched در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "30 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "30 W",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS002",
+      "category": "source",
+      "name": "سورس لیزر 50 وات پالسی فایبر Q-Switched",
+      "description": [
+        "سورس لیزر 50 وات پالسی فایبر Q-Switched در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "50 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "50 W",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS003",
+      "category": "source",
+      "name": "سورس لیزر Raycus RFL-C1000",
+      "description": [
+        "سورس لیزر فایبر 1000 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C1000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS004",
+      "category": "source",
+      "name": "سورس فایبر Raycus RFL-C1500",
+      "description": [
+        "سورس لیزر فایبر 1500 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C1500",
+          "scope": "identity"
+        },
+        {
+          "label": "توان",
+          "value": "1500W",
+          "scope": "family_reference"
+        },
+        {
+          "label": "حالت خروجی",
+          "value": "CW / Modulated",
+          "scope": "family_reference"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080آ±5nm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "بازه تنظیم توان",
+          "value": "10–100%",
+          "scope": "family_reference"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "آبی",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "1500W",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Source/C1500.jpg",
+          "sha256": "3daa15df3f2692d870664a19665799363becb8e8f46245241a8f273e3cdb9372",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS005",
+      "category": "source",
+      "name": "سورس لیزر Raycus RFL-C2000",
+      "description": [
+        "سورس لیزر فایبر 2000 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C2000",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS006",
+      "category": "source",
+      "name": "سورس لیزر فایبر 3000 وات ریکاس",
+      "description": [
+        "سورس لیزر فایبر 3000 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "3000 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "3000 W",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS007",
+      "category": "source",
+      "name": "سورس لیزر فایبر 4000 وات ریکاس",
+      "description": [
+        "سورس لیزر فایبر 4000 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "FS008",
+      "category": "source",
+      "name": "سورس لیزر فایبر 6000 وات ریکاس",
+      "description": [
+        "سورس لیزر فایبر 6000 وات ریکاس در بانک قطعات سهند لیزر ثبت شده است.",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "category": "marking",
+      "name": "دستگاه حکاکی فایبر سهند لیزر",
+      "description": [
+        "دستگاه حکاکی فایبر سهند لیزر",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Sahand Laser",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-001",
+      "category": "marking",
+      "name": "دستگاه فایبر مارکینگ 30 وات",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "30 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "30 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-002",
+      "category": "marking",
+      "name": "دستگاه فایبر مارکینگ 50 وات",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "50 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "50 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-003",
+      "category": "marking",
+      "name": "دستگاه فایبر مارکینگ 100 وات",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "100 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "100 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-004",
+      "category": "marking",
+      "name": "دستگاه حکاکی میزدار UV",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [
+        "../assets/products/ML-004/_MG_4350.jpg"
+      ],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [
+        "./assets/products/ML-004/commercial-v1.jpg",
+        "./assets/products/ML-004/_MG_4350.jpg",
+        "./assets/products/ML-004/_MG_4353.jpg",
+        "./assets/products/ML-004/_MG_4354.jpg",
+        "./assets/products/ML-004/_MG_4357.jpg"
+      ],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-005",
+      "category": "marking",
+      "name": "دستگاه حکاکی پرتابل فایبر",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [
+        "../assets/products/ML-005/_MG_4146.jpg"
+      ],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [
+        "./assets/products/ML-005/commercial-v1.jpg",
+        "./assets/products/ML-005/_MG_4146.jpg",
+        "./assets/products/ML-005/_MG_4149.jpg",
+        "./assets/products/ML-005/_MG_4150.jpg",
+        "./assets/products/ML-005/_MG_4162.jpg",
+        "./assets/products/ML-005/_MG_4165.jpg"
+      ],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-006",
+      "category": "marking",
+      "name": "دستگاه حکاکی لیزر Inline",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-007",
+      "category": "marking",
+      "name": "دستگاه حکاکی رومیزی فایبر",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [
+        "../assets/products/ML-007/_MG_4184.jpg"
+      ],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [
+        "./assets/products/ML-007/commercial-v1.jpg",
+        "./assets/products/ML-007/_MG_4184.jpg",
+        "./assets/products/ML-007/_MG_4171.jpg",
+        "./assets/products/ML-007/_MG_4206.jpg",
+        "./assets/products/ML-007/_MG_4218.jpg"
+      ],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-008",
+      "category": "marking",
+      "name": "دستگاه حکاکی لیزر MOPA",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "ML-009",
+      "category": "marking",
+      "name": "دستگاه حکاکی میزدار فایبر",
+      "description": [
+        "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
+        "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
+      ],
+      "specs": [],
+      "images": [
+        "../assets/products/ML-009/_MG_4266.jpg"
+      ],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع لیزر",
+        "توان",
+        "محدوده حکاکی",
+        "لنز",
+        "گالوو",
+        "روش نصب",
+        "کنترلر",
+        "روتاری",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "ثبت نوشته، شماره سریال و طرح در کاربرد سازگار",
+        "مارکینگ قطعات منفرد یا خط تولید مطابق نوع دستگاه"
+      ],
+      "consultationQuestions": [
+        "متریال و کیفیت سطح قطعه چیست؟",
+        "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
+        "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [
+        "./assets/products/ML-009/commercial-v1.jpg",
+        "./assets/products/ML-009/_MG_4266.jpg",
+        "./assets/products/ML-009/_MG_4239.jpg",
+        "./assets/products/ML-009/_MG_4269.jpg",
+        "./assets/products/ML-009/_MG_4270.jpg",
+        "./assets/products/ML-009/_MG_4275.jpg"
+      ],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "category": "source",
+      "name": "سورس فایبر Raycus RFL-C3000S-HP",
+      "description": [
+        "سورس فایبر Raycus RFL-C3000S-HP",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C3000S-HP",
+          "scope": "identity"
+        },
+        {
+          "label": "سری",
+          "value": "HP-Series",
+          "scope": "family_reference"
+        },
+        {
+          "label": "توان نامی مرجع",
+          "value": "حدود 3kW",
+          "scope": "family_reference"
+        },
+        {
+          "label": "کاربرد مرجع",
+          "value": "برش / جوش صنعتی",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "حدود 3kW",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Source/C3000S.jpg",
+          "sha256": "a752734d1c3b27aeab28f72b275c14b2391b796d2caec5f8ea0bf1af7fcdedbd",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "category": "source",
+      "name": "سورس لیزر Raycus RFL-C4000S-HP",
+      "description": [
+        "سورس لیزر Raycus RFL-C4000S-HP",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C4000S-HP",
+          "scope": "identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "category": "source",
+      "name": "سورس فایبر Raycus RFL-C6000S-HP",
+      "description": [
+        "سورس فایبر Raycus RFL-C6000S-HP",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-C6000S-HP",
+          "scope": "identity"
+        },
+        {
+          "label": "خروجی طبق راهنمای مرجع",
+          "value": "6100آ±100W",
+          "scope": "family_reference"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080آ±5nm",
+          "scope": "family_reference"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "آبی",
+          "scope": "family_reference"
+        },
+        {
+          "label": "وزن اعلامی",
+          "value": "کمتر از 85kg",
+          "scope": "family_reference"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Source/C6000S.jpg",
+          "sha256": "a11bad480af7ea5a2ea2f5d7779905922d36acd58f753f1e257cac519233ca58",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "category": "source",
+      "name": "سورس لیزر Raycus RFL-QCW150/1500",
+      "description": [
+        "سورس لیزر Raycus RFL-QCW150/1500",
+        "سورس، منبع تولید پرتو لیزر است. مدل کامل، نوع خروجی پالسی یا پیوسته و رابط فیبر باید با هد، کنترلر و سیستم خنک‌کاری تطبیق داشته باشند."
+      ],
+      "specs": [
+        {
+          "label": "برند",
+          "value": "Raycus",
+          "scope": "identity"
+        },
+        {
+          "label": "مدل / خانواده",
+          "value": "RFL-QCW150/1500",
+          "scope": "identity"
+        },
+        {
+          "label": "نوع خروجی",
+          "value": "CW / PULSE",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "حداکثر توان متوسط، مطابق دفترچه",
+          "value": "150 W در CW؛ 250 W در PULSE",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "حداکثر توان پیک",
+          "value": "1500 W",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "فرکانس مدولاسیون",
+          "value": "0–5000 Hz",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "پهنای پالس",
+          "value": "0.05–50 ms",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "حداکثر انرژی پالس",
+          "value": "15 J",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "طول موج",
+          "value": "1080 ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "رابط خروجی",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "طول کابل فیبر در نسخه دفترچه",
+          "value": "5 m",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "برق ورودی سورس",
+          "value": "48 VDC ±10%",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "حداکثر مصرف برق",
+          "value": "1000 W",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "رابط کنترل",
+          "value": "RS-232 / AD / Ethernet",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "خنک‌کاری",
+          "value": "هواخنک",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        },
+        {
+          "label": "دمای کار مطابق دفترچه",
+          "value": "0–40 °C",
+          "scope": "manufacturer_manual",
+          "source": "user-document:Raycus-QCW.pdf#page=11"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": false,
+      "comparisonFields": [],
+      "applications": [
+        "تولید پرتو برای فرایند سازگار با مدل سورس"
+      ],
+      "consultationQuestions": [
+        "مدل کامل و پسوند سورس چیست؟",
+        "رابط فیبر و روش کنترل دستگاه چیست؟",
+        "سورس جایگزین است یا برای ساخت دستگاه جدید؟"
+      ],
+      "sources": [
+        {
+          "title": "دفترچه ارسالی RFL-QCW150/1500، صفحه PDF ۱۱",
+          "scope": "user_supplied_manufacturer_manual",
+          "filename": "Raycus-QCW.pdf",
+          "page": 11
+        }
+      ],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WELD-1500",
+      "category": "welding",
+      "name": "دستگاه جوش فایبر 1500 وات",
+      "description": [
+        "دستگاه جوش فایبر 1500 وات",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل / خانواده",
+          "value": "1500W",
+          "scope": "identity"
+        },
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "1500 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "1500 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Welding Machine/C1500-Welding.jpg",
+          "sha256": "14a456311e4e83fa275fbee60c490cb9e027fda79489b1c9c6b3adc5b09e79f8",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/WELD-1500/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "named product artwork",
+          "visualReview": true
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WELD-2000",
+      "category": "welding",
+      "name": "دستگاه جوش فایبر 2000 وات",
+      "description": [
+        "دستگاه جوش فایبر 2000 وات",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل / خانواده",
+          "value": "2000W",
+          "scope": "identity"
+        },
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "2000 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "2000 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Welding Machine/C2000-Welding.jpg",
+          "sha256": "b47e041ad10265bc02597773fae1e72d3b4cbc8ba51c3b99dc486854ae38bfac",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WELD-3000",
+      "category": "welding",
+      "name": "دستگاه جوش فایبر 3000 وات",
+      "description": [
+        "دستگاه جوش فایبر 3000 وات",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل / خانواده",
+          "value": "3000W",
+          "scope": "identity"
+        },
+        {
+          "label": "توان نام‌گذاری‌شده مدل",
+          "value": "3000 W",
+          "scope": "catalog_identity"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "3000 W",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "sourceCandidate": {
+          "relativePath": "عکس های معرفی محصول فشرده شده/Welding Machine/C3000-Welding.jpg",
+          "sha256": "2c9b4ce9ea2e6b15ae26c010ed7afa9ec6296d85eea33542417a5385211fe053",
+          "match": "model named in supplied artwork",
+          "processing": "requires white-background preparation",
+          "identityReview": "not_finished"
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-001",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Smart Series / Mini 4-in-1",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Smart Series / Mini 4-in-1",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-002",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Medium Series / Handheld",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Medium Series / Handheld",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-003",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Air-Cooled",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Air-Cooled",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/air-cooled/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-004",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Air Cooling Portable",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Air Cooling Portable",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-005",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر QCW Laser Spot Welding",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "QCW Laser Spot Welding",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-006",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر HP Series",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "HP Series",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-007",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Modern Series",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Modern Series",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-008",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Robotic Laser Welding",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Robotic Laser Welding",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-009",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Jewelry Laser Welding",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Jewelry Laser Welding",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "WL-010",
+      "category": "welding",
+      "name": "دستگاه جوش لیزر Channel Letter Laser Welding",
+      "description": [
+        "خانواده محصول توسط کاربر به‌عنوان محصول موجود سهند لیزر تأیید شده؛ توان و کانفیگ دقیق قبل از انتشار تجاری باید با موجودی سهند تطبیق شود.",
+        "برای انتخاب دستگاه جوش، شکل اتصال، جنس و ضخامت قطعه و شیوه کار اپراتور اهمیت دارد. دستگاه دستی، پالسی، رومیزی و رباتیک را صرفاً بر اساس عدد توان جایگزین یکدیگر نکنید."
+      ],
+      "specs": [
+        {
+          "label": "خانواده محصول",
+          "value": "Channel Letter Laser Welding",
+          "scope": null
+        }
+      ],
+      "images": [],
+      "works": [],
+      "technical": null,
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "نوع جوش",
+        "توان",
+        "نوع لیزر",
+        "خنک‌کاری",
+        "نوع کاربری",
+        "سیم‌فیدر",
+        "هد جوش",
+        "سورس",
+        "برق ورودی",
+        "ابعاد و وزن"
+      ],
+      "applications": [
+        "اتصال قطعات فلزی در کاربرد سازگار با دستگاه",
+        "جوشکاری دستی، نقطه‌ای یا خودکار مطابق نوع مدل"
+      ],
+      "consultationQuestions": [
+        "جنس، ضخامت و شکل اتصال چیست؟",
+        "جوش پیوسته لازم است یا نقطه‌ای؟",
+        "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "availableLegacyMedia": [],
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-1",
+      "name": "تک میز DZ3015S",
+      "category": "cutting",
+      "family": "3015",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "تک میز DZ3015S در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز DZ3015S"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [
+        {
+          "title": "فایل توضیحات سری استاندارد سهند",
+          "scope": "user_supplied_series_document"
+        }
+      ],
+      "visuals": {
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/single-standard/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
+      },
+      "seriesReference": {
+        "document": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx",
+        "sha256": "cd68b5db7bf13711cf3f81b9ce1cd7f0711322e79725795f682794d754053e26",
+        "scope": "standard_series_options",
+        "power": "1500–3000 W",
+        "source": "RAYCUS / MAX",
+        "head": "Boci",
+        "controller": "CypCut 2000E",
+        "chiller": "S&A",
+        "servo": "Delta",
+        "motion": "Dual rack & pinion"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-2",
+      "name": "تک میز DZ3015H",
+      "category": "cutting",
+      "family": "3015",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "تک میز DZ3015H در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز DZ3015H"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [
+        {
+          "title": "فایل توضیحات سری حرفه‌ای سهند",
+          "scope": "user_supplied_series_document"
+        }
+      ],
+      "visuals": {
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/single-professional/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
+      },
+      "seriesReference": {
+        "document": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx",
+        "sha256": "16ff4d832207271e8a1a66dd2b291f987df9144f06c64a9d4378319f5cece4fe",
+        "scope": "professional_series_options",
+        "power": "6000–12000 W",
+        "source": "RAYCUS / MAX",
+        "head": "Boci",
+        "controller": "CypCut 4000E",
+        "bed": "12 mm full-plate construction",
+        "motion": "Dual rack & pinion"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-3",
+      "name": "تک میز LD3015",
+      "category": "cutting",
+      "family": "3015",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "LD",
+      "description": [
+        "تک میز LD3015 در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز LD3015"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-4",
+      "name": "دو میز DZ3015",
+      "category": "cutting",
+      "family": "3015",
+      "table": "dual",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "دو میز DZ3015 در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز DZ3015"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-5",
+      "name": "دو میز LD3015",
+      "category": "cutting",
+      "family": "3015",
+      "table": "dual",
+      "cabin": false,
+      "tube": false,
+      "series": "LD",
+      "description": [
+        "دو میز LD3015 در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز LD3015"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-6",
+      "name": "دو میز کابین‌دار DZ3015",
+      "category": "cutting",
+      "family": "3015",
+      "table": "dual",
+      "cabin": true,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "دو میز کابین‌دار DZ3015 در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز، کابین‌دار. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز کابین‌دار DZ3015"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "دارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-7",
+      "name": "تک میز 3015 + لوله‌بر",
+      "category": "cutting",
+      "family": "3015",
+      "table": "single",
+      "cabin": false,
+      "tube": true,
+      "series": "",
+      "description": [
+        "تک میز 3015 + لوله‌بر در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز 3015 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-8",
+      "name": "دو میز 3015 + لوله‌بر",
+      "category": "cutting",
+      "family": "3015",
+      "table": "dual",
+      "cabin": false,
+      "tube": true,
+      "series": "",
+      "description": [
+        "دو میز 3015 + لوله‌بر در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز 3015 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-3015-9",
+      "name": "دو میز کابین‌دار 3015 + لوله‌بر",
+      "category": "cutting",
+      "family": "3015",
+      "table": "dual",
+      "cabin": true,
+      "tube": true,
+      "series": "",
+      "description": [
+        "دو میز کابین‌دار 3015 + لوله‌بر در گروه دستگاه‌های برش 3015 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز، کابین‌دار با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز کابین‌دار 3015 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "3015"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "دارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-1",
+      "name": "تک میز DZ6020S",
+      "category": "cutting",
+      "family": "6020",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "تک میز DZ6020S در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز DZ6020S"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [
+        {
+          "title": "فایل توضیحات سری استاندارد سهند",
+          "scope": "user_supplied_series_document"
+        }
+      ],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "seriesReference": {
+        "document": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx",
+        "sha256": "cd68b5db7bf13711cf3f81b9ce1cd7f0711322e79725795f682794d754053e26",
+        "scope": "standard_series_options",
+        "power": "1500–3000 W",
+        "source": "RAYCUS / MAX",
+        "head": "Boci",
+        "controller": "CypCut 2000E",
+        "chiller": "S&A",
+        "servo": "Delta",
+        "motion": "Dual rack & pinion"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-2",
+      "name": "تک میز DZ6020H",
+      "category": "cutting",
+      "family": "6020",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "تک میز DZ6020H در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز DZ6020H"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [
+        {
+          "title": "فایل توضیحات سری حرفه‌ای سهند",
+          "scope": "user_supplied_series_document"
+        }
+      ],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "seriesReference": {
+        "document": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx",
+        "sha256": "16ff4d832207271e8a1a66dd2b291f987df9144f06c64a9d4378319f5cece4fe",
+        "scope": "professional_series_options",
+        "power": "6000–12000 W",
+        "source": "RAYCUS / MAX",
+        "head": "Boci",
+        "controller": "CypCut 4000E",
+        "bed": "12 mm full-plate construction",
+        "motion": "Dual rack & pinion"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-3",
+      "name": "تک میز LD6020",
+      "category": "cutting",
+      "family": "6020",
+      "table": "single",
+      "cabin": false,
+      "tube": false,
+      "series": "LD",
+      "description": [
+        "تک میز LD6020 در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز LD6020"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-4",
+      "name": "دو میز DZ6020",
+      "category": "cutting",
+      "family": "6020",
+      "table": "dual",
+      "cabin": false,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "دو میز DZ6020 در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز DZ6020"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-5",
+      "name": "دو میز LD6020",
+      "category": "cutting",
+      "family": "6020",
+      "table": "dual",
+      "cabin": false,
+      "tube": false,
+      "series": "LD",
+      "description": [
+        "دو میز LD6020 در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز LD6020"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-6",
+      "name": "دو میز کابین‌دار 6020",
+      "category": "cutting",
+      "family": "6020",
+      "table": "dual",
+      "cabin": true,
+      "tube": false,
+      "series": "DZ",
+      "description": [
+        "دو میز کابین‌دار 6020 در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز، کابین‌دار. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز کابین‌دار 6020"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "دارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "ندارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-7",
+      "name": "تک میز 6020 + لوله‌بر",
+      "category": "cutting",
+      "family": "6020",
+      "table": "single",
+      "cabin": false,
+      "tube": true,
+      "series": "",
+      "description": [
+        "تک میز 6020 + لوله‌بر در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی تک میز با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "تک میز 6020 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "تک میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-8",
+      "name": "دو میز 6020 + لوله‌بر",
+      "category": "cutting",
+      "family": "6020",
+      "table": "dual",
+      "cabin": false,
+      "tube": true,
+      "series": "",
+      "description": [
+        "دو میز 6020 + لوله‌بر در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز 6020 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "ندارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-6020-9",
+      "name": "دو میز کابین‌دار 6020 + لوله‌بر",
+      "category": "cutting",
+      "family": "6020",
+      "table": "dual",
+      "cabin": true,
+      "tube": true,
+      "series": "",
+      "description": [
+        "دو میز کابین‌دار 6020 + لوله‌بر در گروه دستگاه‌های برش 6020 سهند لیزر قرار دارد.",
+        "پیکربندی دو میز، کابین‌دار با قابلیت لوله‌بر. توان، سورس، هد و تجهیزات نهایی بر اساس نیاز پروژه تعیین می‌شوند.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "مدل",
+          "value": "دو میز کابین‌دار 6020 + لوله‌بر"
+        },
+        {
+          "label": "گروه ابعادی",
+          "value": "6020"
+        },
+        {
+          "label": "ساختار میز",
+          "value": "دو میز"
+        },
+        {
+          "label": "کابین",
+          "value": "دارد"
+        },
+        {
+          "label": "لوله‌بر",
+          "value": "دارد"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-custom",
+      "category": "cutting",
+      "family": "custom",
+      "name": "برش سایز سفارشی",
+      "description": [
+        "برای تعیین ساختار، ابعاد و تجهیزات مناسب پروژه با کارشناسان سهند لیزر مشورت کنید.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "نوع دستگاه",
+          "value": "برش سایز سفارشی"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-tube",
+      "category": "cutting",
+      "family": "tube",
+      "name": "برش لوله‌بر",
+      "description": [
+        "برای تعیین ساختار، ابعاد و تجهیزات مناسب پروژه با کارشناسان سهند لیزر مشورت کنید.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "نوع دستگاه",
+          "value": "برش لوله‌بر"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/tube-standard/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo/CAD",
+          "identityScope": "supplied series photograph or CAD",
+          "visualReview": true
+        }
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    },
+    {
+      "code": "CUT-robot",
+      "category": "cutting",
+      "family": "robot",
+      "name": "برش ربات",
+      "description": [
+        "برای تعیین ساختار، ابعاد و تجهیزات مناسب پروژه با کارشناسان سهند لیزر مشورت کنید.",
+        "انتخاب دستگاه برش از نوع قطعه و ابعاد ورق یا لوله شروع می‌شود. ساختار میز، محفظه و تجهیزات جانبی را متناسب با چرخه تولید بررسی کنید."
+      ],
+      "specs": [
+        {
+          "label": "نوع دستگاه",
+          "value": "برش ربات"
+        }
+      ],
+      "images": [],
+      "works": [],
+      "power": "",
+      "comparable": true,
+      "comparisonFields": [
+        "گروه ابعادی",
+        "ساختار میز",
+        "کابین",
+        "لوله‌بر",
+        "توان",
+        "سورس",
+        "هد",
+        "کنترلر",
+        "دقت",
+        "سرعت",
+        "ابعاد نصب"
+      ],
+      "applications": [
+        "برش ورق و قطعات فلزی، مطابق پیکربندی دستگاه",
+        "تولید قطعات و خدمات برش سفارشی"
+      ],
+      "consultationQuestions": [
+        "جنس و ضخامت غالب قطعات چیست؟",
+        "ابعاد ورق یا طول و قطر لوله چقدر است؟",
+        "تیراژ، فضای نصب و روش بارگذاری چگونه است؟"
+      ],
+      "sources": [],
+      "visuals": {
+        "status": "not_complete"
+      },
+      "contentStatus": "enriched_draft",
+      "ready": false
+    }
+  ],
+  "releaseGate": {
+    "passed": false,
+    "reason": "Per-model photo processing, assembly identity and full specification verification remain open"
+  },
+  "comparison": {
+    "default": "selected + two distinct random peers from same machine category",
+    "unlimitedAdditions": true,
+    "excludedCategories": [
+      "parts",
+      "head",
+      "source",
+      "consumables"
+    ]
+  }
+}
+
