@@ -2987,8 +2987,12 @@ renderer.domElement.addEventListener('pointerdown', e => {
 
 renderer.domElement.addEventListener('pointermove', e => {
   if (!drag) return;
-  yaw -= (e.clientX - drag.x) * 0.004;
-  pitch = THREE.MathUtils.clamp(pitch + (e.clientY - drag.y) * 0.002, -0.15, 0.6);
+  if (photoMode) {
+    photoModeYaw -= (e.clientX - drag.x) * 0.005;
+  } else {
+    yaw -= (e.clientX - drag.x) * 0.004;
+    pitch = THREE.MathUtils.clamp(pitch + (e.clientY - drag.y) * 0.002, -0.15, 0.6);
+  }
   drag = { x: e.clientX, y: e.clientY };
 });
 
@@ -3605,6 +3609,7 @@ function animate() {
   camera.position.lerp(desired, 1 - Math.exp(-dt * 3.5));
   camera.lookAt(look);
 
+  if (!paused || photoMode) part6Update(paused ? 0 : dt);
   composer.render();
 }
 
@@ -4739,14 +4744,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (soundBtn) {
     const originalHandler = soundBtn.onclick;
     soundBtn.onclick = (e) => {
-      SoundManager.enable();
       if (originalHandler) originalHandler(e);
+      if (soundEnabled) SoundManager.enable(); else SoundManager.disable();
     };
   }
 
   // Auto-start tutorial after intro
   setTimeout(() => {
-    Tutorial.start();
+    if (!chapterIntro.classList.contains('show')) Tutorial.start();
   }, 4000);
 
   // Night owl achievement (5 minutes)
