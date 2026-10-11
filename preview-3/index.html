@@ -1234,6 +1234,16 @@ return '<h2>مقایسه مدل‌های هم‌گروه</h2><p class="compare-h
 function drawTable(p){
 const chosen=compared.map(id=>products[id]).filter(Boolean),root=document.getElementById('comparison-table');if(!root)return;
 const rows=new Map();chosen.forEach(x=>x.specs.forEach(s=>{const name=s.label.fa||s.label.en;if(!rows.has(name))rows.set(name,new Map());rows.get(name).set(x.code,typeof s.value==='object'?(s.value.fa||s.value.en):s.value)}));
+const criteria={
+welding:[['نوع دستگاه',/نوع|ساختار|type/i],['توان لیزر',/توان|power/i],['سورس لیزر',/سورس|source/i],['نوع خنک‌کاری',/خنک|چیلر|cooling|chiller/i],['هد جوش',/هد|head/i],['سیم‌فیدر',/فیدر|wire|feeder/i],['گاز محافظ',/گاز|gas/i],['ضخامت قابل جوش',/ضخامت|thickness/i],['برق ورودی',/برق|ولتاژ|voltage|electrical/i],['وزن دستگاه',/وزن|weight/i]],
+marking:[['نوع لیزر',/نوع لیزر|laser type/i],['توان لیزر',/توان|power/i],['محدوده حکاکی',/محدوده|کارگیر|area|field/i],['سورس لیزر',/سورس|source/i],['طول موج',/طول موج|wavelength/i],['سرعت حکاکی',/سرعت|speed/i],['لنز',/لنز|lens/i],['روتاری',/روتاری|rotary/i],['خنک‌کاری',/خنک|cooling/i]],
+cleaning:[['نوع لیزر',/نوع لیزر|پالسی|پیوسته|laser type/i],['توان لیزر',/توان|power/i],['سورس لیزر',/سورس|source/i],['عرض پاک‌سازی',/عرض|width/i],['نوع خنک‌کاری',/خنک|چیلر|cooling/i],['طول کابل',/کابل|cable/i],['وزن دستگاه',/وزن|weight/i],['برق ورودی',/برق|voltage/i]]
+};
+for(const [name,pattern] of criteria[p.categoryId]||[]){
+const values=new Map();chosen.forEach(x=>{const spec=x.specs.find(s=>pattern.test((s.label.fa||'')+' '+(s.label.en||'')));let value=spec?(typeof spec.value==='object'?(spec.value.fa||spec.value.en):spec.value):null;
+if(!value&&name==='توان لیزر'){const match=(x.title.fa+' '+x.code).match(/(\d+(?:\.\d+)?)\s*(?:وات|W\b)/i);if(match)value=match[1]+' وات';}
+values.set(x.code,value||'نیازمند تأیید مشخصات این مدل');});rows.set(name,values);
+}
 root.innerHTML=chosen.length?'<div class="compare-scroll" tabindex="0" aria-label="جدول مقایسه؛ در موبایل به طرفین پیمایش کنید"><table class="model-compare"><caption>مقایسه مشخصات ثبت‌شده</caption><thead><tr><th scope="col">ویژگی</th>'+chosen.map(x=>'<th scope="col"><a href="preview-3/#product='+x.code+'">'+esc(x.title.fa)+'</a></th>').join('')+'</tr></thead><tbody>'+Array.from(rows).map(([label,values])=>'<tr><th scope="row">'+esc(label)+'</th>'+chosen.map(x=>'<td>'+esc(values.get(x.code)||'ثبت نشده')+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>':'<p>برای مقایسه، یک یا چند مدل را انتخاب کنید.</p>';
 root.querySelector('table')?.style.setProperty('min-width', Math.max(600, 160 + chosen.length * 220) + 'px');
 document.getElementById('compare-status').textContent=compared.length+' مدل انتخاب شده';
@@ -1242,7 +1252,10 @@ window.renderProduct=function(id){
 previousProduct(id);const p=products[id];if(!p)return;
 document.getElementById('models-list').innerHTML=peers(p).map(x=>'<a class="peer-model" href="preview-3/#product='+x.code+'" '+(id===x.code?'aria-current="page"':'')+'>'+esc(x.title.fa)+'</a>').join('');
 let panel=document.getElementById('product-comparison');if(!panel){panel=document.createElement('section');panel.id='product-comparison';panel.className='product-large-section';document.getElementById('product-large-sections').before(panel)}
-panel.innerHTML=comparison(p);drawTable(p);
+const machineComparison=['cutting','welding','marking','cleaning'].includes(p.categoryId);
+panel.hidden=!machineComparison;
+panel.innerHTML=machineComparison?comparison(p):'';
+if(machineComparison)drawTable(p);
 panel.querySelectorAll('[data-compare]').forEach(input=>input.onchange=()=>{compared=input.checked?[...compared,input.dataset.compare]:compared.filter(x=>x!==input.dataset.compare);drawTable(p);document.getElementById('compare-status').textContent=compared.length+' مدل انتخاب شده'});
 const entry=entries.find(x=>x.code===id);
 if(entry){
