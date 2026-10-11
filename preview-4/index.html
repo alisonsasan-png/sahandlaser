@@ -1197,5 +1197,75 @@ if(dropdown){dropdown.innerHTML='<a href="preview-4/#catalog=cutting&family=3015
 draw();window.applyRoute();
 });
 })();
+</script><style>
+.compare-hint{color:#64748b;margin:12px 0}.compare-picks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.compare-picks label{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #cbd5e1;border-radius:12px;font-size:13px;cursor:pointer}.compare-picks input{width:18px;height:18px;accent-color:#1e2a5e}.model-compare{min-width:600px;width:100%;border-collapse:collapse}.model-compare th,.model-compare td{padding:15px;text-align:right;border-bottom:1px solid #cbd5e1;vertical-align:top}.model-compare thead th{background:#1e2a5e;color:#fff}.model-compare tbody th{min-width:130px}.model-compare caption{text-align:right;padding:10px;font-weight:700}.peer-model{display:block;padding:14px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:8px}.peer-model[aria-current=page]{background:#1e2a5e;color:white}.model-identity{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:300px;padding:30px;background:linear-gradient(135deg,#1e2a5e,#36477f);color:white;text-align:center;gap:16px}.model-identity strong{font-size:clamp(22px,3vw,34px)}.model-identity p{font-size:13px;line-height:2}.mobile-product-actions{display:none}.family-links{max-height:220px;overflow:auto}.enter-card{opacity:0;transform:translateY(20px) translateX(12px);transition:opacity .6s ease var(--entry-delay,0ms),transform .6s ease var(--entry-delay,0ms)}.enter-card.entered{opacity:1;transform:none}.dark .compare-picks label,.dark .peer-model{border-color:#334155}.dark .model-compare th,.dark .model-compare td{border-color:#334155}@media(max-width:640px){.mobile-product-actions{display:flex;position:sticky;bottom:0;z-index:35;gap:10px;padding:12px;background:#fff;border-top:1px solid #cbd5e1}.mobile-product-actions a{flex:1;text-align:center;padding:12px;border-radius:10px;background:#1e2a5e;color:white;font-size:13px}.mobile-product-actions a:last-child{background:#15803d}.dark .mobile-product-actions{background:#0f172a}.family-links{display:grid;grid-template-columns:1fr 1fr}.family-links a{font-size:12px}.compare-picks{max-height:240px;overflow:auto}.browser-model,.browser-category{min-width:0}.browser-heading>a{white-space:normal}.compare-scroll{max-width:100%;overscroll-behavior:contain}button,a,input,select{touch-action:manipulation}}
+@media(prefers-reduced-motion:reduce){.enter-card{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style><style>#product-comparison{color:#e5edee;border-color:#35515b;background:#152a32;padding:24px;border-radius:20px}.compare-hint{color:#adc2c9}.compare-picks label,.peer-model{border-color:#47636d}.model-compare thead th{background:#243e48;color:#edb184}.model-compare th,.model-compare td{border-color:#35515b}.peer-model[aria-current=page]{background:#c8804d;color:#0d191e}</style><script>
+(function(){
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const entries=window.SAHAND_MODEL_ENTRIES;
+entries.forEach((e,i)=>{
+const n=i%9;e.table=n<3||n===6?'single':'dual';e.series=n<=5?(n===2||n===4?'LD':'DZ'):null;
+const p=products[e.code],rows=[['مدل',e.name],['گروه ابعادی',e.size],['ساختار میز',e.table==='single'?'تک میز':'دو میز'],['کابین',e.cabin?'کابین‌دار':'بدون کابین'],['برش لوله',e.tube?'دارای لوله‌بر':'بدون لوله‌بر']];
+if(e.series)rows.push(['سری',e.series]);
+p.specs=rows.map(([name,value])=>({label:{fa:name,en:name},value,scope:'user_confirmed'}));
+const application=e.tube?'برش ورق و لوله':'برش ورق';
+p.description.fa=[e.name+' از گروه دستگاه‌های برش '+e.size+' است و با ساختار '+(e.table==='single'?'تک میز':'دو میز')+' معرفی می‌شود.', 'این مدل '+(e.cabin?'دارای کابین است.':'بدون کابین معرفی شده است.')+' '+(e.tube?'قابلیت لوله‌بر نیز در این پیکربندی وجود دارد.':'این پیکربندی در گروه دستگاه‌های برش ورق قرار دارد.'),'برای تعیین توان، سورس، هد، ضخامت قابل برش و تجهیزات نهایی، جنس و ضخامت قطعه، میزان تولید و فضای نصب را با کارشناسان سهند لیزر مطرح کنید.'];
+p.usage=[{title:{fa:application},desc:{fa:'انتخاب تنظیمات و تجهیزات بر اساس جنس، ضخامت و نیاز تولید انجام می‌شود.'}}];
+});
+let compared=[];
+let comparisonProduct=null;
+function randomComparisonModels(options,currentCode){
+const candidates=options.filter(x=>x.code!==currentCode).map(x=>x.code);
+for(let i=candidates.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}
+return [currentCode,...candidates.slice(0,2)];
+}
+const previousProduct=window.renderProduct;
+function peers(p){const e=entries.find(x=>x.code===p.code);return e?entries.filter(x=>x.size===e.size).map(x=>products[x.code]):Object.values(products).filter(x=>x.categoryId===p.categoryId&&!x.code.startsWith('CT-'))}
+function comparison(p){
+const options=peers(p);
+if(comparisonProduct!==p.code){compared=randomComparisonModels(options,p.code);comparisonProduct=p.code;}
+return '<h2>مقایسه مدل‌های هم‌گروه</h2><p class="compare-hint">سه مدل به‌صورت پیش‌فرض انتخاب شده‌اند؛ با انتخاب مدل‌های دیگر، آن‌ها هم به جدول اضافه می‌شوند. برای حذف هر مدل، تیک آن را بردارید.</p><div class="compare-picks">'+options.map(x=>'<label><input type="checkbox" data-compare="'+esc(x.code)+'" '+(compared.includes(x.code)?'checked':'')+'>'+esc(x.title.fa)+'</label>').join('')+'</div><p id="compare-status" role="status"></p><div id="comparison-table"></div>';
+}
+function drawTable(p){
+const chosen=compared.map(id=>products[id]).filter(Boolean),root=document.getElementById('comparison-table');if(!root)return;
+const rows=new Map();chosen.forEach(x=>x.specs.forEach(s=>{const name=s.label.fa||s.label.en;if(!rows.has(name))rows.set(name,new Map());rows.get(name).set(x.code,typeof s.value==='object'?(s.value.fa||s.value.en):s.value)}));
+const criteria={
+welding:[['نوع دستگاه',/نوع|ساختار|type/i],['توان لیزر',/توان|power/i],['سورس لیزر',/سورس|source/i],['نوع خنک‌کاری',/خنک|چیلر|cooling|chiller/i],['هد جوش',/هد|head/i],['سیم‌فیدر',/فیدر|wire|feeder/i],['گاز محافظ',/گاز|gas/i],['ضخامت قابل جوش',/ضخامت|thickness/i],['برق ورودی',/برق|ولتاژ|voltage|electrical/i],['وزن دستگاه',/وزن|weight/i]],
+marking:[['نوع لیزر',/نوع لیزر|laser type/i],['توان لیزر',/توان|power/i],['محدوده حکاکی',/محدوده|کارگیر|area|field/i],['سورس لیزر',/سورس|source/i],['طول موج',/طول موج|wavelength/i],['سرعت حکاکی',/سرعت|speed/i],['لنز',/لنز|lens/i],['روتاری',/روتاری|rotary/i],['خنک‌کاری',/خنک|cooling/i]],
+cleaning:[['نوع لیزر',/نوع لیزر|پالسی|پیوسته|laser type/i],['توان لیزر',/توان|power/i],['سورس لیزر',/سورس|source/i],['عرض پاک‌سازی',/عرض|width/i],['نوع خنک‌کاری',/خنک|چیلر|cooling/i],['طول کابل',/کابل|cable/i],['وزن دستگاه',/وزن|weight/i],['برق ورودی',/برق|voltage/i]]
+};
+for(const [name,pattern] of criteria[p.categoryId]||[]){
+const values=new Map();chosen.forEach(x=>{const spec=x.specs.find(s=>pattern.test((s.label.fa||'')+' '+(s.label.en||'')));let value=spec?(typeof spec.value==='object'?(spec.value.fa||spec.value.en):spec.value):null;
+if(!value&&name==='توان لیزر'){const match=(x.title.fa+' '+x.code).match(/(\d+(?:\.\d+)?)\s*(?:وات|W\b)/i);if(match)value=match[1]+' وات';}
+values.set(x.code,value||'نیازمند تأیید مشخصات این مدل');});rows.set(name,values);
+}
+root.innerHTML=chosen.length?'<div class="compare-scroll" tabindex="0" aria-label="جدول مقایسه؛ در موبایل به طرفین پیمایش کنید"><table class="model-compare"><caption>مقایسه مشخصات ثبت‌شده</caption><thead><tr><th scope="col">ویژگی</th>'+chosen.map(x=>'<th scope="col"><a href="preview-4/#product='+x.code+'">'+esc(x.title.fa)+'</a></th>').join('')+'</tr></thead><tbody>'+Array.from(rows).map(([label,values])=>'<tr><th scope="row">'+esc(label)+'</th>'+chosen.map(x=>'<td>'+esc(values.get(x.code)||'ثبت نشده')+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>':'<p>برای مقایسه، یک یا چند مدل را انتخاب کنید.</p>';
+root.querySelector('table')?.style.setProperty('min-width', Math.max(600, 160 + chosen.length * 220) + 'px');
+document.getElementById('compare-status').textContent=compared.length+' مدل انتخاب شده';
+}
+window.renderProduct=function(id){
+previousProduct(id);const p=products[id];if(!p)return;
+document.getElementById('models-list').innerHTML=peers(p).map(x=>'<a class="peer-model" href="preview-4/#product='+x.code+'" '+(id===x.code?'aria-current="page"':'')+'>'+esc(x.title.fa)+'</a>').join('');
+let panel=document.getElementById('product-comparison');if(!panel){panel=document.createElement('section');panel.id='product-comparison';panel.className='product-large-section';document.getElementById('product-large-sections').before(panel)}
+const machineComparison=['cutting','welding','marking','cleaning'].includes(p.categoryId);
+panel.hidden=!machineComparison;
+panel.innerHTML=machineComparison?comparison(p):'';
+if(machineComparison)drawTable(p);
+panel.querySelectorAll('[data-compare]').forEach(input=>input.onchange=()=>{compared=input.checked?[...compared,input.dataset.compare]:compared.filter(x=>x!==input.dataset.compare);drawTable(p);document.getElementById('compare-status').textContent=compared.length+' مدل انتخاب شده'});
+const entry=entries.find(x=>x.code===id);
+if(entry){
+document.getElementById('spin-viewer').innerHTML='<div class="model-identity"><span>برش '+entry.size+'</span><strong>'+esc(entry.name)+'</strong><p>برای دریافت تصاویر و مشخصات کامل این مدل با کارشناسان فروش تماس بگیرید.</p></div>';
+document.getElementById('product-media-caption').textContent='';
+document.querySelectorAll('#product-large-sections .product-large-section').forEach(section=>{if(section.querySelector('.section-empty'))section.hidden=true});
+}
+let bar=document.getElementById('mobile-product-actions');if(!bar){bar=document.createElement('div');bar.id='mobile-product-actions';bar.className='mobile-product-actions';document.getElementById('view-product').append(bar)}
+bar.innerHTML='<a href="tel:+989125855548">تماس با فروش</a><a href="https://wa.me/989125855548?text='+encodeURIComponent('درخواست مشخصات و پیش‌فاکتور برای '+p.title.fa)+'" target="_blank" rel="noopener noreferrer">مشاوره این مدل</a>';
+};
+
+document.addEventListener('DOMContentLoaded',()=>{
+if(location.hash.startsWith('#product='))window.renderProduct(location.hash.slice(9));
+});
+})();
 </script></html>
 
