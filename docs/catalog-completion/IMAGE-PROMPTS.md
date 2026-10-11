@@ -16,8 +16,13 @@ Common final brief for product extraction: extract only the actual product from 
 | `CP-SMC-ITV1050` | `Electro-Pneumatic/ITV---1050.jpg`; retain regulator body, display, button arrangement and ports; generated label/serial text is NOT identification evidence. |
 | `CTRL-FSCUT2000E` | `Laser System/2000E.jpg`; retain pictured BMC228X board, black heatsink, PCIe contacts and RJ45 bracket; do not infer that the pictured board is specifically BMC228A or BMC228B. |
 | `FS004` | `Source/C1500.jpg`; retain RFL-C1500 rack-unit geometry, original Raycus model/brand and front indicators; no source-internal diagram inferred from housing. |
+| `CC001` | `عکس های سایت/cwfl1500-lite.png`; extract the pictured chiller onto white, retain cabinet proportions, ventilation, controls and wheels; remove the promotional background without inventing internals. |
+| `CC002` | `عکس های سایت/cwfl2000-lite.png`; preserve the supplied chiller's exterior and visible fittings, isolate on white with a restrained contact shadow; generated lettering is not model-identification evidence. |
+| `CH002` | `عکس های سایت/BM109-lite.png`; preserve the horizontal green cutting-head assembly and separate driver shown in the reference; no invented optical cutaway or replacement manufacturer badge. |
 
 ML-004, ML-005 and ML-007 use previously generated `commercial-v2.png` masters from the original product asset folders, visually reviewed again in this run. ML-009 is not reused automatically while laser-type/cooling interpretation remains uncertain.
+
+Current delivered set: thirteen newly reconstructed studio images plus three reused and re-reviewed marking-machine images, sixteen in total. These are visual assets, not proof of exact installed components or specifications.
 
 ## Rejected cutaway brief
 
