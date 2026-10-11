@@ -1218,11 +1218,17 @@ p.description.fa=[e.name+' از گروه دستگاه‌های برش '+e.size+'
 p.usage=[{title:{fa:application},desc:{fa:'انتخاب تنظیمات و تجهیزات بر اساس جنس، ضخامت و نیاز تولید انجام می‌شود.'}}];
 });
 let compared=[];
+let comparisonProduct=null;
+function randomComparisonModels(options,currentCode){
+const candidates=options.filter(x=>x.code!==currentCode).map(x=>x.code);
+for(let i=candidates.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}
+return [currentCode,...candidates.slice(0,2)];
+}
 const previousProduct=window.renderProduct;
 function peers(p){const e=entries.find(x=>x.code===p.code);return e?entries.filter(x=>x.size===e.size).map(x=>products[x.code]):Object.values(products).filter(x=>x.categoryId===p.categoryId&&!x.code.startsWith('CT-'))}
 function comparison(p){
-const options=peers(p);compared=compared.filter(id=>options.some(x=>x.code===id));
-if(!compared.length)compared=[p.code,...options.filter(x=>x.code!==p.code).slice(0,2).map(x=>x.code)];
+const options=peers(p);
+if(comparisonProduct!==p.code){compared=randomComparisonModels(options,p.code);comparisonProduct=p.code;}
 return '<h2>مقایسه مدل‌های هم‌گروه</h2><p class="compare-hint">سه مدل به‌صورت پیش‌فرض انتخاب شده‌اند؛ با انتخاب مدل‌های دیگر، آن‌ها هم به جدول اضافه می‌شوند. برای حذف هر مدل، تیک آن را بردارید.</p><div class="compare-picks">'+options.map(x=>'<label><input type="checkbox" data-compare="'+esc(x.code)+'" '+(compared.includes(x.code)?'checked':'')+'>'+esc(x.title.fa)+'</label>').join('')+'</div><p id="compare-status" role="status"></p><div id="comparison-table"></div>';
 }
 function drawTable(p){
