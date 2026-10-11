@@ -1200,7 +1200,8 @@ document.querySelectorAll('.dropdown-menu a').forEach((a,i)=>{const ids=['cuttin
 window.applyRoute();
 });
 })();
-</script><style>
+</script>
+<style>
 .compare-hint{color:#64748b;margin:12px 0}.compare-picks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.compare-picks label{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #cbd5e1;border-radius:12px;font-size:13px;cursor:pointer}.compare-picks input{width:18px;height:18px;accent-color:#1e2a5e}.model-compare{min-width:600px;width:100%;border-collapse:collapse}.model-compare th,.model-compare td{padding:15px;text-align:right;border-bottom:1px solid #cbd5e1;vertical-align:top}.model-compare thead th{background:#1e2a5e;color:#fff}.model-compare tbody th{min-width:130px}.model-compare caption{text-align:right;padding:10px;font-weight:700}.peer-model{display:block;padding:14px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:8px}.peer-model[aria-current=page]{background:#1e2a5e;color:white}.model-identity{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:300px;padding:30px;background:linear-gradient(135deg,#1e2a5e,#36477f);color:white;text-align:center;gap:16px}.model-identity strong{font-size:clamp(22px,3vw,34px)}.model-identity p{font-size:13px;line-height:2}.mobile-product-actions{display:none}.family-links{max-height:220px;overflow:auto}.enter-card{opacity:0;transform:translateY(20px) translateX(12px);transition:opacity .6s ease var(--entry-delay,0ms),transform .6s ease var(--entry-delay,0ms)}.enter-card.entered{opacity:1;transform:none}.dark .compare-picks label,.dark .peer-model{border-color:#334155}.dark .model-compare th,.dark .model-compare td{border-color:#334155}@media(max-width:640px){.mobile-product-actions{display:flex;position:sticky;bottom:0;z-index:35;gap:10px;padding:12px;background:#fff;border-top:1px solid #cbd5e1}.mobile-product-actions a{flex:1;text-align:center;padding:12px;border-radius:10px;background:#1e2a5e;color:white;font-size:13px}.mobile-product-actions a:last-child{background:#15803d}.dark .mobile-product-actions{background:#0f172a}.family-links{display:grid;grid-template-columns:1fr 1fr}.family-links a{font-size:12px}.compare-picks{max-height:240px;overflow:auto}.browser-model,.browser-category{min-width:0}.browser-heading>a{white-space:normal}.compare-scroll{max-width:100%;overscroll-behavior:contain}button,a,input,select{touch-action:manipulation}}
 @media(prefers-reduced-motion:reduce){.enter-card{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style><script>
@@ -1222,13 +1223,14 @@ function peers(p){const e=entries.find(x=>x.code===p.code);return e?entries.filt
 function comparison(p){
 const options=peers(p);compared=compared.filter(id=>options.some(x=>x.code===id));
 if(!compared.length)compared=[p.code,...options.filter(x=>x.code!==p.code).slice(0,2).map(x=>x.code)];
-return '<h2>مقایسه مدل‌های هم‌گروه</h2><p class="compare-hint">حداکثر سه مدل را انتخاب کنید.</p><div class="compare-picks">'+options.map(x=>'<label><input type="checkbox" data-compare="'+esc(x.code)+'" '+(compared.includes(x.code)?'checked':'')+'>'+esc(x.title.fa)+'</label>').join('')+'</div><p id="compare-status" role="status"></p><div id="comparison-table"></div>';
+return '<h2>مقایسه مدل‌های هم‌گروه</h2><p class="compare-hint">سه مدل به‌صورت پیش‌فرض انتخاب شده‌اند؛ با انتخاب مدل‌های دیگر، آن‌ها هم به جدول اضافه می‌شوند. برای حذف هر مدل، تیک آن را بردارید.</p><div class="compare-picks">'+options.map(x=>'<label><input type="checkbox" data-compare="'+esc(x.code)+'" '+(compared.includes(x.code)?'checked':'')+'>'+esc(x.title.fa)+'</label>').join('')+'</div><p id="compare-status" role="status"></p><div id="comparison-table"></div>';
 }
 function drawTable(p){
 const chosen=compared.map(id=>products[id]).filter(Boolean),root=document.getElementById('comparison-table');if(!root)return;
 const rows=new Map();chosen.forEach(x=>x.specs.forEach(s=>{const name=s.label.fa||s.label.en;if(!rows.has(name))rows.set(name,new Map());rows.get(name).set(x.code,typeof s.value==='object'?(s.value.fa||s.value.en):s.value)}));
 root.innerHTML=chosen.length?'<div class="compare-scroll" tabindex="0" aria-label="جدول مقایسه؛ در موبایل به طرفین پیمایش کنید"><table class="model-compare"><caption>مقایسه مشخصات ثبت‌شده</caption><thead><tr><th scope="col">ویژگی</th>'+chosen.map(x=>'<th scope="col"><a href="preview-3/#product='+x.code+'">'+esc(x.title.fa)+'</a></th>').join('')+'</tr></thead><tbody>'+Array.from(rows).map(([label,values])=>'<tr><th scope="row">'+esc(label)+'</th>'+chosen.map(x=>'<td>'+esc(values.get(x.code)||'ثبت نشده')+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>':'<p>برای مقایسه، یک یا چند مدل را انتخاب کنید.</p>';
-document.querySelectorAll('[data-compare]').forEach(input=>{input.disabled=!input.checked&&compared.length>=3});
+root.querySelector('table')?.style.setProperty('min-width', Math.max(600, 160 + chosen.length * 220) + 'px');
+document.getElementById('compare-status').textContent=compared.length+' مدل انتخاب شده';
 }
 window.renderProduct=function(id){
 previousProduct(id);const p=products[id];if(!p)return;
@@ -1258,3 +1260,4 @@ window.applyRoute();
 });
 })();
 </script></body></html>
+
