@@ -1,1 +1,4840 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Preview 11</title><style>html,body{margin:0;height:100%;background:#f4f7fb}iframe{width:100%;height:100%;border:0;display:block}</style></head><body><iframe title="Sahand Laser Preview 11" src="../preview-experiments/site.html?taxonomy=&amp;theme=graphite#home"></iframe></body></html>
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#050b13">
+<title>سهند لیزر | یک شب بارانی در اصفهان — روایت تعاملی</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#050b13;color:#edf6ff;font-family:Tahoma,sans-serif;
+  overflow:hidden;-webkit-font-smoothing:antialiased;
+}
+#viewport{position:fixed;inset:0}
+canvas{display:block;touch-action:none}
+
+/* ===== Chapter Intro Screen ===== */
+.chapter-intro{
+  position:fixed;inset:0;z-index:30;
+  background:radial-gradient(ellipse at center,rgba(10,25,45,.85),rgba(2,6,12,.98));
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;text-align:center;padding:40px;
+  opacity:0;pointer-events:none;transition:opacity 1s;
+}
+.chapter-intro.show{opacity:1;pointer-events:auto}
+.chapter-intro .chapter-num{
+  font-size:11px;color:#78c9e7;letter-spacing:6px;
+  margin-bottom:20px;text-transform:uppercase;
+}
+.chapter-intro h1{
+  font-size:34px;font-weight:300;line-height:1.6;
+  margin:0 0 24px;color:#d7fcff;max-width:700px;
+  text-shadow:0 4px 30px rgba(80,180,255,.3);
+}
+.chapter-intro p{
+  font-size:14px;line-height:2.2;color:#8ba8bd;
+  max-width:560px;margin:0 0 32px;
+}
+.chapter-intro .btn-start{
+  padding:14px 32px;font-size:13px;color:#c8e8f7;
+  background:linear-gradient(135deg,#0a3a56,#062238);
+  border:1px solid #4a8fb0aa;border-radius:12px;
+  cursor:pointer;letter-spacing:1px;
+  transition:all .3s;font-family:inherit;
+}
+.chapter-intro .btn-start:hover{
+  background:linear-gradient(135deg,#0e4a6e,#083250);
+  border-color:#6fddff;color:#fff;
+  box-shadow:0 0 30px rgba(111,221,255,.3);
+  transform:translateY(-2px);
+}
+.chapter-intro .chapter-decor{
+  width:60px;height:1px;background:linear-gradient(90deg,transparent,#78c9e7,transparent);
+  margin:20px auto;
+}
+
+/* ===== Header ===== */
+header{
+  position:fixed;top:0;left:0;right:0;padding:22px 28px;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  pointer-events:none;background:linear-gradient(#040b16c9,transparent);
+  z-index:2;transition:opacity .4s;
+}
+.brand{font-weight:700;font-size:19px;letter-spacing:1px;text-shadow:0 2px 12px #000}
+.brand small{display:block;color:#82b7d1;font-size:9px;letter-spacing:4px;margin-top:8px}
+.place{text-align:left;color:#a7bfd1;font-size:11px;line-height:2}
+.place b{color:#e8cda4;font-weight:400;letter-spacing:3px}
+
+/* ===== Title ===== */
+.title{
+  position:fixed;right:28px;top:100px;pointer-events:none;z-index:2;
+  max-width:340px;text-shadow:0 2px 20px #000;transition:opacity .4s;
+}
+.title span{font-size:10px;color:#78c9e7;letter-spacing:2px}
+.title h1{font-size:24px;line-height:1.6;margin:9px 0;font-weight:400}
+.title p{font-size:11px;color:#b1c5d4;line-height:2;max-width:280px}
+
+/* ===== Toolbar ===== */
+.toolbar{
+  position:fixed;bottom:22px;left:22px;z-index:3;
+  display:flex;gap:6px;flex-wrap:wrap;max-width:640px;
+  transition:opacity .4s;
+}
+button{
+  font:inherit;font-size:11px;color:#c8ddeb;
+  background:#0a1828b8;backdrop-filter:blur(10px);
+  border:1px solid #688ca44d;border-radius:8px;
+  padding:10px 13px;cursor:pointer;touch-action:manipulation;
+  transition:all .2s;
+}
+button:hover{background:#19384bcc;transform:translateY(-1px)}
+button:focus-visible{outline:2px solid #6fddff;outline-offset:4px}
+button.active{background:#1d4560cc;border-color:#6fddffcc}
+
+/* ===== Chapter Progress ===== */
+.chapter-progress{
+  position:fixed;top:22px;left:50%;transform:translateX(-50%);
+  z-index:4;display:flex;gap:8px;pointer-events:none;
+  background:#06121eb8;backdrop-filter:blur(10px);
+  padding:8px 16px;border-radius:20px;
+  border:1px solid #4a8fb033;
+  transition:opacity .4s;
+}
+.chapter-progress .dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#2a4a5e;transition:all .4s;
+}
+.chapter-progress .dot.active{
+  background:#78c9e7;box-shadow:0 0 10px #78c9e7;
+  transform:scale(1.3);
+}
+.chapter-progress .dot.done{
+  background:#c9a976;
+}
+
+/* ===== Story Caption (dialogue) ===== */
+.story-caption{
+  position:fixed;bottom:120px;left:50%;transform:translateX(-50%);
+  z-index:5;color:#ffe2b9;font-size:15px;text-align:center;
+  background:#06121ee8;padding:14px 26px;border-radius:12px;
+  max-width:min(700px,90vw);pointer-events:none;
+  transition:opacity .3s;
+  backdrop-filter:blur(10px);
+  border:1px solid #c9a97655;
+  line-height:2;
+  font-family:Tahoma,sans-serif;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.story-caption .speaker{
+  display:block;font-size:11px;color:#c9a976;
+  letter-spacing:2px;margin-bottom:8px;
+}
+.story-caption.empty{opacity:0}
+
+/* ===== Narrative Box (poetic text) ===== */
+.narrative{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  z-index:6;color:#d7e8f2;font-size:20px;text-align:center;
+  background:#040b16ee;padding:36px 48px;border-radius:16px;
+  max-width:min(620px,90vw);pointer-events:none;
+  transition:all .6s;
+  backdrop-filter:blur(14px);
+  border:1px solid #4a8fb033;
+  line-height:2.2;
+  opacity:0;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+.narrative.show{opacity:1}
+.narrative h2{
+  font-size:22px;font-weight:300;
+  margin:0 0 16px;color:#78c9e7;
+  letter-spacing:1px;
+}
+.narrative p{margin:0;color:#b1c5d4;font-size:14px;line-height:2.2}
+
+/* ===== Controls hint ===== */
+.controls{
+  position:fixed;right:22px;bottom:22px;z-index:3;
+  background:#071423b8;backdrop-filter:blur(12px);
+  padding:14px 18px;border:1px solid #56778d3d;border-radius:12px;
+  font-size:11px;color:#a7c0d1;line-height:2;max-width:260px;
+  transition:opacity .4s;
+}
+.controls b{color:white;font-weight:400}
+.controls kbd{
+  display:inline-block;padding:1px 5px;
+  border:1px solid #7196b34d;border-radius:4px;
+  font-family:inherit;color:#e1f1fc;font-size:10px;
+}
+.controls.hidden{opacity:0;pointer-events:none}
+
+/* ===== Touch pad ===== */
+.touch-pad{
+  display:none;position:fixed;bottom:96px;right:20px;z-index:3;
+  grid-template-columns:repeat(3,45px);grid-template-rows:repeat(2,43px);
+  gap:5px;direction:ltr;
+}
+.touch-pad button{padding:4px;font-size:18px;border-radius:10px}
+.touch-pad .up{grid-column:2}
+.touch-pad .left{grid-column:1;grid-row:2}
+.touch-pad .down{grid-column:2;grid-row:2}
+.touch-pad .right{grid-column:3;grid-row:2}
+
+/* ===== Status ===== */
+.status{
+  position:fixed;bottom:6px;left:24px;color:#6f8ba2;
+  font-size:9px;pointer-events:none;z-index:3;
+}
+
+/* ===== Loading ===== */
+.loading{
+  position:fixed;inset:0;z-index:8;background:#050b13;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:20px;transition:opacity .8s;
+  pointer-events:none;
+}
+.loading.done{opacity:0}
+.loading .ring{
+  width:56px;height:56px;border:1px solid #23455c;
+  border-top:2px solid #75dafc;border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+.loading h2{font-size:16px;color:#d7e8f2;font-weight:400;margin:0;letter-spacing:2px}
+.loading p{font-size:12px;color:#9ab6ca;max-width:400px;text-align:center;line-height:2;margin:0}
+.loading .progress{
+  width:280px;height:3px;background:#16293a;border-radius:999px;overflow:hidden;
+}
+.loading .progress-bar{
+  height:100%;background:linear-gradient(90deg,#75dafc,#c9a976);
+  width:0%;transition:width .4s;
+}
+#loading[hidden]{display:none!important}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ===== Error ===== */
+.error{
+  display:none;position:fixed;inset:25% 10%;z-index:10;
+  background:#11273ae8;padding:25px;border:1px solid #87b2d7;
+  border-radius:14px;font-size:13px;line-height:2;
+}
+
+/* ===== Info Panel ===== */
+.info-panel{
+  position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);
+  z-index:20;background:#0a1a2aee;backdrop-filter:blur(14px);
+  border:1px solid #6fddff55;border-radius:16px;
+  padding:24px;max-width:460px;width:calc(100vw - 40px);
+  opacity:0;pointer-events:none;transition:all .3s;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+.info-panel.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.info-panel h3{margin:0 0 14px;font-size:18px;color:#d7fcff;font-weight:400}
+.info-panel p{margin:0 0 14px;font-size:13px;line-height:2;color:#b1c5d4}
+.info-panel .close{
+  position:absolute;top:12px;left:12px;
+  width:32px;height:32px;border-radius:8px;
+  background:#1a2c3c;border:1px solid #6fddff44;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:15px;color:#d7fcff;
+}
+.info-panel .close:hover{background:#2a4a5e}
+.info-panel .actions{display:flex;gap:8px;margin-top:14px}
+.info-panel .actions button{flex:1;padding:10px;font-size:12px}
+
+/* ===== Chapter List ===== */
+.chapter-list{
+  position:fixed;top:50%;right:22px;transform:translateY(-50%);
+  z-index:4;display:flex;flex-direction:column;gap:8px;
+  pointer-events:auto;transition:opacity .4s;
+}
+.chapter-list button{
+  width:36px;height:36px;padding:0;border-radius:50%;
+  font-size:11px;display:flex;align-items:center;justify-content:center;
+  background:#0a1828cc;border:1px solid #4a8fb055;
+}
+.chapter-list button.active{
+  background:#1d4560ff;border-color:#6fddff;
+  color:#fff;box-shadow:0 0 15px rgba(111,221,255,.4);
+}
+.chapter-list button:hover:not(.active){background:#19384bcc;transform:scale(1.1)}
+
+/* ===== Inside room states ===== */
+.inside-room .title{opacity:.25}
+.inside-room .controls{opacity:.4}
+.inside-room .chapter-list{opacity:.5}
+
+/* ===== Media queries ===== */
+@media(pointer:coarse){
+  .touch-pad{display:grid}
+  .controls{display:none}
+}
+@media(max-width:650px){
+  header{padding:18px}
+  .brand{font-size:16px}
+  .brand small{font-size:8px;letter-spacing:3px}
+  .title{right:18px;top:80px;max-width:200px}
+  .title h1{font-size:19px}
+  .title p{font-size:10px}
+  .toolbar{left:10px;bottom:22px;gap:4px;max-width:260px}
+  .toolbar button{font-size:10px;padding:9px 10px}
+  .place{font-size:9px}
+  .status{left:12px;font-size:8px}
+  .touch-pad{bottom:120px;right:12px}
+  .story-caption{bottom:200px;font-size:12px;padding:10px 16px}
+  .info-panel{padding:20px}
+  .chapter-intro h1{font-size:22px}
+  .chapter-intro p{font-size:12px}
+  .chapter-list{right:8px;gap:5px}
+  .chapter-list button{width:30px;height:30px;font-size:10px}
+  .chapter-progress{top:14px;padding:6px 12px}
+  .narrative{font-size:16px;padding:24px 28px}
+  .narrative h2{font-size:18px}
+  .narrative p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .loading .ring{animation:none}
+  .loading{transition:none}
+  *{transition:none!important}
+}
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div id="viewport" aria-label="صحنه سه‌بعدی روایت تعاملی سهند لیزر"></div>
+
+<!-- ===== Chapter Progress Dots ===== -->
+<div class="chapter-progress" id="chapter-progress">
+  <div class="dot active" data-ch="1"></div>
+  <div class="dot" data-ch="2"></div>
+  <div class="dot" data-ch="3"></div>
+  <div class="dot" data-ch="4"></div>
+  <div class="dot" data-ch="5"></div>
+  <div class="dot" data-ch="6"></div>
+</div>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="brand">
+    سهند لیزر
+    <small>SAHAND LASER / NIGHT SHIFT</small>
+  </div>
+  <div class="place">
+    <b>ISFAHAN</b><br>
+    روایت تعاملی · فصل <span id="current-chapter">۱</span> از ۶
+  </div>
+</header>
+
+<!-- ===== Title ===== -->
+<div class="title">
+  <span>THE WORKSHOP AFTER DARK</span>
+  <h1>یک شب بارانی<br>در اصفهان.</h1>
+  <p>داستانی از نور، فلز و آدم‌هایی که شب‌ها کار می‌کنند. خودت مسافر این روایتی.</p>
+</div>
+
+<!-- ===== Chapter List (right side) ===== -->
+<div class="chapter-list" id="chapter-list" role="navigation" aria-label="فصل‌های داستان">
+  <button data-ch="1" title="فصل ۱: باران و خیابان">۱</button>
+  <button data-ch="2" title="فصل ۲: کارگاه">۲</button>
+  <button data-ch="3" title="فصل ۳: دستگاه‌ها">۳</button>
+  <button data-ch="4" title="فصل ۴: پشت صحنه">۴</button>
+  <button data-ch="5" title="فصل ۵: تیم">۵</button>
+  <button data-ch="6" title="فصل ۶: فردا">۶</button>
+</div>
+
+<!-- ===== Toolbar ===== -->
+<div class="toolbar" role="toolbar" aria-label="کنترل صحنه">
+  <button id="visit" title="شروع روایت">▶ شروع داستان</button>
+  <button id="reset" title="بازگشت به نمای اول">↺ نمای اول</button>
+  <button id="pause" aria-pressed="false" title="توقف/ادامه">⏸ توقف</button>
+  <button id="quality" title="تغییر کیفیت">🎬 کیفیت: سینمایی</button>
+  <button id="weather" title="تغییر آب و هوا">🌧️ بارانی</button>
+  <button id="time" title="تغییر زمان">🌙 شب</button>
+  <button id="sound" aria-pressed="false" title="صدا">🔇 صدا</button>
+  <button id="screenshot" title="عکس گرفتن">📷 عکس</button>
+  <button id="fullscreen" title="تمام صفحه">⛶</button>
+  <button id="help" title="راهنما">؟</button>
+</div>
+
+<!-- ===== Controls hint ===== -->
+<div class="controls" id="controls-hint">
+  <b>قدم بزن و کشف کن</b><br>
+  <kbd>W</kbd> جلو · <kbd>S</kbd> عقب · <kbd>A</kbd> چپ · <kbd>D</kbd> راست<br>
+  کشیدن موس: چرخش دوربین · <kbd>Shift</kbd> تندتر<br>
+  <kbd>R</kbd> نمای اول · <kbd>Esc</kbd> توقف · <kbd>F</kbd> تمام صفحه · <kbd>H</kbd> راهنما
+</div>
+
+<!-- ===== Touch pad ===== -->
+<div class="touch-pad" aria-label="کنترل حرکت لمسی">
+  <button class="up" data-key="KeyW" aria-label="حرکت جلو">↑</button>
+  <button class="left" data-key="KeyA" aria-label="حرکت چپ">←</button>
+  <button class="down" data-key="KeyS" aria-label="حرکت عقب">↓</button>
+  <button class="right" data-key="KeyD" aria-label="حرکت راست">→</button>
+</div>
+
+<!-- ===== Story caption ===== -->
+<div id="story-caption" class="story-caption empty" aria-live="polite"></div>
+
+<!-- ===== Narrative box ===== -->
+<div id="narrative" class="narrative" aria-live="polite"></div>
+
+<!-- ===== Status ===== -->
+<div class="status" id="machine-status">در حال بارگذاری صحنه…</div>
+
+<!-- ===== Loading ===== -->
+<div id="loading" class="loading">
+  <div class="ring"></div>
+  <h2>سهند لیزر</h2>
+  <p id="load-status">ساخت نور، باران و بازتاب‌ها…</p>
+  <div class="progress"><div class="progress-bar" id="load-progress"></div></div>
+</div>
+
+<!-- ===== Error ===== -->
+<div id="error" class="error" role="alert"></div>
+
+<!-- ===== Chapter Intro Screen ===== -->
+<div class="chapter-intro" id="chapter-intro">
+  <div class="chapter-num" id="intro-num">CHAPTER I</div>
+  <h1 id="intro-title">باران و خیابان</h1>
+  <div class="chapter-decor"></div>
+  <p id="intro-desc">شب است. اصفهان در باران غرق شده. مسافری در خیابان خیام قدم می‌زند…</p>
+  <button class="btn-start" id="intro-btn">شروع فصل ۱</button>
+</div>
+
+<!-- ===== Info Panel ===== -->
+<div class="info-panel" id="info-panel">
+  <button class="close" onclick="closeInfoPanel()" aria-label="بستن">×</button>
+  <h3 id="info-title"></h3>
+  <p id="info-text"></p>
+  <div class="actions">
+    <button onclick="navigateToSite('#products')">مشاهده محصولات</button>
+    <button onclick="closeInfoPanel()">بستن</button>
+  </div>
+</div>
+
+<script>
+window.addEventListener('error', function(e) {
+  document.getElementById('loading').hidden = true;
+  const box = document.getElementById('error');
+  box.style.display = 'block';
+  box.textContent = 'نمایش سه‌بعدی اجرا نشد. WebGL و اتصال به Three.js را بررسی کنید. جزئیات: ' + e.message;
+});
+window.addEventListener('unhandledrejection', function(e) {
+  document.getElementById('loading').hidden = true;
+  const box = document.getElementById('error');
+  box.style.display = 'block';
+  box.textContent = 'خطای بارگذاری صحنه: ' + String(e.reason);
+});
+setTimeout(function() {
+  if (!document.getElementById('loading').hidden) {
+    document.getElementById('load-status').textContent = 'بارگذاری طول کشیده است؛ اتصال را بررسی کنید.';
+  }
+}, 20000);
+</script>
+
+<!-- ✅ ادامه در بخش ۲ -->
+
+<script type="module">
+import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+import { Reflector } from 'three/addons/objects/Reflector.js';
+
+// ============================================================
+// [SETUP & UTILITY]
+// ============================================================
+const status = document.getElementById('load-status');
+const progressBar = document.getElementById('load-progress');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mobile = matchMedia('(pointer:coarse)').matches;
+
+function setProgress(p, msg) {
+  progressBar.style.width = p + '%';
+  if (msg) status.textContent = msg;
+}
+
+// ============================================================
+// [RENDERER & SCENE]
+// ============================================================
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x040911);
+scene.fog = new THREE.FogExp2(0x091524, 0.025);
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: !mobile,
+  powerPreference: 'high-performance'
+});
+renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.25 : 1.6));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.getElementById('viewport').append(renderer.domElement);
+
+const camera = new THREE.PerspectiveCamera(48, innerWidth / innerHeight, 0.1, 150);
+
+// ============================================================
+// [POST-PROCESSING]
+// ============================================================
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+
+const bloom = new UnrealBloomPass(
+  new THREE.Vector2(innerWidth, innerHeight),
+  0.55, 0.48, 1.15
+);
+composer.addPass(bloom);
+
+const VignetteShader = {
+  uniforms: {
+    tDiffuse: { value: null },
+    offset: { value: 1.0 },
+    darkness: { value: 1.1 }
+  },
+  vertexShader: `
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform sampler2D tDiffuse;
+    uniform float offset;
+    uniform float darkness;
+    varying vec2 vUv;
+    void main() {
+      vec4 texel = texture2D(tDiffuse, vUv);
+      vec2 uv = (vUv - vec2(0.5)) * vec2(offset);
+      float vignette = 1.0 - dot(uv, uv) * darkness;
+      texel.rgb *= clamp(vignette, 0.3, 1.0);
+      gl_FragColor = texel;
+    }
+  `
+};
+const vignettePass = new ShaderPass(VignetteShader);
+composer.addPass(vignettePass);
+composer.addPass(new OutputPass());
+
+setProgress(10, 'آماده‌سازی نور و آسمان…');
+
+// ============================================================
+// [LIGHTS]
+// ============================================================
+const hemi = new THREE.HemisphereLight(0x8eaece, 0x1c1719, 1.0);
+scene.add(hemi);
+
+const moon = new THREE.DirectionalLight(0x6e9fff, 1.3);
+moon.position.set(-9, 16, 9);
+moon.castShadow = true;
+moon.shadow.mapSize.set(mobile ? 512 : 1024, mobile ? 512 : 1024);
+moon.shadow.camera.left = -25;
+moon.shadow.camera.right = 25;
+moon.shadow.camera.top = 25;
+moon.shadow.camera.bottom = -25;
+moon.shadow.bias = -0.0003;
+scene.add(moon);
+
+// ============================================================
+// [MATERIALS LIBRARY]
+// ============================================================
+const mats = {
+  brick: new THREE.MeshStandardMaterial({ color: 0x453830, roughness: 0.88 }),
+  brickLight: new THREE.MeshStandardMaterial({ color: 0x6a5a4a, roughness: 0.85 }),
+  concrete: new THREE.MeshStandardMaterial({ color: 0x37414b, roughness: 0.68 }),
+  concreteLight: new THREE.MeshStandardMaterial({ color: 0x5a6773, roughness: 0.72 }),
+  metal: new THREE.MeshStandardMaterial({ color: 0x3f4e5d, metalness: 0.8, roughness: 0.3 }),
+  metalDark: new THREE.MeshStandardMaterial({ color: 0x1a2330, metalness: 0.7, roughness: 0.4 }),
+  dark: new THREE.MeshStandardMaterial({ color: 0x111923, metalness: 0.5, roughness: 0.3 }),
+  white: new THREE.MeshStandardMaterial({ color: 0xe4e7e8, metalness: 0.2, roughness: 0.3 }),
+  blue: new THREE.MeshStandardMaterial({ color: 0x174a86, metalness: 0.5, roughness: 0.28 }),
+  blueDark: new THREE.MeshStandardMaterial({ color: 0x0a2a4a, metalness: 0.6, roughness: 0.3 }),
+  copper: new THREE.MeshStandardMaterial({ color: 0xb78546, metalness: 0.7, roughness: 0.32 }),
+  steel: new THREE.MeshStandardMaterial({ color: 0x8899aa, metalness: 0.9, roughness: 0.15 }),
+  gold: new THREE.MeshStandardMaterial({ color: 0xd4af37, metalness: 0.9, roughness: 0.2 }),
+  wood: new THREE.MeshStandardMaterial({ color: 0x5a3d28, roughness: 0.85 }),
+  woodLight: new THREE.MeshStandardMaterial({ color: 0x8b6340, roughness: 0.82 }),
+  glass: new THREE.MeshPhysicalMaterial({
+    color: 0xb2dfeb,
+    metalness: 0,
+    roughness: 0.08,
+    transparent: true,
+    opacity: 0.15,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  }),
+  glassWarm: new THREE.MeshPhysicalMaterial({
+    color: 0xffe5b0,
+    metalness: 0,
+    roughness: 0.15,
+    transparent: true,
+    opacity: 0.35,
+    side: THREE.DoubleSide,
+    depthWrite: false
+  }),
+  emissiveWarm: new THREE.MeshStandardMaterial({
+    color: 0xffe0a0,
+    emissive: 0xffb060,
+    emissiveIntensity: 3,
+    toneMapped: false
+  }),
+  emissiveCyan: new THREE.MeshStandardMaterial({
+    color: 0xb5f0ff,
+    emissive: 0x37d4ff,
+    emissiveIntensity: 3,
+    toneMapped: false
+  }),
+  neonPink: new THREE.MeshStandardMaterial({
+    color: 0xff6ec7,
+    emissive: 0xff2080,
+    emissiveIntensity: 4,
+    toneMapped: false
+  }),
+  neonGreen: new THREE.MeshStandardMaterial({
+    color: 0x7affb5,
+    emissive: 0x22ee77,
+    emissiveIntensity: 4,
+    toneMapped: false
+  })
+};
+
+// ============================================================
+// [HELPERS]
+// ============================================================
+function box(w, h, d, mat, x = 0, y = 0, z = 0, parent = scene) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true;
+  m.receiveShadow = true;
+  parent.add(m);
+  return m;
+}
+
+function cylinder(rt, rb, h, mat, x, y, z, parent = scene, segments = 16) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(rt, rb, h, segments), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true;
+  parent.add(m);
+  return m;
+}
+
+function sphere(radius, mat, x, y, z, parent = scene, segments = 16) {
+  const m = new THREE.Mesh(new THREE.SphereGeometry(radius, segments, segments), mat);
+  m.position.set(x, y, z);
+  m.castShadow = true;
+  parent.add(m);
+  return m;
+}
+
+function canvasTexture(w, h, paint) {
+  const c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
+  paint(c.getContext('2d'), w, h);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
+function textPlane(text, w, h, color, x, y, z, font = 'bold 82px sans-serif', bg = null, emission = 1, parent = scene) {
+  const tex = canvasTexture(1536, 256, (ctx, ww, hh) => {
+    if (bg) {
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, ww, hh);
+    }
+    ctx.font = font;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = color;
+    ctx.fillText(text, ww / 2, hh / 2);
+  });
+  const mat = new THREE.MeshBasicMaterial({
+    map: tex,
+    transparent: !bg,
+    toneMapped: false,
+    color: new THREE.Color().setScalar(emission),
+    depthWrite: false
+  });
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
+  m.position.set(x, y, z);
+  parent.add(m);
+  return m;
+}
+
+// ============================================================
+// [STARS — آسمان پرستاره]
+// ============================================================
+const starsGeo = new THREE.BufferGeometry();
+const starCount = 1200;
+const starPos = new Float32Array(starCount * 3);
+const starColors = new Float32Array(starCount * 3);
+for (let i = 0; i < starCount; i++) {
+  const r = 80 + Math.random() * 40;
+  const theta = Math.random() * Math.PI * 2;
+  const phi = Math.random() * Math.PI * 0.5;
+  starPos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+  starPos[i * 3 + 1] = r * Math.cos(phi);
+  starPos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+  const c = Math.random();
+  starColors[i * 3] = c > 0.8 ? 1 : 0.7 + Math.random() * 0.2;
+  starColors[i * 3 + 1] = c > 0.8 ? 0.95 : 0.75 + Math.random() * 0.2;
+  starColors[i * 3 + 2] = c > 0.8 ? 0.85 : 0.9 + Math.random() * 0.1;
+}
+starsGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+starsGeo.setAttribute('color', new THREE.BufferAttribute(starColors, 3));
+const stars = new THREE.Points(starsGeo, new THREE.PointsMaterial({
+  size: 0.4,
+  vertexColors: true,
+  transparent: true,
+  opacity: 0.9,
+  depthWrite: false,
+  toneMapped: false
+}));
+scene.add(stars);
+
+// ============================================================
+// [MOON — ماه کامل]
+// ============================================================
+const moonSphere = sphere(2.5, new THREE.MeshBasicMaterial({
+  color: 0xf0f0ff,
+  toneMapped: false,
+  transparent: true,
+  opacity: 0.85
+}), -40, 45, -30);
+const moonGlow = sphere(6, new THREE.MeshBasicMaterial({
+  color: 0x88bbff,
+  transparent: true,
+  opacity: 0.08,
+  toneMapped: false,
+  depthWrite: false
+}), -40, 45, -30);
+
+// ============================================================
+// [DISTANT SILHOUETTES — افق شهر]
+// ============================================================
+const skylineGroup = new THREE.Group();
+scene.add(skylineGroup);
+for (let i = 0; i < 28; i++) {
+  const w = 3 + Math.random() * 6;
+  const h = 6 + Math.random() * 18;
+  const d = 3 + Math.random() * 5;
+  const b = box(w, h, d, mats.dark,
+    (Math.random() - 0.5) * 90,
+    h / 2,
+    -35 - Math.random() * 25,
+    skylineGroup
+  );
+  // a few lit windows
+  const windowCount = Math.floor(Math.random() * 6);
+  for (let j = 0; j < windowCount; j++) {
+    const ww = 0.3;
+    const wh = 0.35;
+    const win = box(ww, wh, 0.05,
+      Math.random() > 0.7 ? mats.emissiveWarm : mats.metalDark,
+      -w / 2 + 0.5 + Math.random() * (w - 1),
+      1 + Math.random() * (h - 2),
+      d / 2 + 0.03,
+      b
+    );
+    win.castShadow = false;
+    win.receiveShadow = false;
+  }
+}
+
+// ============================================================
+// [GROUND + REFLECTION]
+// ============================================================
+const noise = canvasTexture(512, 512, (ctx, w, h) => {
+  ctx.fillStyle = '#62666a';
+  ctx.fillRect(0, 0, w, h);
+  for (let i = 0; i < 24000; i++) {
+    const c = 65 + Math.random() * 100;
+    ctx.fillStyle = `rgb(${c},${c},${c})`;
+    ctx.fillRect(Math.random() * w, Math.random() * h, Math.random() * 3 + 1, 1);
+  }
+});
+noise.wrapS = noise.wrapT = THREE.RepeatWrapping;
+noise.repeat.set(12, 14);
+noise.colorSpace = THREE.NoColorSpace;
+
+const groundReflector = new Reflector(new THREE.PlaneGeometry(60, 55), {
+  clipBias: 0.003,
+  textureWidth: mobile ? 512 : 1024,
+  textureHeight: mobile ? 512 : 1024,
+  color: 0x64798a
+});
+groundReflector.rotation.x = -Math.PI / 2;
+groundReflector.position.set(0, 0.006, 5);
+scene.add(groundReflector);
+
+const asphalt = new THREE.MeshStandardMaterial({
+  color: 0x111a24,
+  roughness: 0.24,
+  metalness: 0.6,
+  transparent: true,
+  opacity: 0.62,
+  bumpMap: noise,
+  bumpScale: 0.025
+});
+const road = new THREE.Mesh(new THREE.PlaneGeometry(60, 55), asphalt);
+road.rotation.x = -Math.PI / 2;
+road.position.set(0, 0.014, 5);
+road.receiveShadow = true;
+scene.add(road);
+
+setProgress(25, 'ساخت خیابان و پیاده‌رو…');
+
+// ============================================================
+// [CURB & SIDEWALK]
+// ============================================================
+// Curb in front of the shop
+box(20, 0.18, 0.4, mats.concreteLight, 0, 0.09, -1.0);
+box(20, 0.18, 0.4, mats.concreteLight, 0, 0.09, 7.0);
+
+// Sidewalk tiles
+for (let x = -10; x < 10; x += 1) {
+  box(0.95, 0.04, 0.95, mats.concrete, x, 0.02, -0.55);
+  box(0.95, 0.04, 0.95, mats.concrete, x, 0.02, 6.55);
+}
+
+// Yellow tactile paving (for the visually impaired)
+for (let x = -3; x < 3; x += 0.4) {
+  box(0.3, 0.03, 0.3, new THREE.MeshStandardMaterial({
+    color: 0xe8b845, roughness: 0.75
+  }), x, 0.045, -0.55);
+}
+
+// ============================================================
+// [PUDDLES]
+// ============================================================
+for (let i = 0; i < 24; i++) {
+  const puddle = new THREE.Mesh(
+    new THREE.CircleGeometry(0.5 + Math.random() * 1.4, 40),
+    new THREE.MeshPhysicalMaterial({
+      color: 0x1f4358,
+      metalness: 0.95,
+      roughness: 0.05,
+      transparent: true,
+      opacity: 0.24,
+      clearcoat: 1
+    })
+  );
+  puddle.rotation.x = -Math.PI / 2;
+  puddle.scale.set(1.5 + Math.random(), 0.6 + Math.random() * 0.5, 1);
+  puddle.position.set((Math.random() - 0.5) * 30, 0.022, -2 + Math.random() * 16);
+  scene.add(puddle);
+}
+
+// ============================================================
+// [STREET LAMPS]
+// ============================================================
+function streetLamp(x, z) {
+  cylinder(0.07, 0.09, 7.5, mats.dark, x, 3.75, z);
+  box(1.2, 0.07, 0.12, mats.metal, x + 0.5, 7.48, z);
+  box(0.75, 0.03, 0.28, mats.emissiveCyan, x + 0.75, 7.4, z);
+  const lamp = new THREE.PointLight(0x82b8ff, 42, 24, 2);
+  lamp.position.set(x + 0.7, 7.1, z);
+  scene.add(lamp);
+  return lamp;
+}
+streetLamp(-9, 3);
+streetLamp(11, 3);
+streetLamp(-9, 14);
+streetLamp(11, 14);
+
+// ============================================================
+// [NEIGHBORING SHOPS — مغازه‌های همسایه]
+// ============================================================
+function shopFront(x, w, colorNeon, signText, yOffset = 0) {
+  const g = new THREE.Group();
+  g.position.set(x, yOffset, -2);
+  scene.add(g);
+
+  // Building
+  box(w, 8, 6, mats.brickLight, 0, 4, -3, g);
+  // Roof
+  box(w + 0.4, 0.3, 6.4, mats.concrete, 0, 8.15, -3, g);
+
+  // Display window
+  const win = box(w * 0.7, 3, 0.1, mats.glassWarm, 0, 3, 0.05, g);
+  win.renderOrder = 3;
+  box(w * 0.05, 3.2, 0.15, mats.dark, -w * 0.4, 3, 0.05, g);
+  box(w * 0.05, 3.2, 0.15, mats.dark, w * 0.4, 3, 0.05, g);
+  box(w * 0.05, 0.15, 0.15, mats.dark, 0, 4.6, 0.05, g);
+  box(w * 0.05, 0.15, 0.15, mats.dark, 0, 1.4, 0.05, g);
+
+  // Interior light
+  const warm = new THREE.PointLight(0xffb060, 22, 10, 2);
+  warm.position.set(0, 3, -0.5);
+  g.add(warm);
+
+  // Neon sign
+  const neonMat = new THREE.MeshStandardMaterial({
+    color: colorNeon,
+    emissive: colorNeon,
+    emissiveIntensity: 4,
+    toneMapped: false
+  });
+  box(w * 0.8, 0.6, 0.1, neonMat, 0, 6, 0.12, g);
+  textPlane(signText, w * 0.7, 0.4, '#ffffff', 0, 6, 0.2,
+    'bold 60px sans-serif', null, 1.5, g);
+
+  // Neon light
+  const neonLight = new THREE.PointLight(colorNeon, 8, 6, 2);
+  neonLight.position.set(0, 6, 0.5);
+  g.add(neonLight);
+
+  // Entrance
+  box(1.2, 3, 0.15, mats.dark, w * 0.25, 1.5, 0.05, g);
+
+  return g;
+}
+
+// Two side shops
+shopFront(-10, 5, 0xff2080, 'چایخانه');
+shopFront(10, 5, 0x22ee77, 'کبابی');
+
+setProgress(40, 'ساخت کارگاه سهند…');
+
+// ============================================================
+// [MAIN WORKSHOP — ساختمان کارگاه سهند]
+// ============================================================
+const workshopGroup = new THREE.Group();
+scene.add(workshopGroup);
+
+// Main structure
+box(18, 0.25, 10, mats.concrete, 0, 0.12, -6, workshopGroup);
+box(18, 6.5, 0.4, mats.brick, 0, 3.25, -11, workshopGroup); // back wall
+box(0.4, 6.5, 10, mats.brick, -9, 3.25, -6, workshopGroup); // left wall
+box(0.4, 6.5, 10, mats.brick, 9, 3.25, -6, workshopGroup);  // right wall
+box(19, 0.4, 10.8, mats.concrete, 0, 6.7, -6.1, workshopGroup); // roof
+
+// Front wall (with door & windows)
+box(18, 1.4, 0.35, mats.brick, 0, 5.8, -1.2, workshopGroup); // top band
+box(0.6, 5.8, 0.4, mats.brick, -9, 2.9, -1.2, workshopGroup); // left pillar
+box(0.6, 5.8, 0.4, mats.brick, 9, 2.9, -1.2, workshopGroup);  // right pillar
+
+// ============================================================
+// [WORKSHOP SIGN — تابلو کارگاه]
+// ============================================================
+// Big top sign box
+box(11, 1.1, 0.25, mats.dark, 0, 5.8, -1.05, workshopGroup);
+textPlane('Sahand Laser', 9.4, 1.6, '#d7fcff', 0, 5.85, -0.9,
+  '500 150px sans-serif', null, 2.8, workshopGroup);
+textPlane('سهند لیزر · اصفهان', 4.5, 0.6, '#e7bd88', 0, 5.35, -0.88,
+  '48px Tahoma', null, 1.9, workshopGroup);
+
+const signLight = new THREE.PointLight(0x37d4ff, 12, 14, 2);
+signLight.position.set(0, 5, 0.2);
+workshopGroup.add(signLight);
+
+// ============================================================
+// [WORKSHOP WINDOWS — پنجره‌های کارگاه]
+// ============================================================
+const windowLights = [];
+for (let x = -7; x < 8; x += 3.5) {
+  const pane = new THREE.Mesh(new THREE.PlaneGeometry(2.8, 3.8), mats.glass);
+  pane.renderOrder = 3;
+  pane.position.set(x, 3.4, -1.15);
+  workshopGroup.add(pane);
+
+  // Window frame
+  box(0.08, 4.2, 0.15, mats.dark, x - 1.5, 3.4, -1.13, workshopGroup);
+  box(0.08, 4.2, 0.15, mats.dark, x + 1.5, 3.4, -1.13, workshopGroup);
+  box(3.1, 0.1, 0.15, mats.dark, x, 5.5, -1.13, workshopGroup);
+  box(3.1, 0.1, 0.15, mats.dark, x, 1.3, -1.13, workshopGroup);
+
+  // Interior glow
+  const warmLight = new THREE.PointLight(0xffb060, 12, 7, 2);
+  warmLight.position.set(x, 3.2, -2.5);
+  workshopGroup.add(warmLight);
+  windowLights.push(warmLight);
+}
+
+// ============================================================
+// [MAIN DOOR — درب ورودی]
+// ============================================================
+const entryDoor = new THREE.Group();
+entryDoor.position.set(1.5, 0, -1.15);
+workshopGroup.add(entryDoor);
+
+// Door frame
+box(3.4, 5.6, 0.3, mats.dark, 1.5, 2.8, -1.1, workshopGroup);
+box(0.15, 5.4, 0.35, mats.metal, -0.15, 2.7, -1.08, workshopGroup);
+box(0.15, 5.4, 0.35, mats.metal, 3.15, 2.7, -1.08, workshopGroup);
+box(3.3, 0.15, 0.35, mats.metal, 1.5, 5.35, -1.08, workshopGroup);
+
+// Door panel (sliding)
+box(1.6, 4.8, 0.12, mats.glass, 0.75, 2.4, -1.0, entryDoor);
+box(1.6, 4.8, 0.12, mats.glass, 2.25, 2.4, -1.0, entryDoor);
+// Door handles
+box(0.05, 1, 0.05, mats.steel, 1.45, 2.4, -0.93, entryDoor);
+box(0.05, 1, 0.05, mats.steel, 1.65, 2.4, -0.93, entryDoor);
+// Door metal frame
+box(1.65, 0.1, 0.05, mats.metal, 0.75, 0.05, -0.94, entryDoor);
+box(1.65, 0.1, 0.05, mats.metal, 2.25, 0.05, -0.94, entryDoor);
+box(1.65, 0.1, 0.05, mats.metal, 0.75, 4.75, -0.94, entryDoor);
+box(1.65, 0.1, 0.05, mats.metal, 2.25, 4.75, -0.94, entryDoor);
+
+// ============================================================
+// [DECORATIVE BAND — نوار تزئینی]
+// ============================================================
+const tile = canvasTexture(256, 128, (ctx, w, h) => {
+  ctx.fillStyle = '#154c5d';
+  ctx.fillRect(0, 0, w, h);
+  ctx.strokeStyle = '#c5a973';
+  ctx.lineWidth = 2;
+  for (let x = 0; x < w; x += 32) {
+    ctx.beginPath();
+    ctx.moveTo(x, 64);
+    ctx.lineTo(x + 16, 25);
+    ctx.lineTo(x + 32, 64);
+    ctx.lineTo(x + 16, 103);
+    ctx.closePath();
+    ctx.stroke();
+  }
+});
+const band = new THREE.Mesh(
+  new THREE.PlaneGeometry(18, 0.35),
+  new THREE.MeshStandardMaterial({ map: tile, roughness: 0.45 })
+);
+band.position.set(0, 6.15, -1.0);
+workshopGroup.add(band);
+
+// ============================================================
+// [WORKSHOP ENTRANCE LIGHT — چراغ ورودی]
+// ============================================================
+// Warm lantern near door
+const lanternGroup = new THREE.Group();
+lanternGroup.position.set(3.5, 4.3, -1.0);
+workshopGroup.add(lanternGroup);
+cylinder(0.08, 0.12, 0.35, mats.metalDark, 0, 0, 0, lanternGroup);
+box(0.32, 0.45, 0.32, new THREE.MeshPhysicalMaterial({
+  color: 0xffe6a0,
+  emissive: 0xffaa44,
+  emissiveIntensity: 3,
+  transparent: true,
+  opacity: 0.85,
+  toneMapped: false
+}), 0, -0.4, 0, lanternGroup);
+cylinder(0.14, 0.08, 0.15, mats.metalDark, 0, -0.7, 0, lanternGroup);
+const lanternLight = new THREE.PointLight(0xffaa44, 12, 6, 2);
+lanternLight.position.set(3.5, 3.6, -1.0);
+workshopGroup.add(lanternLight);
+
+// ============================================================
+// [AC UNIT + PIPES on facade]
+// ============================================================
+box(0.9, 0.6, 0.4, mats.metal, -7.5, 4.5, -1.0, workshopGroup);
+box(0.9, 0.6, 0.4, mats.metal, 7.5, 4.5, -1.0, workshopGroup);
+
+// Drain pipe
+cylinder(0.07, 0.07, 6, mats.metalDark, -8.5, 3, -1.05, workshopGroup, 8);
+cylinder(0.07, 0.07, 6, mats.metalDark, 8.5, 3, -1.05, workshopGroup, 8);
+
+setProgress(55, 'افزودن جزئیات خیابان…');
+
+// ============================================================
+// [TREES / SMALL PLANTS]
+// ============================================================
+function tree(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0, z);
+  scene.add(g);
+  cylinder(0.15, 0.2, 2.5, mats.wood, 0, 1.25, 0, g);
+  // Foliage
+  const leafMat = new THREE.MeshStandardMaterial({
+    color: 0x2a4a2a,
+    roughness: 0.9
+  });
+  sphere(1.2, leafMat, 0, 3.2, 0, g);
+  sphere(0.9, leafMat, 0.6, 3.0, 0.3, g);
+  sphere(0.85, leafMat, -0.5, 3.3, -0.4, g);
+  sphere(1.0, leafMat, 0.2, 3.7, -0.2, g);
+  return g;
+}
+tree(-13, 4);
+tree(13, 4);
+
+// ============================================================
+// [BENCHES — نیمکت]
+// ============================================================
+function bench(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0, z);
+  scene.add(g);
+  // Seat
+  box(2, 0.1, 0.5, mats.wood, 0, 0.5, 0, g);
+  // Back
+  box(2, 0.5, 0.1, mats.wood, 0, 0.85, -0.2, g);
+  // Legs
+  box(0.1, 0.5, 0.5, mats.metalDark, -0.9, 0.25, 0, g);
+  box(0.1, 0.5, 0.5, mats.metalDark, 0.9, 0.25, 0, g);
+}
+bench(-6, 5.5);
+bench(6, 5.5);
+
+// ============================================================
+// [TRASH BINS]
+// ============================================================
+function trashBin(x, z) {
+  cylinder(0.3, 0.35, 0.9, mats.metalDark, x, 0.45, z, scene, 12);
+  cylinder(0.32, 0.32, 0.1, mats.metal, x, 0.95, z, scene, 12);
+}
+trashBin(-4, 5.5);
+trashBin(4, 5.5);
+
+// ============================================================
+// [WET ROAD MARKINGS]
+// ============================================================
+// White dashed line in middle of road
+for (let x = -25; x < 25; x += 3) {
+  box(1.8, 0.02, 0.15, mats.white, x, 0.025, 11);
+}
+// Yellow double line (opposite)
+for (let x = -25; x < 25; x += 1.5) {
+  box(1.3, 0.02, 0.1, new THREE.MeshStandardMaterial({
+    color: 0xd4af37, roughness: 0.6
+  }), x, 0.025, 9);
+}
+
+setProgress(70, 'ساخت آسمان پرستاره…');
+
+// ============================================================
+// [STREET SIGN — تابلوی خیابان]
+// ============================================================
+box(2, 0.7, 0.08, mats.blue, -11, 3.2, -1.0);
+textPlane('خیابان خیام', 1.9, 0.6, '#dceaf6', -11, 3.2, -0.9,
+  'bold 100px Tahoma');
+
+// Pole
+cylinder(0.05, 0.05, 3, mats.metalDark, -11, 1.5, -1.0, scene, 8);
+
+// ============================================================
+// [KHAYYAM STREET SIGN in English]
+// ============================================================
+box(2.5, 0.5, 0.08, mats.dark, 11, 3.2, -1.0);
+textPlane('KHAYYAM ST.', 2.4, 0.4, '#8bc9e7', 11, 3.2, -0.9,
+  'bold 90px sans-serif');
+cylinder(0.05, 0.05, 3, mats.metalDark, 11, 1.5, -1.0, scene, 8);
+
+setProgress(80, 'افزودن جزئیات نهایی…');
+
+// ============================================================
+// [UTILITY POLES + WIRES]
+// ============================================================
+function utilityPole(x, z) {
+  cylinder(0.12, 0.15, 9, mats.wood, x, 4.5, z, scene, 8);
+  // Cross bars
+  box(1.5, 0.1, 0.1, mats.wood, x, 8.5, z);
+  box(1.2, 0.1, 0.1, mats.wood, x, 7.8, z);
+  // Small insulators
+  for (const dx of [-0.6, 0, 0.6]) {
+    cylinder(0.06, 0.06, 0.15, mats.glass, x + dx, 8.65, z, scene, 6);
+  }
+}
+utilityPole(-15, 2);
+utilityPole(15, 2);
+
+// ============================================================
+// [ELECTRIC WIRES — کابل‌های برق]
+// ============================================================
+const wireMat = new THREE.LineBasicMaterial({
+  color: 0x111111,
+  transparent: true,
+  opacity: 0.65
+});
+function catenaryWire(x1, x2, y, z) {
+  const points = [];
+  const segments = 24;
+  for (let i = 0; i <= segments; i++) {
+    const t = i / segments;
+    const sag = Math.sin(t * Math.PI) * -0.6;
+    points.push(new THREE.Vector3(
+      x1 + (x2 - x1) * t,
+      y + sag,
+      z
+    ));
+  }
+  const geo = new THREE.BufferGeometry().setFromPoints(points);
+  scene.add(new THREE.Line(geo, wireMat));
+}
+catenaryWire(-15, 15, 8.5, 2);
+catenaryWire(-15, 15, 8.5, 2.1);
+catenaryWire(-15, 15, 7.8, 2);
+
+// ============================================================
+// [BUS STOP — ایستگاه اتوبوس]
+// ============================================================
+function busStop(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0, z);
+  scene.add(g);
+
+  // Roof
+  box(3, 0.1, 1.5, mats.metal, 0, 2.8, 0, g);
+  // Side panels
+  box(0.08, 2.6, 1.4, mats.glass, -1.5, 1.4, 0, g);
+  box(0.08, 2.6, 1.4, mats.glass, 1.5, 1.4, 0, g);
+  // Back panel
+  box(3, 2.6, 0.08, mats.glass, 0, 1.4, -0.7, g);
+  // Posts
+  cylinder(0.08, 0.08, 2.8, mats.metalDark, -1.5, 1.4, -0.7, g, 8);
+  cylinder(0.08, 0.08, 2.8, mats.metalDark, 1.5, 1.4, -0.7, g, 8);
+  // Bench
+  box(2.6, 0.08, 0.4, mats.wood, 0, 0.5, -0.3, g);
+  box(0.08, 0.5, 0.4, mats.metalDark, -1.2, 0.25, -0.3, g);
+  box(0.08, 0.5, 0.4, mats.metalDark, 1.2, 0.25, -0.3, g);
+
+  // Sign
+  box(1.6, 0.5, 0.08, mats.blue, 0, 3.1, 0, g);
+  textPlane('BUS', 1.5, 0.35, '#ffffff', 0, 3.1, 0.06,
+    'bold 80px sans-serif', null, 1.5, g);
+
+  // Light
+  const bl = new THREE.PointLight(0x82b8ff, 8, 6, 2);
+  bl.position.set(0, 2.7, 0);
+  g.add(bl);
+}
+busStop(-7, 10);
+
+setProgress(90, 'آماده‌سازی شخصیت و داستان…');
+
+// ============================================================
+// [NEWSPAPER BOXES / VENDING]
+// ============================================================
+function vendingBox(x, z, color, text) {
+  const g = new THREE.Group();
+  g.position.set(x, 0, z);
+  scene.add(g);
+  box(0.5, 0.8, 0.4, new THREE.MeshStandardMaterial({
+    color, metalness: 0.4, roughness: 0.6
+  }), 0, 0.4, 0, g);
+  box(0.42, 0.4, 0.05, mats.glass, 0, 0.55, 0.22, g);
+  textPlane(text, 0.4, 0.2, '#ffffff', 0, 0.25, 0.22,
+    'bold 32px sans-serif', null, 1.2, g);
+}
+vendingBox(-4.5, 6, 0xaa2020, 'روزنامه');
+vendingBox(-3.8, 6, 0x2040aa, 'آب');
+
+// ============================================================
+// [ADVANCED: BIRDS in the sky]
+// ============================================================
+const birdGroup = new THREE.Group();
+scene.add(birdGroup);
+function makeBird() {
+  const g = new THREE.Group();
+  const birdMat = new THREE.MeshBasicMaterial({ color: 0x222222 });
+  // Body
+  const body = new THREE.Mesh(new THREE.SphereGeometry(0.15, 8, 6), birdMat);
+  body.scale.set(1, 0.6, 2);
+  g.add(body);
+  // Wings
+  const wing1 = box(0.6, 0.03, 0.2, birdMat, 0, 0, 0, g);
+  const wing2 = box(0.6, 0.03, 0.2, birdMat, 0, 0, 0, g);
+  wing1.position.set(-0.4, 0, 0);
+  wing2.position.set(0.4, 0, 0);
+  g.userData = {
+    phase: Math.random() * Math.PI * 2,
+    speed: 0.5 + Math.random() * 0.5,
+    radius: 20 + Math.random() * 15,
+    centerX: (Math.random() - 0.5) * 10,
+    centerZ: -10 - Math.random() * 10,
+    height: 12 + Math.random() * 5,
+    wing1, wing2
+  };
+  return g;
+}
+for (let i = 0; i < 5; i++) {
+  birdGroup.add(makeBird());
+}
+
+// ============================================================
+// [STORY STATE — متغیرهای داستان]
+// ============================================================
+// Unified story state is declared in the story section.
+
+// ✅ ادامه در بخش ۳
+
+// ============================================================
+// [WORKSHOP INTERIOR — کف و دیوارهای داخلی]
+// ============================================================
+const interiorGroup = new THREE.Group();
+scene.add(interiorGroup);
+
+// Interior floor (polished concrete with shine)
+const interiorFloorMat = new THREE.MeshStandardMaterial({
+  color: 0x2a2e35,
+  roughness: 0.35,
+  metalness: 0.4
+});
+const interiorFloor = new THREE.Mesh(
+  new THREE.PlaneGeometry(17.5, 9.6),
+  interiorFloorMat
+);
+interiorFloor.rotation.x = -Math.PI / 2;
+interiorFloor.position.set(0, 0.36, -6.1);
+interiorFloor.receiveShadow = true;
+interiorGroup.add(interiorFloor);
+
+// Yellow safety lines on floor
+for (let x = -8; x < 8; x += 2) {
+  const line = new THREE.Mesh(
+    new THREE.PlaneGeometry(1.8, 0.08),
+    new THREE.MeshStandardMaterial({ color: 0xe8b845, roughness: 0.8 })
+  );
+  line.rotation.x = -Math.PI / 2;
+  line.position.set(x, 0.365, -3.2);
+  interiorGroup.add(line);
+}
+
+// Yellow safety line at machine zone
+const safetyBox = new THREE.LineLoop(
+  new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(-6, 0.37, -4.5),
+    new THREE.Vector3(-6, 0.37, -8.5),
+    new THREE.Vector3(-1, 0.37, -8.5),
+    new THREE.Vector3(-1, 0.37, -4.5)
+  ]),
+  new THREE.LineBasicMaterial({ color: 0xe8b845 })
+);
+interiorGroup.add(safetyBox);
+
+// Interior walls (back + sides, lighter than exterior)
+box(17.5, 6, 0.3, mats.concreteLight, 0, 3.3, -10.85, interiorGroup);
+box(0.3, 6, 9.6, mats.concreteLight, -8.6, 3.3, -6.1, interiorGroup);
+box(0.3, 6, 9.6, mats.concreteLight, 8.6, 3.3, -6.1, interiorGroup);
+
+// Interior ceiling
+box(17.5, 0.15, 9.6, mats.concrete, 0, 6.3, -6.1, interiorGroup);
+
+// ============================================================
+// [CEILING LIGHTS — چراغ‌های سقفی]
+// ============================================================
+const ceilingLights = [];
+for (let x = -6; x <= 6; x += 4) {
+  for (let z = -4; z >= -9; z -= 2.5) {
+    // Fluorescent tube
+    const lampMat = new THREE.MeshStandardMaterial({
+      color: 0xfff3d5,
+      emissive: 0xffcb85,
+      emissiveIntensity: 5,
+      toneMapped: false
+    });
+    box(1.8, 0.06, 0.35, lampMat, x, 6.15, z, interiorGroup);
+
+    // Housing
+    box(2, 0.08, 0.5, mats.metalDark, x, 6.22, z, interiorGroup);
+
+    // Light source
+    const ptLight = new THREE.PointLight(0xffcb85, mobile ? 12 : 18, 10, 2);
+    ptLight.position.set(x, 5.8, z);
+    if (!mobile) ptLight.castShadow = false;
+    interiorGroup.add(ptLight);
+    ceilingLights.push(ptLight);
+  }
+}
+
+// ============================================================
+// [LARGE WALL SIGN — تابلوی بزرگ دیوار]
+// ============================================================
+box(8, 1.2, 0.15, mats.dark, 0, 4.5, -10.7, interiorGroup);
+textPlane('کارگاه ساخت و خدمات لیزر سهند', 7.6, 0.9, '#d7fcff',
+  0, 4.5, -10.6, 'bold 80px Tahoma', null, 1.6, interiorGroup);
+textPlane('SAHAND LASER WORKSHOP', 5, 0.4, '#78c9e7',
+  0, 4.05, -10.6, 'bold 60px sans-serif', null, 1.4, interiorGroup);
+
+// ============================================================
+// [INDUSTRIAL CLOCK — ساعت صنعتی]
+// ============================================================
+const clockGroup = new THREE.Group();
+clockGroup.position.set(7, 4.5, -10.65);
+interiorGroup.add(clockGroup);
+
+// Clock face
+const clockFace = new THREE.Mesh(
+  new THREE.CircleGeometry(0.7, 32),
+  new THREE.MeshStandardMaterial({
+    color: 0xf5f5f5,
+    emissive: 0xffffff,
+    emissiveIntensity: 0.3
+  })
+);
+clockGroup.add(clockFace);
+
+// Clock frame
+const clockFrame = new THREE.Mesh(
+  new THREE.RingGeometry(0.7, 0.8, 32),
+  mats.metalDark
+);
+clockGroup.add(clockFrame);
+
+// Hour markers
+for (let i = 0; i < 12; i++) {
+  const angle = (i / 12) * Math.PI * 2;
+  const marker = new THREE.Mesh(
+    new THREE.PlaneGeometry(0.04, 0.1),
+    new THREE.MeshBasicMaterial({ color: 0x111111 })
+  );
+  marker.position.set(Math.sin(angle) * 0.55, Math.cos(angle) * 0.55, 0.01);
+  marker.rotation.z = -angle;
+  clockGroup.add(marker);
+}
+
+// Hands (will be animated)
+const hourHand = new THREE.Mesh(
+  new THREE.PlaneGeometry(0.05, 0.35),
+  new THREE.MeshBasicMaterial({ color: 0x111111 })
+);
+hourHand.position.set(0, 0.15, 0.02);
+hourHand.name = 'hourHand';
+clockGroup.add(hourHand);
+
+const minuteHand = new THREE.Mesh(
+  new THREE.PlaneGeometry(0.035, 0.5),
+  new THREE.MeshBasicMaterial({ color: 0x111111 })
+);
+minuteHand.position.set(0, 0.22, 0.03);
+minuteHand.name = 'minuteHand';
+clockGroup.add(minuteHand);
+
+// Center pin
+const centerPin = new THREE.Mesh(
+  new THREE.CircleGeometry(0.05, 16),
+  new THREE.MeshBasicMaterial({ color: 0xa61c1c })
+);
+centerPin.position.z = 0.04;
+clockGroup.add(centerPin);
+
+// ============================================================
+// [SAFETY SIGNS on walls]
+// ============================================================
+function safetySign(x, y, z, icon, color) {
+  box(0.8, 0.8, 0.05, new THREE.MeshStandardMaterial({
+    color: color,
+    roughness: 0.7
+  }), x, y, z, interiorGroup);
+
+  // Icon symbol using canvas
+  const iconTex = canvasTexture(128, 128, (ctx, w, h) => {
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = 'white';
+    ctx.font = 'bold 80px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(icon, w / 2, h / 2);
+  });
+  const iconPlane = new THREE.Mesh(
+    new THREE.PlaneGeometry(0.7, 0.7),
+    new THREE.MeshBasicMaterial({ map: iconTex, transparent: true })
+  );
+  iconPlane.position.set(x, y, z + 0.04);
+  interiorGroup.add(iconPlane);
+}
+
+safetySign(-8.4, 4.5, -5, '⚡', '#d4a72c'); // Electrical hazard
+safetySign(8.4, 4.5, -5, '⚠', '#d4a72c'); // Caution
+safetySign(-8.4, 3.2, -7.5, '🔥', '#c93030'); // Fire
+safetySign(8.4, 3.2, -7.5, '🚨', '#c93030'); // Emergency
+
+// ============================================================
+// [FIRE EXTINGUISHER — کپسول آتش‌نشانی]
+// ============================================================
+function fireExtinguisher(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Body
+  cylinder(0.15, 0.15, 0.7,
+    new THREE.MeshStandardMaterial({ color: 0xc93030, roughness: 0.5 }),
+    0, 0.35, 0, g, 16);
+
+  // Top
+  cylinder(0.1, 0.15, 0.15,
+    new THREE.MeshStandardMaterial({ color: 0x991919, roughness: 0.5 }),
+    0, 0.78, 0, g, 16);
+
+  // Nozzle
+  cylinder(0.03, 0.03, 0.2, mats.dark, 0, 0.9, 0.05, g, 8);
+
+  // Handle
+  box(0.15, 0.08, 0.15, mats.dark, 0, 0.9, 0, g);
+
+  // Mount
+  box(0.1, 0.5, 0.2, mats.metalDark, 0, 0.4, -0.15, g);
+}
+fireExtinguisher(-8.5, -3.5);
+fireExtinguisher(8.5, -3.5);
+
+// ============================================================
+// [WORKSHOP SHELVES — قفسه‌های کارگاه]
+// ============================================================
+function metalShelf(x, z, rotation = 0) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  g.rotation.y = rotation;
+  interiorGroup.add(g);
+
+  // 4 legs
+  for (const dx of [-1, 1]) {
+    for (const dz of [-0.4, 0.4]) {
+      cylinder(0.04, 0.04, 3.5, mats.metal, dx, 1.75, dz, g, 8);
+    }
+  }
+
+  // 4 shelves
+  for (let level = 0; level < 4; level++) {
+    const y = 0.4 + level * 0.85;
+    box(2.1, 0.06, 0.9, mats.metal, 0, y, 0, g);
+
+    // Contents on each shelf
+    if (level === 0) {
+      // Heavy parts
+      for (let i = 0; i < 3; i++) {
+        cylinder(0.1, 0.1, 0.25, mats.metalDark, -0.6 + i * 0.6, y + 0.15, 0, g, 10);
+      }
+    } else if (level === 1) {
+      // Boxes
+      for (let i = 0; i < 2; i++) {
+        box(0.5, 0.4, 0.6, mats.wood, -0.5 + i * 1, y + 0.23, 0, g);
+      }
+    } else if (level === 2) {
+      // Coils of wire
+      for (let i = 0; i < 3; i++) {
+        const coil = new THREE.Mesh(
+          new THREE.TorusGeometry(0.14, 0.05, 8, 16),
+          mats.copper
+        );
+        coil.rotation.x = Math.PI / 2;
+        coil.position.set(-0.6 + i * 0.6, y + 0.1, 0);
+        g.add(coil);
+      }
+    } else {
+      // Small containers
+      for (let i = 0; i < 4; i++) {
+        cylinder(0.08, 0.08, 0.2,
+          i % 2 === 0 ? mats.blue : mats.steel,
+          -0.75 + i * 0.5, y + 0.13, 0, g, 10);
+      }
+    }
+  }
+}
+
+metalShelf(7, -8.5, 0);
+metalShelf(7, -9.5, 0);
+metalShelf(-7, -8.5, Math.PI);
+
+// ============================================================
+// [PEGBOARD WITH TOOLS — تخته ابزار]
+// ============================================================
+const pegboard = new THREE.Group();
+pegboard.position.set(-8.5, 3.5, -6);
+pegboard.rotation.y = Math.PI / 2;
+interiorGroup.add(pegboard);
+
+box(3, 2.5, 0.08, new THREE.MeshStandardMaterial({
+  color: 0xd4a574,
+  roughness: 0.75
+}), 0, 0, 0, pegboard);
+
+// Tools silhouettes
+const toolMat = mats.metalDark;
+// Hammer
+box(0.08, 0.4, 0.06, toolMat, -1, 0.4, 0.06, pegboard);
+box(0.2, 0.1, 0.06, toolMat, -1, 0.6, 0.06, pegboard);
+// Wrench
+box(0.08, 0.5, 0.06, toolMat, -0.4, 0.3, 0.06, pegboard);
+sphere(0.1, toolMat, -0.4, 0.55, 0.06, pegboard, 8);
+// Screwdriver
+box(0.05, 0.3, 0.06, toolMat, 0.2, 0.35, 0.06, pegboard);
+// Pliers
+box(0.06, 0.35, 0.06, toolMat, 0.8, 0.35, 0.06, pegboard);
+box(0.15, 0.1, 0.06, toolMat, 0.8, 0.55, 0.06, pegboard);
+// Ruler
+box(0.06, 0.6, 0.05, mats.steel, 1.3, 0.15, 0.06, pegboard);
+
+// ============================================================
+// [WORKBENCH — میز کار]
+// ============================================================
+function workbench(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Top
+  box(2.2, 0.1, 1, mats.wood, 0, 1.05, 0, g);
+
+  // Legs
+  for (const dx of [-1, 1]) {
+    for (const dz of [-0.4, 0.4]) {
+      box(0.1, 1, 0.1, mats.metalDark, dx, 0.5, dz, g);
+    }
+  }
+
+  // Lower shelf
+  box(2, 0.06, 0.85, mats.wood, 0, 0.4, 0, g);
+
+  // Items on top
+  // Vice grip
+  box(0.3, 0.2, 0.25, mats.metal, -0.8, 1.25, 0, g);
+  // Toolbox
+  box(0.6, 0.3, 0.4, new THREE.MeshStandardMaterial({
+    color: 0xa61c1c, roughness: 0.6
+  }), 0.5, 1.25, 0, g);
+  // Loose screws (tiny)
+  for (let i = 0; i < 6; i++) {
+    cylinder(0.02, 0.02, 0.06, mats.steel,
+      -0.3 + Math.random() * 0.5,
+      1.13,
+      -0.2 + Math.random() * 0.4, g, 6);
+  }
+}
+workbench(-7, -4);
+workbench(-7, -6.5);
+
+// ============================================================
+// [MATERIAL RACKS — قفسه‌های متریال]
+// ============================================================
+function materialRack(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Vertical supports
+  for (const dx of [-0.5, 0.5]) {
+    box(0.15, 3.5, 0.15, mats.metal, dx, 1.75, 0, g);
+  }
+
+  // Cross bars
+  for (let y = 0.5; y < 3.5; y += 0.7) {
+    box(1.3, 0.08, 0.4, mats.metal, 0, y, 0, g);
+  }
+
+  // Metal sheets stacked
+  for (let i = 0; i < 5; i++) {
+    const thickness = 0.03 + Math.random() * 0.04;
+    const mat = new THREE.MeshStandardMaterial({
+      color: Math.random() > 0.5 ? 0x8899aa : 0x6a7a8a,
+      metalness: 0.85,
+      roughness: 0.25
+    });
+    box(1.2, thickness, 0.8, mat, 0, 0.5 + i * 0.08, 0, g);
+  }
+}
+materialRack(6, -4);
+materialRack(6, -6);
+
+// ============================================================
+// [⛔ MACHINE 1: FIBER LASER CUTTING — CT-001]
+// ============================================================
+function createCuttingMachine(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Base cabinet
+  box(3.8, 0.8, 2.4, mats.white, 0, 0.4, 0, g);
+  box(3.6, 0.5, 2.42, mats.blue, 0, 0.55, 0, g);
+  box(3.7, 0.15, 2.4, mats.metal, 0, 0.95, 0, g);
+
+  // Bed frame
+  box(3.6, 0.08, 2.3, mats.metalDark, 0, 1.05, 0, g);
+
+  // Bed slats (grating)
+  for (let i = 0; i < 28; i++) {
+    box(0.06, 0.09, 2.15, mats.metalDark,
+      -1.65 + i * 0.12, 1.13, 0, g);
+  }
+
+  // Gantry (moving bridge)
+  const gantry = new THREE.Group();
+  gantry.position.set(0, 1.6, 0);
+  g.add(gantry);
+  gantry.name = 'gantry';
+
+  // Left vertical column
+  box(0.35, 1.6, 2.5, mats.white, -1.7, -0.3, 0, gantry);
+  // Right vertical column
+  box(0.35, 1.6, 2.5, mats.white, 1.7, -0.3, 0, gantry);
+  // Top beam
+  box(3.9, 0.4, 0.5, mats.white, 0, 0.7, 0, gantry);
+  box(3.5, 0.15, 0.55, mats.blue, 0, 0.85, 0, gantry);
+
+  // Cutting head (moving)
+  const head = new THREE.Group();
+  head.position.set(0, 0.1, 0);
+  gantry.add(head);
+  head.name = 'cuttingHead';
+
+  // Head body
+  box(0.35, 0.7, 0.35, mats.white, 0, 0, 0, head);
+  box(0.4, 0.3, 0.4, mats.blue, 0, 0.3, 0, head);
+  // Nozzle
+  cylinder(0.06, 0.03, 0.25, mats.copper, 0, -0.5, 0, head, 12);
+  cylinder(0.03, 0.02, 0.1, mats.dark, 0, -0.7, 0, head, 12);
+
+  // Control panel
+  box(0.8, 0.5, 0.05, mats.dark, 1.2, 1.3, 1.23, g);
+  // Screen
+  box(0.6, 0.35, 0.02, new THREE.MeshStandardMaterial({
+    color: 0x2a4a5e,
+    emissive: 0x37a0d4,
+    emissiveIntensity: 2,
+    toneMapped: false
+  }), 1.2, 1.35, 1.26, g);
+
+  // Safety fence around bed
+  for (const dz of [-1.25, 1.25]) {
+    for (let i = -1.7; i <= 1.7; i += 0.4) {
+      cylinder(0.025, 0.025, 0.8, mats.metalDark, i, 1.5, dz, g, 6);
+    }
+    cylinder(0.04, 0.04, 3.5, mats.metalDark, 0, 1.9, dz, g, 8);
+  }
+
+  // Brand label
+  textPlane('SAHAND', 0.8, 0.2, '#d7fcff', 1.5, 0.55, 1.22,
+    'bold 60px sans-serif', null, 2, g);
+
+  // Cutting point light
+  const cutLight = new THREE.PointLight(0xff9e36, 0, 3, 2);
+  cutLight.position.set(0, 1.0, 0);
+  cutLight.name = 'cutLight';
+  g.add(cutLight);
+
+  return { group: g, gantry, head, cutLight };
+}
+
+const machine1 = createCuttingMachine(-3.5, -6.5);
+
+// ============================================================
+// [⛔ MACHINE 2: FIBER LASER WELDER — WL-001]
+// ============================================================
+function createWelderMachine(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Vertical cabinet
+  box(0.9, 1.6, 0.7, mats.white, 0, 1.15, 0, g);
+  box(0.85, 0.4, 0.72, mats.blue, 0, 1.5, 0, g);
+  box(0.85, 0.3, 0.72, mats.metal, 0, 1.85, 0, g);
+
+  // Display
+  box(0.5, 0.35, 0.02, new THREE.MeshStandardMaterial({
+    color: 0x1a2a3a,
+    emissive: 0x37d4ff,
+    emissiveIntensity: 2.5,
+    toneMapped: false
+  }), 0, 1.3, 0.36, g);
+
+  // Red button (emergency)
+  cylinder(0.06, 0.06, 0.04,
+    new THREE.MeshStandardMaterial({
+      color: 0xff2020,
+      emissive: 0xff0000,
+      emissiveIntensity: 2,
+      toneMapped: false
+    }),
+    0.3, 1.6, 0.37, g, 12);
+
+  // Welding torch (hanging)
+  const torch = new THREE.Group();
+  torch.position.set(0.5, 0.5, 0.4);
+  torch.name = 'torch';
+  g.add(torch);
+
+  // Handle
+  cylinder(0.04, 0.04, 0.4, mats.dark, 0, 0, 0, torch, 10);
+  // Head
+  box(0.15, 0.2, 0.1, mats.steel, 0, -0.25, 0, torch);
+  cylinder(0.03, 0.02, 0.15, mats.copper, 0, -0.4, 0, torch, 8);
+  // Cable
+  cylinder(0.02, 0.02, 0.6, mats.dark, 0, 0.4, 0, torch, 6);
+
+  // Cabinet wheel base
+  box(0.95, 0.15, 0.75, mats.metalDark, 0, 0.4, 0, g);
+
+  // Wheels
+  for (const dx of [-0.35, 0.35]) {
+    for (const dz of [-0.25, 0.25]) {
+      const wheel = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.08, 0.08, 0.06, 12),
+        mats.dark
+      );
+      wheel.rotation.z = Math.PI / 2;
+      wheel.position.set(dx, 0.3, dz);
+      g.add(wheel);
+    }
+  }
+
+  return { group: g, torch };
+}
+
+const machine2 = createWelderMachine(2, -6.5);
+
+// ============================================================
+// [⛔ MACHINE 3: LASER MARKING — ML-001]
+// ============================================================
+function createMarkingMachine(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Cabinet
+  box(0.8, 1.2, 0.6, mats.white, 0, 0.95, 0, g);
+  box(0.75, 0.3, 0.62, mats.blue, 0, 1.4, 0, g);
+  box(0.75, 0.2, 0.62, mats.metal, 0, 1.65, 0, g);
+
+  // Display
+  box(0.4, 0.25, 0.02, new THREE.MeshStandardMaterial({
+    color: 0x1a2a3a,
+    emissive: 0x37d4ff,
+    emissiveIntensity: 2,
+    toneMapped: false
+  }), 0, 1.05, 0.31, g);
+
+  // Galvo head (top)
+  box(0.25, 0.4, 0.25, mats.steel, 0, 2.1, 0, g);
+  box(0.3, 0.15, 0.3, mats.blue, 0, 2.35, 0, g);
+  // Lens
+  cylinder(0.08, 0.06, 0.15, mats.dark, 0, 1.85, 0, g, 12);
+
+  // Marking table (rotation disc)
+  cylinder(0.4, 0.4, 0.05, mats.metalDark, 0, 0.4, 0, g, 32);
+  cylinder(0.35, 0.35, 0.03, mats.steel, 0, 0.44, 0, g, 32);
+
+  // Red laser dot
+  const laserDot = new THREE.Mesh(
+    new THREE.SphereGeometry(0.05, 12, 12),
+    new THREE.MeshBasicMaterial({
+      color: 0xff2222,
+      toneMapped: false
+    })
+  );
+  laserDot.position.set(0.1, 0.5, 0);
+  laserDot.name = 'laserDot';
+  g.add(laserDot);
+
+  return { group: g, laserDot };
+}
+
+const machine3 = createMarkingMachine(6, -6.5);
+
+// ============================================================
+// [⛔ MACHINE 4: LASER CLEANER — CL-001]
+// ============================================================
+function createCleanerMachine(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Cabinet
+  box(0.9, 1.1, 0.7, mats.white, 0, 0.9, 0, g);
+  box(0.85, 0.3, 0.72, mats.blue, 0, 1.25, 0, g);
+
+  // Display
+  box(0.45, 0.3, 0.02, new THREE.MeshStandardMaterial({
+    color: 0x1a2a3a,
+    emissive: 0x37d4ff,
+    emissiveIntensity: 2,
+    toneMapped: false
+  }), 0, 0.95, 0.36, g);
+
+  // Cleaning gun (handheld)
+  const gun = new THREE.Group();
+  gun.position.set(0.6, 0.55, 0.4);
+  gun.name = 'gun';
+  g.add(gun);
+
+  // Handle
+  box(0.1, 0.3, 0.15, mats.dark, 0, 0, 0, gun);
+  // Body
+  box(0.15, 0.15, 0.4, mats.steel, 0, 0.2, 0.1, gun);
+  // Nozzle
+  cylinder(0.04, 0.03, 0.2, mats.copper, 0, 0.2, 0.35, gun, 8);
+  // Cable
+  cylinder(0.03, 0.03, 0.5, mats.dark, 0, -0.2, -0.15, gun, 6);
+
+  // Wheels
+  for (const dx of [-0.35, 0.35]) {
+    for (const dz of [-0.25, 0.25]) {
+      const wheel = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.07, 0.07, 0.05, 12),
+        mats.dark
+      );
+      wheel.rotation.z = Math.PI / 2;
+      wheel.position.set(dx, 0.4, dz);
+      g.add(wheel);
+    }
+  }
+
+  return { group: g, gun };
+}
+
+const machine4 = createCleanerMachine(-7, -3);
+
+// ============================================================
+// [STORAGE / STACK — انبار قطعات]
+// ============================================================
+function storageStack(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  // Pallet
+  box(1.2, 0.15, 1, mats.wood, 0, 0.08, 0, g);
+  // Stack of metal parts
+  for (let i = 0; i < 6; i++) {
+    const size = 0.9 - i * 0.08;
+    box(size, 0.1, size * 0.8,
+      i % 2 === 0 ? mats.metal : mats.metalDark,
+      0, 0.2 + i * 0.1, 0, g);
+  }
+}
+storageStack(8, -3.5);
+storageStack(8, -2);
+storageStack(-8, -3);
+
+// ============================================================
+// [SAFETY CONE]
+// ============================================================
+function safetyCone(x, z) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  interiorGroup.add(g);
+
+  cylinder(0.15, 0.2, 0.5, new THREE.MeshStandardMaterial({
+    color: 0xff6a00,
+    roughness: 0.7
+  }), 0, 0.25, 0, g, 16);
+
+  // White stripes
+  const stripe1 = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.12, 0.15, 0.1, 16),
+    mats.white
+  );
+  stripe1.position.y = 0.15;
+  g.add(stripe1);
+
+  const stripe2 = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.07, 0.1, 0.1, 16),
+    mats.white
+  );
+  stripe2.position.y = 0.35;
+  g.add(stripe2);
+
+  // Base
+  box(0.45, 0.06, 0.45, new THREE.MeshStandardMaterial({
+    color: 0xff6a00,
+    roughness: 0.7
+  }), 0, 0.03, 0, g);
+}
+safetyCone(-1, -4);
+safetyCone(4, -8);
+safetyCone(-5, -8.5);
+
+// ============================================================
+// [FLOOR LABELS — علائم روی کف]
+// ============================================================
+textPlane('ZONE A', 1.5, 0.4, '#e8b845', -3.5, 0.375, -6.5,
+  'bold 80px sans-serif', null, 1.2, interiorGroup);
+textPlane('ZONE B', 1.5, 0.4, '#e8b845', 4, 0.375, -6.5,
+  'bold 80px sans-serif', null, 1.2, interiorGroup);
+textPlane('EXIT →', 1.2, 0.3, '#22ee77', 5, 0.375, -2,
+  'bold 70px sans-serif', null, 1.5, interiorGroup);
+
+// Rotate floor labels to lie flat
+interiorGroup.children
+  .filter(c => c.geometry && c.geometry.type === 'PlaneGeometry' && c.position.y === 0.375)
+  .forEach(label => {
+    label.rotation.x = -Math.PI / 2;
+  });
+
+// ============================================================
+// [PARTICLE SYSTEMS: Sparks / Smoke from cutting]
+// ============================================================
+const sparkSystems = [];
+
+function createSparkSystem(parent, x, y, z, count = 60) {
+  const geo = new THREE.BufferGeometry();
+  const positions = new Float32Array(count * 3);
+  const velocities = [];
+  for (let i = 0; i < count; i++) {
+    positions[i * 3] = 0;
+    positions[i * 3 + 1] = 0;
+    positions[i * 3 + 2] = 0;
+    velocities.push({
+      x: (Math.random() - 0.5) * 1.8,
+      y: Math.random() * 2.5 + 1,
+      z: (Math.random() - 0.5) * 1.8,
+      age: Math.random() * 0.7
+    });
+  }
+  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+  const dotTex = canvasTexture(64, 64, (ctx, w, h) => {
+    const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    grad.addColorStop(0, '#ffffff');
+    grad.addColorStop(0.2, '#fff2bc');
+    grad.addColorStop(0.5, '#ff8c2a');
+    grad.addColorStop(1, 'rgba(255,80,0,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, w, h);
+  });
+
+  const points = new THREE.Points(geo, new THREE.PointsMaterial({
+    size: 0.05,
+    color: 0xffcc76,
+    map: dotTex,
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    toneMapped: false
+  }));
+  points.position.set(x, y, z);
+  parent.add(points);
+
+  sparkSystems.push({
+    points,
+    positions,
+    velocities,
+    count,
+    geometry: geo,
+    anchorX: x,
+    anchorY: y,
+    anchorZ: z
+  });
+}
+
+// Add spark system to cutting machine
+createSparkSystem(machine1.group, 0, 1.0, 0, mobile ? 50 : 100);
+
+// ============================================================
+// [SMOKE SYSTEM]
+// ============================================================
+const smokeSystems = [];
+
+function createSmokeSystem(parent, x, y, z, count = 30) {
+  const geo = new THREE.BufferGeometry();
+  const positions = new Float32Array(count * 3);
+  const velocities = [];
+  for (let i = 0; i < count; i++) {
+    positions[i * 3] = (Math.random() - 0.5) * 0.3;
+    positions[i * 3 + 1] = 0;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 0.3;
+    velocities.push({
+      x: (Math.random() - 0.5) * 0.4,
+      y: 0.5 + Math.random() * 0.4,
+      z: (Math.random() - 0.5) * 0.4,
+      age: Math.random() * 1.5,
+      life: 1.8 + Math.random() * 1
+    });
+  }
+  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+  const smokeTex = canvasTexture(64, 64, (ctx, w, h) => {
+    const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    grad.addColorStop(0, 'rgba(220,220,230,0.55)');
+    grad.addColorStop(0.5, 'rgba(180,180,190,0.22)');
+    grad.addColorStop(1, 'rgba(150,150,160,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, w, h);
+  });
+
+  const points = new THREE.Points(geo, new THREE.PointsMaterial({
+    size: 0.4,
+    color: 0xcccccc,
+    map: smokeTex,
+    transparent: true,
+    opacity: 0.35,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending
+  }));
+  points.position.set(x, y, z);
+  parent.add(points);
+
+  smokeSystems.push({
+    points,
+    positions,
+    velocities,
+    count,
+    geometry: geo
+  });
+}
+
+createSmokeSystem(machine1.group, 0, 1.0, 0, mobile ? 20 : 35);
+
+setProgress(95, 'تنظیم فصل‌ها و روایت…');
+
+// ✅ ادامه در بخش ۴
+
+// ============================================================
+// [MAIN CHARACTER — مسافر/کاربر]
+// ============================================================
+const human = new THREE.Group();
+human.position.set(-1.4, 0.02, 5.1);
+scene.add(human);
+
+// Materials for character
+const coatMat = new THREE.MeshStandardMaterial({ color: 0x2c4a63, roughness: 0.87 });
+const pantsMat = new THREE.MeshStandardMaterial({ color: 0x1a2530, roughness: 0.9 });
+const skinMat = new THREE.MeshStandardMaterial({ color: 0xb58769, roughness: 0.72 });
+const bootsMat = new THREE.MeshStandardMaterial({ color: 0x0d1219, roughness: 0.32 });
+const scarfMat = new THREE.MeshStandardMaterial({ color: 0x8b2e2e, roughness: 0.85 });
+
+// Body
+const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.22, 0.46, 6, 12), coatMat);
+body.position.y = 1.2;
+body.castShadow = true;
+human.add(body);
+
+const hem = new THREE.Mesh(new THREE.CylinderGeometry(0.23, 0.29, 0.38, 14), coatMat);
+hem.position.y = 0.91;
+hem.castShadow = true;
+human.add(hem);
+
+// Neck
+cylinder(0.06, 0.08, 0.13, skinMat, 0, 1.6, 0, human);
+
+// Scarf
+const scarf = new THREE.Mesh(new THREE.TorusGeometry(0.11, 0.05, 8, 20), scarfMat);
+scarf.rotation.x = Math.PI / 2;
+scarf.position.y = 1.66;
+scarf.castShadow = true;
+human.add(scarf);
+
+// Head
+const head = new THREE.Mesh(new THREE.SphereGeometry(0.145, 16, 12), skinMat);
+head.scale.set(0.9, 1.18, 0.92);
+head.position.y = 1.78;
+head.castShadow = true;
+human.add(head);
+
+// Hair
+const hair = new THREE.Mesh(
+  new THREE.SphereGeometry(0.15, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.56),
+  new THREE.MeshStandardMaterial({ color: 0x1a1210, roughness: 0.9 })
+);
+hair.position.set(0, 1.84, 0);
+human.add(hair);
+
+// Limbs function
+function limb(parent, x, y, z, upperLen, lowerLen, mat) {
+  const pivot = new THREE.Group();
+  pivot.position.set(x, y, z);
+  parent.add(pivot);
+
+  const upper = new THREE.Mesh(new THREE.CapsuleGeometry(0.075, upperLen - 0.15, 4, 10), mat);
+  upper.position.y = -upperLen / 2;
+  upper.castShadow = true;
+  pivot.add(upper);
+
+  const lower = new THREE.Group();
+  lower.position.y = -upperLen;
+  pivot.add(lower);
+
+  const lowerMesh = new THREE.Mesh(new THREE.CapsuleGeometry(0.06, lowerLen - 0.12, 4, 10), mat);
+  lowerMesh.position.y = -lowerLen / 2;
+  lowerMesh.castShadow = true;
+  lower.add(lowerMesh);
+
+  return { pivot, lower };
+}
+
+const leftLeg = limb(human, -0.12, 0.88, 0, 0.38, 0.38, pantsMat);
+const rightLeg = limb(human, 0.12, 0.88, 0, 0.38, 0.38, pantsMat);
+
+// Boots
+for (const leg of [leftLeg, rightLeg]) {
+  box(0.15, 0.11, 0.28, bootsMat, 0, -0.39, -0.06, leg.lower);
+}
+
+const leftArm = limb(human, -0.27, 1.49, 0, 0.28, 0.27, coatMat);
+const rightArm = limb(human, 0.27, 1.49, 0, 0.28, 0.27, coatMat);
+rightArm.pivot.rotation.z = -0.25;
+rightArm.pivot.rotation.x = -0.4;
+rightArm.lower.rotation.x = -1.25;
+
+// Hands
+for (const arm of [leftArm, rightArm]) {
+  const hand = new THREE.Mesh(new THREE.SphereGeometry(0.06, 10, 8), skinMat);
+  hand.position.y = -0.28;
+  arm.lower.add(hand);
+}
+
+// ============================================================
+// [UMBRELLA — چتر مسافر]
+// ============================================================
+const umbrella = new THREE.Group();
+umbrella.position.set(0.33, 0, -0.13);
+human.add(umbrella);
+
+cylinder(0.012, 0.012, 1.15, mats.metal, 0, 1.83, 0, umbrella, 8);
+
+const canopyMat = new THREE.MeshPhysicalMaterial({
+  color: 0xc9e4ec,
+  transparent: true,
+  opacity: 0.22,
+  roughness: 0.11,
+  metalness: 0.07,
+  side: THREE.DoubleSide,
+  depthWrite: false
+});
+const canopy = new THREE.Mesh(
+  new THREE.SphereGeometry(0.85, 32, 14, 0, Math.PI * 2, 0, Math.PI / 2),
+  canopyMat
+);
+canopy.scale.y = 0.45;
+canopy.position.y = 2.37;
+canopy.renderOrder = 4;
+umbrella.add(canopy);
+
+// Umbrella ribs
+const ribsMat = new THREE.LineBasicMaterial({
+  color: 0xb0c5d0,
+  transparent: true,
+  opacity: 0.72
+});
+for (let i = 0; i < 8; i++) {
+  const points = [];
+  const a = i * Math.PI / 4;
+  for (let j = 0; j <= 16; j++) {
+    const t = j / 16 * Math.PI / 2;
+    points.push(new THREE.Vector3(
+      Math.sin(t) * 0.85 * Math.cos(a),
+      2.37 + Math.cos(t) * 0.85 * 0.45,
+      Math.sin(t) * 0.85 * Math.sin(a)
+    ));
+  }
+  const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), ribsMat);
+  umbrella.add(line);
+}
+
+// Umbrella tip
+cylinder(0.017, 0.017, 0.12, mats.dark, 0, 2.8, 0, umbrella, 8);
+
+// ============================================================
+// [NPC — استاد رضا، صاحب کارگاه]
+// ============================================================
+const npc = new THREE.Group();
+npc.position.set(-1, 0.36, -9.5); // deep inside the workshop
+npc.rotation.y = Math.PI / 2; // facing right (towards the door)
+interiorGroup.add(npc);
+npc.visible = false; // hidden until chapter 5
+
+// Master's body (older, wearing coveralls)
+const npcCoatMat = new THREE.MeshStandardMaterial({ color: 0x2a3a4a, roughness: 0.85 });
+const npcPantsMat = new THREE.MeshStandardMaterial({ color: 0x1a1a20, roughness: 0.9 });
+const npcSkinMat = new THREE.MeshStandardMaterial({ color: 0xa87652, roughness: 0.75 });
+const npcBootMat = new THREE.MeshStandardMaterial({ color: 0x1a1512, roughness: 0.4 });
+
+// Body
+const npcBody = new THREE.Mesh(new THREE.CapsuleGeometry(0.24, 0.5, 6, 12), npcCoatMat);
+npcBody.position.y = 1.25;
+npcBody.castShadow = true;
+npc.add(npcBody);
+
+// Reflection stripes (safety)
+const stripeMat = new THREE.MeshStandardMaterial({
+  color: 0xf5e050,
+  emissive: 0xf5c020,
+  emissiveIntensity: 0.6,
+  roughness: 0.6
+});
+const stripe1 = new THREE.Mesh(new THREE.CylinderGeometry(0.245, 0.245, 0.06, 12), stripeMat);
+stripe1.position.y = 1.1;
+npc.add(stripe1);
+const stripe2 = new THREE.Mesh(new THREE.CylinderGeometry(0.245, 0.245, 0.06, 12), stripeMat);
+stripe2.position.y = 1.4;
+npc.add(stripe2);
+
+// Neck
+cylinder(0.07, 0.09, 0.14, npcSkinMat, 0, 1.68, 0, npc);
+
+// Head (older with beard)
+const npcHead = new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 12), npcSkinMat);
+npcHead.scale.set(0.92, 1.15, 0.92);
+npcHead.position.y = 1.85;
+npcHead.castShadow = true;
+npc.add(npcHead);
+
+// Hair (grey)
+const npcHair = new THREE.Mesh(
+  new THREE.SphereGeometry(0.155, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.5),
+  new THREE.MeshStandardMaterial({ color: 0x6a6058, roughness: 0.95 })
+);
+npcHair.position.set(0, 1.92, 0);
+npc.add(npcHair);
+
+// Beard (grey)
+const npcBeard = new THREE.Mesh(
+  new THREE.SphereGeometry(0.14, 16, 12, 0, Math.PI * 2, Math.PI * 0.55, Math.PI * 0.45),
+  new THREE.MeshStandardMaterial({ color: 0x7a7068, roughness: 0.95 })
+);
+npcBeard.scale.set(1, 1.1, 0.85);
+npcBeard.position.set(0, 1.78, 0.02);
+npc.add(npcBeard);
+
+// Glasses (metal frame)
+const glassesMat = new THREE.MeshStandardMaterial({
+  color: 0x1a1a1a,
+  metalness: 0.8,
+  roughness: 0.3
+});
+const glassLens = new THREE.MeshStandardMaterial({
+  color: 0xcceeff,
+  transparent: true,
+  opacity: 0.4,
+  roughness: 0.1,
+  metalness: 0.1
+});
+// Lens L
+const lensL = new THREE.Mesh(new THREE.CircleGeometry(0.055, 16), glassLens);
+lensL.position.set(-0.06, 1.87, 0.13);
+npc.add(lensL);
+// Lens R
+const lensR = new THREE.Mesh(new THREE.CircleGeometry(0.055, 16), glassLens);
+lensR.position.set(0.06, 1.87, 0.13);
+npc.add(lensR);
+// Frame
+const frameL = new THREE.Mesh(new THREE.RingGeometry(0.055, 0.07, 16), glassesMat);
+frameL.position.set(-0.06, 1.87, 0.14);
+npc.add(frameL);
+const frameR = new THREE.Mesh(new THREE.RingGeometry(0.055, 0.07, 16), glassesMat);
+frameR.position.set(0.06, 1.87, 0.14);
+npc.add(frameR);
+// Bridge
+box(0.04, 0.015, 0.02, glassesMat, 0, 1.87, 0.14, npc);
+
+// NPC Limbs
+const npcLeftLeg = limb(npc, -0.13, 0.9, 0, 0.4, 0.4, npcPantsMat);
+const npcRightLeg = limb(npc, 0.13, 0.9, 0, 0.4, 0.4, npcPantsMat);
+for (const leg of [npcLeftLeg, npcRightLeg]) {
+  box(0.16, 0.12, 0.3, npcBootMat, 0, -0.42, -0.07, leg.lower);
+}
+
+const npcLeftArm = limb(npc, -0.3, 1.55, 0, 0.3, 0.29, npcCoatMat);
+const npcRightArm = limb(npc, 0.3, 1.55, 0, 0.3, 0.29, npcCoatMat);
+
+// NPC right arm holding a clipboard (raised slightly)
+npcRightArm.pivot.rotation.x = -0.8;
+npcRightArm.lower.rotation.x = -1.0;
+
+// Clipboard in NPC right hand
+const clipboard = new THREE.Group();
+clipboard.position.set(0, -0.3, 0.05);
+npcRightArm.lower.add(clipboard);
+
+box(0.25, 0.35, 0.015, new THREE.MeshStandardMaterial({
+  color: 0xa08055,
+  roughness: 0.85
+}), 0, 0, 0, clipboard);
+
+// Paper on clipboard
+box(0.22, 0.32, 0.005, new THREE.MeshStandardMaterial({
+  color: 0xf5f0e0,
+  roughness: 0.9
+}), 0, 0, 0.012, clipboard);
+
+// Hand holding clipboard
+const npcHandR = new THREE.Mesh(new THREE.SphereGeometry(0.065, 10, 8), npcSkinMat);
+npcHandR.position.set(0, -0.32, 0);
+npcRightArm.lower.add(npcHandR);
+
+// NPC left hand (at side)
+const npcHandL = new THREE.Mesh(new THREE.SphereGeometry(0.065, 10, 8), npcSkinMat);
+npcHandL.position.set(0, -0.32, 0);
+npcLeftArm.lower.add(npcHandL);
+
+// Add safety helmet nearby (on a hook)
+const helmetGroup = new THREE.Group();
+helmetGroup.position.set(-2, 2.8, -10.5);
+interiorGroup.add(helmetGroup);
+const helmetMat = new THREE.MeshStandardMaterial({
+  color: 0xf5c020,
+  roughness: 0.4,
+  metalness: 0.1
+});
+const helmetDome = new THREE.Mesh(
+  new THREE.SphereGeometry(0.18, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.5),
+  helmetMat
+);
+helmetGroup.add(helmetDome);
+cylinder(0.02, 0.02, 0.1, helmetMat, 0, 0.18, 0, helmetGroup, 8);
+
+// ============================================================
+// [STORY STATE]
+// ============================================================
+const storyState = {
+  currentChapter: 1,
+  totalChapters: 6,
+  playing: false,
+  introShown: false,
+  // Track progress
+  events: {
+    enteredWorkshop: false,
+    interactedWithMachine: false,
+    sawBehindScenes: false,
+    metTeam: false,
+    reachedTomorrow: false
+  }
+};
+
+// ============================================================
+// [CHAPTERS — ۶ فصل داستان]
+// ============================================================
+const chapters = {
+  1: {
+    num: 'CHAPTER I',
+    title: 'باران و خیابان',
+    desc: 'شب است. اصفهان در باران غرق شده. مسافری در خیابان خیام قدم می‌زند. نوری از دور می‌درخشد…',
+    onStart: () => {
+      // Position player on the street
+      human.position.set(-1.4, 0.02, 5.1);
+      human.rotation.y = 0;
+      yaw = 0;
+      pitch = 0.15;
+      camera.position.set(-1.4, 3.5, 11.6);
+      tour = { stage: 'manual', index: 0, time: 0 };
+      // Reveal player
+      human.visible = true;
+      umbrella.visible = true;
+      if (umbrella.parent !== human) human.attach(umbrella);
+      umbrella.position.set(0.33, 0, -0.13);
+      umbrella.rotation.set(0, 0, 0);
+      umbrella.scale.set(1, 1, 1);
+      npc.visible = false;
+      say('«باران بند نمی‌آید… آن نور از کجاست؟»');
+    },
+    onComplete: null
+  },
+  2: {
+    num: 'CHAPTER II',
+    title: 'کارگاه',
+    desc: 'از دور، تابلوی نئونی کارگاه را دیدی. حالا وقت آن است که به سمتش بروی و از نزدیک ببینی…',
+    onStart: () => {
+      // Player must walk to the door
+      say('به سمت در برو — W را نگه دار.');
+      tour = { stage: 'manual', index: 0, time: 0 };
+      // Show a marker to guide the player
+      addWaypointMarker(2.4, 0.3, -1.5);
+    },
+    onComplete: null
+  },
+  3: {
+    num: 'CHAPTER III',
+    title: 'دستگاه‌ها',
+    desc: 'وارد کارگاه شدی. چهار دستگاه بزرگ در سکوت کار می‌کنند. هر کدام منتظر لمس تو هستند…',
+    onStart: () => {
+      say('روی هر دستگاه کلیک کن تا اطلاعاتش را ببینی.');
+      storyState.events.enteredWorkshop = true;
+      // Highlight machines
+      highlightMachines();
+    },
+    onComplete: null
+  },
+  4: {
+    num: 'CHAPTER IV',
+    title: 'پشت صحنه',
+    desc: 'پشت دستگاه‌های درخشان، ساعت‌ها کار و دقت پنهان است. حالا زمان آن رسیده که عمق کارگاه را کشف کنی…',
+    onStart: () => {
+      say('به سمت قفسه‌ها و ابزارها برو.');
+      // Reveal the back workshop
+      addWaypointMarker(7, 0.4, -8.5, 'قفسه‌ها');
+      addWaypointMarker(-7, 0.4, -6, 'میز کار');
+    },
+    onComplete: null
+  },
+  5: {
+    num: 'CHAPTER V',
+    title: 'تیم',
+    desc: 'در انتهای کارگاه، مردی با عینک و لباس کار ایستاده. او استاد رضاست. کسی که این کارگاه را با دستان خودش ساخته…',
+    onStart: () => {
+      say('استاد رضا در انتهای کارگاه است — به سمتش برو.');
+      npc.visible = true;
+      // NPC looks alive
+      npcLookAtPlayer = true;
+      addWaypointMarker(-1, 0.4, -9.5, 'استاد رضا');
+    },
+    onComplete: null
+  },
+  6: {
+    num: 'CHAPTER VI',
+    title: 'فردا',
+    desc: 'شب به پایان می‌رسد. اما کارگاه هرگز نمی‌خوابد. سهند لیزر، مسیر فردا را روشن نگه می‌دارد…',
+    onStart: () => {
+      say('داستان امشب اینجا تمام می‌شود. اما فردا، دوباره…');
+      // Slow pan to machines
+      showNarrative(
+        'پایان شب اول',
+        'کارگاه سهند لیزر، هر روز با نور شروع می‌شود. تو می‌توانی در این مسیر همراه باشی.'
+      );
+    },
+    onComplete: null
+  }
+};
+
+// ============================================================
+// [STORY UI HELPERS]
+// ============================================================
+const chapterIntro = document.getElementById('chapter-intro');
+const introNum = document.getElementById('intro-num');
+const introTitle = document.getElementById('intro-title');
+const introDesc = document.getElementById('intro-desc');
+const introBtn = document.getElementById('intro-btn');
+const storyCaption = document.getElementById('story-caption');
+const narrative = document.getElementById('narrative');
+const chapterProgress = document.querySelectorAll('.chapter-progress .dot');
+const chapterListBtns = document.querySelectorAll('.chapter-list button');
+
+function say(text) {
+  if (!text) {
+    storyCaption.classList.add('empty');
+    return;
+  }
+  storyCaption.classList.remove('empty');
+  storyCaption.innerHTML = `<span class="speaker">روایت</span>${text}`;
+}
+
+function showNarrative(title, text) {
+  narrative.innerHTML = `<h2>${title}</h2><p>${text}</p>`;
+  narrative.classList.add('show');
+  setTimeout(() => {
+    narrative.classList.remove('show');
+  }, 6000);
+}
+
+let pendingIntroChapter = 1;
+function openChapterIntro(chapterNum) {
+  pendingIntroChapter = chapterNum;
+  const chapter = chapters[chapterNum];
+  if (!chapter) return;
+  introNum.textContent = chapter.num;
+  introTitle.textContent = chapter.title;
+  introDesc.textContent = chapter.desc;
+  introBtn.textContent = `شروع فصل ${chapterNum}`;
+  chapterIntro.classList.add('show');
+}
+
+function closeChapterIntro() {
+  chapterIntro.classList.remove('show');
+}
+
+function updateChapterUI(chapterNum) {
+  storyState.currentChapter = chapterNum;
+  document.getElementById('current-chapter').textContent = toPersianNum(chapterNum);
+  // Update dots
+  chapterProgress.forEach(dot => {
+    const n = parseInt(dot.dataset.ch);
+    dot.classList.toggle('active', n === chapterNum);
+    dot.classList.toggle('done', n < chapterNum);
+  });
+  // Update chapter list
+  chapterListBtns.forEach(btn => {
+    btn.classList.toggle('active', parseInt(btn.dataset.ch) === chapterNum);
+  });
+}
+
+function toPersianNum(n) {
+  const fa = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+  return String(n).split('').map(d => fa[parseInt(d)] || d).join('');
+}
+
+function startChapter(chapterNum) {
+  const chapter = chapters[chapterNum];
+  if (!chapter) return;
+  updateChapterUI(chapterNum);
+  chapter.onStart && chapter.onStart();
+}
+
+// ============================================================
+// [WAYPOINT MARKER — نشانگر مسیر]
+// ============================================================
+const waypoints = [];
+function addWaypointMarker(x, y, z, label = '') {
+  // Remove existing waypoint if any
+  if (waypoints.length > 0) {
+    const old = waypoints.shift();
+    scene.remove(old.mesh);
+    if (old.label) scene.remove(old.label);
+  }
+
+  const markerGeo = new THREE.RingGeometry(0.4, 0.55, 32);
+  const markerMat = new THREE.MeshBasicMaterial({
+    color: 0x78c9e7,
+    transparent: true,
+    opacity: 0.8,
+    side: THREE.DoubleSide,
+    depthWrite: false,
+    toneMapped: false
+  });
+  const marker = new THREE.Mesh(markerGeo, markerMat);
+  marker.position.set(x, y, z);
+  marker.rotation.x = -Math.PI / 2;
+  scene.add(marker);
+
+  let labelMesh = null;
+  if (label) {
+    labelMesh = new THREE.Group();
+    labelMesh.position.set(x, y + 1.5, z);
+    scene.add(labelMesh);
+
+    const labelBg = new THREE.Mesh(
+      new THREE.PlaneGeometry(1.6, 0.4),
+      new THREE.MeshBasicMaterial({
+        color: 0x06121e,
+        transparent: true,
+        opacity: 0.85,
+        depthWrite: false
+      })
+    );
+    labelMesh.add(labelBg);
+
+    const labelTex = canvasTexture(512, 128, (ctx, w, h) => {
+      ctx.fillStyle = '#06121e';
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = '#78c9e7';
+      ctx.font = 'bold 60px Tahoma';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(label, w / 2, h / 2);
+    });
+    const labelPlane = new THREE.Mesh(
+      new THREE.PlaneGeometry(1.5, 0.38),
+      new THREE.MeshBasicMaterial({
+        map: labelTex,
+        transparent: true,
+        depthWrite: false,
+        toneMapped: false
+      })
+    );
+    labelPlane.position.z = 0.01;
+    labelMesh.add(labelPlane);
+
+    // Billboard
+    labelMesh.userData.billboard = true;
+  }
+
+  waypoints.push({ mesh: marker, label: labelMesh, position: { x, y, z } });
+}
+
+// ============================================================
+// [HIGHLIGHT MACHINES — هایلایت دستگاه‌ها]
+// ============================================================
+const machineHighlights = [];
+function highlightMachines() {
+  const machines = [machine1, machine2, machine3, machine4];
+  machines.forEach((m, idx) => {
+    // Add a glowing ring around each machine
+    const ringGeo = new THREE.RingGeometry(0.8, 0.95, 32);
+    const ringMat = new THREE.MeshBasicMaterial({
+      color: 0x78c9e7,
+      transparent: true,
+      opacity: 0.6,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+      toneMapped: false
+    });
+    const ring = new THREE.Mesh(ringGeo, ringMat);
+    const pos = m.group.position;
+    ring.position.set(pos.x, 0.38, pos.z);
+    ring.rotation.x = -Math.PI / 2;
+    scene.add(ring);
+
+    // Pulsing animation
+    machineHighlights.push({ ring, phase: idx * 0.5, machine: m });
+  });
+}
+
+// ============================================================
+// [NPC BEHAVIOR]
+// ============================================================
+let npcLookAtPlayer = false;
+
+function updateNPC(dt) {
+  if (!npc.visible) return;
+
+  if (npcLookAtPlayer) {
+    // Turn head slightly towards player
+    const dx = human.position.x - npc.position.x;
+    const dz = human.position.z - npc.position.z;
+    const targetYaw = Math.atan2(dx, dz);
+    npc.rotation.y = THREE.MathUtils.damp(npc.rotation.y, targetYaw, 3, dt);
+  }
+
+  // Idle breathing
+  const t = performance.now() * 0.001;
+  npcBody.scale.y = 1 + Math.sin(t * 1.5) * 0.01;
+}
+
+// ============================================================
+// [TRIGGER SYSTEM — تشخیص ورود به مکان]
+// ============================================================
+const triggers = [
+  {id: 'sawWorkshop', x: 2.4, z: 1, radius: 2, once: true, action: () => { openChapterIntro(2); }},
+  {id: 'behindWorkshop', x: -6, z: -6, radius: 1.8, once: true, action: () => {
+    storyState.events.sawBehindScenes = true;
+    openChapterIntro(5);
+  }},
+  {
+    id: 'nearDoor',
+    x: 2.4, z: -1.5, radius: 1.5,
+    once: true,
+    action: () => {
+      if (storyState.currentChapter === 2) {
+        say('در باز است. وارد شو.');
+        startChapter(3);
+        // Auto-enter after a delay
+        setTimeout(() => {
+          tour = { stage: 'enter', index: 2, time: 0 };
+        }, 1500);
+      }
+    }
+  },
+  {
+    id: 'insideWorkshop',
+    x: 0, z: -5, radius: 3,
+    once: true,
+    action: () => {
+      if (storyState.currentChapter === 3) {
+        storyState.events.enteredWorkshop = true;
+        say('چهار دستگاه، چهار دنیای متفاوت. یکی را انتخاب کن.');
+      }
+    }
+  },
+  {
+    id: 'nearNPC',
+    x: -1, z: -9, radius: 1.8,
+    once: true,
+    action: () => {
+      if (storyState.currentChapter === 5) {
+        showNarrative(
+          'استاد رضا',
+          '«شب بخیر. تعجب نکن — ما همیشه اینجا هستیم. این دستگاه‌ها، بچه‌های ما هستند. صبح‌ها با هم بیدار می‌شوند، شب‌ها با هم می‌خوابند.»'
+        );
+        storyState.events.metTeam = true;
+        // Advance to chapter 6
+        setTimeout(() => {
+          startChapter(6);
+        }, 8000);
+      }
+    }
+  }
+];
+
+function checkTriggers() {
+  triggers.forEach(trig => {
+    if (trig.done) return;
+    const requiredChapter = {nearDoor: 2, insideWorkshop: 3, nearNPC: 5, sawWorkshop: 1, behindWorkshop: 4}[trig.id];
+    if (requiredChapter && storyState.currentChapter !== requiredChapter) return;
+    const dx = human.position.x - trig.x;
+    const dz = human.position.z - trig.z;
+    const dist = Math.sqrt(dx * dx + dz * dz);
+    if (dist < trig.radius) {
+      trig.done = true;
+      trig.action();
+    }
+  });
+}
+
+// ============================================================
+// [MACHINE INFO PANEL — پنل اطلاعات دستگاه‌ها]
+// ============================================================
+const machineInfo = {
+  1: {
+    title: 'دستگاه برش لیزر فایبر CNC — CT-001',
+    text: 'دستگاه برش لیزر فایبر فلزات CNC با توان ۱ تا ۱۲ کیلووات. مناسب برش دقیق و پرسرعت ورق‌های فولادی، استیل، آلومینیوم و گالوانیزه. سیستم کنترل CypCut با سرعت بالا و دقت میکرونی.'
+  },
+  2: {
+    title: 'جوشکار لیزری دستی فیبر — WL-001',
+    text: 'جوشکار لیزری دستی سه‌کاره (جوش، برش، تمیزکاری) با توان ۸۰۰ تا ۲۰۰۰ وات و سیستم خنک‌کننده هواخنک. مناسب صنایع خودروسازی، کشتی‌سازی، هوافضا و باتری‌سازی.'
+  },
+  3: {
+    title: 'دستگاه حکاکی لیزر فایبر — ML-001',
+    text: 'دستگاه حکاکی و مارکینگ لیزری فایبر ۳۰ وات با اسکنر گالوانومتر. مناسب حکاکی روی طلا، نقره، مس، استیل، پلاستیک و سرامیک. دقت میکرونی، عمر سورس ۱۰۰,۰۰۰ ساعت.'
+  },
+  4: {
+    title: 'دستگاه تمیزکاری لیزری — CL-001',
+    text: 'دستگاه تمیزکاری لیزری پرتابل ۲۰۰ وات. حذف زنگ‌زدگی، رنگ، روغن و آلودگی بدون مواد شیمیایی و بدون آسیب به سطح. مناسب صنایع سنگین، دریایی و تعمیرات.'
+  }
+};
+
+// ============================================================
+// [INIT STORY]
+// ============================================================
+introBtn.addEventListener('click', () => {
+  closeChapterIntro();
+  startChapter(pendingIntroChapter);
+});
+
+// Chapter list navigation
+chapterListBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const ch = parseInt(btn.dataset.ch);
+    // Only allow jumping to already-unlocked chapters
+    if (ch <= storyState.currentChapter || ch === storyState.currentChapter + 1) {
+      openChapterIntro(ch);
+    } else {
+      say('اول باید فصل‌های قبل را کامل کنی.');
+    }
+  });
+});
+
+// Start the story when the loading completes
+function startStory() {
+  setTimeout(() => {
+    openChapterIntro(1);
+  }, 1500);
+}
+
+// ✅ ادامه در بخش ۵
+
+// ============================================================
+// [STATE VARIABLES]
+// ============================================================
+let yaw = 0;
+let pitch = 0.15;
+let walking = 0;
+let phase = 0;
+let drag = null;
+let paused = false;
+let quality = true;
+let currentWeather = 'rain';
+let currentTime = 'night';
+let soundEnabled = false;
+let audioContext = null;
+let rainSound = null;
+let doorOpen = 0;
+let tour = { stage: 'manual', index: 0, time: 0 };
+let elapsed = 0;
+
+const keys = new Set();
+const routePoints = [
+  new THREE.Vector3(2.4, 0, 1),
+  new THREE.Vector3(2.4, 0, -1.05),
+  new THREE.Vector3(2.4, 0, -3.4)
+];
+
+// ============================================================
+// [RAIN SYSTEM]
+// ============================================================
+const rainCount = mobile ? 850 : 1900;
+const rainPos = new Float32Array(rainCount * 6);
+const rainSpeed = new Float32Array(rainCount);
+for (let i = 0; i < rainCount; i++) {
+  rainPos[i * 6] = (Math.random() - 0.5) * 40;
+  rainPos[i * 6 + 1] = Math.random() * 18;
+  rainPos[i * 6 + 2] = (Math.random() - 0.5) * 35 + 7;
+  rainSpeed[i] = 7 + Math.random() * 6;
+}
+const rainGeo = new THREE.BufferGeometry();
+rainGeo.setAttribute('position', new THREE.BufferAttribute(rainPos, 3));
+const rain = new THREE.LineSegments(rainGeo, new THREE.LineBasicMaterial({
+  color: 0x9bbbd4,
+  transparent: true,
+  opacity: 0.22,
+  depthWrite: false
+}));
+scene.add(rain);
+rain.visible = !reduced;
+
+// Ripples
+const ripples = [];
+for (let i = 0; i < 32; i++) {
+  const ring = new THREE.Mesh(
+    new THREE.RingGeometry(0.07, 0.081, 22),
+    new THREE.MeshBasicMaterial({
+      color: 0x74abc6,
+      transparent: true,
+      opacity: 0.15,
+      depthWrite: false
+    })
+  );
+  ring.rotation.x = -Math.PI / 2;
+  ring.position.set((Math.random() - 0.5) * 28, 0.028, Math.random() * 16 + 1);
+  scene.add(ring);
+  ripples.push({ mesh: ring, phase: Math.random() });
+}
+
+// ============================================================
+// [PASSING CARS]
+// ============================================================
+function createCar(color = 0xaa3333) {
+  const car = new THREE.Group();
+  // Body
+  box(1.9, 0.55, 4, new THREE.MeshStandardMaterial({
+    color, metalness: 0.7, roughness: 0.35
+  }), 0, 0.6, 0, car);
+  // Cabin
+  box(1.6, 0.45, 2.1, new THREE.MeshStandardMaterial({
+    color: 0x1a1a1a, metalness: 0.5, roughness: 0.3
+  }), 0, 1.05, 0.2, car);
+  // Windows
+  box(1.62, 0.35, 0.05, new THREE.MeshStandardMaterial({
+    color: 0x1a2a3a, metalness: 0.9, roughness: 0.1
+  }), 0, 1.05, -0.85, car);
+  box(1.62, 0.35, 0.05, new THREE.MeshStandardMaterial({
+    color: 0x1a2a3a, metalness: 0.9, roughness: 0.1
+  }), 0, 1.05, 1.25, car);
+  // Headlights
+  box(0.4, 0.15, 0.1, new THREE.MeshBasicMaterial({
+    color: 0xffffee, toneMapped: false
+  }), -0.6, 0.65, -2.05, car);
+  box(0.4, 0.15, 0.1, new THREE.MeshBasicMaterial({
+    color: 0xffffee, toneMapped: false
+  }), 0.6, 0.65, -2.05, car);
+  // Headlight beam
+  const beam = new THREE.SpotLight(0xfff5cc, 25, 15, Math.PI / 5, 0.5, 1.5);
+  beam.position.set(0, 0.6, -2);
+  beam.target.position.set(0, 0.5, -10);
+  car.add(beam);
+  car.add(beam.target);
+  // Taillights
+  box(0.3, 0.12, 0.05, new THREE.MeshBasicMaterial({
+    color: 0xff2222, toneMapped: false
+  }), -0.7, 0.6, 2.02, car);
+  box(0.3, 0.12, 0.05, new THREE.MeshBasicMaterial({
+    color: 0xff2222, toneMapped: false
+  }), 0.7, 0.6, 2.02, car);
+  // Wheels
+  for (const dx of [-0.85, 0.85]) {
+    for (const dz of [-1.3, 1.3]) {
+      const wheel = new THREE.Mesh(
+        new THREE.CylinderGeometry(0.35, 0.35, 0.25, 16),
+        new THREE.MeshStandardMaterial({ color: 0x0a0a0a, roughness: 0.9 })
+      );
+      wheel.rotation.z = Math.PI / 2;
+      wheel.position.set(dx, 0.35, dz);
+      car.add(wheel);
+    }
+  }
+  car.position.set(-20, 0, 10.5);
+  car.rotation.y = -Math.PI / 2;
+  scene.add(car);
+  return car;
+}
+
+const cars = [
+  createCar(0xaa3333),
+  createCar(0x3344aa),
+  createCar(0x222222),
+  createCar(0xdddddd)
+];
+cars.forEach((c, i) => {
+  c.visible = i === 0;
+  c.userData = {
+    active: i === 0,
+    speed: 4 + Math.random() * 3,
+    color: [0xaa3333, 0x3344aa, 0x222222, 0xdddddd][i]
+  };
+});
+let nextCarTime = 4;
+
+// ============================================================
+// [CLEAR INPUT]
+// ============================================================
+function clearInput() {
+  keys.clear();
+  drag = null;
+}
+
+// ============================================================
+// [KEYBOARD HANDLERS]
+// ============================================================
+window.addEventListener('keydown', e => {
+  if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+       'ShiftLeft', 'ShiftRight'].includes(e.code)) {
+    e.preventDefault();
+    keys.add(e.code);
+  }
+  if (e.code === 'KeyR') reset();
+  if (e.code === 'Escape') {
+    if (photoMode || Tutorial.active) return;
+    if (ProductShowcase.visible) { ProductShowcase.close(); return; }
+    paused = !paused; updatePause();
+  }
+  if (e.code === 'KeyF') toggleFullscreen();
+  if (e.code === 'KeyH') toggleHelp();
+});
+
+window.addEventListener('keyup', e => keys.delete(e.code));
+window.addEventListener('blur', clearInput);
+
+// ============================================================
+// [POINTER / MOUSE]
+// ============================================================
+renderer.domElement.addEventListener('pointerdown', e => {
+  drag = { x: e.clientX, y: e.clientY };
+  renderer.domElement.setPointerCapture(e.pointerId);
+});
+
+renderer.domElement.addEventListener('pointermove', e => {
+  if (!drag) return;
+  yaw -= (e.clientX - drag.x) * 0.004;
+  pitch = THREE.MathUtils.clamp(pitch + (e.clientY - drag.y) * 0.002, -0.15, 0.6);
+  drag = { x: e.clientX, y: e.clientY };
+});
+
+renderer.domElement.addEventListener('pointerup', () => drag = null);
+renderer.domElement.addEventListener('pointercancel', () => drag = null);
+
+// Touch pad
+document.querySelectorAll('[data-key]').forEach(b => {
+  b.addEventListener('pointerdown', e => {
+    e.preventDefault();
+    keys.add(b.dataset.key);
+    b.setPointerCapture(e.pointerId);
+  });
+  for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+    b.addEventListener(type, () => keys.delete(b.dataset.key));
+  }
+});
+
+// ============================================================
+// [MOVEMENT LOGIC]
+// ============================================================
+function yawTowards(direction, dt) {
+  const target = Math.atan2(-direction.x, -direction.z);
+  const diff = THREE.MathUtils.euclideanModulo(target - human.rotation.y + Math.PI, Math.PI * 2) - Math.PI;
+  human.rotation.y += diff * Math.min(1, dt * 7);
+}
+
+function constrainMove(previous, next) {
+  next.x = THREE.MathUtils.clamp(next.x, -13, 13);
+  next.z = THREE.MathUtils.clamp(next.z, -10.5, 15);
+
+  // Door collision
+  const crossing = (previous.z + 1.15) * (next.z + 1.15) <= 0;
+  if (crossing && (next.x < 0.1 || next.x > 3.2 || doorOpen < 0.75)) {
+    next.z = previous.z;
+  }
+
+  // Inside workshop collision — walls
+  if (next.z < -1.15) {
+    next.x = THREE.MathUtils.clamp(next.x, -8.4, 8.4);
+    next.z = THREE.MathUtils.clamp(next.z, -10.6, -1.15);
+
+    // Machine collisions (AABB simplified)
+    const machineBounds = [
+      { x: -3.5, z: -6.5, w: 4, d: 2.6 }, // machine1
+      { x: 2, z: -6.5, w: 1.5, d: 1 },    // machine2
+      { x: 6, z: -6.5, w: 1.2, d: 0.9 },  // machine3
+      { x: -7, z: -3, w: 1.2, d: 0.9 },   // machine4
+    ];
+    for (const m of machineBounds) {
+      if (next.x > m.x - m.w / 2 - 0.4 && next.x < m.x + m.w / 2 + 0.4 &&
+          next.z > m.z - m.d / 2 - 0.4 && next.z < m.z + m.d / 2 + 0.4) {
+        next.x = previous.x;
+        next.z = previous.z;
+        break;
+      }
+    }
+
+    // Shelves
+    const shelfBounds = [
+      { x: 7, z: -8.5, w: 2.2, d: 1 },
+      { x: 7, z: -9.5, w: 2.2, d: 1 },
+      { x: -7, z: -8.5, w: 2.2, d: 1 },
+      { x: -7, z: -4, w: 2.3, d: 1.1 },
+      { x: -7, z: -6.5, w: 2.3, d: 1.1 },
+      { x: 6, z: -4, w: 1.3, d: 0.9 },
+      { x: 6, z: -6, w: 1.3, d: 0.9 },
+    ];
+    for (const s of shelfBounds) {
+      if (next.x > s.x - s.w / 2 - 0.3 && next.x < s.x + s.w / 2 + 0.3 &&
+          next.z > s.z - s.d / 2 - 0.3 && next.z < s.z + s.d / 2 + 0.3) {
+        next.x = previous.x;
+        next.z = previous.z;
+        break;
+      }
+    }
+  }
+  return next;
+}
+
+// ============================================================
+// [UPDATE VISITOR — Door + Umbrella + Indoors]
+// ============================================================
+function updateVisitor(dt) {
+  const indoors = human.position.z < -1.15;
+  const nearDoor = Math.hypot(human.position.x - 1.5, human.position.z + 1.15) < 2.5 || tour.stage === 'enter';
+
+  doorOpen = THREE.MathUtils.damp(doorOpen, nearDoor ? 1 : 0, 5, dt);
+  entryDoor.position.x = doorOpen * 2.4;
+
+  const floor = indoors ? 0.36 : (human.position.z < 0.3 ? 0.18 : 0.02);
+  human.position.y = floor;
+
+  document.body.classList.toggle('inside-room', indoors);
+
+  // Umbrella transition
+  if (indoors && umbrella.parent === human) {
+    scene.attach(umbrella);
+    say('چتر را کنار در می‌گذاریم.');
+  }
+  if (umbrella.parent === scene) {
+    umbrella.position.lerp(new THREE.Vector3(3.5, 0.28, -1.5), 1 - Math.exp(-dt * 6));
+    umbrella.quaternion.slerp(new THREE.Quaternion(), 1 - Math.exp(-dt * 6));
+    umbrella.scale.x = umbrella.scale.z = THREE.MathUtils.damp(umbrella.scale.x, 0.16, 5, dt);
+  }
+  if (!indoors && umbrella.parent === scene) {
+    human.attach(umbrella);
+    umbrella.position.set(0.33, 0, -0.13);
+    umbrella.rotation.set(0, 0, 0);
+    umbrella.scale.set(1, 1, 1);
+  }
+}
+
+// ============================================================
+// [RESET]
+// ============================================================
+function reset() {
+  clearInput();
+  tour = { stage: 'manual', index: 0, time: 0 };
+  doorOpen = 0;
+  human.position.set(-1.4, 0.02, 5.1);
+  human.rotation.y = 0;
+  yaw = 0;
+  pitch = 0.15;
+  camera.position.set(-1.4, 3.5, 11.6);
+  if (umbrella.parent !== human) human.attach(umbrella);
+  umbrella.position.set(0.33, 0, -0.13);
+  umbrella.rotation.set(0, 0, 0);
+  umbrella.scale.set(1, 1, 1);
+  say('برای شروع، «شروع داستان» را بزن.');
+}
+
+// ============================================================
+// [BUTTON HANDLERS]
+// ============================================================
+document.getElementById('reset').onclick = reset;
+
+document.getElementById('visit').onclick = () => {
+  reset();
+  startChapter(1);
+};
+
+function updatePause() {
+  const btn = document.getElementById('pause');
+  btn.textContent = paused ? '▶ ادامه' : '⏸ توقف';
+  btn.setAttribute('aria-pressed', String(paused));
+}
+document.getElementById('pause').onclick = () => {
+  paused = !paused;
+  clearInput();
+  updatePause();
+};
+
+document.getElementById('quality').onclick = () => {
+  quality = !quality;
+  renderer.setPixelRatio(quality ? Math.min(devicePixelRatio, mobile ? 1.25 : 1.6) : 0.85);
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setPixelRatio(renderer.getPixelRatio());
+  composer.setSize(innerWidth, innerHeight);
+  bloom.enabled = quality;
+  document.getElementById('quality').textContent = quality ? '🎬 کیفیت: سینمایی' : '⚡ کیفیت: سبک';
+};
+
+// Weather
+document.getElementById('weather').onclick = () => {
+  const btn = document.getElementById('weather');
+  if (currentWeather === 'rain') {
+    currentWeather = 'clear';
+    rain.visible = false;
+    ripples.forEach(r => r.mesh.visible = false);
+    scene.fog.density = 0.015;
+    btn.textContent = '☀️ صاف';
+  } else if (currentWeather === 'clear') {
+    currentWeather = 'fog';
+    rain.visible = false;
+    ripples.forEach(r => r.mesh.visible = false);
+    scene.fog.density = 0.06;
+    btn.textContent = '🌫️ مه‌آلود';
+  } else {
+    currentWeather = 'rain';
+    rain.visible = true;
+    ripples.forEach(r => r.mesh.visible = true);
+    scene.fog.density = 0.025;
+    btn.textContent = '🌧️ بارانی';
+  }
+};
+
+// Time
+document.getElementById('time').onclick = () => {
+  const btn = document.getElementById('time');
+  if (currentTime === 'night') {
+    currentTime = 'day';
+    scene.background = new THREE.Color(0x1a3a5c);
+    moon.color.setHex(0xffffff);
+    moon.intensity = 2.2;
+    hemi.intensity = 2.0;
+    stars.visible = false;
+    moonSphere.visible = false;
+    moonGlow.visible = false;
+    btn.textContent = '☀️ روز';
+  } else {
+    currentTime = 'night';
+    scene.background = new THREE.Color(0x040911);
+    moon.color.setHex(0x6e9fff);
+    moon.intensity = 1.3;
+    hemi.intensity = 1.0;
+    stars.visible = true;
+    moonSphere.visible = true;
+    moonGlow.visible = true;
+    btn.textContent = '🌙 شب';
+  }
+};
+
+// Sound
+document.getElementById('sound').onclick = () => {
+  const btn = document.getElementById('sound');
+  soundEnabled = !soundEnabled;
+  if (soundEnabled) {
+    if (!audioContext) {
+      try {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      } catch (e) { return; }
+    }
+    startRainSound();
+    btn.textContent = '🔊 صدا';
+    btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
+  } else {
+    stopRainSound();
+    btn.textContent = '🔇 صدا';
+    btn.classList.remove('active');
+    btn.setAttribute('aria-pressed', 'false');
+  }
+};
+
+function startRainSound() {
+  if (!audioContext || rainSound) return;
+  const bufferSize = 2 * audioContext.sampleRate;
+  const noiseBuffer = audioContext.createBuffer(1, bufferSize, audioContext.sampleRate);
+  const output = noiseBuffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) output[i] = Math.random() * 2 - 1;
+
+  const whiteNoise = audioContext.createBufferSource();
+  whiteNoise.buffer = noiseBuffer;
+  whiteNoise.loop = true;
+
+  const filter = audioContext.createBiquadFilter();
+  filter.type = 'lowpass';
+  filter.frequency.value = 900;
+
+  const gain = audioContext.createGain();
+  gain.gain.value = 0.08;
+
+  whiteNoise.connect(filter);
+  filter.connect(gain);
+  gain.connect(audioContext.destination);
+  whiteNoise.start();
+  rainSound = { source: whiteNoise, gain, filter };
+}
+
+function stopRainSound() {
+  if (rainSound) {
+    try { rainSound.source.stop(); } catch (e) {}
+    rainSound = null;
+  }
+}
+
+// Screenshot
+document.getElementById('screenshot').onclick = () => {
+  composer.render();
+  const dataUrl = renderer.domElement.toDataURL('image/png');
+  const link = document.createElement('a');
+  link.download = 'sahand-laser-' + Date.now() + '.png';
+  link.href = dataUrl;
+  link.click();
+  say('📸 عکس گرفته شد!');
+};
+
+// Fullscreen
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen?.();
+  } else {
+    document.exitFullscreen?.();
+  }
+}
+document.getElementById('fullscreen').onclick = toggleFullscreen;
+
+// Help
+function toggleHelp() {
+  document.getElementById('controls-hint').classList.toggle('hidden');
+}
+document.getElementById('help').onclick = toggleHelp;
+
+// ============================================================
+// [HOTSPOT INTERACTION — کلیک روی دستگاه‌ها]
+// ============================================================
+window.closeInfoPanel = function () {
+  document.getElementById('info-panel').classList.remove('open');
+};
+window.navigateToSite = function (hash) {
+  window.location.href = 'https://sahandlaser.com/' + (hash || '');
+};
+
+const raycaster = new THREE.Raycaster();
+const mouseVec = new THREE.Vector2();
+
+renderer.domElement.addEventListener('click', (e) => {
+  if (drag) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  mouseVec.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouseVec.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouseVec, camera);
+
+  // Check all 4 machines
+  const machines = [
+    { obj: machine1.group, info: machineInfo[1] },
+    { obj: machine2.group, info: machineInfo[2] },
+    { obj: machine3.group, info: machineInfo[3] },
+    { obj: machine4.group, info: machineInfo[4] }
+  ];
+  for (const m of machines) {
+    const hits = raycaster.intersectObject(m.obj, true);
+    if (hits.length > 0) {
+      showMachineInfo(m.info);
+      storyState.events.interactedWithMachine = true;
+      // If chapter 3, progress to 4
+      if (storyState.currentChapter === 3) {
+        setTimeout(() => startChapter(4), 2500);
+      }
+      return;
+    }
+  }
+
+  // Check NPC
+  if (npc.visible) {
+    const npcHits = raycaster.intersectObject(npc, true);
+    if (npcHits.length > 0) {
+      showNarrative('استاد رضا', '«سلام رفیق. اینجا هر دستگاه، یک داستان دارد.»');
+    }
+  }
+});
+
+function showMachineInfo(info) {
+  document.getElementById('info-title').textContent = info.title;
+  document.getElementById('info-text').textContent = info.text;
+  document.getElementById('info-panel').classList.add('open');
+}
+
+// ============================================================
+// [MAIN ANIMATION LOOP]
+// ============================================================
+const clock = new THREE.Clock();
+const desired = new THREE.Vector3();
+const look = new THREE.Vector3();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.035);
+  if (document.hidden) return;
+
+  if (!paused) {
+    elapsed += dt;
+
+    // ===== INPUT =====
+    const forward = (keys.has('KeyW') || keys.has('ArrowUp') ? 1 : 0) -
+                    (keys.has('KeyS') || keys.has('ArrowDown') ? 1 : 0);
+    const strafe = (keys.has('KeyD') || keys.has('ArrowRight') ? 1 : 0) -
+                   (keys.has('KeyA') || keys.has('ArrowLeft') ? 1 : 0);
+    const dir = new THREE.Vector3(strafe, 0, -forward);
+
+    if (dir.lengthSq() > 0) {
+      dir.normalize().applyAxisAngle(new THREE.Vector3(0, 1, 0), yaw);
+    }
+
+    // ===== TOUR / AUTO-WALK =====
+    if (tour.stage === 'approach' || tour.stage === 'enter') {
+      const target = routePoints[tour.index];
+      dir.copy(target).sub(human.position);
+      dir.y = 0;
+      if (dir.length() < 0.12) {
+        if (tour.index === 0) { tour.index = 1; say('در شیشه‌ای به‌آرامی باز می‌شود.'); }
+        else if (tour.index === 1) { tour.stage = 'door'; say('از اینجا وارد کارگاه می‌شویم.'); }
+        else { tour.stage = 'manual'; }
+        dir.set(0, 0, 0);
+      } else {
+        dir.normalize();
+      }
+    } else if (tour.stage === 'door') {
+      dir.set(0, 0, 0);
+      if (doorOpen > 0.85) { tour.stage = 'enter'; tour.index = 2; }
+    }
+
+    if (photoMode || Tutorial.active || ProductShowcase.visible || chapterIntro.classList.contains('show')) dir.set(0, 0, 0);
+    const active = dir.lengthSq() > 0;
+    walking = THREE.MathUtils.damp(walking, active ? 1 : 0, 9, dt);
+
+    if (active) {
+      const prev = human.position.clone();
+      const next = prev.clone().addScaledVector(
+        dir,
+        dt * ((keys.has('ShiftLeft') || keys.has('ShiftRight')) && tour.stage === 'manual' ? 2.1 : 1.45)
+      );
+      constrainMove(prev, next);
+      human.position.copy(next);
+      StatsHUD.updateDistance(prev, human.position);
+      AchievementSystem.unlock('firstStep');
+      yawTowards(dir, dt);
+    }
+
+    // ===== LEG / ARM ANIMATION =====
+    phase += dt * (active ? 8 : 2);
+    const step = Math.sin(phase) * 0.5 * walking;
+    leftLeg.pivot.rotation.x = step;
+    rightLeg.pivot.rotation.x = -step;
+    leftLeg.lower.rotation.x = Math.max(0, -Math.sin(phase)) * 0.6 * walking;
+    rightLeg.lower.rotation.x = Math.max(0, Math.sin(phase)) * 0.6 * walking;
+    leftArm.pivot.rotation.x = -step * 0.7;
+    body.rotation.z = Math.sin(phase) * 0.015 * walking;
+    umbrella.rotation.z = Math.sin(elapsed * 2) * 0.014 + step * 0.025;
+
+    // ===== VISITOR =====
+    updateVisitor(dt);
+    updateNPC(dt);
+    checkTriggers();
+
+    // ===== RAIN =====
+    if (currentWeather === 'rain' && !reduced) {
+      for (let i = 0; i < rainCount; i++) {
+        const k = i * 6;
+        rainPos[k + 1] -= rainSpeed[i] * dt;
+        rainPos[k] += 0.3 * dt;
+        if (rainPos[k + 1] < 0.04 || (rainPos[k + 2] < -1.4 && Math.abs(rainPos[k]) < 8 && rainPos[k + 1] < 6)) {
+          rainPos[k + 1] = 14 + Math.random() * 5;
+          rainPos[k] = (Math.random() - 0.5) * 40;
+          rainPos[k + 2] = (Math.random() - 0.5) * 35 + 7;
+        }
+        rainPos[k + 3] = rainPos[k] - 0.015;
+        rainPos[k + 4] = rainPos[k + 1] + 0.19 + rainSpeed[i] * 0.018;
+        rainPos[k + 5] = rainPos[k + 2];
+      }
+      rainGeo.attributes.position.needsUpdate = true;
+
+      for (const r of ripples) {
+        r.phase = (r.phase + dt * 0.7) % 1;
+        r.mesh.scale.setScalar(0.3 + r.phase * 3);
+        r.mesh.material.opacity = (1 - r.phase) * 0.14;
+      }
+    }
+
+    // ===== MACHINE 1: CUTTING ANIMATION =====
+    const machine1Active = storyState.events.enteredWorkshop || storyState.currentChapter >= 3;
+    if (machine1Active) {
+      const gantryX = Math.sin(elapsed * 0.6) * 1.2;
+      machine1.gantry.position.x = gantryX;
+      machine1.head.position.x = Math.sin(elapsed * 1.8) * 0.6;
+      machine1.head.rotation.y = Math.sin(elapsed * 0.9) * 0.3;
+
+      const cutting = Math.sin(elapsed * 2.5) > -0.3;
+      machine1.cutLight.intensity = cutting && !reduced ? 8 + Math.sin(elapsed * 8) * 2 : 0.5;
+      machine1.cutLight.position.set(
+        gantryX + machine1.head.position.x,
+        1.0,
+        0
+      );
+    }
+
+    // ===== SPARKS ANIMATION =====
+    for (const sys of sparkSystems) {
+      for (let i = 0; i < sys.count; i++) {
+        const v = sys.velocities[i];
+        v.age += dt;
+        if (v.age > 0.7) v.age = 0;
+        const age = v.age;
+        const k = i * 3;
+        sys.positions[k] = machine1.head.position.x + v.x * age;
+        sys.positions[k + 1] = 0.65 + v.y * age - 4 * age * age;
+        sys.positions[k + 2] = v.z * age;
+      }
+      sys.geometry.attributes.position.needsUpdate = true;
+      sys.points.visible = machine1Active && Math.sin(elapsed * 3) > -0.5 && !reduced;
+    }
+
+    // ===== SMOKE ANIMATION =====
+    for (const sys of smokeSystems) {
+      for (let i = 0; i < sys.count; i++) {
+        const v = sys.velocities[i];
+        v.age += dt;
+        if (v.age > v.life) {
+          v.age = 0;
+          sys.positions[i * 3] = (Math.random() - 0.5) * 0.3;
+          sys.positions[i * 3 + 1] = 0;
+          sys.positions[i * 3 + 2] = (Math.random() - 0.5) * 0.3;
+        }
+        sys.positions[i * 3] += v.x * dt;
+        sys.positions[i * 3 + 1] += v.y * dt;
+        sys.positions[i * 3 + 2] += v.z * dt;
+      }
+      sys.geometry.attributes.position.needsUpdate = true;
+      sys.points.visible = machine1Active && !reduced;
+    }
+
+    // ===== MACHINE 2: WELDER TORCH SWING =====
+    if (machine2.torch) {
+      machine2.torch.rotation.z = Math.sin(elapsed * 1.2) * 0.15;
+    }
+
+    // ===== MACHINE 3: MARKING LASER DOT =====
+    if (machine3.laserDot) {
+      machine3.laserDot.position.x = Math.cos(elapsed * 2.3) * 0.2;
+      machine3.laserDot.position.z = Math.sin(elapsed * 2.3) * 0.2;
+      machine3.laserDot.visible = Math.sin(elapsed * 6) > -0.3;
+    }
+
+    // ===== MACHINE 4: CLEANER GUN SWAY =====
+    if (machine4.gun) {
+      machine4.gun.rotation.z = Math.sin(elapsed * 0.8) * 0.1;
+    }
+
+    // ===== HIGHLIGHT RINGS PULSE =====
+    machineHighlights.forEach(h => {
+      h.phase += dt;
+      const scale = 1 + Math.sin(h.phase * 2) * 0.1;
+      h.ring.scale.setScalar(scale);
+      h.ring.material.opacity = 0.4 + Math.sin(h.phase * 2) * 0.2;
+    });
+
+    // ===== WAYPOINT PULSE =====
+    waypoints.forEach(w => {
+      w.mesh.rotation.z += dt * 0.8;
+      if (w.label) {
+        w.label.position.y = w.position.y + 1.5 + Math.sin(elapsed * 2) * 0.1;
+        // Billboard effect
+        w.label.lookAt(camera.position);
+      }
+    });
+
+    // ===== CLOCK HANDS =====
+    const hourAngle = -((elapsed * 0.01) % (Math.PI * 2));
+    const minuteAngle = -((elapsed * 0.12) % (Math.PI * 2));
+    const hourHand = clockGroup.getObjectByName('hourHand');
+    const minuteHand = clockGroup.getObjectByName('minuteHand');
+    if (hourHand) hourHand.rotation.z = hourAngle;
+    if (minuteHand) minuteHand.rotation.z = minuteAngle;
+
+    // ===== STARS TWINKLE =====
+    if (currentTime === 'night' && !reduced) {
+      stars.material.opacity = 0.75 + Math.sin(elapsed * 2) * 0.15;
+    }
+
+    // ===== BIRDS =====
+    if (!reduced) {
+      birdGroup.children.forEach((bird, i) => {
+        const d = bird.userData;
+        d.phase += dt * d.speed;
+        bird.position.x = d.centerX + Math.cos(d.phase) * d.radius;
+        bird.position.z = d.centerZ + Math.sin(d.phase) * d.radius;
+        bird.position.y = d.height + Math.sin(d.phase * 3) * 0.5;
+        bird.rotation.y = -d.phase + Math.PI / 2;
+        const wingFlap = Math.sin(elapsed * 6 + i) * 0.5;
+        if (d.wing1) d.wing1.rotation.z = wingFlap;
+        if (d.wing2) d.wing2.rotation.z = -wingFlap;
+      });
+    }
+
+    // ===== PASSING CARS =====
+    nextCarTime -= dt;
+    if (nextCarTime <= 0 && cars.some(c => !c.userData.active)) {
+      const inactiveCar = cars.find(c => !c.userData.active);
+      if (inactiveCar) {
+        inactiveCar.userData.active = true;
+        inactiveCar.visible = true;
+        inactiveCar.position.set(-25, 0, 10.5);
+        inactiveCar.userData.speed = 4 + Math.random() * 3;
+      }
+      nextCarTime = 7 + Math.random() * 10;
+    }
+
+    cars.forEach(car => {
+      if (!car.userData.active) return;
+      car.position.x += car.userData.speed * dt;
+      if (car.position.x > 25) {
+        car.userData.active = false;
+        car.visible = false;
+      }
+    });
+
+    // ===== CEILING LIGHT FLICKER =====
+    if (!reduced && Math.random() < 0.02) {
+      const l = ceilingLights[Math.floor(Math.random() * ceilingLights.length)];
+      const original = 18;
+      l.intensity = original * (0.3 + Math.random() * 0.7);
+      setTimeout(() => { l.intensity = original; }, 60);
+    }
+  }
+
+  // ===== CAMERA =====
+  const inside = human.position.z < -1.15;
+  const distance = inside ? 2.8 : 6.6;
+  desired.set(
+    Math.sin(yaw) * distance,
+    inside ? 2.35 : 3.2 + pitch * 3,
+    Math.cos(yaw) * distance
+  ).add(human.position);
+
+  if (inside) {
+    desired.x = THREE.MathUtils.clamp(desired.x, -8, 8);
+    desired.z = THREE.MathUtils.clamp(desired.z, -10.4, -1.2);
+  }
+  look.copy(human.position).add(
+    new THREE.Vector3(-Math.sin(yaw) * 1.4, 1.5, -Math.cos(yaw) * 1.4)
+  );
+
+  camera.position.lerp(desired, 1 - Math.exp(-dt * 3.5));
+  camera.lookAt(look);
+
+  composer.render();
+}
+
+// ============================================================
+// [RESIZE]
+// ============================================================
+window.addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  composer.setSize(innerWidth, innerHeight);
+});
+
+document.addEventListener('visibilitychange', clearInput);
+
+
+// ============================================================
+// [PART 6 — ADVANCED FEATURES]
+// ============================================================
+
+// ============================================================
+// [1] SOUND EFFECTS MANAGER — مدیریت صداها
+// ============================================================
+const SoundManager = {
+  ctx: null,
+  master: null,
+  buffers: {},
+  enabled: false,
+
+  init() {
+    if (this.ctx) return;
+    try {
+      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      this.master = this.ctx.createGain();
+      this.master.gain.value = 0.3;
+      this.master.connect(this.ctx.destination);
+
+      // Generate procedural sounds (no external files needed)
+      this.buffers.footstep = this.makeFootstep();
+      this.buffers.doorOpen = this.makeDoorOpen();
+      this.buffers.machineHum = this.makeMachineHum();
+      this.buffers.spark = this.makeSpark();
+      this.buffers.notification = this.makeNotification();
+    } catch (e) {
+      console.warn('Audio not available:', e);
+    }
+  },
+
+  makeFootstep() {
+    const sr = this.ctx.sampleRate;
+    const buffer = this.ctx.createBuffer(1, sr * 0.15, sr);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      const t = i / sr;
+      data[i] = (Math.random() * 2 - 1) * Math.exp(-t * 30) * 0.6;
+    }
+    return buffer;
+  },
+
+  makeDoorOpen() {
+    const sr = this.ctx.sampleRate;
+    const buffer = this.ctx.createBuffer(1, sr * 1.2, sr);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      const t = i / sr;
+      const freq = 80 + t * 40;
+      data[i] = Math.sin(t * freq * Math.PI * 2) * Math.exp(-t * 1.5) * 0.4;
+      data[i] += (Math.random() * 2 - 1) * 0.05 * Math.exp(-t * 4);
+    }
+    return buffer;
+  },
+
+  makeMachineHum() {
+    const sr = this.ctx.sampleRate;
+    const buffer = this.ctx.createBuffer(1, sr * 3, sr);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      const t = i / sr;
+      data[i] = Math.sin(t * 120 * Math.PI * 2) * 0.15;
+      data[i] += Math.sin(t * 240 * Math.PI * 2) * 0.08;
+      data[i] += Math.sin(t * 60 * Math.PI * 2) * 0.1;
+    }
+    return buffer;
+  },
+
+  makeSpark() {
+    const sr = this.ctx.sampleRate;
+    const buffer = this.ctx.createBuffer(1, sr * 0.08, sr);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      const t = i / sr;
+      data[i] = (Math.random() * 2 - 1) * Math.exp(-t * 40) * 0.8;
+    }
+    return buffer;
+  },
+
+  makeNotification() {
+    const sr = this.ctx.sampleRate;
+    const buffer = this.ctx.createBuffer(1, sr * 0.4, sr);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      const t = i / sr;
+      data[i] = Math.sin(t * 880 * Math.PI * 2) * Math.exp(-t * 4) * 0.3;
+      data[i] += Math.sin(t * 1320 * Math.PI * 2) * Math.exp(-t * 5) * 0.15;
+    }
+    return buffer;
+  },
+
+  play(name, volume = 1, rate = 1) {
+    if (!this.enabled || !this.ctx || !this.buffers[name]) return;
+    const src = this.ctx.createBufferSource();
+    src.buffer = this.buffers[name];
+    src.playbackRate.value = rate;
+    const gain = this.ctx.createGain();
+    gain.gain.value = volume;
+    src.connect(gain);
+    gain.connect(this.master);
+    src.start();
+  },
+
+  enable() {
+    this.init();
+    this.enabled = true;
+    if (this.ctx && this.ctx.state === 'suspended') {
+      this.ctx.resume();
+    }
+  },
+
+  disable() {
+    this.enabled = false;
+  }
+};
+
+// ============================================================
+// [2] ADDITIONAL NPCs — کاراکترهای اضافی
+// ============================================================
+
+// --- NPC 2: Young Worker ---
+function createYoungWorker(x, z, rotation = 0) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  g.rotation.y = rotation;
+  interiorGroup.add(g);
+
+  const coatMat = new THREE.MeshStandardMaterial({ color: 0x2e5a4a, roughness: 0.85 });
+  const pantsMat = new THREE.MeshStandardMaterial({ color: 0x1a1a22, roughness: 0.9 });
+  const skinMat = new THREE.MeshStandardMaterial({ color: 0xc79a78, roughness: 0.72 });
+
+  // Body
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.22, 0.5, 6, 12), coatMat);
+  body.position.y = 1.25;
+  body.castShadow = true;
+  g.add(body);
+
+  // Reflector stripe
+  const stripeMat = new THREE.MeshStandardMaterial({
+    color: 0xf5e050,
+    emissive: 0xf5c020,
+    emissiveIntensity: 0.5
+  });
+  const stripe = new THREE.Mesh(new THREE.CylinderGeometry(0.225, 0.225, 0.05, 12), stripeMat);
+  stripe.position.y = 1.25;
+  g.add(stripe);
+
+  // Neck
+  cylinder(0.06, 0.08, 0.12, skinMat, 0, 1.68, 0, g);
+
+  // Head
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.14, 16, 12), skinMat);
+  head.scale.set(0.9, 1.15, 0.92);
+  head.position.y = 1.85;
+  head.castShadow = true;
+  g.add(head);
+
+  // Short hair
+  const hair = new THREE.Mesh(
+    new THREE.SphereGeometry(0.145, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.5),
+    new THREE.MeshStandardMaterial({ color: 0x1a1a1a, roughness: 0.9 })
+  );
+  hair.position.set(0, 1.9, 0);
+  g.add(hair);
+
+  // Safety helmet
+  const helmet = new THREE.Mesh(
+    new THREE.SphereGeometry(0.18, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.5),
+    new THREE.MeshStandardMaterial({ color: 0xf5c020, roughness: 0.4 })
+  );
+  helmet.position.set(0, 1.95, 0);
+  helmet.castShadow = true;
+  g.add(helmet);
+  cylinder(0.02, 0.02, 0.08, new THREE.MeshStandardMaterial({ color: 0xf5c020 }), 0, 2.1, 0, g, 8);
+
+  // Limbs
+  const legL = limb(g, -0.12, 0.92, 0, 0.4, 0.4, pantsMat);
+  const legR = limb(g, 0.12, 0.92, 0, 0.4, 0.4, pantsMat);
+  for (const leg of [legL, legR]) {
+    box(0.15, 0.11, 0.28, new THREE.MeshStandardMaterial({ color: 0x0d0d12 }), 0, -0.42, -0.06, leg.lower);
+  }
+  const armL = limb(g, -0.28, 1.55, 0, 0.3, 0.29, coatMat);
+  const armR = limb(g, 0.28, 1.55, 0, 0.3, 0.29, coatMat);
+  // Holding a wrench in right hand
+  armR.pivot.rotation.x = -0.7;
+  armR.lower.rotation.x = -0.9;
+  const wrench = box(0.05, 0.3, 0.05, mats.steel, 0, -0.3, 0.05, armR.lower);
+  sphere(0.06, mats.steel, 0, -0.15, 0.05, armR.lower, 8);
+
+  // Hands
+  for (const arm of [armL, armR]) {
+    const hand = new THREE.Mesh(new THREE.SphereGeometry(0.055, 10, 8), skinMat);
+    hand.position.y = -0.3;
+    arm.lower.add(hand);
+  }
+
+  g.userData = {
+    name: 'کارگر جوان',
+    dialogue: '«سلام! من امیرحسین‌ام، اپراتور دستگاه برش. استاد رضا اینجا خیلی چیز یادم داد.»',
+    lookAtPlayer: false
+  };
+
+  return g;
+}
+
+const worker = createYoungWorker(3, -8.5, Math.PI);
+worker.visible = false;
+
+// --- NPC 3: Customer (visiting) ---
+function createCustomer(x, z, rotation = 0) {
+  const g = new THREE.Group();
+  g.position.set(x, 0.36, z);
+  g.rotation.y = rotation;
+  interiorGroup.add(g);
+
+  // Business suit
+  const suitMat = new THREE.MeshStandardMaterial({ color: 0x1a2a3a, roughness: 0.7, metalness: 0.15 });
+  const shirtMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.6 });
+  const pantsMat = new THREE.MeshStandardMaterial({ color: 0x101820, roughness: 0.75 });
+  const skinMat = new THREE.MeshStandardMaterial({ color: 0xbb8a68, roughness: 0.72 });
+  const tieMat = new THREE.MeshStandardMaterial({ color: 0x8b2e2e, roughness: 0.6 });
+
+  // Body
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.24, 0.52, 6, 12), suitMat);
+  body.position.y = 1.28;
+  body.castShadow = true;
+  g.add(body);
+
+  // Shirt collar
+  box(0.2, 0.15, 0.15, shirtMat, 0, 1.62, 0.12, g);
+  // Tie
+  box(0.06, 0.4, 0.03, tieMat, 0, 1.45, 0.21, g);
+
+  // Neck
+  cylinder(0.06, 0.08, 0.12, skinMat, 0, 1.7, 0, g);
+
+  // Head
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 12), skinMat);
+  head.scale.set(0.9, 1.15, 0.92);
+  head.position.y = 1.88;
+  head.castShadow = true;
+  g.add(head);
+
+  // Modern hair
+  const hair = new THREE.Mesh(
+    new THREE.SphereGeometry(0.155, 16, 12, 0, Math.PI * 2, 0, Math.PI * 0.55),
+    new THREE.MeshStandardMaterial({ color: 0x0d0d0d, roughness: 0.9 })
+  );
+  hair.position.set(0, 1.94, 0);
+  g.add(hair);
+
+  // Limbs
+  const legL = limb(g, -0.13, 0.9, 0, 0.42, 0.42, pantsMat);
+  const legR = limb(g, 0.13, 0.9, 0, 0.42, 0.42, pantsMat);
+  for (const leg of [legL, legR]) {
+    box(0.15, 0.1, 0.3, new THREE.MeshStandardMaterial({ color: 0x0a0a0a, metalness: 0.4, roughness: 0.3 }), 0, -0.44, -0.07, leg.lower);
+  }
+  const armL = limb(g, -0.3, 1.58, 0, 0.32, 0.3, suitMat);
+  const armR = limb(g, 0.3, 1.58, 0, 0.32, 0.3, suitMat);
+
+  // Briefcase in left hand
+  const briefcase = new THREE.Group();
+  briefcase.position.set(0, -0.32, 0);
+  armL.lower.add(briefcase);
+  box(0.35, 0.25, 0.1, new THREE.MeshStandardMaterial({ color: 0x3a2515, roughness: 0.75 }), 0, 0, 0, briefcase);
+  box(0.15, 0.03, 0.12, mats.metal, 0, 0.14, 0, briefcase);
+
+  // Phone in right hand
+  armR.pivot.rotation.x = -0.6;
+  armR.lower.rotation.x = -1.2;
+  const phone = box(0.06, 0.12, 0.015, new THREE.MeshStandardMaterial({ color: 0x0a0a0a, emissive: 0x3355aa, emissiveIntensity: 0.5 }), 0, -0.3, 0, armR.lower);
+
+  // Hands
+  const handL = new THREE.Mesh(new THREE.SphereGeometry(0.06, 10, 8), skinMat);
+  handL.position.y = -0.32;
+  armL.lower.add(handL);
+  const handR = new THREE.Mesh(new THREE.SphereGeometry(0.06, 10, 8), skinMat);
+  handR.position.y = -0.32;
+  armR.lower.add(handR);
+
+  g.userData = {
+    name: 'مشتری',
+    dialogue: '«سلام. من اومدم برای خرید یک دستگاه حکاکی. استاد رضا گفت امروز بیام کارگاه ببینم.»',
+    lookAtPlayer: true
+  };
+
+  return g;
+}
+
+const customer = createCustomer(5.5, -3, Math.PI * 0.8);
+customer.visible = false;
+
+// ============================================================
+// [3] ACHIEVEMENTS SYSTEM — سیستم دستاوردها
+// ============================================================
+const AchievementSystem = {
+  list: [
+    { id: 'firstStep', icon: '👣', title: 'اولین قدم', desc: 'اولین حرکت در خیابان', unlocked: false },
+    { id: 'sawSign', icon: '🏮', title: 'نور نئون', desc: 'تابلوی کارگاه را دیدی', unlocked: false },
+    { id: 'entered', icon: '🚪', title: 'ورود', desc: 'وارد کارگاه شدی', unlocked: false },
+    { id: 'touchedMachine', icon: '⚙️', title: 'لمس صنعت', desc: 'اولین دستگاه را بررسی کردی', unlocked: false },
+    { id: 'allMachines', icon: '🏭', title: 'کارشناس', desc: 'هر ۴ دستگاه را بررسی کردی', unlocked: false },
+    { id: 'behindScene', icon: '🔧', title: 'پشت صحنه', desc: 'به قفسه‌ها و ابزارها نزدیک شدی', unlocked: false },
+    { id: 'metMaster', icon: '🎓', title: 'دیدار با استاد', desc: 'استاد رضا را دیدی', unlocked: false },
+    { id: 'metWorker', icon: '👨‍🔧', title: 'آشنایی', desc: 'با کارگر جوان آشنا شدی', unlocked: false },
+    { id: 'metCustomer', icon: '💼', title: 'مشتری', desc: 'با مشتری صحبت کردی', unlocked: false },
+    { id: 'photographer', icon: '📸', title: 'عکاس', desc: 'از صحنه عکس گرفتی', unlocked: false },
+    { id: 'explorer', icon: '🧭', title: 'کاوشگر', desc: 'همه فصل‌ها را کامل کردی', unlocked: false },
+    { id: 'nightOwl', icon: '🦉', title: 'شب‌زنده‌دار', desc: '۵ دقیقه در صحنه ماندی', unlocked: false },
+  ],
+
+  unlockedCount: 0,
+
+  unlock(id) {
+    const ach = this.list.find(a => a.id === id);
+    if (!ach || ach.unlocked) return;
+    ach.unlocked = true;
+    this.unlockedCount++;
+    this.showNotification(ach);
+    SoundManager.play('notification', 0.6);
+    this.updateHUD();
+  },
+
+  showNotification(ach) {
+    const notif = document.createElement('div');
+    notif.className = 'achievement-toast';
+    notif.innerHTML = `
+      <div class="achievement-icon">${ach.icon}</div>
+      <div class="achievement-body">
+        <div class="achievement-label">دستاورد جدید</div>
+        <div class="achievement-title">${ach.title}</div>
+        <div class="achievement-desc">${ach.desc}</div>
+      </div>
+    `;
+    document.body.appendChild(notif);
+    requestAnimationFrame(() => notif.classList.add('show'));
+    setTimeout(() => {
+      notif.classList.remove('show');
+      setTimeout(() => notif.remove(), 500);
+    }, 3500);
+  },
+
+  updateHUD() {
+    const counter = document.getElementById('ach-counter');
+    if (counter) {
+      counter.textContent = `${this.unlockedCount} / ${this.list.length}`;
+    }
+  }
+};
+
+// ============================================================
+// [4] STATS HUD — نمایش آمار
+// ============================================================
+const StatsHUD = {
+  startTime: Date.now(),
+  distanceWalked: 0,
+  machinesViewed: new Set(),
+
+  updateDistance(prev, next) {
+    const dx = next.x - prev.x;
+    const dz = next.z - prev.z;
+    this.distanceWalked += Math.sqrt(dx * dx + dz * dz);
+  },
+
+  getElapsedTime() {
+    return Math.floor((Date.now() - this.startTime) / 1000);
+  },
+
+  render() {
+    const hud = document.getElementById('stats-hud');
+    if (!hud) return;
+    const elapsed = this.getElapsedTime();
+    const min = Math.floor(elapsed / 60);
+    const sec = elapsed % 60;
+    hud.innerHTML = `
+      <div class="stats-item">
+        <span class="stats-label">زمان</span>
+        <span class="stats-value">${min}:${String(sec).padStart(2, '0')}</span>
+      </div>
+      <div class="stats-item">
+        <span class="stats-label">مسافت</span>
+        <span class="stats-value">${this.distanceWalked.toFixed(1)} m</span>
+      </div>
+      <div class="stats-item">
+        <span class="stats-label">دستگاه‌ها</span>
+        <span class="stats-value">${this.machinesViewed.size} / 4</span>
+      </div>
+      <div class="stats-item">
+        <span class="stats-label">دستاورد</span>
+        <span class="stats-value" id="ach-counter">${AchievementSystem.unlockedCount} / ${AchievementSystem.list.length}</span>
+      </div>
+    `;
+  }
+};
+
+// ============================================================
+// [5] PHOTO MODE — حالت عکاسی
+// ============================================================
+let photoMode = false;
+let photoModeYaw = 0;
+let photoModeDistance = 3;
+
+function enterPhotoMode() {
+  photoMode = true;
+  document.body.classList.add('photo-mode');
+  showNarrative('حالت عکاسی', 'با موس بچرخان · با اسکرول زوم کن · Space برای عکس · Esc برای خروج');
+  AchievementSystem.unlock('photographer');
+}
+
+function exitPhotoMode() {
+  photoMode = false;
+  document.body.classList.remove('photo-mode');
+}
+
+function takePhotoInMode() {
+  composer.render();
+  const dataUrl = renderer.domElement.toDataURL('image/png');
+  const link = document.createElement('a');
+  link.download = 'sahand-photo-' + Date.now() + '.png';
+  link.href = dataUrl;
+  link.click();
+  say('📸 عکس ثبت شد!');
+}
+
+// Keyboard for photo mode
+window.addEventListener('keydown', e => {
+  if (e.code === 'KeyP') {
+    if (!photoMode) enterPhotoMode();
+    else exitPhotoMode();
+  }
+  if (photoMode && e.code === 'Space') {
+    e.preventDefault();
+    takePhotoInMode();
+  }
+  if (photoMode && e.code === 'Escape') {
+    exitPhotoMode();
+  }
+});
+
+// ============================================================
+// [6] TUTORIAL SYSTEM — آموزش تعاملی
+// ============================================================
+const Tutorial = {
+  steps: [
+    { text: 'برای حرکت، کلید W را نگه دار', keys: ['W'], duration: 4000 },
+    { text: 'برای چرخش دوربین، موس را بکش', action: 'drag', duration: 4000 },
+    { text: 'برای تعامل با دستگاه، رویش کلیک کن', action: 'click', duration: 4000 },
+    { text: 'برای شروع داستان، دکمه «شروع داستان» را بزن', action: 'visit', duration: 5000 }
+  ],
+  currentStep: 0,
+  active: false,
+  startTime: 0,
+
+  start() {
+    this.active = true;
+    this.currentStep = 0;
+    this.startTime = Date.now();
+    this.showStep();
+  },
+
+  showStep() {
+    const step = this.steps[this.currentStep];
+    if (!step) return this.finish();
+    const overlay = document.getElementById('tutorial-overlay');
+    if (!overlay) return;
+    overlay.innerHTML = `
+      <div class="tutorial-card">
+        <div class="tutorial-icon">${this.currentStep + 1} / ${this.steps.length}</div>
+        <div class="tutorial-text">${step.text}</div>
+        <div class="tutorial-hint">Enter برای ادامه · Esc برای بستن</div>
+        <div><button type="button" data-tutorial-next>ادامه</button><button type="button" data-tutorial-close>بستن آموزش</button></div>
+      </div>
+    `;
+    overlay.classList.add('show');
+    this.startTime = Date.now();
+  },
+
+  next() {
+    this.currentStep++;
+    if (this.currentStep >= this.steps.length) {
+      this.finish();
+    } else {
+      this.showStep();
+    }
+  },
+
+  finish() {
+    this.active = false;
+    const overlay = document.getElementById('tutorial-overlay');
+    if (overlay) overlay.classList.remove('show');
+  }
+};
+
+window.addEventListener('keydown', e => {
+  if (Tutorial.active && e.code === 'Enter') Tutorial.next();
+  if (Tutorial.active && e.code === 'Escape') Tutorial.finish();
+});
+
+// ============================================================
+// [7] AUTO DAY/NIGHT CYCLE — چرخه خودکار زمان
+// ============================================================
+const DayNightCycle = {
+  enabled: false,
+  phase: 0, // 0 = night, 0.5 = day
+  speed: 0.005, // full cycle in ~200 seconds
+
+  update(dt) {
+    if (!this.enabled) return;
+    this.phase = (this.phase + dt * this.speed) % 1;
+
+    // Determine day/night
+    const isDay = this.phase > 0.25 && this.phase < 0.75;
+
+    // Interpolate sky color
+    const nightColor = new THREE.Color(0x040911);
+    const dayColor = new THREE.Color(0x1a3a5c);
+    const dawnColor = new THREE.Color(0x8b4a3a);
+
+    let skyColor;
+    if (this.phase < 0.25) {
+      // Dawn: night -> dawn -> day
+      const t = this.phase / 0.25;
+      skyColor = nightColor.clone().lerp(dawnColor, t);
+    } else if (this.phase < 0.5) {
+      // Morning
+      const t = (this.phase - 0.25) / 0.25;
+      skyColor = dawnColor.clone().lerp(dayColor, t);
+    } else if (this.phase < 0.75) {
+      // Afternoon
+      const t = (this.phase - 0.5) / 0.25;
+      skyColor = dayColor.clone().lerp(dawnColor, t);
+    } else {
+      // Evening
+      const t = (this.phase - 0.75) / 0.25;
+      skyColor = dawnColor.clone().lerp(nightColor, t);
+    }
+    scene.background = skyColor;
+
+    // Moon intensity
+    const moonIntensity = 0.3 + (1 - Math.abs(Math.sin(this.phase * Math.PI))) * 1.5;
+    moon.intensity = moonIntensity;
+
+    // Stars visibility
+    const starOpacity = 1 - Math.max(0, Math.sin(this.phase * Math.PI));
+    stars.material.opacity = starOpacity * 0.9;
+
+    // Hemi intensity
+    hemi.intensity = 0.5 + starOpacity * 0.8;
+  },
+
+  toggle() {
+    this.enabled = !this.enabled;
+    return this.enabled;
+  }
+};
+
+// ============================================================
+// [8] 3D PRODUCT SHOWCASE PANEL — پنل محصولات سه‌بعدی
+// ============================================================
+const ProductShowcase = {
+  visible: false,
+  products: [
+    {
+      id: 'CT-001',
+      name: 'برش لیزر فایبر',
+      icon: '🔪',
+      color: 0x1E2A5E,
+      specs: ['توان ۱-۱۲ کیلووات', 'ابعاد ۳۰۱۵/۴۰۲۰/۶۰۲۰', 'دقت ±۰.۰۳ mm'],
+      description: 'دستگاه برش لیزر فایبر CNC برای ورق‌های فلزی'
+    },
+    {
+      id: 'WL-001',
+      name: 'جوشکار لیزری دستی',
+      icon: '🔥',
+      color: 0xA61C1C,
+      specs: ['توان ۸۰۰-۲۰۰۰W', 'سه‌کاره', 'هواخنک'],
+      description: 'جوشکار لیزری دستی فیبر نوری'
+    },
+    {
+      id: 'ML-001',
+      name: 'حکاکی لیزر',
+      icon: '✍️',
+      color: 0x333333,
+      specs: ['توان ۳۰ وات', 'دقت میکرونی', 'عمر ۱۰۰,۰۰۰h'],
+      description: 'دستگاه حکاکی و مارکینگ لیزری فایبر'
+    },
+    {
+      id: 'CL-001',
+      name: 'تمیزکاری لیزری',
+      icon: '✨',
+      color: 0x0E5E4A,
+      specs: ['توان ۲۰۰W', 'پرتابل', 'بدون مواد شیمیایی'],
+      description: 'دستگاه تمیزکاری لیزری پرتابل'
+    }
+  ],
+
+  open() {
+    this.visible = true;
+    const panel = document.getElementById('product-showcase');
+    if (!panel) return;
+    panel.classList.add('open');
+    this.render();
+  },
+
+  close() {
+    this.visible = false;
+    const panel = document.getElementById('product-showcase');
+    if (panel) panel.classList.remove('open');
+  },
+
+  render() {
+    const grid = document.getElementById('product-grid');
+    if (!grid) return;
+    grid.innerHTML = this.products.map(p => `
+      <div class="product-card" onclick="viewProduct('${p.id}')">
+        <div class="product-icon">${p.icon}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-specs">
+          ${p.specs.map(s => `<span>${s}</span>`).join('')}
+        </div>
+        <div class="product-link">
+          مشاهده جزئیات <span>→</span>
+        </div>
+      </div>
+    `).join('');
+  }
+};
+
+window.viewProduct = function(id) {
+  window.location.href = 'https://sahandlaser.com/#product=' + id;
+};
+
+// ============================================================
+// [9] INTERACTIVE NPC DIALOGUES
+// ============================================================
+const NPCs = [
+  {
+    obj: npc,
+    name: 'استاد رضا',
+    dialogues: [
+      '«سلام رفیق. اینجا هر دستگاه، یک داستان دارد.»',
+      '«این کارگاه رو با دست‌های خودم ساختم. ۱۳ ساله اینجام.»',
+      '«هر کدوم از این دستگاه‌ها یه بچه‌ی منه. صبح‌ها با هم بیدار می‌شیم، شب‌ها با هم می‌خوابیم.»',
+      '«اگه بخوای، می‌تونم درباره‌ی هر کدوم برات توضیح بدم.»'
+    ],
+    currentIndex: 0,
+    achievement: 'metMaster'
+  },
+  {
+    obj: worker,
+    name: 'امیرحسین (کارگر جوان)',
+    dialogues: [
+      '«سلام! من امیرحسین‌ام، اپراتور دستگاه برش.»',
+      '«استاد رضا اینجا خیلی چیز یادم داد. الان خودم می‌تونم دستگاه رو راه‌اندازی کنم.»',
+      '«کار با لیزر یه حس خاصی داره — مثل این‌که با نور نقاشی می‌کشی.»',
+      '«بهترین بخش کارم اینه که هر روز یه چیز جدید یاد می‌گیرم.»'
+    ],
+    currentIndex: 0,
+    achievement: 'metWorker'
+  },
+  {
+    obj: customer,
+    name: 'مشتری',
+    dialogues: [
+      '«سلام. من اومدم برای خرید یک دستگاه حکاکی.»',
+      '«استاد رضا گفت امروز بیام کارگاه ببینم. واقعاً که اینجا حرفه‌ای‌ست.»',
+      '«من قبلاً از یه شرکت دیگه خرید کردم، ولی پشتیبانی‌شون ضعیف بود.»',
+      '«شنیدم سهند لیزر پشتیبانی‌شون عالیه — برای همین اینجا اومدم.»'
+    ],
+    currentIndex: 0,
+    achievement: 'metCustomer'
+  }
+];
+
+function cycleNPCDialogue(npcEntry) {
+  npcEntry.currentIndex = (npcEntry.currentIndex + 1) % npcEntry.dialogues.length;
+  showNarrative(npcEntry.name, npcEntry.dialogues[npcEntry.currentIndex]);
+  if (npcEntry.achievement) {
+    AchievementSystem.unlock(npcEntry.achievement);
+  }
+  SoundManager.play('notification', 0.4);
+}
+
+// Extend click handler to include NPCs
+const originalClickHandler = renderer.domElement.onclick;
+renderer.domElement.addEventListener('click', (e) => {
+  if (drag) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  mouseVec.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouseVec.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouseVec, camera);
+
+  // Check NPCs
+  for (const npcEntry of NPCs) {
+    if (!npcEntry.obj.visible) continue;
+    const hits = raycaster.intersectObject(npcEntry.obj, true);
+    if (hits.length > 0) {
+      cycleNPCDialogue(npcEntry);
+      return;
+    }
+  }
+
+  // Track machine views for achievements
+  const machines = [
+    { obj: machine1.group, id: 1 },
+    { obj: machine2.group, id: 2 },
+    { obj: machine3.group, id: 3 },
+    { obj: machine4.group, id: 4 }
+  ];
+  for (const m of machines) {
+    const hits = raycaster.intersectObject(m.obj, true);
+    if (hits.length > 0) {
+      StatsHUD.machinesViewed.add(m.id);
+      AchievementSystem.unlock('touchedMachine');
+      if (StatsHUD.machinesViewed.size === 4) {
+        AchievementSystem.unlock('allMachines');
+      }
+      StatsHUD.render();
+      return;
+    }
+  }
+});
+
+// ============================================================
+// [10] EXTEND KEYBOARD SHORTCUTS
+// ============================================================
+window.addEventListener('keydown', e => {
+  // P for Photo Mode
+  // T for Tutorial restart
+  if (e.code === 'KeyT') Tutorial.start();
+  // G for Gallery (product showcase)
+  if (e.code === 'KeyG') {
+    if (ProductShowcase.visible) ProductShowcase.close();
+    else ProductShowcase.open();
+  }
+  // C for Day/Night cycle toggle
+  if (e.code === 'KeyC') {
+    const enabled = DayNightCycle.toggle();
+    say(enabled ? '🌅 چرخه خودکار روز/شب فعال شد' : '🌙 چرخه خودکار خاموش شد');
+  }
+});
+
+// ============================================================
+// [11] HOOK INTO EXISTING SYSTEM
+// ============================================================
+
+// Extend startChapter to unlock achievements
+const originalStartChapter = startChapter;
+startChapter = function(chapterNum) {
+  originalStartChapter(chapterNum);
+  if (chapterNum === 1) AchievementSystem.unlock('firstStep');
+  if (chapterNum === 3) AchievementSystem.unlock('entered');
+  if (chapterNum === 4) AchievementSystem.unlock('behindScene');
+  if (chapterNum === 5) AchievementSystem.unlock('metMaster');
+  if (chapterNum === 6) {
+    AchievementSystem.unlock('explorer');
+    // Show all NPCs in final chapter
+    worker.visible = true;
+    customer.visible = true;
+  }
+};
+
+// Distance is measured in the main movement step.
+
+// Hook into say() to detect chapter progression
+const originalSay = say;
+
+// ============================================================
+// [12] INITIALIZE PART 6 FEATURES
+// ============================================================
+
+// Add to DOM: HUD, Achievement Toast CSS, Product Panel, Tutorial Overlay
+function injectPart6UI() {
+  // Stats HUD
+  const statsHud = document.createElement('div');
+  statsHud.id = 'stats-hud';
+  statsHud.className = 'stats-hud';
+  document.body.appendChild(statsHud);
+
+  // Tutorial Overlay
+  const tutOverlay = document.createElement('div');
+  tutOverlay.id = 'tutorial-overlay';
+  tutOverlay.className = 'tutorial-overlay';
+  document.body.appendChild(tutOverlay);
+
+  // Product Showcase
+  const prodShowcase = document.createElement('div');
+  prodShowcase.id = 'product-showcase';
+  prodShowcase.className = 'product-showcase';
+  prodShowcase.innerHTML = `
+    <div class="product-showcase-inner">
+      <button class="product-close" onclick="ProductShowcase.close()">×</button>
+      <h2>محصولات ما</h2>
+      <p>چهار دسته اصلی لیزر فایبر سهند</p>
+      <div id="product-grid" class="product-grid"></div>
+      <button class="product-site-btn" onclick="window.location.href='https://sahandlaser.com/#products'">
+        مشاهده همه محصولات در سایت
+      </button>
+    </div>
+  `;
+  document.body.appendChild(prodShowcase);
+
+  // Photo mode badge
+  const photoBadge = document.createElement('div');
+  photoBadge.id = 'photo-badge';
+  photoBadge.className = 'photo-badge';
+  photoBadge.innerHTML = '📸 حالت عکاسی — Space برای عکس · Esc خروج';
+  document.body.appendChild(photoBadge);
+}
+
+// Styles for Part 6
+function injectPart6Styles() {
+  const style = document.createElement('style');
+  style.textContent = `
+    /* Achievement Toast */
+    .achievement-toast {
+      position: fixed;
+      top: 90px;
+      left: 24px;
+      z-index: 100;
+      background: linear-gradient(135deg, #0a2a3a, #061a28);
+      border: 1px solid #c9a976;
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 340px;
+      transform: translateX(-120%);
+      transition: transform .5s cubic-bezier(.4,0,.2,1);
+      box-shadow: 0 10px 30px rgba(0,0,0,.6), 0 0 30px rgba(201,169,118,.3);
+      backdrop-filter: blur(12px);
+    }
+    .achievement-toast.show { transform: translateX(0); }
+    .achievement-icon {
+      width: 40px; height: 40px;
+      background: #c9a9761a;
+      border: 1px solid #c9a976;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .achievement-body { flex: 1; min-width: 0; }
+    .achievement-label {
+      font-size: 9px;
+      color: #c9a976;
+      letter-spacing: 3px;
+      margin-bottom: 4px;
+    }
+    .achievement-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #d7fcff;
+      margin-bottom: 3px;
+    }
+    .achievement-desc {
+      font-size: 11px;
+      color: #8ba8bd;
+    }
+
+    /* Stats HUD */
+    .stats-hud {
+      position: fixed;
+      top: 22px;
+      left: 22px;
+      z-index: 5;
+      background: #06121eb8;
+      backdrop-filter: blur(12px);
+      border: 1px solid #4a8fb033;
+      border-radius: 12px;
+      padding: 10px 16px;
+      display: flex;
+      gap: 18px;
+      font-size: 11px;
+      transition: opacity .3s;
+    }
+    .stats-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+    .stats-label {
+      color: #6f8ba2;
+      font-size: 9px;
+      letter-spacing: 1px;
+    }
+    .stats-value {
+      color: #d7fcff;
+      font-weight: 600;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+    }
+
+    /* Tutorial Overlay */
+    .tutorial-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 25;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(2, 6, 12, .5);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .4s;
+    }
+    .tutorial-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .tutorial-card {
+      background: linear-gradient(135deg, #0a2a3a, #061a28);
+      border: 1px solid #6fddff;
+      border-radius: 16px;
+      padding: 28px 36px;
+      text-align: center;
+      max-width: 440px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.7), 0 0 40px rgba(111,221,255,.2);
+    }
+    .tutorial-icon {
+      font-size: 11px;
+      color: #78c9e7;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+    .tutorial-text {
+      font-size: 17px;
+      color: #d7fcff;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .tutorial-hint {
+      font-size: 10px;
+      color: #6f8ba2;
+      letter-spacing: 1px;
+    }
+
+    /* Product Showcase Panel */
+    .product-showcase {
+      position: fixed;
+      inset: 0;
+      z-index: 28;
+      background: rgba(2, 6, 12, .85);
+      backdrop-filter: blur(12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .4s;
+      overflow-y: auto;
+    }
+    .product-showcase.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .product-showcase-inner {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 30px;
+      position: relative;
+    }
+    .product-close {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      background: #1a2c3c;
+      border: 1px solid #6fddff44;
+      color: #d7fcff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .product-showcase h2 {
+      font-size: 28px;
+      color: #d7fcff;
+      text-align: center;
+      margin: 0 0 8px;
+      font-weight: 400;
+    }
+    .product-showcase p {
+      text-align: center;
+      color: #8ba8bd;
+      margin: 0 0 36px;
+      font-size: 14px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: linear-gradient(135deg, #0a1a2a, #06121e);
+      border: 1px solid #4a8fb044;
+      border-radius: 14px;
+      padding: 22px;
+      cursor: pointer;
+      transition: all .3s;
+      text-align: center;
+    }
+    .product-card:hover {
+      border-color: #6fddff;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(111,221,255,.2);
+    }
+    .product-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+    .product-name {
+      font-size: 15px;
+      color: #d7fcff;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .product-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 16px;
+    }
+    .product-specs span {
+      font-size: 11px;
+      color: #8ba8bd;
+      padding: 4px 8px;
+      background: #0a1828;
+      border-radius: 6px;
+    }
+    .product-link {
+      font-size: 12px;
+      color: #78c9e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .product-site-btn {
+      display: block;
+      margin: 40px auto 0;
+      padding: 14px 32px;
+      font-size: 13px;
+      background: linear-gradient(135deg, #0a3a56, #062238);
+      border: 1px solid #4a8fb0aa;
+      border-radius: 12px;
+      color: #c8e8f7;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all .3s;
+    }
+    .product-site-btn:hover {
+      background: linear-gradient(135deg, #0e4a6e, #083250);
+      border-color: #6fddff;
+      color: #fff;
+    }
+
+    /* Photo Badge */
+    .photo-badge {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      z-index: 30;
+      background: #a61c1ce6;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-size: 13px;
+      pointer-events: none;
+      transition: transform .3s;
+      letter-spacing: 1px;
+    }
+    body.photo-mode .photo-badge {
+      transform: translate(-50%, 280px) scale(1);
+    }
+    body.photo-mode .toolbar,
+    body.photo-mode .story-caption,
+    body.photo-mode .chapter-list,
+    body.photo-mode .chapter-progress,
+    body.photo-mode .stats-hud,
+    body.photo-mode .controls { opacity: 0; pointer-events: none; }
+    body.photo-mode header { opacity: .3; }
+    body.photo-mode .title { opacity: 0; }
+
+    @media (max-width: 650px) {
+      .achievement-toast { max-width: 260px; padding: 10px 14px; top: 70px; left: 12px; }
+      .achievement-icon { width: 34px; height: 34px; font-size: 18px; }
+      .achievement-title { font-size: 12px; }
+      .achievement-desc { font-size: 10px; }
+      .stats-hud { top: 14px; left: 14px; padding: 8px 12px; gap: 12px; font-size: 10px; }
+      .stats-value { font-size: 11px; }
+      .tutorial-card { padding: 20px 24px; margin: 20px; }
+      .tutorial-text { font-size: 14px; }
+      .product-showcase-inner { padding: 20px 16px; margin: 30px auto; }
+      .product-showcase h2 { font-size: 22px; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+// ============================================================
+// [13] FINAL INIT
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+  injectPart6UI();
+  injectPart6Styles();
+  StatsHUD.render();
+
+  // Update stats every 1 second
+  setInterval(() => StatsHUD.render(), 1000);
+
+  // Hook SoundManager to sound button
+  const soundBtn = document.getElementById('sound');
+  if (soundBtn) {
+    const originalHandler = soundBtn.onclick;
+    soundBtn.onclick = (e) => {
+      SoundManager.enable();
+      if (originalHandler) originalHandler(e);
+    };
+  }
+
+  // Auto-start tutorial after intro
+  setTimeout(() => {
+    Tutorial.start();
+  }, 4000);
+
+  // Night owl achievement (5 minutes)
+  setTimeout(() => AchievementSystem.unlock('nightOwl'), 5 * 60 * 1000);
+
+  // Add console welcome
+  console.log('%c🎬 سهند لیزر — روایت تعاملی', 'font-size: 18px; color: #78c9e7; font-weight: bold;');
+  console.log('%cمیان‌برهای کیبورد:', 'font-size: 12px; color: #c9a976;');
+  console.log('  P — حالت عکاسی');
+  console.log('  G — گالری محصولات');
+  console.log('  T — آموزش');
+  console.log('  C — چرخه روز/شب');
+  console.log('  R — ریست · F — تمام صفحه · H — راهنما');
+});
+
+// ============================================================
+// [14] EXTEND ANIMATION LOOP FOR PART 6
+// ============================================================
+const part6Update = (dt) => {
+  // Day/Night cycle
+  DayNightCycle.update(dt);
+
+  // NPC animations
+  if (worker.visible) {
+    const t = performance.now() * 0.001;
+    worker.rotation.y += Math.sin(t * 0.5) * 0.002;
+  }
+  if (customer.visible) {
+    const t = performance.now() * 0.001;
+    customer.position.x = 5.5 + Math.sin(t * 0.4) * 0.3;
+  }
+
+  // Photo mode camera override
+  if (photoMode) {
+    const dist = photoModeDistance;
+    const targetX = human.position.x + Math.sin(photoModeYaw) * dist;
+    const targetZ = human.position.z + Math.cos(photoModeYaw) * dist;
+    camera.position.lerp(
+      new THREE.Vector3(targetX, 1.8, targetZ),
+      0.1
+    );
+    camera.lookAt(human.position.x, 1.4, human.position.z);
+  }
+};
+
+// Advanced effects are updated by the single main animation loop.
+
+// ============================================================
+// [15] PHOTO MODE CAMERA CONTROLS
+// ============================================================
+document.addEventListener('wheel', (e) => {
+  if (photoMode) {
+    e.preventDefault();
+    photoModeDistance = THREE.MathUtils.clamp(
+      photoModeDistance + e.deltaY * 0.005,
+      1.5, 10
+    );
+  }
+}, { passive: false });
+
+// Photo dragging is handled by the main pointer handler.
+
+console.log('%c✅ بخش ۶ با موفقیت بارگذاری شد', 'color: #22ee77; font-size: 14px;');
+
+window.ProductShowcase = ProductShowcase;
+document.addEventListener('click', e => {
+  if (e.target.closest('[data-tutorial-next]')) Tutorial.next();
+  if (e.target.closest('[data-tutorial-close]')) Tutorial.finish();
+});
+
+// ============================================================
+// [START]
+// ============================================================
+reset();
+setProgress(100, 'آماده!');
+status.textContent = 'صحنه آماده است';
+document.getElementById('loading').classList.add('done');
+setTimeout(() => {
+  document.getElementById('loading').hidden = true;
+}, 800);
+
+// Start the story after loading
+setTimeout(() => {
+  openChapterIntro(1);
+}, 2000);
+
+animate();
+
+</script>
+</body>
+</html>
