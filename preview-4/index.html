@@ -1192,7 +1192,7 @@ previousRoute();if(location.hash==='#products')draw();
 document.addEventListener('DOMContentLoaded',()=>{
 ['products-grid-1','products-grid-2','full-catalog-section'].forEach(id=>{const el=document.getElementById(id);if(el){el.hidden=true;const heading=el.previousElementSibling;if(heading?.tagName==='H2')heading.hidden=true}});
 const menu=document.querySelector('#view-products');menu.querySelectorAll('[data-i18n="products_full_desc"]').forEach(p=>p.textContent='دسته و گروه را همین‌جا انتخاب کنید و مستقیم وارد صفحه محصول شوید.');
-const dropdown=document.querySelector('header .dropdown-menu, header .dropdown-content');
+const dropdown=document.querySelector('header .menu-dropdown-content');
 if(dropdown){dropdown.innerHTML='<a href="preview-4/#catalog=cutting&family=3015">برش 3015</a><a href="preview-4/#catalog=cutting&family=6020">برش 6020</a>'+Object.entries(categories).map(([id,name])=>'<a href="preview-4/#catalog='+id+'&family=3015">'+name+'</a>').join('')}
 draw();window.applyRoute();
 });
