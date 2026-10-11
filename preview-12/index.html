@@ -1,1 +1,146 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Preview 12</title><style>html,body{margin:0;height:100%;background:#f4f7fb}iframe{width:100%;height:100%;border:0;display:block}</style></head><body><iframe title="Sahand Laser Preview 12" src="../preview-experiments/site.html?taxonomy=&amp;theme=emerald#home"></iframe></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>پیش نمایش ۱۲ | Sahand Laser</title><meta name="robots" content="noindex"><style>
+*{box-sizing:border-box}body{margin:0;background:#050b13;color:#eef5f6;font-family:Arial,sans-serif;overflow:hidden}canvas{display:block}#veil{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 35%,#02081375 100%)}header{position:fixed;left:36px;top:32px;pointer-events:none}small{font-size:10px;letter-spacing:4px;color:#a4c5d4}h1{font-size:24px;font-weight:400;letter-spacing:3px;margin:12px 0}header p{color:#88a4b5;font-size:11px;letter-spacing:2px}footer{position:fixed;bottom:30px;left:36px;right:36px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#b7c8d2;gap:20px}.keys{display:flex;gap:7px;align-items:center}kbd,button{background:#0b192c90;border:1px solid #7597b43b;border-radius:5px;color:#d8e6ed;padding:9px;font:11px Arial}button{cursor:pointer;backdrop-filter:blur(12px)}button:hover{border-color:#9bcbeb}#status{position:fixed;inset:0;display:grid;place-items:center;background:#06101d;z-index:4;text-align:center;padding:30px;color:#9dc9de;font-size:13px;letter-spacing:2px}#touch{display:none;position:fixed;bottom:92px;left:26px;grid-template-columns:repeat(3,42px);gap:5px}#touch button{height:42px;touch-action:none}@media(pointer:coarse){#touch{display:grid}.desktop{display:none}}@media(max-width:600px){header{left:22px;top:22px}footer{left:22px;right:22px;bottom:22px}h1{font-size:20px}.keys{font-size:9px}}
+</style><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script></head><body>
+<div id="status">ENTERING ISFAHAN<br><span style="font-size:10px;opacity:.6">Preparing rain and reflections…</span></div><div id="veil"></div><header><small>ISFAHAN / 32.65° N · 51.67° E</small><h1>پیش نمایش ۱۲</h1><p>SAHAND LASER · NIGHT STUDY</p></header><footer><div class="keys"><span class="desktop"><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> &nbsp; WALK &nbsp; · &nbsp; DRAG TO LOOK</span><span id="weather">RAIN / 22:48</span></div><div><button id="quality">QUALITY: BALANCED</button> <button id="reset">RESET VIEW</button></div></footer><div id="touch"><span></span><button data-key="KeyW">↑</button><span></span><button data-key="KeyA">←</button><button data-key="KeyS">↓</button><button data-key="KeyD">→</button></div>
+<script type="module">
+import * as THREE from 'three';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
+import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {Reflector} from 'three/addons/objects/Reflector.js';
+const status=document.getElementById('status');
+try {
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x050b16);scene.fog=new THREE.FogExp2(0x091323,.032);
+const camera=new THREE.PerspectiveCamera(48,innerWidth/innerHeight,.1,120);
+const renderer=new THREE.WebGLRenderer({antialias:false,powerPreference:'high-performance'});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,1));renderer.shadowMap.enabled=false;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;document.body.prepend(renderer.domElement);
+const composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.65,.55,1.05);composer.addPass(bloom);composer.addPass(new OutputPass());
+const rand=(a,b)=>a+Math.random()*(b-a);const materials=new Map();const mat=(c,r=.5,m=0)=>{const key=c+':'+r+':'+m;if(!materials.has(key))materials.set(key,new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:m}));return materials.get(key)};
+const brickCanvas=document.createElement('canvas');brickCanvas.width=1024;brickCanvas.height=1024;const bc=brickCanvas.getContext('2d');bc.fillStyle='#373130';bc.fillRect(0,0,1024,1024);for(let y=0;y<16;y++)for(let x=-1;x<9;x++){const v=Math.floor(rand(57,95));bc.fillStyle=`rgb(${v+20},${v+5},${v-9})`;bc.fillRect(x*128+(y%2)*64+3,y*64+3,122,58);for(let j=0;j<70;j++){bc.fillStyle=Math.random()>.5?'#ffffff08':'#00000018';bc.fillRect(x*128+(y%2)*64+rand(4,120),y*64+rand(4,58),rand(1,5),2)}}const bricks=new THREE.CanvasTexture(brickCanvas);bricks.wrapS=bricks.wrapT=THREE.RepeatWrapping;bricks.repeat.set(2,1);bricks.colorSpace=THREE.SRGBColorSpace;const masonry=mat(0xaaa197,.94);masonry.map=bricks;masonry.bumpMap=bricks;masonry.bumpScale=.075;
+const metal=mat(0x31414b,.26,.85),dark=mat(0x111b22,.48,.6),white=mat(0xc4c9c6,.34,.25),blue=mat(0x125d81,.3,.55),stone=mat(0x645d50,.9);
+function box(w,h,d,x,y,z,material,parent=scene){const mesh=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),material);mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh}
+function cyl(rt,rb,h,x,y,z,material,parent=scene){const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,20),material);mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh}
+function tube(points,r,material,parent=scene){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,24,r,8,false),material);parent.add(mesh);return mesh}
+function textPlane(text,w,h,x,y,z,color,font=74,parent=scene){const c=document.createElement('canvas');c.width=1024;c.height=256;const ctx=c.getContext('2d');ctx.font=`500 ${font}px Arial`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.shadowColor=color;ctx.shadowBlur=12;ctx.fillStyle=color;ctx.fillText(text,512,128);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:t,transparent:true,depthWrite:false,toneMapped:false}));mesh.position.set(x,y,z);parent.add(mesh);return mesh}
+scene.add(new THREE.HemisphereLight(0x87acd0,0x25201b,.65));const moon=new THREE.DirectionalLight(0x82baff,1.4);moon.position.set(-8,16,9);scene.add(moon);
+function point(color,power,x,y,z,range=15){const l=new THREE.PointLight(color,power,range,2);l.position.set(x,y,z);scene.add(l);return l}
+// Continuous wet street reflection, overlaid with rough translucent asphalt.
+const reflection=new Reflector(new THREE.PlaneGeometry(90,70),{clipBias:.003,textureWidth:512,textureHeight:512,color:0x626c7c});reflection.rotation.x=-Math.PI/2;reflection.position.y=-.035;scene.add(reflection);const reflectRender=reflection.onBeforeRender;let lastReflection=-1000;reflection.onBeforeRender=function(...args){const now=performance.now();if(now-lastReflection<100)return;lastReflection=now;reflectRender.apply(this,args)};
+const ac=document.createElement('canvas');ac.width=512;ac.height=512;const ax=ac.getContext('2d');const pixels=ax.createImageData(512,512);for(let i=0;i<pixels.data.length;i+=4){let v=rand(40,100);pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=v;pixels.data[i+3]=255}ax.putImageData(pixels,0,0);const noise=new THREE.CanvasTexture(ac);noise.wrapS=noise.wrapT=THREE.RepeatWrapping;noise.repeat.set(35,28);
+const asphalt=new THREE.MeshStandardMaterial({color:0x151d27,roughness:.29,metalness:.3,transparent:true,opacity:.60,bumpMap:noise,bumpScale:.032});const ground=box(90,.02,70,0,-.017,0,asphalt);ground.castShadow=false;
+box(32,.18,3,0,.03,-1.8,stone);box(32,.25,.22,0,.06,-.22,mat(0x8a8a83,.6));for(let x=-15;x<16;x+=1.2){box(.012,.006,2.6,x,.127,-1.8,dark)}
+for(let i=0;i<24;i++){let p=new THREE.Mesh(new THREE.CircleGeometry(rand(.2,1.1),40),new THREE.MeshPhysicalMaterial({color:0x314454,metalness:.65,roughness:.06,transparent:true,opacity:.22,depthWrite:false}));p.rotation.x=-Math.PI/2;p.scale.y=rand(.3,.8);p.position.set(rand(-15,15),.009,rand(.5,17));scene.add(p)}
+// Workshop: warm brick, recessed glazing, full modeled interior.
+box(15,.2,8,0,.2,-6,mat(0x69645d,.6));box(15,6,.4,0,3.2,-9.9,masonry);box(.6,6,8,-7.5,3.2,-6,masonry);box(.6,6,8,7.5,3.2,-6,masonry);box(15,.25,8,0,6.15,-6,dark);box(15,1.65,.65,0,5.5,-2.1,masonry);
+for(const x of [-7,-4.8,0,4.8,7])box(.12,4.2,.16,x,2.3,-2.05,metal);box(14.2,.12,.17,0,.3,-2.05,metal);box(14.2,.12,.17,0,4.37,-2.05,metal);
+const glass=new THREE.MeshPhysicalMaterial({color:0xc5e1ed,metalness:.08,roughness:.08,transmission:0,transparent:true,opacity:.15,ior:1.5,side:THREE.DoubleSide,depthWrite:false});for(let x of [-5.85,-2.4,2.4,5.85])box(x===-5.85||x===5.85?2.05:4.65,4,.025,x,2.3,-2.03,glass);
+box(6.9,1.05,.15,0,5.43,-1.72,dark);textPlane('Sahand Laser',6.4,1.6,0,5.4,-1.61,'#74edff',104);textPlane('فناوران پرتو لیزر سهند',4,.7,0,4.62,-1.6,'#e1c38d',64);point(0x44d9ff,28,0,5,-.8,11);
+const strip=new THREE.MeshStandardMaterial({color:0xffc782,emissive:0xffb454,emissiveIntensity:4});for(let x of [-4.8,0,4.8]){box(2.8,.04,.3,x,5.98,-5.8,strip);let light=point(0xffc58b,80,x,4.8,-5.8,12);if(x===0){light.castShadow=true;light.shadow.mapSize.set(1024,1024)}}
+// Fiber laser cutter with steel slat bed, moving gantry and cutting head.
+const machine=new THREE.Group();scene.add(machine);machine.position.set(-.6,0,-5.6);box(6.1,.75,3.2,0,.78,0,blue,machine);box(6.3,.16,3.4,0,1.2,0,white,machine);for(let x of [-2.7,2.7])for(let z of [-1.3,1.3])box(.25,.6,.25,x,.42,z,dark,machine);for(let i=0;i<34;i++)box(.042,.23,2.8,-2.8+i*.168,1.35,0,metal,machine);box(3.6,.024,2.2,-.3,1.5,0,mat(0x8b939b,.24,.95),machine);const gantry=new THREE.Group();machine.add(gantry);for(let z of [-1.65,1.65]){box(.55,.72,.3,0,1.58,z,white,gantry);box(5.9,.14,.1,0,1.43,z,metal,machine)}box(.45,.34,3.7,0,1.98,0,white,gantry);const head=new THREE.Group();gantry.add(head);box(.36,.46,.34,0,1.77,0,blue,head);cyl(.07,.027,.21,0,1.46,0,metal,head);box(.55,.1,.43,3.5,1.52,1.1,dark,machine);const monitor=box(.66,.46,.075,3.4,1.87,1.1,dark,machine);monitor.rotation.y=-.35;box(.54,.32,.013,3.38,1.87,1.15,new THREE.MeshStandardMaterial({color:0x1d898a,emissive:0x14a7b5,emissiveIntensity:.7}),machine);textPlane('FIBER LASER / 3000 W',2,.3,0,.8,1.61,'#d1e5e9',54,machine);
+for(let sx of [-5.7,5.8]){for(let y of [1,2,3,4]){box(2.1,.07,1.1,sx,y,-8.4,metal);for(let k=0;k<5;k++){box(rand(.15,.35),rand(.15,.35),rand(.2,.6),sx-.8+k*.39,y+.17,-8.4,mat(0x8d9295,.3,.8))}}for(let dx of [-1,1])box(.07,4.3,.08,sx+dx,2.1,-8.4,metal)}for(let k=0;k<9;k++)cyl(.10,.10,2.8,4.8+k*.12,1.6,-9.2,metal);
+// Neighboring Isfahan brick façades, tiled cornice, arched recesses.
+for(let side of [-1,1]){box(12,9,7,side*13.8,4.4,-6.1,masonry);box(12,.22,.3,side*13.8,7,-2.5,mat(0x285a65,.7));for(let j=0;j<3;j++){const x=side*(9.5+j*3.5);box(2.4,3,.08,x,2,-2.53,dark);const arch=new THREE.Mesh(new THREE.TorusGeometry(1.2,.12,8,32,Math.PI),stone);arch.position.set(x,3.5,-2.45);scene.add(arch);for(let a of [-1,1])box(.18,2.7,.18,x+a*1.2,2.15,-2.45,stone);box(1.8,1.6,.1,x,6,-2.5,dark);for(let n=0;n<4;n++)box(.04,1.6,.06,x-.65+n*.43,6,-2.4,metal)}}
+for(let x of [-10,10]){cyl(.09,.15,6,x,3,.1,dark);tube([[x,5.8,.1],[x,6.25,.1],[x-1,6.4,.1]],.07,metal);box(.65,.09,.35,x-1,6.3,.1,new THREE.MeshStandardMaterial({color:0xc7e7ff,emissive:0x77bbff,emissiveIntensity:5}));const l=point(0x80baff,110,x-1,5.9,.1,22);l.castShadow=true;l.shadow.mapSize.set(512,512)}
+// Compatibility helpers for the supplied character block.
+const mats={metal};
+function cylinder(rt,rb,height,material,x,y,z,parent=scene,segments=16){
+ const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,height,segments),material);
+ mesh.position.set(x,y,z);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh;
+}
+function limb(parent,x,y,z,upperLength,lowerLength,material){
+ const pivot=new THREE.Group();pivot.position.set(x,y,z);parent.add(pivot);
+ cylinder(.055,.045,upperLength,material,0,-upperLength/2,0,pivot);
+ const lower=new THREE.Group();lower.position.y=-upperLength;pivot.add(lower);
+ cylinder(.045,.035,lowerLength,material,0,-lowerLength/2,0,lower);
+ return {pivot,lower};
+}
+// [MAIN CHARACTER — مسافر/کاربر]
+const human = new THREE.Group();
+human.position.set(-1.4, 0.02, 5.1);
+scene.add(human);
+
+// === دگرگونی انیمه‌ای بیکینی ===
+const bikiniMat = new THREE.MeshStandardMaterial({ 
+  color: 0xff69b4,   // صورتی زنانه
+  metalness: 0.3, 
+  roughness: 0.9 
+});
+
+const skinMat = new THREE.MeshStandardMaterial({ color: 0xffdbcc, roughness: 0.7 });
+
+// Body (بسیج + شکم)
+const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.21, 0.52, 8, 16), bikiniMat);
+body.position.y = 1.25;
+body.castShadow = true;
+human.add(body);
+
+// سینه‌های بزرگ‌تر (حرکت طبیعی)
+const chest = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.28, 0.35, 16), bikiniMat);
+chest.position.y = 1.35;
+chest.castShadow = true;
+human.add(chest);
+
+// بازوها
+const leftArm = limb(human, -0.18, 1.48, 0, 0.26, 0.26, bikiniMat);
+const rightArm = limb(human, 0.18, 1.48, 0, 0.26, 0.26, bikiniMat);
+rightArm.pivot.rotation.z = -0.25;
+rightArm.pivot.rotation.x = -0.4;
+
+// دست‌ها
+for (const arm of [leftArm, rightArm]) {
+  const hand = new THREE.Mesh(new THREE.SphereGeometry(0.055, 10, 8), skinMat);
+  hand.position.y = -0.28;
+  arm.lower.add(hand);
+}
+
+// پاها (کوتاه‌تر و تمیزتر)
+const leftLeg = limb(human, -0.11, 0.88, 0, 0.35, 0.35, bikiniMat);
+const rightLeg = limb(human, 0.11, 0.88, 0, 0.35, 0.35, bikiniMat);
+
+// هاوای چتر
+const umbrella = new THREE.Group();
+umbrella.position.set(0.33, 0, -0.13);
+human.add(umbrella);
+
+cylinder(0.012, 0.012, 1.15, mats.metal, 0, 1.83, 0, umbrella, 8);
+
+const canopyMat = new THREE.MeshPhysicalMaterial({
+  color: 0xc9e4ec, transparent: true, opacity: 0.22, roughness: 0.11
+});
+const canopy = new THREE.Mesh(new THREE.SphereGeometry(0.85, 32, 14), canopyMat);
+canopy.scale.y = 0.45;
+canopy.position.y = 2.37;
+canopy.renderOrder = 4;
+umbrella.add(canopy);
+
+// ریب‌ها
+const ribsMat = new THREE.LineBasicMaterial({ color: 0xb0c5d0, transparent: true, opacity: 0.72 });
+for (let i = 0; i < 8; i++) {
+  const points = [];
+  const a = i * Math.PI / 4;
+  for (let j = 0; j <= 16; j++) {
+    const t = j / 16 * Math.PI / 2;
+    points.push(new THREE.Vector3(Math.sin(t)*0.85*Math.cos(a), 2.37 + Math.cos(t)*0.85*0.45, Math.sin(t)*0.85*Math.sin(a)));
+  }
+  const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), ribsMat);
+  umbrella.add(line);
+}
+const person=human;const legs=[{pivot:leftLeg.pivot,knee:leftLeg.lower},{pivot:rightLeg.pivot,knee:rightLeg.lower}];const arms=[{arm:leftArm.pivot,elbow:leftArm.lower},{arm:rightArm.pivot,elbow:rightArm.lower}];
+// Rain streaks: batched geometry, colored by the warm/cool light transition.
+const count=1800,positions=new Float32Array(count*6),colors=new Float32Array(count*6),drops=[];for(let i=0;i<count;i++){drops.push({x:rand(-23,23),y:rand(0,18),z:rand(-12,24),speed:rand(8,14),length:rand(.12,.36)});let c=new THREE.Color(Math.random()<.15?0xe1b896:0x7497b7);for(let j=0;j<2;j++){colors[i*6+j*3]=c.r;colors[i*6+j*3+1]=c.g;colors[i*6+j*3+2]=c.b}}const rainGeo=new THREE.BufferGeometry();rainGeo.setAttribute('position',new THREE.BufferAttribute(positions,3));rainGeo.setAttribute('color',new THREE.BufferAttribute(colors,3));const rain=new THREE.LineSegments(rainGeo,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.32,depthWrite:false}));rain.frustumCulled=false;scene.add(rain);
+const sparkCount=80,sparkPos=new Float32Array(sparkCount*3),sparkColor=new Float32Array(sparkCount*3),sparks=[];for(let i=0;i<sparkCount;i++){sparks.push({age:rand(0,.6),life:rand(.15,.65),vx:rand(-2,2),vy:rand(.5,2.5),vz:rand(-2,2)});sparkColor.set([4,rand(.7,2),.12],i*3)}const sparkGeo=new THREE.BufferGeometry();sparkGeo.setAttribute('position',new THREE.BufferAttribute(sparkPos,3));sparkGeo.setAttribute('color',new THREE.BufferAttribute(sparkColor,3));const sparkCloud=new THREE.Points(sparkGeo,new THREE.PointsMaterial({size:.035,vertexColors:true,transparent:true,opacity:.95,blending:THREE.AdditiveBlending,depthWrite:false}));sparkCloud.frustumCulled=false;scene.add(sparkCloud);const cutLight=point(0xff7a26,12,0,1.6,-5.6,6);
+const ripples=[];for(let i=0;i<28;i++){let r=new THREE.Mesh(new THREE.RingGeometry(.97,1,32),new THREE.MeshBasicMaterial({color:0x8cb6ca,transparent:true,opacity:.1,depthWrite:false}));r.rotation.x=-Math.PI/2;r.position.set(rand(-15,15),.014,rand(.2,15));scene.add(r);ripples.push({mesh:r,age:rand(0,1)})}
+const keys=new Set();let yaw=.22,pitch=.22,drag=false,lastX=0,lastY=0;const home=human.position.clone();const prevent=['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'];window.addEventListener('keydown',e=>{if(prevent.includes(e.code)){e.preventDefault();keys.add(e.code)}});window.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>keys.clear());renderer.domElement.addEventListener('pointerdown',e=>{drag=true;lastX=e.clientX;lastY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId)});renderer.domElement.addEventListener('pointermove',e=>{if(drag){yaw-=(e.clientX-lastX)*.004;pitch=THREE.MathUtils.clamp(pitch+(e.clientY-lastY)*.003,-.05,.65);lastX=e.clientX;lastY=e.clientY}});renderer.domElement.addEventListener('pointerup',()=>drag=false);renderer.domElement.addEventListener('pointercancel',()=>drag=false);document.querySelectorAll('[data-key]').forEach(b=>{b.onpointerdown=e=>{e.preventDefault();keys.add(b.dataset.key);b.setPointerCapture(e.pointerId)};b.onpointerup=b.onpointercancel=()=>keys.delete(b.dataset.key)});
+document.getElementById('reset').onclick=()=>{person.position.copy(home);yaw=.22;pitch=.22;person.rotation.y=0};let high=false;document.getElementById('quality').onclick=()=>{high=!high;renderer.setPixelRatio(Math.min(devicePixelRatio,high?1.4:.85));composer.setPixelRatio(renderer.getPixelRatio());reflection.getRenderTarget().setSize(high?768:512,high?768:512);rainGeo.setDrawRange(0,high?count*2:count);document.getElementById('quality').textContent='QUALITY: '+(high?'HIGH':'BALANCED')};
+// Batch stationary opaque geometry to reduce draw calls, retaining animated groups.
+scene.updateMatrixWorld(true);const batches=new Map();for(const mesh of [...scene.children]){if(!mesh.isMesh||mesh===reflection||mesh.material.transparent||mesh.material.isShaderMaterial)continue;const geom=mesh.geometry.clone();geom.applyMatrix4(mesh.matrixWorld);const key=mesh.material.uuid;if(!batches.has(key))batches.set(key,{material:mesh.material,geometries:[],objects:[]});const batch=batches.get(key);batch.geometries.push(geom);batch.objects.push(mesh)}for(const batch of batches.values()){const g=mergeGeometries(batch.geometries,false);if(g){const combined=new THREE.Mesh(g,batch.material);combined.receiveShadow=true;scene.add(combined);batch.objects.forEach(o=>scene.remove(o))}batch.geometries.forEach(g=>g.dispose())}
+const clock=new THREE.Clock();let sampleTime=0,sampleFrames=0,adaptive=false;let walk=0,speed=0;const target=new THREE.Vector3(),desired=new THREE.Vector3();camera.position.set(6,3.2,12);function animate(){requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.04),t=clock.elapsedTime;let forward=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0),right=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0);const moving=forward!==0||right!==0;speed=THREE.MathUtils.damp(speed,moving?1:0,9,dt);if(moving){let dx=right*Math.cos(yaw)-forward*Math.sin(yaw),dz=-forward*Math.cos(yaw)-right*Math.sin(yaw),len=Math.hypot(dx,dz);dx/=len;dz/=len;person.position.x=THREE.MathUtils.clamp(person.position.x+dx*dt*1.65,-18,18);person.position.z=THREE.MathUtils.clamp(person.position.z+dz*dt*1.65,.8,18);let angle=Math.atan2(-dx,-dz);person.rotation.y+=Math.atan2(Math.sin(angle-person.rotation.y),Math.cos(angle-person.rotation.y))*Math.min(dt*10,1)}walk+=dt*7*speed;for(let i=0;i<2;i++){const swing=Math.sin(walk+i*Math.PI);const phase=(walk+i*Math.PI)%(Math.PI*2),stance=phase<Math.PI;const z=(stance?THREE.MathUtils.lerp(-.25,.25,phase/Math.PI):THREE.MathUtils.lerp(.25,-.25,(phase-Math.PI)/Math.PI))*speed;const lift=stance?0:Math.sin(phase-Math.PI)*.12*speed;const down=.68-lift;const distance=Math.min(.699,Math.hypot(z,down));const bend=Math.acos(THREE.MathUtils.clamp(distance/.70,-1,1));legs[i].pivot.rotation.x=Math.atan2(-z,down)-bend;legs[i].knee.rotation.x=2*bend}arms[0].arm.rotation.x=-Math.sin(walk)*.3*speed;person.position.y=.02+Math.sin(walk*2)*.013*speed;umbrella.rotation.z=Math.sin(t*1.6)*.016+Math.sin(walk)*.012*speed;
+target.copy(person.position).add(new THREE.Vector3(0,1.35,0));desired.set(person.position.x+Math.sin(yaw)*6.8,2.8+pitch*5,person.position.z+Math.cos(yaw)*6.8);desired.z=Math.max(desired.z,-.8);camera.position.lerp(desired,1-Math.exp(-dt*5));camera.lookAt(target);
+gantry.position.x=Math.sin(t*.43)*1.9;head.position.z=Math.sin(t*.7)*.8;const origin=new THREE.Vector3();head.getWorldPosition(origin);origin.y=1.51;cutLight.position.copy(origin);cutLight.intensity=8+Math.random()*18;for(let i=0;i<sparkCount;i++){let s=sparks[i];s.age+=dt;if(s.age>s.life){s.age=0;s.vx=rand(-2,2);s.vz=rand(-2,2)}const a=s.age;sparkPos[i*3]=origin.x+s.vx*a;sparkPos[i*3+1]=origin.y+s.vy*a-5*a*a;sparkPos[i*3+2]=origin.z+s.vz*a}sparkGeo.attributes.position.needsUpdate=true;
+for(let i=0;i<count;i++){let d=drops[i];d.y-=d.speed*dt;d.x-=dt*.75;if(d.y<0){d.y=18;d.x=rand(-23,23)}const j=i*6;positions[j]=d.x;positions[j+1]=d.y;positions[j+2]=d.z;positions[j+3]=d.x+.025;positions[j+4]=d.y+d.length;positions[j+5]=d.z}rainGeo.attributes.position.needsUpdate=true;for(let r of ripples){r.age+=dt*.9;if(r.age>1){r.age=0;r.mesh.position.x=rand(-15,15);r.mesh.position.z=rand(.2,15)}r.mesh.scale.setScalar(.03+r.age*.36);r.mesh.material.opacity=(1-r.age)*.11}composer.render();sampleTime+=dt;sampleFrames++;if(!adaptive&&sampleTime>4){adaptive=true;if(sampleFrames/sampleTime<35){renderer.setPixelRatio(.75);composer.setPixelRatio(.75);rainGeo.setDrawRange(0,1800);document.getElementById('quality').textContent='QUALITY: ADAPTIVE'}}}
+window.addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight)});renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();status.style.display='grid';status.textContent='Graphics context interrupted. Reload to resume.'});status.style.display='none';animate();
+} catch(error){status.style.display='grid';status.textContent='Unable to start the scene. WebGL and an internet connection for Three.js are required.';console.error(error)}
+</script><script>window.addEventListener('error',e=>{if(e.message?.includes('module')||e.target?.tagName==='SCRIPT'){const s=document.getElementById('status');s.style.display='grid';s.textContent='Three.js could not load. Check your internet connection and reload.'}},true);</script></body></html>
