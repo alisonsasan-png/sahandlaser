@@ -1,0 +1,51 @@
+{
+  "note": "Preserved references; integrity is not proof of stock identity or internal geometry.",
+  "files": [
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BLT310-v1.pdf",
+      "bytes": 2041022,
+      "sha256": "c45f2412c29778e343aece91b9bc0cf0ce4aa19f048129cb6c8d0bbd8fe31db5"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BM110-v2.pdf",
+      "bytes": 1366681,
+      "sha256": "f9be1b1e9b02c2e325311b21431d9164c946a30777afed3b70257e93b6317330"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BM111-v1.pdf",
+      "bytes": 1709258,
+      "sha256": "01b571d2fbf20679cf037133e1c4e17fcb271e8585e5998bc397c82b8a571433"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BM114-installation-v1.pdf",
+      "bytes": 1840648,
+      "sha256": "973eae306f0b88d7bf598513125723682e2fb13b5020ead3f0c69ceb07fa1c2a"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BM115-installation-v1.pdf",
+      "bytes": 1788918,
+      "sha256": "25d06ce104e9cddc70489253ce1d42246244479a82ae6e28877712bc571b0ea3"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/BT220-2kW-2023.pdf",
+      "bytes": 2604450,
+      "sha256": "74faeed54f36b921e8ef7a82a9a3f12a4201d53e6ef5767a4668de7ba5c3d9d5"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/FSCUT2000C-v31.pdf",
+      "bytes": 3289372,
+      "sha256": "e6ff5289d28c292ae7f3aafd81604c307915b4188157edf73e62d92d7856dbb8"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/FSCUT2000E-v1.pdf",
+      "bytes": 2643467,
+      "sha256": "857c8237d9fe840928b2495ffad320f524f000ac55752c1c2418984417b9a99c"
+    },
+    {
+      "file": "docs/catalog-completion/manufacturer-manuals/Raycus-HP.pdf",
+      "bytes": 3709485,
+      "sha256": "8cc81f6812be38830c7243656cb73b40bd0ea6ab8104e6d62c7ce6a619a04411"
+    }
+  ]
+}
+

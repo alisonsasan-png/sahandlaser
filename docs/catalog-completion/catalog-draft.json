@@ -4734,6 +4734,12 @@
           "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         },
         {
+          "label": "ظرفیت سرمایشی موردنیاز نسخه دفترچه، صفحه ۱۳",
+          "value": "بیشتر از 7500 W؛ ظرفیت سرمایشی، نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
           "label": "رابط فیبر نسخه دفترچه",
           "value": "QBH",
           "scope": "manufacturer_manual",
@@ -4757,7 +4763,7 @@
       "sources": [
         {
           "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-          "title": "Raycus HP Series guide, PDF page 10; RFL-C3000S-HP column",
+          "title": "Raycus HP Series guide, PDF pages 10 and 13; RFL-C3000S-HP column",
           "scope": "manufacturer_manual_variant"
         }
       ],
@@ -4842,6 +4848,12 @@
           "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         },
         {
+          "label": "ظرفیت سرمایشی موردنیاز نسخه دفترچه، صفحه ۱۳",
+          "value": "بیشتر از 10000 W؛ ظرفیت سرمایشی، نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
           "label": "رابط فیبر نسخه دفترچه",
           "value": "QBH",
           "scope": "manufacturer_manual",
@@ -4865,7 +4877,7 @@
       "sources": [
         {
           "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-          "title": "Raycus HP Series guide, PDF page 10; RFL-C4000S-HP column",
+          "title": "Raycus HP Series guide, PDF pages 10 and 13; RFL-C4000S-HP column",
           "scope": "manufacturer_manual_variant"
         }
       ],
@@ -4952,6 +4964,12 @@
           "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
         },
         {
+          "label": "ظرفیت سرمایشی موردنیاز نسخه دفترچه، صفحه ۱۳",
+          "value": "بیشتر از 15000 W؛ ظرفیت سرمایشی، نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf"
+        },
+        {
           "label": "رابط فیبر نسخه دفترچه",
           "value": "QBH",
           "scope": "manufacturer_manual",
@@ -4975,7 +4993,7 @@
       "sources": [
         {
           "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-          "title": "Raycus HP Series guide, PDF page 10; RFL-C6000S-HP column",
+          "title": "Raycus HP Series guide, PDF pages 10 and 13; RFL-C6000S-HP column",
           "scope": "manufacturer_manual_variant"
         }
       ],

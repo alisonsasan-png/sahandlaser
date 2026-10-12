@@ -8,6 +8,12 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+for(const [code,watts] of [['SRC-RAY-C3000S','7500'],['SRC-RAY-C4000S','10000'],['SRC-RAY-C6000S','15000']]){
+ assert(catalog.products.find(p=>p.code===code).specs.some(s=>s.label.includes('ظرفیت سرمایشی')&&s.value.includes(watts)&&s.source));
+}
+const evidence=JSON.parse(read('docs/catalog-completion/manufacturer-evidence-integrity.json'));
+const crypto=require('node:crypto');
+for(const file of evidence.files){const bytes=fs.readFileSync(path.join(root,file.file));assert.equal(bytes.length,file.bytes);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),file.sha256);}
 assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').specs.some(s=>s.label==='شیشه‌های محافظ در جدول قطعات V2.0'&&s.value.includes('میانی')));
 assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').visuals.opticalReconstruction.src.endsWith('xray-web-v5.jpg'));
 for(const code of ['CC001','CC002','CC003']){

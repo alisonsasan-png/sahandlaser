@@ -5,7 +5,7 @@
   "recordsWithSourcedSpecifications": 22,
   "suppliedSeriesDocuments": 4,
   "rejectedOrAmbiguousImages": 4,
-  "articles": 8,
+  "articles": 9,
   "releaseGate": {
     "passed": false,
     "reason": "Per-model photo processing, assembly identity and full specification verification remain open"
@@ -905,7 +905,7 @@
       "name": "سورس فایبر Raycus RFL-C3000S-HP",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 7,
+      "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
         "relativePath": "عکس های معرفی محصول فشرده شده/Source/C3000S.jpg",
@@ -925,7 +925,7 @@
       "name": "سورس لیزر Raycus RFL-C4000S-HP",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 7,
+      "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
@@ -938,7 +938,7 @@
       "name": "سورس فایبر Raycus RFL-C6000S-HP",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 7,
+      "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
         "relativePath": "عکس های معرفی محصول فشرده شده/Source/C6000S.jpg",
