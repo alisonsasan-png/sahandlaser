@@ -317,6 +317,12 @@
     "identityScope": "Generic C2000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
     "visualReview": true
   },
+  "FS006": {
+    "directory": "FS006",
+    "reference": "AI-generated white-background external Raycus C3000-family reconstruction informed by official family specifications",
+    "identityScope": "Generic C3000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
