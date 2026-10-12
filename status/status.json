@@ -1,5 +1,5 @@
-{
-    "updatedAt":  "2026-10-12T18:10:00.000+03:30",
+﻿{
+    "updatedAt":  "2026-10-12T18:30:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog media completion and robot-cutting reference review",
@@ -12,7 +12,7 @@
                   },
                   {
                       "name":  "مرحله جدید: تکمیل مستند مشخصات، تصاویر سفید، نمای داخلی و مقالات",
-                      "status":  "Active: 56 studio images, 10 articles, 34 manufacturer references, 8 user series records, 5 user artwork records"
+                      "status":  "Active: 57 studio images, 10 articles, 34 manufacturer references, 8 user series records, 5 user artwork records"
                   },
                   {
                       "name":  "نسخه‌های مستقل ۱۲ تا ۱۵: چهار اجرای دسته‌بندی کاربر",
@@ -271,6 +271,10 @@
                     {
                         "at":  "2026-10-12T18:10:00.000+03:30",
                         "text":  "Added manufacturer-family reference evidence for LD-series records and sourced robot-cell reference scope without claiming installed-unit identity. Rebuilt catalog progress: 106 products, 56 studio images, 48 sourced-specification records, 34 manufacturer references, 10 articles; catalog and comparison tests pass and release gate remains open."
+                    },
+                    {
+                        "at":  "2026-10-12T18:30:00.000+03:30",
+                        "text":  "Added a reviewed 6020 single-table plus rotary/tube-cutting family image with explicit reconstruction scope. Rebuilt catalog progress: 106 products, 57 studio images, 48 sourced-specification records, 34 manufacturer references, 10 articles; catalog and comparison tests pass and release gate remains open."
                     }
                 ]
 }

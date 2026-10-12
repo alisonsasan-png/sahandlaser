@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 56,
+  "studioImages": 57,
   "recordsWithSourcedSpecifications": 48,
   "recordsWithManufacturerReferenceSpecifications": 34,
   "recordsWithUserSeriesSpecifications": 8,
@@ -1300,12 +1300,11 @@
       "code": "CUT-6020-7",
       "name": "تک میز 6020 + لوله‌بر",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
