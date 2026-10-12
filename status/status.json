@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-12T13:18:00.000+03:30",
+    "updatedAt":  "2026-10-12T13:30:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog media completion and robot-cutting reference review",
@@ -239,6 +239,10 @@
                     {
                         "at":  "2026-10-12T13:18:00.000+03:30",
                         "text":  "Attached the reviewed robot-family white-background image to the CUT-robot catalog record. Catalog rebuild now reports 106 products and 42 studio images; catalog-completion tests pass. The release gate remains open because many records still need exact identity, specifications, or applicable technical-assembly evidence."
+                    },
+                    {
+                        "at":  "2026-10-12T13:30:00.000+03:30",
+                        "text":  "Added reviewed family-reference media for Hanli HL-1500 and HL-2000. Catalog rebuild now reports 106 products and 44 studio images; catalog-completion tests pass. The release gate remains open because many records still need exact identity, specifications, or applicable technical-assembly evidence."
                     }
                 ]
 }
