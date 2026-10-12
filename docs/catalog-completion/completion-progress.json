@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 67,
+  "studioImages": 68,
   "recordsWithSourcedSpecifications": 63,
   "recordsWithManufacturerReferenceSpecifications": 38,
   "recordsWithUserSeriesSpecifications": 8,
@@ -650,12 +650,11 @@
       "code": "FS003",
       "name": "سورس لیزر Raycus RFL-C1000",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
