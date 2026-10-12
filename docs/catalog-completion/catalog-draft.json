@@ -351,6 +351,42 @@
           "label": "مدل / خانواده",
           "value": "HL-1500",
           "scope": "identity"
+        },
+        {
+          "label": "نسخه مرجع جدول دفترچه",
+          "value": "HL-1500-QG2/2",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "برق نسخه QG2/2 دفترچه",
+          "value": "220 V؛ 50 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "توان دستگاه در جدول نسخه مرجع",
+          "value": "2.7 kW؛ نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "وزن نسخه مرجع دفترچه",
+          "value": "38 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "ابعاد نسخه مرجع، ترتیب جدول",
+          "value": "620 × 430 × 720 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "حجم آب نسخه مرجع دفترچه",
+          "value": "13 L",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
         }
       ],
       "images": [],
@@ -367,7 +403,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+          "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-1500-QG2/2 reference",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -403,6 +445,42 @@
           "label": "مدل / خانواده",
           "value": "HL-2000",
           "scope": "identity"
+        },
+        {
+          "label": "نسخه مرجع جدول دفترچه",
+          "value": "HL-2000-QG2/2",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "برق نسخه QG2/2 دفترچه",
+          "value": "220 V؛ 50 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "توان دستگاه در جدول نسخه مرجع",
+          "value": "2.8 kW؛ نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "وزن نسخه مرجع دفترچه",
+          "value": "42 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "ابعاد نسخه مرجع، ترتیب جدول",
+          "value": "640 × 420 × 760 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "حجم آب نسخه مرجع دفترچه",
+          "value": "13 L",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
         }
       ],
       "images": [],
@@ -419,7 +497,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+          "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-2000-QG2/2 reference",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -455,6 +539,42 @@
           "label": "مدل / خانواده",
           "value": "HL-3000",
           "scope": "identity"
+        },
+        {
+          "label": "نسخه مرجع جدول دفترچه",
+          "value": "HL-3000-QG2/2",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "برق نسخه QG2/2 دفترچه",
+          "value": "220 V؛ 50 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "توان دستگاه در جدول نسخه مرجع",
+          "value": "3.8 kW؛ نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "وزن نسخه مرجع دفترچه",
+          "value": "55 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "ابعاد نسخه مرجع، ترتیب جدول",
+          "value": "650 × 500 × 920 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "حجم آب نسخه مرجع دفترچه",
+          "value": "21 L",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
         }
       ],
       "images": [],
@@ -471,7 +591,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+          "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-3000-QG2/2 reference",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -520,6 +646,42 @@
           "label": "مدل / خانواده",
           "value": "HL-12000",
           "scope": "identity"
+        },
+        {
+          "label": "نسخه مرجع جدول دفترچه",
+          "value": "HL-12000-QG2/2",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "برق نسخه QG2/2 دفترچه",
+          "value": "380 V؛ 50 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "توان دستگاه در جدول نسخه مرجع",
+          "value": "18 kW؛ نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "وزن نسخه مرجع دفترچه",
+          "value": "132 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "ابعاد نسخه مرجع، ترتیب جدول",
+          "value": "710 × 840 × 1060 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "حجم آب نسخه مرجع دفترچه",
+          "value": "55 L",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
         }
       ],
       "images": [],
@@ -536,7 +698,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+          "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 12, HL-12000-QG2/2 reference",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -585,6 +753,42 @@
           "label": "مدل / خانواده",
           "value": "HL-6000",
           "scope": "identity"
+        },
+        {
+          "label": "نسخه مرجع جدول دفترچه",
+          "value": "HL-6000-QG2/2",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "برق نسخه QG2/2 دفترچه",
+          "value": "380 V؛ 50 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "توان دستگاه در جدول نسخه مرجع",
+          "value": "8.5 kW؛ نه توان خروجی لیزر",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "وزن نسخه مرجع دفترچه",
+          "value": "90 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "ابعاد نسخه مرجع، ترتیب جدول",
+          "value": "790 × 610 × 1040 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
+        },
+        {
+          "label": "حجم آب نسخه مرجع دفترچه",
+          "value": "42 L",
+          "scope": "manufacturer_manual",
+          "source": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf"
         }
       ],
       "images": [],
@@ -601,7 +805,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+          "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 12, HL-6000-QG2/2 reference",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {

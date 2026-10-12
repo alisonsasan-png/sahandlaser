@@ -1,4 +1,64 @@
 {
+  "CC004": {
+    "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+    "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-1500-QG2/2 reference",
+    "facts": [
+      ["نسخه مرجع جدول دفترچه", "HL-1500-QG2/2"],
+      ["برق نسخه QG2/2 دفترچه", "220 V؛ 50 Hz"],
+      ["توان دستگاه در جدول نسخه مرجع", "2.7 kW؛ نه توان خروجی لیزر"],
+      ["وزن نسخه مرجع دفترچه", "38 kg"],
+      ["ابعاد نسخه مرجع، ترتیب جدول", "620 × 430 × 720 mm"],
+      ["حجم آب نسخه مرجع دفترچه", "13 L"]
+    ]
+  },
+  "CC005": {
+    "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+    "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-2000-QG2/2 reference",
+    "facts": [
+      ["نسخه مرجع جدول دفترچه", "HL-2000-QG2/2"],
+      ["برق نسخه QG2/2 دفترچه", "220 V؛ 50 Hz"],
+      ["توان دستگاه در جدول نسخه مرجع", "2.8 kW؛ نه توان خروجی لیزر"],
+      ["وزن نسخه مرجع دفترچه", "42 kg"],
+      ["ابعاد نسخه مرجع، ترتیب جدول", "640 × 420 × 760 mm"],
+      ["حجم آب نسخه مرجع دفترچه", "13 L"]
+    ]
+  },
+  "CC006": {
+    "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+    "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 11, HL-3000-QG2/2 reference",
+    "facts": [
+      ["نسخه مرجع جدول دفترچه", "HL-3000-QG2/2"],
+      ["برق نسخه QG2/2 دفترچه", "220 V؛ 50 Hz"],
+      ["توان دستگاه در جدول نسخه مرجع", "3.8 kW؛ نه توان خروجی لیزر"],
+      ["وزن نسخه مرجع دفترچه", "55 kg"],
+      ["ابعاد نسخه مرجع، ترتیب جدول", "650 × 500 × 920 mm"],
+      ["حجم آب نسخه مرجع دفترچه", "21 L"]
+    ]
+  },
+  "CH-HANLI-6000": {
+    "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+    "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 12, HL-6000-QG2/2 reference",
+    "facts": [
+      ["نسخه مرجع جدول دفترچه", "HL-6000-QG2/2"],
+      ["برق نسخه QG2/2 دفترچه", "380 V؛ 50 Hz"],
+      ["توان دستگاه در جدول نسخه مرجع", "8.5 kW؛ نه توان خروجی لیزر"],
+      ["وزن نسخه مرجع دفترچه", "90 kg"],
+      ["ابعاد نسخه مرجع، ترتیب جدول", "790 × 610 × 1040 mm"],
+      ["حجم آب نسخه مرجع دفترچه", "42 L"]
+    ]
+  },
+  "CH-HANLI-12000": {
+    "url": "https://resource.iwanshang.cloud/production/mp_c02d2870-b7d7-11ed-a5c3-91546fa733af/8f4ffc0f-cc27-4704-a914-9ef9ce8333e4.pdf",
+    "title": "Hanli-authored HL chiller manual, third-party archive; PDF page 12, HL-12000-QG2/2 reference",
+    "facts": [
+      ["نسخه مرجع جدول دفترچه", "HL-12000-QG2/2"],
+      ["برق نسخه QG2/2 دفترچه", "380 V؛ 50 Hz"],
+      ["توان دستگاه در جدول نسخه مرجع", "18 kW؛ نه توان خروجی لیزر"],
+      ["وزن نسخه مرجع دفترچه", "132 kg"],
+      ["ابعاد نسخه مرجع، ترتیب جدول", "710 × 840 × 1060 mm"],
+      ["حجم آب نسخه مرجع دفترچه", "55 L"]
+    ]
+  },
   "CP-LENS-BLT": {
     "url": "https://www.bochu.com/pro_en/original-lenses/",
     "title": "BOCHU Original Lenses selection tables; BLT310 reference examples, not a universal BLT size",

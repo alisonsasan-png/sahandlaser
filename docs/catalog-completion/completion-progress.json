@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 38,
-  "recordsWithSourcedSpecifications": 25,
+  "recordsWithSourcedSpecifications": 30,
   "suppliedSeriesDocuments": 4,
   "rejectedOrAmbiguousImages": 4,
   "articles": 9,
@@ -46,12 +46,11 @@
       "name": "چیلر فایبر Hanli HL-1500",
       "category": "parts",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -59,12 +58,11 @@
       "name": "چیلر فایبر Hanli HL-2000",
       "category": "parts",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -72,36 +70,30 @@
       "name": "چیلر فایبر Hanli HL-3000",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CH-HANLI-12000",
       "name": "چیلر فایبر Hanli HL-12000",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CH-HANLI-6000",
       "name": "چیلر فایبر Hanli HL-6000",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CH-S&A-12000",

@@ -8,6 +8,12 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+for(const [code,tank]of [['CC004','13 L'],['CC005','13 L'],['CC006','21 L'],['CH-HANLI-6000','42 L'],['CH-HANLI-12000','55 L']]){
+ const p=catalog.products.find(p=>p.code===code);
+ assert(p.specs.some(s=>s.label==='نسخه مرجع جدول دفترچه'&&s.value.endsWith('-QG2/2')));
+ assert(p.specs.some(s=>s.label==='حجم آب نسخه مرجع دفترچه'&&s.value===tank));
+ assert(p.sources.some(s=>s.title.includes('third-party archive')));
+}
 assert(catalog.products.find(p=>p.code==='CP-LENS-BLT').specs.some(s=>s.value.includes('DP.V.P0048AA')));
 assert(catalog.products.find(p=>p.code==='CP-CERAMIC').specs.some(s=>s.value.includes('BLT310T')));
 assert(catalog.products.find(p=>p.code==='CH-S&A-6000').specs.some(s=>s.value==='70 L'));

@@ -42,6 +42,11 @@
       "sha256": "857c8237d9fe840928b2495ffad320f524f000ac55752c1c2418984417b9a99c"
     },
     {
+      "file": "docs/catalog-completion/manufacturer-manuals/Hanli-HL-fiber-chiller.pdf",
+      "bytes": 1757186,
+      "sha256": "8cdc558a0a9dfbd9d6971b29cd6ae8397c25bcbb20e0e3404ffdb096926b5b74"
+    },
+    {
       "file": "docs/catalog-completion/manufacturer-manuals/Raycus-HP.pdf",
       "bytes": 3709485,
       "sha256": "8cc81f6812be38830c7243656cb73b40bd0ea6ab8104e6d62c7ce6a619a04411"
