@@ -9031,6 +9031,30 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Channel Letter Laser Welding",
           "scope": null
+        },
+        {
+          "label": "Family application",
+          "value": "Welding stainless steel, galvanized sheet and iron channel letters",
+          "scope": "manufacturer_manual",
+          "source": "https://www.jncslaser.com/products/channel-letter-yag-laser-welding-machine"
+        },
+        {
+          "label": "Reference power options",
+          "value": "300 W or 500 W",
+          "scope": "manufacturer_manual",
+          "source": "https://www.jncslaser.com/products/channel-letter-yag-laser-welding-machine"
+        },
+        {
+          "label": "Family use",
+          "value": "Signage, illuminated letters and advertising displays",
+          "scope": "manufacturer_manual",
+          "source": "https://www.jncslaser.com/products/channel-letter-yag-laser-welding-machine"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Product-family reference only; exact source, power and configuration of Sahand WL-010 are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.jncslaser.com/products/channel-letter-yag-laser-welding-machine"
         }
       ],
       "images": [],
@@ -9059,7 +9083,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.jncslaser.com/products/channel-letter-yag-laser-welding-machine",
+          "title": "Channel letter YAG laser welding family product reference, accessed 2026-10-13",
+          "scope": "manufacturer_product_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
