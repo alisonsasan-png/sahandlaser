@@ -1311,6 +1311,30 @@
           "label": "مدل / خانواده",
           "value": "BM109",
           "scope": "identity"
+        },
+        {
+          "label": "سازنده و مدل",
+          "value": "RayTools BM109",
+          "scope": "manufacturer_web",
+          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+        },
+        {
+          "label": "کاربری ثبت‌شده در صفحه سازنده",
+          "value": "برش لوله و برش سه‌بعدی پنج‌محوره",
+          "scope": "manufacturer_web",
+          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+        },
+        {
+          "label": "وضعیت صفحه سازنده",
+          "value": "محصول خارج از تولید",
+          "scope": "manufacturer_web",
+          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+        },
+        {
+          "label": "محدودیت انتقال",
+          "value": "صفحه سازنده مشخصات ابعادی، اپتیکی و قطعات داخلی کافی برای تطبیق نسخه نصب‌شده ارائه نمی‌کند",
+          "scope": "manufacturer_web",
+          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
         }
       ],
       "images": [],
@@ -1327,7 +1351,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37",
+          "title": "RayTools BM109 official product page; discontinued 3D auto-focus tube cutting head",
+          "scope": "manufacturer_web_identity_only"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
