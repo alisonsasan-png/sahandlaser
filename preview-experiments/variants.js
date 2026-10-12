@@ -10,10 +10,16 @@ industry:[['نیاز تولید',[['ورق‌کاری و ساخت بدنه','she
 structure:[['ساختار دستگاه برش',[['تک‌میز','single'],['دو‌میز تبادلی','exchange'],['کابین‌دار','enclosed'],['ورق و لوله ترکیبی','rotary'],['لوله‌بر مستقل','tube-only']]],['دستگاه‌های دیگر',[['جوش','welding'],['مارکینگ','marking'],['تمیزکاری','cleaning']]],['اجزای دستگاه',[['سورس','source'],['هد و کنترلر','head'],['قطعات','parts'],['مصرفی‌ها','consumables']]]],
 brand:[['خانواده دستگاه‌ها',[['خانواده برش سهند','cutting'],['خانواده جوش','welding'],['خانواده مارکینگ','marking'],['خانواده تمیزکاری','cleaning']]],['برندهای قطعات ثبت‌شده',[['Raycus','brand-raycus'],['RayTools','brand-raytools'],['S&A / TEYU','brand-teyu'],['Hanli','brand-hanli'],['SMC','brand-smc'],['FSCUT / BOCHU','brand-bochu']]],['سایر اقلام',[['همه قطعات','components'],['مصرفی‌ها','consumables']]]]
 };
+// The requested cutting hierarchy is model-first: each leaf points to one exact
+// catalog record instead of only exposing a broad size bucket.
+const exact3015=[['تک میز DZ3015S','model-CUT-3015-1'],['تک میز DZ3015H','model-CUT-3015-2'],['تک میز LD3015','model-CUT-3015-3'],['دو میز DZ3015','model-CUT-3015-4'],['دو میز LD3015','model-CUT-3015-5'],['دو میز کابین‌دار DZ3015','model-CUT-3015-6'],['تک میز 3015 + لوله‌بر','model-CUT-3015-7'],['دو میز 3015 + لوله‌بر','model-CUT-3015-8'],['دو میز کابین‌دار 3015 + لوله‌بر','model-CUT-3015-9']];
+const exact6020=[['تک میز DZ6020S','model-CUT-6020-1'],['تک میز DZ6020H','model-CUT-6020-2'],['تک میز LD6020','model-CUT-6020-3'],['دو میز DZ6020','model-CUT-6020-4'],['دو میز LD6020','model-CUT-6020-5'],['دو میز کابین‌دار 6020','model-CUT-6020-6'],['تک میز 6020 + لوله‌بر','model-CUT-6020-7'],['دو میز 6020 + لوله‌بر','model-CUT-6020-8'],['دو میز کابین‌دار 6020 + لوله‌بر','model-CUT-6020-9']];
+designs.custom=[['دستگاه‌های برش لیزر',[['برش 3015','size3015'],['برش 6020','size6020'],['برش سایز سفارشی','large'],['برش لوله‌بر','tube'],['برش ربات','robot']]],['مدل‌های دقیق برش 3015',exact3015],['مدل‌های دقیق برش 6020',exact6020],['سایر دسته‌های دستگاه',[['جوش لیزر','welding'],['حکاکی و مارکینگ','marking'],['تمیزکاری لیزر','cleaning']]],['قطعات و تجهیزات',[['سورس لیزر','source'],['هد و کنترلر','head'],['قطعات دستگاه','parts'],['قطعات مصرفی','consumables']]]];
 const productMap=window.SAHAND_PRODUCTS;
 const text=p=>Object.values(p.title||{}).join(' ')+' '+p.code+' '+(p.specs||[]).map(s=>typeof s.value==='string'?s.value:JSON.stringify(s.value)).join(' ');
 function match(p,k){
  const t=text(p).toLowerCase(),cut=p.categoryId==='cutting';
+ if(k.startsWith('model-'))return p.code===k.slice(6);
  if(labels[k])return p.categoryId===k;
  if(k==='size3015')return cut&&/3015/.test(t);
  if(k==='size6020')return cut&&/6020/.test(t);
@@ -70,3 +76,4 @@ if(theme){
  document.querySelectorAll('#view-home .hero-slide').forEach(hero=>{hero.classList.add('preview-hero');const light=document.createElement('div');light.className='preview-light';hero.prepend(light);});
 }
 })();
+
