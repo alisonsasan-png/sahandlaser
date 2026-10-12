@@ -3714,6 +3714,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM115-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM115E/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM115 family interface and focal options only; exact windows, hidden mechanics and installed revision are not represented",
+          "source": "https://www.manualslib.com/manual/2337778/Raytools-Bm115-Series.html"
         }
       },
       "availableLegacyMedia": [],
@@ -3772,6 +3778,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM115-E-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM115E/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM115 family interface and focal options only; exact windows, hidden mechanics and installed revision are not represented",
+          "source": "https://www.manualslib.com/manual/2337778/Raytools-Bm115-Series.html"
         }
       },
       "availableLegacyMedia": [],
