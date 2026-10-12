@@ -1114,7 +1114,7 @@
 <script src="data/products/SRC-RAY-QCW150.js"></script>
 <script src="runtime/app.js?v=mobile3d-20261006"></script>
 
-<script>const __previewTaxonomy="custom",__previewTheme="emerald";</script><script>(() => {
+<script>const __previewTaxonomy="custom",__previewTheme="emerald";</script><script></script><script>(() => {
 const taxonomy=__previewTaxonomy, theme=__previewTheme;
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={cutting:'برش لیزر',welding:'جوش لیزر',marking:'حکاکی و مارکینگ',cleaning:'تمیزکاری لیزر',source:'سورس لیزر',head:'هد و کنترلر',parts:'قطعات دستگاه',consumables:'قطعات مصرفی'};
@@ -1163,6 +1163,7 @@ function drawTree(){
  if(second){second.innerHTML='';second.hidden=true;second.previousElementSibling.hidden=true;}
 }
 function select(k){
+ if(k.startsWith('model-')){window.showProduct?.(k.slice(6));return;}
  selected=k;window.filterCatalog('all');applySelection();drawTree();
  document.getElementById('full-catalog-section')?.scrollIntoView({behavior:'smooth'});
 }
