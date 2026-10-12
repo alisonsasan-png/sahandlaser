@@ -3,7 +3,7 @@
   "products": 106,
   "studioImages": 69,
   "recordsWithSourcedSpecifications": 64,
-  "recordsWithManufacturerReferenceSpecifications": 39,
+  "recordsWithManufacturerReferenceSpecifications": 40,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -1339,7 +1339,7 @@
       "name": "ط¨ط±ط´ ط±ط¨ط§طھ",
       "category": "cutting",
       "studioImage": true,
-      "sourcedSpecifications": 2,
+      "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
