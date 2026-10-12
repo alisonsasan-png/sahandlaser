@@ -8174,6 +8174,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Smart Series / Mini 4-in-1",
           "scope": null
+        },
+        {
+          "label": "Family functions",
+          "value": "Laser welding and pre/post-weld cleaning",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Family controls",
+          "value": "Welding and cleaning presets described by manufacturer",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference only; the exact four-in-one configuration of Sahand WL-001 is not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
         }
       ],
       "images": [],
@@ -8202,7 +8220,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning",
+          "title": "IPG LightWELD handheld welding and cleaning family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8241,6 +8265,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Medium Series / Handheld",
           "scope": null
+        },
+        {
+          "label": "Family form factor",
+          "value": "Handheld laser welding and cleaning system",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Family capability",
+          "value": "Wobble welding and wire welding are described for selected family variants",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference only; installed source, power and head of Sahand WL-002 are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
         }
       ],
       "images": [],
@@ -8269,7 +8311,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning",
+          "title": "IPG LightWELD handheld welding family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8411,6 +8459,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Air Cooling Portable",
           "scope": null
+        },
+        {
+          "label": "Cooling in reference family",
+          "value": "Air-cooled variants",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Reference power range",
+          "value": "Up to 1000 / 1500 / 2000 W for listed variants",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Reference family only; these values are not assigned to the Sahand WL-004 installed unit",
+          "scope": "manufacturer_manual",
+          "source": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning"
         }
       ],
       "images": [],
@@ -8439,7 +8505,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.ipgphotonics.com/products/lightweld/lightweld-handheld-laser-welding-and-cleaning",
+          "title": "IPG LightWELD air-cooled family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8597,6 +8669,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "HP Series",
           "scope": null
+        },
+        {
+          "label": "Family technology",
+          "value": "High-power continuous-wave fiber laser family",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2133.html"
+        },
+        {
+          "label": "Reference application",
+          "value": "Laser welding and industrial processing applications",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2133.html"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference only; exact source model and power of Sahand WL-006 are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2133.html"
         }
       ],
       "images": [],
@@ -8625,7 +8715,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/view/2133.html",
+          "title": "Raycus HP fiber laser family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
