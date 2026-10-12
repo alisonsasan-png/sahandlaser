@@ -329,6 +329,12 @@
     "identityScope": "Generic C4000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
     "visualReview": true
   },
+  "FS008": {
+    "directory": "FS008",
+    "reference": "AI-generated white-background external Raycus C6000-family reconstruction informed by official family specifications",
+    "identityScope": "Generic C6000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
