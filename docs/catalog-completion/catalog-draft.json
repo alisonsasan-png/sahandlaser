@@ -3484,7 +3484,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CP-RAY-BT240/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "BT240-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
