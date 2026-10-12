@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 57,
+  "studioImages": 58,
   "recordsWithSourcedSpecifications": 48,
   "recordsWithManufacturerReferenceSpecifications": 34,
   "recordsWithUserSeriesSpecifications": 8,
@@ -1339,12 +1339,11 @@
       "code": "CUT-custom",
       "name": "برش سایز سفارشی",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]

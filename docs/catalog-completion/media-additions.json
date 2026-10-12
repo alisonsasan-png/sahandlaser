@@ -233,6 +233,12 @@
     "identityScope": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "CUT-custom": {
+    "directory": "CUT-custom",
+    "reference": "AI-generated conceptual modular custom-size fiber-cutter reconstruction informed by supplied 3015/6020 family references",
+    "identityScope": "Conceptual custom-size configuration reference; not proof of exact Sahand bed dimensions, manufacturer, installed controller, or hidden assembly",
+    "visualReview": true
+  },
   "CUT-6020-7": {
     "directory": "CUT-6020-7",
     "reference": "AI-generated configuration reconstruction using the supplied 6020 single-table family image and supplied 6020 rotary-module reference",
