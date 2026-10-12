@@ -376,9 +376,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-LENS-BLT",
@@ -525,9 +523,7 @@
       "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CTRL-FSCUT2000C",
@@ -537,9 +533,7 @@
       "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CTRL-FSCUT2000E",
@@ -549,9 +543,7 @@
       "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CTRL-FSCUT4000E",
@@ -561,9 +553,7 @@
       "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS001",
