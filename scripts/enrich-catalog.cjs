@@ -114,6 +114,7 @@ const result=products.map(raw=>{const p=clean(raw),originalRecord=original.get(p
  if(mediaAdditions[p.code]){const media=mediaAdditions[p.code];const file='assets/catalog-v2/'+media.directory+'/studio-web.jpg';if(fs.existsSync(path.join(root,file)))p.visuals.studio={src:file,type:'AI-assisted reconstruction from supplied photo',identityScope:media.identityScope,visualReview:media.visualReview};}
  if(mediaFindings[p.code]&&p.visuals.sourceCandidate){Object.assign(p.visuals.sourceCandidate,mediaFindings[p.code]);p.visuals.sourceCandidate.processing='do not publish as exact-model image';}
  if(p.code==='CP-RAY-BM110')p.visuals.opticalReconstruction={src:'assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg',type:'AI-assisted optical-module visualization',scope:'Documented optical-module order including three cover windows; hidden mechanics and exact manufacturing geometry are not represented',source:p.sources[0]?.url};
+ if(p.code==='CP-RAY-BT240')p.visuals.technicalDrawing={src:'assets/catalog-v2/CP-RAY-BT240/optical-schematic.svg',type:'evidence-scoped optical schematic',scope:'Documented BT240S family optical order and focal options only; hidden mechanics, cooling channels and installed revision are not represented',source:'https://www.raytools-de.com/product/raytools-focusing-collimating-lens-assembly/'};
  productContent.enrich(p);
  p.comparisonValues=p.comparable?comparisonEngine.values(p):{};
  p.contentStatus='enriched_draft';p.ready=false;return p;});
