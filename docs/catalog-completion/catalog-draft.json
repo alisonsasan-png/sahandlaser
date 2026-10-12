@@ -6580,7 +6580,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-001 casing, source, power, controller, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -6641,7 +6647,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-002 casing, source, power, controller, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -6805,7 +6817,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-004 casing, source, power, controller, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
