@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 70,
-  "recordsWithSourcedSpecifications": 65,
-  "recordsWithManufacturerReferenceSpecifications": 41,
+  "recordsWithSourcedSpecifications": 68,
+  "recordsWithManufacturerReferenceSpecifications": 44,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -687,12 +687,11 @@
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 3000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -701,12 +700,11 @@
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 4000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -715,12 +713,11 @@
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 6000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
