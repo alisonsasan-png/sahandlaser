@@ -126,6 +126,54 @@
       "saved": "assets/catalog-v2/CP-RAY-BM110/xray-review-v5.png",
       "delivery": "assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
       "scope": "supersedes v3 by restoring a flat middle protective window; no exact hidden mechanics claim"
+    },
+    {
+      "code": "CUT-6020-1",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\6020\\laser cutting mashine 6020.png",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Do not add a tube station. Preserve the supplied single-table bed, no additional exchange bed. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-6020-1/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-6020-1/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
+    },
+    {
+      "code": "CUT-6020-2",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\6020 حرفه ای\\laser cutting machine 6020.png",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Do not add a tube station. Preserve the supplied single-table bed, no additional exchange bed. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-6020-2/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-6020-2/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
+    },
+    {
+      "code": "CUT-3015-4",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز 3015\\laser cutting nachine 3015 exchange 1.jpg",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Do not add a tube station. Preserve visibly separate exchange bed and active cutting bed; do not merge them into single table. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-3015-4/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-3015-4/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
+    },
+    {
+      "code": "CUT-3015-7",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\تک میز استاندارد 3015 با روتاری\\laser cutting machine 3015 with rotary (Single table) 1.png",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Preserve actual side-mounted tube rail, chuck geometry/count, support positions and rotation station; do not turn it into a stand-alone tube machine. Preserve the supplied single-table bed, no additional exchange bed. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-3015-7/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-3015-7/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
+    },
+    {
+      "code": "CUT-3015-8",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز استاندراد 3015 با روتاری\\laser cutting machine 3015 with rotary (exchange) 1.png",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Preserve actual side-mounted tube rail, chuck geometry/count, support positions and rotation station; do not turn it into a stand-alone tube machine. Preserve visibly separate exchange bed and active cutting bed; do not merge them into single table. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-3015-8/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-3015-8/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
+    },
+    {
+      "code": "CUT-6020-8",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز حرفه ای 6020 با روتاری\\laser cutting machine 6020 with rotary (exchange) 1.png",
+      "prompt": "Use case: sketch-to-render / precise-object-edit. Input is supplied Sahand product CAD/promotional image: edit target and geometry reference. Create polished photorealistic industrial catalog render of EXACT machine on pure white studio background. Preserve perspective, length-to-width proportions, bed shape, gantry, cable chains, slats, feet, console, drawers and all visible assemblies from reference. Entire machine AND console AND any tube station fully in frame, landscape composition, generous white margins, subtle contact shadows, clean metal and painted finish. Remove only background/banner/logo outside machine. No new invented internals, safety certifications or unrelated accessories. Keep external geometry unchanged, no shortened bed. Preserve actual side-mounted tube rail, chuck geometry/count, support positions and rotation station; do not turn it into a stand-alone tube machine. Preserve visibly separate exchange bed and active cutting bed; do not merge them into single table. Use same casing colors as reference. If a small equipment brand wordmark is needed, add only 'SAHAND LASER' unobtrusively on front fascia, no extra logo icon. This is a visual reconstruction of the supplied configuration, not proof of installed hidden parts or exact dimensions.",
+      "saved": "assets/catalog-v2/CUT-6020-8/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-6020-8/studio-web.jpg",
+      "scope": "size/configuration visualization from supplied artwork, not hidden-part evidence"
     }
   ]
 }

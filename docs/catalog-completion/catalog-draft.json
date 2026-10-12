@@ -78,6 +78,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -157,6 +158,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -231,6 +233,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -282,6 +285,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -333,6 +337,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -397,6 +402,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -461,6 +467,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -525,6 +532,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -647,6 +655,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -769,6 +778,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -838,6 +848,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -869,6 +880,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -926,6 +938,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1040,6 +1053,7 @@
         "date": "2026-10-04"
       },
       "variantNote": "نسخه دفترچه V1.0 و نسخه معرفی‌شده فعلی سازنده یکسان فرض نمی‌شوند.",
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1071,6 +1085,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1102,6 +1117,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1150,6 +1166,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": null,
+        "توان": {
+          "value": "200 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "روش خنک‌کاری": null,
+        "هد پاک‌سازی": null,
+        "عرض اسکن": null,
+        "طول کابل": null,
+        "نوع کاربری": {
+          "value": "پرتابل",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1198,6 +1233,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "پالسی",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "500 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "روش خنک‌کاری": null,
+        "هد پاک‌سازی": null,
+        "عرض اسکن": null,
+        "طول کابل": null,
+        "نوع کاربری": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1246,6 +1300,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "پالسی",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "1000 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "روش خنک‌کاری": null,
+        "هد پاک‌سازی": null,
+        "عرض اسکن": null,
+        "طول کابل": null,
+        "نوع کاربری": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1294,6 +1367,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "پیوسته",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "1500 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "روش خنک‌کاری": null,
+        "هد پاک‌سازی": null,
+        "عرض اسکن": null,
+        "طول کابل": null,
+        "نوع کاربری": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1345,6 +1437,17 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {
+        "نوع لیزر": null,
+        "توان": null,
+        "روش خنک‌کاری": null,
+        "هد پاک‌سازی": null,
+        "عرض اسکن": null,
+        "طول کابل": null,
+        "نوع کاربری": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1376,6 +1479,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1407,6 +1511,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1438,6 +1543,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1469,6 +1575,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1500,6 +1607,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1531,6 +1639,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1562,6 +1671,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1593,6 +1703,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1624,6 +1735,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1655,6 +1767,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1686,6 +1799,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1717,6 +1831,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1776,6 +1891,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1840,6 +1956,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1923,6 +2040,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1982,6 +2100,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2148,6 +2267,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2199,6 +2319,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2250,6 +2371,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2301,6 +2423,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2352,6 +2475,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2403,6 +2527,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2454,6 +2579,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2568,6 +2694,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2682,6 +2809,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2733,6 +2861,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2850,6 +2979,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -2959,6 +3089,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3080,6 +3211,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3117,6 +3249,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3154,6 +3287,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3205,6 +3339,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3294,6 +3429,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3345,6 +3481,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3382,6 +3519,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3413,6 +3551,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3444,6 +3583,7 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3501,6 +3641,21 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": null,
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3549,6 +3704,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "30 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": null,
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3597,6 +3771,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "50 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": null,
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3645,6 +3838,25 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": {
+          "value": "100 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": null,
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3701,6 +3913,25 @@
         "./assets/products/ML-004/_MG_4354.jpg",
         "./assets/products/ML-004/_MG_4357.jpg"
       ],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "UV",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": {
+          "value": "میزدار",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3758,6 +3989,25 @@
         "./assets/products/ML-005/_MG_4162.jpg",
         "./assets/products/ML-005/_MG_4165.jpg"
       ],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": {
+          "value": "پرتابل",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3800,6 +4050,21 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": null,
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": {
+          "value": "Inline",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3856,6 +4121,25 @@
         "./assets/products/ML-007/_MG_4206.jpg",
         "./assets/products/ML-007/_MG_4218.jpg"
       ],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": {
+          "value": "رومیزی",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3898,6 +4182,21 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "MOPA",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": null,
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -3949,6 +4248,25 @@
         "./assets/products/ML-009/_MG_4270.jpg",
         "./assets/products/ML-009/_MG_4275.jpg"
       ],
+      "comparisonValues": {
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "محدوده حکاکی": null,
+        "لنز": null,
+        "گالوو": null,
+        "روش نصب": {
+          "value": "میزدار",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "کنترلر": null,
+        "روتاری": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4071,6 +4389,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4170,6 +4489,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4287,6 +4607,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4429,6 +4750,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4504,6 +4826,26 @@
         "previousFacts": "پوستر: 1.5kW، 1064nm، ضخامت درج‌شده 4mm، 10–40°C",
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
+      },
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": {
+          "value": "1500 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -4581,6 +4923,26 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": {
+          "value": "2000 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4657,6 +5019,26 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": {
+          "value": "3000 W",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "نوع لیزر": {
+          "value": "فایبر",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4706,6 +5088,18 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4755,6 +5149,22 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": {
+          "value": "دستی",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4810,6 +5220,22 @@
         }
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4859,6 +5285,26 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "نوع کاربری": {
+          "value": "پرتابل",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4908,6 +5354,26 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": {
+          "value": "نقطه‌ای",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "توان": null,
+        "نوع لیزر": {
+          "value": "QCW",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -4957,6 +5423,18 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5006,6 +5484,18 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5055,6 +5545,22 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": {
+          "value": "رباتیک",
+          "scope": "catalog_identity",
+          "source": null
+        },
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5104,6 +5610,18 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5153,6 +5671,18 @@
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "comparisonValues": {
+        "نوع جوش": null,
+        "توان": null,
+        "نوع لیزر": null,
+        "خنک‌کاری": null,
+        "نوع کاربری": null,
+        "سیم‌فیدر": null,
+        "هد جوش": null,
+        "سورس": null,
+        "برق ورودی": null,
+        "ابعاد و وزن": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5245,6 +5775,51 @@
         "servo": "Delta",
         "motion": "Dual rack & pinion"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": {
+          "value": "1500–3000 W (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "سورس": {
+          "value": "RAYCUS / MAX (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "هد": {
+          "value": "Boci (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "کنترلر": {
+          "value": "CypCut 2000E (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5336,6 +5911,51 @@
         "bed": "12 mm full-plate construction",
         "motion": "Dual rack & pinion"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": {
+          "value": "6000–12000 W (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "سورس": {
+          "value": "RAYCUS / MAX (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "هد": {
+          "value": "Boci (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "کنترلر": {
+          "value": "CypCut 4000E (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5405,6 +6025,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5472,7 +6121,42 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-3015-4/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -5543,6 +6227,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5612,6 +6325,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "کابین‌دار",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -5679,7 +6421,42 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-3015-7/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -5748,7 +6525,42 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-3015-8/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -5818,6 +6630,35 @@
       "sources": [],
       "visuals": {
         "status": "not_complete"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "3015",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "کابین‌دار",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -5891,7 +6732,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-1/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
       },
       "seriesReference": {
         "document": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx",
@@ -5904,6 +6751,51 @@
         "chiller": "S&A",
         "servo": "Delta",
         "motion": "Dual rack & pinion"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": {
+          "value": "1500–3000 W (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "سورس": {
+          "value": "RAYCUS / MAX (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "هد": {
+          "value": "Boci (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "کنترلر": {
+          "value": "CypCut 2000E (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -5977,7 +6869,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-2/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
       },
       "seriesReference": {
         "document": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx",
@@ -5989,6 +6887,51 @@
         "controller": "CypCut 4000E",
         "bed": "12 mm full-plate construction",
         "motion": "Dual rack & pinion"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": {
+          "value": "6000–12000 W (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "سورس": {
+          "value": "RAYCUS / MAX (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "هد": {
+          "value": "Boci (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "کنترلر": {
+          "value": "CypCut 4000E (گزینه‌های سری)",
+          "scope": "supplied_series_options",
+          "source": "دستگاه تک میز حرفه ای\\متن اصلاحی سایت.docx"
+        },
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -6059,6 +7002,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -6127,6 +7099,35 @@
       "sources": [],
       "visuals": {
         "status": "not_complete"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -6197,6 +7198,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -6265,6 +7295,35 @@
       "sources": [],
       "visuals": {
         "status": "not_complete"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "کابین‌دار",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق‌بر در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -6335,6 +7394,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "تک میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -6402,7 +7490,42 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-8/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+          "visualReview": true
+        }
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "بدون کابین در نام پیکربندی",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -6473,6 +7596,35 @@
       "visuals": {
         "status": "not_complete"
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "6020",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": {
+          "value": "دو میز",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "کابین": {
+          "value": "کابین‌دار",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "لوله‌بر": {
+          "value": "ورق و لوله",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -6520,6 +7672,23 @@
       "sources": [],
       "visuals": {
         "status": "not_complete"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "custom",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": null,
+        "کابین": null,
+        "لوله‌بر": null,
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false
@@ -6575,6 +7744,23 @@
           "visualReview": true
         }
       },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "tube",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": null,
+        "کابین": null,
+        "لوله‌بر": null,
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
+      },
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -6622,6 +7808,23 @@
       "sources": [],
       "visuals": {
         "status": "not_complete"
+      },
+      "comparisonValues": {
+        "گروه ابعادی": {
+          "value": "robot",
+          "scope": "user_requested_taxonomy",
+          "source": null
+        },
+        "ساختار میز": null,
+        "کابین": null,
+        "لوله‌بر": null,
+        "توان": null,
+        "سورس": null,
+        "هد": null,
+        "کنترلر": null,
+        "دقت": null,
+        "سرعت": null,
+        "ابعاد نصب": null
       },
       "contentStatus": "enriched_draft",
       "ready": false

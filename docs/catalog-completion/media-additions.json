@@ -82,6 +82,42 @@
     "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser System/2000C.jpg",
     "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
     "visualReview": true
+  },
+  "CUT-6020-1": {
+    "directory": "CUT-6020-1",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\6020\\laser cutting mashine 6020.png",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
+  },
+  "CUT-6020-2": {
+    "directory": "CUT-6020-2",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\6020 حرفه ای\\laser cutting machine 6020.png",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
+  },
+  "CUT-3015-4": {
+    "directory": "CUT-3015-4",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز 3015\\laser cutting nachine 3015 exchange 1.jpg",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
+  },
+  "CUT-3015-7": {
+    "directory": "CUT-3015-7",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\تک میز استاندارد 3015 با روتاری\\laser cutting machine 3015 with rotary (Single table) 1.png",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
+  },
+  "CUT-3015-8": {
+    "directory": "CUT-3015-8",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز استاندراد 3015 با روتاری\\laser cutting machine 3015 with rotary (exchange) 1.png",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
+  },
+  "CUT-6020-8": {
+    "directory": "CUT-6020-8",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها\\دو میز حرفه ای 6020 با روتاری\\laser cutting machine 6020 with rotary (exchange) 1.png",
+    "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+    "visualReview": true
   }
 }
 

@@ -7,7 +7,7 @@ assert.equal(catalog.products.length,106);assert.equal(new Set(catalog.products.
 const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015','دو میز DZ3015','دو میز LD3015','دو میز کابین‌دار DZ3015','تک میز 3015 + لوله‌بر','دو میز 3015 + لوله‌بر','دو میز کابین‌دار 3015 + لوله‌بر'];
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
-const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=30);
+const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
 assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').specs.some(s=>s.label==='شیشه‌های محافظ در جدول قطعات V2.0'&&s.value.includes('میانی')));
 assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').visuals.opticalReconstruction.src.endsWith('xray-web-v5.jpg'));
 for(const p of catalog.products){assert.equal(p.comparable,['cutting','welding','marking','cleaning'].includes(p.category));assert(!p.ready);if(p.visuals.studio)assert(fs.existsSync(path.join(root,p.visuals.studio.src)));}

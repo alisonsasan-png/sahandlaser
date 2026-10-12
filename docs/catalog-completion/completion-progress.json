@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 30,
+  "studioImages": 36,
   "recordsWithSourcedSpecifications": 14,
   "suppliedSeriesDocuments": 4,
   "rejectedOrAmbiguousImages": 4,
@@ -1197,12 +1197,11 @@
       "code": "CUT-3015-4",
       "name": "دو میز DZ3015",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -1239,12 +1238,11 @@
       "code": "CUT-3015-7",
       "name": "تک میز 3015 + لوله‌بر",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -1253,12 +1251,11 @@
       "code": "CUT-3015-8",
       "name": "دو میز 3015 + لوله‌بر",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -1281,12 +1278,11 @@
       "code": "CUT-6020-1",
       "name": "تک میز DZ6020S",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -1294,12 +1290,11 @@
       "code": "CUT-6020-2",
       "name": "تک میز DZ6020H",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -1377,12 +1372,11 @@
       "code": "CUT-6020-8",
       "name": "دو میز 6020 + لوله‌بر",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
