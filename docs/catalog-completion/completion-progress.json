@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 77,
-  "recordsWithSourcedSpecifications": 71,
-  "recordsWithManufacturerReferenceSpecifications": 47,
+  "recordsWithSourcedSpecifications": 83,
+  "recordsWithManufacturerReferenceSpecifications": 59,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -263,12 +263,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -276,12 +275,11 @@
       "name": "ظ†ط§ط²ظ„ ط§ظˆط±ط¬غŒظ†ط§ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± TRA ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -289,12 +287,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -302,12 +299,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -315,12 +311,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظ¾ط± ط³ط±ط¹طھ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -328,12 +323,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظپظˆظ„ ظ¾ط§ظˆط± ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -341,12 +335,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BT210/BT210S",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -354,12 +347,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM111",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -367,12 +359,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM114S",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -380,12 +371,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -393,12 +383,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Full Power ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -406,12 +395,11 @@
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ط¯ظ„ FL200 ظˆ FL1501 ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
