@@ -6283,7 +6283,32 @@
         "ط¨ط±ط§غŒ ط­ع©ط§ع©غŒ/ظ…ط§ط±ع©غŒظ†ع¯ طµظ†ط¹طھغŒ ط±ظˆغŒ ظ‚ط·ط¹ط§طھ ظ…طھظ†ط§ط³ط¨ ط¨ط§ ظ†ظˆط¹ ط³ظˆط±ط³ ظˆ ط¬ظ†ط³ ظ…طھط±غŒط§ظ„.",
         "ط¯ط± ط­ع©ط§ع©غŒ ظˆ ظ…ط§ط±ع©غŒظ†ع¯طŒ ظ†ظˆط¹ ظ…طھط±غŒط§ظ„طŒ ط§ظ†ط¯ط§ط²ظ‡ ط·ط±ط­طŒ ع©غŒظپغŒطھ ظ†ظˆط´طھظ‡ ظˆ ط±ظˆط´ ظ‚ط±ط§ط±ع¯غŒط±غŒ ظ‚ط·ط¹ظ‡ طھط¹غŒغŒظ†â€Œع©ظ†ظ†ط¯ظ‡â€Œط§ظ†ط¯. ط§ظ†طھط®ط§ط¨ ظ…غŒط§ظ† UVطŒ ظپط§غŒط¨ط± ظˆ MOPA ط¨ط§غŒط¯ ط¨ط§ ط¢ط²ظ…ظˆظ† ط±ظˆغŒ ظ†ظ…ظˆظ†ظ‡ ظˆط§ظ‚ط¹غŒ ط§ظ†ط¬ط§ظ… ط´ظˆط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظپظ†ط§ظˆط±غŒ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "UV laser marking",
+          "scope": "manufacturer_manual",
+          "source": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "355 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/"
+        },
+        {
+          "label": "ظ†ظ…ظˆظ†ظ‡ ط¨ط§ط²ظ‡ طھظˆط§ظ† ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "15 / 20 W",
+          "scope": "manufacturer_manual",
+          "source": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ظ…ط¯ظ„طŒ ظ…ظ†ط¨ط¹طŒ طھظˆط§ظ†طŒ ظ…غŒط¯ط§ظ† ع©ط§ط±غŒ ظˆ ط®ظ†ع©â€Œع©ط§ط±غŒ ط¯ط³طھع¯ط§ظ‡ UV ط³ظ‡ظ†ط¯ ط§ط² ط§غŒظ† ظ…ط±ط¬ط¹ ظ…ط³طھظ‚ظ„ ظ‚ط§ط¨ظ„ ط§ط³طھظ†طھط§ط¬ ظ†غŒط³طھ",
+          "scope": "manufacturer_manual",
+          "source": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/"
+        }
+      ],
       "images": [
         "../assets/products/ML-004/_MG_4350.jpg"
       ],
@@ -6314,7 +6339,13 @@
         "ط§ظ†ط¯ط§ط²ظ‡ ط·ط±ط­ ظˆ ط³ط±ط¹طھ طھظˆظ„غŒط¯ ظ…ظˆط±ط¯ظ†ط¸ط± ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ…غŒط² ط«ط§ط¨طھطŒ ط­ظ…ظ„â€Œظ¾ط°غŒط±غŒ غŒط§ ط§طھطµط§ظ„ ط¨ظ‡ ط®ط· طھظˆظ„غŒط¯ ظ„ط§ط²ظ… ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/",
+          "title": "SUNINE UV marking family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -6337,7 +6368,11 @@
           "scope": "catalog_identity",
           "source": null
         },
-        "طھظˆط§ظ†": null,
+        "طھظˆط§ظ†": {
+          "value": "15 / 20 W",
+          "scope": "manufacturer_manual",
+          "source": "https://www.suninelaser.com/solutions/UV-Laser-Marking-Machine-UV1520C-UV2020C/"
+        },
         "ظ…ط­ط¯ظˆط¯ظ‡ ط­ع©ط§ع©غŒ": null,
         "ظ„ظ†ط²": null,
         "ع¯ط§ظ„ظˆظˆ": null,
@@ -6788,7 +6823,38 @@
         "ط¨ط±ط§غŒ ط­ع©ط§ع©غŒ/ظ…ط§ط±ع©غŒظ†ع¯ طµظ†ط¹طھغŒ ط±ظˆغŒ ظ‚ط·ط¹ط§طھ ظ…طھظ†ط§ط³ط¨ ط¨ط§ ظ†ظˆط¹ ط³ظˆط±ط³ ظˆ ط¬ظ†ط³ ظ…طھط±غŒط§ظ„.",
         "ط¯ط± ط­ع©ط§ع©غŒ ظˆ ظ…ط§ط±ع©غŒظ†ع¯طŒ ظ†ظˆط¹ ظ…طھط±غŒط§ظ„طŒ ط§ظ†ط¯ط§ط²ظ‡ ط·ط±ط­طŒ ع©غŒظپغŒطھ ظ†ظˆط´طھظ‡ ظˆ ط±ظˆط´ ظ‚ط±ط§ط±ع¯غŒط±غŒ ظ‚ط·ط¹ظ‡ طھط¹غŒغŒظ†â€Œع©ظ†ظ†ط¯ظ‡â€Œط§ظ†ط¯. ط§ظ†طھط®ط§ط¨ ظ…غŒط§ظ† UVطŒ ظپط§غŒط¨ط± ظˆ MOPA ط¨ط§غŒط¯ ط¨ط§ ط¢ط²ظ…ظˆظ† ط±ظˆغŒ ظ†ظ…ظˆظ†ظ‡ ظˆط§ظ‚ط¹غŒ ط§ظ†ط¬ط§ظ… ط´ظˆط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظپظ†ط§ظˆط±غŒ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "MOPA fiber laser marking",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "1064 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        },
+        {
+          "label": "ظ†ظ…ظˆظ†ظ‡ طھظˆط§ظ†â€Œظ‡ط§غŒ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "30 W ظˆ 60 W MOPA",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        },
+        {
+          "label": "ظ†ظ…ظˆظ†ظ‡ ط¨ط§ط²ظ‡ ظپط±ع©ط§ظ†ط³ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "1â€“4000 kHzط› ظˆط§ط¨ط³طھظ‡ ط¨ظ‡ ظ…ط¯ظ„",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ظ…ط¯ظ„طŒ ظ…ظ†ط¨ط¹ JPTطŒ طھظˆط§ظ† ظˆ ظ…غŒط¯ط§ظ† ع©ط§ط±غŒ ط¯ط³طھع¯ط§ظ‡ MOPA ط³ظ‡ظ†ط¯ ط§ط² ط§غŒظ† ظ…ط±ط¬ط¹ ظ…ط³طھظ‚ظ„ ظ‚ط§ط¨ظ„ ط§ط³طھظ†طھط§ط¬ ظ†غŒط³طھ",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -6817,7 +6883,13 @@
         "ط§ظ†ط¯ط§ط²ظ‡ ط·ط±ط­ ظˆ ط³ط±ط¹طھ طھظˆظ„غŒط¯ ظ…ظˆط±ط¯ظ†ط¸ط± ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ…غŒط² ط«ط§ط¨طھطŒ ط­ظ…ظ„â€Œظ¾ط°غŒط±غŒ غŒط§ ط§طھطµط§ظ„ ط¨ظ‡ ط®ط· طھظˆظ„غŒط¯ ظ„ط§ط²ظ… ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser",
+          "title": "em-smart MOPA marking family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -6828,7 +6900,11 @@
           "scope": "catalog_identity",
           "source": null
         },
-        "طھظˆط§ظ†": null,
+        "طھظˆط§ظ†": {
+          "value": "30 W ظˆ 60 W MOPA",
+          "scope": "manufacturer_manual",
+          "source": "https://em-smart.com/products/em-smart-mopa-30w-60w-mopa-laser"
+        },
         "ظ…ط­ط¯ظˆط¯ظ‡ ط­ع©ط§ع©غŒ": null,
         "ظ„ظ†ط²": null,
         "ع¯ط§ظ„ظˆظˆ": null,
