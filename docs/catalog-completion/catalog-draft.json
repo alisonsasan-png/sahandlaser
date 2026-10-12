@@ -1522,6 +1522,13 @@
         "date": "2026-10-04"
       },
       "variantNote": "نسخه دفترچه V1.0 و نسخه معرفی‌شده فعلی سازنده یکسان فرض نمی‌شوند.",
+      "technicalReference": {
+        "url": "https://www.raytools-de.com/product/raytools-bm111-auto-focus-laser-cutting-head/",
+        "scope": "manufacturer_family_technical_reference",
+        "limitations": [
+          "External family data only; no installed-unit drawing or nameplate match"
+        ]
+      },
       "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
@@ -1615,6 +1622,13 @@
         }
       },
       "availableLegacyMedia": [],
+      "technicalReference": {
+        "url": "https://www.manualslib.com/manual/1616386/Raytools-Bm114-Series.html",
+        "scope": "manufacturer_manual_mirror",
+        "limitations": [
+          "Manual family reference; no verified installed-unit geometry"
+        ]
+      },
       "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
@@ -1708,6 +1722,13 @@
         }
       },
       "availableLegacyMedia": [],
+      "technicalReference": {
+        "url": "https://www.manualslib.com/manual/2337778/Raytools-Bm115-Series.html",
+        "scope": "manufacturer_manual_mirror",
+        "limitations": [
+          "Manual family reference; no verified installed-unit geometry"
+        ]
+      },
       "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
