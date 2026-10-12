@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 104,
+  "studioImages": 106,
   "recordsWithSourcedSpecifications": 88,
   "recordsWithManufacturerReferenceSpecifications": 64,
   "recordsWithUserSeriesSpecifications": 8,
@@ -639,13 +639,11 @@
       "code": "MK-FIBER-GENERIC",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظپط§غŒط¨ط± ط³ظ‡ظ†ط¯ ظ„غŒط²ط±",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-001",
@@ -721,13 +719,11 @@
       "code": "ML-008",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ„غŒط²ط± MOPA",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-009",
