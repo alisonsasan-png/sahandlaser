@@ -28,6 +28,60 @@
     "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Ceramic Ring/Ceramic-Ring.jpg",
     "identityScope": "supplied product artwork; generated label is not identification evidence",
     "visualReview": true
+  },
+  "CC006": {
+    "directory": "CC006",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-3000.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CH-HANLI-6000": {
+    "directory": "CH-HANLI-6000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-6000.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CH-HANLI-12000": {
+    "directory": "CH-HANLI-12000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-12000.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CH-S&A-12000": {
+    "directory": "CH-S&A-12000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/S&A/12000-S&A.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CH-S&A-20000": {
+    "directory": "CH-S&A-20000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/S&A/20000-S&A.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CP-LENS-BLT": {
+    "directory": "CP-LENS-BLT",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/BLT.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CP-LENS-RAY": {
+    "directory": "CP-LENS-RAY",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/RAYTOOLS.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CP-LENS-WSX": {
+    "directory": "CP-LENS-WSX",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/WSX.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
+  },
+  "CTRL-FSCUT2000C": {
+    "directory": "CTRL-FSCUT2000C",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser System/2000C.jpg",
+    "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+    "visualReview": true
   }
 }
 

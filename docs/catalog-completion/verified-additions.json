@@ -222,6 +222,132 @@
         "10 m/s²"
       ]
     ]
+  },
+  "CTRL-FSCUT2000C": {
+    "url": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf",
+    "title": "Friendess FSCUT2000C manual V3.1, PDF pages 5–7",
+    "facts": [
+      [
+        "نوع کنترل",
+        "سامانه کنترل لیزر حلقه‌باز"
+      ],
+      [
+        "برد کنترل نسخه دفترچه",
+        "BMC1604V2"
+      ],
+      [
+        "برد ترمینال نسخه دفترچه",
+        "BCL3766"
+      ],
+      [
+        "دستگاه دستی همراه نسخه دفترچه",
+        "WKB"
+      ],
+      [
+        "نرم‌افزار",
+        "CypCut"
+      ],
+      [
+        "رابط برد کنترل",
+        "PCI"
+      ],
+      [
+        "ابعاد برد در دفترچه",
+        "213 × 112 mm"
+      ]
+    ]
+  },
+  "CH-S&A-12000": {
+    "url": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html",
+    "title": "TEYU CWFL-12000 current ENPTY/FNPTY variants; not an identification of an older photographed unit",
+    "removeLabels": [
+      "وزن",
+      "وزن اعلامی",
+      "ظرفیت مخزن",
+      "ولتاژ"
+    ],
+    "facts": [
+      [
+        "ساختار خنک‌کاری سری",
+        "دو مدار مستقل برای سورس و اپتیک"
+      ],
+      [
+        "رابط ارتباطی سری",
+        "RS-485 / Modbus"
+      ],
+      [
+        "پایداری دمای اعلام‌شده سری",
+        "±1 °C"
+      ],
+      [
+        "حجم مخزن نسخه‌های ENPTY/FNPTY",
+        "170 L"
+      ],
+      [
+        "برق نسخه‌های ENPTY/FNPTY",
+        "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه"
+      ],
+      [
+        "ابعاد نسخه‌های ENPTY/FNPTY",
+        "145 × 80 × 132 cm، طول × عرض × ارتفاع"
+      ],
+      [
+        "وزن خالص ENPTY / FNPTY",
+        "293 / 282 kg، مطابق جدول نسخه‌ها"
+      ]
+    ]
+  },
+  "CH-S&A-20000": {
+    "url": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html",
+    "title": "TEYU CWFL-20000 ETPTY/FTPTY current variants; not an identification of the supplied legacy photo",
+    "facts": [
+      [
+        "ساختار خنک‌کاری سری",
+        "دو مدار مستقل برای سورس و اپتیک"
+      ],
+      [
+        "رابط ارتباطی سری",
+        "RS-485 / Modbus"
+      ],
+      [
+        "پایداری دمای اعلام‌شده سری",
+        "±1.5 °C"
+      ],
+      [
+        "حجم مخزن ETPTY / FTPTY",
+        "170 L"
+      ],
+      [
+        "برق ETPTY / FTPTY",
+        "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه"
+      ],
+      [
+        "ابعاد ETPTY / FTPTY",
+        "141 × 80 × 132 cm، طول × عرض × ارتفاع"
+      ],
+      [
+        "وزن خالص ETPTY / FTPTY",
+        "279 kg، مطابق جدول نسخه‌ها"
+      ]
+    ]
+  },
+  "CP-LENS-RAY": {
+    "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
+    "title": "BM110 V2.0 cover-glass selection table, PDF page 26; values do not apply to every RayTools head",
+    "facts": [
+      [
+        "مرجع انتخاب سایز",
+        "مدل و محل نصب محافظ؛ اعداد زیر مخصوص جدول BM110 V2.0 هستند"
+      ],
+      [
+        "محافظ بالایی در جدول BM110 V2.0",
+        "D24.9 × 1.5 mm؛ شماره قطعه 211LCG0020"
+      ],
+      [
+        "محافظ میانی / پایینی در جدول BM110 V2.0",
+        "D27.9 × 4.1 mm؛ شماره قطعه 211LCG0037"
+      ]
+    ]
   }
 }
 

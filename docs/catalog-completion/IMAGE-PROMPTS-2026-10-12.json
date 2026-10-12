@@ -43,6 +43,89 @@
       "saved": "assets/catalog-v2/CP-RAY-BM110/xray-review-v3.png",
       "delivery": "assets/catalog-v2/CP-RAY-BM110/xray-web-v3.jpg",
       "scope": "Optical module reconstruction only; retaining barrel geometry and hidden mechanics are not factory verified"
+    },
+    {
+      "code": "CC006",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-3000.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve white Hanli 3000 cabinet, single top fan and black round grille, side perforated vents, front dark horizontal stripe, small controls and small castors. Preserve Hanli marking.",
+      "saved": "assets/catalog-v2/CC006/studio-v1.png",
+      "delivery": "assets/catalog-v2/CC006/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-6000.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve actual white Hanli cabinet, large square side grille, top fan guard, blue front stripe, controller and front electrical breaker, sheetmetal feet and original Hanli markings. Preserve counts and positions of visible controls/fans; do not add wheels.",
+      "saved": "assets/catalog-v2/CH-HANLI-6000/studio-v1.png",
+      "delivery": "assets/catalog-v2/CH-HANLI-6000/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-12000.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve actual white Hanli cabinet, large square side grille, top fan guard, blue front stripe, controller and front electrical breaker, sheetmetal feet and original Hanli markings. Preserve counts and positions of visible controls/fans; do not add wheels.",
+      "saved": "assets/catalog-v2/CH-HANLI-12000/studio-v1.png",
+      "delivery": "assets/catalog-v2/CH-HANLI-12000/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CH-S&A-12000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/S&A/12000-S&A.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve actual S&A / TEYU chiller casing, blue trim, front controls and panels, top fan guards, side square grille and feet. Preserve exact casing proportion and fan/layout details; restore normally oriented legible existing S&A/TEYU brand/model markings where poster has been mirrored; no changed model. No new Sahand logo.",
+      "saved": "assets/catalog-v2/CH-S&A-12000/studio-v1.png",
+      "delivery": "assets/catalog-v2/CH-S&A-12000/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CH-S&A-20000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Chiller/S&A/20000-S&A.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve actual S&A / TEYU chiller casing, blue trim, front controls and panels, top fan guards, side square grille and feet. Preserve exact casing proportion and fan/layout details; restore normally oriented legible existing S&A/TEYU brand/model markings where poster has been mirrored; no changed model. No new Sahand logo.",
+      "saved": "assets/catalog-v2/CH-S&A-20000/studio-v1.png",
+      "delivery": "assets/catalog-v2/CH-S&A-20000/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/BLT.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve the single solid clear protective glass disc, its subtle coating and thin edge. No hole in the center, no extra discs.",
+      "saved": "assets/catalog-v2/CP-LENS-BLT/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-LENS-BLT/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/RAYTOOLS.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve the four clear overlapping round protective glass discs and their thickness, arrangement, subtle lilac edge coating. They are glass windows, NOT metal rings or hollow tubes.",
+      "saved": "assets/catalog-v2/CP-LENS-RAY/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-LENS-RAY/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser Lens/WSX.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve exactly the two supplied translucent plastic lens cases, one closed with original WSX product label and one open containing its glass window. Do not invent packaging lettering; keep small label text unobtrusive rather than forge serials.",
+      "saved": "assets/catalog-v2/CP-LENS-WSX/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-LENS-WSX/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser System/2000C.jpg",
+      "prompt": "Use case: precise-object-edit. Input is edit target: user-supplied product promotional artwork. Extract ONLY actual product from center into a premium photorealistic catalog image. Pure white background, square frame, whole product visible at 80 percent frame height/width max with generous margins, subtle contact shadow and soft studio light. Preserve physical geometry, viewpoint, surface materials, visible accessories, brands and connections. Remove surrounding poster, technical text, banner, icons, phone details; don't carry unsupported poster specs into new picture. No invented hidden internals or new props. Preserve supplied green BMC160V2-family PCB, large multi-pin metal bracket connector, black ribbon socket, round battery and gold card contacts. No redesign of circuit or added ports. Do not relabel as EtherCAT or BMC228.",
+      "saved": "assets/catalog-v2/CTRL-FSCUT2000C/studio-v1.png",
+      "delivery": "assets/catalog-v2/CTRL-FSCUT2000C/studio-web.jpg",
+      "scope": "family exterior reconstructed from supplied artwork; no hidden-assembly proof"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "prompt": "Use case precise-object-edit. Image 1 edit target is the FOUR-GROUP translucent BM110 illustration with an empty long transparent tube in its middle. Image 2 is the manufacturer's middle cover-glass reference. Make one tiny local edit ONLY: add a SINGLE flat, parallel-sided protective glass disc across the empty middle bore, centered at x about 650 and y about 445 in the 1254x1254 image, held by a very thin annular metal retainer. Disc thickness about 8 image pixels. It is a planar protective window, NOT convex, NOT bowl-shaped, NOT an additional compound lens, NOT a long barrel. Its position is between the upper collimation assembly (y around 310) and lower focusing assembly (y around 710). Do not add any other optical surface. Keep the entire rest of image PIXEL-IDENTICAL in appearance: same four existing optical groups, casing, silhouette, nozzles, fittings, background and camera. Final visualization has exactly THREE flat protective windows and TWO compound powered lens groups. No new mechanism or electronics. No text or arrows. Preserve white background and registered silhouette. Keep it a scoped optical-module reconstruction, not factory CAD.",
+      "references": [
+        "assets/catalog-v2/CP-RAY-BM110/xray-review-v3.png",
+        "docs/catalog-completion/inspection/BM110/page-19.png"
+      ],
+      "saved": "assets/catalog-v2/CP-RAY-BM110/xray-review-v5.png",
+      "delivery": "assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
+      "scope": "supersedes v3 by restoring a flat middle protective window; no exact hidden mechanics claim"
     }
   ]
 }

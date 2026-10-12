@@ -1,10 +1,10 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 21,
-  "recordsWithSourcedSpecifications": 10,
+  "studioImages": 30,
+  "recordsWithSourcedSpecifications": 14,
   "suppliedSeriesDocuments": 4,
-  "rejectedOrAmbiguousImages": 3,
+  "rejectedOrAmbiguousImages": 4,
   "articles": 8,
   "releaseGate": {
     "passed": false,
@@ -77,12 +77,11 @@
       "code": "CC006",
       "name": "چیلر فایبر Hanli HL-3000",
       "category": "parts",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -90,12 +89,11 @@
       "code": "CH-HANLI-12000",
       "name": "چیلر فایبر Hanli HL-12000",
       "category": "parts",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -103,12 +101,11 @@
       "code": "CH-HANLI-6000",
       "name": "چیلر فایبر Hanli HL-6000",
       "category": "parts",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -116,27 +113,21 @@
       "code": "CH-S&A-12000",
       "name": "چیلر فایبر S&A CWFL-12000",
       "category": "parts",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
+      "studioImage": true,
+      "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CH-S&A-20000",
       "name": "چیلر فایبر S&A CWFL-20000",
       "category": "parts",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
+      "studioImage": true,
+      "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CH-S&A-6000",
@@ -145,7 +136,14 @@
       "studioImage": false,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
-      "mediaIdentityIssue": null,
+      "mediaIdentityIssue": {
+        "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/6000-S&A.jpg",
+        "sha256": "f5d5dd613354869e784508a9e4da29208e3b5281b63de4368aa8c268ed687f2d",
+        "match": "model named in supplied artwork",
+        "processing": "do not publish as exact-model image",
+        "identityReview": "rejected_for_exact_model",
+        "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph."
+      },
       "remaining": [
         "prepare product-specific studio image",
         "reconcile exact-model specifications"
@@ -469,12 +467,11 @@
       "code": "CP-LENS-BLT",
       "name": "محافظ لنز سری BLT",
       "category": "consumables",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -482,25 +479,21 @@
       "code": "CP-LENS-RAY",
       "name": "محافظ لنز RayTools",
       "category": "consumables",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
+      "studioImage": true,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-LENS-WSX",
       "name": "محافظ لنز WSX",
       "category": "consumables",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -509,7 +502,7 @@
       "name": "هد برش فایبر RayTools BM110",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 8,
+      "sourcedSpecifications": 10,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
@@ -638,13 +631,11 @@
       "code": "CTRL-FSCUT2000C",
       "name": "سیستم کنترل برش FSCUT2000C",
       "category": "head",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
+      "studioImage": true,
+      "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },

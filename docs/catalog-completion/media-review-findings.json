@@ -1,6 +1,19 @@
 {
-  "SRC-RAY-C3000S": {"identityReview":"rejected_for_exact_model","reason":"Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."},
-  "SRC-RAY-C6000S": {"identityReview":"rejected_for_exact_model","reason":"Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."},
-  "CH003": {"identityReview":"insufficient_model_identity","reason":"Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."}
+  "SRC-RAY-C3000S": {
+    "identityReview": "rejected_for_exact_model",
+    "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
+  },
+  "SRC-RAY-C6000S": {
+    "identityReview": "rejected_for_exact_model",
+    "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
+  },
+  "CH003": {
+    "identityReview": "insufficient_model_identity",
+    "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."
+  },
+  "CH-S&A-6000": {
+    "identityReview": "rejected_for_exact_model",
+    "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph."
+  }
 }
 

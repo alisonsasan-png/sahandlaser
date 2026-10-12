@@ -379,6 +379,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CC006/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -437,6 +443,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH-HANLI-12000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -495,6 +507,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH-HANLI-6000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -538,6 +556,48 @@
           "label": "دقت کنترل معمول سری",
           "value": "±1°C",
           "scope": "family_reference"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار مستقل برای سورس و اپتیک",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "رابط ارتباطی سری",
+          "value": "RS-485 / Modbus",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "پایداری دمای اعلام‌شده سری",
+          "value": "±1 °C",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "حجم مخزن نسخه‌های ENPTY/FNPTY",
+          "value": "170 L",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "برق نسخه‌های ENPTY/FNPTY",
+          "value": "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "ابعاد نسخه‌های ENPTY/FNPTY",
+          "value": "145 × 80 × 132 cm، طول × عرض × ارتفاع",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
+        },
+        {
+          "label": "وزن خالص ENPTY / FNPTY",
+          "value": "293 / 282 kg، مطابق جدول نسخه‌ها",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         }
       ],
       "images": [],
@@ -554,7 +614,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html",
+          "title": "TEYU CWFL-12000 current ENPTY/FNPTY variants; not an identification of an older photographed unit",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -563,6 +629,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH-S&A-12000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -606,6 +678,48 @@
           "label": "دقت کنترل معمول سری",
           "value": "±1.5°C",
           "scope": "family_reference"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار مستقل برای سورس و اپتیک",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "رابط ارتباطی سری",
+          "value": "RS-485 / Modbus",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "پایداری دمای اعلام‌شده سری",
+          "value": "±1.5 °C",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "حجم مخزن ETPTY / FTPTY",
+          "value": "170 L",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "برق ETPTY / FTPTY",
+          "value": "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "ابعاد ETPTY / FTPTY",
+          "value": "141 × 80 × 132 cm، طول × عرض × ارتفاع",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
+        },
+        {
+          "label": "وزن خالص ETPTY / FTPTY",
+          "value": "279 kg، مطابق جدول نسخه‌ها",
+          "scope": "manufacturer_manual",
+          "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         }
       ],
       "images": [],
@@ -622,7 +736,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html",
+          "title": "TEYU CWFL-20000 ETPTY/FTPTY current variants; not an identification of the supplied legacy photo",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -631,6 +751,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH-S&A-20000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -697,8 +823,9 @@
           "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/6000-S&A.jpg",
           "sha256": "f5d5dd613354869e784508a9e4da29208e3b5281b63de4368aa8c268ed687f2d",
           "match": "model named in supplied artwork",
-          "processing": "requires white-background preparation",
-          "identityReview": "not_finished"
+          "processing": "do not publish as exact-model image",
+          "identityReview": "rejected_for_exact_model",
+          "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph."
         }
       },
       "availableLegacyMedia": [],
@@ -1695,6 +1822,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-LENS-BLT/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -1723,6 +1856,24 @@
           "label": "برند",
           "value": "RayTools",
           "scope": "identity"
+        },
+        {
+          "label": "مرجع انتخاب سایز",
+          "value": "مدل و محل نصب محافظ؛ اعداد زیر مخصوص جدول BM110 V2.0 هستند",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "محافظ بالایی در جدول BM110 V2.0",
+          "value": "D24.9 × 1.5 mm؛ شماره قطعه 211LCG0020",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "محافظ میانی / پایینی در جدول BM110 V2.0",
+          "value": "D27.9 × 4.1 mm؛ شماره قطعه 211LCG0037",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
         }
       ],
       "images": [],
@@ -1739,7 +1890,13 @@
         "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
         "نوع فرایند و پارامترهای کاری چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
+          "title": "BM110 V2.0 cover-glass selection table, PDF page 26; values do not apply to every RayTools head",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -1748,6 +1905,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-LENS-RAY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -1801,6 +1964,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-LENS-WSX/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -1912,6 +2081,18 @@
           "value": "125 / 155 / 200 mm",
           "scope": "manufacturer_manual",
           "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "شیشه‌های محافظ در جدول قطعات V2.0",
+          "value": "بالا D24.9 × 1.5 mm؛ میانی و پایین D27.9 × 4.1 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        {
+          "label": "شماره قطعه محافظ در جدول V2.0",
+          "value": "بالا 211LCG0020؛ میانی و پایین 211LCG0037",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
         }
       ],
       "images": [],
@@ -1951,9 +2132,9 @@
           "visualReview": true
         },
         "opticalReconstruction": {
-          "src": "assets/catalog-v2/CP-RAY-BM110/xray-web-v3.jpg",
+          "src": "assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
           "type": "AI-assisted optical-module visualization",
-          "scope": "Documented optical-module order; hidden mechanics and exact manufacturing geometry are not represented",
+          "scope": "Documented optical-module order including three cover windows; hidden mechanics and exact manufacturing geometry are not represented",
           "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
         }
       },
@@ -2575,14 +2756,51 @@
           "scope": "identity"
         },
         {
-          "label": "نوع کنترل",
-          "value": "Open-loop",
-          "scope": "family_reference"
-        },
-        {
           "label": "کاربرد مرجع",
           "value": "برش فلز و غیرفلز",
           "scope": "family_reference"
+        },
+        {
+          "label": "نوع کنترل",
+          "value": "سامانه کنترل لیزر حلقه‌باز",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "برد کنترل نسخه دفترچه",
+          "value": "BMC1604V2",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "برد ترمینال نسخه دفترچه",
+          "value": "BCL3766",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "دستگاه دستی همراه نسخه دفترچه",
+          "value": "WKB",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "نرم‌افزار",
+          "value": "CypCut",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "رابط برد کنترل",
+          "value": "PCI",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
+        },
+        {
+          "label": "ابعاد برد در دفترچه",
+          "value": "213 × 112 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf"
         }
       ],
       "images": [],
@@ -2599,7 +2817,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT2000CUser-ManualV3.1.pdf",
+          "title": "Friendess FSCUT2000C manual V3.1, PDF pages 5–7",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2608,6 +2832,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CTRL-FSCUT2000C/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
