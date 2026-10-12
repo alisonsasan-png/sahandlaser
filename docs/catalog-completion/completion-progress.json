@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 66,
+  "studioImages": 67,
   "recordsWithSourcedSpecifications": 63,
   "recordsWithManufacturerReferenceSpecifications": 38,
   "recordsWithUserSeriesSpecifications": 8,
@@ -540,12 +540,11 @@
       "code": "CP-RAY-BT240",
       "name": "هد برش RayTools BT240",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
