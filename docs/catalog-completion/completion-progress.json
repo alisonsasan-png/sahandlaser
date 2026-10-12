@@ -2,8 +2,10 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 38,
-  "recordsWithSourcedSpecifications": 30,
-  "suppliedSeriesDocuments": 4,
+  "recordsWithSourcedSpecifications": 38,
+  "recordsWithManufacturerReferenceSpecifications": 30,
+  "recordsWithUserSeriesSpecifications": 8,
+  "suppliedSeriesDocuments": 12,
   "rejectedOrAmbiguousImages": 4,
   "articles": 9,
   "releaseGate": {
@@ -754,12 +756,11 @@
       "name": "دستگاه حکاکی فایبر سهند لیزر",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -768,12 +769,11 @@
       "name": "دستگاه فایبر مارکینگ 30 وات",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -782,12 +782,11 @@
       "name": "دستگاه فایبر مارکینگ 50 وات",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -796,12 +795,11 @@
       "name": "دستگاه فایبر مارکینگ 100 وات",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -823,11 +821,10 @@
       "name": "دستگاه حکاکی پرتابل فایبر",
       "category": "marking",
       "studioImage": true,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -836,12 +833,11 @@
       "name": "دستگاه حکاکی لیزر Inline",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -850,11 +846,10 @@
       "name": "دستگاه حکاکی رومیزی فایبر",
       "category": "marking",
       "studioImage": true,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -877,12 +872,11 @@
       "name": "دستگاه حکاکی میزدار فایبر",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },

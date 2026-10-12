@@ -8,6 +8,8 @@ const library=read('docs/catalog-completion/local-library-index.json');
 const master=read('docs/catalog-completion/master-records.json');
 const mediaAdditions=read('docs/catalog-completion/media-additions.json');
 const mediaFindings=read('docs/catalog-completion/media-review-findings.json');
+const markingSeriesCodes=new Set(['MK-FIBER-GENERIC','ML-001','ML-002','ML-003','ML-005','ML-006','ML-007','ML-009']);
+const markingBrochure='docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf';
 const comparisonEngine=require('../assets/catalog-v2/catalog-comparison.js');
 const productContent=require('../assets/catalog-v2/catalog-product-content.js');
 const masterAliases={'CH003':'CP-RAY-BM111','CH002':'CP-RAY-BM109','FS004':'SRC-RAY-C1500','FS003':'SRC-RAY-C1000','FS005':'SRC-RAY-C2000','CC001':'CH-SA-1500','CC002':'CH-SA-2000','CC003':'CH-S&A-3000','CC004':'CH-HANLI-1500','CC005':'CH-HANLI-2000','CC006':'CH-HANLI-3000'};
@@ -55,6 +57,13 @@ const result=products.map(raw=>{const p=clean(raw),originalRecord=original.get(p
  if(p.category==='cutting'&&/DZ\d+S$/.test(p.name)){const source=docs.find(d=>d.source.includes('تک میز استاندارد'));p.seriesReference={document:source.source,sha256:source.sha256,scope:'standard_series_options',power:'1500–3000 W',source:'RAYCUS / MAX',head:'Boci',controller:'CypCut 2000E',chiller:'S&A',servo:'Delta',motion:'Dual rack & pinion'};p.sources.push({title:'فایل توضیحات سری استاندارد سهند',scope:'user_supplied_series_document'});}
  if(p.category==='cutting'&&/DZ\d+H$/.test(p.name)){const source=docs.find(d=>d.source.includes('حرفه'));p.seriesReference={document:source.source,sha256:source.sha256,scope:'professional_series_options',power:'6000–12000 W',source:'RAYCUS / MAX',head:'Boci',controller:'CypCut 4000E',bed:'12 mm full-plate construction',motion:'Dual rack & pinion'};p.sources.push({title:'فایل توضیحات سری حرفه‌ای سهند',scope:'user_supplied_series_document'});}
  // Never transfer 6025 series working area, other suppliers' tolerances or chiller revision values into exact models.
+ if(markingSeriesCodes.has(p.code)){
+  const source=markingBrochure+'#page=2';
+  p.seriesReference={document:markingBrochure,scope:'user_supplied_marking_series_options',power:'30 / 50 / 70 / 100 / 120 W options',controller:'BJJCZ; brochure reference, not installed-unit identity',source:'Raycus / JPT / IPG options',head:'SuperScan options',lens:'Opex; optional work areas',workingArea:'70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options'};
+  p.seriesReference.sha256=require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(root,markingBrochure))).digest('hex');
+  p.sources.push({title:'بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵',url:markingBrochure,scope:'user_supplied_series_document'});
+  p.specs.push({label:'برق معرفی‌شده سری فایبر در بروشور',value:'220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان',scope:'user_supplied_series_options',source},{label:'خنک‌کاری معرفی‌شده سری در بروشور',value:'هواخنک',scope:'user_supplied_series_options',source},{label:'سطح کار، گزینه‌های بروشور سری',value:'70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی',scope:'user_supplied_series_options',source});
+ }
  if(p.code==='SRC-RAY-QCW150')p.sources[p.sources.length-1]={title:'دفترچه ارسالی RFL-QCW150/1500، صفحه PDF ۱۱',scope:'user_supplied_manufacturer_manual',filename:'Raycus-QCW.pdf',page:11};
  const studioByCode={'CUT-3015-1':'single-standard','CUT-3015-2':'single-professional','WL-003':'air-cooled','CUT-tube':'tube-standard','WELD-1500':'WELD-1500','CC003':'CC003','CP-RAY-BM110':'CP-RAY-BM110','ML-004':'ML-004','ML-005':'ML-005','ML-007':'ML-007','CP-SMC-ITV1050':'CP-SMC-ITV1050','CTRL-FSCUT2000E':'CTRL-FSCUT2000E','FS004':'FS004','CC001':'CC001','CC002':'CC002','CH002':'CH002'};
  if(studioByCode[p.code]){const file='assets/catalog-v2/'+studioByCode[p.code]+'/studio-web.jpg';if(fs.existsSync(path.join(root,file)))p.visuals.studio={src:file,type:'AI-assisted reconstruction from supplied photo/CAD',identityScope:p.code==='WELD-1500'||p.code==='CC003'?'named product artwork':'supplied series photograph or CAD',visualReview:true};}

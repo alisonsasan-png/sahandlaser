@@ -4306,6 +4306,24 @@
           "label": "برند",
           "value": "Sahand Laser",
           "scope": "identity"
+        },
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
         }
       ],
       "images": [],
@@ -4333,7 +4351,13 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -4346,6 +4370,17 @@
         "previousFacts": "30/50/70/100/120W در کاتالوگ؛ سورس Raycus/JPT/IPG؛ کنترلر BJJCZ؛ لنز Opex؛ دقت 0.03mm؛ سرعت تا 8000mm/s",
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
+      },
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
       },
       "comparisonValues": {
         "نوع لیزر": {
@@ -4378,6 +4413,24 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "30 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
         }
       ],
       "images": [],
@@ -4405,11 +4458,28 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",
@@ -4445,6 +4515,24 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "50 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
         }
       ],
       "images": [],
@@ -4472,11 +4560,28 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",
@@ -4512,6 +4617,24 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "100 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
         }
       ],
       "images": [],
@@ -4539,11 +4662,28 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",
@@ -4649,7 +4789,26 @@
         "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
         "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        }
+      ],
       "images": [
         "../assets/products/ML-005/_MG_4146.jpg"
       ],
@@ -4677,7 +4836,13 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -4695,6 +4860,17 @@
         "./assets/products/ML-005/_MG_4162.jpg",
         "./assets/products/ML-005/_MG_4165.jpg"
       ],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",
@@ -4725,7 +4901,26 @@
         "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
         "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -4751,11 +4946,28 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
       "availableLegacyMedia": [],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": null,
         "توان": null,
@@ -4782,7 +4994,26 @@
         "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
         "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        }
+      ],
       "images": [
         "../assets/products/ML-007/_MG_4184.jpg"
       ],
@@ -4810,7 +5041,13 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -4827,6 +5064,17 @@
         "./assets/products/ML-007/_MG_4206.jpg",
         "./assets/products/ML-007/_MG_4218.jpg"
       ],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",
@@ -4914,7 +5162,26 @@
         "برای حکاکی/مارکینگ صنعتی روی قطعات متناسب با نوع سورس و جنس متریال.",
         "در حکاکی و مارکینگ، نوع متریال، اندازه طرح، کیفیت نوشته و روش قرارگیری قطعه تعیین‌کننده‌اند. انتخاب میان UV، فایبر و MOPA باید با آزمون روی نمونه واقعی انجام شود."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "برق معرفی‌شده سری فایبر در بروشور",
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده سری در بروشور",
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        {
+          "label": "سطح کار، گزینه‌های بروشور سری",
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm؛ وابسته به لنز انتخابی",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        }
+      ],
       "images": [
         "../assets/products/ML-009/_MG_4266.jpg"
       ],
@@ -4942,7 +5209,13 @@
         "اندازه طرح و سرعت تولید موردنظر چقدر است؟",
         "میز ثابت، حمل‌پذیری یا اتصال به خط تولید لازم است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "بروشور ارسالی سهند لیزر: سری حکاکی فایبر، صفحات ۲، ۴ و ۵",
+          "url": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+          "scope": "user_supplied_series_document"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -4954,6 +5227,17 @@
         "./assets/products/ML-009/_MG_4270.jpg",
         "./assets/products/ML-009/_MG_4275.jpg"
       ],
+      "seriesReference": {
+        "document": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf",
+        "scope": "user_supplied_marking_series_options",
+        "power": "30 / 50 / 70 / 100 / 120 W options",
+        "controller": "BJJCZ; brochure reference, not installed-unit identity",
+        "source": "Raycus / JPT / IPG options",
+        "head": "SuperScan options",
+        "lens": "Opex; optional work areas",
+        "workingArea": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options",
+        "sha256": "3a18ad5e43a09e17ed408a4b3d38d366c63229eae2041f2757abe9213389543f"
+      },
       "comparisonValues": {
         "نوع لیزر": {
           "value": "فایبر",

@@ -1,14 +1,14 @@
 {
-  "at": "2026-10-12T08:46:59.458Z",
+  "at": "2026-10-12T08:55:52.681Z",
   "engine": "141.0.7390.37",
-  "url": "http://127.0.0.1:5625/status/catalog.html",
+  "url": "http://127.0.0.1:5846/status/catalog.html",
   "scope": "Actual Chromium headless; mobile is emulation, not a physical handset. UI functionality only, not internal hardware geometry approval.",
   "passed": true,
   "results": [
     {
       "viewport": "1366x900 desktop",
       "catalogCount": 106,
-      "sourcedSpecRecords": 30,
+      "sourcedSpecRecords": 38,
       "imageCount": 38,
       "articleCount": 9,
       "pointerReveal": 80,
@@ -20,7 +20,7 @@
     {
       "viewport": "390x844 touch emulation",
       "catalogCount": 106,
-      "sourcedSpecRecords": 30,
+      "sourcedSpecRecords": 38,
       "imageCount": 38,
       "articleCount": 9,
       "pointerReveal": 80,

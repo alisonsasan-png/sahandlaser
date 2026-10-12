@@ -8,6 +8,13 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+for(const code of ['MK-FIBER-GENERIC','ML-001','ML-002','ML-003','ML-005','ML-006','ML-007','ML-009']){
+ const p=catalog.products.find(p=>p.code===code);
+ assert.equal(p.seriesReference.scope,'user_supplied_marking_series_options');
+ assert(p.specs.some(s=>s.scope==='user_supplied_series_options'&&s.value==='هواخنک'));
+}
+for(const code of ['ML-004','ML-008'])assert(!catalog.products.find(p=>p.code===code).sources.some(s=>s.url?.includes('sahand-fiber-marking-brochure')));
+assert(fs.existsSync(path.join(root,'docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf')));
 for(const [code,tank]of [['CC004','13 L'],['CC005','13 L'],['CC006','21 L'],['CH-HANLI-6000','42 L'],['CH-HANLI-12000','55 L']]){
  const p=catalog.products.find(p=>p.code===code);
  assert(p.specs.some(s=>s.label==='نسخه مرجع جدول دفترچه'&&s.value.endsWith('-QG2/2')));

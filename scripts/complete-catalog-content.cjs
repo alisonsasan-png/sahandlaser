@@ -14,6 +14,8 @@ const work=catalog.products.map(product=>({code:product.code,name:product.name,c
   remaining:[...(!product.visuals.studio?['prepare product-specific studio image']:[]),...(!product.specs.some(spec=>spec.source)&&!product.seriesReference?['reconcile exact-model specifications']:[]),...(['cutting','welding','marking','cleaning','head','source'].includes(product.category)?['review technical drawing/internal-assembly applicability']:[])]}));
 const summary={date:catalog.date,products:work.length,studioImages:work.filter(p=>p.studioImage).length,
   recordsWithSourcedSpecifications:work.filter(p=>p.sourcedSpecifications>0).length,
+  recordsWithManufacturerReferenceSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&/^manufacturer_/.test(s.scope))).length,
+  recordsWithUserSeriesSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&s.scope==='user_supplied_series_options')).length,
   suppliedSeriesDocuments:work.filter(p=>p.suppliedSeriesDocument).length,
   rejectedOrAmbiguousImages:work.filter(p=>p.mediaIdentityIssue).length,articles:articles.size,
   releaseGate:catalog.releaseGate,productsWorkQueue:work};
