@@ -1,11 +1,13 @@
 $path = Join-Path $PSScriptRoot '..\status\status.json'
 $json = Get-Content -LiteralPath $path -Raw -Encoding UTF8 | ConvertFrom-Json
 $json.updatedAt = '2026-10-13T01:05:00.000+03:30'
-$json.currentTask = 'Catalog evidence completion after previews 12â€“28'
-$json.nextTask = 'Complete remaining exact-model media, internal views and specification evidence'
-$json.tasks[1].status = 'Active: 104 studio images, 10 articles, 64 manufacturer references, 8 user series records, 5 user artwork records; 88 sourced-specification records; 41 catalog queue records remain'
+$json.currentTask = 'Catalog evidence reconciled; independent previews 12â€“28 verified'
+$json.nextTask = 'Final exact-installed-unit media review and deferred LD3015/LD6020 manufacturer question'
+$json.tasks[1].status = 'Catalog queue complete: 106 studio-image records, 10 articles, 76 manufacturer references, 8 user series records, 5 user artwork records; 100 sourced-specification records'
 $json.tasks[2].status = 'Published independently: previews 12â€“15; live browser verified'
 $json.tasks[3].status = 'Published independently: previews 16â€“19; live browser verified'
+$json.tasks[3].status = 'Published independently: previews 16â€“24; live browser verified'
+$json.tasks[4].status = 'Published independently: previews 25â€“28; live browser verified; four distinct layouts'
 $json.reports += [pscustomobject]@{
   at = '2026-10-12T21:34:30.000+03:30'
   text = 'Added traceable Sintec Optronics family references for four laser-cleaning records without treating them as installed-model identities. Actual Chromium 141 verification passed on the published catalog at desktop 1366x900 and touch-emulated 390x844: 106 products, 63 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses.'
