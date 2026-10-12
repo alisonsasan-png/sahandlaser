@@ -1503,6 +1503,12 @@
           "processing": "do not publish as exact-model image",
           "identityReview": "insufficient_model_identity",
           "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH003/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "BM111-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
