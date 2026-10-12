@@ -7671,6 +7671,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "مرجع خانواده LD",
           "value": "نام LD در این منبع به برند Long Diao و اعداد به ابعاد اسمی برش اشاره دارد؛ مدل سهند و نسخه نصب‌شده تطبیق نهایی نشده است",
           "scope": "manufacturer_family_reference_not_exact_installed_identity",
@@ -7724,6 +7730,10 @@
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
       "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        },
         {
           "title": "LD Laser series naming reference",
           "url": "https://www.ld-longdiao.com/fiber-laser-cutting-machine",
@@ -7810,6 +7820,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -7856,7 +7872,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -7937,6 +7958,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -7983,7 +8010,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8065,6 +8097,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -8111,7 +8149,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8192,6 +8235,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -8238,7 +8287,12 @@
         "روش بارگذاری و تخلیه و فضای دسترسی میز چگونه است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8319,6 +8373,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -8365,7 +8425,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8447,6 +8512,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -8493,7 +8564,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -8887,6 +8963,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "مرجع خانواده LD",
           "value": "نام LD در این منبع به برند Long Diao و اعداد به ابعاد اسمی برش اشاره دارد؛ مدل سهند و نسخه نصب‌شده تطبیق نهایی نشده است",
           "scope": "manufacturer_family_reference_not_exact_installed_identity",
@@ -8940,6 +9022,10 @@
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
       "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        },
         {
           "title": "LD Laser series naming reference",
           "url": "https://www.ld-longdiao.com/fiber-laser-cutting-machine",
@@ -9020,6 +9106,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "6020",
           "scope": "user_requested_taxonomy"
@@ -9066,7 +9158,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -9147,6 +9244,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "مرجع خانواده LD",
           "value": "نام LD در این منبع به برند Long Diao و اعداد به ابعاد اسمی برش اشاره دارد؛ مدل سهند و نسخه نصب‌شده تطبیق نهایی نشده است",
           "scope": "manufacturer_family_reference_not_exact_installed_identity",
@@ -9200,6 +9303,10 @@
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
       "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        },
         {
           "title": "LD Laser series naming reference",
           "url": "https://www.ld-longdiao.com/fiber-laser-cutting-machine",
@@ -9287,6 +9394,12 @@
           "value": "ندارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "6020",
           "scope": "user_requested_taxonomy"
@@ -9333,7 +9446,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "کیفیت لبه، عملیات بعدی و حجم تولید موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -9414,6 +9532,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "6020",
           "scope": "user_requested_taxonomy"
@@ -9460,7 +9584,12 @@
         "روش بارگذاری و تخلیه و فضای دسترسی میز چگونه است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -9541,6 +9670,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "6020",
           "scope": "user_requested_taxonomy"
@@ -9587,7 +9722,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -9669,6 +9809,12 @@
           "value": "دارد"
         },
         {
+          "label": "هویت خانواده در مستند ارسالی",
+          "value": "این مدل در خانواده‌ی برش ورق سهند فهرست شده است؛ مشخصات این مرجع به پیکربندی نصب‌شده‌ی همین مدل تعمیم داده نمی‌شود",
+          "scope": "user_supplied_family_reference_not_installed_identity",
+          "source": "دستگاه تک میز استاندارد\\متن اصلاحی سایت.docx"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "6020",
           "scope": "user_requested_taxonomy"
@@ -9715,7 +9861,12 @@
         "زمان بارگذاری و تخلیه و فضای میز تبادل چقدر است؟",
         "مقطع، طول و وزن لوله و نوع سه‌نظام موردنیاز چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "مرجع خانواده دستگاه برش ورق سهند",
+          "scope": "user_supplied_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
