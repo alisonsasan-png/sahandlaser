@@ -295,7 +295,9 @@
         "وزن خالص ENPTY / FNPTY",
         "293 / 282 kg، مطابق جدول نسخه‌ها"
       ]
-    ]
+    ],
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant"
   },
   "CH-S&A-20000": {
     "url": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html",
@@ -329,7 +331,9 @@
         "وزن خالص ETPTY / FTPTY",
         "279 kg، مطابق جدول نسخه‌ها"
       ]
-    ]
+    ],
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant"
   },
   "CP-LENS-RAY": {
     "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
@@ -348,6 +352,82 @@
         "D27.9 × 4.1 mm؛ شماره قطعه 211LCG0037"
       ]
     ]
+  },
+  "CC001": {
+    "url": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html",
+    "title": "TEYU CWFL-1500 reference page; exact supplied unit suffix not identified",
+    "facts": [
+      [
+        "ساختار خنک‌کاری سری",
+        "دو مدار مستقل برای سورس و هد"
+      ],
+      [
+        "کاربری معرفی‌شده سازنده",
+        "سامانه‌های فایبر تا 1.5 kW؛ انتخاب نهایی با نیاز سرمایشی دستگاه"
+      ],
+      [
+        "پایداری دمای نسخه صفحه مرجع",
+        "±0.5 °C"
+      ],
+      [
+        "مشخصات نصب نسخه صفحه مرجع",
+        "70 × 47 × 89 cm؛ طول × عرض × ارتفاع"
+      ],
+      [
+        "حجم مخزن نسخه صفحه مرجع",
+        "15 L؛ این مقدار به تمام پسوندها تعمیم داده نمی‌شود"
+      ]
+    ],
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant"
+  },
+  "CC002": {
+    "url": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html",
+    "title": "TEYU CWFL-2000 ANPTY/BNPTY reference variants, accessed 2026-10-12",
+    "facts": [
+      [
+        "ساختار خنک‌کاری سری",
+        "دو مدار مستقل برای سورس و اپتیک"
+      ],
+      [
+        "پایداری دمای ANPTY / BNPTY",
+        "±0.5 °C"
+      ],
+      [
+        "برق ANPTY / BNPTY",
+        "تک‌فاز 220–240 VAC؛ 50 / 60 Hz بسته به نسخه"
+      ],
+      [
+        "حجم مخزن ANPTY / BNPTY",
+        "22 L"
+      ],
+      [
+        "ابعاد ANPTY / BNPTY",
+        "70 × 47 × 89 cm؛ طول × عرض × ارتفاع"
+      ],
+      [
+        "وزن خالص ANPTY / BNPTY",
+        "65 / 67 kg؛ مطابق جدول نسخه‌ها"
+      ]
+    ],
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant"
+  },
+  "CC003": {
+    "url": "https://www.teyuchiller.com/dual-circuit-water-chiller-for-automobile-vessel-fiber-laser-welding-machine_p207.html",
+    "title": "TEYU CWFL-3000 dual-circuit family reference",
+    "facts": [
+      [
+        "کاربری معرفی‌شده سازنده",
+        "خنک‌کاری سامانه جوش فایبر در رده 3 kW"
+      ],
+      [
+        "ساختار خنک‌کاری سری",
+        "دو مدار خنک‌کاری برای بخش‌های سامانه لیزری"
+      ]
+    ],
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant"
   }
 }
 
