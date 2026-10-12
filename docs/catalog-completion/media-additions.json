@@ -353,6 +353,12 @@
     "identityScope": "BM115-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
     "visualReview": true
   },
+  "CP-RAY-BM115E": {
+    "directory": "CP-RAY-BM115E",
+    "reference": "AI-generated white-background external RayTools BM115-E-family reconstruction informed by manufacturer family references",
+    "identityScope": "BM115-E-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
