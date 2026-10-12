@@ -9708,7 +9708,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-custom/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Conceptual custom-size configuration reference; not proof of exact Sahand bed dimensions, manufacturer, installed controller, or hidden assembly",
+          "visualReview": true
+        }
       },
       "comparisonValues": {
         "گروه ابعادی": {
