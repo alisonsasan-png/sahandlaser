@@ -1736,7 +1736,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-001 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -1803,7 +1809,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-002 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -1870,7 +1882,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-003 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -1937,7 +1955,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-004 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
