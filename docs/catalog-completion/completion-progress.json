@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 106,
-  "recordsWithSourcedSpecifications": 99,
-  "recordsWithManufacturerReferenceSpecifications": 75,
+  "recordsWithSourcedSpecifications": 100,
+  "recordsWithManufacturerReferenceSpecifications": 76,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -887,12 +887,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Channel Letter Laser Welding",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-1",
