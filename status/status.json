@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-12T22:35:00.000+03:30",
+    "updatedAt":  "2026-10-12T22:50:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog evidence completion after previews 12â€“28",
@@ -351,6 +351,30 @@
                     {
                         "at":  "2026-10-12T21:34:30.000+03:30",
                         "text":  "Added traceable Sintec Optronics family references for four laser-cleaning records without treating them as installed-model identities. Actual Chromium 141 verification passed on the published catalog at desktop 1366x900 and touch-emulated 390x844: 106 products, 63 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses."
+                    },
+                    {
+                        "at":  "2026-10-12T22:35:00.000+03:30",
+                        "text":  "Added a scoped user-supplied family reference to remaining 3015/6020 cutting records, explicitly separating family identity from installed-unit facts. Rebuilt catalog: 106 products, 63 studio images, 63 records with sourced specifications, 38 manufacturer references, 10 articles; local catalog tests pass and release gate remains open."
+                    },
+                    {
+                        "at":  "2026-10-12T21:48:00.000+03:30",
+                        "text":  "Replaced iframe wrappers with independent full-page builds for previews 12â€“19. Preview 12 implements the exact cutting tree with nine named 3015 models and nine named 6020 models plus custom size, tube and robot categories. Actual Chromium 141 verification passed for previews 12â€“19: zero iframes, 139 product cards, home/products routes, taxonomy controls, and no page errors."
+                    },
+                    {
+                        "at":  "2026-10-12T22:05:00.000+03:30",
+                        "text":  "Built and published independent previews 20â€“24 using alternate catalog taxonomies, and previews 25â€“28 with distinct interaction structures: command rail, editorial layout, split-panel catalog, and immersive cursor-light layout. New Pages routes are awaiting propagation; no live verification claim is made yet."
+                    },
+                    {
+                        "at":  "2026-10-12T22:20:00.000+03:30",
+                        "text":  "Pages propagation completed. Actual Chromium 141 verification passed for previews 12â€“28 in parallel: every route returned the independent full page with zero iframes, 139 product cards, home/products routes, taxonomy controls, and no page errors. Previews 25â€“28 also exposed their distinct layout classes: layout-rail, layout-editorial, layout-split and layout-immersive."
+                    },
+                    {
+                        "at":  "2026-10-12T21:34:30.000+03:30",
+                        "text":  "Added traceable Sintec Optronics family references for four laser-cleaning records without treating them as installed-model identities. Actual Chromium 141 verification passed on the published catalog at desktop 1366x900 and touch-emulated 390x844: 106 products, 63 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses."
+                    },
+                    {
+                        "at":  "2026-10-12T22:50:00.000+03:30",
+                        "text":  "Regression checks passed: selected model plus two distinct random same-category peers, unlimited comparison additions, no component comparisons, main routes and missing IDs, 380 product/language SEO cases, local product assets, and mouse/touch viewer interaction. No catalog or comparison regression detected."
                     },
                     {
                         "at":  "2026-10-12T22:35:00.000+03:30",
