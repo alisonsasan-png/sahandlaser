@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 104,
-  "recordsWithSourcedSpecifications": 83,
-  "recordsWithManufacturerReferenceSpecifications": 59,
+  "recordsWithSourcedSpecifications": 86,
+  "recordsWithManufacturerReferenceSpecifications": 62,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -490,11 +490,10 @@
       "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BT240",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -523,11 +522,10 @@
       "name": "ظ‡ط¯ ط¨ط±ط´ TRA",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -602,12 +600,10 @@
       "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C1500",
       "category": "source",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 9,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "FS005",
