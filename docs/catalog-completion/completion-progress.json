@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 61,
+  "studioImages": 62,
   "recordsWithSourcedSpecifications": 48,
   "recordsWithManufacturerReferenceSpecifications": 34,
   "recordsWithUserSeriesSpecifications": 8,
@@ -190,12 +190,11 @@
       "code": "CH005",
       "name": "هد برش ریتولز مدل BM115",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -351,17 +350,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications"
-      ]
-    },
-    {
-      "code": "CN009",
-      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
-      "category": "consumables",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
-      "mediaIdentityIssue": nu…951 tokens truncated…cations",
+        "reconcile exact-…1035 tokens truncated…cations",
         "review technical drawing/internal-assembly applicability"
       ]
     },
