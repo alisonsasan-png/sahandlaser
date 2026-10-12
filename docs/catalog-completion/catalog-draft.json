@@ -3596,6 +3596,30 @@
           "label": "ظ…ط¯ظ„ / ط®ط§ظ†ظˆط§ط¯ظ‡",
           "value": "BM114-E",
           "scope": "identity"
+        },
+        {
+          "label": "Power class",
+          "value": "6 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Control protocol",
+          "value": "EtherCAT",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Sensor capability",
+          "value": "Smart sensor with real-time status monitoring",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference; installed head revision and exact configuration are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
         }
       ],
       "images": [],
@@ -3612,7 +3636,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط±طŒ ع©ظ†طھط±ظ„ط± ظˆ ظ†ظˆط¹ ط§طھظˆظپظˆع©ظˆط³ ع†غŒط³طھطں",
         "ظ‚ط·ط¹ظ‡ ع©ط§ظ…ظ„ ظ„ط§ط²ظ… ط§ط³طھ غŒط§ ظ…ط¬ظ…ظˆط¹ظ‡ ظ…طµط±ظپغŒطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1",
+          "title": "RayTools BM114E family specification listing, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -3778,6 +3808,30 @@
           "label": "ظ…ط¯ظ„ / ط®ط§ظ†ظˆط§ط¯ظ‡",
           "value": "BM115-E",
           "scope": "identity"
+        },
+        {
+          "label": "Power class",
+          "value": "6 / 8 / 12 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Control protocol",
+          "value": "EtherCAT",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Sensor capability",
+          "value": "Smart sensor with real-time status monitoring",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference; installed head revision and exact configuration are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
         }
       ],
       "images": [],
@@ -3794,7 +3848,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط±طŒ ع©ظ†طھط±ظ„ط± ظˆ ظ†ظˆط¹ ط§طھظˆظپظˆع©ظˆط³ ع†غŒط³طھطں",
         "ظ‚ط·ط¹ظ‡ ع©ط§ظ…ظ„ ظ„ط§ط²ظ… ط§ط³طھ غŒط§ ظ…ط¬ظ…ظˆط¹ظ‡ ظ…طµط±ظپغŒطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1",
+          "title": "RayTools BM115E family specification listing, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -3842,6 +3902,36 @@
           "label": "ظ…ط¯ظ„ / ط®ط§ظ†ظˆط§ط¯ظ‡",
           "value": "BM116-E",
           "scope": "identity"
+        },
+        {
+          "label": "Power class",
+          "value": "6 / 8 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Zoom ratio",
+          "value": "1.2xâ€“4.0x",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Control protocol",
+          "value": "EtherCAT",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Sensor capability",
+          "value": "Smart sensor with real-time status monitoring",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference; installed head revision and exact configuration are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1"
         }
       ],
       "images": [],
@@ -3858,7 +3948,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط±طŒ ع©ظ†طھط±ظ„ط± ظˆ ظ†ظˆط¹ ط§طھظˆظپظˆع©ظˆط³ ع†غŒط³طھطں",
         "ظ‚ط·ط¹ظ‡ ع©ط§ظ…ظ„ ظ„ط§ط²ظ… ط§ط³طھ غŒط§ ظ…ط¬ظ…ظˆط¹ظ‡ ظ…طµط±ظپغŒطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools.com.br/c%C3%B3pia-corte-de-viga-1",
+          "title": "RayTools BM116 family specification listing, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
