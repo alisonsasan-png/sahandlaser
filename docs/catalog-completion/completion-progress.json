@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 70,
-  "recordsWithSourcedSpecifications": 68,
-  "recordsWithManufacturerReferenceSpecifications": 44,
+  "recordsWithSourcedSpecifications": 70,
+  "recordsWithManufacturerReferenceSpecifications": 46,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -622,12 +622,11 @@
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± 30 ظˆط§طھ ظ¾ط§ظ„ط³غŒ ظپط§غŒط¨ط± Q-Switched",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 9,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -636,12 +635,11 @@
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± 50 ظˆط§طھ ظ¾ط§ظ„ط³غŒ ظپط§غŒط¨ط± Q-Switched",
       "category": "source",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
