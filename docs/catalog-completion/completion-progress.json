@@ -206,9 +206,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CL-002",
@@ -218,9 +216,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CL-003",
@@ -230,9 +226,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CL-004",
@@ -242,9 +236,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CLEAN-GENERIC",
@@ -254,9 +246,7 @@
       "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CN001",
@@ -585,9 +575,7 @@
       "sourcedSpecifications": 9,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS002",
@@ -597,9 +585,7 @@
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS003",
@@ -609,9 +595,7 @@
       "sourcedSpecifications": 9,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS004",
@@ -622,8 +606,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -634,9 +617,7 @@
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS006",
@@ -646,9 +627,7 @@
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS007",
@@ -658,9 +637,7 @@
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "FS008",
@@ -670,9 +647,7 @@
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "MK-FIBER-GENERIC",
@@ -683,8 +658,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -696,8 +670,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -709,8 +682,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -722,8 +694,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -735,8 +706,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -747,9 +717,7 @@
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-006",
@@ -760,8 +728,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -772,9 +739,7 @@
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-008",
@@ -786,8 +751,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -799,8 +763,7 @@
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -819,8 +782,7 @@
         "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
       },
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -832,8 +794,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -852,8 +813,7 @@
         "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
       },
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -865,8 +825,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "review technical drawing/internal-assembly applicability"
+        "prepare product-specific studio image"
       ]
     },
     {
@@ -877,9 +836,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "WELD-2000",
@@ -889,9 +846,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "WELD-3000",
@@ -901,9 +856,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-001",
@@ -914,8 +867,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -927,8 +879,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -939,9 +890,7 @@
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-004",
@@ -952,8 +901,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -966,8 +914,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -980,8 +927,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -994,8 +940,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -1008,8 +953,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -1022,8 +966,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -1036,8 +979,7 @@
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
