@@ -275,6 +275,12 @@
     "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "CP-RAY-BM114E": {
+    "directory": "CP-RAY-BM114E",
+    "reference": "AI-generated white-background external BM114-family reconstruction informed by RayTools BM114 manual/reference data",
+    "identityScope": "BM114-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+    "visualReview": true
+  },
   "CUT-6020-3": {
     "directory": "CUT-6020-3",
     "reference": "AI-generated white-background single-table 6020 external family reconstruction informed by supplied 6020 family references",
