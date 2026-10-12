@@ -139,9 +139,7 @@
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CH002",
@@ -151,9 +149,7 @@
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CH003",
@@ -170,9 +166,7 @@
         "identityReview": "insufficient_model_identity",
         "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."
       },
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CH004",
@@ -182,9 +176,7 @@
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CH005",
@@ -194,9 +186,7 @@
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CL-001",
@@ -416,9 +406,7 @@
       "sourcedSpecifications": 10,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BM114E",
@@ -429,8 +417,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -441,9 +428,7 @@
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BM115E",
@@ -454,8 +439,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -467,8 +451,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -479,9 +462,7 @@
       "sourcedSpecifications": 12,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BT240",
@@ -491,9 +472,7 @@
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-SMC-ITV1050",
@@ -945,9 +924,7 @@
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-2",
@@ -957,9 +934,7 @@
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-3",
@@ -969,9 +944,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-4",
@@ -981,9 +954,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-5",
@@ -993,9 +964,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-6",
@@ -1005,9 +974,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-7",
@@ -1017,9 +984,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-8",
@@ -1029,9 +994,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-3015-9",
@@ -1041,9 +1004,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-1",
@@ -1053,9 +1014,7 @@
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-2",
@@ -1065,9 +1024,7 @@
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-3",
@@ -1077,9 +1034,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-4",
@@ -1089,9 +1044,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-5",
@@ -1101,9 +1054,7 @@
       "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-6",
@@ -1113,9 +1064,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-7",
@@ -1125,9 +1074,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-8",
@@ -1137,9 +1084,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-6020-9",
@@ -1149,9 +1094,7 @@
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     },
     {
       "code": "CUT-custom",
