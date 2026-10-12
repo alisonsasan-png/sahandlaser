@@ -233,6 +233,12 @@
     "identityScope": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "CH004": {
+    "directory": "CH004",
+    "reference": "AI-generated external family reconstruction informed by the official RayTools BM114 manual/reference data and supplied cutting-head family image",
+    "identityScope": "BM114-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+    "visualReview": true
+  },
   "CUT-3015-3": {
     "directory": "CUT-3015-3",
     "reference": "AI-generated single-table LD-family external reconstruction informed by supplied two-table LD-family image and manufacturer-family naming reference",
