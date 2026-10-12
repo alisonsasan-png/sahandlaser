@@ -1964,7 +1964,38 @@
         "دستگاه تمیزکاری لیزری فایبر",
         "تمیزکاری لیزری را با نوع لایه و حساسیت سطح زیرین انتخاب کنید. توان متوسط به‌تنهایی معیار کافی برای مقایسه لیزر پالسی و پیوسته نیست؛ آزمون روی نمونه قطعه بخشی از انتخاب است."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "توان‌های درج‌شده در پوستر",
+          "value": "۱٫۵ / ۲ / ۳ کیلووات؛ ادعای پوستر، نه تطبیق هر مدل",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        },
+        {
+          "label": "طول موج درج‌شده در پوستر",
+          "value": "۱۰۸۰ نانومتر؛ ادعای پوستر",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        },
+        {
+          "label": "سرعت درج‌شده در پوستر",
+          "value": "۰ تا ۱۲۰ میلی‌متر بر ثانیه؛ شرایط آزمون مشخص نیست",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        },
+        {
+          "label": "وزن درج‌شده در پوستر",
+          "value": "۲۰۰ کیلوگرم؛ مدل دقیق و شرایط اندازه‌گیری مشخص نیست",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        },
+        {
+          "label": "محدودیت انتقال",
+          "value": "اطلاعات پوستر به CL-001 تا CL-004 یا هر واحد نصب‌شده به‌صورت خودکار منتقل نمی‌شود",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -1990,7 +2021,13 @@
         "متریال زیرین و حساسیت آن چیست؟",
         "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "assets/catalog-completion/inspection/Cleaning-Machine.jpg",
+          "title": "User-supplied Sahand Laser cleaning-machine poster; family-level artwork evidence",
+          "scope": "user_supplied_artwork_family_reference"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -2012,7 +2049,11 @@
       },
       "comparisonValues": {
         "نوع لیزر": null,
-        "توان": null,
+        "توان": {
+          "value": "۱٫۵ / ۲ / ۳ کیلووات؛ ادعای پوستر، نه تطبیق هر مدل",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Cleaning-Machine.jpg"
+        },
         "روش خنک‌کاری": null,
         "هد پاک‌سازی": null,
         "عرض اسکن": null,
