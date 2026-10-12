@@ -1746,6 +1746,12 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "200 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "مرجع خانواده تمیزکاری",
+          "value": "منبع سازنده خانواده، طول موج و روش‌های پالسی/پیوسته را در چند پیکربندی شرح می‌دهد؛ به مدل نصب‌شده‌ی سهند تعمیم داده نمی‌شود",
+          "scope": "manufacturer_family_reference_not_installed_identity",
+          "source": "https://www.sintecoptronics.cn/laser-cleaner/653.html"
         }
       ],
       "images": [],
@@ -1773,7 +1779,13 @@
         "متریال زیرین و حساسیت آن چیست؟",
         "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "Sintec Optronics laser-cleaner family reference",
+          "url": "https://www.sintecoptronics.cn/laser-cleaner/653.html",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -1819,6 +1831,12 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "500 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "مرجع خانواده تمیزکاری",
+          "value": "منبع سازنده خانواده، طول موج و روش‌های پالسی/پیوسته را در چند پیکربندی شرح می‌دهد؛ به مدل نصب‌شده‌ی سهند تعمیم داده نمی‌شود",
+          "scope": "manufacturer_family_reference_not_installed_identity",
+          "source": "https://www.sintecoptronics.cn/laser-cleaner/653.html"
         }
       ],
       "images": [],
@@ -1846,7 +1864,13 @@
         "متریال زیرین و حساسیت آن چیست؟",
         "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "Sintec Optronics laser-cleaner family reference",
+          "url": "https://www.sintecoptronics.cn/laser-cleaner/653.html",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -1892,6 +1916,12 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "1000 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "مرجع خانواده تمیزکاری",
+          "value": "منبع سازنده خانواده، طول موج و روش‌های پالسی/پیوسته را در چند پیکربندی شرح می‌دهد؛ به مدل نصب‌شده‌ی سهند تعمیم داده نمی‌شود",
+          "scope": "manufacturer_family_reference_not_installed_identity",
+          "source": "https://www.sintecoptronics.cn/laser-cleaner/653.html"
         }
       ],
       "images": [],
@@ -1919,7 +1949,13 @@
         "متریال زیرین و حساسیت آن چیست؟",
         "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "Sintec Optronics laser-cleaner family reference",
+          "url": "https://www.sintecoptronics.cn/laser-cleaner/653.html",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -1965,6 +2001,12 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "1500 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "مرجع خانواده تمیزکاری",
+          "value": "منبع سازنده خانواده، طول موج و روش‌های پالسی/پیوسته را در چند پیکربندی شرح می‌دهد؛ به مدل نصب‌شده‌ی سهند تعمیم داده نمی‌شود",
+          "scope": "manufacturer_family_reference_not_installed_identity",
+          "source": "https://www.sintecoptronics.cn/laser-cleaner/653.html"
         }
       ],
       "images": [],
@@ -1992,7 +2034,13 @@
         "متریال زیرین و حساسیت آن چیست؟",
         "حجم کار، روش جابه‌جایی و استخراج دود چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "Sintec Optronics laser-cleaner family reference",
+          "url": "https://www.sintecoptronics.cn/laser-cleaner/653.html",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -9964,3 +10012,4 @@
     ]
   }
 }
+
