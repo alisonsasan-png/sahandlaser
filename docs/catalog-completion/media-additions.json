@@ -1,4 +1,10 @@
 {
+  "CUT-ROBOT-REF": {
+    "directory": "CUT-ROBOT-REF",
+    "reference": "https://cdnus.globalso.com/goldenfiberlaser/09_%E5%89%AF%E6%9C%AC.jpg",
+    "identityScope": "User-requested industry reference for the robot-cutting family: generic articulated six-axis robot cell; not proof of Sahand installed model, manufacturer, controller, laser source, or hidden assembly",
+    "visualReview": true
+  },
   "CUT-3015-6": {
     "directory": "CUT-3015-6",
     "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/تک میز 3015 کابین دار/3015 fiber laser cutting machine with cabin 3.png",
