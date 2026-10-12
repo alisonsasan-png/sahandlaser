@@ -9,6 +9,7 @@ const master=read('docs/catalog-completion/master-records.json');
 const mediaAdditions=read('docs/catalog-completion/media-additions.json');
 const mediaFindings=read('docs/catalog-completion/media-review-findings.json');
 const comparisonEngine=require('../assets/catalog-v2/catalog-comparison.js');
+const productContent=require('../assets/catalog-v2/catalog-product-content.js');
 const masterAliases={'CH003':'CP-RAY-BM111','CH002':'CP-RAY-BM109','FS004':'SRC-RAY-C1500','FS003':'SRC-RAY-C1000','FS005':'SRC-RAY-C2000','CC001':'CH-SA-1500','CC002':'CH-SA-2000','CC003':'CH-S&A-3000','CC004':'CH-HANLI-1500','CC005':'CH-HANLI-2000','CC006':'CH-HANLI-3000'};
 const byteMap=new Map();const decoder=new TextDecoder('windows-1256');for(let i=0;i<256;i++)byteMap.set(decoder.decode(Uint8Array.of(i)),i);
 function repair(value){if(typeof value!=='string')return value;for(let n=0;n<2;n++){if(!/[طظعآأâ]/.test(value))break;const bytes=[...value].map(c=>byteMap.get(c));if(bytes.some(x=>x===undefined))break;const candidate=Buffer.from(bytes).toString('utf8');if(candidate.includes('\uFFFD')||candidate.length>=value.length*.88)break;value=candidate;}return value;}
@@ -60,6 +61,7 @@ const result=products.map(raw=>{const p=clean(raw),originalRecord=original.get(p
  if(mediaAdditions[p.code]){const media=mediaAdditions[p.code];const file='assets/catalog-v2/'+media.directory+'/studio-web.jpg';if(fs.existsSync(path.join(root,file)))p.visuals.studio={src:file,type:'AI-assisted reconstruction from supplied photo',identityScope:media.identityScope,visualReview:media.visualReview};}
  if(mediaFindings[p.code]&&p.visuals.sourceCandidate){Object.assign(p.visuals.sourceCandidate,mediaFindings[p.code]);p.visuals.sourceCandidate.processing='do not publish as exact-model image';}
  if(p.code==='CP-RAY-BM110')p.visuals.opticalReconstruction={src:'assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg',type:'AI-assisted optical-module visualization',scope:'Documented optical-module order including three cover windows; hidden mechanics and exact manufacturing geometry are not represented',source:p.sources[0]?.url};
+ productContent.enrich(p);
  p.comparisonValues=p.comparable?comparisonEngine.values(p):{};
  p.contentStatus='enriched_draft';p.ready=false;return p;});
 const draft={version:3,date:'2026-10-12',products:result,releaseGate:{passed:false,reason:'Per-model photo processing, assembly identity and full specification verification remain open'},comparison:{default:'selected + two distinct random peers from same machine category',unlimitedAdditions:true,excludedCategories:['parts','head','source','consumables']}};
