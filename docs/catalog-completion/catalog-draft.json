@@ -1606,7 +1606,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CH004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "BM114-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {},
