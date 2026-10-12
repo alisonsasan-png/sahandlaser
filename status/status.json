@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-12T16:20:00.000+03:30",
+    "updatedAt":  "2026-10-12T16:40:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog media completion and robot-cutting reference review",
@@ -251,6 +251,10 @@
                     {
                         "at":  "2026-10-12T16:20:00.000+03:30",
                         "text":  "Added manufacturer-partner BT240S technical data to CH001 with source scope preserved. The catalog rebuild reports 106 products, 48 studio images, 44 sourced-specification records, 9 articles, and passing catalog tests. The release gate remains open; previews 12-15 remain untouched."
+                    },
+                    {
+                        "at":  "2026-10-12T16:40:00.000+03:30",
+                        "text":  "Added scoped BM114 and BM115 manual facts for CH004 and CH005, preserving mirror/manual provenance and avoiding unsupported exact geometry claims. Catalog remains at 106 products, 48 studio images, 44 sourced-specification records, 9 articles; catalog and comparison tests pass."
                     }
                 ]
 }
