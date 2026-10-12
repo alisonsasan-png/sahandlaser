@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 65,
+  "studioImages": 66,
   "recordsWithSourcedSpecifications": 63,
   "recordsWithManufacturerReferenceSpecifications": 38,
   "recordsWithUserSeriesSpecifications": 8,
@@ -474,12 +474,11 @@
       "code": "CP-RAY-BM114E",
       "name": "هد برش RayTools BM114-E",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
