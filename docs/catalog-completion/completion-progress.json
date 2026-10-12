@@ -8,7 +8,7 @@
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
   "rejectedOrAmbiguousImages": 4,
-  "articles": 9,
+  "articles": 10,
   "releaseGate": {
     "passed": false,
     "reason": "Per-model photo processing, assembly identity and full specification verification remain open"
