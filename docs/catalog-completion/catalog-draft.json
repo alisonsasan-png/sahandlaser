@@ -4006,6 +4006,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BT240-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BT240/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BT240S family optical order and focal options only; hidden mechanics, cooling channels and installed revision are not represented",
+          "source": "https://www.raytools-de.com/product/raytools-focusing-collimating-lens-assembly/"
         }
       },
       "availableLegacyMedia": [],
