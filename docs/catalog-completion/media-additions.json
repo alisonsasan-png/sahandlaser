@@ -190,6 +190,12 @@
     "reference": "C:/Users/Sharif/Downloads/laser cutting machine 6020 with rotary (exchange) 1_11zon.png; C:/Users/Sharif/Downloads/ط¹ع©ط³ ط¯ط³طھع¯ط§ظ‡ ظ‡ط§/طھع© ظ…غŒط² 6020 ع©ط§ط¨غŒظ† ط¯ط§ط±/Professional 6020 fiber laser cutting machine with cabin 1.png",
     "identityScope": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
+  },
+  "CH001": {
+    "directory": "CH001",
+    "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
+    "identityScope": "Generic manual-focus fiber cutting-head family reconstruction; not an exact BT240S photograph, nameplate, installed revision, or internal assembly",
+    "visualReview": true
   }
 }
 
