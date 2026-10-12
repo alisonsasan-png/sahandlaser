@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 59,
+  "studioImages": 60,
   "recordsWithSourcedSpecifications": 48,
   "recordsWithManufacturerReferenceSpecifications": 34,
   "recordsWithUserSeriesSpecifications": 8,
@@ -266,7 +266,247 @@
     },
     {
       "code": "CN001",
-      "name": "نازل هد برش لیزر اور…2776 tokens truncated…rue,
+      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN002",
+      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN003",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN004",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN006",
+      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN007",
+      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN008",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN009",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN010",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "category": "consumables",
+      "studioImage": false,
+   …867 tokens truncated…cations",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "name": "هد برش RayTools BM115",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 8,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "name": "هد برش RayTools BM115-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "name": "هد برش RayTools BM116-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "name": "هد برش RayTools BT220",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 12,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "name": "هد برش RayTools BT240",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-TRA",
+      "name": "هد برش TRA",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "name": "سیستم کنترل برش FSCUT2000C",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 7,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "name": "سیستم کنترل برش FSCUT2000E",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "name": "سیستم کنترل برش FSCUT4000E",
+      "category": "head",
+      "studioImage": true,
       "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
@@ -779,12 +1019,11 @@
       "code": "CUT-3015-3",
       "name": "تک میز LD3015",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
