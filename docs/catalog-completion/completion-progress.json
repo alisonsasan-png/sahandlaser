@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 49,
+  "studioImages": 53,
   "recordsWithSourcedSpecifications": 44,
   "recordsWithManufacturerReferenceSpecifications": 31,
   "recordsWithUserSeriesSpecifications": 8,
@@ -205,12 +205,11 @@
       "code": "CL-001",
       "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط±طھط§ط¨ظ„ 200 ظˆط§طھ",
       "category": "cleaning",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -219,12 +218,11 @@
       "code": "CL-002",
       "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط§ظ„ط³غŒ 500 ظˆط§طھ",
       "category": "cleaning",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -233,12 +231,11 @@
       "code": "CL-003",
       "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط§ظ„ط³غŒ 1000 ظˆط§طھ",
       "category": "cleaning",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -247,12 +244,11 @@
       "code": "CL-004",
       "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾غŒظˆط³طھظ‡ 1500 ظˆط§طھ",
       "category": "cleaning",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
