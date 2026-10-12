@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 77,
+  "studioImages": 78,
   "recordsWithSourcedSpecifications": 83,
   "recordsWithManufacturerReferenceSpecifications": 59,
   "recordsWithUserSeriesSpecifications": 8,
@@ -262,13 +262,11 @@
       "code": "CN001",
       "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "CN002",
