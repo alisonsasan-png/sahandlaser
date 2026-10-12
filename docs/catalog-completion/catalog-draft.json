@@ -1767,6 +1767,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM115-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM115E/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "BM115 family reference only; exact installed windows, hidden mechanics and revision are not represented",
+          "source": "https://www.manualslib.com/manual/2337778/Raytools-Bm115-Series.html"
         }
       },
       "availableLegacyMedia": [],
@@ -3860,6 +3866,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM116-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Available local and scoped manufacturer references reviewed; no exact installed-unit assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/manufacturer-evidence-integrity.json"
         }
       },
       "availableLegacyMedia": [],
@@ -3996,6 +4007,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BT220-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Available local and scoped manufacturer references reviewed; no exact installed-unit assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/manufacturer-evidence-integrity.json"
         }
       },
       "availableLegacyMedia": [],
@@ -8866,6 +8882,11 @@
           "type": "AI-assisted reconstruction from supplied photo/CAD",
           "identityScope": "supplied series photograph or CAD",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "seriesReference": {
@@ -9026,6 +9047,11 @@
           "type": "AI-assisted reconstruction from supplied photo/CAD",
           "identityScope": "supplied series photograph or CAD",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "seriesReference": {
@@ -9202,6 +9228,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "LD-family single-table configuration reference; not proof of exact Sahand casing, installed manufacturer revision, controller, or hidden assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -9340,6 +9371,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -9478,6 +9514,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "User-library Sahand-branded two-table 3015 family reference; no legible LD3015 model identity or installed revision proven",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -9617,6 +9658,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Supplied 3015 cabin CAD with external exchange table; folder title is not proof of table count or exact installed manufacturer revision",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -9755,6 +9801,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -9893,6 +9944,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -10032,6 +10088,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Generic enclosed dual-table 3015 plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -10164,6 +10225,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "seriesReference": {
@@ -10324,6 +10390,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "seriesReference": {
@@ -10500,6 +10571,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Generic LD-family single-table 6020 external reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -10638,6 +10714,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Supplied named 6020 exchange-table artwork; no exact stock plaque or hidden geometry inferred",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -10787,6 +10868,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "User-library two-table 6020 exchange-table family reference; no legible LD6020 model identity, exact manufacturer revision, or installed controller proven",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -10926,6 +11012,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Supplied 6020 cabin CAD with visible external exchange table; exterior configuration reconstruction, not proof of exact installed revision",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -11064,6 +11155,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -11202,6 +11298,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
@@ -11341,6 +11442,11 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
           "visualReview": true
+        },
+        "technicalReview": {
+          "status": "reviewed_no_model_specific_drawing",
+          "scope": "Supplied series documents and scoped manufacturer references reviewed; no model-specific factory assembly drawing was found, so no unsupported internal geometry is shown",
+          "evidence": "docs/catalog-completion/CUTTING-CABIN-MEDIA-REVIEW-2026-10-12.md"
         }
       },
       "configuration": {
