@@ -1161,7 +1161,56 @@
         "هد برش ریتولز مدل BM114 در بانک قطعات سهند لیزر ثبت شده است.",
         "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "فوکوس نسخه دفترچه BM114",
+          "value": "خودکار",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "ماژول‌های اصلی نسخه دفترچه",
+          "value": "رابط فیبر، کولیمیشن، فوکوس و تنظیم مرکز، محافظ اپتیکی و نازل",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "رابط فیبر، گزینه‌های جدول V1.0",
+          "value": "QBH / QD آب‌خنک",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "گروه کولیمیشن جدول V1.0",
+          "value": "D37؛ F100",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "گروه فوکوس، گزینه‌های جدول V1.0",
+          "value": "D37؛ F150 / F190.5",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "محافظ‌های بالا و میانی V1.0",
+          "value": "D37 × 1.6 mm؛ شماره قطعه 211LCG0045",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "محافظ پایین V1.0",
+          "value": "D37 × 7 mm؛ شماره قطعه 110255IAG0004",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        },
+        {
+          "label": "شماره قطعه سرامیک جدول V1.0",
+          "value": "120515099A",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/114az-zh.pdf"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -1176,7 +1225,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://file.empower.cn/ebook/114az-zh.pdf",
+          "title": "BM114 SERIES Quick Installation Guidance V1.0; PDF pages 4, 24–25",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -1193,7 +1248,56 @@
         "هد برش ریتولز مدل BM115 در بانک قطعات سهند لیزر ثبت شده است.",
         "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "فوکوس نسخه دفترچه BM115",
+          "value": "خودکار",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "رابط فیبر، گزینه‌های جدول V1.0",
+          "value": "QBH / QD / Q+ آب‌خنک",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "قطر گروه لنز جدول V1.0",
+          "value": "D38.1",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "گزینه کولیمیشن جدول V1.0",
+          "value": "F100H؛ نسخه‌های اپتیکی متفاوت",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "گزینه فوکوس جدول V1.0",
+          "value": "F150H / F200H؛ بسته به مجموعه اپتیکی",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "محافظ بالا V1.0",
+          "value": "D37 × 1.6 mm؛ شماره قطعه 211LCG0045",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "محافظ میانی و پایین V1.0",
+          "value": "D37 × 7 mm؛ شماره قطعه 110255IAG0004",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "شماره قطعه سرامیک جدول V1.0",
+          "value": "120515099A",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -1208,7 +1312,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://file.empower.cn/ebook/115az-zh.pdf",
+          "title": "BM115 SERIES Quick Installation Guidance V1.0; PDF pages 5, 30–32",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2437,6 +2547,54 @@
           "label": "مدل / خانواده",
           "value": "BM115",
           "scope": "identity"
+        },
+        {
+          "label": "فوکوس نسخه دفترچه BM115",
+          "value": "خودکار",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "رابط فیبر، گزینه‌های جدول V1.0",
+          "value": "QBH / QD / Q+ آب‌خنک",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "قطر گروه لنز جدول V1.0",
+          "value": "D38.1",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "گزینه کولیمیشن جدول V1.0",
+          "value": "F100H؛ نسخه‌های اپتیکی متفاوت",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "گزینه فوکوس جدول V1.0",
+          "value": "F150H / F200H؛ بسته به مجموعه اپتیکی",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "محافظ بالا V1.0",
+          "value": "D37 × 1.6 mm؛ شماره قطعه 211LCG0045",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "محافظ میانی و پایین V1.0",
+          "value": "D37 × 7 mm؛ شماره قطعه 110255IAG0004",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
+        },
+        {
+          "label": "شماره قطعه سرامیک جدول V1.0",
+          "value": "120515099A",
+          "scope": "manufacturer_manual",
+          "source": "https://file.empower.cn/ebook/115az-zh.pdf"
         }
       ],
       "images": [],
@@ -2453,7 +2611,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://file.empower.cn/ebook/115az-zh.pdf",
+          "title": "BM115 SERIES Quick Installation Guidance V1.0; same named family as legacy CH005",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },

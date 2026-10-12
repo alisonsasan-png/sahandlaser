@@ -16,6 +16,13 @@ for(const code of ['CC001','CC002','CC003']){
   assert(product.specs.some(spec=>spec.scope==='manufacturer_web'&&spec.source));
 }
 assert(catalog.products.find(p=>p.code==='CC002').specs.some(spec=>spec.label==='حجم مخزن ANPTY / BNPTY'&&spec.value==='22 L'));
+const head114=catalog.products.find(p=>p.code==='CH004');
+const head115=catalog.products.find(p=>p.code==='CH005');
+assert(head114.specs.some(s=>s.label==='محافظ‌های بالا و میانی V1.0'&&s.value.includes('1.6')));
+assert(head115.specs.some(s=>s.label==='محافظ میانی و پایین V1.0'&&s.value.includes('7 mm')));
+assert(head114.specs.some(s=>s.value==='D37؛ F150 / F190.5'));
+assert(head115.specs.some(s=>s.value==='D38.1'));
+for(const code of ['CP-RAY-BM114E','CP-RAY-BM115E'])assert(!catalog.products.find(p=>p.code===code).sources.some(s=>/\/11[45]az-zh\.pdf$/.test(s.url||'')));
 for(const p of catalog.products){assert.equal(p.comparable,['cutting','welding','marking','cleaning'].includes(p.category));assert(!p.ready);if(p.visuals.studio)assert(fs.existsSync(path.join(root,p.visuals.studio.src)));}
 assert(articles.length>=8);assert.equal(new Set(articles.map(a=>a.id||a.slug)).size,articles.length);for(const article of articles){assert.equal(article.sections.length,3);assert(article.sources.every(source=>source.url.startsWith('https://')));}
 for(const filename of ['status/index.html','status/catalog.html']){const html=read(filename);for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(match[1],{filename});}

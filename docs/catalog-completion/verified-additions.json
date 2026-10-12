@@ -413,6 +413,48 @@
     "scope": "manufacturer_web",
     "sourceScope": "manufacturer_web_variant"
   },
+  "CH004": {
+    "url": "https://file.empower.cn/ebook/114az-zh.pdf",
+    "title": "BM114 SERIES Quick Installation Guidance V1.0; PDF pages 4, 24–25",
+    "facts": [
+      ["فوکوس نسخه دفترچه BM114", "خودکار"],
+      ["ماژول‌های اصلی نسخه دفترچه", "رابط فیبر، کولیمیشن، فوکوس و تنظیم مرکز، محافظ اپتیکی و نازل"],
+      ["رابط فیبر، گزینه‌های جدول V1.0", "QBH / QD آب‌خنک"],
+      ["گروه کولیمیشن جدول V1.0", "D37؛ F100"],
+      ["گروه فوکوس، گزینه‌های جدول V1.0", "D37؛ F150 / F190.5"],
+      ["محافظ‌های بالا و میانی V1.0", "D37 × 1.6 mm؛ شماره قطعه 211LCG0045"],
+      ["محافظ پایین V1.0", "D37 × 7 mm؛ شماره قطعه 110255IAG0004"],
+      ["شماره قطعه سرامیک جدول V1.0", "120515099A"]
+    ]
+  },
+  "CH005": {
+    "url": "https://file.empower.cn/ebook/115az-zh.pdf",
+    "title": "BM115 SERIES Quick Installation Guidance V1.0; PDF pages 5, 30–32",
+    "facts": [
+      ["فوکوس نسخه دفترچه BM115", "خودکار"],
+      ["رابط فیبر، گزینه‌های جدول V1.0", "QBH / QD / Q+ آب‌خنک"],
+      ["قطر گروه لنز جدول V1.0", "D38.1"],
+      ["گزینه کولیمیشن جدول V1.0", "F100H؛ نسخه‌های اپتیکی متفاوت"],
+      ["گزینه فوکوس جدول V1.0", "F150H / F200H؛ بسته به مجموعه اپتیکی"],
+      ["محافظ بالا V1.0", "D37 × 1.6 mm؛ شماره قطعه 211LCG0045"],
+      ["محافظ میانی و پایین V1.0", "D37 × 7 mm؛ شماره قطعه 110255IAG0004"],
+      ["شماره قطعه سرامیک جدول V1.0", "120515099A"]
+    ]
+  },
+  "CP-RAY-BM115": {
+    "url": "https://file.empower.cn/ebook/115az-zh.pdf",
+    "title": "BM115 SERIES Quick Installation Guidance V1.0; same named family as legacy CH005",
+    "facts": [
+      ["فوکوس نسخه دفترچه BM115", "خودکار"],
+      ["رابط فیبر، گزینه‌های جدول V1.0", "QBH / QD / Q+ آب‌خنک"],
+      ["قطر گروه لنز جدول V1.0", "D38.1"],
+      ["گزینه کولیمیشن جدول V1.0", "F100H؛ نسخه‌های اپتیکی متفاوت"],
+      ["گزینه فوکوس جدول V1.0", "F150H / F200H؛ بسته به مجموعه اپتیکی"],
+      ["محافظ بالا V1.0", "D37 × 1.6 mm؛ شماره قطعه 211LCG0045"],
+      ["محافظ میانی و پایین V1.0", "D37 × 7 mm؛ شماره قطعه 110255IAG0004"],
+      ["شماره قطعه سرامیک جدول V1.0", "120515099A"]
+    ]
+  },
   "CC003": {
     "url": "https://www.teyuchiller.com/dual-circuit-water-chiller-for-automobile-vessel-fiber-laser-welding-machine_p207.html",
     "title": "TEYU CWFL-3000 dual-circuit family reference",
