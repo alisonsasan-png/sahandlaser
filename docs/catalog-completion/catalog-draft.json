@@ -9039,7 +9039,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-3/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic LD-family single-table 6020 external reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "6020",
