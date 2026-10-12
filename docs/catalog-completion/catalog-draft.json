@@ -4257,7 +4257,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/FS003/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic C1000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
