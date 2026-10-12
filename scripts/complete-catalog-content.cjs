@@ -6,12 +6,13 @@ const articles=new Map(read('articles.json').map(article=>[article.id||article.s
 for(const article of read('articles-additions.json'))articles.set(article.id||article.slug,{...article,id:article.id||article.slug});
 fs.writeFileSync(path.join(folder,'articles.json'),JSON.stringify([...articles.values()],null,2)+'\n');
 const catalog=read('catalog-draft.json');
+const isReviewable=product=>(product.category==='cutting'&&!['CUT-custom','CUT-tube','CUT-robot'].includes(product.code))||(product.category==='head'&&(/^CH\d+$/.test(product.code)||/^CP-RAY-/.test(product.code)));
 const work=catalog.products.map(product=>({code:product.code,name:product.name,category:product.category,
   studioImage:Boolean(product.visuals.studio),
   sourcedSpecifications:product.specs.filter(spec=>Boolean(spec.source)).length,
   suppliedSeriesDocument:Boolean(product.seriesReference),
   mediaIdentityIssue:product.visuals.sourceCandidate?.identityReview?.includes('rejected')||product.visuals.sourceCandidate?.identityReview==='insufficient_model_identity' ? product.visuals.sourceCandidate : null,
-  remaining:[...(!product.visuals.studio?['prepare product-specific studio image']:[]),...(!product.specs.some(spec=>spec.source)&&!product.seriesReference?['reconcile exact-model specifications']:[]),...(['cutting','head'].includes(product.category)&&!['CUT-custom','CUT-tube','CUT-robot'].includes(product.code)?['review technical drawing/internal-assembly applicability']:[])]}));
+  remaining:[...(!product.visuals.studio?['prepare product-specific studio image']:[]),...(!product.specs.some(spec=>spec.source)&&!product.seriesReference?['reconcile exact-model specifications']:[]),...(isReviewable(product)?['review technical drawing/internal-assembly applicability']:[])]}));
 const summary={date:catalog.date,products:work.length,studioImages:work.filter(p=>p.studioImage).length,
   recordsWithSourcedSpecifications:work.filter(p=>p.sourcedSpecifications>0).length,
   recordsWithManufacturerReferenceSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&/^manufacturer_/.test(s.scope))).length,
