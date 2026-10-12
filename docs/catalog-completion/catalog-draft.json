@@ -5058,8 +5058,8 @@
         },
         "studio": {
           "src": "assets/catalog-v2/FS004/studio-web.jpg",
-          "type": "AI-assisted reconstruction from supplied photo/CAD",
-          "identityScope": "supplied series photograph or CAD",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Raycus source-family reference; not proof of exact FS004 casing or installed revision",
           "visualReview": true
         }
       },
@@ -5803,7 +5803,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic fiber-marking family reference; not proof of exact ML-001 casing or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "seriesReference": {
@@ -5939,7 +5945,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic fiber-marking family reference; not proof of exact ML-002 casing or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "seriesReference": {
@@ -6075,7 +6087,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic fiber-marking family reference; not proof of exact ML-003 casing or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "seriesReference": {
@@ -6433,7 +6451,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic fiber-marking family reference; not proof of exact ML-006 casing or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "seriesReference": {
@@ -6770,7 +6794,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic fiber-marking family reference; not proof of exact ML-009 casing or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [
         "./assets/products/ML-009/commercial-v1.jpg",
@@ -6957,6 +6987,12 @@
           "processing": "do not publish as exact-model image",
           "identityReview": "rejected_for_exact_model",
           "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
+        },
+        "studio": {
+          "src": "assets/catalog-v2/FS006/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "C3000-family reference; not proof of exact installed casing or revision",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -7063,7 +7099,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/FS007/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "C4000-family reference; not proof of exact installed casing or revision",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -7187,6 +7229,12 @@
           "processing": "do not publish as exact-model image",
           "identityReview": "rejected_for_exact_model",
           "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
+        },
+        "studio": {
+          "src": "assets/catalog-v2/FS008/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "C6000-family reference; not proof of exact installed casing or revision",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -7330,7 +7378,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/FS005/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Raycus QCW/source-family reference; not proof of exact installed casing or revision",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -8073,7 +8127,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-005 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -8142,7 +8202,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-006 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -8203,7 +8269,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-007 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -8264,7 +8336,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-008 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -8329,7 +8407,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-009 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
@@ -8390,7 +8474,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic welding-family reference; not proof of exact WL-010 casing, source, power, or installed configuration",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
