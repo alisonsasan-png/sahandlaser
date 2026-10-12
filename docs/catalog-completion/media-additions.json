@@ -275,6 +275,12 @@
     "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "CUT-3015-9": {
+    "directory": "CUT-3015-9",
+    "reference": "AI-generated white-background external family reconstruction informed by supplied 3015 cabin/rotary references",
+    "identityScope": "Generic enclosed dual-table 3015 plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
@@ -282,3 +288,4 @@
     "visualReview": true
   }
 }
+
