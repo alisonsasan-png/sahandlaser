@@ -7831,7 +7831,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-3015-6/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Supplied 3015 cabin CAD with external exchange table; folder title is not proof of table count or exact installed manufacturer revision",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "3015",
@@ -8768,7 +8774,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-4/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Supplied named 6020 exchange-table artwork; no exact stock plaque or hidden geometry inferred",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "6020",
@@ -9011,7 +9023,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-6/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Supplied 6020 cabin CAD with visible external exchange table; exterior configuration reconstruction, not proof of exact installed revision",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "6020",
@@ -9601,7 +9619,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-robot/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "User-requested industry reference for the robot-cutting family: generic articulated six-axis robot cell; not proof of Sahand installed model, manufacturer, controller, laser source, or hidden assembly",
+          "visualReview": true
+        }
       },
       "comparisonValues": {
         "گروه ابعادی": {
