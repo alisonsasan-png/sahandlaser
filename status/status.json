@@ -1,12 +1,9 @@
-Warning: truncated output (original token count: 10824)
-Total output lines: 325
-
 {
-    "updatedAt":  "2026-10-12T21:48:00.000+03:30",
+    "updatedAt":  "2026-10-12T22:05:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
-    "currentTask":  "Independent previews 12â€“19 and exact cutting taxonomy",
-    "nextTask":  "Continue remaining catalog evidence, then build previews 20â€“28",
+    "currentTask":  "Independent previews 12â€“28 and Pages propagation verification",
+    "nextTask":  "Verify new Pages routes, then continue remaining catalog evidence",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -179,7 +176,29 @@ Total output lines: 325
                         "at":  "2026-10-12T09:59:38.000+03:30",
                         "text":  "نسخه ۳۰تصویری با ۸ مقاله و مشخصات منبع‌دار ۱۴ رکورد منتشر شد و بررسی HTTP و آزمون DOM موفق بود. شش بازسازی تازه دستگاه برش آماده بررسی و اتصال است. نمای حجمی BM110 اکنون محافظ میانی تخت دارد؛ شکل دقیق مکانیزم اتوفوکوس ادعا نشده. فاصله گزارش قبلی رعایت نشد؛ ثبت زمان واقعی انجام می‌شود."
                     },
-         …824 tokens truncated… استودیویی تولید و ذخیره شدند، اما به علت تغییر چیدمان اتصالات برای کاتالوگ رد شدند؛ تعداد تصاویر منتشرشده همچنان ۳۶ است. اختلاف جدول ارسالی BM114 با دفترچه در اندازه محافظ و گزینه کانونی ثبت شد. قدم بعدی عکس اصلی با جداسازی وفادار یا مرجع پرکیفیت‌تر است. هیچ پیش‌نمایش جدید یا ایکس‌ری تازه منتشر نشد."
+                    {
+                        "at":  "2026-10-12T10:08:43.000+03:30",
+                        "text":  "گزارش دوره‌ای اجرای فعال: بسته‌بندی و انتشار تصاویر جدید و تطبیق جدول قطعات محافظ BM110؛ این ثبت ادعای پایان کار یا آزمون جدید نیست."
+                    },
+                    {
+                        "at":  "2026-10-12T10:17:48.000+03:30",
+                        "text":  "گزارش دوره‌ای اجرای فعال: بسته‌بندی و انتشار تصاویر جدید و تطبیق جدول قطعات محافظ BM110؛ این ثبت ادعای پایان کار یا آزمون جدید نیست."
+                    },
+                    {
+                        "at":  "2026-10-12T10:26:54.000+03:30",
+                        "text":  "گزارش دوره‌ای اجرای فعال: بسته‌بندی و انتشار تصاویر جدید و تطبیق جدول قطعات محافظ BM110؛ این ثبت ادعای پایان کار یا آزمون جدید نیست."
+                    },
+                    {
+                        "at":  "2026-10-12T10:56:53.000+03:30",
+                        "text":  "پس از موافقت کاربر هدف ادامه‌دار ثبت و این نوبت با بررسی داده فعلی آغاز شد. مشخصات چیلرهای CWFL-1500، CWFL-2000 و CWFL-3000 با صفحات رسمی TEYU تکمیل و منتشر شد؛ مشخصات نسخه‌های مرجع از دستگاه نصب‌شده جدا نگه داشته شده‌اند. منبع وب سازنده و دفترچه در داده‌ها اکنون نوع متفاوت دارند. مجموع ۱۷ رکورد دارای مشخصات منبع‌دار، ۳۶ تصویر و ۸ مقاله است. آزمون ساختار، مقایسه و تفکیک منبع موفق؛ مرورگر واقعی آزموده نشده. سایت‌های ۱۲ به بعد هنوز ساخته نشده‌اند."
+                    },
+                    {
+                        "at":  "2026-10-12T11:13:11.000+03:30",
+                        "text":  "دفترچه‌های رسمی BM114 و BM115 بررسی و مشخصات CH004، CH005 و CP-RAY-BM115 تکمیل شد. دو شناسه BM115 یک خانواده نام‌گذاری‌شده‌اند و حذف نشده‌اند. تفاوت قطر اپتیک، گزینه کانونی و ضخامت محافظ میانی ثبت شد؛ اطلاعات به مدل‌های E منتقل نشد. مجموع ۲۰ رکورد مشخصات منبع‌دار، ۳۶ تصویر و ۸ مقاله است. آزمون‌های ساختار، تفکیک نسخه‌ها، DOM شبیه‌سازی‌شده و مقایسه گذشتند؛ ایکس‌ری تازه و آزمون مرورگر واقعی در این مرحله انجام نشده است. تکمیل کاتالوگ و سایت‌های ۱۲ به بعد همچنان باقی است."
+                    },
+                    {
+                        "at":  "2026-10-12T11:22:09.000+03:30",
+                        "text":  "پوستر BM115 با دو هد متفاوت و جدول‌های BM114/BM115 بازبینی شد. دو تصویر استودیویی تولید و ذخیره شدند، اما به علت تغییر چیدمان اتصالات برای کاتالوگ رد شدند؛ تعداد تصاویر منتشرشده همچنان ۳۶ است. اختلاف جدول ارسالی BM114 با دفترچه در اندازه محافظ و گزینه کانونی ثبت شد. قدم بعدی عکس اصلی با جداسازی وفادار یا مرجع پرکیفیت‌تر است. هیچ پیش‌نمایش جدید یا ایکس‌ری تازه منتشر نشد."
                     },
                     {
                         "at":  "2026-10-12T11:26:30.000+03:30",
@@ -300,6 +319,18 @@ Total output lines: 325
                     {
                         "at":  "2026-10-12T21:48:00.000+03:30",
                         "text":  "Replaced iframe wrappers with independent full-page builds for previews 12â€“19. Preview 12 implements the exact cutting tree with nine named 3015 models and nine named 6020 models plus custom size, tube and robot categories. Actual Chromium 141 verification passed for previews 12â€“19: zero iframes, 139 product cards, home/products routes, taxonomy controls, and no page errors."
+                    },
+                    {
+                        "at":  "2026-10-12T21:34:30.000+03:30",
+                        "text":  "Added traceable Sintec Optronics family references for four laser-cleaning records without treating them as installed-model identities. Actual Chromium 141 verification passed on the published catalog at desktop 1366x900 and touch-emulated 390x844: 106 products, 63 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses."
+                    },
+                    {
+                        "at":  "2026-10-12T21:48:00.000+03:30",
+                        "text":  "Replaced iframe wrappers with independent full-page builds for previews 12â€“19. Preview 12 implements the exact cutting tree with nine named 3015 models and nine named 6020 models plus custom size, tube and robot categories. Actual Chromium 141 verification passed for previews 12â€“19: zero iframes, 139 product cards, home/products routes, taxonomy controls, and no page errors."
+                    },
+                    {
+                        "at":  "2026-10-12T22:05:00.000+03:30",
+                        "text":  "Built and published independent previews 20â€“24 using alternate catalog taxonomies, and previews 25â€“28 with distinct interaction structures: command rail, editorial layout, split-panel catalog, and immersive cursor-light layout. New Pages routes are awaiting propagation; no live verification claim is made yet."
                     }
                 ]
 }
