@@ -31,6 +31,11 @@
     'WL-010':{topic:'جوش حروف برجسته',question:'جنس و ضخامت حروف و شکل اتصال دیواره به کف چیست؟'}
   };
   function enrich(product){
+    if(product.code==='CP-TRA'){
+      product.componentKind='nozzle_sensor_assembly';
+      product.description=['مجموعه TRA بخش اتصال نازل و سنجش در انتهای هد است؛ با یک هد اپتیکی کامل شامل کولیمیشن و فوکوس یکی نیست.','مرجع تصویری ارسالی دو نمای مجموعه را نشان می‌دهد. نوع نصب، اتصال حسگر و نسخه سازگار باید با هد مقصد تطبیق داده شوند.'];
+      product.consultationQuestions=['مدل کامل هد مقصد چیست؟','شکل نصب، اتصالات و شماره مجموعه فعلی کدام است؟','نازل و سرامیک سازگار با نسخه موردنظر کدام‌اند؟'];
+    }
     const cut=cutting(product);if(cut){product.configuration=cut.configuration;product.description=cut.description;product.specs=product.specs.filter(s=>!cut.specs.some(n=>n.label===s.label)).concat(cut.specs);product.consultationQuestions=cut.questions;}
     if(roles[product.code]){const role=roles[product.code];product.description=[product.name+' در گروه '+role.topic+' سهند لیزر قرار دارد.','انتخاب این خانواده از نوع اتصال و روند تولید شروع می‌شود؛ نام سری به‌تنهایی توان، نوع سورس یا تمام تجهیزات همراه یک دستگاه را تعیین نمی‌کند.'];product.consultationQuestions=[role.question,'جنس و ضخامت قطعه و کیفیت اتصال موردنظر چیست؟','توان، هد، تغذیه سیم و تجهیزات همراه کدام پیکربندی موردنظر است؟'];}
     return product;

@@ -8,6 +8,8 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+assert.equal(catalog.products.find(p=>p.code==='CP-TRA').componentKind,'nozzle_sensor_assembly');
+assert.equal(catalog.products.find(p=>p.code==='CP-TRA').comparable,false);
 for(const [code,watts] of [['SRC-RAY-C3000S','7500'],['SRC-RAY-C4000S','10000'],['SRC-RAY-C6000S','15000']]){
  assert(catalog.products.find(p=>p.code===code).specs.some(s=>s.label.includes('ظرفیت سرمایشی')&&s.value.includes(watts)&&s.source));
 }

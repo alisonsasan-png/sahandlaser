@@ -1,0 +1,22 @@
+{
+  "mode": "built-in image generation",
+  "assets": [
+    {
+      "code": "CLEAN-GENERIC",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/cleaning Machine/Cleaning-Machine.jpg",
+      "prompt": "Use case: precise-object-edit. Input image 1: supplied product poster edit target. Primary request: extract the photographed product only as a polished photorealistic studio catalog image on seamless pure white, soft neutral light and subtle contact shadow. Square uncropped composition with generous margins. Preserve viewpoint, component count, cabinet shape, controls, connectors and colors. Remove all surrounding promotional text, corner logos, icons and background; do not add model numbers, power claims, props, new branding or hidden parts. Preserve the white/gray wheeled cabinet, red trim under the sloping gray touchscreen control panel, visible red stop and small switches, right-front door and handle, left-side grille and hourglass perforation pattern, and the handheld silver-and-black cleaning gun connected by the curved black cable on top. This is a family reference, not proof of a 200/500/1000 watt pulsed unit. Do not copy the surrounding poster's technical claims.",
+      "saved": "assets/catalog-v2/CLEAN-GENERIC/studio-v1.png",
+      "delivery": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "visualScope": "exterior family reconstruction; no hidden assembly claims"
+    },
+    {
+      "code": "CP-TRA",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/cutting head TRA/Cutting-Head.jpg",
+      "prompt": "Use case: precise-object-edit. Input image 1: supplied product poster edit target. Primary request: extract the photographed product only as a polished photorealistic studio catalog image on seamless pure white, soft neutral light and subtle contact shadow. Square uncropped composition with generous margins. Preserve viewpoint, component count, cabinet shape, controls, connectors and colors. Remove all surrounding promotional text, corner logos, icons and background; do not add model numbers, power claims, props, new branding or hidden parts. Preserve BOTH photographed silver TRA nozzle assemblies as a two-view product composition: left upright block with four mounting holes, cylindrical neck, knurled ring and conical nozzle, side connector; right tilted square mounting block with its cylindrical lower assembly and silver connector. These are nozzle/TRA assemblies, not full optical laser heads. Never add a fiber connector, motor or lens assembly. Match visible holes, ports and silhouette, no invented fasteners.",
+      "saved": "assets/catalog-v2/CP-TRA/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-TRA/studio-web.jpg",
+      "visualScope": "exterior family reconstruction; no hidden assembly claims"
+    }
+  ]
+}
+

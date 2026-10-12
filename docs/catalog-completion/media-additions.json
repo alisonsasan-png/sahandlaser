@@ -1,4 +1,16 @@
 {
+  "CLEAN-GENERIC": {
+    "directory": "CLEAN-GENERIC",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/cleaning Machine/Cleaning-Machine.jpg",
+    "identityScope": "Supplied cleaning cabinet family artwork; not proof of power, laser type or exact installed unit",
+    "visualReview": true
+  },
+  "CP-TRA": {
+    "directory": "CP-TRA",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/cutting head TRA/Cutting-Head.jpg",
+    "identityScope": "Supplied TRA assembly artwork, two exterior views; not a complete optical head or exact installed variant",
+    "visualReview": true
+  },
   "WELD-2000": {
     "directory": "WELD-2000",
     "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Welding Machine/C2000-Welding.jpg",

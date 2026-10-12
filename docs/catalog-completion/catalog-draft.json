@@ -1686,7 +1686,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Supplied cleaning cabinet family artwork; not proof of power, laser type or exact installed unit",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -3211,8 +3217,8 @@
       "category": "head",
       "name": "هد برش TRA",
       "description": [
-        "هد برش TRA",
-        "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
+        "مجموعه TRA بخش اتصال نازل و سنجش در انتهای هد است؛ با یک هد اپتیکی کامل شامل کولیمیشن و فوکوس یکی نیست.",
+        "مرجع تصویری ارسالی دو نمای مجموعه را نشان می‌دهد. نوع نصب، اتصال حسگر و نسخه سازگار باید با هد مقصد تطبیق داده شوند."
       ],
       "specs": [
         {
@@ -3236,13 +3242,19 @@
         "تجهیز یا نگهداری سیستم لیزری با مدل سازگار"
       ],
       "consultationQuestions": [
-        "شماره مدل و نسخه قطعه فعلی چیست؟",
-        "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
-        "قطعه کامل لازم است یا مجموعه مصرفی؟"
+        "مدل کامل هد مقصد چیست؟",
+        "شکل نصب، اتصالات و شماره مجموعه فعلی کدام است؟",
+        "نازل و سرامیک سازگار با نسخه موردنظر کدام‌اند؟"
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CP-TRA/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Supplied TRA assembly artwork, two exterior views; not a complete optical head or exact installed variant",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -3254,6 +3266,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "componentKind": "nozzle_sensor_assembly",
       "comparisonValues": {},
       "contentStatus": "enriched_draft",
       "ready": false
