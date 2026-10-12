@@ -1,0 +1,19 @@
+{
+  "mode": "built-in image generation",
+  "reference": "C:/Users/Sharif/Downloads/عکس های سایت/BM115-lite.png",
+  "outputs": [
+    {
+      "saved": "docs/catalog-completion/inspection/BM115/studio-rejected-v1.png",
+      "prompt": "Use case: precise-object-edit. Asset type: Sahand Laser product catalog, BM115 family reference photograph reconstruction. Input image 1 is the supplied BM115 family promotional artwork; select ONLY the tall cutting head on the RIGHT, not the shorter head on the left. Primary request: create one polished photorealistic studio product photograph of that exact right-hand head, on a seamless pure white background, soft neutral lighting and faint contact shadow. Preserve the reference's camera angle, tall angular silver housing, green bands, visible black fasteners, three silver fittings down its right side, black inset small connector and ceramic/nozzle at bottom. Preserve the BEAM MOTION and RayTools marks where legible; do not add an invented serial number, model suffix, power rating, parts, ports or a new machine logo. Remove the other head, all background graphics and corner logos. Full product uncropped centered with generous white margins, square canvas. This is an exterior family-reference image only, not a depiction of hidden mechanisms. No exploded view, no X-ray, no callouts.",
+      "accepted": false,
+      "reason": "Invented extra side connectors"
+    },
+    {
+      "saved": "docs/catalog-completion/inspection/BM115/studio-review-v2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: Sahand Laser product catalog, BM115 family reference photograph reconstruction. Input image 1 is the supplied BM115 family promotional artwork; select ONLY the tall cutting head on the RIGHT, not the shorter head on the left. Primary request: create one polished photorealistic studio product photograph of that exact right-hand head, on a seamless pure white background, soft neutral lighting and faint contact shadow. Preserve the reference's camera angle, tall angular silver housing, green bands, visible black fasteners, three silver fittings down its right side, black inset small connector and ceramic/nozzle at bottom. Preserve the BEAM MOTION and RayTools marks where legible; do not add an invented serial number, model suffix, power rating, parts, ports or a new machine logo. Remove the other head, all background graphics and corner logos. Full product uncropped centered with generous white margins, square canvas. This is an exterior family-reference image only, not a depiction of hidden mechanisms. No exploded view, no X-ray, no callouts.\nCritical correction: the prior attempt invented extra right-side fittings. Follow the original supplied promotional photograph ONLY: the right-hand tall head has one upper cluster, one middle cluster, and one lower cluster of visible silver fittings, exactly as photographed. Do not multiply connectors, hoses or loops. Keep every visible contour and connector count of the source. If a detail is too small to resolve, keep it subtly indistinct, never invent extra hardware.",
+      "accepted": false,
+      "reason": "Generated side fitting layout differs from low resolution reference; not assigned as exact product photo."
+    }
+  ]
+}
+
