@@ -275,6 +275,12 @@
     "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "FS003": {
+    "directory": "FS003",
+    "reference": "AI-generated white-background external Raycus C1000-family reconstruction informed by the catalog family identity",
+    "identityScope": "Generic C1000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+    "visualReview": true
+  },
   "CP-RAY-BT240": {
     "directory": "CP-RAY-BT240",
     "reference": "AI-generated white-background external BT240-family reconstruction informed by RayTools BT240S technical reference",
