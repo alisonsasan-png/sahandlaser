@@ -1413,6 +1413,12 @@
           "type": "AI-assisted reconstruction from supplied photo/CAD",
           "identityScope": "supplied series photograph or CAD",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM109/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM109 family optical reference and protective windows only; hidden mechanics and installed revision are not represented",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
         }
       },
       "availableLegacyMedia": [],
