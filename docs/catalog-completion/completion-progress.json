@@ -1179,8 +1179,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -1192,8 +1191,7 @@
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
-        "review technical drawing/internal-assembly applicability"
+        "reconcile exact-model specifications"
       ]
     },
     {
@@ -1204,9 +1202,7 @@
       "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "review technical drawing/internal-assembly applicability"
-      ]
+      "remaining": []
     }
   ]
 }
