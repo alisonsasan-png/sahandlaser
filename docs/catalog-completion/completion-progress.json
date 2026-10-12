@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 69,
-  "recordsWithSourcedSpecifications": 63,
-  "recordsWithManufacturerReferenceSpecifications": 38,
+  "recordsWithSourcedSpecifications": 64,
+  "recordsWithManufacturerReferenceSpecifications": 39,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -16,7 +16,7 @@
   "productsWorkQueue": [
     {
       "code": "CC001",
-      "name": "چیلر فایبر S&A CWFL-1500",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-1500",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 5,
@@ -26,7 +26,7 @@
     },
     {
       "code": "CC002",
-      "name": "چیلر فایبر S&A CWFL-2000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-2000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -36,7 +36,7 @@
     },
     {
       "code": "CC003",
-      "name": "چیلر فایبر S&A CWFL-3000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-3000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -46,7 +46,7 @@
     },
     {
       "code": "CC004",
-      "name": "چیلر فایبر Hanli HL-1500",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± Hanli HL-1500",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -56,7 +56,7 @@
     },
     {
       "code": "CC005",
-      "name": "چیلر فایبر Hanli HL-2000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± Hanli HL-2000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -66,7 +66,7 @@
     },
     {
       "code": "CC006",
-      "name": "چیلر فایبر Hanli HL-3000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± Hanli HL-3000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -76,7 +76,7 @@
     },
     {
       "code": "CH-HANLI-12000",
-      "name": "چیلر فایبر Hanli HL-12000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± Hanli HL-12000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -86,7 +86,7 @@
     },
     {
       "code": "CH-HANLI-6000",
-      "name": "چیلر فایبر Hanli HL-6000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± Hanli HL-6000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -96,7 +96,7 @@
     },
     {
       "code": "CH-S&A-12000",
-      "name": "چیلر فایبر S&A CWFL-12000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-12000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 7,
@@ -106,7 +106,7 @@
     },
     {
       "code": "CH-S&A-20000",
-      "name": "چیلر فایبر S&A CWFL-20000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-20000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 7,
@@ -116,13 +116,13 @@
     },
     {
       "code": "CH-S&A-6000",
-      "name": "چیلر فایبر S&A CWFL-6000",
+      "name": "ع†غŒظ„ط± ظپط§غŒط¨ط± S&A CWFL-6000",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
-        "relativePath": "عکس های معرفی محصول فشرده شده/Chiller/S&A/6000-S&A.jpg",
+        "relativePath": "ط¹ع©ط³ ظ‡ط§غŒ ظ…ط¹ط±ظپغŒ ظ…ط­طµظˆظ„ ظپط´ط±ط¯ظ‡ ط´ط¯ظ‡/Chiller/S&A/6000-S&A.jpg",
         "sha256": "f5d5dd613354869e784508a9e4da29208e3b5281b63de4368aa8c268ed687f2d",
         "match": "model named in supplied artwork",
         "processing": "do not publish as exact-model image",
@@ -133,7 +133,7 @@
     },
     {
       "code": "CH001",
-      "name": "هد برش ریتولز مدل BT240S",
+      "name": "ظ‡ط¯ ط¨ط±ط´ ط±غŒطھظˆظ„ط² ظ…ط¯ظ„ BT240S",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 8,
@@ -145,7 +145,7 @@
     },
     {
       "code": "CH002",
-      "name": "هد برش RayTools BM109",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM109",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 4,
@@ -157,13 +157,13 @@
     },
     {
       "code": "CH003",
-      "name": "هد برش فایبر RayTools BM111",
+      "name": "ظ‡ط¯ ط¨ط±ط´ ظپط§غŒط¨ط± RayTools BM111",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
-        "relativePath": "عکس های معرفی محصول فشرده شده/Cutting Head/BM---111.jpg",
+        "relativePath": "ط¹ع©ط³ ظ‡ط§غŒ ظ…ط¹ط±ظپغŒ ظ…ط­طµظˆظ„ ظپط´ط±ط¯ظ‡ ط´ط¯ظ‡/Cutting Head/BM---111.jpg",
         "sha256": "384d48cf3e01753c91946d0e27b8e8ec5bf9cefdfcc9b0bec8f5c2c5c06d2327",
         "match": "model named in supplied artwork",
         "processing": "do not publish as exact-model image",
@@ -176,7 +176,7 @@
     },
     {
       "code": "CH004",
-      "name": "هد برش ریتولز مدل BM114",
+      "name": "ظ‡ط¯ ط¨ط±ط´ ط±غŒطھظˆظ„ط² ظ…ط¯ظ„ BM114",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 8,
@@ -188,7 +188,7 @@
     },
     {
       "code": "CH005",
-      "name": "هد برش ریتولز مدل BM115",
+      "name": "ظ‡ط¯ ط¨ط±ط´ ط±غŒطھظˆظ„ط² ظ…ط¯ظ„ BM115",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 8,
@@ -200,7 +200,7 @@
     },
     {
       "code": "CL-001",
-      "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط±طھط§ط¨ظ„ 200 ظˆط§طھ",
       "category": "cleaning",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -212,7 +212,7 @@
     },
     {
       "code": "CL-002",
-      "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط§ظ„ط³غŒ 500 ظˆط§طھ",
       "category": "cleaning",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -224,7 +224,7 @@
     },
     {
       "code": "CL-003",
-      "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾ط§ظ„ط³غŒ 1000 ظˆط§طھ",
       "category": "cleaning",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -236,7 +236,7 @@
     },
     {
       "code": "CL-004",
-      "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط± ظ¾غŒظˆط³طھظ‡ 1500 ظˆط§طھ",
       "category": "cleaning",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -248,7 +248,7 @@
     },
     {
       "code": "CLEAN-GENERIC",
-      "name": "دستگاه تمیزکاری لیزری فایبر",
+      "name": "ط¯ط³طھع¯ط§ظ‡ طھظ…غŒط²ع©ط§ط±غŒ ظ„غŒط²ط±غŒ ظپط§غŒط¨ط±",
       "category": "cleaning",
       "studioImage": true,
       "sourcedSpecifications": 5,
@@ -260,7 +260,7 @@
     },
     {
       "code": "CN001",
-      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -273,7 +273,7 @@
     },
     {
       "code": "CN002",
-      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ط§ظˆط±ط¬غŒظ†ط§ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± TRA ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -286,7 +286,7 @@
     },
     {
       "code": "CN003",
-      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -299,7 +299,7 @@
     },
     {
       "code": "CN004",
-      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -312,7 +312,7 @@
     },
     {
       "code": "CN006",
-      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظ¾ط± ط³ط±ط¹طھ ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -325,7 +325,7 @@
     },
     {
       "code": "CN007",
-      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظپظˆظ„ ظ¾ط§ظˆط± ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -338,7 +338,7 @@
     },
     {
       "code": "CN008",
-      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BT210/BT210S",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -351,7 +351,7 @@
     },
     {
       "code": "CN009",
-      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM111",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -364,7 +364,7 @@
     },
     {
       "code": "CN010",
-      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM114S",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -377,7 +377,7 @@
     },
     {
       "code": "CN011",
-      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -390,7 +390,7 @@
     },
     {
       "code": "CN012",
-      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Full Power ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -403,7 +403,7 @@
     },
     {
       "code": "CN013",
-      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "name": "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ط¯ظ„ FL200 ظˆ FL1501 ط¨ط±ظ†ط¯ Raytools",
       "category": "consumables",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -416,7 +416,7 @@
     },
     {
       "code": "CP-CERAMIC",
-      "name": "سرامیک هد برش لیزر فایبر",
+      "name": "ط³ط±ط§ظ…غŒع© ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ظپط§غŒط¨ط±",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -428,7 +428,7 @@
     },
     {
       "code": "CP-LENS-BLT",
-      "name": "محافظ لنز سری BLT",
+      "name": "ظ…ط­ط§ظپط¸ ظ„ظ†ط² ط³ط±غŒ BLT",
       "category": "consumables",
       "studioImage": true,
       "sourcedSpecifications": 3,
@@ -438,7 +438,7 @@
     },
     {
       "code": "CP-LENS-RAY",
-      "name": "محافظ لنز RayTools",
+      "name": "ظ…ط­ط§ظپط¸ ظ„ظ†ط² RayTools",
       "category": "consumables",
       "studioImage": true,
       "sourcedSpecifications": 3,
@@ -448,7 +448,7 @@
     },
     {
       "code": "CP-LENS-WSX",
-      "name": "محافظ لنز WSX",
+      "name": "ظ…ط­ط§ظپط¸ ظ„ظ†ط² WSX",
       "category": "consumables",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -460,7 +460,7 @@
     },
     {
       "code": "CP-RAY-BM110",
-      "name": "هد برش فایبر RayTools BM110",
+      "name": "ظ‡ط¯ ط¨ط±ط´ ظپط§غŒط¨ط± RayTools BM110",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 10,
@@ -472,7 +472,7 @@
     },
     {
       "code": "CP-RAY-BM114E",
-      "name": "هد برش RayTools BM114-E",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM114-E",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -485,7 +485,7 @@
     },
     {
       "code": "CP-RAY-BM115",
-      "name": "هد برش RayTools BM115",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM115",
       "category": "head",
       "studioImage": false,
       "sourcedSpecifications": 8,
@@ -498,7 +498,7 @@
     },
     {
       "code": "CP-RAY-BM115E",
-      "name": "هد برش RayTools BM115-E",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM115-E",
       "category": "head",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -512,7 +512,7 @@
     },
     {
       "code": "CP-RAY-BM116E",
-      "name": "هد برش RayTools BM116-E",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM116-E",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -525,7 +525,7 @@
     },
     {
       "code": "CP-RAY-BT220",
-      "name": "هد برش RayTools BT220",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BT220",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 12,
@@ -537,7 +537,7 @@
     },
     {
       "code": "CP-RAY-BT240",
-      "name": "هد برش RayTools BT240",
+      "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BT240",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -550,7 +550,7 @@
     },
     {
       "code": "CP-SMC-ITV1050",
-      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "name": "ط±ع¯ظˆظ„ط§طھظˆط± ط§ظ„ع©طھط±ظˆظ¾ظ†ظˆظ…ط§طھغŒع© SMC ITV1050",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 4,
@@ -560,7 +560,7 @@
     },
     {
       "code": "CP-SMC-ITV2050",
-      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "name": "ط±ع¯ظˆظ„ط§طھظˆط± ط§ظ„ع©طھط±ظˆظ¾ظ†ظˆظ…ط§طھغŒع© SMC ITV2050",
       "category": "parts",
       "studioImage": true,
       "sourcedSpecifications": 4,
@@ -570,7 +570,7 @@
     },
     {
       "code": "CP-TRA",
-      "name": "هد برش TRA",
+      "name": "ظ‡ط¯ ط¨ط±ط´ TRA",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -583,7 +583,7 @@
     },
     {
       "code": "CTRL-FSCUT2000C",
-      "name": "سیستم کنترل برش FSCUT2000C",
+      "name": "ط³غŒط³طھظ… ع©ظ†طھط±ظ„ ط¨ط±ط´ FSCUT2000C",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 7,
@@ -595,7 +595,7 @@
     },
     {
       "code": "CTRL-FSCUT2000E",
-      "name": "سیستم کنترل برش FSCUT2000E",
+      "name": "ط³غŒط³طھظ… ع©ظ†طھط±ظ„ ط¨ط±ط´ FSCUT2000E",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 4,
@@ -607,7 +607,7 @@
     },
     {
       "code": "CTRL-FSCUT4000E",
-      "name": "سیستم کنترل برش FSCUT4000E",
+      "name": "ط³غŒط³طھظ… ع©ظ†طھط±ظ„ ط¨ط±ط´ FSCUT4000E",
       "category": "head",
       "studioImage": true,
       "sourcedSpecifications": 6,
@@ -619,7 +619,7 @@
     },
     {
       "code": "FS001",
-      "name": "سورس لیزر 30 وات پالسی فایبر Q-Switched",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± 30 ظˆط§طھ ظ¾ط§ظ„ط³غŒ ظپط§غŒط¨ط± Q-Switched",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -633,7 +633,7 @@
     },
     {
       "code": "FS002",
-      "name": "سورس لیزر 50 وات پالسی فایبر Q-Switched",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± 50 ظˆط§طھ ظ¾ط§ظ„ط³غŒ ظپط§غŒط¨ط± Q-Switched",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -647,20 +647,19 @@
     },
     {
       "code": "FS003",
-      "name": "سورس لیزر Raycus RFL-C1000",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-C1000",
       "category": "source",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 9,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
     {
       "code": "FS004",
-      "name": "سورس فایبر Raycus RFL-C1500",
+      "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C1500",
       "category": "source",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -673,7 +672,7 @@
     },
     {
       "code": "FS005",
-      "name": "سورس لیزر Raycus RFL-C2000",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-C2000",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -687,7 +686,7 @@
     },
     {
       "code": "FS006",
-      "name": "سورس لیزر فایبر 3000 وات ریکاس",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 3000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -701,7 +700,7 @@
     },
     {
       "code": "FS007",
-      "name": "سورس لیزر فایبر 4000 وات ریکاس",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 4000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -715,7 +714,7 @@
     },
     {
       "code": "FS008",
-      "name": "سورس لیزر فایبر 6000 وات ریکاس",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 6000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -729,7 +728,7 @@
     },
     {
       "code": "MK-FIBER-GENERIC",
-      "name": "دستگاه حکاکی فایبر سهند لیزر",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظپط§غŒط¨ط± ط³ظ‡ظ†ط¯ ظ„غŒط²ط±",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -742,7 +741,7 @@
     },
     {
       "code": "ML-001",
-      "name": "دستگاه فایبر مارکینگ 30 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 30 ظˆط§طھ",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -755,7 +754,7 @@
     },
     {
       "code": "ML-002",
-      "name": "دستگاه فایبر مارکینگ 50 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 50 ظˆط§طھ",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -768,7 +767,7 @@
     },
     {
       "code": "ML-003",
-      "name": "دستگاه فایبر مارکینگ 100 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 100 ظˆط§طھ",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -781,7 +780,7 @@
     },
     {
       "code": "ML-004",
-      "name": "دستگاه حکاکی میزدار UV",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ…غŒط²ط¯ط§ط± UV",
       "category": "marking",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -794,7 +793,7 @@
     },
     {
       "code": "ML-005",
-      "name": "دستگاه حکاکی پرتابل فایبر",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ¾ط±طھط§ط¨ظ„ ظپط§غŒط¨ط±",
       "category": "marking",
       "studioImage": true,
       "sourcedSpecifications": 3,
@@ -806,7 +805,7 @@
     },
     {
       "code": "ML-006",
-      "name": "دستگاه حکاکی لیزر Inline",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ„غŒط²ط± Inline",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -819,7 +818,7 @@
     },
     {
       "code": "ML-007",
-      "name": "دستگاه حکاکی رومیزی فایبر",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ط±ظˆظ…غŒط²غŒ ظپط§غŒط¨ط±",
       "category": "marking",
       "studioImage": true,
       "sourcedSpecifications": 3,
@@ -831,7 +830,7 @@
     },
     {
       "code": "ML-008",
-      "name": "دستگاه حکاکی لیزر MOPA",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ„غŒط²ط± MOPA",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -845,7 +844,7 @@
     },
     {
       "code": "ML-009",
-      "name": "دستگاه حکاکی میزدار فایبر",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ…غŒط²ط¯ط§ط± ظپط§غŒط¨ط±",
       "category": "marking",
       "studioImage": false,
       "sourcedSpecifications": 3,
@@ -858,13 +857,13 @@
     },
     {
       "code": "SRC-RAY-C3000S",
-      "name": "سورس فایبر Raycus RFL-C3000S-HP",
+      "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C3000S-HP",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
-        "relativePath": "عکس های معرفی محصول فشرده شده/Source/C3000S.jpg",
+        "relativePath": "ط¹ع©ط³ ظ‡ط§غŒ ظ…ط¹ط±ظپغŒ ظ…ط­طµظˆظ„ ظپط´ط±ط¯ظ‡ ط´ط¯ظ‡/Source/C3000S.jpg",
         "sha256": "a752734d1c3b27aeab28f72b275c14b2391b796d2caec5f8ea0bf1af7fcdedbd",
         "match": "model named in supplied artwork",
         "processing": "do not publish as exact-model image",
@@ -878,7 +877,7 @@
     },
     {
       "code": "SRC-RAY-C4000S",
-      "name": "سورس لیزر Raycus RFL-C4000S-HP",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-C4000S-HP",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 8,
@@ -891,13 +890,13 @@
     },
     {
       "code": "SRC-RAY-C6000S",
-      "name": "سورس فایبر Raycus RFL-C6000S-HP",
+      "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C6000S-HP",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
-        "relativePath": "عکس های معرفی محصول فشرده شده/Source/C6000S.jpg",
+        "relativePath": "ط¹ع©ط³ ظ‡ط§غŒ ظ…ط¹ط±ظپغŒ ظ…ط­طµظˆظ„ ظپط´ط±ط¯ظ‡ ط´ط¯ظ‡/Source/C6000S.jpg",
         "sha256": "a11bad480af7ea5a2ea2f5d7779905922d36acd58f753f1e257cac519233ca58",
         "match": "model named in supplied artwork",
         "processing": "do not publish as exact-model image",
@@ -911,7 +910,7 @@
     },
     {
       "code": "SRC-RAY-QCW150",
-      "name": "سورس لیزر Raycus RFL-QCW150/1500",
+      "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-QCW150/1500",
       "category": "source",
       "studioImage": false,
       "sourcedSpecifications": 14,
@@ -924,7 +923,7 @@
     },
     {
       "code": "WELD-1500",
-      "name": "دستگاه جوش فایبر 1500 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظپط§غŒط¨ط± 1500 ظˆط§طھ",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -936,7 +935,7 @@
     },
     {
       "code": "WELD-2000",
-      "name": "دستگاه جوش فایبر 2000 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظپط§غŒط¨ط± 2000 ظˆط§طھ",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -948,7 +947,7 @@
     },
     {
       "code": "WELD-3000",
-      "name": "دستگاه جوش فایبر 3000 وات",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظپط§غŒط¨ط± 3000 ظˆط§طھ",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -960,7 +959,7 @@
     },
     {
       "code": "WL-001",
-      "name": "دستگاه جوش لیزر Smart Series / Mini 4-in-1",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Smart Series / Mini 4-in-1",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -973,7 +972,7 @@
     },
     {
       "code": "WL-002",
-      "name": "دستگاه جوش لیزر Medium Series / Handheld",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Medium Series / Handheld",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -986,7 +985,7 @@
     },
     {
       "code": "WL-003",
-      "name": "دستگاه جوش لیزر Air-Cooled",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Air-Cooled",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 3,
@@ -998,7 +997,7 @@
     },
     {
       "code": "WL-004",
-      "name": "دستگاه جوش لیزر Air Cooling Portable",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Air Cooling Portable",
       "category": "welding",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1011,7 +1010,7 @@
     },
     {
       "code": "WL-005",
-      "name": "دستگاه جوش لیزر QCW Laser Spot Welding",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± QCW Laser Spot Welding",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1025,7 +1024,7 @@
     },
     {
       "code": "WL-006",
-      "name": "دستگاه جوش لیزر HP Series",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± HP Series",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1039,7 +1038,7 @@
     },
     {
       "code": "WL-007",
-      "name": "دستگاه جوش لیزر Modern Series",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Modern Series",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1053,7 +1052,7 @@
     },
     {
       "code": "WL-008",
-      "name": "دستگاه جوش لیزر Robotic Laser Welding",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Robotic Laser Welding",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1067,7 +1066,7 @@
     },
     {
       "code": "WL-009",
-      "name": "دستگاه جوش لیزر Jewelry Laser Welding",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Jewelry Laser Welding",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1081,7 +1080,7 @@
     },
     {
       "code": "WL-010",
-      "name": "دستگاه جوش لیزر Channel Letter Laser Welding",
+      "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Channel Letter Laser Welding",
       "category": "welding",
       "studioImage": false,
       "sourcedSpecifications": 0,
@@ -1095,7 +1094,7 @@
     },
     {
       "code": "CUT-3015-1",
-      "name": "تک میز DZ3015S",
+      "name": "طھع© ظ…غŒط² DZ3015S",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1107,7 +1106,7 @@
     },
     {
       "code": "CUT-3015-2",
-      "name": "تک میز DZ3015H",
+      "name": "طھع© ظ…غŒط² DZ3015H",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1119,7 +1118,7 @@
     },
     {
       "code": "CUT-3015-3",
-      "name": "تک میز LD3015",
+      "name": "طھع© ظ…غŒط² LD3015",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -1131,7 +1130,7 @@
     },
     {
       "code": "CUT-3015-4",
-      "name": "دو میز DZ3015",
+      "name": "ط¯ظˆ ظ…غŒط² DZ3015",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1143,7 +1142,7 @@
     },
     {
       "code": "CUT-3015-5",
-      "name": "دو میز LD3015",
+      "name": "ط¯ظˆ ظ…غŒط² LD3015",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1155,7 +1154,7 @@
     },
     {
       "code": "CUT-3015-6",
-      "name": "دو میز کابین‌دار DZ3015",
+      "name": "ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± DZ3015",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1167,7 +1166,7 @@
     },
     {
       "code": "CUT-3015-7",
-      "name": "تک میز 3015 + لوله‌بر",
+      "name": "طھع© ظ…غŒط² 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1179,7 +1178,7 @@
     },
     {
       "code": "CUT-3015-8",
-      "name": "دو میز 3015 + لوله‌بر",
+      "name": "ط¯ظˆ ظ…غŒط² 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1191,7 +1190,7 @@
     },
     {
       "code": "CUT-3015-9",
-      "name": "دو میز کابین‌دار 3015 + لوله‌بر",
+      "name": "ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1203,7 +1202,7 @@
     },
     {
       "code": "CUT-6020-1",
-      "name": "تک میز DZ6020S",
+      "name": "طھع© ظ…غŒط² DZ6020S",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1215,7 +1214,7 @@
     },
     {
       "code": "CUT-6020-2",
-      "name": "تک میز DZ6020H",
+      "name": "طھع© ظ…غŒط² DZ6020H",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1227,7 +1226,7 @@
     },
     {
       "code": "CUT-6020-3",
-      "name": "تک میز LD6020",
+      "name": "طھع© ظ…غŒط² LD6020",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -1239,7 +1238,7 @@
     },
     {
       "code": "CUT-6020-4",
-      "name": "دو میز DZ6020",
+      "name": "ط¯ظˆ ظ…غŒط² DZ6020",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1251,7 +1250,7 @@
     },
     {
       "code": "CUT-6020-5",
-      "name": "دو میز LD6020",
+      "name": "ط¯ظˆ ظ…غŒط² LD6020",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 2,
@@ -1263,7 +1262,7 @@
     },
     {
       "code": "CUT-6020-6",
-      "name": "دو میز کابین‌دار 6020",
+      "name": "ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± 6020",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1275,7 +1274,7 @@
     },
     {
       "code": "CUT-6020-7",
-      "name": "تک میز 6020 + لوله‌بر",
+      "name": "طھع© ظ…غŒط² 6020 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1287,7 +1286,7 @@
     },
     {
       "code": "CUT-6020-8",
-      "name": "دو میز 6020 + لوله‌بر",
+      "name": "ط¯ظˆ ظ…غŒط² 6020 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1299,7 +1298,7 @@
     },
     {
       "code": "CUT-6020-9",
-      "name": "دو میز کابین‌دار 6020 + لوله‌بر",
+      "name": "ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± 6020 + ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 1,
@@ -1311,7 +1310,7 @@
     },
     {
       "code": "CUT-custom",
-      "name": "برش سایز سفارشی",
+      "name": "ط¨ط±ط´ ط³ط§غŒط² ط³ظپط§ط±ط´غŒ",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1324,7 +1323,7 @@
     },
     {
       "code": "CUT-tube",
-      "name": "برش لوله‌بر",
+      "name": "ط¨ط±ط´ ظ„ظˆظ„ظ‡â€Œط¨ط±",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 0,
@@ -1337,7 +1336,7 @@
     },
     {
       "code": "CUT-robot",
-      "name": "برش ربات",
+      "name": "ط¨ط±ط´ ط±ط¨ط§طھ",
       "category": "cutting",
       "studioImage": true,
       "sourcedSpecifications": 2,
