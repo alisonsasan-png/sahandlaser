@@ -10169,6 +10169,36 @@
           "value": "ط¨ط±ط´ ط±ط¨ط§طھ"
         },
         {
+          "label": "ط³ط§ط®طھط§ط± ط±ط¨ط§طھ ط¯ط± ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ط±ط¨ط§طھ طµظ†ط¹طھغŒ ظ…ظپطµظ„غŒ ط´ط´â€Œظ…ط­ظˆط±ظ‡ ط¨ط§ ظ¾ط§غŒظ‡ ط«ط§ط¨طھطŒ ط³طھظˆظ† ع†ط±ط®ط§ظ†طŒ ط¨ط§ط²ظˆ ظˆ ظ…ع†",
+          "scope": "manufacturer_manual",
+          "source": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/"
+        },
+        {
+          "label": "طھط¹ط¯ط§ط¯ ظ…ط­ظˆط±ظ‡ط§ ط¯ط± ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "6 axes",
+          "scope": "manufacturer_manual",
+          "source": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/"
+        },
+        {
+          "label": "ط­ط¯ط§ع©ط«ط± ط¯ط³طھط±ط³غŒ ط¯ط± ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "80 in",
+          "scope": "manufacturer_manual",
+          "source": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/"
+        },
+        {
+          "label": "طھع©ط±ط§ط±ظ¾ط°غŒط±غŒ ط¯ط± ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "آ±0.003937 in",
+          "scope": "manufacturer_manual",
+          "source": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/"
+        },
+        {
+          "label": "ع©ط§ط±ط¨ط±ط¯ظ‡ط§غŒ ط°ع©ط±ط´ط¯ظ‡ ط¯ط± ظ…ط±ط¬ط¹",
+          "value": "ط¨ط±ط´ ظˆط±ظ‚طŒ ط¨ط±ط´ ظ‚ط·ط¹ط§طھ ط®ظˆط¯ط±ظˆ ظˆ ط¨ط±ط´/ط¬ظˆط´ع©ط§ط±غŒ ظ…ط³غŒط±ظ¾غŒظˆط³طھظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/"
+        },
+        {
           "label": "ظ…ط±ط¬ط¹ ط³ط§ط®طھط§ط± ط±ط¨ط§طھغŒع©",
           "value": "ط³ظ„ظˆظ„ ط±ط¨ط§طھغŒع© ظ…ظپطµظ„غŒ ط´ط´â€Œظ…ط­ظˆط±ظ‡ط› ظ…ط±ط¬ط¹ طµظ†ط¹طھغŒطŒ ظ†ظ‡ ظ…ط´ط®طµط§طھ ظ†طµط¨â€Œط´ط¯ظ‡ ط³ظ‡ظ†ط¯",
           "scope": "industry_reference_not_installed_identity",
@@ -10208,6 +10238,11 @@
         "طھغŒط±ط§عکطŒ ظپط¶ط§غŒ ظ†طµط¨ ظˆ ط±ظˆط´ ط¨ط§ط±ع¯ط°ط§ط±غŒ ع†ع¯ظˆظ†ظ‡ ط§ط³طھطں"
       ],
       "sources": [
+        {
+          "url": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/",
+          "title": "Laser Photonics Cobra Laser Cutting Robot family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        },
         {
           "title": "Cobra Laser Cutting Robot reference page",
           "url": "https://laserphotonics.com/laser-systems/laser-cutting-systems/robot/",
