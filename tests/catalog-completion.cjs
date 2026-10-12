@@ -17,6 +17,13 @@ for(const code of ['CC001','CC002','CC003']){
 }
 assert(catalog.products.find(p=>p.code==='CC002').specs.some(spec=>spec.label==='حجم مخزن ANPTY / BNPTY'&&spec.value==='22 L'));
 const head114=catalog.products.find(p=>p.code==='CH004');
+const bt240s=catalog.products.find(p=>p.code==='CH001');
+const bt220=catalog.products.find(p=>p.code==='CP-RAY-BT220');
+assert(bt240s.specs.some(s=>s.label==='روش تنظیم فوکوس نسخه دفترچه'&&s.value.includes('دستی')));
+assert(bt220.specs.some(s=>s.label==='توان نامی نسخه دفترچه'&&s.value==='2 kW'));
+assert(!catalog.products.find(p=>p.code==='CP-RAY-BT240').sources.some(s=>(s.url||'').includes('BT240S')));
+const assemblies=JSON.parse(read('docs/catalog-completion/internal-assembly-references.json'));
+assert(assemblies.models.every(model=>model.coverWindowCount===2&&model.focusActuation.includes('manual')&&!model.visualComplete));
 const head115=catalog.products.find(p=>p.code==='CH005');
 assert(head114.specs.some(s=>s.label==='محافظ‌های بالا و میانی V1.0'&&s.value.includes('1.6')));
 assert(head115.specs.some(s=>s.label==='محافظ میانی و پایین V1.0'&&s.value.includes('7 mm')));

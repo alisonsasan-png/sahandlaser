@@ -956,7 +956,56 @@
         "هد برش ریتولز مدل BT240S در بانک قطعات سهند لیزر ثبت شده است.",
         "برای انتخاب هد و تجهیزات کنترلی، شماره مدل و نسخه اهمیت دارد. شباهت ظاهری یا توان اسمی، سازگاری اتصال فیبر، اپتیک و رابط کنترل را تضمین نمی‌کند."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "توان کاربرد نسخه V1.6 دفترچه",
+          "value": "3000 W؛ با نسخه فعلی 4 kW یکسان فرض نمی‌شود",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "روش تنظیم فوکوس نسخه دفترچه",
+          "value": "دستی؛ حلقه مدرج چرخشی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "کورس تنظیم فوکوس نسخه دفترچه",
+          "value": "20 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "دقت تنظیم ذکرشده در دفترچه",
+          "value": "0.05 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "ساختار محافظ اپتیکی نسخه دفترچه",
+          "value": "دو محافظ کشویی در بخش کولیمیشن و فوکوس",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "محافظ بالای جدول V1.6",
+          "value": "D24.9 × 1.5 mm؛ شماره قطعه 110255IG0005",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "محافظ پایین جدول V1.6",
+          "value": "D27.9 × 4.1 mm؛ شماره قطعه 211LCG0035",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        },
+        {
+          "label": "خنک‌کاری معرفی‌شده در دفترچه",
+          "value": "نازل، گروه فوکوس و کولیمیشن دارای ساختار خنک‌کاری هستند",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -971,7 +1020,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf",
+          "title": "BT240S 3kW 2D Cutting Head Manual V1.6; pages 3, 10, 17; not current 4kW revision",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2757,6 +2812,78 @@
           "label": "مدل / خانواده",
           "value": "BT220",
           "scope": "identity"
+        },
+        {
+          "label": "توان نامی نسخه دفترچه",
+          "value": "2 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "فوکوس نسخه دفترچه",
+          "value": "دستی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "رابط فیبر نسخه دفترچه",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "طول موج نسخه دفترچه",
+          "value": "1064 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "گزینه کولیمیشن برش تخت",
+          "value": "75 / 100 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "گزینه فوکوس برش تخت",
+          "value": "100 / 125 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "گزینه فوکوس برش سه‌بعدی",
+          "value": "150 mm؛ پیکربندی مستقل از برش تخت",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "بازه فوکوس عمودی نسخه دفترچه",
+          "value": "−8 تا +7 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "حداکثر فشار گاز نسخه دفترچه",
+          "value": "25 bar",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "وزن معرفی‌شده نسخه دفترچه",
+          "value": "حدود 2.3 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "شیشه‌های محافظ جدول قطعات",
+          "value": "D24.9 × 1.5 mm و D27.9 × 4.1 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
+        },
+        {
+          "label": "شماره قطعه محافظ در جدول",
+          "value": "211LCG0020 و 211LCG0037",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf"
         }
       ],
       "images": [],
@@ -2773,7 +2900,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf",
+          "title": "BT220 SERIES 2kW Manual Focus Laser Cutting Head; PDF pages 6–8, 26",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },

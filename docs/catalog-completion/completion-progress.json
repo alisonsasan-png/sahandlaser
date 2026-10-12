@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 36,
-  "recordsWithSourcedSpecifications": 20,
+  "recordsWithSourcedSpecifications": 22,
   "suppliedSeriesDocuments": 4,
   "rejectedOrAmbiguousImages": 4,
   "articles": 8,
@@ -148,12 +148,11 @@
       "name": "هد برش ریتولز مدل BT240S",
       "category": "head",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -561,12 +560,11 @@
       "name": "هد برش RayTools BT220",
       "category": "head",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 12,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
         "prepare product-specific studio image",
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
