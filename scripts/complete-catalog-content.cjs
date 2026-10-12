@@ -11,7 +11,7 @@ const work=catalog.products.map(product=>({code:product.code,name:product.name,c
   sourcedSpecifications:product.specs.filter(spec=>Boolean(spec.source)).length,
   suppliedSeriesDocument:Boolean(product.seriesReference),
   mediaIdentityIssue:product.visuals.sourceCandidate?.identityReview?.includes('rejected')||product.visuals.sourceCandidate?.identityReview==='insufficient_model_identity' ? product.visuals.sourceCandidate : null,
-  remaining:[...(!product.visuals.studio?['prepare product-specific studio image']:[]),...(!product.specs.some(spec=>spec.source)&&!product.seriesReference?['reconcile exact-model specifications']:[]),...(['cutting','head'].includes(product.category)?['review technical drawing/internal-assembly applicability']:[])]}));
+  remaining:[...(!product.visuals.studio?['prepare product-specific studio image']:[]),...(!product.specs.some(spec=>spec.source)&&!product.seriesReference?['reconcile exact-model specifications']:[]),...(['cutting','head'].includes(product.category)&&!['CUT-custom','CUT-tube','CUT-robot'].includes(product.code)?['review technical drawing/internal-assembly applicability']:[])]}));
 const summary={date:catalog.date,products:work.length,studioImages:work.filter(p=>p.studioImage).length,
   recordsWithSourcedSpecifications:work.filter(p=>p.sourcedSpecifications>0).length,
   recordsWithManufacturerReferenceSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&/^manufacturer_/.test(s.scope))).length,
