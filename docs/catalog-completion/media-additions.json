@@ -1,4 +1,22 @@
 {
+  "WL-001": {
+    "directory": "WELD-HANDHELD-FAMILY",
+    "reference": "AI-generated family reconstruction informed by the supplied handheld-welding product family artwork",
+    "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-001 casing, source, power, controller, or installed configuration",
+    "visualReview": true
+  },
+  "WL-002": {
+    "directory": "WELD-HANDHELD-FAMILY",
+    "reference": "AI-generated family reconstruction informed by the supplied handheld-welding product family artwork",
+    "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-002 casing, source, power, controller, or installed configuration",
+    "visualReview": true
+  },
+  "WL-004": {
+    "directory": "WELD-HANDHELD-FAMILY",
+    "reference": "AI-generated family reconstruction informed by the supplied handheld-welding product family artwork",
+    "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-004 casing, source, power, controller, or installed configuration",
+    "visualReview": true
+  },
   "CL-001": {
     "directory": "CLEAN-GENERIC",
     "reference": "assets/catalog-v2/CLEAN-GENERIC/studio-v1.png",
