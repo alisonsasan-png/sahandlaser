@@ -2,6 +2,21 @@
   "description": "Evidence for subsequent per-model visual work; not a finished X-ray or manufacturing CAD.",
   "models": [
     {
+      "codes": ["CP-RAY-BM110"],
+      "model": "BM110",
+      "revision": "3.3 kW auto-focus V2.0 manual",
+      "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
+      "documentPages": [19, 20, 24, 26],
+      "focusActuation": "automatic focus; the overview indicates an internal drive, but complete drive geometry is not documented",
+      "opticalOrder": ["QBH", "upper cover window", "compound collimation", "middle cover window", "compound focusing", "lower cover window", "ceramic/nozzle assembly"],
+      "coverWindowCount": 3,
+      "topWindow": {"diameterMm": 24.9, "thicknessMm": 1.5, "partNumber": "211LCG0020"},
+      "middleWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0037"},
+      "bottomWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0037"},
+      "unknown": ["exact hidden drive geometry", "precise retaining-barrel geometry", "installed stock revision", "complete cooling-channel geometry"],
+      "visualComplete": false
+    },
+    {
       "codes": ["CH001"],
       "model": "BT240S",
       "revision": "3 kW manual V1.6",
