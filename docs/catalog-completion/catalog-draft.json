@@ -6646,6 +6646,24 @@
           "label": "خانواده محصول",
           "value": "Air-Cooled",
           "scope": null
+        },
+        {
+          "label": "نوع محصول درج‌شده در پوستر",
+          "value": "جوش لیزر هواخنک",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Air-cooled-welding-machine.jpg"
+        },
+        {
+          "label": "توان‌های درج‌شده در پوستر",
+          "value": "۸۰۰ تا ۱۵۰۰ وات؛ مدل و شرایط دقیق تفکیک نشده است",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Air-cooled-welding-machine.jpg"
+        },
+        {
+          "label": "محدودیت انتقال",
+          "value": "این ادعاها به WL-004 یا دیگر مدل‌های جوش منتقل نمی‌شوند",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Air-cooled-welding-machine.jpg"
         }
       ],
       "images": [],
@@ -6674,7 +6692,13 @@
         "جنس و ضخامت قطعه و کیفیت اتصال موردنظر چیست؟",
         "توان، هد، تغذیه سیم و تجهیزات همراه کدام پیکربندی موردنظر است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "assets/catalog-completion/inspection/Air-cooled-welding-machine.jpg",
+          "title": "User-supplied air-cooled laser welding poster; WL-003 family artwork evidence",
+          "scope": "user_supplied_artwork_family_reference"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -6687,7 +6711,11 @@
       "availableLegacyMedia": [],
       "comparisonValues": {
         "نوع جوش": null,
-        "توان": null,
+        "توان": {
+          "value": "۸۰۰ تا ۱۵۰۰ وات؛ مدل و شرایط دقیق تفکیک نشده است",
+          "scope": "user_supplied_artwork",
+          "source": "assets/catalog-completion/inspection/Air-cooled-welding-machine.jpg"
+        },
         "نوع لیزر": null,
         "خنک‌کاری": {
           "value": "هواخنک",

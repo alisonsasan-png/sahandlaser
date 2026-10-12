@@ -2,10 +2,10 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 45,
-  "recordsWithSourcedSpecifications": 43,
+  "recordsWithSourcedSpecifications": 44,
   "recordsWithManufacturerReferenceSpecifications": 31,
   "recordsWithUserSeriesSpecifications": 8,
-  "recordsWithUserArtworkSpecifications": 4,
+  "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
   "rejectedOrAmbiguousImages": 4,
   "articles": 9,
@@ -1008,11 +1008,10 @@
       "name": "دستگاه جوش لیزر Air-Cooled",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
