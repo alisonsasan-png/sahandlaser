@@ -4590,6 +4590,84 @@
           "label": "طھظˆط§ظ† ظ†ط§ظ…â€Œع¯ط°ط§ط±غŒâ€Œط´ط¯ظ‡ ظ…ط¯ظ„",
           "value": "3000 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "طھظˆط§ظ† ط®ط±ظˆط¬غŒ ظ…طھظˆط³ط· ط¯ط± طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡",
+          "value": "3000 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ع©ط²غŒ",
+          "value": "1080 آ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط­ط¯ط§ع©ط«ط± ظپط±ع©ط§ظ†ط³ ظ…ط¯ظˆظ„ط§ط³غŒظˆظ†",
+          "value": "5 kHz",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ظ¾ط§غŒط¯ط§ط±غŒ طھظˆط§ظ† ط®ط±ظˆط¬غŒ",
+          "value": "آ±1.5%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط±ط§ط¨ط· ط®ط±ظˆط¬غŒ",
+          "value": "QBH (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ظ‚ط·ط± ظ‡ط³طھظ‡ ظپغŒط¨ط± ط®ط±ظˆط¬غŒ",
+          "value": "50 آµm (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ع©غŒظپغŒطھ ظ¾ط±طھظˆ BPP",
+          "value": "1.5â€“2 mmآ·mrad",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ طھظ†ط¸غŒظ… طھظˆط§ظ†",
+          "value": "10â€“100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط±ظˆط´ ط®ظ†ع©â€Œع©ط§ط±غŒ",
+          "value": "ط¢ط¨â€Œط®ظ†ع©",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط¯ظ…ط§غŒ ع©ط§ط±غŒ",
+          "value": "10â€“40 آ°C",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط§ط¨ط¹ط§ط¯ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "485 أ— 172 أ— 727 mm ط¨ط§ ط¯ط³طھظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ظˆط²ظ† ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "ع©ظ…طھط± ط§ط² 65 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
+        },
+        {
+          "label": "ط±ظˆط´â€Œظ‡ط§غŒ ع©ظ†طھط±ظ„ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "RS232طŒ ADطŒ EthernetطŒ DeviceNetطŒ ProfinetطŒ EtherCAT (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2134.html"
         }
       ],
       "images": [],
@@ -4606,7 +4684,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط± ظˆ ط±ظˆط´ ع©ظ†طھط±ظ„ ط¯ط³طھع¯ط§ظ‡ ع†غŒط³طھطں",
         "ط³ظˆط±ط³ ط¬ط§غŒع¯ط²غŒظ† ط§ط³طھ غŒط§ ط¨ط±ط§غŒ ط³ط§ط®طھ ط¯ط³طھع¯ط§ظ‡ ط¬ط¯غŒط¯طں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/view/2134.html",
+          "title": "Raycus RFL-C3000S-HP official product specification, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -4623,7 +4707,86 @@
         "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 4000 ظˆط§طھ ط±غŒع©ط§ط³ ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ط³ظˆط±ط³طŒ ظ…ظ†ط¨ط¹ طھظˆظ„غŒط¯ ظ¾ط±طھظˆ ظ„غŒط²ط± ط§ط³طھ. ظ…ط¯ظ„ ع©ط§ظ…ظ„طŒ ظ†ظˆط¹ ط®ط±ظˆط¬غŒ ظ¾ط§ظ„ط³غŒ غŒط§ ظ¾غŒظˆط³طھظ‡ ظˆ ط±ط§ط¨ط· ظپغŒط¨ط± ط¨ط§غŒط¯ ط¨ط§ ظ‡ط¯طŒ ع©ظ†طھط±ظ„ط± ظˆ ط³غŒط³طھظ… ط®ظ†ع©â€Œع©ط§ط±غŒ طھط·ط¨غŒظ‚ ط¯ط§ط´طھظ‡ ط¨ط§ط´ظ†ط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "طھظˆط§ظ† ط®ط±ظˆط¬غŒ ظ…طھظˆط³ط· ط¯ط± طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡",
+          "value": "4000 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ع©ط²غŒ",
+          "value": "1080 آ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط­ط¯ط§ع©ط«ط± ظپط±ع©ط§ظ†ط³ ظ…ط¯ظˆظ„ط§ط³غŒظˆظ†",
+          "value": "20 kHz",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ظ¾ط§غŒط¯ط§ط±غŒ طھظˆط§ظ† ط®ط±ظˆط¬غŒ",
+          "value": "آ±1.5%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط±ط§ط¨ط· ط®ط±ظˆط¬غŒ",
+          "value": "QBH (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ظ‚ط·ط± ظ‡ط³طھظ‡ ظپغŒط¨ط± ط®ط±ظˆط¬غŒ",
+          "value": "50 آµm (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ع©غŒظپغŒطھ ظ¾ط±طھظˆ",
+          "value": "1.7â€“2.5",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ طھظ†ط¸غŒظ… طھظˆط§ظ†",
+          "value": "10â€“100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط±ظˆط´ ط®ظ†ع©â€Œع©ط§ط±غŒ",
+          "value": "ط¢ط¨â€Œط®ظ†ع©",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط¯ظ…ط§غŒ ع©ط§ط±غŒ",
+          "value": "10â€“40 آ°C",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط§ط¨ط¹ط§ط¯ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "485 أ— 172 أ— 802 mm ط¨ط§ ط¯ط³طھظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ظˆط²ظ† ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "ع©ظ…طھط± ط§ط² 80 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        },
+        {
+          "label": "ط±ظˆط´â€Œظ‡ط§غŒ ع©ظ†طھط±ظ„ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "RS232 ظˆ AD",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2066.html"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -4638,7 +4801,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط± ظˆ ط±ظˆط´ ع©ظ†طھط±ظ„ ط¯ط³طھع¯ط§ظ‡ ع†غŒط³طھطں",
         "ط³ظˆط±ط³ ط¬ط§غŒع¯ط²غŒظ† ط§ط³طھ غŒط§ ط¨ط±ط§غŒ ط³ط§ط®طھ ط¯ط³طھع¯ط§ظ‡ ط¬ط¯غŒط¯طں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/view/2066.html",
+          "title": "Raycus RFL-C4000S-CE official product specification, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -4655,7 +4824,86 @@
         "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 6000 ظˆط§طھ ط±غŒع©ط§ط³ ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ط³ظˆط±ط³طŒ ظ…ظ†ط¨ط¹ طھظˆظ„غŒط¯ ظ¾ط±طھظˆ ظ„غŒط²ط± ط§ط³طھ. ظ…ط¯ظ„ ع©ط§ظ…ظ„طŒ ظ†ظˆط¹ ط®ط±ظˆط¬غŒ ظ¾ط§ظ„ط³غŒ غŒط§ ظ¾غŒظˆط³طھظ‡ ظˆ ط±ط§ط¨ط· ظپغŒط¨ط± ط¨ط§غŒط¯ ط¨ط§ ظ‡ط¯طŒ ع©ظ†طھط±ظ„ط± ظˆ ط³غŒط³طھظ… ط®ظ†ع©â€Œع©ط§ط±غŒ طھط·ط¨غŒظ‚ ط¯ط§ط´طھظ‡ ط¨ط§ط´ظ†ط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "طھظˆط§ظ† ط®ط±ظˆط¬غŒ ظ…طھظˆط³ط· ط¯ط± طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡",
+          "value": "6000 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ع©ط²غŒ",
+          "value": "1080 آ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط­ط¯ط§ع©ط«ط± ظپط±ع©ط§ظ†ط³ ظ…ط¯ظˆظ„ط§ط³غŒظˆظ†",
+          "value": "2 kHz",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ظ¾ط§غŒط¯ط§ط±غŒ طھظˆط§ظ† ط®ط±ظˆط¬غŒ",
+          "value": "آ±1.5%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط±ط§ط¨ط· ط®ط±ظˆط¬غŒ",
+          "value": "HQBH (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ظ‚ط·ط± ظ‡ط³طھظ‡ ظپغŒط¨ط± ط®ط±ظˆط¬غŒ",
+          "value": "100 آµm (ظ‚ط§ط¨ظ„ ط³ظپط§ط±ط´غŒâ€Œط³ط§ط²غŒ)",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ع©غŒظپغŒطھ ظ¾ط±طھظˆ BPP",
+          "value": "â‰¤4.5 mmآ·mrad",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ طھظ†ط¸غŒظ… طھظˆط§ظ†",
+          "value": "10â€“100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط±ظˆط´ ط®ظ†ع©â€Œع©ط§ط±غŒ",
+          "value": "ط¢ط¨â€Œط®ظ†ع©",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط¯ظ…ط§غŒ ع©ط§ط±غŒ",
+          "value": "10â€“40 آ°C",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط§ط¨ط¹ط§ط¯ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "448 أ— 168 أ— 934 mm ط¨ط§ ط¯ط³طھظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ظˆط²ظ† ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "ع©ظ…طھط± ط§ط² 85 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        },
+        {
+          "label": "ط±ظˆط´â€Œظ‡ط§غŒ ع©ظ†طھط±ظ„ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "EthernetطŒ DeviceNetطŒ ProfinetطŒ Profibus",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/view/2090.html"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -4670,7 +4918,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط± ظˆ ط±ظˆط´ ع©ظ†طھط±ظ„ ط¯ط³طھع¯ط§ظ‡ ع†غŒط³طھطں",
         "ط³ظˆط±ط³ ط¬ط§غŒع¯ط²غŒظ† ط§ط³طھ غŒط§ ط¨ط±ط§غŒ ط³ط§ط®طھ ط¯ط³طھع¯ط§ظ‡ ط¬ط¯غŒط¯طں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/view/2090.html",
+          "title": "Raycus RFL-C6000S-HP official product specification, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
