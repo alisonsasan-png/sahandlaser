@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 74,
+  "studioImages": 75,
   "recordsWithSourcedSpecifications": 70,
   "recordsWithManufacturerReferenceSpecifications": 46,
   "recordsWithUserSeriesSpecifications": 8,
@@ -633,12 +633,11 @@
       "code": "FS002",
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± 50 ظˆط§طھ ظ¾ط§ظ„ط³غŒ ظپط§غŒط¨ط± Q-Switched",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
