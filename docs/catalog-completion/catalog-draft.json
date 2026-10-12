@@ -3596,6 +3596,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM114-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM114E/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM114 family modules, interfaces and focal options only; hidden mechanics and installed revision are not represented",
+          "source": "https://www.manualslib.com/manual/1616386/Raytools-Bm114-Series.html"
         }
       },
       "availableLegacyMedia": [],
