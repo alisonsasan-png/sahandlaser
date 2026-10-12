@@ -335,6 +335,12 @@
     "identityScope": "Generic C6000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
     "visualReview": true
   },
+  "FS001": {
+    "directory": "FS001",
+    "reference": "AI-generated white-background external Raycus 30W P30Q-family reconstruction informed by official P30QS/P30QB references",
+    "identityScope": "Generic P30Q-family source reference; exact P30QS versus P30QB variant, casing, nameplate and internal assembly are not established",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
