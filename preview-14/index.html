@@ -1130,6 +1130,7 @@ brand:[['خانواده دستگاه‌ها',[['خانواده برش سهند',
 // catalog record instead of only exposing a broad size bucket.
 const exact3015=[['تک میز DZ3015S','model-CUT-3015-1'],['تک میز DZ3015H','model-CUT-3015-2'],['تک میز LD3015','model-CUT-3015-3'],['دو میز DZ3015','model-CUT-3015-4'],['دو میز LD3015','model-CUT-3015-5'],['دو میز کابین‌دار DZ3015','model-CUT-3015-6'],['تک میز 3015 + لوله‌بر','model-CUT-3015-7'],['دو میز 3015 + لوله‌بر','model-CUT-3015-8'],['دو میز کابین‌دار 3015 + لوله‌بر','model-CUT-3015-9']];
 const exact6020=[['تک میز DZ6020S','model-CUT-6020-1'],['تک میز DZ6020H','model-CUT-6020-2'],['تک میز LD6020','model-CUT-6020-3'],['دو میز DZ6020','model-CUT-6020-4'],['دو میز LD6020','model-CUT-6020-5'],['دو میز کابین‌دار 6020','model-CUT-6020-6'],['تک میز 6020 + لوله‌بر','model-CUT-6020-7'],['دو میز 6020 + لوله‌بر','model-CUT-6020-8'],['دو میز کابین‌دار 6020 + لوله‌بر','model-CUT-6020-9']];
+const modelRouteMap={'CUT-3015-1':'CT-001','CUT-3015-4':'CT-002','CUT-3015-7':'CT-003','CUT-6020-1':'CT-005','CUT-6020-2':'CT-004','CUT-6020-4':'CT-006','CUT-6020-6':'CT-008','CUT-6020-7':'CT-007','CUT-tube':'CT-009'};
 designs.custom=[['دستگاه‌های برش لیزر',[['برش 3015','size3015'],['برش 6020','size6020'],['برش سایز سفارشی','large'],['برش لوله‌بر','tube'],['برش ربات','robot']]],['مدل‌های دقیق برش 3015',exact3015],['مدل‌های دقیق برش 6020',exact6020],['سایر دسته‌های دستگاه',[['جوش لیزر','welding'],['حکاکی و مارکینگ','marking'],['تمیزکاری لیزر','cleaning']]],['قطعات و تجهیزات',[['سورس لیزر','source'],['هد و کنترلر','head'],['قطعات دستگاه','parts'],['قطعات مصرفی','consumables']]]];
 const productMap=window.SAHAND_PRODUCTS;
 const text=p=>Object.values(p.title||{}).join(' ')+' '+p.code+' '+(p.specs||[]).map(s=>typeof s.value==='string'?s.value:JSON.stringify(s.value)).join(' ');
@@ -1163,7 +1164,7 @@ function drawTree(){
  if(second){second.innerHTML='';second.hidden=true;second.previousElementSibling.hidden=true;}
 }
 function select(k){
- if(k.startsWith('model-')){window.showProduct?.(k.slice(6));return;}
+ if(k.startsWith('model-')){const draftId=k.slice(6),routeId=modelRouteMap[draftId];if(routeId)window.showProduct?.(routeId);else{selected=draftId;window.filterCatalog('all');applySelection();drawTree();}return;}
  selected=k;window.filterCatalog('all');applySelection();drawTree();
  document.getElementById('full-catalog-section')?.scrollIntoView({behavior:'smooth'});
 }
