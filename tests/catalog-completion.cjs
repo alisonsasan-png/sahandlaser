@@ -8,6 +8,21 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+for(const code of ['WELD-1500','WELD-2000','WELD-3000']){
+ const p=catalog.products.find(p=>p.code===code);
+ assert(p.specs.some(s=>s.scope==='user_supplied_artwork'&&s.source));
+ assert.equal(p.promotionalEvidence.useInComparison,false);
+ assert(!p.specs.some(s=>/ضخامت|طول موج/.test(s.label)));
+ assert(fs.existsSync(path.join(root,p.promotionalEvidence.source)));
+}
+const marking30=catalog.products.find(p=>p.code==='ML-001');
+assert.equal(marking30.comparisonValues['توان'].value,'30 W');
+assert.equal(marking30.comparisonValues['محدوده حکاکی'].scope,'user_supplied_series_options');
+assert(marking30.comparisonValues['محدوده حکاکی'].value.includes('300×300'));
+assert(marking30.comparisonValues['برق ورودی'].value.includes('220 V'));
+assert(marking30.comparisonValues['سورس'].value.includes('Raycus'));
+assert(marking30.comparisonValues['لنز'].value.includes('Opex'));
+assert.equal(catalog.products.find(p=>p.code==='ML-008').comparisonValues['سورس'],null);
 for(const code of ['MK-FIBER-GENERIC','ML-001','ML-002','ML-003','ML-005','ML-006','ML-007','ML-009']){
  const p=catalog.products.find(p=>p.code===code);
  assert.equal(p.seriesReference.scope,'user_supplied_marking_series_options');

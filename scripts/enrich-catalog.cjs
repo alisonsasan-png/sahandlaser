@@ -10,6 +10,7 @@ const mediaAdditions=read('docs/catalog-completion/media-additions.json');
 const mediaFindings=read('docs/catalog-completion/media-review-findings.json');
 const markingSeriesCodes=new Set(['MK-FIBER-GENERIC','ML-001','ML-002','ML-003','ML-005','ML-006','ML-007','ML-009']);
 const markingBrochure='docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf';
+const weldingPosterModels={'WELD-1500':{power:'1.5 kW',thickness:'4 mm'},'WELD-2000':{power:'2 kW',thickness:'6 mm'},'WELD-3000':{power:'3 kW',thickness:'8 mm'}};
 const comparisonEngine=require('../assets/catalog-v2/catalog-comparison.js');
 const productContent=require('../assets/catalog-v2/catalog-product-content.js');
 const masterAliases={'CH003':'CP-RAY-BM111','CH002':'CP-RAY-BM109','FS004':'SRC-RAY-C1500','FS003':'SRC-RAY-C1000','FS005':'SRC-RAY-C2000','CC001':'CH-SA-1500','CC002':'CH-SA-2000','CC003':'CH-S&A-3000','CC004':'CH-HANLI-1500','CC005':'CH-HANLI-2000','CC006':'CH-HANLI-3000'};
@@ -27,7 +28,7 @@ const explanations={
  parts:{intro:'قطعه جانبی را با مدل و شرایط کاری دستگاه تطبیق دهید. در چیلر، ظرفیت و مدار خنک‌کاری؛ در پنوماتیک، فشار و نوع فرمان؛ و در سایر قطعات، اتصال و ابعاد نصب اهمیت دارد.',use:['پشتیبانی از عملکرد و نگهداری دستگاه سازگار'],questions:['مدل قطعه و دستگاه میزبان چیست؟','مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟','ابعاد و نوع اتصال فعلی چگونه است؟']},
  consumables:{intro:'قطعات مصرفی باید با مدل هد و مشخصات نصب سازگار باشند. قطر، ضخامت، رزوه و پوشش اپتیکی را از روی شماره قطعه یا دفترچه همان مدل انتخاب کنید.',use:['تعویض قطعات مصرفی در مدل سازگار'],questions:['مدل کامل هد و شماره قطعه چیست؟','ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟','نوع فرایند و پارامترهای کاری چیست؟']}
 };
-const comparisonFields={cutting:['گروه ابعادی','ساختار میز','کابین','لوله‌بر','توان','سورس','هد','کنترلر','دقت','سرعت','ابعاد نصب'],welding:['نوع جوش','توان','نوع لیزر','خنک‌کاری','نوع کاربری','سیم‌فیدر','هد جوش','سورس','برق ورودی','ابعاد و وزن'],marking:['نوع لیزر','توان','محدوده حکاکی','لنز','گالوو','روش نصب','کنترلر','روتاری','ابعاد و وزن'],cleaning:['نوع لیزر','توان','روش خنک‌کاری','هد پاک‌سازی','عرض اسکن','طول کابل','نوع کاربری','برق ورودی','ابعاد و وزن']};
+const comparisonFields={cutting:['گروه ابعادی','ساختار میز','کابین','لوله‌بر','توان','سورس','هد','کنترلر','دقت','سرعت','ابعاد نصب'],welding:['نوع جوش','توان','نوع لیزر','خنک‌کاری','نوع کاربری','سیم‌فیدر','هد جوش','سورس','برق ورودی','ابعاد و وزن'],marking:['نوع لیزر','توان','محدوده حکاکی','لنز','گالوو','روش نصب','سورس','کنترلر','روتاری','خنک‌کاری','برق ورودی','ابعاد و وزن'],cleaning:['نوع لیزر','توان','روش خنک‌کاری','هد پاک‌سازی','عرض اسکن','طول کابل','نوع کاربری','برق ورودی','ابعاد و وزن']};
 const mappings={
  'CC001':'عکس های سایت/cwfl1500-lite.png','CC002':'عکس های سایت/cwfl2000-lite.png','CC003':'عکس های سایت/cwfl3000-lite.png',
  'CC006':'عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-3000.jpg','CH-HANLI-6000':'عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-6000.jpg','CH-HANLI-12000':'عکس های معرفی محصول فشرده شده/Chiller/Hanli/HL-12000.jpg',
@@ -57,6 +58,12 @@ const result=products.map(raw=>{const p=clean(raw),originalRecord=original.get(p
  if(p.category==='cutting'&&/DZ\d+S$/.test(p.name)){const source=docs.find(d=>d.source.includes('تک میز استاندارد'));p.seriesReference={document:source.source,sha256:source.sha256,scope:'standard_series_options',power:'1500–3000 W',source:'RAYCUS / MAX',head:'Boci',controller:'CypCut 2000E',chiller:'S&A',servo:'Delta',motion:'Dual rack & pinion'};p.sources.push({title:'فایل توضیحات سری استاندارد سهند',scope:'user_supplied_series_document'});}
  if(p.category==='cutting'&&/DZ\d+H$/.test(p.name)){const source=docs.find(d=>d.source.includes('حرفه'));p.seriesReference={document:source.source,sha256:source.sha256,scope:'professional_series_options',power:'6000–12000 W',source:'RAYCUS / MAX',head:'Boci',controller:'CypCut 4000E',bed:'12 mm full-plate construction',motion:'Dual rack & pinion'};p.sources.push({title:'فایل توضیحات سری حرفه‌ای سهند',scope:'user_supplied_series_document'});}
  // Never transfer 6025 series working area, other suppliers' tolerances or chiller revision values into exact models.
+ if(weldingPosterModels[p.code]){
+  const poster=weldingPosterModels[p.code],source='docs/catalog-completion/source-documents/'+p.code.toLowerCase()+'-poster.jpg';
+  p.sources.push({title:'پوستر معرفی محصول ارسالی سهند، '+p.code,url:source,scope:'user_supplied_product_artwork'});
+  p.specs.push({label:'توان معرفی‌شده در پوستر همین مدل',value:poster.power,scope:'user_supplied_artwork',source},{label:'بازه دمای کاری درج‌شده در پوستر',value:'10–40 °C؛ مرجع پوستر معرفی محصول',scope:'user_supplied_artwork',source});
+  p.promotionalEvidence={source,wavelengthClaim:'1064 nm',thicknessClaim:poster.thickness,limitations:['No installed source identity or material/test parameters established by the poster','Wavelength is not reconciled with 1080±5 nm Raycus reference manuals'],useInComparison:false};
+ }
  if(markingSeriesCodes.has(p.code)){
   const source=markingBrochure+'#page=2';
   p.seriesReference={document:markingBrochure,scope:'user_supplied_marking_series_options',power:'30 / 50 / 70 / 100 / 120 W options',controller:'BJJCZ; brochure reference, not installed-unit identity',source:'Raycus / JPT / IPG options',head:'SuperScan options',lens:'Opex; optional work areas',workingArea:'70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options'};

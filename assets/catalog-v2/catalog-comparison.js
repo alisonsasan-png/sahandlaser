@@ -33,6 +33,12 @@
       for(const [key,field]of [['power','توان'],['source','سورس'],['head','هد'],['controller','کنترلر']])if(product.seriesReference?.[key])set(field,product.seriesReference[key]+' (گزینه‌های سری)','supplied_series_options',product.seriesReference.document);
     }
     if(product.category==='marking'){
+      const series=product.seriesReference;
+      if(series?.scope==='user_supplied_marking_series_options'){
+        for(const [key,field]of [['source','سورس'],['controller','کنترلر'],['workingArea','محدوده حکاکی'],['lens','لنز'],['head','گالوو']])if(series[key])set(field,series[key]+' (گزینه‌های سری)','user_supplied_series_options',series.document);
+        const supply=product.specs.find(s=>s.label==='برق معرفی‌شده سری فایبر در بروشور');
+        if(supply)set('برق ورودی',supply.value,supply.scope,supply.source);
+      }
       const type=product.name.match(/UV|MOPA|فایبر/i);if(type)set('نوع لیزر',type[0],'catalog_identity');
       const format=product.name.match(/پرتابل|رومیزی|میزدار|Inline/i);if(format)set('روش نصب',format[0],'catalog_identity');
     }

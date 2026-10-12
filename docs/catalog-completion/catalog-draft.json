@@ -4338,8 +4338,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4389,12 +4392,43 @@
           "source": null
         },
         "توان": null,
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": null,
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4445,8 +4479,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4491,12 +4528,43 @@
           "scope": "catalog_identity",
           "source": null
         },
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": null,
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4547,8 +4615,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4593,12 +4664,43 @@
           "scope": "catalog_identity",
           "source": null
         },
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": null,
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4649,8 +4751,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4695,12 +4800,43 @@
           "scope": "catalog_identity",
           "source": null
         },
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": null,
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4729,8 +4865,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4774,8 +4913,11 @@
           "scope": "catalog_identity",
           "source": null
         },
+        "سورس": null,
         "کنترلر": null,
         "روتاری": null,
+        "خنک‌کاری": null,
+        "برق ورودی": null,
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4823,8 +4965,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4878,16 +5023,47 @@
           "source": null
         },
         "توان": null,
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": {
           "value": "پرتابل",
           "scope": "catalog_identity",
           "source": null
         },
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -4933,8 +5109,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -4971,16 +5150,47 @@
       "comparisonValues": {
         "نوع لیزر": null,
         "توان": null,
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": {
           "value": "Inline",
           "scope": "catalog_identity",
           "source": null
         },
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -5028,8 +5238,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -5082,16 +5295,47 @@
           "source": null
         },
         "توان": null,
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": {
           "value": "رومیزی",
           "scope": "catalog_identity",
           "source": null
         },
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -5118,8 +5362,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -5147,8 +5394,11 @@
         "لنز": null,
         "گالوو": null,
         "روش نصب": null,
+        "سورس": null,
         "کنترلر": null,
         "روتاری": null,
+        "خنک‌کاری": null,
+        "برق ورودی": null,
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -5196,8 +5446,11 @@
         "لنز",
         "گالوو",
         "روش نصب",
+        "سورس",
         "کنترلر",
         "روتاری",
+        "خنک‌کاری",
+        "برق ورودی",
         "ابعاد و وزن"
       ],
       "applications": [
@@ -5245,16 +5498,47 @@
           "source": null
         },
         "توان": null,
-        "محدوده حکاکی": null,
-        "لنز": null,
-        "گالوو": null,
+        "محدوده حکاکی": {
+          "value": "70×70 / 110×110 / 160×160 / 220×220 / 300×300 mm options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "لنز": {
+          "value": "Opex; optional work areas (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "گالوو": {
+          "value": "SuperScan options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روش نصب": {
           "value": "میزدار",
           "scope": "catalog_identity",
           "source": null
         },
-        "کنترلر": null,
+        "سورس": {
+          "value": "Raycus / JPT / IPG options (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
+        "کنترلر": {
+          "value": "BJJCZ; brochure reference, not installed-unit identity (گزینه‌های سری)",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf"
+        },
         "روتاری": null,
+        "خنک‌کاری": {
+          "value": "هواخنک",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
+        "برق ورودی": {
+          "value": "220 V تک‌فاز؛ انتخاب پیکربندی مطابق توان",
+          "scope": "user_supplied_series_options",
+          "source": "docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf#page=2"
+        },
         "ابعاد و وزن": null
       },
       "contentStatus": "enriched_draft",
@@ -5780,6 +6064,18 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "1500 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "توان معرفی‌شده در پوستر همین مدل",
+          "value": "1.5 kW",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-1500-poster.jpg"
+        },
+        {
+          "label": "بازه دمای کاری درج‌شده در پوستر",
+          "value": "10–40 °C؛ مرجع پوستر معرفی محصول",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-1500-poster.jpg"
         }
       ],
       "images": [],
@@ -5808,7 +6104,13 @@
         "جوش پیوسته لازم است یا نقطه‌ای؟",
         "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "پوستر معرفی محصول ارسالی سهند، WELD-1500",
+          "url": "docs/catalog-completion/source-documents/weld-1500-poster.jpg",
+          "scope": "user_supplied_product_artwork"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -5834,6 +6136,16 @@
         "previousFacts": "پوستر: 1.5kW، 1064nm، ضخامت درج‌شده 4mm، 10–40°C",
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
+      },
+      "promotionalEvidence": {
+        "source": "docs/catalog-completion/source-documents/weld-1500-poster.jpg",
+        "wavelengthClaim": "1064 nm",
+        "thicknessClaim": "4 mm",
+        "limitations": [
+          "No installed source identity or material/test parameters established by the poster",
+          "Wavelength is not reconciled with 1080±5 nm Raycus reference manuals"
+        ],
+        "useInComparison": false
       },
       "comparisonValues": {
         "نوع جوش": null,
@@ -5876,6 +6188,18 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "2000 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "توان معرفی‌شده در پوستر همین مدل",
+          "value": "2 kW",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-2000-poster.jpg"
+        },
+        {
+          "label": "بازه دمای کاری درج‌شده در پوستر",
+          "value": "10–40 °C؛ مرجع پوستر معرفی محصول",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-2000-poster.jpg"
         }
       ],
       "images": [],
@@ -5904,7 +6228,13 @@
         "جوش پیوسته لازم است یا نقطه‌ای؟",
         "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "پوستر معرفی محصول ارسالی سهند، WELD-2000",
+          "url": "docs/catalog-completion/source-documents/weld-2000-poster.jpg",
+          "scope": "user_supplied_product_artwork"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -5930,6 +6260,16 @@
         "previousFacts": "پوستر: 2kW، 1064nm، ضخامت درج‌شده 6mm، 10–40°C",
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
+      },
+      "promotionalEvidence": {
+        "source": "docs/catalog-completion/source-documents/weld-2000-poster.jpg",
+        "wavelengthClaim": "1064 nm",
+        "thicknessClaim": "6 mm",
+        "limitations": [
+          "No installed source identity or material/test parameters established by the poster",
+          "Wavelength is not reconciled with 1080±5 nm Raycus reference manuals"
+        ],
+        "useInComparison": false
       },
       "comparisonValues": {
         "نوع جوش": null,
@@ -5972,6 +6312,18 @@
           "label": "توان نام‌گذاری‌شده مدل",
           "value": "3000 W",
           "scope": "catalog_identity"
+        },
+        {
+          "label": "توان معرفی‌شده در پوستر همین مدل",
+          "value": "3 kW",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-3000-poster.jpg"
+        },
+        {
+          "label": "بازه دمای کاری درج‌شده در پوستر",
+          "value": "10–40 °C؛ مرجع پوستر معرفی محصول",
+          "scope": "user_supplied_artwork",
+          "source": "docs/catalog-completion/source-documents/weld-3000-poster.jpg"
         }
       ],
       "images": [],
@@ -6000,7 +6352,13 @@
         "جوش پیوسته لازم است یا نقطه‌ای؟",
         "سیم‌فیدر و روش خنک‌کاری موردنظر چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "پوستر معرفی محصول ارسالی سهند، WELD-3000",
+          "url": "docs/catalog-completion/source-documents/weld-3000-poster.jpg",
+          "scope": "user_supplied_product_artwork"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -6026,6 +6384,16 @@
         "previousFacts": "پوستر: 3kW، 1064nm، ضخامت درج‌شده 8mm، 10–40°C",
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
+      },
+      "promotionalEvidence": {
+        "source": "docs/catalog-completion/source-documents/weld-3000-poster.jpg",
+        "wavelengthClaim": "1064 nm",
+        "thicknessClaim": "8 mm",
+        "limitations": [
+          "No installed source identity or material/test parameters established by the poster",
+          "Wavelength is not reconciled with 1080±5 nm Raycus reference manuals"
+        ],
+        "useInComparison": false
       },
       "comparisonValues": {
         "نوع جوش": null,

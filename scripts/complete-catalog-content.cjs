@@ -16,6 +16,7 @@ const summary={date:catalog.date,products:work.length,studioImages:work.filter(p
   recordsWithSourcedSpecifications:work.filter(p=>p.sourcedSpecifications>0).length,
   recordsWithManufacturerReferenceSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&/^manufacturer_/.test(s.scope))).length,
   recordsWithUserSeriesSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&s.scope==='user_supplied_series_options')).length,
+  recordsWithUserArtworkSpecifications:catalog.products.filter(p=>p.specs.some(s=>s.source&&s.scope==='user_supplied_artwork')).length,
   suppliedSeriesDocuments:work.filter(p=>p.suppliedSeriesDocument).length,
   rejectedOrAmbiguousImages:work.filter(p=>p.mediaIdentityIssue).length,articles:articles.size,
   releaseGate:catalog.releaseGate,productsWorkQueue:work};

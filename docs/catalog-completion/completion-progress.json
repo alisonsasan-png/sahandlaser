@@ -2,9 +2,10 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 38,
-  "recordsWithSourcedSpecifications": 38,
+  "recordsWithSourcedSpecifications": 41,
   "recordsWithManufacturerReferenceSpecifications": 30,
   "recordsWithUserSeriesSpecifications": 8,
+  "recordsWithUserArtworkSpecifications": 3,
   "suppliedSeriesDocuments": 12,
   "rejectedOrAmbiguousImages": 4,
   "articles": 9,
@@ -951,11 +952,10 @@
       "name": "دستگاه جوش فایبر 1500 وات",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -964,11 +964,10 @@
       "name": "دستگاه جوش فایبر 2000 وات",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -977,11 +976,10 @@
       "name": "دستگاه جوش فایبر 3000 وات",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
