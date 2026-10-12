@@ -2190,7 +2190,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2205,7 +2230,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2222,7 +2253,32 @@
         "ظ†ط§ط²ظ„ ط§ظˆط±ط¬غŒظ†ط§ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± TRA ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2237,7 +2293,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2254,7 +2316,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2269,7 +2356,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2286,7 +2379,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2301,7 +2419,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2318,7 +2442,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظ¾ط± ط³ط±ط¹طھ ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2333,7 +2482,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2350,7 +2505,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ ظپظˆظ„ ظ¾ط§ظˆط± ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2365,7 +2545,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2382,7 +2568,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ طھع© ظ„ط§غŒظ‡ ط¨ط±ظ†ط¯ Raytools ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BT210/BT210S ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2397,7 +2608,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2414,7 +2631,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM111 ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2429,7 +2671,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2446,7 +2694,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ظ†ط§ط³ط¨ ط¨ط±ط§غŒ ظ‡ط¯ ط¨ط±ط´ BM114S ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2461,7 +2734,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2478,7 +2757,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2493,7 +2797,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2510,7 +2820,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ ط¯ظˆ ظ„ط§غŒظ‡ Full Power ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2525,7 +2860,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
@@ -2542,7 +2883,32 @@
         "ظ†ط§ط²ظ„ ظ‡ط¯ ط¨ط±ط´ ظ„غŒط²ط± ط§ظˆط±ط¬غŒظ†ط§ظ„ TRA ظ…ط¯ظ„ FL200 ظˆ FL1501 ط¨ط±ظ†ط¯ Raytools ط¯ط± ط¨ط§ظ†ع© ظ‚ط·ط¹ط§طھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط± ط«ط¨طھ ط´ط¯ظ‡ ط§ط³طھ.",
         "ظ‚ط·ط¹ط§طھ ظ…طµط±ظپغŒ ط¨ط§غŒط¯ ط¨ط§ ظ…ط¯ظ„ ظ‡ط¯ ظˆ ظ…ط´ط®طµط§طھ ظ†طµط¨ ط³ط§ط²ع¯ط§ط± ط¨ط§ط´ظ†ط¯. ظ‚ط·ط±طŒ ط¶ط®ط§ظ…طھطŒ ط±ط²ظˆظ‡ ظˆ ظ¾ظˆط´ط´ ط§ظ¾طھغŒع©غŒ ط±ط§ ط§ط² ط±ظˆغŒ ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ غŒط§ ط¯ظپطھط±ع†ظ‡ ظ‡ظ…ط§ظ† ظ…ط¯ظ„ ط§ظ†طھط®ط§ط¨ ع©ظ†غŒط¯."
       ],
-      "specs": [],
+      "specs": [
+        {
+          "label": "ظ…ط±ط¬ط¹ ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "ظ†ط§ط²ظ„â€Œظ‡ط§غŒ ط¨ط±ط´ ظ„غŒط²ط±غŒ RayTools ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒغŒ ظ…ط§ظ†ظ†ط¯ BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط³ط§ط®طھط§ط±ظ‡ط§غŒ ظ…ظˆط¬ظˆط¯",
+          "value": "طھع©â€Œظ„ط§غŒظ‡ ظˆ ط¯ظˆظ„ط§غŒظ‡",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ ط¯ظ‡ط§ظ†ظ‡ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¯ط± ط®ط§ظ†ظˆط§ط¯ظ‡",
+          "value": "غ°ظ«غ¸ طھط§ غ±غ° ظ…غŒظ„غŒâ€Œظ…طھط±",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط´ظ…ط§ط±ظ‡â€Œظ‚ط·ط¹ظ‡طŒ ط±ط²ظˆظ‡طŒ ظ‚ط·ط± ط¨ط¯ظ†ظ‡ ظˆ ط¯ظ‡ط§ظ†ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط§غŒظ† ط±ع©ظˆط±ط¯ ط¨ط§غŒط¯ ط¨ط§ ط¨ط³طھظ‡â€Œط¨ظ†ط¯غŒ غŒط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/"
+        }
+      ],
       "images": [],
       "works": [],
       "technical": null,
@@ -2557,7 +2923,13 @@
         "ط§ط¨ط¹ط§ط¯طŒ ط±ط²ظˆظ‡ غŒط§ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظپط¹ظ„غŒ ع†ظ‚ط¯ط± ط§ط³طھطں",
         "ظ†ظˆط¹ ظپط±ط§غŒظ†ط¯ ظˆ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ع©ط§ط±غŒ ع†غŒط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-laser-cutting-nozzles/",
+          "title": "RayTools laser cutting nozzles family reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference_not_exact_part"
+        }
+      ],
       "visuals": {
         "status": "not_complete"
       },
