@@ -2238,7 +2238,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CN001/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic RayTools nozzle-family reference; not proof of exact CN001 part number, thread, aperture, coating, or packaging",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {},
