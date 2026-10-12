@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image generation",
+  "assets": [
+    {
+      "code": "CUT-3015-6",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/تک میز 3015 کابین دار/3015 fiber laser cutting machine with cabin 3.png",
+      "prompt": "Use case: sketch-to-render. Input image 1 is supplied Sahand product CAD/promotional artwork reference. Create one photorealistic studio catalog photograph of its exact exterior configuration on seamless pure white with soft neutral light, realistic painted sheet metal and subtle contact shadow. Preserve camera viewpoint, silhouette, component counts, front/back relationships, door/window positions and colors. Full machine uncropped in a square composition with generous white margins. Remove the surrounding corner promotional logo/phone graphics; no new text, model badges, dimension claims, decorative sparks or props. Do not create hidden machinery or a cutaway. Preserve the compact white and deep-blue closed sheet-cutting cabin, narrow red trim, three dark side observation windows, white roof with four small raised square ventilation covers, the tall separate white-blue electrical cabinet to the left, and the long exposed serrated exchange table extending behind/right of the enclosure. No tube rotary, no extra table, no robotic arm. Do not infer exact manufacturer identity or dimensions.",
+      "saved": "assets/catalog-v2/CUT-3015-6/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-3015-6/studio-web.jpg",
+      "review": "exterior configuration only, original manufacturer/installed-unit identity not established"
+    },
+    {
+      "code": "CUT-6020-6",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/تک میز 6020 کابین دار/Professional 6020 fiber laser cutting machine with cabin 1.png",
+      "prompt": "Use case: sketch-to-render. Input image 1 is supplied Sahand product CAD/promotional artwork reference. Create one photorealistic studio catalog photograph of its exact exterior configuration on seamless pure white with soft neutral light, realistic painted sheet metal and subtle contact shadow. Preserve camera viewpoint, silhouette, component counts, front/back relationships, door/window positions and colors. Full machine uncropped in a square composition with generous white margins. Remove the surrounding corner promotional logo/phone graphics; no new text, model badges, dimension claims, decorative sparks or props. Do not create hidden machinery or a cutaway. Preserve the long closed white/charcoal cabin, red horizontal side stripe, four blue side observation windows and blue front windows, front door handles, narrow attached front vertical screen/control station, and the exposed flat rear exchange table to the right. No tube rotary, no additional machine or invented ventilation.",
+      "saved": "assets/catalog-v2/CUT-6020-6/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-6020-6/studio-web.jpg",
+      "review": "exterior configuration only, original manufacturer/installed-unit identity not established"
+    },
+    {
+      "code": "CUT-6020-4",
+      "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/دومیز استاندارد 6020/laser cutting machine 6020 exchange 1.png",
+      "prompt": "Use case: sketch-to-render. Input image 1 is supplied Sahand product CAD/promotional artwork reference. Create one photorealistic studio catalog photograph of its exact exterior configuration on seamless pure white with soft neutral light, realistic painted sheet metal and subtle contact shadow. Preserve camera viewpoint, silhouette, component counts, front/back relationships, door/window positions and colors. Full machine uncropped in a square composition with generous white margins. Remove the surrounding corner promotional logo/phone graphics; no new text, model badges, dimension claims, decorative sparks or props. Do not create hidden machinery or a cutaway. Preserve the long open white/charcoal/blue double-table sheet cutter, one moving cross gantry with a white-blue central head, the black cable loop above gantry, two consecutive dark serrated sheet tables, existing legs and black side panel structure. No enclosure, no tube rotary, no extra head or robot.",
+      "saved": "assets/catalog-v2/CUT-6020-4/studio-v1.png",
+      "delivery": "assets/catalog-v2/CUT-6020-4/studio-web.jpg",
+      "review": "exterior configuration only, original manufacturer/installed-unit identity not established"
+    }
+  ]
+}
+

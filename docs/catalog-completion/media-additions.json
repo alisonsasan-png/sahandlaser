@@ -1,4 +1,22 @@
 {
+  "CUT-3015-6": {
+    "directory": "CUT-3015-6",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/تک میز 3015 کابین دار/3015 fiber laser cutting machine with cabin 3.png",
+    "identityScope": "Supplied 3015 cabin CAD with external exchange table; folder title is not proof of table count or exact installed manufacturer revision",
+    "visualReview": true
+  },
+  "CUT-6020-6": {
+    "directory": "CUT-6020-6",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/تک میز 6020 کابین دار/Professional 6020 fiber laser cutting machine with cabin 1.png",
+    "identityScope": "Supplied 6020 cabin CAD with visible external exchange table; exterior configuration reconstruction, not proof of exact installed revision",
+    "visualReview": true
+  },
+  "CUT-6020-4": {
+    "directory": "CUT-6020-4",
+    "reference": "C:/Users/Sharif/Downloads/عکس دستگاه ها/دومیز استاندارد 6020/laser cutting machine 6020 exchange 1.png",
+    "identityScope": "Supplied named 6020 exchange-table artwork; no exact stock plaque or hidden geometry inferred",
+    "visualReview": true
+  },
   "CLEAN-GENERIC": {
     "directory": "CLEAN-GENERIC",
     "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/cleaning Machine/Cleaning-Machine.jpg",
