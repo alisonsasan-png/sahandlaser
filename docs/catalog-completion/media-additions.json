@@ -341,6 +341,12 @@
     "identityScope": "Generic P30Q-family source reference; exact P30QS versus P30QB variant, casing, nameplate and internal assembly are not established",
     "visualReview": true
   },
+  "FS002": {
+    "directory": "FS002",
+    "reference": "AI-generated white-background external Raycus RFL-P50QB-family reconstruction informed by official specifications",
+    "identityScope": "Generic P50QB-family source reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
