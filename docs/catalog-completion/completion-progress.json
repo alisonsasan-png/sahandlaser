@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 89,
+  "studioImages": 104,
   "recordsWithSourcedSpecifications": 83,
   "recordsWithManufacturerReferenceSpecifications": 59,
   "recordsWithUserSeriesSpecifications": 8,
@@ -665,37 +665,31 @@
       "code": "ML-001",
       "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 30 ظˆط§طھ",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-002",
       "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 50 ظˆط§طھ",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-003",
       "name": "ط¯ط³طھع¯ط§ظ‡ ظپط§غŒط¨ط± ظ…ط§ط±ع©غŒظ†ع¯ 100 ظˆط§طھ",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-004",
@@ -723,13 +717,11 @@
       "code": "ML-006",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ„غŒط²ط± Inline",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-007",
@@ -758,19 +750,17 @@
       "code": "ML-009",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ…غŒط²ط¯ط§ط± ظپط§غŒط¨ط±",
       "category": "marking",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 3,
       "suppliedSeriesDocument": true,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "SRC-RAY-C3000S",
       "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C3000S-HP",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
@@ -781,27 +771,23 @@
         "identityReview": "rejected_for_exact_model",
         "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
       },
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "SRC-RAY-C4000S",
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-C4000S-HP",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "SRC-RAY-C6000S",
       "name": "ط³ظˆط±ط³ ظپط§غŒط¨ط± Raycus RFL-C6000S-HP",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
@@ -812,21 +798,17 @@
         "identityReview": "rejected_for_exact_model",
         "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
       },
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "SRC-RAY-QCW150",
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-QCW150/1500",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 14,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "WELD-1500",
@@ -908,12 +890,11 @@
       "code": "WL-005",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± QCW Laser Spot Welding",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -921,12 +902,11 @@
       "code": "WL-006",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± HP Series",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -934,12 +914,11 @@
       "code": "WL-007",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Modern Series",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -947,12 +926,11 @@
       "code": "WL-008",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Robotic Laser Welding",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -960,12 +938,11 @@
       "code": "WL-009",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Jewelry Laser Welding",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
@@ -973,12 +950,11 @@
       "code": "WL-010",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Channel Letter Laser Welding",
       "category": "welding",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications"
       ]
     },
