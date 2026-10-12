@@ -3296,7 +3296,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CP-RAY-BM116E/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "BM116-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
