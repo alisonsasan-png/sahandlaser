@@ -8571,7 +8571,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-3015-9/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Generic enclosed dual-table 3015 plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "3015",
