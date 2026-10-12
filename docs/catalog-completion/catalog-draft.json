@@ -906,6 +906,48 @@
           "label": "دقت کنترل معمول سری",
           "value": "±1°C",
           "scope": "family_reference"
+        },
+        {
+          "label": "نسخه‌های مرجع صفحه سازنده",
+          "value": "CWFL-6000ENPTY / CWFL-6000FNPTY",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار مستقل برای سورس و اپتیک",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "برق نسخه‌های ENPTY / FNPTY",
+          "value": "380 VAC سه‌فاز؛ 50 / 60 Hz",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "حجم مخزن نسخه‌های مرجع",
+          "value": "70 L",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "پایداری دمای نسخه مرجع",
+          "value": "±1 °C",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "ابعاد نسخه‌های مرجع",
+          "value": "105 × 71 × 136 cm؛ طول × عرض × ارتفاع",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
+        },
+        {
+          "label": "ارتباط معرفی‌شده سازنده",
+          "value": "RS-485 Modbus",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html"
         }
       ],
       "images": [],
@@ -922,7 +964,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html",
+          "title": "TEYU CWFL-6000 ENPTY/FNPTY current reference; supplied CW-6000 picture is a different family",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2115,6 +2163,18 @@
           "label": "برند",
           "value": "RayTools / BOCI / متفرقه",
           "scope": "identity"
+        },
+        {
+          "label": "نمونه نسخه سرامیک جدول BOCHU",
+          "value": "M11 × 0.75 برای BLT310؛ M8 × 0.75 برای BLT310T",
+          "scope": "manufacturer_web",
+          "source": "https://www.bochu.com/pro_en/consumable/"
+        },
+        {
+          "label": "مبنای انتخاب سرامیک",
+          "value": "مدل هد و نسخه اتصال؛ مشابهت ظاهر، سازگاری همه هدها را ثابت نمی‌کند",
+          "scope": "manufacturer_web",
+          "source": "https://www.bochu.com/pro_en/consumable/"
         }
       ],
       "images": [],
@@ -2131,7 +2191,13 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.bochu.com/pro_en/consumable/",
+          "title": "BOCHU Ceramic Body compatibility table; reference variants only, not identification of supplied ceramic",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -2180,6 +2246,24 @@
           "label": "مدل / خانواده",
           "value": "BLT Series",
           "scope": "identity"
+        },
+        {
+          "label": "نمونه محافظ بالای BLT310 در جدول سازنده",
+          "value": "DP.V.P0045AA؛ D25.4T4-2H",
+          "scope": "manufacturer_web",
+          "source": "https://www.bochu.com/pro_en/original-lenses/"
+        },
+        {
+          "label": "نمونه محافظ پایین BLT310 در جدول سازنده",
+          "value": "DP.V.P0048AA؛ D25.4T4-2S",
+          "scope": "manufacturer_web",
+          "source": "https://www.bochu.com/pro_en/original-lenses/"
+        },
+        {
+          "label": "مبنای انتخاب محافظ BLT",
+          "value": "مدل کامل هد، محل محافظ و شماره قطعه؛ یک اندازه برای تمام سری BLT نیست",
+          "scope": "manufacturer_web",
+          "source": "https://www.bochu.com/pro_en/original-lenses/"
         }
       ],
       "images": [],
@@ -2196,7 +2280,13 @@
         "ابعاد، رزوه یا ضخامت قطعه فعلی چقدر است؟",
         "نوع فرایند و پارامترهای کاری چیست؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.bochu.com/pro_en/original-lenses/",
+          "title": "BOCHU Original Lenses selection tables; BLT310 reference examples, not a universal BLT size",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {

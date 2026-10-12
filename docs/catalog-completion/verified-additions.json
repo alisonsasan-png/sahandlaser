@@ -1,4 +1,40 @@
 {
+  "CP-LENS-BLT": {
+    "url": "https://www.bochu.com/pro_en/original-lenses/",
+    "title": "BOCHU Original Lenses selection tables; BLT310 reference examples, not a universal BLT size",
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant",
+    "facts": [
+      ["نمونه محافظ بالای BLT310 در جدول سازنده", "DP.V.P0045AA؛ D25.4T4-2H"],
+      ["نمونه محافظ پایین BLT310 در جدول سازنده", "DP.V.P0048AA؛ D25.4T4-2S"],
+      ["مبنای انتخاب محافظ BLT", "مدل کامل هد، محل محافظ و شماره قطعه؛ یک اندازه برای تمام سری BLT نیست"]
+    ]
+  },
+  "CP-CERAMIC": {
+    "url": "https://www.bochu.com/pro_en/consumable/",
+    "title": "BOCHU Ceramic Body compatibility table; reference variants only, not identification of supplied ceramic",
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant",
+    "facts": [
+      ["نمونه نسخه سرامیک جدول BOCHU", "M11 × 0.75 برای BLT310؛ M8 × 0.75 برای BLT310T"],
+      ["مبنای انتخاب سرامیک", "مدل هد و نسخه اتصال؛ مشابهت ظاهر، سازگاری همه هدها را ثابت نمی‌کند"]
+    ]
+  },
+  "CH-S&A-6000": {
+    "url": "https://www.teyuchiller.com/industrial-water-chiller-cwfl6000-for-6kw-fiber-laser-equipment.html",
+    "title": "TEYU CWFL-6000 ENPTY/FNPTY current reference; supplied CW-6000 picture is a different family",
+    "scope": "manufacturer_web",
+    "sourceScope": "manufacturer_web_variant",
+    "facts": [
+      ["نسخه‌های مرجع صفحه سازنده", "CWFL-6000ENPTY / CWFL-6000FNPTY"],
+      ["ساختار خنک‌کاری سری", "دو مدار مستقل برای سورس و اپتیک"],
+      ["برق نسخه‌های ENPTY / FNPTY", "380 VAC سه‌فاز؛ 50 / 60 Hz"],
+      ["حجم مخزن نسخه‌های مرجع", "70 L"],
+      ["پایداری دمای نسخه مرجع", "±1 °C"],
+      ["ابعاد نسخه‌های مرجع", "105 × 71 × 136 cm؛ طول × عرض × ارتفاع"],
+      ["ارتباط معرفی‌شده سازنده", "RS-485 Modbus"]
+    ]
+  },
   "CH001": {
     "url": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf",
     "title": "BT240S 3kW 2D Cutting Head Manual V1.6; pages 3, 10, 17; not current 4kW revision",
