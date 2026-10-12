@@ -1310,6 +1310,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "Generic manual-focus fiber cutting-head family reconstruction; not an exact BT240S photograph, nameplate, installed revision, or internal assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BT240/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "BT240S family reference only; hidden mechanics, cooling channels and installed revision are not represented",
+          "source": "https://www.raytools-de.com/product/raytools-focusing-collimating-lens-assembly/"
         }
       },
       "availableLegacyMedia": [],
@@ -1655,6 +1661,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM114-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM114E/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "BM114 family reference only; hidden mechanics and installed revision are not represented",
+          "source": "https://www.manualslib.com/manual/1616386/Raytools-Bm114-Series.html"
         }
       },
       "availableLegacyMedia": [],
@@ -3538,6 +3550,12 @@
           "type": "AI-assisted optical-module visualization",
           "scope": "Documented optical-module order including three cover windows; hidden mechanics and exact manufacturing geometry are not represented",
           "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM110/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM110 family interface and optical options only; hidden mechanics and installed revision are not represented",
+          "source": "https://www.manualslib.com/manual/2337778/Raytools-Bm115-Series.html"
         }
       },
       "availableLegacyMedia": [],
