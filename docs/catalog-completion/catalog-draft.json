@@ -8486,6 +8486,36 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "QCW Laser Spot Welding",
           "scope": null
+        },
+        {
+          "label": "Family application",
+          "value": "Spot welding, seam welding and other industrial applications",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html"
+        },
+        {
+          "label": "Family range",
+          "value": "75 W to 1500 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html"
+        },
+        {
+          "label": "Modulation frequency",
+          "value": "Up to 5 kHz",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html"
+        },
+        {
+          "label": "Output interface",
+          "value": "QBH",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "This family reference does not establish the installed source, power or configuration of Sahand WL-005",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html"
         }
       ],
       "images": [],
@@ -8514,7 +8544,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/products/qcw-fiber-lasers.html",
+          "title": "Raycus QCW Fiber Lasers family reference, accessed 2026-10-13",
+          "scope": "manufacturer_family_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8766,6 +8802,18 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Jewelry Laser Welding",
           "scope": null
+        },
+        {
+          "label": "Application reference",
+          "value": "Laser cutting and welding are used for watch and jewelry components",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_SG/solutions/industries/watch-and-jewelry-industry/"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Application reference only; it does not establish the installed source, power or configuration of Sahand WL-009",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_SG/solutions/industries/watch-and-jewelry-industry/"
         }
       ],
       "images": [],
@@ -8794,7 +8842,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.trumpf.com/en_SG/solutions/industries/watch-and-jewelry-industry/",
+          "title": "TRUMPF watch and jewelry laser applications reference, accessed 2026-10-13",
+          "scope": "manufacturer_application_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
