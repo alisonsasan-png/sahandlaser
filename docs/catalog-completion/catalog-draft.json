@@ -35,6 +35,36 @@
           "label": "کنترل دما",
           "value": "دو مدار / دو دما در خانواده CWFL",
           "scope": "family_reference"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار مستقل برای سورس و هد",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html"
+        },
+        {
+          "label": "کاربری معرفی‌شده سازنده",
+          "value": "سامانه‌های فایبر تا 1.5 kW؛ انتخاب نهایی با نیاز سرمایشی دستگاه",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html"
+        },
+        {
+          "label": "پایداری دمای نسخه صفحه مرجع",
+          "value": "±0.5 °C",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html"
+        },
+        {
+          "label": "مشخصات نصب نسخه صفحه مرجع",
+          "value": "70 × 47 × 89 cm؛ طول × عرض × ارتفاع",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html"
+        },
+        {
+          "label": "حجم مخزن نسخه صفحه مرجع",
+          "value": "15 L؛ این مقدار به تمام پسوندها تعمیم داده نمی‌شود",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html"
         }
       ],
       "images": [],
@@ -51,7 +81,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html",
+          "title": "TEYU CWFL-1500 reference page; exact supplied unit suffix not identified",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -115,6 +151,42 @@
           "label": "کنترل دما",
           "value": "دو مدار / دو دما در خانواده CWFL",
           "scope": "family_reference"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار مستقل برای سورس و اپتیک",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
+        },
+        {
+          "label": "پایداری دمای ANPTY / BNPTY",
+          "value": "±0.5 °C",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
+        },
+        {
+          "label": "برق ANPTY / BNPTY",
+          "value": "تک‌فاز 220–240 VAC؛ 50 / 60 Hz بسته به نسخه",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
+        },
+        {
+          "label": "حجم مخزن ANPTY / BNPTY",
+          "value": "22 L",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
+        },
+        {
+          "label": "ابعاد ANPTY / BNPTY",
+          "value": "70 × 47 × 89 cm؛ طول × عرض × ارتفاع",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
+        },
+        {
+          "label": "وزن خالص ANPTY / BNPTY",
+          "value": "65 / 67 kg؛ مطابق جدول نسخه‌ها",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html"
         }
       ],
       "images": [],
@@ -131,7 +203,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/water-chiller-cwfl2000-for2kw-fiber-laser-metal-cutter-welder.html",
+          "title": "TEYU CWFL-2000 ANPTY/BNPTY reference variants, accessed 2026-10-12",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -190,6 +268,18 @@
           "label": "دقت کنترل معمول سری",
           "value": "±0.5°C",
           "scope": "family_reference"
+        },
+        {
+          "label": "کاربری معرفی‌شده سازنده",
+          "value": "خنک‌کاری سامانه جوش فایبر در رده 3 kW",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/dual-circuit-water-chiller-for-automobile-vessel-fiber-laser-welding-machine_p207.html"
+        },
+        {
+          "label": "ساختار خنک‌کاری سری",
+          "value": "دو مدار خنک‌کاری برای بخش‌های سامانه لیزری",
+          "scope": "manufacturer_web",
+          "source": "https://www.teyuchiller.com/dual-circuit-water-chiller-for-automobile-vessel-fiber-laser-welding-machine_p207.html"
         }
       ],
       "images": [],
@@ -206,7 +296,13 @@
         "مشخصات برق، فشار یا ظرفیت موردنیاز چیست؟",
         "ابعاد و نوع اتصال فعلی چگونه است؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.teyuchiller.com/dual-circuit-water-chiller-for-automobile-vessel-fiber-laser-welding-machine_p207.html",
+          "title": "TEYU CWFL-3000 dual-circuit family reference",
+          "scope": "manufacturer_web_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
@@ -568,43 +664,43 @@
         {
           "label": "ساختار خنک‌کاری سری",
           "value": "دو مدار مستقل برای سورس و اپتیک",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "رابط ارتباطی سری",
           "value": "RS-485 / Modbus",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "پایداری دمای اعلام‌شده سری",
           "value": "±1 °C",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "حجم مخزن نسخه‌های ENPTY/FNPTY",
           "value": "170 L",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "برق نسخه‌های ENPTY/FNPTY",
           "value": "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "ابعاد نسخه‌های ENPTY/FNPTY",
           "value": "145 × 80 × 132 cm، طول × عرض × ارتفاع",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         },
         {
           "label": "وزن خالص ENPTY / FNPTY",
           "value": "293 / 282 kg، مطابق جدول نسخه‌ها",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html"
         }
       ],
@@ -626,7 +722,7 @@
         {
           "url": "https://www.teyuchiller.com/large-capacity-industrial-water-chiller-unit-cwfl12000-for-12kw-fiber-laser.html",
           "title": "TEYU CWFL-12000 current ENPTY/FNPTY variants; not an identification of an older photographed unit",
-          "scope": "manufacturer_manual_variant"
+          "scope": "manufacturer_web_variant"
         }
       ],
       "visuals": {
@@ -691,43 +787,43 @@
         {
           "label": "ساختار خنک‌کاری سری",
           "value": "دو مدار مستقل برای سورس و اپتیک",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "رابط ارتباطی سری",
           "value": "RS-485 / Modbus",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "پایداری دمای اعلام‌شده سری",
           "value": "±1.5 °C",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "حجم مخزن ETPTY / FTPTY",
           "value": "170 L",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "برق ETPTY / FTPTY",
           "value": "سه‌فاز 380 VAC؛ 50 / 60 Hz بسته به نسخه",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "ابعاد ETPTY / FTPTY",
           "value": "141 × 80 × 132 cm، طول × عرض × ارتفاع",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         },
         {
           "label": "وزن خالص ETPTY / FTPTY",
           "value": "279 kg، مطابق جدول نسخه‌ها",
-          "scope": "manufacturer_manual",
+          "scope": "manufacturer_web",
           "source": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html"
         }
       ],
@@ -749,7 +845,7 @@
         {
           "url": "https://www.teyuchiller.com/high-performance-industrial-cooling-system-cwfl20000.html",
           "title": "TEYU CWFL-20000 ETPTY/FTPTY current variants; not an identification of the supplied legacy photo",
-          "scope": "manufacturer_manual_variant"
+          "scope": "manufacturer_web_variant"
         }
       ],
       "visuals": {
