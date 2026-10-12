@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 70,
+  "studioImages": 71,
   "recordsWithSourcedSpecifications": 70,
   "recordsWithManufacturerReferenceSpecifications": 46,
   "recordsWithUserSeriesSpecifications": 8,
@@ -684,12 +684,11 @@
       "code": "FS006",
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± ظپط§غŒط¨ط± 3000 ظˆط§طھ ط±غŒع©ط§ط³",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 13,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
