@@ -1509,6 +1509,12 @@
           "type": "AI-assisted reconstruction from supplied photo",
           "identityScope": "BM111-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
           "visualReview": true
+        },
+        "technicalDrawing": {
+          "src": "assets/catalog-v2/CP-RAY-BM111/optical-schematic.svg",
+          "type": "evidence-scoped optical schematic",
+          "scope": "Documented BM111 family optical options and protective windows only; hidden mechanics and installed revision are not represented",
+          "source": "https://www.raytools-de.com/product/raytools-bm111-auto-focus-laser-cutting-head/"
         }
       },
       "availableLegacyMedia": [],
