@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 106,
-  "recordsWithSourcedSpecifications": 91,
-  "recordsWithManufacturerReferenceSpecifications": 67,
+  "recordsWithSourcedSpecifications": 93,
+  "recordsWithManufacturerReferenceSpecifications": 69,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -843,12 +843,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± QCW Laser Spot Welding",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-006",
@@ -891,12 +889,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Jewelry Laser Welding",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-010",
