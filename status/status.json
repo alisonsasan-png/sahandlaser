@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-12T16:40:00.000+03:30",
+    "updatedAt":  "2026-10-12T17:00:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog media completion and robot-cutting reference review",
-    "nextTask":  "Review the robot-cutting reference image, then finish remaining catalog data before independent previews",
+    "nextTask":  "Review remaining catalog data before independent previews",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -12,7 +12,7 @@
                   },
                   {
                       "name":  "مرحله جدید: تکمیل مستند مشخصات، تصاویر سفید، نمای داخلی و مقالات",
-                      "status":  "در حال اجرا؛ ۳۸ تصویر، ۹ مقاله؛ ۳۰ رکورد مرجع سازنده، ۸ گزینه سری سهند و ۳ مرجع پوستر جوش"
+                      "status":  "Active: 53 studio images, 10 articles, 31 manufacturer references, 8 user series records, 3 user artwork records"
                   },
                   {
                       "name":  "نسخه‌های مستقل ۱۲ تا ۱۵: چهار اجرای دسته‌بندی کاربر",
@@ -255,6 +255,10 @@
                     {
                         "at":  "2026-10-12T16:40:00.000+03:30",
                         "text":  "Added scoped BM114 and BM115 manual facts for CH004 and CH005, preserving mirror/manual provenance and avoiding unsupported exact geometry claims. Catalog remains at 106 products, 48 studio images, 44 sourced-specification records, 9 articles; catalog and comparison tests pass."
+                    },
+                    {
+                        "at":  "2026-10-12T17:00:00.000+03:30",
+                        "text":  "Synchronized the report summary with the current catalog state: 106 products, 53 studio images, 10 articles, 31 manufacturer-reference records, 8 user-series records, and 3 user-artwork records. Catalog and comparison tests pass; the release gate remains open."
                     }
                 ]
 }
