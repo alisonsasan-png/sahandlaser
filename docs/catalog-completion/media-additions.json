@@ -1,4 +1,10 @@
 {
+  "CUT-3015-5": {
+    "directory": "CUT-3015-5",
+    "reference": "C:/Users/Sharif/Downloads/laser-cutting-nachine-3015-exchange-3-scaled.jpg",
+    "identityScope": "User-library Sahand-branded two-table 3015 family reference; no legible LD3015 model identity or installed revision proven",
+    "visualReview": true
+  },
   "CH-S&A-6000": {
     "directory": "CH-S&A-6000",
     "reference": "assets/catalog-v2/CH-S&A-12000/studio-v1.png",
