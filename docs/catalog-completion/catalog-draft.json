@@ -5849,7 +5849,14 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/MK-FIBER-GENERIC/studio-concept.svg",
+          "type": "AI-generated family concept; not an exact installed-unit photograph",
+          "identityScope": "generic family-level concept only",
+          "visualReview": true,
+          "provenance": "Generated for catalog orientation; do not treat cabinet geometry, controls or installed components as model-specific evidence"
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -6963,7 +6970,14 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/ML-008/studio-concept.svg",
+          "type": "AI-generated family concept; not an exact installed-unit photograph",
+          "identityScope": "generic family-level concept only",
+          "visualReview": true,
+          "provenance": "Generated for catalog orientation; do not treat cabinet geometry, controls or installed components as model-specific evidence"
+        }
       },
       "availableLegacyMedia": [],
       "comparisonValues": {
