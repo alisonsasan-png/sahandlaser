@@ -347,6 +347,12 @@
     "identityScope": "Generic P50QB-family source reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
     "visualReview": true
   },
+  "CP-RAY-BM115": {
+    "directory": "CP-RAY-BM115",
+    "reference": "AI-generated white-background external RayTools BM115-family reconstruction informed by manufacturer family references",
+    "identityScope": "BM115-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+    "visualReview": true
+  },
   "CH001": {
     "directory": "CH001",
     "reference": "AI-generated family reconstruction; RayTools BT240S technical-data page used for class-level proportions only",
