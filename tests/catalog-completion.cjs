@@ -4,7 +4,7 @@ const {JSDOM}=require('C:/Users/Sharif/AppData/Local/SahandLaserBuildTools/dom-t
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const catalog=JSON.parse(read('docs/catalog-completion/catalog-draft.json')),articles=JSON.parse(read('docs/catalog-completion/articles.json'));
 assert.equal(catalog.products.length,106);assert.equal(new Set(catalog.products.map(p=>p.code)).size,106);
-const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015','دو میز DZ3015','دو میز LD3015','دو میز کابین‌دار DZ3015','تک میز 3015 + لوله‌بر','دو میز 3015 + لوله‌بر','دو میز کابین‌دار 3015 + لوله‌بر'];
+const expected=['طھع© ظ…غŒط² DZ3015S','طھع© ظ…غŒط² DZ3015H','طھع© ظ…غŒط² LD3015','ط¯ظˆ ظ…غŒط² DZ3015','ط¯ظˆ ظ…غŒط² LD3015','ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± DZ3015','طھع© ظ…غŒط² 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±','ط¯ظˆ ظ…غŒط² 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±','ط¯ظˆ ظ…غŒط² ع©ط§ط¨غŒظ†â€Œط¯ط§ط± 3015 + ظ„ظˆظ„ظ‡â€Œط¨ط±'];
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
@@ -18,28 +18,28 @@ for(const code of ['WELD-1500','WELD-2000','WELD-3000']){
  const p=catalog.products.find(p=>p.code===code);
  assert(p.specs.some(s=>s.scope==='user_supplied_artwork'&&s.source));
  assert.equal(p.promotionalEvidence.useInComparison,false);
- assert(!p.specs.some(s=>/ضخامت|طول موج/.test(s.label)));
+ assert(!p.specs.some(s=>/ط¶ط®ط§ظ…طھ|ط·ظˆظ„ ظ…ظˆط¬/.test(s.label)));
  assert(fs.existsSync(path.join(root,p.promotionalEvidence.source)));
 }
 const marking30=catalog.products.find(p=>p.code==='ML-001');
-assert.equal(marking30.comparisonValues['توان'].value,'30 W');
-assert.equal(marking30.comparisonValues['محدوده حکاکی'].scope,'user_supplied_series_options');
-assert(marking30.comparisonValues['محدوده حکاکی'].value.includes('300×300'));
-assert(marking30.comparisonValues['برق ورودی'].value.includes('220 V'));
-assert(marking30.comparisonValues['سورس'].value.includes('Raycus'));
-assert(marking30.comparisonValues['لنز'].value.includes('Opex'));
-assert.equal(catalog.products.find(p=>p.code==='ML-008').comparisonValues['سورس'],null);
+assert.equal(marking30.comparisonValues['طھظˆط§ظ†'].value,'30 W');
+assert.equal(marking30.comparisonValues['ظ…ط­ط¯ظˆط¯ظ‡ ط­ع©ط§ع©غŒ'].scope,'user_supplied_series_options');
+assert(marking30.comparisonValues['ظ…ط­ط¯ظˆط¯ظ‡ ط­ع©ط§ع©غŒ'].value.includes('300أ—300'));
+assert(marking30.comparisonValues['ط¨ط±ظ‚ ظˆط±ظˆط¯غŒ'].value.includes('220 V'));
+assert(marking30.comparisonValues['ط³ظˆط±ط³'].value.includes('Raycus'));
+assert(marking30.comparisonValues['ظ„ظ†ط²'].value.includes('Opex'));
+assert.equal(catalog.products.find(p=>p.code==='ML-008').comparisonValues['ط³ظˆط±ط³'],null);
 for(const code of ['MK-FIBER-GENERIC','ML-001','ML-002','ML-003','ML-005','ML-006','ML-007','ML-009']){
  const p=catalog.products.find(p=>p.code===code);
  assert.equal(p.seriesReference.scope,'user_supplied_marking_series_options');
- assert(p.specs.some(s=>s.scope==='user_supplied_series_options'&&s.value==='هواخنک'));
+ assert(p.specs.some(s=>s.scope==='user_supplied_series_options'&&s.value==='ظ‡ظˆط§ط®ظ†ع©'));
 }
 for(const code of ['ML-004','ML-008'])assert(!catalog.products.find(p=>p.code===code).sources.some(s=>s.url?.includes('sahand-fiber-marking-brochure')));
 assert(fs.existsSync(path.join(root,'docs/catalog-completion/source-documents/sahand-fiber-marking-brochure.pdf')));
 for(const [code,tank]of [['CC004','13 L'],['CC005','13 L'],['CC006','21 L'],['CH-HANLI-6000','42 L'],['CH-HANLI-12000','55 L']]){
  const p=catalog.products.find(p=>p.code===code);
- assert(p.specs.some(s=>s.label==='نسخه مرجع جدول دفترچه'&&s.value.endsWith('-QG2/2')));
- assert(p.specs.some(s=>s.label==='حجم آب نسخه مرجع دفترچه'&&s.value===tank));
+ assert(p.specs.some(s=>s.label==='ظ†ط³ط®ظ‡ ظ…ط±ط¬ط¹ ط¬ط¯ظˆظ„ ط¯ظپطھط±ع†ظ‡'&&s.value.endsWith('-QG2/2')));
+ assert(p.specs.some(s=>s.label==='ط­ط¬ظ… ط¢ط¨ ظ†ط³ط®ظ‡ ظ…ط±ط¬ط¹ ط¯ظپطھط±ع†ظ‡'&&s.value===tank));
  assert(p.sources.some(s=>s.title.includes('third-party archive')));
 }
 assert(catalog.products.find(p=>p.code==='CP-LENS-BLT').specs.some(s=>s.value.includes('DP.V.P0048AA')));
@@ -49,31 +49,32 @@ assert(catalog.products.find(p=>p.code==='CH-S&A-6000').visuals.studio.identityS
 assert.equal(catalog.products.find(p=>p.code==='CP-TRA').componentKind,'nozzle_sensor_assembly');
 assert.equal(catalog.products.find(p=>p.code==='CP-TRA').comparable,false);
 for(const [code,watts] of [['SRC-RAY-C3000S','7500'],['SRC-RAY-C4000S','10000'],['SRC-RAY-C6000S','15000']]){
- assert(catalog.products.find(p=>p.code===code).specs.some(s=>s.label.includes('ظرفیت سرمایشی')&&s.value.includes(watts)&&s.source));
+ assert(catalog.products.find(p=>p.code===code).specs.some(s=>s.label.includes('ط¸ط±ظپغŒطھ ط³ط±ظ…ط§غŒط´غŒ')&&s.value.includes(watts)&&s.source));
 }
 const evidence=JSON.parse(read('docs/catalog-completion/manufacturer-evidence-integrity.json'));
 const crypto=require('node:crypto');
 for(const file of evidence.files){const bytes=fs.readFileSync(path.join(root,file.file));assert.equal(bytes.length,file.bytes);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),file.sha256);}
-assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').specs.some(s=>s.label==='شیشه‌های محافظ در جدول قطعات V2.0'&&s.value.includes('میانی')));
+assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').specs.some(s=>s.label==='ط´غŒط´ظ‡â€Œظ‡ط§غŒ ظ…ط­ط§ظپط¸ ط¯ط± ط¬ط¯ظˆظ„ ظ‚ط·ط¹ط§طھ V2.0'&&s.value.includes('ظ…غŒط§ظ†غŒ')));
 assert(catalog.products.find(p=>p.code==='CP-RAY-BM110').visuals.opticalReconstruction.src.endsWith('xray-web-v5.jpg'));
 for(const code of ['CC001','CC002','CC003']){
   const product=catalog.products.find(p=>p.code===code);
   assert(product.sources.some(source=>source.scope==='manufacturer_web_variant'));
   assert(product.specs.some(spec=>spec.scope==='manufacturer_web'&&spec.source));
 }
-assert(catalog.products.find(p=>p.code==='CC002').specs.some(spec=>spec.label==='حجم مخزن ANPTY / BNPTY'&&spec.value==='22 L'));
+assert(catalog.products.find(p=>p.code==='CC002').specs.some(spec=>spec.label==='ط­ط¬ظ… ظ…ط®ط²ظ† ANPTY / BNPTY'&&spec.value==='22 L'));
 const head114=catalog.products.find(p=>p.code==='CH004');
 const bt240s=catalog.products.find(p=>p.code==='CH001');
 const bt220=catalog.products.find(p=>p.code==='CP-RAY-BT220');
-assert(bt240s.specs.some(s=>s.label==='روش تنظیم فوکوس نسخه دفترچه'&&s.value.includes('دستی')));
-assert(bt220.specs.some(s=>s.label==='توان نامی نسخه دفترچه'&&s.value==='2 kW'));
+assert(bt240s.specs.some(s=>s.label==='ط±ظˆط´ طھظ†ط¸غŒظ… ظپظˆع©ظˆط³ ظ†ط³ط®ظ‡ ط¯ظپطھط±ع†ظ‡'&&s.value.includes('ط¯ط³طھغŒ')));
+assert(bt220.specs.some(s=>s.label==='طھظˆط§ظ† ظ†ط§ظ…غŒ ظ†ط³ط®ظ‡ ط¯ظپطھط±ع†ظ‡'&&s.value==='2 kW'));
 assert(!catalog.products.find(p=>p.code==='CP-RAY-BT240').sources.some(s=>(s.url||'').includes('BT240S')));
 const assemblies=JSON.parse(read('docs/catalog-completion/internal-assembly-references.json'));
-assert(assemblies.models.every(model=>model.coverWindowCount===2&&model.focusActuation.includes('manual')&&!model.visualComplete));
+assert(assemblies.models.filter(model=>model.model==='BM110').every(model=>model.coverWindowCount===3&&model.focusActuation.includes('automatic')&&!model.visualComplete));
+assert(assemblies.models.filter(model=>model.model!=='BM110').every(model=>model.coverWindowCount===2&&model.focusActuation.includes('manual')&&!model.visualComplete));
 const head115=catalog.products.find(p=>p.code==='CH005');
-assert(head114.specs.some(s=>s.label==='محافظ‌های بالا و میانی V1.0'&&s.value.includes('1.6')));
-assert(head115.specs.some(s=>s.label==='محافظ میانی و پایین V1.0'&&s.value.includes('7 mm')));
-assert(head114.specs.some(s=>s.value==='D37؛ F150 / F190.5'));
+assert(head114.specs.some(s=>s.label==='ظ…ط­ط§ظپط¸â€Œظ‡ط§غŒ ط¨ط§ظ„ط§ ظˆ ظ…غŒط§ظ†غŒ V1.0'&&s.value.includes('1.6')));
+assert(head115.specs.some(s=>s.label==='ظ…ط­ط§ظپط¸ ظ…غŒط§ظ†غŒ ظˆ ظ¾ط§غŒغŒظ† V1.0'&&s.value.includes('7 mm')));
+assert(head114.specs.some(s=>s.value==='D37ط› F150 / F190.5'));
 assert(head115.specs.some(s=>s.value==='D38.1'));
 for(const code of ['CP-RAY-BM114E','CP-RAY-BM115E'])assert(!catalog.products.find(p=>p.code===code).sources.some(s=>/\/11[45]az-zh\.pdf$/.test(s.url||'')));
 for(const p of catalog.products){assert.equal(p.comparable,['cutting','welding','marking','cleaning'].includes(p.category));assert(!p.ready);if(p.visuals.studio)assert(fs.existsSync(path.join(root,p.visuals.studio.src)));}
