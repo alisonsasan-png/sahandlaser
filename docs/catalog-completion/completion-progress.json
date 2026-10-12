@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 48,
+  "studioImages": 49,
   "recordsWithSourcedSpecifications": 44,
   "recordsWithManufacturerReferenceSpecifications": 31,
   "recordsWithUserSeriesSpecifications": 8,
@@ -135,12 +135,11 @@
       "code": "CH001",
       "name": "ظ‡ط¯ ط¨ط±ط´ ط±غŒطھظˆظ„ط² ظ…ط¯ظ„ BT240S",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
