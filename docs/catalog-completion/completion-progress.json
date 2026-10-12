@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 77,
-  "recordsWithSourcedSpecifications": 70,
-  "recordsWithManufacturerReferenceSpecifications": 46,
+  "recordsWithSourcedSpecifications": 71,
+  "recordsWithManufacturerReferenceSpecifications": 47,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -451,12 +451,10 @@
       "name": "ظ…ط­ط§ظپط¸ ظ„ظ†ط² WSX",
       "category": "consumables",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BM110",
