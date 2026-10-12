@@ -283,6 +283,10 @@
                     {
                         "at":  "2026-10-12T19:30:00.000+03:30",
                         "text":  "Added a reviewed conceptual custom-size fiber-cutter image with explicit family/configuration scope. Rebuilt catalog progress: 106 products, 58 studio images, 48 sourced-specification records, 34 manufacturer references, 10 articles; local catalog and comparison tests pass and release gate remains open."
+                    },
+                    {
+                        "at":  "2026-10-12T19:30:00.000+03:30",
+                        "text":  "Added a reviewed conceptual custom-size fiber-cutter image with explicit family/configuration scope. Rebuilt catalog progress: 106 products, 58 studio asset files, 57 linked gallery images, 48 sourced-specification records, 34 manufacturer references, 10 articles; live Chromium verification passed at desktop and touch-emulated mobile, and the release gate remains open."
                     }
                 ]
 }
