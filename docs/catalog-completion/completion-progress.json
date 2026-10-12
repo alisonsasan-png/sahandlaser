@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 63,
-  "recordsWithSourcedSpecifications": 48,
-  "recordsWithManufacturerReferenceSpecifications": 34,
+  "recordsWithSourcedSpecifications": 52,
+  "recordsWithManufacturerReferenceSpecifications": 38,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -203,11 +203,10 @@
       "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
       "category": "cleaning",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -216,11 +215,10 @@
       "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
       "category": "cleaning",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -229,11 +227,10 @@
       "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
       "category": "cleaning",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -242,11 +239,10 @@
       "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
       "category": "cleaning",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -342,7 +338,148 @@
     },
     {
       "code": "CN008",
-    …1120 tokens truncated…dio image",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN009",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN010",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN011",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN012",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN013",
+      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-CERAMIC",
+      "name": "سرامیک هد برش لیزر فایبر",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 2,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "name": "محافظ لنز سری BLT",
+      "category": "consumables",
+      "studioImage": true,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "name": "محافظ لنز RayTools",
+      "category": "consumables",
+      "studioImage": true,
+      "sourcedSpecifications": 3,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "name": "محافظ لنز WSX",
+      "category": "consumables",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "name": "هد برش فایبر RayTools BM110",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 10,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "name": "هد برش RayTools BM114-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
@@ -1229,3 +1366,4 @@
     }
   ]
 }
+
