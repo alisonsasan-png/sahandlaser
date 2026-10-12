@@ -1,4 +1,16 @@
 {
+  "CC004": {
+    "directory": "CC004",
+    "reference": "assets/catalog-v2/CC006/studio-v1.png",
+    "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-1500-QG2/2 manual row; not an exact photographed HL-1500 casing or nameplate",
+    "visualReview": true
+  },
+  "CC005": {
+    "directory": "CC005",
+    "reference": "assets/catalog-v2/CC006/studio-v1.png",
+    "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-2000-QG2/2 manual row; not an exact photographed HL-2000 casing or nameplate",
+    "visualReview": true
+  },
   "CUT-robot": {
     "directory": "CUT-robot",
     "reference": "https://cdnus.globalso.com/goldenfiberlaser/09_%E5%89%AF%E6%9C%AC.jpg",

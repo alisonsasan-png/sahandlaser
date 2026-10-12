@@ -411,7 +411,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CC004/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-1500-QG2/2 manual row; not an exact photographed HL-1500 casing or nameplate",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
@@ -505,7 +511,13 @@
         }
       ],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CC005/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-2000-QG2/2 manual row; not an exact photographed HL-2000 casing or nameplate",
+          "visualReview": true
+        }
       },
       "availableLegacyMedia": [],
       "masterEvidence": {
