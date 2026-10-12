@@ -3958,6 +3958,24 @@
           "label": "ظ…ط¯ظ„ / ط®ط§ظ†ظˆط§ط¯ظ‡",
           "value": "BT240",
           "scope": "identity"
+        },
+        {
+          "label": "ع©ط§ط±ط¨ط±ط¯ ظ…ط±ط¬ط¹",
+          "value": "ظ…ط¬ظ…ظˆط¹ظ‡ ط§طھطµط§ظ„ ظ†ط§ط²ظ„ TRA ط¨ط±ط§غŒ ظ‡ط¯ظ‡ط§غŒ ط¨ط±ط´ طھط®طھطŒ ظ„ظˆظ„ظ‡ ظˆ ط³ظ‡â€Œط¨ط¹ط¯غŒ",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
+        },
+        {
+          "label": "ط³ط§ط²ع¯ط§ط±غŒ ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡ ط¨ط±ط§غŒ BT240S",
+          "value": "ط´ظ…ط§ط±ظ‡ ظ‚ط·ط¹ظ‡ 120A61000A",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط§غŒظ† ظ…ط±ط¬ط¹ ظ‚ط·ط¹ظ‡â€ŒغŒ TRA ط±ط§ ظ…ط³طھظ†ط¯ ظ…غŒâ€Œع©ظ†ط¯طŒ ظ†ظ‡ ط´ظ…ط§ط±ظ‡â€Œط³ط±غŒط§ظ„ غŒط§ ظ…ط¬ظ…ظˆط¹ظ‡ ط¯ط§ط®ظ„غŒ ظ‡ط¯ ظ†طµط¨â€Œط´ط¯ظ‡ ط¯ط± ط³ظ‡ظ†ط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
         }
       ],
       "images": [],
@@ -3974,7 +3992,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط±طŒ ع©ظ†طھط±ظ„ط± ظˆ ظ†ظˆط¹ ط§طھظˆظپظˆع©ظˆط³ ع†غŒط³طھطں",
         "ظ‚ط·ط¹ظ‡ ع©ط§ظ…ظ„ ظ„ط§ط²ظ… ط§ط³طھ غŒط§ ظ…ط¬ظ…ظˆط¹ظ‡ ظ…طµط±ظپغŒطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/",
+          "title": "RayTools TRA nozzle connector assembly reference for BT240S, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -4246,6 +4270,30 @@
           "label": "ظ…ط¯ظ„ / ط®ط§ظ†ظˆط§ط¯ظ‡",
           "value": "TRA",
           "scope": "identity"
+        },
+        {
+          "label": "ظ†ظˆط¹ ظ‚ط·ط¹ظ‡",
+          "value": "TRA nozzle assembly / nozzle connector assembly",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
+        },
+        {
+          "label": "ع©ط§ط±ط¨ط±ط¯",
+          "value": "ط¨ط±ط´ طھط®طھطŒ ظ„ظˆظ„ظ‡ ظˆ ط³ظ‡â€Œط¨ط¹ط¯غŒ",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
+        },
+        {
+          "label": "ظ…ط¯ظ„â€Œظ‡ط§غŒ ط³ط§ط²ع¯ط§ط± ظ†ظ…ظˆظ†ظ‡",
+          "value": "BT240SطŒ BM109طŒ BM110طŒ BM111طŒ BM114 ظˆ BM115",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ظ…ط¯ظ„ ط¯ظ‚غŒظ‚ ظ‚ط·ط¹ظ‡ ظˆ ظ‡ط¯ ظ†طµط¨â€Œط´ط¯ظ‡ ط¨ط§غŒط¯ ط¨ط§ ع©ط¯ ظ‚ط·ط¹ظ‡ طھط·ط¨غŒظ‚ ط´ظˆط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/"
         }
       ],
       "images": [],
@@ -4262,7 +4310,13 @@
         "ط´ع©ظ„ ظ†طµط¨طŒ ط§طھطµط§ظ„ط§طھ ظˆ ط´ظ…ط§ط±ظ‡ ظ…ط¬ظ…ظˆط¹ظ‡ ظپط¹ظ„غŒ ع©ط¯ط§ظ… ط§ط³طھطں",
         "ظ†ط§ط²ظ„ ظˆ ط³ط±ط§ظ…غŒع© ط³ط§ط²ع¯ط§ط± ط¨ط§ ظ†ط³ط®ظ‡ ظ…ظˆط±ط¯ظ†ط¸ط± ع©ط¯ط§ظ…â€Œط§ظ†ط¯طں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.raytools-de.com/product/raytools-tra-nozzle-connector-assembly/",
+          "title": "RayTools TRA nozzle connector assembly reference, accessed 2026-10-13",
+          "scope": "manufacturer_partner_family_reference"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -5022,14 +5076,63 @@
           "scope": "family_reference"
         },
         {
-          "label": "ط¨ط§ط²ظ‡ طھظ†ط¸غŒظ… طھظˆط§ظ†",
-          "value": "10â€“100%",
-          "scope": "family_reference"
-        },
-        {
           "label": "ط®ظ†ع©â€Œع©ط§ط±غŒ",
           "value": "ط¢ط¨غŒ",
           "scope": "family_reference"
+        },
+        {
+          "label": "ظ…ط¯ظ„ ط¯ظپطھط±ع†ظ‡",
+          "value": "RFL-C1500",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "طھظˆط§ظ† ط®ط±ظˆط¬غŒ ظ†ط§ظ…غŒ",
+          "value": "1500 W",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ط­ط§ظ„طھ ع©ط§ط±",
+          "value": "CW / Modulated",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ط·ظˆظ„ ظ…ظˆط¬ ظ…ط±ع©ط²غŒ",
+          "value": "1080آ±5 nm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ط¨ط§ط²ظ‡ طھظ†ط¸غŒظ… طھظˆط§ظ†",
+          "value": "10â€“100%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ظپط±ع©ط§ظ†ط³ ظ…ط¯ظˆظ„ط§ط³غŒظˆظ†",
+          "value": "50â€“20,000 Hz",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ظ†ط§ظ¾ط§غŒط¯ط§ط±غŒ طھظˆط§ظ† ط¯ط± ط¢ط²ظ…ظˆظ† ط¯ظپطھط±ع†ظ‡",
+          "value": "آ±1.5%",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "BPP ط§ط¹ظ„ط§ظ…â€Œط´ط¯ظ‡",
+          "value": "<2.3 / <4.5 mmآ·mrad",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
+        },
+        {
+          "label": "ظ‡ط³طھظ‡ ظپغŒط¨ط±",
+          "value": "50 / 100 آµm",
+          "scope": "manufacturer_manual",
+          "source": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf"
         }
       ],
       "images": [],
@@ -5046,7 +5149,13 @@
         "ط±ط§ط¨ط· ظپغŒط¨ط± ظˆ ط±ظˆط´ ع©ظ†طھط±ظ„ ط¯ط³طھع¯ط§ظ‡ ع†غŒط³طھطں",
         "ط³ظˆط±ط³ ط¬ط§غŒع¯ط²غŒظ† ط§ط³طھ غŒط§ ط¨ط±ط§غŒ ط³ط§ط®طھ ط¯ط³طھع¯ط§ظ‡ ط¬ط¯غŒط¯طں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://en.raycuslaser.com/upload/20220117/1fpje0kdvb3od9g12.pdf",
+          "title": "Raycus User Guide of 1500W CW laser, accessed 2026-10-13",
+          "scope": "manufacturer_manual"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
