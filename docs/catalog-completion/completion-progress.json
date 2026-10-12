@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 75,
+  "studioImages": 76,
   "recordsWithSourcedSpecifications": 70,
   "recordsWithManufacturerReferenceSpecifications": 46,
   "recordsWithUserSeriesSpecifications": 8,
@@ -487,12 +487,11 @@
       "code": "CP-RAY-BM115",
       "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM115",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 8,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
