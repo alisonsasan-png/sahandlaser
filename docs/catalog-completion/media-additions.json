@@ -1,4 +1,10 @@
 {
+  "CH-S&A-6000": {
+    "directory": "CH-S&A-6000",
+    "reference": "assets/catalog-v2/CH-S&A-12000/studio-v1.png",
+    "identityScope": "S&A chiller family reconstruction based on the reviewed CWFL-12000 family image and CWFL-6000 variant selection evidence; not an exact photographed casing or nameplate",
+    "visualReview": true
+  },
   "CC004": {
     "directory": "CC004",
     "reference": "assets/catalog-v2/CC006/studio-v1.png",

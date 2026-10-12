@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 44,
+  "studioImages": 45,
   "recordsWithSourcedSpecifications": 42,
   "recordsWithManufacturerReferenceSpecifications": 31,
   "recordsWithUserSeriesSpecifications": 8,
@@ -118,7 +118,7 @@
       "code": "CH-S&A-6000",
       "name": "چیلر فایبر S&A CWFL-6000",
       "category": "parts",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 7,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": {
@@ -129,9 +129,7 @@
         "identityReview": "rejected_for_exact_model",
         "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph."
       },
-      "remaining": [
-        "prepare product-specific studio image"
-      ]
+      "remaining": []
     },
     {
       "code": "CH001",

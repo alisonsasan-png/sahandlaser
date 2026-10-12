@@ -1202,6 +1202,12 @@
           "processing": "do not publish as exact-model image",
           "identityReview": "rejected_for_exact_model",
           "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph."
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CH-S&A-6000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "S&A chiller family reconstruction based on the reviewed CWFL-12000 family image and CWFL-6000 variant selection evidence; not an exact photographed casing or nameplate",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],

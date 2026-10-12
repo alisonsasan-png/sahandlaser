@@ -8,6 +8,12 @@ const expected=['تک میز DZ3015S','تک میز DZ3015H','تک میز LD3015'
 assert.deepEqual(catalog.products.filter(p=>p.family==='3015').map(p=>p.name),expected);
 assert.equal(catalog.products.filter(p=>p.family==='6020').length,9);
 const studioCount=catalog.products.filter(p=>p.visuals.studio).length;assert(studioCount>=36);
+for(const code of ['CUT-3015-6','CUT-6020-6','CUT-6020-4']){
+ const p=catalog.products.find(p=>p.code===code);
+ assert(p.visuals.studio.src.includes('/'+code+'/'));
+ assert.equal(p.configuration.tableCount,2);
+ assert.equal(p.configuration.tubeAttachment,false);
+}
 for(const code of ['WELD-1500','WELD-2000','WELD-3000']){
  const p=catalog.products.find(p=>p.code===code);
  assert(p.specs.some(s=>s.scope==='user_supplied_artwork'&&s.source));
@@ -39,7 +45,7 @@ for(const [code,tank]of [['CC004','13 L'],['CC005','13 L'],['CC006','21 L'],['CH
 assert(catalog.products.find(p=>p.code==='CP-LENS-BLT').specs.some(s=>s.value.includes('DP.V.P0048AA')));
 assert(catalog.products.find(p=>p.code==='CP-CERAMIC').specs.some(s=>s.value.includes('BLT310T')));
 assert(catalog.products.find(p=>p.code==='CH-S&A-6000').specs.some(s=>s.value==='70 L'));
-assert(!catalog.products.find(p=>p.code==='CH-S&A-6000').visuals.studio);
+assert(catalog.products.find(p=>p.code==='CH-S&A-6000').visuals.studio.identityScope.includes('family reconstruction'));
 assert.equal(catalog.products.find(p=>p.code==='CP-TRA').componentKind,'nozzle_sensor_assembly');
 assert.equal(catalog.products.find(p=>p.code==='CP-TRA').comparable,false);
 for(const [code,watts] of [['SRC-RAY-C3000S','7500'],['SRC-RAY-C4000S','10000'],['SRC-RAY-C6000S','15000']]){
