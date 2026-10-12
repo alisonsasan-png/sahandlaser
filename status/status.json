@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-12T20:15:00.000+03:30",
+    "updatedAt":  "2026-10-12T20:30:00.000+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "مرحله اول: ممیزی و تکمیل مستند محصولات",
     "currentTask":  "Catalog media completion and robot-cutting reference review",
@@ -295,6 +295,10 @@
                     {
                         "at":  "2026-10-12T20:15:00.000+03:30",
                         "text":  "After publishing the single-table LD3015 family image, actual Chromium 141 verification passed again on the published catalog at desktop 1366x900 and touch-emulated 390x844: 106 products, 59 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses."
+                    },
+                    {
+                        "at":  "2026-10-12T20:30:00.000+03:30",
+                        "text":  "Repaired oversized web-image uploads for BM114 and LD3015, then verified the published catalog with actual Chromium 141 at desktop 1366x900 and touch-emulated 390x844: 106 products, 61 decoded gallery images, 48 sourced-specification records, 10 articles, pointer reveal 80, keyboard range support, no page errors, and no bad responses."
                     }
                 ]
 }
