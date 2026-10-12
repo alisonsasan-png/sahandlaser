@@ -1337,28 +1337,52 @@
           "scope": "identity"
         },
         {
-          "label": "ط³ط§ط²ظ†ط¯ظ‡ ظˆ ظ…ط¯ظ„",
-          "value": "RayTools BM109",
-          "scope": "manufacturer_web",
-          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+          "label": "ظ†ظˆط¹ ظپظˆع©ظˆط³",
+          "value": "Automatic focus",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
         },
         {
-          "label": "ع©ط§ط±ط¨ط±غŒ ط«ط¨طھâ€Œط´ط¯ظ‡ ط¯ط± طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡",
-          "value": "ط¨ط±ط´ ظ„ظˆظ„ظ‡ ظˆ ط¨ط±ط´ ط³ظ‡â€Œط¨ط¹ط¯غŒ ظ¾ظ†ط¬â€Œظ…ط­ظˆط±ظ‡",
-          "scope": "manufacturer_web",
-          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+          "label": "ع©ظ„ط§ط³ طھظˆط§ظ† ط¯ظپطھط±ع†ظ‡",
+          "value": "â‰¤1.5 kW",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
         },
         {
-          "label": "ظˆط¶ط¹غŒطھ طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡",
-          "value": "ظ…ط­طµظˆظ„ ط®ط§ط±ط¬ ط§ط² طھظˆظ„غŒط¯",
-          "scope": "manufacturer_web",
-          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+          "label": "ط¯ظ‡ط§ظ†ظ‡ ط¢ط²ط§ط¯",
+          "value": "26 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
         },
         {
-          "label": "ظ…ط­ط¯ظˆط¯غŒطھ ط§ظ†طھظ‚ط§ظ„",
-          "value": "طµظپط­ظ‡ ط³ط§ط²ظ†ط¯ظ‡ ظ…ط´ط®طµط§طھ ط§ط¨ط¹ط§ط¯غŒطŒ ط§ظ¾طھغŒع©غŒ ظˆ ظ‚ط·ط¹ط§طھ ط¯ط§ط®ظ„غŒ ع©ط§ظپغŒ ط¨ط±ط§غŒ طھط·ط¨غŒظ‚ ظ†ط³ط®ظ‡ ظ†طµط¨â€Œط´ط¯ظ‡ ط§ط±ط§ط¦ظ‡ ظ†ظ…غŒâ€Œع©ظ†ط¯",
-          "scope": "manufacturer_web",
-          "source": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37"
+          "label": "ط´غŒط´ظ‡ ظ…ط­ط§ظپط¸ ط¨ط§ظ„ط§",
+          "value": "D24.9 أ— 1.5 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
+        },
+        {
+          "label": "ط´غŒط´ظ‡ ظ…ط­ط§ظپط¸ ظ¾ط§غŒغŒظ†",
+          "value": "D27.9 أ— 4.1 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
+        },
+        {
+          "label": "ظپط´ط§ط± ع¯ط§ط² ع©ظ…ع©غŒ",
+          "value": "â‰¤25 bar",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
+        },
+        {
+          "label": "ظˆط²ظ† طھظ‚ط±غŒط¨غŒ ط¯ظپطھط±ع†ظ‡",
+          "value": "â‰ˆ3 kg",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
+        },
+        {
+          "label": "ظ…ط­ط¯ظˆط¯غŒطھ طھط·ط¨غŒظ‚",
+          "value": "ط¯ظپطھط±ع†ظ‡â€ŒغŒ ط®ط§ظ†ظˆط§ط¯ظ‡ ط§ط³طھ ظˆ ظ‡ظˆغŒطھ ظ‡ط¯ ظ†طµط¨â€Œط´ط¯ظ‡â€ŒغŒ ط³ظ‡ظ†ط¯ غŒط§ ظ†ط³ط®ظ‡â€ŒغŒ ط¯ظ‚غŒظ‚ ط¢ظ† ط±ط§ ط§ط«ط¨ط§طھ ظ†ظ…غŒâ€Œع©ظ†ط¯",
+          "scope": "manufacturer_manual",
+          "source": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf"
         }
       ],
       "images": [],
@@ -1377,9 +1401,9 @@
       ],
       "sources": [
         {
-          "url": "https://www.raytools.ch/shop/product/bm109-3d-auto-focus-tube-cutting-head-out-of-production-37",
-          "title": "RayTools BM109 official product page; discontinued 3D auto-focus tube cutting head",
-          "scope": "manufacturer_web_identity_only"
+          "url": "https://voronezh.rustan.ru/sites/default/files/instructions/raytools-bm109.pdf",
+          "title": "RayTools BM109 series manual mirror, accessed 2026-10-13",
+          "scope": "manufacturer_manual_mirror"
         }
       ],
       "visuals": {
