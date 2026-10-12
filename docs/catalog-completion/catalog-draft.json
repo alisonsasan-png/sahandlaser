@@ -9024,7 +9024,13 @@
       ],
       "sources": [],
       "visuals": {
-        "status": "not_complete"
+        "status": "not_complete",
+        "studio": {
+          "src": "assets/catalog-v2/CUT-6020-5/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "User-library two-table 6020 exchange-table family reference; no legible LD6020 model identity, exact manufacturer revision, or installed controller proven",
+          "visualReview": true
+        }
       },
       "configuration": {
         "sizeFamily": "6020",

@@ -1,4 +1,10 @@
 {
+  "CUT-6020-5": {
+    "directory": "CUT-6020-5",
+    "reference": "C:/Users/Sharif/Downloads/laser-cutting-machine-6020-exchange-2-scaled.png",
+    "identityScope": "User-library two-table 6020 exchange-table family reference; no legible LD6020 model identity, exact manufacturer revision, or installed controller proven",
+    "visualReview": true
+  },
   "CUT-3015-5": {
     "directory": "CUT-3015-5",
     "reference": "C:/Users/Sharif/Downloads/laser-cutting-nachine-3015-exchange-3-scaled.jpg",
