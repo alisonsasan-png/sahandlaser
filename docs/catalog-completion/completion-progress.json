@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 63,
+  "studioImages": 64,
   "recordsWithSourcedSpecifications": 63,
   "recordsWithManufacturerReferenceSpecifications": 38,
   "recordsWithUserSeriesSpecifications": 8,
@@ -1197,12 +1197,11 @@
       "code": "CUT-3015-9",
       "name": "دو میز کابین‌دار 3015 + لوله‌بر",
       "category": "cutting",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 1,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
