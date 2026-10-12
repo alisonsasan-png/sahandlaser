@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 106,
-  "recordsWithSourcedSpecifications": 97,
-  "recordsWithManufacturerReferenceSpecifications": 73,
+  "recordsWithSourcedSpecifications": 99,
+  "recordsWithManufacturerReferenceSpecifications": 75,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -857,24 +857,20 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Modern Series",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-008",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Robotic Laser Welding",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-009",
