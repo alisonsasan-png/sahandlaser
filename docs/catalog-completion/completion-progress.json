@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 62,
+  "studioImages": 63,
   "recordsWithSourcedSpecifications": 48,
   "recordsWithManufacturerReferenceSpecifications": 34,
   "recordsWithUserSeriesSpecifications": 8,
@@ -342,15 +342,8 @@
     },
     {
       "code": "CN008",
-      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
-      "category": "consumables",
-      "studioImage": false,
-      "sourcedSpecifications": 0,
-      "suppliedSeriesDocument": false,
-      "mediaIdentityIssue": null,
-      "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-…1035 tokens truncated…cations",
+    …1120 tokens truncated…dio image",
+        "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
     },
@@ -399,12 +392,11 @@
       "code": "CP-RAY-BT220",
       "name": "هد برش RayTools BT220",
       "category": "head",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 12,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "review technical drawing/internal-assembly applicability"
       ]
     },
