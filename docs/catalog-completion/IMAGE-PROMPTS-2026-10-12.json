@@ -1,0 +1,49 @@
+{
+  "mode": "built-in image generation",
+  "assets": [
+    {
+      "code": "WELD-2000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Welding Machine/C2000-Welding.jpg",
+      "prompt": "Use case: precise-object-edit. Input image is edit target, supplied promotional product artwork. Extract only the actual photographed product into a polished photorealistic catalog photograph on pure white #FFFFFF background. Preserve camera viewpoint, physical shape, proportions, controls, visible connections, materials and supplied manufacturer's brand. Square composition with entire product visible and generous white margins, soft studio lighting and subtle contact shadow. Remove poster text, surrounding icons, technical claims, phone numbers and background graphic. No extra props, invented accessories, invented internal hardware or Sahand badge on third-party components. Retain the exact blue-purple and white cabinet, sloping touch-screen panel, red emergency stop, two green buttons, patterned left grille, front door and hinges, wheels and folded gray cable/hose bundle on top. No extra wire feeder.",
+      "saved": "assets/catalog-v2/WELD-2000/studio-v1.png",
+      "delivery": "assets/catalog-v2/WELD-2000/studio-web.jpg"
+    },
+    {
+      "code": "WELD-3000",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Welding Machine/C3000-Welding.jpg",
+      "prompt": "Use case: precise-object-edit. Input image is edit target, supplied promotional product artwork. Extract only the actual photographed product into a polished photorealistic catalog photograph on pure white #FFFFFF background. Preserve camera viewpoint, physical shape, proportions, controls, visible connections, materials and supplied manufacturer's brand. Square composition with entire product visible and generous white margins, soft studio lighting and subtle contact shadow. Remove poster text, surrounding icons, technical claims, phone numbers and background graphic. No extra props, invented accessories, invented internal hardware or Sahand badge on third-party components. Retain red and white large cabinet, sloping touch screen, switches, front bar, side louvers, wheels and yellow safety sticker; retain separate small red wire feeder with screen and orange cable connected to larger cabinet. Never mistake the wire feeder for a chiller.",
+      "saved": "assets/catalog-v2/WELD-3000/studio-v1.png",
+      "delivery": "assets/catalog-v2/WELD-3000/studio-web.jpg"
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser System/4000-E.jpg",
+      "prompt": "Use case: precise-object-edit. Input image is edit target, supplied promotional product artwork. Extract only the actual photographed product into a polished photorealistic catalog photograph on pure white #FFFFFF background. Preserve camera viewpoint, physical shape, proportions, controls, visible connections, materials and supplied manufacturer's brand. Square composition with entire product visible and generous white margins, soft studio lighting and subtle contact shadow. Remove poster text, surrounding icons, technical claims, phone numbers and background graphic. No extra props, invented accessories, invented internal hardware or Sahand badge on third-party components. Retain the actual red BMC228X-family PCB geometry, black heatsink fins, coin battery, gold PCIe edge contacts, black chips and metal bracket with RJ45 port. Do not redesign circuit traces or label it BMC228B if label is only BMC228X.",
+      "saved": "assets/catalog-v2/CTRL-FSCUT4000E/studio-v1.png",
+      "delivery": "assets/catalog-v2/CTRL-FSCUT4000E/studio-web.jpg"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Electro-Pneumatic/ITV---2050.jpg",
+      "prompt": "Use case: precise-object-edit. Input image is edit target, supplied promotional product artwork. Extract only the actual photographed product into a polished photorealistic catalog photograph on pure white #FFFFFF background. Preserve camera viewpoint, physical shape, proportions, controls, visible connections, materials and supplied manufacturer's brand. Square composition with entire product visible and generous white margins, soft studio lighting and subtle contact shadow. Remove poster text, surrounding icons, technical claims, phone numbers and background graphic. No extra props, invented accessories, invented internal hardware or Sahand badge on third-party components. Retain the exact SMC regulator's square cream-white body, red display, top three buttons, threaded upper cable connection, side threaded pneumatic port, lower mounting holes and base shape. Preserve existing maker branding. Do not invent readable full suffixes or serial numbers.",
+      "saved": "assets/catalog-v2/CP-SMC-ITV2050/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-SMC-ITV2050/studio-web.jpg"
+    },
+    {
+      "code": "CP-CERAMIC",
+      "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Ceramic Ring/Ceramic-Ring.jpg",
+      "prompt": "Use case: precise-object-edit. Input image is edit target, supplied promotional product artwork. Extract only the actual photographed product into a polished photorealistic catalog photograph on pure white #FFFFFF background. Preserve camera viewpoint, physical shape, proportions, controls, visible connections, materials and supplied manufacturer's brand. Square composition with entire product visible and generous white margins, soft studio lighting and subtle contact shadow. Remove poster text, surrounding icons, technical claims, phone numbers and background graphic. No extra props, invented accessories, invented internal hardware or Sahand badge on third-party components. Retain exactly two overlapping Raytools ceramic rings, white ceramic lower body, brushed metal top threaded center hole, small gold dot contact and visible maker markings; retain arrangement and realistic threading. Do not add dimensions or resistance claims.",
+      "saved": "assets/catalog-v2/CP-CERAMIC/studio-v1.png",
+      "delivery": "assets/catalog-v2/CP-CERAMIC/studio-web.jpg"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "reference": "assets/catalog-v2/CP-RAY-BM110/xray-review-v2.png",
+      "prompt": "Use case precise-object-edit. Edit this existing translucent BM110 rendering ONLY to remove the extra optical lens module at roughly image y=470 (middle of upper half). Replace that entire middle extra lens stack between the upper collimation group and lower focusing group with a clear hollow cylindrical optical bore, no glass discs there. Preserve image canvas 1254 square, product silhouette, position, camera, all external fittings, cyan translucent shell and white background. Final optical order has only FOUR groups: one thin protective flat window at top after QBH; one compound collimation lens group near y=310; one compound focusing lens group near y=700; one thin lower protective flat window near y=835, then ceramic/nozzle. Do not add any further glass surfaces, imaginary mechanics or lens stacks. Keep remaining optics and body unchanged. This is a reconstruction of documented optical modules only, not exact hidden mechanical CAD.",
+      "saved": "assets/catalog-v2/CP-RAY-BM110/xray-review-v3.png",
+      "delivery": "assets/catalog-v2/CP-RAY-BM110/xray-web-v3.jpg",
+      "scope": "Optical module reconstruction only; retaining barrel geometry and hidden mechanics are not factory verified"
+    }
+  ]
+}
+

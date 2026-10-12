@@ -1,33 +1,227 @@
 {
   "CTRL-FSCUT4000E": {
-    "url":"https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf",
-    "title":"FSCUT4000E Installation Manual V1.3, PDF pages 8–12",
-    "facts":[["ساختار ارتباطی","EtherCAT"],["کاربرد کنترل","حرکت محورها، لیزر و گاز برش"],["برد اصلی در نسخه مرجع","BMC228B"],["برد ترمینال، نسخه سازگار با BLT","BCL4568E"],["برد ترمینال، نسخه غیر BLT","BCL4566E"],["رابط برد اصلی","PCI Express 2.0 (Gen2)"]]
+    "url": "https://d.fscut.com/wordpress-fscut/2022/12/FSCUT4000E-Installation-Manual-V1.3.pdf",
+    "title": "FSCUT4000E Installation Manual V1.3, PDF pages 8–12",
+    "facts": [
+      [
+        "ساختار ارتباطی",
+        "EtherCAT"
+      ],
+      [
+        "کاربرد کنترل",
+        "حرکت محورها، لیزر و گاز برش"
+      ],
+      [
+        "برد اصلی در نسخه مرجع",
+        "BMC228B"
+      ],
+      [
+        "برد ترمینال، نسخه سازگار با BLT",
+        "BCL4568E"
+      ],
+      [
+        "برد ترمینال، نسخه غیر BLT",
+        "BCL4566E"
+      ],
+      [
+        "رابط برد اصلی",
+        "PCI Express 2.0 (Gen2)"
+      ]
+    ]
   },
   "SRC-RAY-C3000S": {
-    "url":"https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-    "title":"Raycus HP Series guide, PDF page 10; RFL-C3000S-HP column",
-    "facts":[["توان خروجی نسخه دفترچه","3100 ±100 W"],["نوع خروجی","CW / Modulated"],["بازه تنظیم توان","10–100%"],["طول موج","1080 ±5 nm"],["خنک‌کاری","آبی"],["وزن نسخه دفترچه","کمتر از 70 kg"],["رابط فیبر نسخه دفترچه","QBH"]]
+    "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+    "title": "Raycus HP Series guide, PDF page 10; RFL-C3000S-HP column",
+    "facts": [
+      [
+        "توان خروجی نسخه دفترچه",
+        "3100 ±100 W"
+      ],
+      [
+        "نوع خروجی",
+        "CW / Modulated"
+      ],
+      [
+        "بازه تنظیم توان",
+        "10–100%"
+      ],
+      [
+        "طول موج",
+        "1080 ±5 nm"
+      ],
+      [
+        "خنک‌کاری",
+        "آبی"
+      ],
+      [
+        "وزن نسخه دفترچه",
+        "کمتر از 70 kg"
+      ],
+      [
+        "رابط فیبر نسخه دفترچه",
+        "QBH"
+      ]
+    ]
   },
   "SRC-RAY-C4000S": {
-    "url":"https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-    "title":"Raycus HP Series guide, PDF page 10; RFL-C4000S-HP column",
-    "facts":[["توان خروجی نسخه دفترچه","4100 ±100 W"],["نوع خروجی","CW / Modulated"],["بازه تنظیم توان","10–100%"],["طول موج","1080 ±5 nm"],["خنک‌کاری","آبی"],["وزن نسخه دفترچه","کمتر از 75 kg"],["رابط فیبر نسخه دفترچه","QBH"]]
+    "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+    "title": "Raycus HP Series guide, PDF page 10; RFL-C4000S-HP column",
+    "facts": [
+      [
+        "توان خروجی نسخه دفترچه",
+        "4100 ±100 W"
+      ],
+      [
+        "نوع خروجی",
+        "CW / Modulated"
+      ],
+      [
+        "بازه تنظیم توان",
+        "10–100%"
+      ],
+      [
+        "طول موج",
+        "1080 ±5 nm"
+      ],
+      [
+        "خنک‌کاری",
+        "آبی"
+      ],
+      [
+        "وزن نسخه دفترچه",
+        "کمتر از 75 kg"
+      ],
+      [
+        "رابط فیبر نسخه دفترچه",
+        "QBH"
+      ]
+    ]
   },
   "SRC-RAY-C6000S": {
-    "url":"https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
-    "title":"Raycus HP Series guide, PDF page 10; RFL-C6000S-HP column",
-    "facts":[["توان خروجی نسخه دفترچه","6100 ±100 W"],["نوع خروجی","CW / Modulated"],["بازه تنظیم توان","10–100%"],["طول موج","1080 ±5 nm"],["خنک‌کاری","آبی"],["وزن نسخه دفترچه","کمتر از 85 kg"],["رابط فیبر نسخه دفترچه","QBH"]]
+    "url": "https://en.raycuslaser.com/upload/20230829/1h904sf6b1esb5q3o.pdf",
+    "title": "Raycus HP Series guide, PDF page 10; RFL-C6000S-HP column",
+    "facts": [
+      [
+        "توان خروجی نسخه دفترچه",
+        "6100 ±100 W"
+      ],
+      [
+        "نوع خروجی",
+        "CW / Modulated"
+      ],
+      [
+        "بازه تنظیم توان",
+        "10–100%"
+      ],
+      [
+        "طول موج",
+        "1080 ±5 nm"
+      ],
+      [
+        "خنک‌کاری",
+        "آبی"
+      ],
+      [
+        "وزن نسخه دفترچه",
+        "کمتر از 85 kg"
+      ],
+      [
+        "رابط فیبر نسخه دفترچه",
+        "QBH"
+      ]
+    ]
   },
   "CP-SMC-ITV1050": {
-    "url":"https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
-    "title":"SMC ITV Series catalog, base ITV105x family selection table",
-    "facts":[["کارکرد","تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی"],["بازه تنظیم فشار در خانواده ITV105x","0.005–0.9 MPa"],["اندازه اتصال‌های معرفی‌شده سری","1/8 یا 1/4 اینچ، بسته به پسوند"],["نوع فرمان","گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل"]]
+    "url": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
+    "title": "SMC ITV Series catalog, base ITV105x family selection table",
+    "facts": [
+      [
+        "کارکرد",
+        "تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی"
+      ],
+      [
+        "بازه تنظیم فشار در خانواده ITV105x",
+        "0.005–0.9 MPa"
+      ],
+      [
+        "اندازه اتصال‌های معرفی‌شده سری",
+        "1/8 یا 1/4 اینچ، بسته به پسوند"
+      ],
+      [
+        "نوع فرمان",
+        "گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل"
+      ]
+    ]
   },
   "CP-SMC-ITV2050": {
-    "url":"https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
-    "title":"SMC ITV Series catalog, base ITV205x family selection table",
-    "facts":[["کارکرد","تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی"],["بازه تنظیم فشار در خانواده ITV205x","0.005–0.9 MPa"],["اندازه اتصال‌های معرفی‌شده سری","1/4 یا 3/8 اینچ، بسته به پسوند"],["نوع فرمان","گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل"]]
+    "url": "https://www.smcworld.com/catalog/en/frl/ITV-D-E/7-8-4-p1169-1228-ITV_en/data/7-8-4-p1169-1228-ITV_en.pdf",
+    "title": "SMC ITV Series catalog, base ITV205x family selection table",
+    "facts": [
+      [
+        "کارکرد",
+        "تنظیم پیوسته فشار هوا متناسب با فرمان الکتریکی"
+      ],
+      [
+        "بازه تنظیم فشار در خانواده ITV205x",
+        "0.005–0.9 MPa"
+      ],
+      [
+        "اندازه اتصال‌های معرفی‌شده سری",
+        "1/4 یا 3/8 اینچ، بسته به پسوند"
+      ],
+      [
+        "نوع فرمان",
+        "گزینه‌های جریان یا ولتاژ و ارتباطی، بسته به پسوند کامل"
+      ]
+    ]
+  },
+  "CH003": {
+    "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf",
+    "title": "BM111 manual V1.0, PDF pages 5–6; applicable optical/mechanical options",
+    "removeLabels": [
+      "فوکوس",
+      "رده توان سری",
+      "کورس فوکوس",
+      "بازه فوکوس",
+      "دقت تنظیم",
+      "گروه لنز",
+      "رابط‌های سری",
+      "محافظ لنز"
+    ],
+    "facts": [
+      [
+        "فوکوس",
+        "خودکار؛ حرکت خطی مجموعه فوکوس"
+      ],
+      [
+        "بازه فوکوس در دفترچه V1.0",
+        "+10 تا −12 mm"
+      ],
+      [
+        "دقت تنظیم در دفترچه V1.0",
+        "0.05 mm"
+      ],
+      [
+        "گروه لنز در دفترچه V1.0",
+        "D30 مرکب"
+      ],
+      [
+        "رابط‌های معرفی‌شده دفترچه",
+        "QBH / QD، بسته به پیکربندی"
+      ],
+      [
+        "محافظ لنز",
+        "کشویی"
+      ],
+      [
+        "حداکثر سرعت محرک در دفترچه V1.0",
+        "10 m/min"
+      ],
+      [
+        "حداکثر شتاب محرک در دفترچه V1.0",
+        "10 m/s²"
+      ]
+    ]
   }
 }
 

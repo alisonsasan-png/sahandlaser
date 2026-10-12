@@ -1,0 +1,1456 @@
+{
+  "date": "2026-10-12",
+  "products": 106,
+  "studioImages": 21,
+  "recordsWithSourcedSpecifications": 10,
+  "suppliedSeriesDocuments": 4,
+  "rejectedOrAmbiguousImages": 3,
+  "articles": 8,
+  "releaseGate": {
+    "passed": false,
+    "reason": "Per-model photo processing, assembly identity and full specification verification remain open"
+  },
+  "productsWorkQueue": [
+    {
+      "code": "CC001",
+      "name": "چیلر فایبر S&A CWFL-1500",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CC002",
+      "name": "چیلر فایبر S&A CWFL-2000",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CC003",
+      "name": "چیلر فایبر S&A CWFL-3000",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CC004",
+      "name": "چیلر فایبر Hanli HL-1500",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CC005",
+      "name": "چیلر فایبر Hanli HL-2000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CC006",
+      "name": "چیلر فایبر Hanli HL-3000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "name": "چیلر فایبر Hanli HL-12000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "name": "چیلر فایبر Hanli HL-6000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH-S&A-12000",
+      "name": "چیلر فایبر S&A CWFL-12000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH-S&A-20000",
+      "name": "چیلر فایبر S&A CWFL-20000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH-S&A-6000",
+      "name": "چیلر فایبر S&A CWFL-6000",
+      "category": "parts",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CH001",
+      "name": "هد برش ریتولز مدل BT240S",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CH002",
+      "name": "هد برش RayTools BM109",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CH003",
+      "name": "هد برش فایبر RayTools BM111",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 8,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": {
+        "relativePath": "عکس های معرفی محصول فشرده شده/Cutting Head/BM---111.jpg",
+        "sha256": "384d48cf3e01753c91946d0e27b8e8ec5bf9cefdfcc9b0bec8f5c2c5c06d2327",
+        "match": "model named in supplied artwork",
+        "processing": "do not publish as exact-model image",
+        "identityReview": "insufficient_model_identity",
+        "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."
+      },
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CH004",
+      "name": "هد برش ریتولز مدل BM114",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CH005",
+      "name": "هد برش ریتولز مدل BM115",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CL-001",
+      "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
+      "category": "cleaning",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CL-002",
+      "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
+      "category": "cleaning",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CL-003",
+      "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
+      "category": "cleaning",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CL-004",
+      "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
+      "category": "cleaning",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "name": "دستگاه تمیزکاری لیزری فایبر",
+      "category": "cleaning",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CN001",
+      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN002",
+      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN003",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN004",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN006",
+      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN007",
+      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN008",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN009",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN010",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN011",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN012",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CN013",
+      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-CERAMIC",
+      "name": "سرامیک هد برش لیزر فایبر",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "name": "محافظ لنز سری BLT",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "name": "محافظ لنز RayTools",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "name": "محافظ لنز WSX",
+      "category": "consumables",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "name": "هد برش فایبر RayTools BM110",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 8,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "name": "هد برش RayTools BM114-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "name": "هد برش RayTools BM115",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "name": "هد برش RayTools BM115-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "name": "هد برش RayTools BM116-E",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "name": "هد برش RayTools BT220",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "name": "هد برش RayTools BT240",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "category": "parts",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": []
+    },
+    {
+      "code": "CP-TRA",
+      "name": "هد برش TRA",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "name": "سیستم کنترل برش FSCUT2000C",
+      "category": "head",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "name": "سیستم کنترل برش FSCUT2000E",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 4,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "name": "سیستم کنترل برش FSCUT4000E",
+      "category": "head",
+      "studioImage": true,
+      "sourcedSpecifications": 6,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS001",
+      "name": "سورس لیزر 30 وات پالسی فایبر Q-Switched",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS002",
+      "name": "سورس لیزر 50 وات پالسی فایبر Q-Switched",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS003",
+      "name": "سورس لیزر Raycus RFL-C1000",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS004",
+      "name": "سورس فایبر Raycus RFL-C1500",
+      "category": "source",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS005",
+      "name": "سورس لیزر Raycus RFL-C2000",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS006",
+      "name": "سورس لیزر فایبر 3000 وات ریکاس",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS007",
+      "name": "سورس لیزر فایبر 4000 وات ریکاس",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "FS008",
+      "name": "سورس لیزر فایبر 6000 وات ریکاس",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "name": "دستگاه حکاکی فایبر سهند لیزر",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-001",
+      "name": "دستگاه فایبر مارکینگ 30 وات",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-002",
+      "name": "دستگاه فایبر مارکینگ 50 وات",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-003",
+      "name": "دستگاه فایبر مارکینگ 100 وات",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-004",
+      "name": "دستگاه حکاکی میزدار UV",
+      "category": "marking",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-005",
+      "name": "دستگاه حکاکی پرتابل فایبر",
+      "category": "marking",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-006",
+      "name": "دستگاه حکاکی لیزر Inline",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-007",
+      "name": "دستگاه حکاکی رومیزی فایبر",
+      "category": "marking",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-008",
+      "name": "دستگاه حکاکی لیزر MOPA",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "ML-009",
+      "name": "دستگاه حکاکی میزدار فایبر",
+      "category": "marking",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "name": "سورس فایبر Raycus RFL-C3000S-HP",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 7,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": {
+        "relativePath": "عکس های معرفی محصول فشرده شده/Source/C3000S.jpg",
+        "sha256": "a752734d1c3b27aeab28f72b275c14b2391b796d2caec5f8ea0bf1af7fcdedbd",
+        "match": "model named in supplied artwork",
+        "processing": "do not publish as exact-model image",
+        "identityReview": "rejected_for_exact_model",
+        "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
+      },
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "name": "سورس لیزر Raycus RFL-C4000S-HP",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 7,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "name": "سورس فایبر Raycus RFL-C6000S-HP",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 7,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": {
+        "relativePath": "عکس های معرفی محصول فشرده شده/Source/C6000S.jpg",
+        "sha256": "a11bad480af7ea5a2ea2f5d7779905922d36acd58f753f1e257cac519233ca58",
+        "match": "model named in supplied artwork",
+        "processing": "do not publish as exact-model image",
+        "identityReview": "rejected_for_exact_model",
+        "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
+      },
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "name": "سورس لیزر Raycus RFL-QCW150/1500",
+      "category": "source",
+      "studioImage": false,
+      "sourcedSpecifications": 14,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WELD-1500",
+      "name": "دستگاه جوش فایبر 1500 وات",
+      "category": "welding",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WELD-2000",
+      "name": "دستگاه جوش فایبر 2000 وات",
+      "category": "welding",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WELD-3000",
+      "name": "دستگاه جوش فایبر 3000 وات",
+      "category": "welding",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-001",
+      "name": "دستگاه جوش لیزر Smart Series / Mini 4-in-1",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-002",
+      "name": "دستگاه جوش لیزر Medium Series / Handheld",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-003",
+      "name": "دستگاه جوش لیزر Air-Cooled",
+      "category": "welding",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-004",
+      "name": "دستگاه جوش لیزر Air Cooling Portable",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-005",
+      "name": "دستگاه جوش لیزر QCW Laser Spot Welding",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-006",
+      "name": "دستگاه جوش لیزر HP Series",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-007",
+      "name": "دستگاه جوش لیزر Modern Series",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-008",
+      "name": "دستگاه جوش لیزر Robotic Laser Welding",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-009",
+      "name": "دستگاه جوش لیزر Jewelry Laser Welding",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "WL-010",
+      "name": "دستگاه جوش لیزر Channel Letter Laser Welding",
+      "category": "welding",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-1",
+      "name": "تک میز DZ3015S",
+      "category": "cutting",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": true,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-2",
+      "name": "تک میز DZ3015H",
+      "category": "cutting",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": true,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-3",
+      "name": "تک میز LD3015",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-4",
+      "name": "دو میز DZ3015",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-5",
+      "name": "دو میز LD3015",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-6",
+      "name": "دو میز کابین‌دار DZ3015",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-7",
+      "name": "تک میز 3015 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-8",
+      "name": "دو میز 3015 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-3015-9",
+      "name": "دو میز کابین‌دار 3015 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-1",
+      "name": "تک میز DZ6020S",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": true,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-2",
+      "name": "تک میز DZ6020H",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": true,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-3",
+      "name": "تک میز LD6020",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-4",
+      "name": "دو میز DZ6020",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-5",
+      "name": "دو میز LD6020",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-6",
+      "name": "دو میز کابین‌دار 6020",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-7",
+      "name": "تک میز 6020 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-8",
+      "name": "دو میز 6020 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-6020-9",
+      "name": "دو میز کابین‌دار 6020 + لوله‌بر",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-custom",
+      "name": "برش سایز سفارشی",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-tube",
+      "name": "برش لوله‌بر",
+      "category": "cutting",
+      "studioImage": true,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    },
+    {
+      "code": "CUT-robot",
+      "name": "برش ربات",
+      "category": "cutting",
+      "studioImage": false,
+      "sourcedSpecifications": 0,
+      "suppliedSeriesDocument": false,
+      "mediaIdentityIssue": null,
+      "remaining": [
+        "prepare product-specific studio image",
+        "reconcile exact-model specifications",
+        "review technical drawing/internal-assembly applicability"
+      ]
+    }
+  ]
+}
+

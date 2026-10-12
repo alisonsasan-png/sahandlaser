@@ -1,0 +1,33 @@
+{
+  "WELD-2000": {
+    "directory": "WELD-2000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Welding Machine/C2000-Welding.jpg",
+    "identityScope": "supplied product artwork; generated label is not identification evidence",
+    "visualReview": true
+  },
+  "WELD-3000": {
+    "directory": "WELD-3000",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Welding Machine/C3000-Welding.jpg",
+    "identityScope": "supplied product artwork; generated label is not identification evidence",
+    "visualReview": true
+  },
+  "CTRL-FSCUT4000E": {
+    "directory": "CTRL-FSCUT4000E",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Laser System/4000-E.jpg",
+    "identityScope": "supplied product artwork; generated label is not identification evidence",
+    "visualReview": true
+  },
+  "CP-SMC-ITV2050": {
+    "directory": "CP-SMC-ITV2050",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Electro-Pneumatic/ITV---2050.jpg",
+    "identityScope": "supplied product artwork; generated label is not identification evidence",
+    "visualReview": true
+  },
+  "CP-CERAMIC": {
+    "directory": "CP-CERAMIC",
+    "reference": "C:/Users/Sharif/Downloads/عکس های معرفی محصول فشرده شده/Ceramic Ring/Ceramic-Ring.jpg",
+    "identityScope": "supplied product artwork; generated label is not identification evidence",
+    "visualReview": true
+  }
+}
+

@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "date": "2026-10-11",
+  "version": 3,
+  "date": "2026-10-12",
   "products": [
     {
       "code": "CC001",
@@ -823,49 +823,57 @@
         },
         {
           "label": "فوکوس",
-          "value": "خودکار",
-          "scope": "family_reference"
+          "value": "خودکار؛ حرکت خطی مجموعه فوکوس",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         },
         {
-          "label": "رده توان سری",
-          "value": "3.3kW",
-          "scope": "family_reference"
+          "label": "بازه فوکوس در دفترچه V1.0",
+          "value": "+10 تا −12 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         },
         {
-          "label": "کورس فوکوس",
-          "value": "حدود 22mm",
-          "scope": "family_reference"
+          "label": "دقت تنظیم در دفترچه V1.0",
+          "value": "0.05 mm",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         },
         {
-          "label": "بازه فوکوس",
-          "value": "+10 تا -12mm",
-          "scope": "family_reference"
+          "label": "گروه لنز در دفترچه V1.0",
+          "value": "D30 مرکب",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         },
         {
-          "label": "دقت تنظیم",
-          "value": "0.05mm",
-          "scope": "family_reference"
-        },
-        {
-          "label": "گروه لنز",
-          "value": "D30",
-          "scope": "family_reference"
-        },
-        {
-          "label": "رابط‌های سری",
-          "value": "QBH / QD",
-          "scope": "family_reference"
+          "label": "رابط‌های معرفی‌شده دفترچه",
+          "value": "QBH / QD، بسته به پیکربندی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         },
         {
           "label": "محافظ لنز",
-          "value": "طراحی کشویی",
-          "scope": "family_reference"
+          "value": "کشویی",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
+        },
+        {
+          "label": "حداکثر سرعت محرک در دفترچه V1.0",
+          "value": "10 m/min",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
+        },
+        {
+          "label": "حداکثر شتاب محرک در دفترچه V1.0",
+          "value": "10 m/s²",
+          "scope": "manufacturer_manual",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf"
         }
       ],
       "images": [],
       "works": [],
       "technical": null,
-      "power": "3.3kW",
+      "power": "",
       "comparable": false,
       "comparisonFields": [],
       "applications": [
@@ -876,15 +884,22 @@
         "رابط فیبر، کنترلر و نوع اتوفوکوس چیست؟",
         "قطعه کامل لازم است یا مجموعه مصرفی؟"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM111_3.3KW%20Auto-Focusing%20Laser%20Cutting%20Head_V1.0.pdf",
+          "title": "BM111 manual V1.0, PDF pages 5–6; applicable optical/mechanical options",
+          "scope": "manufacturer_manual_variant"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "sourceCandidate": {
           "relativePath": "عکس های معرفی محصول فشرده شده/Cutting Head/BM---111.jpg",
           "sha256": "384d48cf3e01753c91946d0e27b8e8ec5bf9cefdfcc9b0bec8f5c2c5c06d2327",
           "match": "model named in supplied artwork",
-          "processing": "requires white-background preparation",
-          "identityReview": "not_finished"
+          "processing": "do not publish as exact-model image",
+          "identityReview": "insufficient_model_identity",
+          "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media."
         }
       },
       "availableLegacyMedia": [],
@@ -897,6 +912,7 @@
         "source": "Sahand_Laser_Database_v1_6.xlsx",
         "date": "2026-10-04"
       },
+      "variantNote": "نسخه دفترچه V1.0 و نسخه معرفی‌شده فعلی سازنده یکسان فرض نمی‌شوند.",
       "contentStatus": "enriched_draft",
       "ready": false
     },
@@ -1615,6 +1631,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-CERAMIC/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork; generated label is not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -1927,6 +1949,12 @@
           "type": "AI-assisted reconstruction from supplied photo/CAD",
           "identityScope": "supplied series photograph or CAD",
           "visualReview": true
+        },
+        "opticalReconstruction": {
+          "src": "assets/catalog-v2/CP-RAY-BM110/xray-web-v3.jpg",
+          "type": "AI-assisted optical-module visualization",
+          "scope": "Documented optical-module order; hidden mechanics and exact manufacturing geometry are not represented",
+          "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf"
         }
       },
       "availableLegacyMedia": [],
@@ -2269,7 +2297,7 @@
         },
         {
           "label": "تغذیه خانواده ITV1000",
-          "value": "24V DC آ±10%",
+          "value": "24V DC ±10%",
           "scope": "family_reference"
         },
         {
@@ -2383,7 +2411,7 @@
         },
         {
           "label": "تغذیه خانواده ITV2000",
-          "value": "24V DC آ±10%",
+          "value": "24V DC ±10%",
           "scope": "family_reference"
         },
         {
@@ -2455,6 +2483,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CP-SMC-ITV2050/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork; generated label is not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -2798,6 +2832,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/CTRL-FSCUT4000E/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork; generated label is not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -2969,7 +3009,7 @@
         },
         {
           "label": "طول موج",
-          "value": "1080آ±5nm",
+          "value": "1080±5nm",
           "scope": "family_reference"
         },
         {
@@ -3786,8 +3826,9 @@
           "relativePath": "عکس های معرفی محصول فشرده شده/Source/C3000S.jpg",
           "sha256": "a752734d1c3b27aeab28f72b275c14b2391b796d2caec5f8ea0bf1af7fcdedbd",
           "match": "model named in supplied artwork",
-          "processing": "requires white-background preparation",
-          "identityReview": "not_finished"
+          "processing": "do not publish as exact-model image",
+          "identityReview": "rejected_for_exact_model",
+          "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo."
         }
       },
       "availableLegacyMedia": [],
@@ -3923,7 +3964,7 @@
         },
         {
           "label": "خروجی طبق راهنمای مرجع",
-          "value": "6100آ±100W",
+          "value": "6100±100W",
           "scope": "family_reference"
         },
         {
@@ -4001,8 +4042,9 @@
           "relativePath": "عکس های معرفی محصول فشرده شده/Source/C6000S.jpg",
           "sha256": "a11bad480af7ea5a2ea2f5d7779905922d36acd58f753f1e257cac519233ca58",
           "match": "model named in supplied artwork",
-          "processing": "requires white-background preparation",
-          "identityReview": "not_finished"
+          "processing": "do not publish as exact-model image",
+          "identityReview": "rejected_for_exact_model",
+          "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match."
         }
       },
       "availableLegacyMedia": [],
@@ -4291,6 +4333,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/WELD-2000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork; generated label is not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
@@ -4361,6 +4409,12 @@
           "match": "model named in supplied artwork",
           "processing": "requires white-background preparation",
           "identityReview": "not_finished"
+        },
+        "studio": {
+          "src": "assets/catalog-v2/WELD-3000/studio-web.jpg",
+          "type": "AI-assisted reconstruction from supplied photo",
+          "identityScope": "supplied product artwork; generated label is not identification evidence",
+          "visualReview": true
         }
       },
       "availableLegacyMedia": [],
