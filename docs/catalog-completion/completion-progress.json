@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 106,
-  "recordsWithSourcedSpecifications": 88,
-  "recordsWithManufacturerReferenceSpecifications": 64,
+  "recordsWithSourcedSpecifications": 91,
+  "recordsWithManufacturerReferenceSpecifications": 67,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -413,12 +413,10 @@
       "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM114-E",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BM115",
@@ -435,24 +433,20 @@
       "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM115-E",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BM116E",
       "name": "ظ‡ط¯ ط¨ط±ط´ RayTools BM116-E",
       "category": "head",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CP-RAY-BT220",
