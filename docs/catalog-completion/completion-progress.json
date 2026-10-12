@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
   "products": 106,
-  "studioImages": 69,
+  "studioImages": 70,
   "recordsWithSourcedSpecifications": 64,
   "recordsWithManufacturerReferenceSpecifications": 40,
   "recordsWithUserSeriesSpecifications": 8,
@@ -674,12 +674,11 @@
       "code": "FS005",
       "name": "ط³ظˆط±ط³ ظ„غŒط²ط± Raycus RFL-C2000",
       "category": "source",
-      "studioImage": false,
+      "studioImage": true,
       "sourcedSpecifications": 0,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
         "reconcile exact-model specifications",
         "review technical drawing/internal-assembly applicability"
       ]
