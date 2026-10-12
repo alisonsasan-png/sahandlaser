@@ -8760,6 +8760,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Modern Series",
           "scope": null
+        },
+        {
+          "label": "Family process",
+          "value": "Heat conduction welding, deep penetration welding and FusionLine are described",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-the-arc-welding-cell/trulaser-weld-5000/"
+        },
+        {
+          "label": "Family configuration",
+          "value": "Laser, processing optics, protective housing and positioners in a turnkey system",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-the-arc-welding-cell/trulaser-weld-5000/"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Application/family reference only; exact Modern Series configuration of Sahand WL-007 is not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-the-arc-welding-cell/trulaser-weld-5000/"
         }
       ],
       "images": [],
@@ -8788,7 +8806,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-the-arc-welding-cell/trulaser-weld-5000/",
+          "title": "TRUMPF laser welding system family reference, accessed 2026-10-13",
+          "scope": "manufacturer_application_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
@@ -8827,6 +8851,24 @@
           "label": "ط®ط§ظ†ظˆط§ط¯ظ‡ ظ…ط­طµظˆظ„",
           "value": "Robotic Laser Welding",
           "scope": null
+        },
+        {
+          "label": "Family configuration",
+          "value": "Robotic welding cells combine robot, laser, processing optics, protective housing and positioners",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-robotic-welding-cells/"
+        },
+        {
+          "label": "Family benefit",
+          "value": "High repeatability and flexibility for changing lot sizes",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-robotic-welding-cells/"
+        },
+        {
+          "label": "Identity limitation",
+          "value": "Family reference only; robot, source, cell and positioner of Sahand WL-008 are not established",
+          "scope": "manufacturer_manual",
+          "source": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-robotic-welding-cells/"
         }
       ],
       "images": [],
@@ -8855,7 +8897,13 @@
         "ط¬ظ†ط³ ظˆ ط¶ط®ط§ظ…طھ ظ‚ط·ط¹ظ‡ ظˆ ع©غŒظپغŒطھ ط§طھطµط§ظ„ ظ…ظˆط±ط¯ظ†ط¸ط± ع†غŒط³طھطں",
         "طھظˆط§ظ†طŒ ظ‡ط¯طŒ طھط؛ط°غŒظ‡ ط³غŒظ… ظˆ طھط¬ظ‡غŒط²ط§طھ ظ‡ظ…ط±ط§ظ‡ ع©ط¯ط§ظ… ظ¾غŒع©ط±ط¨ظ†ط¯غŒ ظ…ظˆط±ط¯ظ†ط¸ط± ط§ط³طھطں"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.trumpf.com/en_GB/products/machines-systems/laser-welding-systems-and-robotic-welding-cells/",
+          "title": "TRUMPF robotic laser welding systems family reference, accessed 2026-10-13",
+          "scope": "manufacturer_application_reference_not_installed_identity"
+        }
+      ],
       "visuals": {
         "status": "not_complete",
         "studio": {
