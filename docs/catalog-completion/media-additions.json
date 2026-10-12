@@ -275,6 +275,12 @@
     "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
     "visualReview": true
   },
+  "CP-RAY-BM116E": {
+    "directory": "CP-RAY-BM116E",
+    "reference": "AI-generated white-background external BM116-family reconstruction informed by the BM-series family context",
+    "identityScope": "BM116-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+    "visualReview": true
+  },
   "FS003": {
     "directory": "FS003",
     "reference": "AI-generated white-background external Raycus C1000-family reconstruction informed by the catalog family identity",
