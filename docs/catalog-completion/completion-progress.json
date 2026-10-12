@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 106,
-  "recordsWithSourcedSpecifications": 93,
-  "recordsWithManufacturerReferenceSpecifications": 69,
+  "recordsWithSourcedSpecifications": 97,
+  "recordsWithManufacturerReferenceSpecifications": 73,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -797,24 +797,20 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Smart Series / Mini 4-in-1",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-002",
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Medium Series / Handheld",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-003",
@@ -831,12 +827,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± Air Cooling Portable",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-005",
@@ -853,12 +847,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط¬ظˆط´ ظ„غŒط²ط± HP Series",
       "category": "welding",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 3,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "WL-007",
