@@ -2,8 +2,8 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 104,
-  "recordsWithSourcedSpecifications": 86,
-  "recordsWithManufacturerReferenceSpecifications": 62,
+  "recordsWithSourcedSpecifications": 88,
+  "recordsWithManufacturerReferenceSpecifications": 64,
   "recordsWithUserSeriesSpecifications": 8,
   "recordsWithUserArtworkSpecifications": 5,
   "suppliedSeriesDocuments": 12,
@@ -682,12 +682,10 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ…غŒط²ط¯ط§ط± UV",
       "category": "marking",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 4,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "ML-005",
@@ -724,12 +722,11 @@
       "name": "ط¯ط³طھع¯ط§ظ‡ ط­ع©ط§ع©غŒ ظ„غŒط²ط± MOPA",
       "category": "marking",
       "studioImage": false,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
       "remaining": [
-        "prepare product-specific studio image",
-        "reconcile exact-model specifications"
+        "prepare product-specific studio image"
       ]
     },
     {
