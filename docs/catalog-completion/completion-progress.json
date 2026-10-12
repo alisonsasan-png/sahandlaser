@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "products": 106,
   "studioImages": 36,
-  "recordsWithSourcedSpecifications": 14,
+  "recordsWithSourcedSpecifications": 17,
   "suppliedSeriesDocuments": 4,
   "rejectedOrAmbiguousImages": 4,
   "articles": 8,
@@ -16,36 +16,30 @@
       "name": "چیلر فایبر S&A CWFL-1500",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 5,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CC002",
       "name": "چیلر فایبر S&A CWFL-2000",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 6,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CC003",
       "name": "چیلر فایبر S&A CWFL-3000",
       "category": "parts",
       "studioImage": true,
-      "sourcedSpecifications": 0,
+      "sourcedSpecifications": 2,
       "suppliedSeriesDocument": false,
       "mediaIdentityIssue": null,
-      "remaining": [
-        "reconcile exact-model specifications"
-      ]
+      "remaining": []
     },
     {
       "code": "CC004",
