@@ -691,6 +691,10 @@
         </div>
       </article>
     </div>
+    <section class="mt-14" id="extracted-articles-section">
+      <div class="max-w-3xl mb-7"><span class="text-accent font-semibold text-sm">محتوای بازیابی‌شده و آموزشی</span><h2 class="text-3xl font-extrabold text-brand dark:text-white mt-2 mb-3">مقاله‌ها و راهنماها</h2><p class="text-sm text-slate-500 leading-7">مطالب قدیمی از آرشیو سایت استخراج شده‌اند و برای بازبینی فنی علامت دارند؛ پیش‌نویس‌های آموزشی جدید نیز با منابع ثبت‌شده نمایش داده می‌شوند.</p></div>
+      <div id="extracted-articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"><p class="text-sm text-slate-500">در حال بارگذاری مطالب…</p></div>
+    </section>
     <section class="gradient-brand rounded-3xl p-8 md:p-10 text-white">
       <div class="grid md:grid-cols-2 gap-7 items-center">
         <div><h2 class="text-2xl md:text-3xl font-bold mb-3">دوره‌های سهند لیزر برای مشتریان و تیم‌های صنعتی</h2><p class="text-slate-200 leading-7">دوره‌ها می‌توانند متناسب با نوع دستگاه، سطح اپراتور و نیاز واحد فنی تنظیم شوند. آموزش اولیه دستگاه‌های خریداری‌شده نیز در چارچوب قرارداد و برنامه تحویل انجام می‌شود.</p></div>
@@ -1222,6 +1226,100 @@
   });
   const initial = new URL(location.href).searchParams.get('product');
   if (initial) setTimeout(() => window.openCuttingProduct(initial,{fromHistory:true}), 0);
+})();
+</script>
+
+<style>
+#cutting-product-page .cutting-detail-close{position:sticky;top:0;z-index:2}
+#article-reader{position:fixed;inset:0;z-index:1200;overflow:auto;background:#f4f6f8;padding:clamp(14px,3vw,40px)}#article-reader[hidden]{display:none}.article-reader-card{max-width:900px;margin:auto;background:#fff;border:1px solid #dce4ec;border-radius:20px;padding:clamp(20px,4vw,44px);line-height:2.1}.article-reader-card h2{line-height:1.6}.article-reader-close{border:1px solid #d5dee8;background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer;font:inherit;color:#18324d}.catalog-category-btn[aria-pressed="true"],.catalog-subcategory-btn[aria-pressed="true"]{border-color:#bd7a3b!important;background:#fbf4ed!important}.media-fallback{min-height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#f5f7f9,#e8edf2);color:#708092;text-align:center;padding:18px}
+</style>
+<section id="article-reader" hidden aria-live="polite"></section>
+<script>
+(() => {
+  'use strict';
+  const source = window.PREVIEW29_PRODUCTS || [];
+  const sourceByCode = new Map(source.map(item => [item.code, item]));
+  const cutting = window.mainCuttingItems || [];
+  const otherCutting = source.filter(item => item.category === 'cutting' && !cutting.some(row => row.code === item.code)).map(item => ({...item,group:'other',size:'سایر'}));
+  const products = [...cutting, ...otherCutting, ...source.filter(item => item.category !== 'cutting')];
+  window.mainCuttingItems = products;
+  const categoryLabels = {cutting:'دستگاه‌های برش لیزر',welding:'دستگاه‌های جوش لیزر',marking:'دستگاه‌های حکاکی و مارکینگ',cleaning:'دستگاه‌های تمیزکاری',source:'سورس لیزر',head:'هد برش',parts:'قطعات دستگاه',consumables:'قطعات مصرفی'};
+  const categoryIcons = {cutting:'▤',welding:'⚡',marking:'✳',cleaning:'⌁',source:'◈',head:'⌖',parts:'⚙',consumables:'◇'};
+  const cutLabels = {single:'برش تک میز',double:'برش دو میز',tube:'برش ورق و لوله',other:'سایر دستگاه‌های برش'};
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const imageUrl = product => product.image ? new URL(`../${product.image}`, location.href).href : '';
+  let activeCategory = 'all', activeCut = 'all';
+  window.renderHomeProducts = () => {
+    const root = document.getElementById('home-products-grid'); if (!root) return;
+    const categories = ['cutting','welding','marking','cleaning','source','head','parts','consumables'];
+    root.innerHTML = categories.map(category => {
+      const entries = products.filter(item => item.category === category), featured = entries.find(item => item.image);
+      return `<button type="button" onclick="navigateTo('products');setTimeout(()=>filterCatalog('${category}'),80)" class="card-hover text-right bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800"><div class="h-40 bg-white flex items-center justify-center">${featured?`<img src="${esc(imageUrl(featured))}" alt="${esc(categoryLabels[category])}" class="w-full h-full object-contain p-3" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><span hidden class="media-fallback">${esc(categoryLabels[category])}</span>`:'<span class="media-fallback">تصویر در دسترس نیست</span>'}</div><div class="p-4"><span class="text-accent text-2xl">${categoryIcons[category]}</span><h3 class="font-bold text-brand dark:text-white mt-1">${categoryLabels[category]}</h3><span class="text-xs text-slate-500">${entries.length} محصول · مشاهدهٔ فهرست ←</span></div></button>`;
+    }).join('');
+  };
+  window.renderCatalogFilter = () => {
+    const root = document.getElementById('catalog-filter'); if (!root) return;
+    const categories = ['all','cutting','welding','marking','cleaning','source','head','parts','consumables'];
+    root.innerHTML = `<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">${categories.map(category => {
+      const count = category === 'all' ? products.length : products.filter(item => item.category === category).length;
+      const title = category === 'all' ? 'همهٔ محصولات' : categoryLabels[category];
+      return `<button type="button" class="catalog-category-btn card-hover text-right rounded-xl p-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" aria-pressed="${activeCategory===category}" onclick="filterCatalog('${category}')"><span class="text-accent text-xl ml-1">${category==='all'?'⌕':categoryIcons[category]}</span><strong class="text-sm text-brand dark:text-white">${title}</strong><span class="block text-xs text-slate-500 mt-1">${count} محصول</span></button>`;
+    }).join('')}</div>${activeCategory==='cutting'?`<div class="flex flex-wrap gap-2 mt-4">${Object.entries(cutLabels).map(([key,title])=>`<button type="button" class="catalog-subcategory-btn rounded-full border border-slate-200 px-4 py-2 text-sm" aria-pressed="${activeCut===key}" onclick="filterCatalog('cutting','${key}')">${title} <small>(${cutting.filter(item=>key==='all'?true:item.group===key).length})</small></button>`).join('')}<button type="button" class="catalog-subcategory-btn rounded-full border border-slate-200 px-4 py-2 text-sm" aria-pressed="${activeCut==='all'}" onclick="filterCatalog('cutting','all')">همهٔ دستگاه‌های برش</button></div>`:''}`;
+  };
+  window.filterCatalog = (category='all', subgroup='all') => {
+    activeCategory=category; activeCut=category==='cutting'?subgroup:'all';
+    window.renderCatalogFilter(); window.renderAllProducts();
+  };
+  window.renderAllProducts = () => {
+    const root=document.getElementById('all-products-grid'); if(!root)return;
+    const query=(document.getElementById('catalog-search')?.value||'').trim().toLocaleLowerCase();
+    const visible=products.filter(item=>{
+      const categoryMatch=activeCategory==='all'||item.category===activeCategory;
+      const subgroupMatch=activeCategory!=='cutting'||activeCut==='all'||item.group===activeCut;
+      return categoryMatch&&subgroupMatch&&`${item.name} ${item.code} ${item.search||''} ${item.subgroup||''}`.toLocaleLowerCase().includes(query);
+    });
+    root.innerHTML=visible.map(item=>{
+      const image=imageUrl(item), specs=(item.specs||[]).slice(0,2);
+      const imageNotice=item.approx?'تصویر مرجع نزدیک از خانواده؛ اختصاصی این مدل نیست.':`${item.imageType||item.imageLabel||'تصویر ثبت‌شده'} · وضعیت تطبیق: ${item.imageDecision||'در انتظار بررسی'}`;
+      return `<article class="product-mini-card bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 card-hover"><button type="button" onclick="openCuttingProduct('${esc(item.code)}')" class="visual w-full" aria-label="مشاهدهٔ ${esc(item.name)}"><img src="${esc(image)}" alt="${esc(item.name)}" loading="lazy" class="object-contain" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><span hidden class="media-fallback"><span><strong>تصویر در دسترس نیست</strong><br>${esc(item.name)}</span></span></button><div class="p-5 flex-1 flex flex-col"><div class="flex items-center justify-between gap-2 mb-2"><span class="product-code">${esc(item.code)}</span><span class="text-[11px] text-slate-500">${esc(item.categoryLabel||categoryLabels[item.category]||'محصول')}</span></div><button type="button" onclick="openCuttingProduct('${esc(item.code)}')" class="text-right font-bold text-brand dark:text-white leading-7 mb-2">${esc(item.name)}</button><p class="text-xs text-slate-500 leading-6 mb-3">${esc((item.description||'اطلاعات تکمیلی در این رکورد ثبت نشده است.').slice(0,190))}${(item.description||'').length>190?'…':''}</p>${specs.length?`<ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1 mb-4">${specs.map(spec=>`<li><strong>${esc(spec.label)}:</strong> ${esc(spec.value)}</li>`).join('')}</ul>`:''}<p class="text-[11px] text-slate-400 mb-4">${esc(imageNotice)}</p><button type="button" onclick="openCuttingProduct('${esc(item.code)}')" class="mt-auto inline-flex items-center gap-2 text-accent font-bold text-sm">مشاهدهٔ صفحه و اطلاعات محصول <i class="fa-solid fa-arrow-left"></i></button></div></article>`;
+    }).join('')||'<p class="catalog-empty">محصولی با این جست‌وجو پیدا نشد.</p>';
+    const count=document.getElementById('catalog-count'); if(count)count.textContent=`${visible.length} محصول`;
+  };
+  document.getElementById('catalog-search')?.addEventListener('input',()=>window.renderAllProducts());
+  window.openCategory = category => { window.navigateTo('products'); setTimeout(()=>{window.filterCatalog(category);document.getElementById('full-catalog-section')?.scrollIntoView({behavior:'smooth',block:'start'});},80); };
+  const detail=document.getElementById('cutting-product-page'),recordMap=new Map(source.map(item=>[item.code,item]));
+  window.openCuttingProduct=(code,options={})=>{
+    const item=products.find(product=>product.code===code); if(!item||!detail)return;
+    const title=item.name, specs=item.approx?[]:(item.specs||[]), image=imageUrl(item);
+    const peers=products.filter(product=>item.category==='cutting'?(product.category==='cutting'&&product.group===item.group):product.category===item.category).filter(product=>product.code!==code).slice(0,18);
+    const imagesLabel=item.approx?'تصویر مرجعِ نزدیک؛ نه عکس اختصاصی این مدل':`${item.imageType||item.imageLabel||'تصویر ثبت‌شده'} · ${item.imageDecision||'در انتظار بررسی'}`;
+    detail.innerHTML=`<div class="cutting-detail-wrap"><div class="cutting-detail-top"><button type="button" onclick="closeCuttingProduct()">← بازگشت به فهرست محصولات</button><span>${esc(categoryLabels[item.category]||item.categoryLabel||'محصول سهند لیزر')}</span></div><article class="cutting-detail-card"><div class="cutting-detail-head"><div class="cutting-detail-image">${image?`<img src="${esc(image)}" alt="${esc(title)}" onerror="this.style.display='none';this.nextElementSibling.hidden=false"><span hidden class="media-fallback">تصویر این محصول در دسترس نیست</span>`:'<span class="media-fallback">تصویر این محصول ثبت نشده است</span>'}</div><div class="cutting-detail-copy"><span class="cutting-detail-kicker">${esc(categoryLabels[item.category]||item.categoryLabel||'محصول')} · کد ${esc(item.code)}</span><h1>${esc(title)}</h1><p>${esc(item.description||'توضیحات این محصول در داده‌های موجود ثبت نشده است.')}</p><div class="cutting-detail-note"><strong>وضعیت تصویر:</strong> ${esc(imagesLabel)}${item.approx?' · مشخصات مدل مرجع به این محصول تعمیم داده نشده است.':''}</div><div class="cutting-detail-actions"><button type="button" class="primary" onclick="openInquiry('${esc(item.code)}','${esc(title)}')">استعلام دربارهٔ این محصول</button><button type="button" onclick="closeCuttingProduct()">بازگشت به فهرست</button></div></div></div><section class="cutting-detail-section"><h2>مشخصات ثبت‌شده</h2>${specs.length?`<table class="cutting-specs"><tbody>${specs.map(spec=>`<tr><th>${esc(spec.label)}</th><td>${esc(spec.value)}${spec.scope?` <small>(${esc(spec.scope)})</small>`:''}</td></tr>`).join('')}</tbody></table>`:item.approx?'<p>برای این مدل خاص، مشخصات فنی مستقل در دسترس نیست؛ مشخصات مدل مرجع به آن نسبت داده نشده است.</p>':'<p>مشخصات فنی این رکورد هنوز تکمیل نشده است.</p>'}</section><section class="cutting-detail-section"><h2>مدل‌های مرتبط</h2><div class="cutting-peers">${peers.map(peer=>`<button type="button" class="cutting-peer" onclick="openCuttingProduct('${esc(peer.code)}')">${esc(peer.name)}</button>`).join('')||'<span>مدل مرتبط دیگری ثبت نشده است.</span>'}</div></section><section class="cutting-detail-section"><h2>منابع اطلاعات محصول</h2>${item.approx?'<p class="cutting-source">این محصول از ردیف درخواستی دسته‌بندی استفاده می‌کند؛ مرجع تصویری نزدیک است و برای مشخصات فنیِ اختصاصی سندی در دست نیست.</p>':(item.sources||[]).length?`<ul class="cutting-source">${item.sources.map(ref=>`<li>${ref.url?`<a href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.title||ref.url)}</a>`:esc(ref.title||'منبع داخلی')} ${ref.scope?`— ${esc(ref.scope)}`:''}</li>`).join('')}</ul>`:'<p class="cutting-source">منبع مشخصی برای این رکورد درج نشده است.</p>'}</section></article></div>`;
+    detail.hidden=false;document.body.style.overflow='hidden';const url=new URL(location.href);url.searchParams.set('product',code);if(!options.fromHistory)history.pushState({product:code},'',url);detail.scrollTop=0;
+  };
+  window.renderCatalogFilter();window.renderAllProducts();window.renderHomeProducts();
+
+  const articleGrid=document.getElementById('extracted-articles-grid'),reader=document.getElementById('article-reader');
+  const toText=html=>{const doc=new DOMParser().parseFromString(String(html||''),'text/html');doc.querySelectorAll('script,style,iframe').forEach(node=>node.remove());return (doc.body.textContent||'').replace(/\s+/g,' ').trim();};
+  let articles=[];
+  window.openExtractedArticle=index=>{
+    const item=articles[index];if(!item||!reader)return;
+    reader.innerHTML=`<div class="cutting-detail-wrap"><div class="cutting-detail-top"><button class="article-reader-close" type="button" onclick="closeExtractedArticle()">← بازگشت به مقاله‌ها</button><span>${esc(item.kind)}</span></div><article class="article-reader-card"><span class="cutting-detail-kicker">${esc(item.date||'محتوای آموزشی')}</span><h2 class="text-3xl font-extrabold text-brand">${esc(item.title)}</h2><p class="text-sm text-slate-500">${esc(item.summary||'')}</p><div class="mt-7 text-slate-700 whitespace-pre-wrap">${esc(item.body)}</div>${item.sources?.length?`<section class="cutting-detail-section"><h3 class="font-bold">منابع</h3><ul>${item.sources.map(ref=>`<li>${ref.url?`<a class="text-accent underline" href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.title||ref.url)}</a>`:esc(ref.title||'منبع')}</li>`).join('')}</ul></section>`:''}${item.kind.includes('آرشیو')?'<p class="cutting-detail-note mt-6">این مطلب از سایت قدیمی استخراج شده است؛ تاریخ و متن اصلی حفظ شده و پیش از انتشار نهایی نیازمند بازبینی فنی است.</p>':''}</article></div>`;
+    reader.hidden=false;document.body.style.overflow='hidden';history.pushState({article:index},'',`#article-${index}`);
+  };
+  window.closeExtractedArticle=()=>{reader.hidden=true;document.body.style.overflow='';if(location.hash.startsWith('#article-'))history.back();};
+  const loadArticles=async()=>{
+    if(!articleGrid)return;
+    try{
+      const oldResponse=await fetch('../docs/old-site-extraction-2026-10-10.json');
+      if(!oldResponse.ok)throw new Error('old article source unavailable');
+      const oldData=await oldResponse.json();
+      const old=(oldData.posts||[]).map(post=>({title:post.title,body:toText(post.content),summary:toText(post.content).slice(0,230),date:(post.date||'').slice(0,10),kind:'از آرشیو سایت قبلی',sources:[{title:'صفحهٔ قدیمی سهند لیزر',url:post.link}]}));
+      articles=old;
+      articleGrid.innerHTML=articles.map((article,index)=>`<article class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800"><span class="text-xs text-accent font-bold">${esc(article.kind)} · ${esc(article.date)}</span><h3 class="text-lg font-bold text-brand dark:text-white mt-2 mb-2">${esc(article.title)}</h3><p class="text-sm text-slate-500 leading-7">${esc(article.summary||article.body.slice(0,200))}…</p><button type="button" class="mt-4 text-accent font-bold text-sm" onclick="openExtractedArticle(${index})">خواندن مطلب ←</button></article>`).join('');
+    }catch(error){articleGrid.innerHTML='<p class="text-sm text-amber-700 bg-amber-50 p-4 rounded-xl">آرشیو مقاله‌های استخراج‌شده در این نسخه در دسترس نیست؛ از نمایش متن ناقص یا خراب خودداری شد.</p>';}
+  };
+  loadArticles();
+  const requested=new URL(location.href).searchParams.get('product');if(requested)setTimeout(()=>window.openCuttingProduct(requested,{fromHistory:true}),0);
 })();
 </script>
 
