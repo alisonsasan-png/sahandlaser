@@ -31,6 +31,21 @@
   },true);
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
+    if(window.renderProduct){
+      const previous=window.renderProduct;
+      window.renderProduct=function(code){
+        const result=previous.apply(this,arguments);
+        const entry=map[code],viewer=document.getElementById('spin-viewer');
+        if(entry && viewer?.querySelector('.model-identity')){
+          const img=document.createElement('img');img.src=new URL(entry.src,root).href;img.alt=entry.name;
+          img.style.cssText='width:100%;height:100%;min-height:240px;max-height:560px;object-fit:contain;background:white';
+          viewer.replaceChildren(img);
+          const caption=document.getElementById('product-media-caption');
+          if(caption)caption.textContent='تصویر بازسازی‌شده از مرجع محصول';
+        }
+        return result;
+      };
+    }
     if(window.SAHAND_PRODUCTS){
       window.renderAllProducts?.('all');
       window.dispatchEvent(new HashChangeEvent('hashchange'));
