@@ -317,22 +317,6 @@
     </div>
   </section>
 
-  <!-- Home products preview -->
-  <section class="py-16 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-accent font-semibold text-sm" data-i18n="products_tag">محصولات ما</span>
-        <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="products_title">راهکارهای کامل لیزر فایبر</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="home-products-grid"></div>
-      <div class="text-center mt-10">
-        <a href="#products" onclick="navigateTo('products');return false;" class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all cursor-pointer">
-          <span data-i18n="view_all_products">مشاهده همه محصولات</span> <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Support & learning hub — inspired by the original Sahand Laser structure -->
   <section class="py-16 bg-white dark:bg-slate-950">
     <div class="max-w-7xl mx-auto px-6">
@@ -564,10 +548,6 @@
       <h1 class="text-4xl font-extrabold text-brand dark:text-white mb-3" data-i18n="products_full_title">محصولات و تجهیزات</h1>
       <p class="text-slate-500" data-i18n="products_full_desc">مجموعه کامل دستگاه‌های لیزر فایبر، تجهیزات جانبی و قطعات یدکی</p>
     </div>
-    <h2 class="text-2xl font-bold text-brand dark:text-white mb-5 flex items-center gap-3"><i class="fa-solid fa-bolt text-accent"></i><span data-i18n="group_machines">دستگاه‌های اصلی</span></h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-12" id="products-grid-1"></div>
-    <h2 class="text-2xl font-bold text-brand dark:text-white mb-5 flex items-center gap-3"><i class="fa-solid fa-microchip text-accent"></i><span data-i18n="group_components">سورس، هد و قطعات</span></h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="products-grid-2"></div>
     <section class="mt-16 pt-10 border-t border-slate-200 dark:border-slate-800" id="full-catalog-section">
       <div class="text-center max-w-3xl mx-auto mb-7">
         <span class="inline-block px-4 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3">کاتالوگ محصولات</span>
@@ -1163,6 +1143,8 @@
   const names = {single:'برش تک میز',double:'برش دو میز',tube:'برش ورق و لوله'};
   const items = rows.map(r => ({...(byCode.get(r.code) || byCode.get(r.donor)),...r})).filter(p => p.image);
   window.mainCuttingItems = items;
+  // The canonical catalogue and detail renderer are initialized below.
+  if (false) {
   let active = 'all';
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   window.renderCatalogFilter = () => {
@@ -1185,6 +1167,7 @@
   window.openCategory = group => { window.navigateTo('products'); setTimeout(() => { window.filterCatalog(group); document.getElementById('full-catalog-section')?.scrollIntoView({behavior:'smooth',block:'start'}); }, 80); };
   document.getElementById('catalog-search')?.addEventListener('input', () => window.renderAllProducts());
   window.renderCatalogFilter(); window.renderAllProducts('all');
+  }
 })();
 </script>
 
@@ -1196,6 +1179,7 @@
 </style>
 <section id="cutting-product-page" hidden aria-live="polite"></section>
 <script>
+if (false) {
 (() => {
   const details = document.getElementById('cutting-product-page');
   const records = new Map((window.PREVIEW29_PRODUCTS || []).map(item => [item.code, item]));
@@ -1227,25 +1211,25 @@
   const initial = new URL(location.href).searchParams.get('product');
   if (initial) setTimeout(() => window.openCuttingProduct(initial,{fromHistory:true}), 0);
 })();
+}
 </script>
 
 <style>
 #cutting-product-page .cutting-detail-close{position:sticky;top:0;z-index:2}
-#article-reader{position:fixed;inset:0;z-index:1200;overflow:auto;background:#f4f6f8;padding:clamp(14px,3vw,40px)}#article-reader[hidden]{display:none}.article-reader-card{max-width:900px;margin:auto;background:#fff;border:1px solid #dce4ec;border-radius:20px;padding:clamp(20px,4vw,44px);line-height:2.1}.article-reader-card h2{line-height:1.6}.article-reader-close{border:1px solid #d5dee8;background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer;font:inherit;color:#18324d}.catalog-category-btn[aria-pressed="true"],.catalog-subcategory-btn[aria-pressed="true"]{border-color:#bd7a3b!important;background:#fbf4ed!important}.media-fallback{min-height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#f5f7f9,#e8edf2);color:#708092;text-align:center;padding:18px}
+#article-reader{position:fixed;inset:0;z-index:1200;overflow:auto;background:#f4f6f8;padding:clamp(14px,3vw,40px)}#article-reader[hidden]{display:none}.article-reader-card{max-width:900px;margin:auto;background:#fff;border:1px solid #dce4ec;border-radius:20px;padding:clamp(20px,4vw,44px);line-height:2.1}.article-reader-card h2{line-height:1.6}.article-reader-close{border:1px solid #d5dee8;background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer;font:inherit;color:#18324d}.catalog-category-btn[aria-pressed="true"],.catalog-subcategory-btn[aria-pressed="true"]{border-color:#bd7a3b!important;background:#fbf4ed!important}.media-fallback{min-height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#f5f7f9,#e8edf2);color:#708092;text-align:center;padding:18px}[hidden].media-fallback{display:none!important}
+body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}.product-mini-card,.catalog-category-btn,.cutting-detail-card{min-width:0}.product-mini-card :is(h2,h3,p,span),.catalog-category-btn :is(strong,span){overflow-wrap:break-word;word-break:normal}
 </style>
 <section id="article-reader" hidden aria-live="polite"></section>
 <script>
 (() => {
   'use strict';
   const source = window.PREVIEW29_PRODUCTS || [];
-  const sourceByCode = new Map(source.map(item => [item.code, item]));
   const cutting = window.mainCuttingItems || [];
-  const otherCutting = source.filter(item => item.category === 'cutting' && !cutting.some(row => row.code === item.code)).map(item => ({...item,group:'other',size:'سایر'}));
-  const products = [...cutting, ...otherCutting, ...source.filter(item => item.category !== 'cutting')];
+  const products = [...cutting, ...source.filter(item => item.category !== 'cutting')];
   window.mainCuttingItems = products;
   const categoryLabels = {cutting:'دستگاه‌های برش لیزر',welding:'دستگاه‌های جوش لیزر',marking:'دستگاه‌های حکاکی و مارکینگ',cleaning:'دستگاه‌های تمیزکاری',source:'سورس لیزر',head:'هد برش',parts:'قطعات دستگاه',consumables:'قطعات مصرفی'};
   const categoryIcons = {cutting:'▤',welding:'⚡',marking:'✳',cleaning:'⌁',source:'◈',head:'⌖',parts:'⚙',consumables:'◇'};
-  const cutLabels = {single:'برش تک میز',double:'برش دو میز',tube:'برش ورق و لوله',other:'سایر دستگاه‌های برش'};
+  const cutLabels = {single:'برش تک میز',double:'برش دو میز',tube:'برش ورق و لوله'};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const imageUrl = product => product.image ? new URL(`../${product.image}`, location.href).href : '';
   let activeCategory = 'all', activeCut = 'all';
