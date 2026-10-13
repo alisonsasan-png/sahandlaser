@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-12T22:50:00+03:30",
+  "updatedAt": "2026-10-13T06:38:43Z",
   "timezone": "Asia/Tehran",
   "state": "مرحله اول: ممیزی و تکمیل مستند محصولات",
-  "currentTask": "تطبیق مستندات کاتالوگ انجام شده؛ پیش‌نمایش‌های مستقل ۱۲ تا ۲۸ بررسی شده‌اند",
-  "nextTask": "بازبینی نهایی تصاویر دستگاه‌های نصب‌شده و بررسی سؤال سازنده مدل‌های LD3015 و LD6020",
+  "currentTask": "تطبیق تصاویر با عکس‌های مرجع و اتصال به پیش‌نمایش‌ها؛ ۵ تصویر تطبیق‌داده‌شده، آزمایش انتشار در حال انجام",
+  "nextTask": "ادامه بررسی ۹۲ مورد و اصلاح ۹ مورد نامطمئن؛ سپس دسته‌بندی جدید",
   "reporting": "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
   "tasks": [
     {
@@ -3091,6 +3091,10 @@
     {
       "at": "2026-10-13T08:30:00.000+03:30",
       "text": "Milestone: full local regression and browser smoke verification passed after the latest catalog evidence work. Catalog currently has 106 products, 104 studio-image records, 88 sourced-specification records and 10 articles; 41 queue records remain. Previews 12â€“28 independently returned home/products routes with zero iframes; previews 25â€“28 retained rail, editorial, split and immersive layouts."
+    },
+    {
+      "at": "2026-10-13T06:38:43Z",
+      "text": "تطبیق دوباره تصاویر آغاز شد. از ۱۰۶ رکورد، ۵ تصویر ظاهر دستگاه با مرجع بررسی و کد اتصالشان ثبت شد؛ ۹ مورد برای اصلاح تطبیق کنار گذاشته شد و ۹۲ مورد هنوز بررسی نشده‌اند. آزمون نمایش آنلاین در حال انجام است؛ ادعای تکمیل همه تصاویر معتبر نیست. جزئیات: status/images.html"
     }
   ]
 }
