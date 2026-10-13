@@ -84,7 +84,8 @@
 </script>
 <link rel="stylesheet" href="../styles/site.css?v=mobile3d-20261006">
 <script src="../site-config.js?v=ct005-media-fix-20261006"></script>
-<script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}for(const p of ["./vendor/fontawesome.css","./vendor/fonts.css"]){const l=document.createElement("link");l.rel="stylesheet";l.href=assetUrl(p);l.dataset.hostAsset=p;l.onload=()=>document.documentElement.classList.add('host-fonts-ready');document.head.append(l);}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}</script>
 </head>
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">
@@ -197,7 +198,7 @@
   <section class="hero-slider">
     <!-- Slide 1: Cutting -->
     <div class="hero-slide active gradient-brand">
-      <div class="hero-background" data-hero-image="CT-001"></div>
+      <div class="hero-background" style="background-image:url('https://sahandlaser.com/wp-content/uploads/2025/08/first-baner-1_807400-1536x800.jpg');background-size:cover;background-position:center"></div>
       <div class="hero-shade"></div>
       <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
         <div class="hero-slide-content">
@@ -220,7 +221,7 @@
     </div>
     <!-- Slide 2: Welding -->
     <div class="hero-slide gradient-brand">
-      <div class="hero-background" data-shared-image="products/shared/images/2991a17e61e3.webp"></div>
+      <div class="hero-background" style="background-image:url('../assets/catalog-v2/WELD-1500/studio-web.jpg');background-size:cover;background-position:center"></div>
       <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(127,21,21,.8) 0%, rgba(0,0,0,.4) 100%);"></div>
       <div class="relative max-w-7xl mx-auto px-6 w-full text-white">
         <div class="hero-slide-content">
@@ -306,7 +307,7 @@
   <!-- Quick access — preserved from original site, expanded from Master KB -->
   <section class="py-12 bg-white dark:bg-slate-950">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div id="quick-access-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-4">
         <a href="#products" onclick="navigateTo('products');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-boxes-stacked"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_products">محصولات</div></a>
         <a href="#services" onclick="navigateTo('services');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_services">خدمات</div></a>
         <a href="#training" onclick="navigateTo('training');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-graduation-cap"></i></div><div class="font-bold text-brand dark:text-white text-sm">آموزش</div></a>
@@ -1329,5 +1330,62 @@ body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}
 })();
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Preview-local asset fixes: icons are stored at the repository root, not in /preview-32.
+  const brandIcons = {
+    eitaa: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Crect width="24" height="24" rx="6" fill="%23f58220"/%3E%3Cpath fill="white" d="M18.7 6.2c-1.1-2.1-3.7-3.3-6.8-3.1-4.1.3-7.5 3.9-7.5 8 0 3.8 2.1 6.5 5.4 7.4-.2 1.2-.7 2-1.4 2.8 2.2.2 4.1-.5 5.8-2 2.4-2.1 4.5-5.1 6.2-5.8-.2-1.1-1.3-2-2.4-2.1-1.4-.1-2.5.6-4.2 1.3-2.4 1.1-4.3.7-4.2-.6.1-1.4 2-3 3.9-3.4 1.4-.3 2.5.1 3.1.8.5-.9 1-2.1 1.5-3.3z"/%3E%3C/svg%3E',
+    bale: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Ccircle cx="12" cy="12" r="11" fill="%23168f9a"/%3E%3Cpath d="m6.5 12.2 3.7 3.6 7.5-8" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E'
+  };
+  document.querySelectorAll('img[data-icon]').forEach(img => {
+    img.src = brandIcons[img.dataset.icon] || '';
+    img.removeAttribute('data-icon');
+  });
+
+  const quick = document.getElementById('quick-access-grid');
+  if (quick) quick.innerHTML = `
+    <a href="#products" onclick="openCategory('cutting');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-table-cells-large"></i></div><div class="font-bold text-brand dark:text-white text-sm">دستگاه‌های برش</div></a>
+    <a href="#products" onclick="openCategory('marking');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-crosshairs"></i></div><div class="font-bold text-brand dark:text-white text-sm">دستگاه‌های حکاکی</div></a>
+    <a href="#products" onclick="openCategory('welding');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="font-bold text-brand dark:text-white text-sm">دستگاه‌های جوش</div></a>
+    <a href="#products" onclick="openCategory('cleaning');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-wand-sparkles"></i></div><div class="font-bold text-brand dark:text-white text-sm">دستگاه‌های تمیزکاری</div></a>
+    <a href="#services" onclick="navigateTo('services');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div><div class="font-bold text-brand dark:text-white text-sm">خدمات</div></a>
+    <a href="#training" onclick="navigateTo('training');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-graduation-cap"></i></div><div class="font-bold text-brand dark:text-white text-sm">آموزش</div></a>
+    <a href="#applications" onclick="navigateTo('applications');return false" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-industry"></i></div><div class="font-bold text-brand dark:text-white text-sm">کاربردها</div></a>`;
+
+  const slides = [...document.querySelectorAll('.hero-slide')];
+  const addProductBackground = (index, image) => {
+    const slide = slides[index]; if (!slide) return;
+    const background = document.createElement('div');
+    background.className = 'hero-background';
+    background.style.cssText = `background-image:url('../assets/catalog-v2/${image}');background-size:cover;background-position:center`;
+    slide.prepend(background);
+    if (!slide.querySelector('.hero-shade')) {
+      const shade = document.createElement('div'); shade.className = 'hero-shade'; slide.insertBefore(shade, background.nextSibling);
+    }
+  };
+  addProductBackground(2, 'MK-FIBER-GENERIC/studio-concept.svg');
+  addProductBackground(3, 'CLEAN-GENERIC/studio-web.jpg');
+
+  const setSlideText = (index, tag, title, description, action, category) => {
+    const slide = slides[index]; if (!slide) return;
+    const badge = slide.querySelector('[data-i18n^="slide"]');
+    const heading = slide.querySelector('h1');
+    const paragraph = slide.querySelector('p');
+    if (badge) { badge.textContent = tag; badge.removeAttribute('data-i18n'); }
+    if (heading) { heading.textContent = title; heading.removeAttribute('data-i18n'); }
+    if (paragraph) { paragraph.textContent = description; paragraph.removeAttribute('data-i18n'); }
+    const button = slide.querySelector('.hero-slide-content button, .hero-slide-content a');
+    if (button) {
+      button.removeAttribute('data-i18n');
+      button.onclick = () => openCategory(category);
+      button.removeAttribute('href');
+      button.innerHTML = `<i class="fa-solid fa-arrow-left"></i> ${action}`;
+    }
+  };
+  setSlideText(2, 'حکاکی و مارکینگ لیزری', 'دستگاه‌های حکاکی و مارکینگ', 'راهکارهای حکاکی لیزری برای نشانه‌گذاری و شخصی‌سازی قطعات و محصولات', 'مشاهدهٔ دستگاه‌های حکاکی', 'marking');
+  setSlideText(3, 'تمیزکاری لیزری', 'دستگاه‌های تمیزکاری لیزری', 'راهکارهای پاک‌سازی لیزری و تجهیزات مرتبط با خدمات سهند لیزر', 'مشاهدهٔ دستگاه‌های تمیزکاری', 'cleaning');
+});
+</script>
 </body>
 </html>
+
