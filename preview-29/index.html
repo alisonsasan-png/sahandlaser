@@ -44,7 +44,7 @@
     function structure(p){if(p.category!=='cutting')return '';const c=p.configuration||{},name=p.name||'';if(/ربات|robot/i.test(name))return 'ربات';if(/سفارشی|custom/i.test(name))return 'سایز سفارشی';if(/لوله.?بر|rotary/i.test(name)&&!c.tableCount)return 'لوله‌بر مستقل';if(c.tableCount===2||/دو میز/.test(name))return 'دومیز';if(c.tableCount===1||/تک میز/.test(name))return 'تک‌میز';if(/لوله/.test(name))return 'لوله‌بر مستقل';return 'سایز سفارشی';}
     function categoryProducts(cat){return products.filter(p=>p.category===cat)}
     function countByCategory(cat){return cat==='all'?products.length:categoryProducts(cat).length}
-    function drawQuick(){document.getElementById('quick').innerHTML=Object.entries(label).map(([key,name])=>`<button type="button" data-category="${key}" class="${state.category===key?'active':''}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg[key]||svg.parts}</svg><span>${name}</span><small class="count">${countByCategory(key)} محصول</small></button>`).join('');document.querySelectorAll('#quick button').forEach(b=>b.onclick=()=>{state.category=b.dataset.category;state.structure='all';state.size='all';state.cabinet='all';state.tube='all';draw()})}
+    function drawQuick(){document.getElementById('quick').innerHTML=Object.entries(label).map(([key,name])=>`<button type="button" data-category="${key}" class="${state.category===key?'active':''}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg[key]||svg.parts}</svg><span>${name}</span><small class="count">${countByCategory(key)} محصول</small></button>`).join('');document.querySelectorAll('#quick button').forEach(b=>b.onclick=()=>{state.category=b.dataset.category;state.structure='all';state.size='all';state.cabinet='all';state.tube='all';state.query='';document.getElementById('search').value='';draw()})}
     function facet(name,value,active,key){return `<button type="button" data-${key}="${escape(value)}" class="${active===value?'active':''}">${escape(name)} <span>${products.filter(p=>(state.category==='all'||p.category===state.category)&&(key==='structure'?structure(p)===value:p.configuration?.sizeFamily===value)).length}</span></button>`}
     function drawFilters(){const box=document.getElementById('filters');if(state.category==='cutting'){
        const structures=[...new Set(categoryProducts('cutting').map(structure))];const sizes=[...new Set(categoryProducts('cutting').map(p=>p.configuration?.sizeFamily).filter(Boolean))];
@@ -55,7 +55,7 @@
        const cat=state.category==='all'?null:state.category;const list=cat?categoryProducts(cat):products;
        const subgroups=cat?([...new Set(list.map(p=>p.subgroup).filter(Boolean))]):[];
        box.innerHTML='<h2>دسته‌بندی محصولات</h2><div class="filter-group"><h3>خانوادهٔ محصول</h3><div class="filter-list">'+Object.entries(label).map(([k,v])=>`<button data-cat="${k}" class="${state.category===k?'active':''}">${v}<span>${countByCategory(k)}</span></button>`).join('')+'</div></div>'+(subgroups.length?'<div class="filter-group"><h3>نوع دستگاه یا خانواده</h3><div class="filter-list">'+subgroups.map(x=>`<button data-sub="${escape(x)}">${escape(x)} <span>${list.filter(p=>p.subgroup===x).length}</span></button>`).join('')+'</div></div>':'')+'<button class="filter-clear" id="clear">پاک‌کردن انتخاب‌ها</button>';
-       box.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{state.category=b.dataset.cat;state.structure='all';state.size='all';draw()});box.querySelectorAll('[data-sub]').forEach(b=>b.onclick=()=>{state.query=b.dataset.sub;document.getElementById('search').value=state.query;draw()});
+       box.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{state.category=b.dataset.cat;state.structure='all';state.size='all';state.query='';document.getElementById('search').value='';draw()});box.querySelectorAll('[data-sub]').forEach(b=>b.onclick=()=>{state.query=b.dataset.sub;document.getElementById('search').value=state.query;draw()});
      }
      document.getElementById('clear').onclick=()=>{state.category='all';state.structure='all';state.size='all';state.cabinet='all';state.tube='all';state.query='';document.getElementById('search').value='';draw()};
     }
@@ -74,3 +74,4 @@
   </script>
 </body>
 </html>
+
