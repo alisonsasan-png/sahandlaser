@@ -21,6 +21,14 @@
   }
   }
   apply();
+  // Exact-model taxonomy buttons must not route to a different legacy model.
+  document.addEventListener('click',event=>{
+    const button=event.target.closest?.('[data-tax^="model-"]');
+    const code=button?.dataset.tax.slice(6);
+    if(code && map[code] && window.SAHAND_PRODUCTS?.[code] && window.showProduct){
+      event.preventDefault();event.stopImmediatePropagation();window.showProduct(code);
+    }
+  },true);
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
     if(window.SAHAND_PRODUCTS){
