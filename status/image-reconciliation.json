@@ -1,0 +1,1588 @@
+{
+  "updatedAt": "2026-10-13T06:36:38.444Z",
+  "tehranTime": "۱۴۰۵ مهر ۲۱, سه‌شنبه ساعت ۱۰:۰۶:۳۸ (‎+۳:۳۰ گرینویچ)",
+  "counts": {
+    "products": 106,
+    "connected": 5,
+    "hold": 9,
+    "pending": 92
+  },
+  "integrations": [
+    "index.html",
+    "preview-experiments/site.html",
+    "preview-12/index.html",
+    "preview-13/index.html",
+    "preview-14/index.html",
+    "preview-15/index.html",
+    "preview-16/index.html",
+    "preview-17/index.html",
+    "preview-18/index.html",
+    "preview-19/index.html",
+    "preview-20/index.html",
+    "preview-21/index.html",
+    "preview-22/index.html",
+    "preview-23/index.html",
+    "preview-24/index.html",
+    "preview-25/index.html",
+    "preview-26/index.html",
+    "preview-27/index.html",
+    "preview-28/index.html",
+    "preview-3/index.html",
+    "preview-4/index.html",
+    "preview-5/index.html"
+  ],
+  "excludedPages": [
+    "preview-10/index.html",
+    "preview-11/index.html",
+    "preview-2/index.html",
+    "preview-6/index.html",
+    "preview-7/index.html",
+    "preview-8/index.html",
+    "preview-9/index.html"
+  ],
+  "deployment": "Local build; live deployment must be verified separately",
+  "products": [
+    {
+      "code": "CC001",
+      "name": "چیلر فایبر S&A CWFL-1500",
+      "candidate": "assets/catalog-v2/CC001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC001/images/97685bb106e7.webp"
+      ],
+      "decision": "use",
+      "reason": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and pressure gauge, right-side grille, blue stripe and upper fan agree. Generated labels are not technical evidence.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CC002",
+      "name": "چیلر فایبر S&A CWFL-2000",
+      "candidate": "assets/catalog-v2/CC002/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC002/images/19f9bf692916.webp"
+      ],
+      "decision": "use",
+      "reason": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and gauge, right-side grille, upper fan and red wheels agree. No internal assembly claim.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CC003",
+      "name": "چیلر فایبر S&A CWFL-3000",
+      "candidate": "assets/catalog-v2/CC003/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC003/images/fb0de083e60d.webp"
+      ],
+      "decision": "hold",
+      "reason": "Generated front panel changes the relative placement of display and switch compared with supplied cwfl3000-lite.png. Do not automatically replace the existing photo.",
+      "identityScope": "named product artwork",
+      "sharedWith": []
+    },
+    {
+      "code": "CC004",
+      "name": "چیلر فایبر Hanli HL-1500",
+      "candidate": "assets/catalog-v2/CC004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC004/images/562e194722fa.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-1500-QG2/2 manual row; not an exact photographed HL-1500 casing or nameplate",
+      "sharedWith": []
+    },
+    {
+      "code": "CC005",
+      "name": "چیلر فایبر Hanli HL-2000",
+      "candidate": "assets/catalog-v2/CC005/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC005/images/02402781126b.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-2000-QG2/2 manual row; not an exact photographed HL-2000 casing or nameplate",
+      "sharedWith": []
+    },
+    {
+      "code": "CC006",
+      "name": "چیلر فایبر Hanli HL-3000",
+      "candidate": "assets/catalog-v2/CC006/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CC006/images/4f22f0a8bf67.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "name": "چیلر فایبر Hanli HL-12000",
+      "candidate": "assets/catalog-v2/CH-HANLI-12000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH-HANLI-12000/images/f210a55249f7.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "name": "چیلر فایبر Hanli HL-6000",
+      "candidate": "assets/catalog-v2/CH-HANLI-6000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH-HANLI-6000/images/dad63d039879.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CH-S&A-12000",
+      "name": "چیلر فایبر S&A CWFL-12000",
+      "candidate": "assets/catalog-v2/CH-S&A-12000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH-S&A-12000/images/c3dd5be21914.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CH-S&A-20000",
+      "name": "چیلر فایبر S&A CWFL-20000",
+      "candidate": "assets/catalog-v2/CH-S&A-20000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH-S&A-20000/images/b53bebd4d15a.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CH-S&A-6000",
+      "name": "چیلر فایبر S&A CWFL-6000",
+      "candidate": "assets/catalog-v2/CH-S&A-6000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH-S&A-6000/images/656ffbfc335c.webp"
+      ],
+      "decision": "hold",
+      "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph.",
+      "identityScope": "S&A chiller family reconstruction based on the reviewed CWFL-12000 family image and CWFL-6000 variant selection evidence; not an exact photographed casing or nameplate",
+      "sharedWith": []
+    },
+    {
+      "code": "CH001",
+      "name": "هد برش ریتولز مدل BT240S",
+      "candidate": "assets/catalog-v2/CH001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic manual-focus fiber cutting-head family reconstruction; not an exact BT240S photograph, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CH002",
+      "name": "هد برش RayTools BM109",
+      "candidate": "assets/catalog-v2/CH002/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH002/images/ed199abb3be5.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CH003",
+      "name": "هد برش فایبر RayTools BM111",
+      "candidate": "assets/catalog-v2/CH003/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CH003/images/2726aaeccaa1.webp"
+      ],
+      "decision": "hold",
+      "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media.",
+      "identityScope": "BM111-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CH004",
+      "name": "هد برش ریتولز مدل BM114",
+      "candidate": "assets/catalog-v2/CH004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM114-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CH005",
+      "name": "هد برش ریتولز مدل BM115",
+      "candidate": "assets/catalog-v2/CH005/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM115-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CL-001",
+      "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
+      "candidate": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-001 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "CL-002",
+        "CL-003",
+        "CL-004",
+        "CLEAN-GENERIC"
+      ]
+    },
+    {
+      "code": "CL-002",
+      "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
+      "candidate": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-002 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "CL-001",
+        "CL-003",
+        "CL-004",
+        "CLEAN-GENERIC"
+      ]
+    },
+    {
+      "code": "CL-003",
+      "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
+      "candidate": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-003 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "CL-001",
+        "CL-002",
+        "CL-004",
+        "CLEAN-GENERIC"
+      ]
+    },
+    {
+      "code": "CL-004",
+      "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
+      "candidate": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-004 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "CL-001",
+        "CL-002",
+        "CL-003",
+        "CLEAN-GENERIC"
+      ]
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "name": "دستگاه تمیزکاری لیزری فایبر",
+      "candidate": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Supplied cleaning cabinet family artwork; not proof of power, laser type or exact installed unit",
+      "sharedWith": [
+        "CL-001",
+        "CL-002",
+        "CL-003",
+        "CL-004"
+      ]
+    },
+    {
+      "code": "CN001",
+      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic RayTools nozzle-family reference; not proof of exact CN001 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN002",
+      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN002 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN003",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN003 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN004",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN004 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN006",
+      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN006 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN007",
+      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN007 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN008",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN008 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN009",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN009 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN010",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN010",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN010 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN011",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN011",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN011 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN012",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN012",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN012 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN013"
+      ]
+    },
+    {
+      "code": "CN013",
+      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "candidate": "assets/catalog-v2/CN001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic family reference; not proof of exact CN013 part number, thread, aperture, coating, or packaging",
+      "sharedWith": [
+        "CN001",
+        "CN002",
+        "CN003",
+        "CN004",
+        "CN006",
+        "CN007",
+        "CN008",
+        "CN009",
+        "CN010",
+        "CN011",
+        "CN012"
+      ]
+    },
+    {
+      "code": "CP-CERAMIC",
+      "name": "سرامیک هد برش لیزر فایبر",
+      "candidate": "assets/catalog-v2/CP-CERAMIC/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CP-CERAMIC/images/997e25a96f39.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork; generated label is not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "name": "محافظ لنز سری BLT",
+      "candidate": "assets/catalog-v2/CP-LENS-BLT/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "name": "محافظ لنز RayTools",
+      "candidate": "assets/catalog-v2/CP-LENS-RAY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "name": "محافظ لنز WSX",
+      "candidate": "assets/catalog-v2/CP-LENS-WSX/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "name": "هد برش فایبر RayTools BM110",
+      "candidate": "assets/catalog-v2/CP-RAY-BM110/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CP-RAY-BM110/images/45292c88beee.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "name": "هد برش RayTools BM114-E",
+      "candidate": "assets/catalog-v2/CP-RAY-BM114E/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM114-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "name": "هد برش RayTools BM115",
+      "candidate": "assets/catalog-v2/CP-RAY-BM115/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CP-RAY-BM115/images/2afb6d4ab5b7.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM115-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "name": "هد برش RayTools BM115-E",
+      "candidate": "assets/catalog-v2/CP-RAY-BM115E/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM115-E-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "name": "هد برش RayTools BM116-E",
+      "candidate": "assets/catalog-v2/CP-RAY-BM116E/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BM116-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "name": "هد برش RayTools BT220",
+      "candidate": "assets/catalog-v2/CP-RAY-BT220/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BT220-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "name": "هد برش RayTools BT240",
+      "candidate": "assets/catalog-v2/CP-RAY-BT240/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "BT240-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "candidate": "assets/catalog-v2/CP-SMC-ITV1050/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CP-SMC-ITV1050/images/7f07a4ec2159.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "candidate": "assets/catalog-v2/CP-SMC-ITV2050/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CP-SMC-ITV2050/images/5e93a9cc608a.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork; generated label is not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CP-TRA",
+      "name": "هد برش TRA",
+      "candidate": "assets/catalog-v2/CP-TRA/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Supplied TRA assembly artwork, two exterior views; not a complete optical head or exact installed variant",
+      "sharedWith": []
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "name": "سیستم کنترل برش FSCUT2000C",
+      "candidate": "assets/catalog-v2/CTRL-FSCUT2000C/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CTRL-FSCUT2000C/images/cbcdfe389200.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "name": "سیستم کنترل برش FSCUT2000E",
+      "candidate": "assets/catalog-v2/CTRL-FSCUT2000E/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CTRL-FSCUT2000E/images/a153240ae74b.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "name": "سیستم کنترل برش FSCUT4000E",
+      "candidate": "assets/catalog-v2/CTRL-FSCUT4000E/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/CTRL-FSCUT4000E/images/db1b30bbab1b.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied product artwork; generated label is not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "FS001",
+      "name": "سورس لیزر 30 وات پالسی فایبر Q-Switched",
+      "candidate": "assets/catalog-v2/FS001/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic P30Q-family source reference; exact P30QS versus P30QB variant, casing, nameplate and internal assembly are not established",
+      "sharedWith": []
+    },
+    {
+      "code": "FS002",
+      "name": "سورس لیزر 50 وات پالسی فایبر Q-Switched",
+      "candidate": "assets/catalog-v2/FS002/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic P50QB-family source reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "FS003",
+      "name": "سورس لیزر Raycus RFL-C1000",
+      "candidate": "assets/catalog-v2/FS003/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic C1000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "FS004",
+      "name": "سورس فایبر Raycus RFL-C1500",
+      "candidate": "assets/catalog-v2/FS004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/FS004/images/f5a1705bda31.webp"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Raycus source-family reference; not proof of exact FS004 casing or installed revision",
+      "sharedWith": []
+    },
+    {
+      "code": "FS005",
+      "name": "سورس لیزر Raycus RFL-C2000",
+      "candidate": "assets/catalog-v2/FS005/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic C2000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": [
+        "SRC-RAY-QCW150"
+      ]
+    },
+    {
+      "code": "FS006",
+      "name": "سورس لیزر فایبر 3000 وات ریکاس",
+      "candidate": "assets/catalog-v2/FS006/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic C3000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": [
+        "SRC-RAY-C3000S"
+      ]
+    },
+    {
+      "code": "FS007",
+      "name": "سورس لیزر فایبر 4000 وات ریکاس",
+      "candidate": "assets/catalog-v2/FS007/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic C4000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": [
+        "SRC-RAY-C4000S"
+      ]
+    },
+    {
+      "code": "FS008",
+      "name": "سورس لیزر فایبر 6000 وات ریکاس",
+      "candidate": "assets/catalog-v2/FS008/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic C6000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "sharedWith": [
+        "SRC-RAY-C6000S"
+      ]
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "name": "دستگاه حکاکی فایبر سهند لیزر",
+      "candidate": "assets/catalog-v2/MK-FIBER-GENERIC/studio-concept.svg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "generic family-level concept only",
+      "sharedWith": []
+    },
+    {
+      "code": "ML-001",
+      "name": "دستگاه فایبر مارکینگ 30 وات",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic fiber-marking family reference; not proof of exact ML-001 casing or installed configuration",
+      "sharedWith": [
+        "ML-002",
+        "ML-003",
+        "ML-004",
+        "ML-006",
+        "ML-009"
+      ]
+    },
+    {
+      "code": "ML-002",
+      "name": "دستگاه فایبر مارکینگ 50 وات",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic fiber-marking family reference; not proof of exact ML-002 casing or installed configuration",
+      "sharedWith": [
+        "ML-001",
+        "ML-003",
+        "ML-004",
+        "ML-006",
+        "ML-009"
+      ]
+    },
+    {
+      "code": "ML-003",
+      "name": "دستگاه فایبر مارکینگ 100 وات",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic fiber-marking family reference; not proof of exact ML-003 casing or installed configuration",
+      "sharedWith": [
+        "ML-001",
+        "ML-002",
+        "ML-004",
+        "ML-006",
+        "ML-009"
+      ]
+    },
+    {
+      "code": "ML-004",
+      "name": "دستگاه حکاکی میزدار UV",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "./assets/products/ML-004/commercial-v1.jpg",
+        "./assets/products/ML-004/_MG_4350.jpg",
+        "./assets/products/ML-004/_MG_4353.jpg",
+        "./assets/products/ML-004/_MG_4354.jpg",
+        "./assets/products/ML-004/_MG_4357.jpg"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": [
+        "ML-001",
+        "ML-002",
+        "ML-003",
+        "ML-006",
+        "ML-009"
+      ]
+    },
+    {
+      "code": "ML-005",
+      "name": "دستگاه حکاکی پرتابل فایبر",
+      "candidate": "assets/catalog-v2/ML-005/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "./assets/products/ML-005/commercial-v1.jpg",
+        "./assets/products/ML-005/_MG_4146.jpg",
+        "./assets/products/ML-005/_MG_4149.jpg",
+        "./assets/products/ML-005/_MG_4150.jpg",
+        "./assets/products/ML-005/_MG_4162.jpg",
+        "./assets/products/ML-005/_MG_4165.jpg"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "ML-006",
+      "name": "دستگاه حکاکی لیزر Inline",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic fiber-marking family reference; not proof of exact ML-006 casing or installed configuration",
+      "sharedWith": [
+        "ML-001",
+        "ML-002",
+        "ML-003",
+        "ML-004",
+        "ML-009"
+      ]
+    },
+    {
+      "code": "ML-007",
+      "name": "دستگاه حکاکی رومیزی فایبر",
+      "candidate": "assets/catalog-v2/ML-007/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "./assets/products/ML-007/commercial-v1.jpg",
+        "./assets/products/ML-007/_MG_4184.jpg",
+        "./assets/products/ML-007/_MG_4171.jpg",
+        "./assets/products/ML-007/_MG_4206.jpg",
+        "./assets/products/ML-007/_MG_4218.jpg"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "ML-008",
+      "name": "دستگاه حکاکی لیزر MOPA",
+      "candidate": "assets/catalog-v2/ML-008/studio-concept.svg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "generic family-level concept only",
+      "sharedWith": []
+    },
+    {
+      "code": "ML-009",
+      "name": "دستگاه حکاکی میزدار فایبر",
+      "candidate": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "./assets/products/ML-009/commercial-v1.jpg",
+        "./assets/products/ML-009/_MG_4266.jpg",
+        "./assets/products/ML-009/_MG_4239.jpg",
+        "./assets/products/ML-009/_MG_4269.jpg",
+        "./assets/products/ML-009/_MG_4270.jpg",
+        "./assets/products/ML-009/_MG_4275.jpg"
+      ],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic fiber-marking family reference; not proof of exact ML-009 casing or installed configuration",
+      "sharedWith": [
+        "ML-001",
+        "ML-002",
+        "ML-003",
+        "ML-004",
+        "ML-006"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "name": "سورس فایبر Raycus RFL-C3000S-HP",
+      "candidate": "assets/catalog-v2/FS006/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/SRC-RAY-C3000S/images/0f5df0385ce0.webp"
+      ],
+      "decision": "hold",
+      "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo.",
+      "identityScope": "C3000-family reference; not proof of exact installed casing or revision",
+      "sharedWith": [
+        "FS006"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "name": "سورس لیزر Raycus RFL-C4000S-HP",
+      "candidate": "assets/catalog-v2/FS007/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "C4000-family reference; not proof of exact installed casing or revision",
+      "sharedWith": [
+        "FS007"
+      ]
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "name": "سورس فایبر Raycus RFL-C6000S-HP",
+      "candidate": "assets/catalog-v2/FS008/studio-web.jpg",
+      "exists": true,
+      "previousImages": [
+        "products/SRC-RAY-C6000S/images/9f5e9c3e7107.webp"
+      ],
+      "decision": "hold",
+      "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match.",
+      "identityScope": "C6000-family reference; not proof of exact installed casing or revision",
+      "sharedWith": [
+        "FS008"
+      ]
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "name": "سورس لیزر Raycus RFL-QCW150/1500",
+      "candidate": "assets/catalog-v2/FS005/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Raycus QCW/source-family reference; not proof of exact installed casing or revision",
+      "sharedWith": [
+        "FS005"
+      ]
+    },
+    {
+      "code": "WELD-1500",
+      "name": "دستگاه جوش فایبر 1500 وات",
+      "candidate": "assets/catalog-v2/WELD-1500/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "use",
+      "reason": "Compared with supplied C1500 poster: blue upper cabinet, hose, two upper buttons, lower display, gauge and side grille match the exterior. No internal assembly claim.",
+      "identityScope": "named product artwork",
+      "sharedWith": []
+    },
+    {
+      "code": "WELD-2000",
+      "name": "دستگاه جوش فایبر 2000 وات",
+      "candidate": "assets/catalog-v2/WELD-2000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "use",
+      "reason": "Compared with supplied C2000 poster: purple cabinet, perforated side, front hinged panel, display and three buttons match the exterior.",
+      "identityScope": "supplied product artwork; generated label is not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "WELD-3000",
+      "name": "دستگاه جوش فایبر 3000 وات",
+      "candidate": "assets/catalog-v2/WELD-3000/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "use",
+      "reason": "Compared with supplied C3000 poster: red cabinet, separate wire feeder, orange cable, front rail and display arrangement match the exterior.",
+      "identityScope": "supplied product artwork; generated label is not identification evidence",
+      "sharedWith": []
+    },
+    {
+      "code": "WL-001",
+      "name": "دستگاه جوش لیزر Smart Series / Mini 4-in-1",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-001 casing, source, power, controller, or installed configuration",
+      "sharedWith": [
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-002",
+      "name": "دستگاه جوش لیزر Medium Series / Handheld",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-002 casing, source, power, controller, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-003",
+      "name": "دستگاه جوش لیزر Air-Cooled",
+      "candidate": "assets/catalog-v2/air-cooled/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "WL-004",
+      "name": "دستگاه جوش لیزر Air Cooling Portable",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic portable handheld welding family reference; not proof of exact WL-004 casing, source, power, controller, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-005",
+      "name": "دستگاه جوش لیزر QCW Laser Spot Welding",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "hold",
+      "reason": "QCW machine is assigned a generic handheld welder image; configuration not matched.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-005 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-006",
+      "name": "دستگاه جوش لیزر HP Series",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-006 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-007",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-007",
+      "name": "دستگاه جوش لیزر Modern Series",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-007 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-008",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-008",
+      "name": "دستگاه جوش لیزر Robotic Laser Welding",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "hold",
+      "reason": "Robotic welding model is assigned a handheld cabinet image, not a robot cell.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-008 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-009",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-009",
+      "name": "دستگاه جوش لیزر Jewelry Laser Welding",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "hold",
+      "reason": "Jewelry welder is assigned a handheld cabinet image; configuration mismatch.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-009 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-010"
+      ]
+    },
+    {
+      "code": "WL-010",
+      "name": "دستگاه جوش لیزر Channel Letter Laser Welding",
+      "candidate": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "hold",
+      "reason": "Channel-letter welder is assigned a handheld cabinet image; configuration not matched.",
+      "identityScope": "Generic welding-family reference; not proof of exact WL-010 casing, source, power, or installed configuration",
+      "sharedWith": [
+        "WL-001",
+        "WL-002",
+        "WL-004",
+        "WL-005",
+        "WL-006",
+        "WL-007",
+        "WL-008",
+        "WL-009"
+      ]
+    },
+    {
+      "code": "CUT-3015-1",
+      "name": "تک میز DZ3015S",
+      "candidate": "assets/catalog-v2/single-standard/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-2",
+      "name": "تک میز DZ3015H",
+      "candidate": "assets/catalog-v2/single-professional/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-3",
+      "name": "تک میز LD3015",
+      "candidate": "assets/catalog-v2/CUT-3015-3/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "LD-family single-table configuration reference; not proof of exact Sahand casing, installed manufacturer revision, controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-4",
+      "name": "دو میز DZ3015",
+      "candidate": "assets/catalog-v2/CUT-3015-4/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-5",
+      "name": "دو میز LD3015",
+      "candidate": "assets/catalog-v2/CUT-3015-5/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "User-library Sahand-branded two-table 3015 family reference; no legible LD3015 model identity or installed revision proven",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-6",
+      "name": "دو میز کابین‌دار DZ3015",
+      "candidate": "assets/catalog-v2/CUT-3015-6/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Supplied 3015 cabin CAD with external exchange table; folder title is not proof of table count or exact installed manufacturer revision",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-7",
+      "name": "تک میز 3015 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-3015-7/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-8",
+      "name": "دو میز 3015 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-3015-8/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-3015-9",
+      "name": "دو میز کابین‌دار 3015 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-3015-9/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic enclosed dual-table 3015 plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-1",
+      "name": "تک میز DZ6020S",
+      "candidate": "assets/catalog-v2/CUT-6020-1/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-2",
+      "name": "تک میز DZ6020H",
+      "candidate": "assets/catalog-v2/CUT-6020-2/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-3",
+      "name": "تک میز LD6020",
+      "candidate": "assets/catalog-v2/CUT-6020-3/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic LD-family single-table 6020 external reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-4",
+      "name": "دو میز DZ6020",
+      "candidate": "assets/catalog-v2/CUT-6020-4/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Supplied named 6020 exchange-table artwork; no exact stock plaque or hidden geometry inferred",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-5",
+      "name": "دو میز LD6020",
+      "candidate": "assets/catalog-v2/CUT-6020-5/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "User-library two-table 6020 exchange-table family reference; no legible LD6020 model identity, exact manufacturer revision, or installed controller proven",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-6",
+      "name": "دو میز کابین‌دار 6020",
+      "candidate": "assets/catalog-v2/CUT-6020-6/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Supplied 6020 cabin CAD with visible external exchange table; exterior configuration reconstruction, not proof of exact installed revision",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-7",
+      "name": "تک میز 6020 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-6020-7/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-8",
+      "name": "دو میز 6020 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-6020-8/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-6020-9",
+      "name": "دو میز کابین‌دار 6020 + لوله‌بر",
+      "candidate": "assets/catalog-v2/CUT-6020-9/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-custom",
+      "name": "برش سایز سفارشی",
+      "candidate": "assets/catalog-v2/CUT-custom/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "Conceptual custom-size configuration reference; not proof of exact Sahand bed dimensions, manufacturer, installed controller, or hidden assembly",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-tube",
+      "name": "برش لوله‌بر",
+      "candidate": "assets/catalog-v2/tube-standard/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "supplied series photograph or CAD",
+      "sharedWith": []
+    },
+    {
+      "code": "CUT-robot",
+      "name": "برش ربات",
+      "candidate": "assets/catalog-v2/CUT-robot/studio-web.jpg",
+      "exists": true,
+      "previousImages": [],
+      "decision": "pending",
+      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "identityScope": "User-requested industry reference for the robot-cutting family: generic articulated six-axis robot cell; not proof of Sahand installed model, manufacturer, controller, laser source, or hidden assembly",
+      "sharedWith": []
+    }
+  ]
+}
