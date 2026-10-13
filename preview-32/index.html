@@ -1310,10 +1310,10 @@
   const loadArticles=async()=>{
     if(!articleGrid)return;
     try{
-      const oldResponse=await fetch('../docs/old-site-extraction-2026-10-10.json');
-      if(!oldResponse.ok)throw new Error('old article source unavailable');
+      const oldResponse=await fetch('../data/legacy-articles.json');
+      if(!oldResponse.ok)throw new Error('legacy article source unavailable');
       const oldData=await oldResponse.json();
-      const old=(oldData.posts||[]).map(post=>({title:post.title,body:toText(post.content),summary:toText(post.content).slice(0,230),date:(post.date||'').slice(0,10),kind:'از آرشیو سایت قبلی',sources:[{title:'صفحهٔ قدیمی سهند لیزر',url:post.link}]}));
+      const old=(oldData||[]).map(post=>({title:post.title,body:post.summary,summary:post.summary.slice(0,230),date:post.date,kind:'از آرشیو سایت قبلی',sources:[{title:'صفحهٔ قدیمی سهند لیزر',url:post.url}]}));
       articles=old;
       articleGrid.innerHTML=articles.map((article,index)=>`<article class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800"><span class="text-xs text-accent font-bold">${esc(article.kind)} · ${esc(article.date)}</span><h3 class="text-lg font-bold text-brand dark:text-white mt-2 mb-2">${esc(article.title)}</h3><p class="text-sm text-slate-500 leading-7">${esc(article.summary||article.body.slice(0,200))}…</p><button type="button" class="mt-4 text-accent font-bold text-sm" onclick="openExtractedArticle(${index})">خواندن مطلب ←</button></article>`).join('');
     }catch(error){articleGrid.innerHTML='<p class="text-sm text-amber-700 bg-amber-50 p-4 rounded-xl">آرشیو مقاله‌های استخراج‌شده در این نسخه در دسترس نیست؛ از نمایش متن ناقص یا خراب خودداری شد.</p>';}
