@@ -31,6 +31,8 @@ const server=http.createServer((req,res)=>{
    assert.ok(decoded,`preview ${n}: ${code} failed image decode`);
   }
   if(n!==5){
+   await page.evaluate(()=>window.showProduct('CUT-3015-4'));
+   await page.locator('img[src*="catalog-v2/CUT-3015-4/studio-web.jpg"]').filter({visible:true}).first().waitFor({state:'visible',timeout:15000});
    await page.evaluate(()=>window.showProduct('WELD-2000'));
    const img=page.locator('img[src*="catalog-v2/WELD-2000/studio-web.jpg"]').filter({visible:true}).first();
    await img.waitFor({state:'visible',timeout:15000});
