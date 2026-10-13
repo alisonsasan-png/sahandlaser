@@ -1217,12 +1217,34 @@ if (false) {
 <style>
 #cutting-product-page .cutting-detail-close{position:sticky;top:0;z-index:2}
 #article-reader{position:fixed;inset:0;z-index:1200;overflow:auto;background:#f4f6f8;padding:clamp(14px,3vw,40px)}#article-reader[hidden]{display:none}.article-reader-card{max-width:900px;margin:auto;background:#fff;border:1px solid #dce4ec;border-radius:20px;padding:clamp(20px,4vw,44px);line-height:2.1}.article-reader-card h2{line-height:1.6}.article-reader-close{border:1px solid #d5dee8;background:#fff;border-radius:10px;padding:9px 14px;cursor:pointer;font:inherit;color:#18324d}.catalog-category-btn[aria-pressed="true"],.catalog-subcategory-btn[aria-pressed="true"]{border-color:#bd7a3b!important;background:#fbf4ed!important}.media-fallback{min-height:180px;display:grid;place-items:center;background:linear-gradient(135deg,#f5f7f9,#e8edf2);color:#708092;text-align:center;padding:18px}[hidden].media-fallback{display:none!important}
-body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}.product-mini-card,.catalog-category-btn,.cutting-detail-card{min-width:0}.product-mini-card :is(h2,h3,p,span),.catalog-category-btn :is(strong,span){overflow-wrap:break-word;word-break:normal}
+body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}.product-mini-card,.catalog-category-btn,.cutting-detail-card{min-width:0}.product-mini-card :is(h2,h3,p,span),.catalog-category-btn :is(strong,span){overflow-wrap:break-word;word-break:normal}#inquiry-modal{z-index:1400!important}
 </style>
 <section id="article-reader" hidden aria-live="polite"></section>
 <script>
 (() => {
   'use strict';
+  window.sendInquiryVia = async channel => {
+    const message = window.buildInquiryMessage();
+    if (!message) return;
+    if (channel === 'whatsapp') {
+      window.open(`https://wa.me/${encodeURIComponent(window.SAHAND_CONFIG.whatsappNumber)}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+      window.closeInquiry();
+      return;
+    }
+    const destination = channel === 'eitaa' ? 'https://eitaa.com/sahandlaser_sale' : channel === 'bale' ? 'https://ble.ir/sahandlaser_sale' : '';
+    if (!destination) return;
+    const popup = window.open('about:blank', '_blank');
+    if (popup) popup.opener = null;
+    try { await navigator.clipboard.writeText(message); }
+    catch (error) {
+      const field = document.createElement('textarea');
+      field.value = message; field.style.position = 'fixed'; field.style.opacity = '0';
+      document.body.appendChild(field); field.select(); document.execCommand('copy'); field.remove();
+    }
+    if (popup) popup.location.href = destination;
+    else window.location.assign(destination);
+    window.closeInquiry();
+  };
   const source = window.PREVIEW29_PRODUCTS || [];
   const cutting = window.mainCuttingItems || [];
   const products = [...cutting, ...source.filter(item => item.category !== 'cutting')];
