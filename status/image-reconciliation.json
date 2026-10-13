@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-13T06:36:38.444Z",
-  "tehranTime": "۱۴۰۵ مهر ۲۱, سه‌شنبه ساعت ۱۰:۰۶:۳۸ (‎+۳:۳۰ گرینویچ)",
+  "updatedAt": "2026-10-13T06:41:05.243Z",
+  "tehranTime": "۱۴۰۵ مهر ۲۱, سه‌شنبه ساعت ۱۰:۱۱:۰۵ (‎+۳:۳۰ گرینویچ)",
   "counts": {
     "products": 106,
-    "connected": 5,
+    "connected": 7,
     "hold": 9,
-    "pending": 92
+    "pending": 90
   },
   "integrations": [
     "index.html",
@@ -1392,8 +1392,8 @@
       "candidate": "assets/catalog-v2/CUT-3015-4/studio-web.jpg",
       "exists": true,
       "previousImages": [],
-      "decision": "pending",
-      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "decision": "use",
+      "reason": "Exterior compared with supplied 3015 exchange-table CAD: both beds, front control pedestal, blue panels, bellows, gantry and cable chain match. Render does not establish hidden assemblies or manufacturer suffix.",
       "identityScope": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
       "sharedWith": []
     },
@@ -1491,8 +1491,8 @@
       "candidate": "assets/catalog-v2/CUT-6020-4/studio-web.jpg",
       "exists": true,
       "previousImages": [],
-      "decision": "pending",
-      "reason": "Awaiting side-by-side visual review; inherited visualReview flag is not sufficient.",
+      "decision": "use",
+      "reason": "Exterior compared with named 6020 exchange-table artwork: long rear table, dark side panels, blue end covers and gantry configuration match. No hidden component inference.",
       "identityScope": "Supplied named 6020 exchange-table artwork; no exact stock plaque or hidden geometry inferred",
       "sharedWith": []
     },
