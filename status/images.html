@@ -13,3 +13,4 @@ function render(filter){document.querySelectorAll('button').forEach(b=>b.setAttr
 for(const [key,label]of Object.entries(labels)){const b=text('button',label);b.dataset.filter=key;b.onclick=()=>render(key);document.getElementById('filters').append(b);}render('all');
 }).catch(()=>document.getElementById('summary').textContent='گزارش بارگیری نشد؛ دوباره تلاش کنید.');
 </script></body></html>
+
