@@ -6,21 +6,46 @@
   <meta name="robots" content="noindex">
   <title>فهرست پیش‌نمایش‌های سهند لیزر</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;background:#f1f4f7;color:#183044;font:16px Tahoma,Arial,sans-serif;line-height:2}
-    main{max-width:900px;margin:auto;padding:28px}section{background:#fff;border:1px solid #dce4eb;border-radius:16px;padding:24px;margin-bottom:18px}
-    h1,h2{margin-top:0}nav{display:flex;flex-wrap:wrap;gap:10px}a{display:inline-block;color:#176c68;border:1px solid #c6dedb;border-radius:9px;padding:8px 14px;text-decoration:none;background:#fbfefe}a:hover{background:#eaf6f4}small{color:#657486}
+    *{box-sizing:border-box}body{margin:0;background:#f3f5f7;color:#193148;font:15px/1.9 Tahoma,Arial,sans-serif}.wrap{max-width:1120px;margin:auto;padding:26px 18px}.intro,.group,.card{background:white;border:1px solid #dfe6ec;border-radius:16px}.intro,.group{padding:24px;margin-bottom:18px}.intro{background:linear-gradient(120deg,#10243b,#244865);color:white}.intro p{color:#dbe4ea;max-width:800px}.eyebrow{font-size:11px;color:#e6bc8f}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{padding:17px;display:grid;grid-template-columns:56px 1fr;gap:12px;align-items:start}.num{background:#f2e9df;color:#784e2a;border-radius:12px;text-align:center;font-size:20px;font-weight:bold;padding:7px}.card h3{margin:0;font-size:15px}.card p{margin:3px 0 9px;color:#687989;font-size:12px}.card a{color:#176c68;text-decoration:none;border-bottom:1px solid #c6dedb;font-size:12px}.pill{display:inline-block;background:#eff3f5;border-radius:20px;padding:2px 8px;font-size:10px;color:#576878;margin:2px}h1{font-size:29px;margin:5px 0}h2{margin:0 0 15px;font-size:20px}.small{font-size:11px;color:#607386}.callout{padding:13px 16px;border-right:3px solid #bd8750;background:#faf7f3;border-radius:8px;font-size:12px;margin-top:15px}@media(max-width:650px){.cards{grid-template-columns:1fr}.wrap{padding:16px 12px}.intro,.group{padding:17px}.card{padding:13px}}
   </style>
 </head>
-<body>
-  <main>
-    <section><h1>پیش‌نمایش‌های مستقل سهند لیزر</h1><p>نسخه‌های دسته‌بندی و طراحی را از اینجا باز کنید.</p><p><small>آخرین ممیزی مرورگر: پیش‌نمایش‌های ۱۲ تا ۲۸، بدون iframe.</small></p></section>
-    <section><h2>نسخه‌های دسته‌بندی</h2><nav id="taxonomy"></nav></section>
-    <section><h2>نسخه‌های تم و تعامل</h2><nav id="themes"></nav></section>
-  </main>
-  <script>
-    function links(id,first,last){const nav=document.getElementById(id);for(let n=first;n<=last;n++){const a=document.createElement('a');a.href='../preview-'+n+'/';a.textContent='پیش‌نمایش '+n;nav.append(a)}}
-    links('taxonomy',12,24);links('themes',25,28);
-  </script>
-</body>
-</html>
-
+<body><main class="wrap">
+  <header class="intro"><span class="eyebrow">سهند لیزر · محیط بررسی نسخه‌ها</span><h1>پیش‌نمایش‌ها، هرکدام برای چه کاری‌اند؟</h1><p>اینجا علاوه بر لینک، هدف و تفاوت هر نسخه را می‌بینید. هر پیش‌نمایش محیط آزمایشی است؛ مشخصات و تصاویر محصولات به اندازهٔ منبع موجودند.</p><p class="small">این نسخه‌ها را برای مقایسهٔ مسیر انتخاب، نحوهٔ نمایش محصولات و چیدمان‌ها نگه داشته‌ایم.</p></header>
+  <section class="group"><h2>نسخه‌های قبلی · ۲ تا ۱۱</h2><div class="cards" id="legacy"></div></section>
+  <section class="group"><h2>دسته‌بندی و تجربهٔ انتخاب · ۱۲ تا ۲۴</h2><div class="cards" id="taxonomy"></div></section>
+  <section class="group"><h2>چیدمان‌ها و تم‌های متفاوت · ۲۵ تا ۲۸</h2><div class="cards" id="themes"></div></section>
+  <section class="group"><h2>کاتالوگ جدید · ۲۹</h2><div class="cards" id="new"></div><div class="callout">در نسخهٔ ۲۹، دسته‌بندی از خانوادهٔ محصول و ساختار دستگاه شروع می‌شود. برای برش، تک‌میز یا دومیز را برگزینید و بعد کابین، لوله‌بر و گروه ابعادی را محدود کنید. ۱۰۶ تصویر موجود به کارت و صفحهٔ محصول وصل شده‌اند.</div></section>
+</main><script>
+const entries={
+2:['بازطراحی گرافیکی سایت اصلی','نسخهٔ تصویری اولیه با بنر و صفحهٔ داخل سایت برای مرور سریع نمای کلی.','graphical preview'],
+3:['محصولات و مسیر جزئی مدل‌های برش','دسته‌بندی محصول و دسترسی به هم‌خانواده‌ها و مقایسه در صفحهٔ مدل.','دسته‌بندی'],
+4:['طرح مستقل با مقایسهٔ محصولات','بازطراحی مستقل شرکت و معرفی خدمات؛ مقایسهٔ مدل‌های هم‌گروه از صفحهٔ محصول.','سایت مستقل'],
+5:['طراحی مستقل الهام‌گرفته از نمونهٔ ارسالی','دسته‌های مینیمال تصویری، شبکهٔ محصول و ساختار مقاله و مقایسه.','سایت مستقل'],
+6:['نمونهٔ نمایش تصویریِ نمای داخلی','تعامل نمای بیرونی و داخلی برای نمایش نمونهٔ یک دستگاه.','تعامل محصول'],
+7:['کارگاه سهند در شب بارانی','صحنهٔ کارگاه با باران، نور و حرکت دوربین در محیط تعاملی.','تجربهٔ تعاملی'],
+8:['آزمایش مفهومی رابط','نسخهٔ میانی برای آزمودن ترکیب صحنه و تعامل.','آزمایشی'],
+9:['ورود شخصیت به کارگاه','روایت تعاملی ورود شخصیت و واکنش او به دستگاه در کارگاه.','روایت تعاملی'],
+10:['طرح ارسالی کاربر','صفحهٔ ارسالی در قالب یک پیش‌نمایش مستقل.','فایل ارسالی'],
+11:['نسخهٔ چندبخشیِ ارسالی کاربر','ترکیب بخش‌های کد در یک صفحهٔ واحد.','فایل ارسالی'],
+12:['دسته‌بندی در قالب اصلی · زمردی','محصولات با دسته‌بندی پیشنهادی و تم سبز زمردی.','دسته‌بندی / رنگ'],
+13:['دسته‌بندی در قالب اصلی · طلایی','همان مسیر دسته‌بندی با رنگ‌های گرم طلایی.','دسته‌بندی / رنگ'],
+14:['دسته‌بندی در قالب اصلی · گرافیتی','همان مسیر دسته‌بندی با ظاهر گرافیتی.','دسته‌بندی / رنگ'],
+15:['دسته‌بندی در قالب اصلی · قرمز','همان مسیر دسته‌بندی با رنگ قرمز.','دسته‌بندی / رنگ'],
+16:['انتخاب بر اساس فرایند تولید','ورق، لوله، جوش، مارکینگ و تمیزکاری نقطهٔ شروع‌اند.','منطق دسته‌بندی'],
+17:['انتخاب بر اساس ابعاد کارگیر','گروه ابعادی و کارگیر در ابتدای مسیر انتخاب قرار می‌گیرد.','منطق دسته‌بندی'],
+18:['انتخاب بر اساس صنعت و کاربرد','دسته‌ها بر پایهٔ نیاز خط تولید و صنعت مرتب می‌شوند.','منطق دسته‌بندی'],
+19:['انتخاب بر اساس ساختار دستگاه','دسته‌بندی ساختاری مثل تک‌میز، دومیز و کابین‌دار.','منطق دسته‌بندی'],
+20:['نمای محصولات و قطعات بر اساس خانواده','مسیر دسترسی بر پایهٔ خانواده و برند قطعات طراحی شده است.','منطق دسته‌بندی'],
+21:['فرایند تولید · ظاهر مینیمال','دسته‌بندی فرایندی با ظاهر ساده و روشن.','منطق / تم'],
+22:['ابعاد کارگیر · ظاهر سفید','دسته‌بندی اندازه‌محور با زمینهٔ روشن.','منطق / تم'],
+23:['کاربرد صنعتی · ظاهر طلایی','دسته‌بندی بر اساس کاربرد در صنعت با رنگ گرم.','منطق / تم'],
+24:['ساختار دستگاه · ظاهر زمردی','دسته‌بندی بر پایهٔ ساختار در رنگ زمردی.','منطق / تم'],
+25:['ناوبری کناری و شناور','منو در نوار کناری ثابت و جمع‌وجور قرار دارد.','چیدمان'],
+26:['چیدمان تحریریه‌ای','متن و محتوا نقش اصلی دارند و شبکهٔ محصولات عریض‌تر است.','چیدمان'],
+27:['صفحهٔ دوپنلی','ناحیهٔ دسته‌بندی و بخش محصولات کنار هم دیده می‌شوند.','چیدمان'],
+28:['چیدمان فراگیر','صفحهٔ تیره با افکت نوریِ دنبال‌کنندهٔ اشاره‌گر.','چیدمان'],
+29:['کاتالوگ کامل با دسته‌بندی ساختارمحور','۱۰۶ محصول و تصویر؛ جست‌وجو، فیلتر خانواده، فیلتر ساختار و ابعاد برش، صفحهٔ هر محصول و مقایسهٔ دستگاه‌ها.','نسخهٔ فعلی']
+};
+function render(id,first,last){const box=document.getElementById(id);for(let n=first;n<=last;n++){const [title,desc,tag]=entries[n];const article=document.createElement('article');article.className='card';article.innerHTML='<div class="num">'+n+'</div><div><h3>'+title+'</h3><p>'+desc+'</p><span class="pill">'+tag+'</span> <a href="../preview-'+n+'/">بازکردن پیش‌نمایش '+n+' ←</a></div>';box.append(article)}}
+render('legacy',2,11);render('taxonomy',12,24);render('themes',25,28);render('new',29,29);
+</script></body></html>
