@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Sahand Yekan";
+  src: url("./fonts/Yekan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sahand Far Ketab";
+  src: url("./fonts/Far-Ketab.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sahand Yekan", Tahoma, Arial, sans-serif !important;
+}
+
+p, li, blockquote, td, th,
+.article-reader-card,
+.product-mini-card > div p,
+.support-hub-card p,
+.cutting-detail-section p,
+.font-specimen-ketab p {
+  font-family: "Sahand Far Ketab", "Sahand Yekan", Tahoma, Arial, sans-serif !important;
+  line-height: 1.95;
+}
+
+.font-specimen-yekan p {
+  font-family: "Sahand Yekan", Tahoma, Arial, sans-serif !important;
+}
+
+.font-specimen-latin {
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: .82rem;
+  color: #64748b;
+  margin-top: 1rem;
+}

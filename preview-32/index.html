@@ -83,6 +83,7 @@
 }
 </script>
 <link rel="stylesheet" href="../styles/site.css?v=mobile3d-20261006">
+<link rel="stylesheet" href="./typography.css?v=font-pair-20261013">
 <script src="../site-config.js?v=ct005-media-fix-20261006"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}</script>
@@ -315,6 +316,27 @@
         <a href="#applications" onclick="navigateTo('applications');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-industry"></i></div><div class="font-bold text-brand dark:text-white text-sm">کاربردها</div></a>
         <a href="#contact" onclick="navigateTo('contact');return false;" class="card-hover bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 text-center border border-slate-200 dark:border-slate-800"><div class="w-12 h-12 rounded-xl gradient-brand flex items-center justify-center text-white text-xl mx-auto mb-3"><i class="fa-solid fa-headset"></i></div><div class="font-bold text-brand dark:text-white text-sm" data-i18n="quick_contact">تماس</div></a>
       </div>
+    </div>
+  </section>
+
+  <section id="font-pair-preview" class="py-14 bg-slate-50 dark:bg-slate-900/60">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-8"><span class="text-accent font-bold text-sm">آزمایش تایپوگرافی</span><h2 class="text-2xl md:text-3xl font-bold text-brand dark:text-white mt-2">ترکیب پیشنهادی فونت‌های سهند لیزر</h2><p class="text-sm text-slate-500 mt-2">Yekan برای رابط و تیترها · Far.Ketab برای متن‌های خواندنی</p></div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <article class="font-specimen font-specimen-yekan rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-6">
+          <div class="text-xs font-bold text-accent mb-3">Yekan · رابط کاربری و تیتر</div>
+          <h3 class="text-xl font-bold text-brand dark:text-white mb-3">دستگاه‌های برش لیزر سهند</h3>
+          <p>طراحی و ساخت دستگاه متناسب با فضای کارگاه، نوع ورق و نیاز خط تولید؛ همراه با آموزش و پشتیبانی فنی.</p>
+          <div class="font-specimen-latin" dir="ltr">Sahand Laser · Fiber Laser Systems · 3015 / 6020</div>
+        </article>
+        <article class="font-specimen font-specimen-ketab rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-6">
+          <div class="text-xs font-bold text-accent mb-3">Far.Ketab · متن‌های بلندتر</div>
+          <h3 class="text-xl font-bold text-brand dark:text-white mb-3">دستگاه‌های برش لیزر سهند</h3>
+          <p>طراحی و ساخت دستگاه متناسب با فضای کارگاه، نوع ورق و نیاز خط تولید؛ همراه با آموزش و پشتیبانی فنی.</p>
+          <div class="font-specimen-latin" dir="ltr">Sahand Laser · Fiber Laser Systems · 3015 / 6020</div>
+        </article>
+      </div>
+      <p class="text-xs text-slate-500 text-center mt-5">نمونهٔ آزمایشی است؛ حروف لاتین به فونت جایگزین سیستمی سپرده می‌شوند.</p>
     </div>
   </section>
 
@@ -1388,4 +1410,3 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
-
