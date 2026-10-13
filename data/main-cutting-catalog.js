@@ -57,6 +57,18 @@
     window.renderCatalogFilter();
     window.renderAllProducts(group);
   };
+  const originalOpenCategory = window.openCategory;
+  window.openCategory = function openMainCategory(categoryId) {
+    if (categoryId === 'cutting') {
+      window.navigateTo('products');
+      setTimeout(() => {
+        window.filterCatalog('all');
+        document.getElementById('full-catalog-section')?.scrollIntoView({behavior:'smooth',block:'start'});
+      }, 80);
+      return;
+    }
+    if (typeof originalOpenCategory === 'function') originalOpenCategory(categoryId);
+  };
 
   window.renderAllProducts = function renderMainCuttingProducts(group) {
     if (group) activeGroup = group;
