@@ -5,6 +5,13 @@
   window.SAHAND_REVIEWED_IMAGES=map;
   function apply(){
   for(const [code,entry] of Object.entries(map)){
+    if(window.SAHAND_PRODUCTS && !window.SAHAND_PRODUCTS[code] && code.startsWith('CUT-')){
+      const title={fa:entry.name,en:entry.name,ar:entry.name,tr:entry.name};
+      const category={fa:'دستگاه‌های برش لیزر',en:'Laser cutting',ar:'Laser cutting',tr:'Laser cutting'};
+      window.SAHAND_PRODUCTS[code]={code,categoryId:'cutting',title,cat:category,badge:category,
+        subtitle:{fa:'دستگاه برش دومیز',en:'Dual-table laser cutting'},media:{images:[],frames360:[],works:[],notes:{}},
+        images:[],advantages:[],specs:[],usage:[],models:[],description:{fa:[entry.name],en:[entry.name],ar:[entry.name],tr:[entry.name]},downloads:[],editorial:[],review:''};
+    }
     const p=window.SAHAND_PRODUCTS?.[code];if(!p)continue;
     const url=new URL(entry.src,root).href;
     p.media=p.media||{};
