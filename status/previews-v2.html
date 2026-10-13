@@ -49,3 +49,4 @@ const entries={
 function render(id,first,last){const box=document.getElementById(id);for(let n=first;n<=last;n++){const [title,desc,tag]=entries[n];const article=document.createElement('article');article.className='card';article.innerHTML='<div class="num">'+n+'</div><div><h3>'+title+'</h3><p>'+desc+'</p><span class="pill">'+tag+'</span> <a href="../preview-'+n+'/">بازکردن پیش‌نمایش '+n+' ←</a></div>';box.append(article)}}
 render('legacy',2,11);render('taxonomy',12,24);render('themes',25,28);render('new',29,29);
 </script></body></html>
+
