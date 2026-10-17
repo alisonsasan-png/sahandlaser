@@ -1117,6 +1117,7 @@
 <script src="../data/reviewed-product-images.js?v=media-review-1"></script>
 <script src="../runtime/app.js?v=mobile3d-20261006"></script>
 <script src="../preview-29/data.js?v=20261013-fix1"></script>
+<script src="./product-images.js?v=20261017"></script>
 <script>
 (() => {
   const source = window.PREVIEW29_PRODUCTS || [];
@@ -1254,6 +1255,34 @@ body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}
   const source = window.PREVIEW29_PRODUCTS || [];
   const cutting = window.mainCuttingItems || [];
   const products = [...cutting, ...source.filter(item => item.category !== 'cutting')];
+  // Connect numbered visuals to exact model records, and add a detail record for
+  // models missing from this preview. Keep technical claims limited to the image label.
+  const previewImages=window.PREVIEW32_IMAGES||[];
+  const previewCodes=new Set();
+  for(const visual of previewImages){
+    const existing=products.find(item=>item.code===visual.code);
+    if(existing){
+      existing.preview32Images=existing.preview32Images||[];
+      existing.preview32Images.push(visual.image);
+      if(!previewCodes.has(visual.code)){
+        existing.image=visual.image;
+        existing.imageType='تصویر بازسازی‌شده از مرجع محصول';
+        existing.imageDecision='تطبیق مدل از برچسب تصویر؛ نیازمند بازبینی محصول';
+      }
+    }else{
+      const item={code:visual.code,name:visual.name,category:visual.category,
+        group:visual.category==='cutting'?'single':undefined,image:visual.image,
+        imageType:'تصویر بازسازی‌شده از مرجع محصول',
+        imageDecision:'برچسب مدل تصویر؛ مشخصات فنی هنوز تأیید نشده',
+        description:visual.code==='SHOWCASE-32-07'
+          ?'تصویر ترکیبی برای نمایش چند دستگاه؛ مشخصات یک مدل خاص را نشان نمی‌دهد.'
+          :'تصویر بازسازی‌شدهٔ این مدل برای پیش‌نمایش کاتالوگ. مشخصات فنی اختصاصی هنوز ثبت یا تأیید نشده است.',
+        specs:visual.code==='SHOWCASE-32-07'?[]:[{label:'مدل روی تصویر',value:visual.code,scope:'برچسب تصویر'}],
+        sources:[]};
+      products.push(item);if(item.category==='cutting')cutting.push(item);
+    }
+    previewCodes.add(visual.code);
+  }
   window.mainCuttingItems = products;
   const categoryLabels = {cutting:'دستگاه‌های برش لیزر',welding:'دستگاه‌های جوش لیزر',marking:'دستگاه‌های حکاکی و مارکینگ',cleaning:'دستگاه‌های تمیزکاری',source:'سورس لیزر',head:'هد برش',parts:'قطعات دستگاه',consumables:'قطعات مصرفی'};
   const categoryIcons = {cutting:'▤',welding:'⚡',marking:'✳',cleaning:'⌁',source:'◈',head:'⌖',parts:'⚙',consumables:'◇'};
@@ -1318,6 +1347,25 @@ body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}
     else{detail.hidden=true;document.body.style.overflow='';}
   });
   window.renderCatalogFilter();window.renderAllProducts();window.renderHomeProducts();
+  // Complete numbered review set, including alternate views and the composite image.
+  const catalog=document.getElementById('full-catalog-section');
+  if(catalog&&previewImages.length){
+    const gallery=document.createElement('section');gallery.id='preview32-gallery';
+    gallery.className='mt-10 pt-8 border-t border-slate-200 dark:border-slate-800';
+    gallery.innerHTML=`<h2 class="text-2xl font-bold text-brand dark:text-white mb-2">تصاویر ۱ تا ۳۲ و تطبیق محصولات</h2><p class="text-sm text-slate-500 mb-5">تصاویر بازسازی‌شده‌اند؛ مشخصات فنی تنها وقتی در رکورد محصول موجود باشد نمایش داده می‌شود.</p><div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">${previewImages.map(v=>`<button type="button" class="product-mini-card text-right rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950" onclick="openPreview32Image(${v.number})"><img src="${esc(new URL('../'+v.image,location.href).href)}" alt="${esc(v.name)}" loading="lazy" style="width:100%;height:170px;object-fit:contain;background:#fff"><span class="block p-3 text-sm text-brand dark:text-white"><b>تصویر ${v.number}</b> · ${esc(v.name)}<small class="block text-slate-500" dir="ltr">${esc(v.code)}</small></span></button>`).join('')}</div>`;
+    catalog.prepend(gallery);
+    window.openPreview32Image=number=>{
+      const visual=previewImages.find(v=>v.number===number);if(!visual)return;
+      const item=products.find(p=>p.code===visual.code);
+      if(!item)return;
+      window.openCuttingProduct(item.code);
+      const image=detail?.querySelector('.cutting-detail-image img');
+      if(image)image.src=new URL('../'+visual.image,location.href).href;
+    };
+  }
+  const initialProduct=new URL(location.href).searchParams.get('product');
+  if(initialProduct&&products.some(item=>item.code===initialProduct))
+    window.openCuttingProduct(initialProduct,{fromHistory:true});
 
   const articleGrid=document.getElementById('extracted-articles-grid'),reader=document.getElementById('article-reader');
   const toText=html=>{const doc=new DOMParser().parseFromString(String(html||''),'text/html');doc.querySelectorAll('script,style,iframe').forEach(node=>node.remove());return (doc.body.textContent||'').replace(/\s+/g,' ').trim();};
