@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-20T02:08:16.038+03:30",
+    "updatedAt":  "2026-10-20T02:12:27.350+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "ادامهٔ تکمیل کاتالوگ ۱۰۶ محصول و ایمن‌سازی pipeline",
-    "currentTask":  "Uploaded three distinct illustrative welding application visuals and corrected their catalog records; formal models 008–010 now use separate image paths",
-    "nextTask":  "Continue matching the remaining shared-family image records against the 408 supplied photo assets; then resume sourced specifications, X-ray/technical sheets, and articles",
+    "currentTask":  "Published separate WL-008/009/010 imagery; live Chromium confirms 106 cards, 106 product image URLs return HTTP 200, and 77 distinct studio-image paths",
+    "nextTask":  "Continue identifying original assets for the remaining 29 shared-image records and then finish sourced data, technical/X-ray sheets, and Persian educational articles",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -3114,7 +3114,11 @@
                     },
                     {
                         "at":  "2026-10-20T02:08:16.038+03:30",
-                        "text":  "Milestone: published separate generic application illustrations for WL-008 robotic welding, WL-009 jewelry welding, and WL-010 channel-letter welding; updated each catalog image path and provenance so these are clearly concepts, not exact installed-machine photos. The 106-record catalog now has 80 unique studio image files (up from 77) and all 106 local paths resolve. Added the dimension-sheet logo asset to the pipeline deployment allow-list and main.py self-tests still pass. These three product images are now live and need follow-up against supplied photos if exact installed units are identified; many shared-image groups remain."
+                        "text":  "Milestone: prepared separate generic application illustrations for WL-008 robotic welding, WL-009 jewelry welding, and WL-010 channel-letter welding; updated each local catalog image path and provenance so these are clearly concepts, not exact installed-machine photos. Local draft temporarily contained 80 unique image paths; three entries were not yet published. Added the dimensional-sheet logo asset to the pipeline deployment allow-list and main.py self-tests passed. Numerous shared-image groups remained."
+                    },
+                    {
+                        "at":  "2026-10-20T02:12:27.350+03:30",
+                        "text":  "Correction and publication verification: the public catalog previously had 74 unique studio-image paths, not 77; the local draft count included three not-yet-published assets. WL-008/009/010 images and metadata are now live. Remote catalog JSON parses with 106 product records and 77 unique studio-image paths (29 records still share family images); all 106 image URLs returned HTTP 200. Chromium headless rendered 106 product cards, detected the map link, and showed Persian product text. GitHub Pages deployment for commit 4021e8dfd5bbe09a1e3f5562d39a2debca08fdde succeeded."
                     }
                 ]
 }
