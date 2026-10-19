@@ -1,0 +1,40 @@
+# Sahand Laser catalog automation
+
+## Setup (PowerShell)
+
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+notepad .env
+```
+
+Put the OpenAI API key in `.env` as `OPENAI_API_KEY=...`. The `.env` file is ignored by Git; never paste the key into `product_links.txt` or commit it. GPT Image model access may require organization verification and API billing.
+
+## Choose product pages
+
+Add one product URL per line to `product_links.txt`. If the file contains no URLs, the scraper discovers product links from `PRODUCTS_PAGE_URL` (default `https://sahandlaser.com/laser-cutting-machine/`). It skips archive/navigation links, observes `robots.txt`, uses a delay, follows only allow-listed hosts, and logs per-product failures to `error_log.txt` while continuing. Dimensions are saved only when an overall-dimensions label and a three-value tuple are found; work-area values are not substituted for overall size. Persian and Arabic numerals are normalized, and explicit units are converted to millimeters.
+
+## Build and preview
+
+```powershell
+python main.py self-test
+python main.py build --generate-images
+```
+
+The build writes `products_data.json`, downloaded reference photos in the ignored `reference_images/` folder, conceptual X-ray images in `generated_xray/`, datasheets in `output_catalog/`, and `catalog.html`. It prints `Preview ready at http://localhost:3333/catalog.html`; open that URL in a browser. Press Ctrl+C in the terminal to stop the server. Generated X-ray-style internals are explicitly conceptual, not verified machine assemblies. If an API call fails, the build logs the error and uses a source exterior photo as a clearly labeled fallback when available.
+
+To run with a different port, use `python main.py build --generate-images --port 3334`. Use `--no-server` for a non-interactive build. Image generation is a paid API call and runs only when `--generate-images` is supplied.
+
+## Publish
+
+From the root of a clone of `alisonsasan-png/sahandlaser` on branch `main`, after checking the generated catalog and ensuring the Git index has no unrelated staged work:
+
+```powershell
+python main.py deploy
+```
+
+Or use `python main.py build --generate-images --deploy` to build and then deploy the allow-listed catalog artifacts automatically. Deployment checks the repository remote and branch, excludes `.env`, stages only known catalog files (never `git add .`), commits with `Automated Catalog & X-Ray Update`, then pushes `origin main`. Existing unrelated staged changes cause deployment to stop rather than being mixed into the release.
+
+The repository-root `catalog.html` is the public image catalog. Each product card should point to a real image file in the repository; verify capitalization and live image responses after Pages finishes deploying.

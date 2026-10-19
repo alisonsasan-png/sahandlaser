@@ -29,3 +29,7 @@ Banner-style images must not contain phone numbers, website addresses, contact i
 ## Latest repair
 
 GitHub Pages was returning 404 because a redundant Pages workflow conflicted with the standard branch-based Pages deployment. The redundant workflow was removed, and the standard GitHub Pages deployment completed successfully.
+
+## Product catalog automation
+
+The scraper, optional conceptual X-ray image generation, Pillow datasheets, local preview, and allow-listed Git deployment are documented in [AUTOMATION.md](AUTOMATION.md). Start with `python main.py self-test`, then review `python main.py build --generate-images` locally before deploying. API-generated internal views are explicitly conceptual unless verified against manufacturer documentation.

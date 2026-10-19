@@ -1,4 +1,14 @@
 node_modules
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+reference_images/
+error_log.txt
+.pipeline-check/
+logo-crop-review.png
 sahand-assets/
 SahandLaser_V8_Preview.html
 *.zip

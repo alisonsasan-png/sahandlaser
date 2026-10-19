@@ -1,0 +1,2 @@
+# Put one product page URL per line. Blank lines and lines starting with # are ignored.
+# If no URLs are listed, main.py discovers product links from PRODUCTS_PAGE_URL.
