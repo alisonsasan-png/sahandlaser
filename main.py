@@ -19,6 +19,7 @@ import re
 import socket
 import subprocess
 import sys
+import tempfile
 import time
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
@@ -42,7 +43,7 @@ LINKS_FILE = ROOT / "product_links.txt"
 DATA_FILE = ROOT / "products_data.json"
 XRAY_DIR = ROOT / "generated_xray"
 OUTPUT_DIR = ROOT / "output_catalog"
-CATALOG_FILE = ROOT / "catalog.html"
+CATALOG_FILE = OUTPUT_DIR / "catalog.html"
 DEFAULT_PRODUCTS_PAGE = "https://sahandlaser.com/laser-cutting-machine/"
 USER_AGENT = "SahandLaserCatalogBot/1.0 (+local product-catalog workflow)"
 LOG = logging.getLogger("sahand_catalog")
@@ -722,6 +723,7 @@ def generate_catalog_page(output_dir: Path, records: list[dict[str, Any]], outpu
         name = html.escape(str(record.get("name") or image_path.stem))
         model = html.escape(str(record.get("model") or "مدل ثبت نشده"))
         image_name = html.escape(image_path.name)
+        image_href = html.escape(Path(os.path.relpath(image_path, output_path.parent)).as_posix())
         visual_note = ("تصویر X-ray مفهومیِ مولد؛ اجزای داخلی تأییدشده نیستند."
                        if record.get("catalog_visual_type") == "xray_concept"
                        else "تصویر از عکس مرجع بیرونی ساخته شده؛ X-ray نیست.")
@@ -729,8 +731,8 @@ def generate_catalog_page(output_dir: Path, records: list[dict[str, Any]], outpu
         dimension_text = (f"ابعاد کلی (mm): {dims['length']} × {dims['width']} × {dims['height']}"
                           if isinstance(dims, dict) else "ابعاد کلی مستند در منبع پیدا نشد.")
         cards.append(
-            f'<article class="card"><a href="{output_dir.name}/{image_name}" target="_blank" rel="noopener">'
-            f'<img src="{output_dir.name}/{image_name}" alt="برگهٔ کاتالوگ {name}" loading="lazy"></a>'
+            f'<article class="card"><a href="{image_href}" target="_blank" rel="noopener">'
+            f'<img src="{image_href}" alt="برگهٔ کاتالوگ {name}" loading="lazy"></a>'
             f'<div class="copy"><h2>{name}</h2><p>مدل: {model}</p>'
             f'<p>{html.escape(dimension_text)}</p><p class="note">{html.escape(visual_note)}</p></div></article>'
         )
@@ -869,7 +871,18 @@ def run_self_tests() -> None:
     assert slug_for({"model": "3015", "name": "مدل استاندارد"}) != slug_for(
         {"model": "3015", "name": "مدل حرفه‌ای"}
     )
-    print("Self-tests passed: localized digits, unit conversion, dimension scope, host allowlist, and product-link filtering.")
+    with tempfile.TemporaryDirectory(prefix="sahand-catalog-test-") as temp:
+        temp_root = Path(temp)
+        generated_dir = temp_root / "output_catalog"
+        generated_dir.mkdir()
+        (generated_dir / "sample.png").write_bytes(b"test")
+        generated_page = generated_dir / "catalog.html"
+        generate_catalog_page(generated_dir, [{"name": "Sample", "model": "S1"}], generated_page)
+        generated_markup = generated_page.read_text(encoding="utf-8")
+        assert 'href="sample.png"' in generated_markup
+        assert 'src="sample.png"' in generated_markup
+        assert CATALOG_FILE == OUTPUT_DIR / "catalog.html"
+    print("Self-tests passed: localized digits, unit conversion, dimension scope, host allowlist, product-link filtering, and isolated preview output.")
 
 
 def build(args: argparse.Namespace) -> None:
@@ -991,3 +1004,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

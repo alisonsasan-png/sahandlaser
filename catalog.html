@@ -47,10 +47,10 @@
         count.textContent=`${visible.length} از ${items.length} محصول`;
         root.replaceChildren();
         if(!visible.length){root.append(el('p','empty','محصولی با این جست‌وجو پیدا نشد.'));return}
-        for(const p of visible){
+        for(const [index,p] of visible.entries()){
           const visual=p.visuals?.studio;const src=visual?.src||p.images?.[0]?.src;
           const card=el('article','card');
-          if(src){const link=el('a','visual');link.href=src;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label',`نمایش تصویر بزرگ‌تر ${p.name||p.code}`);const img=el('img');img.src=src;img.alt=`تصویر محصول ${p.name||p.code}`;img.loading='lazy';img.decoding='async';img.onerror=()=>{link.replaceChildren(el('span','error','تصویر این محصول در حال حاضر بارگیری نشد.'))};link.append(img);card.append(link)}else card.append(el('div','visual error','تصویری برای این رکورد ثبت نشده است.'));
+          if(src){const link=el('a','visual');link.href=src;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label',`نمایش تصویر بزرگ‌تر ${p.name||p.code}`);const img=el('img');img.src=src;img.alt=`تصویر محصول ${p.name||p.code}`;img.loading=index<8?'eager':'lazy';img.decoding='async';img.onerror=()=>{link.replaceChildren(el('span','error','تصویر این محصول در حال حاضر بارگیری نشد.'))};link.append(img);card.append(link)}else card.append(el('div','visual error','تصویری برای این رکورد ثبت نشده است.'));
           const copy=el('div','copy');copy.append(el('span','tag',labels[p.category]||p.category||'محصول'));copy.append(el('h2','',p.name||'محصول بدون نام'));copy.append(el('div','code',p.code||''));
           const desc=Array.isArray(p.description)?p.description[0]:p.description;if(desc)copy.append(el('p','summary',desc));
           if(p.code==='CUT-3015-1'){const drawing=el('a','drawing-link');drawing.href='preview-32/drawings/single-table-standard-3015.svg';drawing.target='_blank';drawing.rel='noopener';const thumb=el('img');thumb.src='assets/product-drawings/3015-standard-isometric.jpg';thumb.alt='پیش‌نمایش نقشهٔ ایزومتریک و ابعادی دستگاه ۳۰۱۵';thumb.loading='lazy';drawing.append(thumb,el('span','','مشاهدهٔ نقشهٔ ایزومتریک و ابعادی ۳۰۱۵'));copy.append(drawing)}

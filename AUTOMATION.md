@@ -23,7 +23,7 @@ python main.py self-test
 python main.py build --generate-images
 ```
 
-The build writes `products_data.json`, downloaded reference photos in the ignored `reference_images/` folder, conceptual X-ray images in `generated_xray/`, datasheets in `output_catalog/`, and `catalog.html`. It prints `Preview ready at http://localhost:3333/catalog.html`; open that URL in a browser. Press Ctrl+C in the terminal to stop the server. Generated X-ray-style internals are explicitly conceptual, not verified machine assemblies. If an API call fails, the build logs the error and uses a source exterior photo as a clearly labeled fallback when available.
+The build writes `products_data.json`, downloaded reference photos in the ignored `reference_images/` folder, conceptual X-ray images in `generated_xray/`, and datasheets plus a generated preview page in `output_catalog/`. The generated page is `output_catalog/catalog.html`; the server serves that directory at `http://localhost:3333/catalog.html`. It does not overwrite the repository-root `catalog.html`, which is the curated public 106-product image catalog. Press Ctrl+C in the terminal to stop the server. Generated X-ray-style internals are explicitly conceptual, not verified machine assemblies. If an API call fails, the build logs the error and uses a source exterior photo as a clearly labeled fallback when available.
 
 To run with a different port, use `python main.py build --generate-images --port 3334`. Use `--no-server` for a non-interactive build. Image generation is a paid API call and runs only when `--generate-images` is supplied.
 
@@ -37,4 +37,5 @@ python main.py deploy
 
 Or use `python main.py build --generate-images --deploy` to build and then deploy the allow-listed catalog artifacts automatically. Deployment checks the repository remote and branch, excludes `.env`, stages only known catalog files (never `git add .`), commits with `Automated Catalog & X-Ray Update`, then pushes `origin main`. Existing unrelated staged changes cause deployment to stop rather than being mixed into the release.
 
-The repository-root `catalog.html` is the public image catalog. Each product card should point to a real image file in the repository; verify capitalization and live image responses after Pages finishes deploying.
+The repository-root `catalog.html` is the public image catalog. Each product card should point to a real image file in the repository; verify capitalization and live image responses after Pages finishes deploying. The generated preview page and image assets remain under `output_catalog/` and are separately staged by the allow-listed deploy command.
+

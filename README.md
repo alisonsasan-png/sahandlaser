@@ -33,3 +33,8 @@ GitHub Pages was returning 404 because a redundant Pages workflow conflicted wit
 ## Product catalog automation
 
 The scraper, optional conceptual X-ray image generation, Pillow datasheets, local preview, and allow-listed Git deployment are documented in [AUTOMATION.md](AUTOMATION.md). Start with `python main.py self-test`, then review `python main.py build --generate-images` locally before deploying. API-generated internal views are explicitly conceptual unless verified against manufacturer documentation.
+
+## Product image library
+
+The public [product image catalog](https://alisonsasan-png.github.io/sahandlaser/catalog.html) presents 106 product records with their linked images, searchable names/codes, category filters, and expandable source/specification details. It also links the single-table 3015 isometric dimension sheet. The automated local build writes its separate preview to `output_catalog/catalog.html` so it cannot replace this curated public page.
+
