@@ -3,42 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="کاتالوگ تصاویر و برگه‌های فنی محصولات سهند لیزر">
-  <title>کاتالوگ عکس‌های محصولات | سهند لیزر</title>
+  <meta name="description" content="کتابخانهٔ تصاویر و مشخصات مستند محصولات سهند لیزر؛ شامل ۱۰۶ مدل از دستگاه‌ها، قطعات و تجهیزات.">
+  <meta name="theme-color" content="#102b43">
+  <title>کتابخانهٔ تصاویر محصولات | سهند لیزر</title>
   <style>
-    :root{color-scheme:light;--navy:#102b43;--ink:#17334b;--muted:#536b80;--line:#dbe4ec;--bg:#f3f6f8;--cyan:#13a6c4}
+    :root{color-scheme:light;--navy:#102b43;--ink:#17334b;--muted:#536b80;--line:#dbe4ec;--bg:#f3f6f8;--cyan:#13a6c4;--white:#fff}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.9 Tahoma,Arial,sans-serif}
-    .top{background:linear-gradient(125deg,#102b43,#1c4963);color:#fff;padding:42px 20px 36px;border-bottom:4px solid var(--cyan)}
-    .wrap{max-width:1240px;margin:auto;padding-inline:22px}.top h1{font-size:clamp(28px,4vw,42px);line-height:1.4;margin:0}.top p{margin:10px 0 0;color:#d2e5ee;font-size:17px}
-    .notice{margin:24px 0 0;padding:16px 20px;border:1px solid #efd8b5;background:#fff6e9;border-radius:14px;color:#755327;line-height:1.8}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:24px;padding:28px 0 56px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 22px #102b4310}
-    .card a{display:block;background:#f9fbfd}.card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
-    .copy{padding:20px 22px 24px}.copy h2{margin:0 0 8px;font-size:22px;line-height:1.6}.copy p{margin:5px 0;color:var(--muted)}.tag{display:inline-block;border-radius:999px;padding:2px 12px;background:#e8f7fa;color:#126179;font-size:14px;margin-bottom:8px}
+    a{color:#087b96}.top{background:linear-gradient(125deg,#102b43,#1c4963);color:#fff;padding:38px 20px 32px;border-bottom:4px solid var(--cyan)}
+    .wrap{width:min(1360px,100%);margin:auto;padding-inline:22px}.top h1{font-size:clamp(27px,4vw,40px);line-height:1.45;margin:0}.top p{margin:8px 0 0;color:#d2e5ee;font-size:17px}
+    .toolbar{position:sticky;top:0;z-index:4;background:#f3f6f8f2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 0}
+    .controls{display:grid;grid-template-columns:minmax(220px,1.5fr) minmax(190px,1fr) auto;gap:12px;align-items:center}
+    input,select{width:100%;min-height:48px;border:1px solid #cbd8e2;border-radius:11px;background:#fff;color:var(--ink);padding:9px 14px;font:inherit}
+    input:focus,select:focus,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #21a7c8;outline-offset:2px}
+    #count{margin:0;color:var(--muted);white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px;padding:24px 0 56px}
+    .card{display:flex;flex-direction:column;min-width:0;background:var(--white);border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 5px 22px #102b4310}
+    .visual{display:grid;place-items:center;aspect-ratio:4/3;background:#fff;border-bottom:1px solid #edf1f4;padding:12px}.visual img{display:block;width:100%;height:100%;object-fit:contain}
+    .copy{display:flex;flex:1;flex-direction:column;padding:16px 18px 18px}.tag{align-self:flex-start;border-radius:999px;padding:1px 10px;background:#e8f7fa;color:#126179;font-size:13px}
+    .copy h2{margin:8px 0 4px;font-size:19px;line-height:1.65}.code{color:#60778b;font-size:13px;direction:ltr;text-align:right}.summary{margin:8px 0;color:#40596d;font-size:14px;line-height:1.9}
+    details{margin-top:auto;border-top:1px solid #e7edf1;padding-top:10px}summary{cursor:pointer;font-weight:bold;color:#126179}details p{margin:8px 0;color:var(--muted);font-size:14px;overflow-wrap:anywhere}.specs{margin:8px 0 0;padding:0;list-style:none}.specs li{padding:7px 0;border-bottom:1px solid #edf1f4;font-size:14px}.specs strong{color:var(--ink)}
+    .provenance{font-size:13px!important;color:#795b27!important;background:#fff7eb;border-radius:9px;padding:9px 11px}.sources{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}.empty,.error{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}
     footer{border-top:1px solid var(--line);padding:18px 0 32px;color:var(--muted);font-size:14px}
-    @media(max-width:600px){.top{padding:30px 0}.wrap{padding-inline:16px}.grid{padding-top:18px;gap:16px}.copy{padding:16px}.copy h2{font-size:19px}}
+    @media(max-width:700px){.wrap{padding-inline:15px}.top{padding:28px 0}.controls{grid-template-columns:1fr 1fr}.controls input{grid-column:1/-1}#count{grid-column:1/-1}.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:14px;padding-top:16px}}
+    @media(prefers-reduced-motion:no-preference){.card{transition:transform .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-3px);box-shadow:0 10px 28px #102b4318}}
   </style>
 </head>
 <body>
-  <header class="top"><div class="wrap"><h1>کاتالوگ عکس‌های محصولات</h1><p>برگه‌های تصویری و راهنمای ابعاد محصولات سهند لیزر</p></div></header>
-  <main class="wrap">
-    <p class="notice">یادآوری: تصویر محصول و نقشهٔ شماتیک جایگزین نقشهٔ ساختِ تأییدشده نیستند. مقدارهای تقریبی با برچسب مشخص شده‌اند؛ ابعاد نهایی را پیش از طراحی فونداسیون یا سفارش با واحد فنی تطبیق دهید.</p>
-    <section class="grid" aria-label="تصاویر محصولات">
-      <article class="card">
-        <a href="preview-32/drawings/single-table-standard-3015.svg" target="_blank" rel="noopener"><img src="assets/product-drawings/3015-standard-isometric.jpg" alt="نقشهٔ ایزومتریک و ابعادی دستگاه برش لیزر تک‌میز استاندارد ۳۰۱۵ سهند لیزر" width="1920" height="1400"></a>
-        <div class="copy"><span class="tag">نقشهٔ ایزومتریک مرجع · ابعاد کلی کاتالوگ</span><h2>دستگاه برش لیزر تک‌میز استاندارد 3015</h2><p>ابعاد درج‌شده: ۴۸۰۰ × ۲۴۰۰ × ۱۷۵۰ میلی‌متر</p><p><a href="preview-32/drawings/single-table-standard-3015.svg" target="_blank" rel="noopener">مشاهده و دریافت نقشهٔ ایزومتریک و ابعادی</a> · <a href="assets/product-drawings/3015-standard-hero.jpg" target="_blank" rel="noopener">عکس مرجع دستگاه</a></p><p>نماهای فنی شماتیک‌اند؛ این برگه نقشهٔ ساخت یا اندازه‌برداری دستگاه نصب‌شده نیست.</p></div>
-      </article>
-      <article class="card">
-        <a href="assets/product-sheets/dz3015h-studio.jpg" target="_blank" rel="noopener"><img src="assets/product-sheets/dz3015h-studio.jpg" alt="تصویر استودیویی مرجع دستگاه برش لیزر فایبر DZ3015H" width="1536" height="1024"></a>
-        <div class="copy"><span class="tag">ابعاد درج‌شده در کاتالوگ</span><h2>DZ3015H — دستگاه برش لیزر فایبر</h2><p>ابعاد کلی: ۴۸۰۰ × ۲۴۰۰ × ۱۷۵۰ میلی‌متر</p><p>تصویر بالا عکس مرجع محصول است؛ این کاتالوگ، نقشهٔ ساخت یا اندازه‌برداری دستگاه نصب‌شده را ارائه نمی‌کند.</p><p>ابعاد نقل‌شده از کاتالوگ‌اند.</p></div>
-      </article>
-      <article class="card">
-        <a href="assets/product-sheets/laser-4020-preliminary.svg" target="_blank" rel="noopener"><img src="assets/product-sheets/laser-4020-preliminary-studio.jpg" alt="تصویر استودیویی مرجع پیش‌نمونهٔ دستگاه برش لیزر تک‌میز استاندارد 4020" width="1536" height="1024"></a>
-        <div class="copy"><span class="tag">پیش‌نمونهٔ مقدماتی</span><h2>دستگاه برش لیزر تک‌میز استاندارد 4020</h2><p>ابعاد کلی تقریبی: ۵۲۰۰ × ۳۲۰۰ × ۱۸۰۰ میلی‌متر</p><p>محدودهٔ کاری تقریبی: ۴۰۰۰ × ۲۰۰۰ میلی‌متر — نیازمند تطبیق با دستگاه واقعی.</p><p><a href="assets/product-sheets/laser-4020-preliminary.svg">مشاهدهٔ برگهٔ ابعاد و نمای ایزومتریک</a></p></div>
-      </article>
-    </section>
-  </main>
-  <footer><div class="wrap">تصاویر مرجع از مجموعهٔ دارایی‌های محصولات سهند لیزر انتخاب شده‌اند. مقادیر فنی با وضعیت منبع فعلی برچسب‌گذاری شده‌اند.</div></footer>
+  <header class="top"><div class="wrap"><h1>کتابخانهٔ تصاویر محصولات سهند لیزر</h1><p>تصاویر، کدها و اطلاعات مستند ۱۰۶ محصول در یک صفحهٔ قابل جست‌وجو</p></div></header>
+  <div class="toolbar"><div class="wrap controls"><input id="query" type="search" autocomplete="off" placeholder="جست‌وجوی نام یا کد محصول" aria-label="جست‌وجوی محصولات"><select id="category" aria-label="فیلتر گروه محصولات"><option value="">همهٔ گروه‌ها</option></select><p id="count" aria-live="polite">در حال بارگذاری فهرست…</p></div></div>
+  <main class="wrap"><section id="catalog" class="grid" aria-label="فهرست محصولات"></section></main>
+  <footer><div class="wrap">تصاویر با توجه به دامنهٔ تطبیق ثبت‌شده برای هر محصول نمایش داده می‌شوند. مشخصات و منابع هر مدل را از بخش «اطلاعات و منابع» همان کارت ببینید؛ تصویر بازسازی‌شده به‌تنهایی اثبات‌کنندهٔ پیکربندی نصب‌شده یا اجزای پنهان نیست.</div></footer>
+  <script>
+    (()=>{
+      'use strict';
+      const dataUrl='docs/catalog-completion/catalog-draft.json';
+      const root=document.getElementById('catalog'),query=document.getElementById('query'),category=document.getElementById('category'),count=document.getElementById('count');
+      const labels={cutting:'دستگاه برش لیزر',welding:'دستگاه جوش لیزر',marking:'دستگاه حکاکی و مارکینگ',cleaning:'دستگاه تمیزکاری لیزر',source:'سورس لیزر',head:'هد و کنترلر',parts:'قطعات و تجهیزات',consumables:'قطعات مصرفی'};
+      const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node};
+      const addLink=(parent,url,label)=>{if(!url)return;try{const parsed=new URL(url,location.href);if(!['http:','https:'].includes(parsed.protocol))return;const a=el('a','',label);a.href=parsed.href;a.target='_blank';a.rel='noopener noreferrer';parent.append(a)}catch{}};
+      function render(items){
+        const term=query.value.trim().toLocaleLowerCase('fa');const group=category.value;
+        const visible=items.filter(p=>(!group||p.category===group)&&(!term||`${p.name||''} ${p.code||''} ${p.model||''}`.toLocaleLowerCase('fa').includes(term)));
+        count.textContent=`${visible.length} از ${items.length} محصول`;
+        root.replaceChildren();
+        if(!visible.length){root.append(el('p','empty','محصولی با این جست‌وجو پیدا نشد.'));return}
+        for(const p of visible){
+          const visual=p.visuals?.studio;const src=visual?.src||p.images?.[0]?.src;
+          const card=el('article','card');
+          if(src){const link=el('a','visual');link.href=src;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label',`نمایش تصویر بزرگ‌تر ${p.name||p.code}`);const img=el('img');img.src=src;img.alt=`تصویر محصول ${p.name||p.code}`;img.loading='lazy';img.decoding='async';img.onerror=()=>{link.replaceChildren(el('span','error','تصویر این محصول در حال حاضر بارگیری نشد.'))};link.append(img);card.append(link)}else card.append(el('div','visual error','تصویری برای این رکورد ثبت نشده است.'));
+          const copy=el('div','copy');copy.append(el('span','tag',labels[p.category]||p.category||'محصول'));copy.append(el('h2','',p.name||'محصول بدون نام'));copy.append(el('div','code',p.code||''));
+          const desc=Array.isArray(p.description)?p.description[0]:p.description;if(desc)copy.append(el('p','summary',desc));
+          const details=el('details');details.append(el('summary','','اطلاعات و منابع'));
+          if(Array.isArray(p.specs)&&p.specs.length){const ul=el('ul','specs');for(const s of p.specs.slice(0,12)){const li=el('li');li.append(el('strong','',`${s.label||'مشخصه'}: `),document.createTextNode(s.value||'—'));ul.append(li);if(s.source){const srcText=el('p');addLink(srcText,s.source,'منبع این مشخصه');if(srcText.childNodes.length)ul.append(srcText)}}details.append(ul)}
+          if(visual?.identityScope)details.append(el('p','provenance',`دامنهٔ تطبیق تصویر: ${visual.identityScope}`));
+          const links=el('div','sources');for(const s of (p.sources||[]).slice(0,4))addLink(links,s.url,s.title||'منبع فنی');if(links.childNodes.length)details.append(links);
+          if(p.technical&&typeof p.technical==='object'){const t=el('p');t.textContent='اطلاعات فنی تکمیلی در رکورد این محصول ثبت شده است.';details.append(t)}
+          copy.append(details);card.append(copy);root.append(card);
+        }
+      }
+      fetch(dataUrl,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
+        const items=Array.isArray(data)?data:data.products;if(!Array.isArray(items))throw new Error('ساختار داده نامعتبر است');
+        const groups=[...new Set(items.map(p=>p.category).filter(Boolean))];for(const key of groups){const option=el('option','',labels[key]||key);option.value=key;category.append(option)}
+        query.addEventListener('input',()=>render(items));category.addEventListener('change',()=>render(items));render(items);
+      }).catch(err=>{count.textContent='بارگذاری فهرست محصولات ناموفق بود';root.replaceChildren(el('p','error',`دادهٔ کاتالوگ دریافت نشد (${err.message}). لطفاً صفحه را دوباره بارگیری کنید.`))});
+    })();
+  </script>
 </body>
 </html>
 
