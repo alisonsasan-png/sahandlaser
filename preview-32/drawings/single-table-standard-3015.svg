@@ -1,94 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
-  <title id="title">نقشهٔ ابعادی دستگاه برش لیزر تک‌میز استاندارد 3015</title>
-  <desc id="desc">نمای ایزومتریک و سه نمای شماتیک با ابعاد کلی ۴۸۰۰ در ۲۴۰۰ در ۱۷۵۰ میلی‌متر. جزئیات نماها برای نمایش هستند و نقشهٔ ساخت نیستند.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1400" viewBox="0 0 1920 1400" role="img" aria-labelledby="title desc">
+  <title id="title">نقشهٔ ایزومتریک و ابعادی دستگاه برش لیزر تک‌میز استاندارد 3015</title>
+  <desc id="desc">رندر ایزومتریک براساس تصاویر ارسالی، به‌همراه ابعاد کلی طول ۴۸۰۰، عرض ۲۴۰۰ و ارتفاع ۱۷۵۰ میلی‌متر. نماهای پایین شماتیک و غیرساختی هستند.</desc>
   <defs>
-    <linearGradient id="navy" x2="1" y2="1"><stop stop-color="#122a49"/><stop offset="1" stop-color="#24466a"/></linearGradient>
-    <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#1287c9"/><stop offset="1" stop-color="#07528b"/></linearGradient>
-    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#132943" flood-opacity=".12"/></filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#1684bd"/></marker>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15395a"/><stop offset="1" stop-color="#0b2038"/></linearGradient>
+    <linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fbfd"/><stop offset="1" stop-color="#edf4f8"/></linearGradient>
+    <filter id="shadow" x="-.1" y="-.1" width="1.2" height="1.25"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#183752" flood-opacity=".12"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#0785bd"/></marker>
     <style>
-      text{font-family:Tahoma,Arial,sans-serif;fill:#17314c}.fa{direction:rtl;unicode-bidi:plaintext}.en{font-family:Arial,sans-serif;letter-spacing:.04em}.small{font-size:17px}.label{font-size:21px;font-weight:700}.dim{font-size:22px;font-weight:700;fill:#0878b5}.line{stroke:#1684bd;stroke-width:2;fill:none}.machine{stroke:#28394a;stroke-width:3;fill:#f8fafc}.detail{stroke:#394f63;stroke-width:2;fill:none}
+      text{font-family:Tahoma,Arial,sans-serif;fill:#17334b}
+      .en{font-family:Arial,sans-serif;letter-spacing:.045em}
+      .title{font-size:42px;font-weight:800}
+      .subtitle{font-size:19px;fill:#60778b}
+      .light{fill:#fff}.light-blue{fill:#8fe0f2}.light-muted{fill:#c9dbe6}.warm{fill:#76552e}
+      .section{font-size:25px;font-weight:700}
+      .label{font-size:19px;font-weight:700}
+      .dim{font-size:24px;font-weight:800;fill:#087eaf}
+      .line{stroke:#0785bd;stroke-width:2.5;fill:none}
+      .machine{fill:#f7fafc;stroke:#243b50;stroke-width:3}
+      .detail{fill:none;stroke:#324e67;stroke-width:3}
     </style>
   </defs>
-  <rect width="1600" height="1120" fill="#f7fafc"/>
-  <rect x="18" y="18" width="1564" height="1084" rx="24" fill="#fff" stroke="#d8e5ef" stroke-width="2"/>
-  <path d="M20 155H1580" stroke="#dce7ef" stroke-width="2"/>
-  <!-- Exact supplied Sahand mark, clipped from the user-provided source render -->
-  <svg x="52" y="35" width="230" height="78" viewBox="12 18 190 60" preserveAspectRatio="xMinYMid meet">
-    <image x="0" y="0" width="539" height="539" xlink:href="../../assets/product-drawings/3015-standard-source.jpg"/>
-  </svg>
-  <text x="1535" y="67" text-anchor="end" font-size="38" font-weight="800" class="fa">دستگاه برش لیزر تک‌میز استاندارد 3015</text>
-  <text x="1535" y="108" text-anchor="end" font-size="18" fill="#647b90" class="en">SINGLE TABLE FIBER LASER CUTTING MACHINE · 3015</text>
+  <rect width="1920" height="1400" fill="#f2f6f9"/>
+  <rect x="25" y="25" width="1870" height="1350" rx="28" fill="#fff" stroke="#dce6ed" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="25" y="25" width="1870" height="12" rx="6" fill="#087eaf"/>
+  <image x="70" y="55" width="315" height="88" preserveAspectRatio="xMidYMid meet" href="../../logo.png"/>
+  <text x="1835" y="91" text-anchor="end" class="title fa">دستگاه برش لیزر تک‌میز استاندارد 3015</text>
+  <text x="1835" y="130" text-anchor="end" class="subtitle en">SINGLE-TABLE FIBER LASER CUTTING MACHINE · 3015</text>
+  <path d="M65 160H1855" stroke="#dce6ed" stroke-width="2"/>
 
-  <!-- Isometric product rendering -->
-  <rect x="48" y="185" width="920" height="485" rx="18" fill="#fff" stroke="#e2eaf0" filter="url(#shadow)"/>
-  <image x="78" y="198" width="860" height="452" preserveAspectRatio="xMidYMid meet" xlink:href="../../assets/product-drawings/3015-standard-hero.png"/>
-  <rect x="72" y="205" width="174" height="36" rx="18" fill="#122a49"/>
-  <text x="159" y="229" text-anchor="middle" font-size="16" font-weight="700" fill="#fff" class="fa">نمای ایزومتریک</text>
+  <rect x="65" y="190" width="1190" height="630" rx="24" fill="#fff" stroke="#dfe8ef" stroke-width="2"/>
+  <image x="75" y="205" width="1170" height="600" preserveAspectRatio="xMidYMid meet" href="../../assets/product-drawings/3015-standard-hero.png"/>
+  <rect x="95" y="210" width="236" height="43" rx="21" fill="#15395a"/>
+  <text x="213" y="239" text-anchor="middle" font-size="18" font-weight="700" class="fa light">نمای ایزومتریک دستگاه</text>
+  <text x="1215" y="792" text-anchor="end" font-size="15" fill="#687f91" class="fa">رندر تصویریِ بازسازی‌شده بر پایهٔ عکس‌های ارسالی</text>
 
-  <!-- Overall dimensions -->
-  <rect x="1000" y="185" width="552" height="485" rx="18" fill="url(#navy)"/>
-  <text x="1510" y="238" text-anchor="end" font-size="22" fill="#9bdcf7" font-weight="700" class="fa">ابعاد کلی دستگاه</text>
-  <text x="1510" y="294" text-anchor="end" font-size="18" fill="#fff" class="en">OVERALL DIMENSIONS · L × W × H</text>
-  <text x="1276" y="390" text-anchor="middle" font-size="48" fill="#fff" font-weight="800" class="en">4800 × 2400 × 1750</text>
-  <text x="1276" y="432" text-anchor="middle" font-size="22" fill="#c7e8f5" class="en">mm</text>
-  <path d="M1045 462H1506" stroke="#ffffff" stroke-opacity=".22"/>
-  <g class="en" font-size="17" fill="#c7d7e5">
-    <text x="1500" y="510" text-anchor="end" fill="#fff">LENGTH / طول</text><text x="1038" y="510" fill="#9bdcf7" font-weight="700">4800 mm</text>
-    <text x="1500" y="558" text-anchor="end" fill="#fff">WIDTH / عرض</text><text x="1038" y="558" fill="#9bdcf7" font-weight="700">2400 mm</text>
-    <text x="1500" y="606" text-anchor="end" fill="#fff">HEIGHT / ارتفاع</text><text x="1038" y="606" fill="#9bdcf7" font-weight="700">1750 mm</text>
+  <rect x="1285" y="190" width="570" height="630" rx="24" fill="url(#navy)"/>
+  <text x="1810" y="248" text-anchor="end" font-size="27" font-weight="800" class="fa light-blue">ابعاد کلی دستگاه</text>
+  <text x="1810" y="286" text-anchor="end" font-size="16" class="en light-muted">OVERALL DIMENSIONS · mm</text>
+  <rect x="1330" y="325" width="480" height="90" rx="16" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".16"/>
+  <text x="1780" y="360" text-anchor="end" font-size="18" class="fa light">طول کلی</text>
+  <text x="1360" y="384" font-size="32" font-weight="800" class="en light-blue">4800 mm</text>
+  <rect x="1330" y="435" width="480" height="90" rx="16" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".16"/>
+  <text x="1780" y="470" text-anchor="end" font-size="18" class="fa light">عرض کلی</text>
+  <text x="1360" y="494" font-size="32" font-weight="800" class="en light-blue">2400 mm</text>
+  <rect x="1330" y="545" width="480" height="90" rx="16" fill="#ffffff" fill-opacity=".09" stroke="#ffffff" stroke-opacity=".16"/>
+  <text x="1780" y="580" text-anchor="end" font-size="18" class="fa light">ارتفاع کلی</text>
+  <text x="1360" y="604" font-size="32" font-weight="800" class="en light-blue">1750 mm</text>
+  <path d="M1330 670H1810" stroke="#fff" stroke-opacity=".22"/>
+  <text x="1810" y="710" text-anchor="end" font-size="18" font-weight="700" class="fa light">ابعاد طبق نمونهٔ نقشهٔ ارسالی</text>
+  <text x="1810" y="747" text-anchor="end" font-size="15" class="fa light-muted">برای جانمایی قطعی، نقشهٔ اجرایی همان دستگاه ملاک است.</text>
+
+  <text x="1835" y="875" text-anchor="end" class="section fa">نماهای فنی شماتیک</text>
+  <text x="70" y="875" font-size="16" fill="#6c8294" class="fa">برای درک فرم و نسبت‌ها؛ نه نقشهٔ ساخت</text>
+  <path d="M65 895H1855" stroke="#dce6ed" stroke-width="2"/>
+  <g transform="translate(70 925)">
+    <rect width="560" height="345" rx="20" fill="url(#pale)" stroke="#dce6ed"/>
+    <text x="520" y="43" text-anchor="end" class="label fa">نمای بالا · شماتیک</text><text x="35" y="44" class="subtitle en">TOP VIEW</text>
+    <rect x="85" y="65" width="390" height="195" rx="8" class="machine"/><rect x="100" y="78" width="360" height="169" fill="#1e2a34" stroke="#586a79" stroke-width="2"/>
+    <path d="M112 90H448M112 102H448M112 114H448M112 126H448M112 138H448M112 150H448M112 162H448M112 174H448M112 186H448M112 198H448M112 210H448M112 222H448M112 234H448" stroke="#738391" stroke-width="2"/>
+    <path d="M280 65V260" stroke="#087eaf" stroke-width="10"/><rect x="265" y="145" width="30" height="42" rx="5" fill="#e8f5fa" stroke="#243b50" stroke-width="2"/>
+    <path d="M85 278V298M475 278V298M85 291H475" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="280" y="326" text-anchor="middle" class="dim en">4800 mm · overall length</text>
+    <path d="M62 65H43M62 260H43M49 65V260" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="30" y="163" text-anchor="middle" transform="rotate(-90 30 163)" class="dim en">2400 mm</text>
   </g>
-
-  <!-- Technical views strip -->
-  <text x="1535" y="718" text-anchor="end" font-size="24" font-weight="800" class="fa">نماهای فنی شماتیک</text>
-  <text x="65" y="718" font-size="16" fill="#70869a" class="fa">واحد اندازه‌گذاری: میلی‌متر</text>
-  <path d="M48 740H1552" stroke="#d8e5ef" stroke-width="2"/>
-
-  <!-- Top view, proportions follow the stated overall L:W ratio -->
-  <g transform="translate(65 765)">
-    <text x="425" y="0" text-anchor="end" class="label fa">نمای بالا · TOP VIEW</text>
-    <rect x="70" y="42" width="360" height="172" rx="8" class="machine"/>
-    <rect x="94" y="58" width="310" height="137" fill="#202a33" stroke="#596b79" stroke-width="2"/>
-    <path d="M110 72H389M110 84H389M110 96H389M110 108H389M110 120H389M110 132H389M110 144H389M110 156H389M110 168H389M110 180H389" stroke="#687887" stroke-width="2"/>
-    <path d="M250 43V213" stroke="#1684bd" stroke-width="11"/><rect x="236" y="103" width="28" height="40" rx="4" fill="#f8fafc" stroke="#28394a" stroke-width="2"/>
-    <path d="M70 230V248M430 230V248M70 243H430" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="250" y="271" text-anchor="middle" class="dim en">4800 mm</text>
-    <path d="M48 42H28M48 214H28M34 42V214" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="17" y="132" text-anchor="middle" transform="rotate(-90 17 132)" class="dim en">2400 mm</text>
+  <g transform="translate(680 925)">
+    <rect width="560" height="345" rx="20" fill="url(#pale)" stroke="#dce6ed"/>
+    <text x="520" y="43" text-anchor="end" class="label fa">نمای جانبی · شماتیک</text><text x="35" y="44" class="subtitle en">SIDE VIEW</text>
+    <rect x="80" y="145" width="400" height="100" rx="7" class="machine"/><rect x="93" y="157" width="374" height="22" fill="#202a34"/><rect x="100" y="185" width="360" height="46" fill="#123c70"/>
+    <path d="M120 245v22m320-22v22M110 267h30m300-30h30" class="detail"/><path d="M270 145V99h53v46m-26-46V80" class="detail" stroke-width="6"/>
+    <path d="M80 282V300M480 282V300M80 294H480" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="280" y="326" text-anchor="middle" class="dim en">4800 mm · overall length</text>
+    <path d="M58 80H40M58 267H40M46 80V267" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="27" y="180" text-anchor="middle" transform="rotate(-90 27 180)" class="dim en">1750 mm</text>
   </g>
-
-  <!-- Side view: schematic silhouette -->
-  <g transform="translate(575 765)">
-    <text x="425" y="0" text-anchor="end" class="label fa">نمای جانبی · SIDE VIEW</text>
-    <rect x="65" y="115" width="360" height="88" rx="6" class="machine"/>
-    <rect x="78" y="127" width="330" height="21" fill="#1c2b38"/>
-    <rect x="84" y="153" width="322" height="35" fill="#0b5590"/>
-    <path d="M120 203v17m250-17v17M111 220h28m222 0h28" class="detail"/>
-    <path d="M220 113V67h47v46m-23-46v-16" class="detail" stroke-width="5"/>
-    <rect x="332" y="80" width="30" height="55" rx="4" fill="#e7f5fb" stroke="#28394a" stroke-width="2"/>
-    <path d="M65 230V248M425 230V248M65 243H425" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="245" y="271" text-anchor="middle" class="dim en">4800 mm</text>
-    <path d="M45 67H27M45 220H27M33 67V220" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="16" y="146" text-anchor="middle" transform="rotate(-90 16 146)" class="dim en">1750 mm</text>
+  <g transform="translate(1290 925)">
+    <rect width="560" height="345" rx="20" fill="url(#pale)" stroke="#dce6ed"/>
+    <text x="520" y="43" text-anchor="end" class="label fa">نمای جلو · شماتیک</text><text x="35" y="44" class="subtitle en">FRONT VIEW</text>
+    <rect x="145" y="145" width="270" height="100" rx="7" class="machine"/><rect x="157" y="157" width="246" height="22" fill="#202a34"/><rect x="164" y="185" width="232" height="46" fill="#123c70"/>
+    <path d="M190 245v22m180-22v22M180 267h30m160-30h30" class="detail"/><path d="M255 145V99h53v46m-26-46V80" class="detail" stroke-width="6"/>
+    <path d="M145 282V300M415 282V300M145 294H415" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="280" y="326" text-anchor="middle" class="dim en">2400 mm · overall width</text>
+    <path d="M122 80H104M122 267H104M110 80V267" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="91" y="180" text-anchor="middle" transform="rotate(-90 91 180)" class="dim en">1750 mm</text>
   </g>
-
-  <!-- Front view -->
-  <g transform="translate(1085 765)">
-    <text x="425" y="0" text-anchor="end" class="label fa">نمای جلو · FRONT VIEW</text>
-    <rect x="103" y="115" width="230" height="88" rx="6" class="machine"/>
-    <rect x="116" y="127" width="204" height="21" fill="#1c2b38"/>
-    <rect x="119" y="153" width="198" height="35" fill="#0b5590"/>
-    <path d="M154 203v17m128-17v17M145 220h26m102 0h26" class="detail"/>
-    <path d="M205 113V67h43v46m-21-46v-16" class="detail" stroke-width="5"/>
-    <rect x="325" y="82" width="27" height="52" rx="4" fill="#e7f5fb" stroke="#28394a" stroke-width="2"/>
-    <path d="M103 230V248M333 230V248M103 243H333" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="218" y="271" text-anchor="middle" class="dim en">2400 mm</text>
-    <path d="M84 67H66M84 220H66M72 67V220" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <text x="55" y="146" text-anchor="middle" transform="rotate(-90 55 146)" class="dim en">1750 mm</text>
-  </g>
-
-  <rect x="48" y="1060" width="1504" height="24" rx="8" fill="#fff4df"/>
-  <text x="800" y="1078" text-anchor="middle" font-size="15" fill="#7a5627" class="fa">ابعاد کلی مطابق پارامترهای نمونهٔ ارائه‌شده است؛ نماهای بالا، جانبی و جلو بازسازی شماتیک از روی رندر بوده و برای ساخت، نصب یا فونداسیون تأیید نشده‌اند.</text>
+  <rect x="65" y="1295" width="1790" height="48" rx="12" fill="#fff5e8" stroke="#f0dfc8"/>
+  <text x="1825" y="1326" text-anchor="end" font-size="17" font-weight="700" class="fa warm">یادداشت: رندر ایزومتریک بازسازی تصویری است؛ نماهای بالا، جانبی و جلو شماتیک‌اند و جزئیات اجرایی/ابعاد نصب را نشان نمی‌دهند.</text>
 </svg>
 
