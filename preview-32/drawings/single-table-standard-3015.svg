@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">ظ†ظ‚ط´ظ‡ظ” ط§ط¨ط¹ط§ط¯غŒ ط¯ط³طھع¯ط§ظ‡ ط¨ط±ط´ ظ„غŒط²ط± طھع©â€Œظ…غŒط² ط§ط³طھط§ظ†ط¯ط§ط±ط¯ 3015</title>
+  <desc id="desc">ظ†ظ…ط§غŒ ط§غŒط²ظˆظ…طھط±غŒع© ظˆ ط³ظ‡ ظ†ظ…ط§غŒ ط´ظ…ط§طھغŒع© ط¨ط§ ط§ط¨ط¹ط§ط¯ ع©ظ„غŒ غ´غ¸غ°غ° ط¯ط± غ²غ´غ°غ° ط¯ط± غ±غ·غµغ° ظ…غŒظ„غŒâ€Œظ…طھط±. ط¬ط²ط¦غŒط§طھ ظ†ظ…ط§ظ‡ط§ ط¨ط±ط§غŒ ظ†ظ…ط§غŒط´ ظ‡ط³طھظ†ط¯ ظˆ ظ†ظ‚ط´ظ‡ظ” ط³ط§ط®طھ ظ†غŒط³طھظ†ط¯.</desc>
+  <defs>
+    <linearGradient id="navy" x2="1" y2="1"><stop stop-color="#122a49"/><stop offset="1" stop-color="#24466a"/></linearGradient>
+    <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#1287c9"/><stop offset="1" stop-color="#07528b"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#132943" flood-opacity=".12"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#1684bd"/></marker>
+    <style>
+      text{font-family:Tahoma,Arial,sans-serif;fill:#17314c}.fa{direction:rtl;unicode-bidi:plaintext}.en{font-family:Arial,sans-serif;letter-spacing:.04em}.small{font-size:17px}.label{font-size:21px;font-weight:700}.dim{font-size:22px;font-weight:700;fill:#0878b5}.line{stroke:#1684bd;stroke-width:2;fill:none}.machine{stroke:#28394a;stroke-width:3;fill:#f8fafc}.detail{stroke:#394f63;stroke-width:2;fill:none}
+    </style>
+  </defs>
+  <rect width="1600" height="1120" fill="#f7fafc"/>
+  <rect x="18" y="18" width="1564" height="1084" rx="24" fill="#fff" stroke="#d8e5ef" stroke-width="2"/>
+  <path d="M20 155H1580" stroke="#dce7ef" stroke-width="2"/>
+  <!-- Brand wordmark treatment based on the supplied Sahand Laser logo -->
+  <g transform="translate(60 47)">
+    <path d="M10 39 51 2 42 36 67 20 54 67 34 52 15 71 23 43Z" fill="#c6272f"/>
+    <text x="82" y="36" font-size="31" font-weight="800" fill="#c6272f" class="fa">ط³ظ‡ظ†ط¯ ظ„غŒط²ط±</text>
+    <text x="84" y="65" font-size="18" font-weight="700" fill="#c6272f" class="en">SAHAND LASER</text>
+  </g>
+  <text x="1535" y="67" text-anchor="end" font-size="38" font-weight="800" class="fa">ط¯ط³طھع¯ط§ظ‡ ط¨ط±ط´ ظ„غŒط²ط± طھع©â€Œظ…غŒط² ط§ط³طھط§ظ†ط¯ط§ط±ط¯ 3015</text>
+  <text x="1535" y="108" text-anchor="end" font-size="18" fill="#647b90" class="en">SINGLE TABLE FIBER LASER CUTTING MACHINE آ· 3015</text>
+
+  <!-- Isometric product rendering -->
+  <rect x="48" y="185" width="920" height="485" rx="18" fill="#fff" stroke="#e2eaf0" filter="url(#shadow)"/>
+  <image x="78" y="198" width="860" height="452" preserveAspectRatio="xMidYMid meet" xlink:href="../../assets/product-drawings/3015-standard-hero.png"/>
+  <rect x="72" y="205" width="174" height="36" rx="18" fill="#122a49"/>
+  <text x="159" y="229" text-anchor="middle" font-size="16" font-weight="700" fill="#fff" class="fa">ظ†ظ…ط§غŒ ط§غŒط²ظˆظ…طھط±غŒع©</text>
+
+  <!-- Overall dimensions -->
+  <rect x="1000" y="185" width="552" height="485" rx="18" fill="url(#navy)"/>
+  <text x="1510" y="238" text-anchor="end" font-size="22" fill="#9bdcf7" font-weight="700" class="fa">ط§ط¨ط¹ط§ط¯ ع©ظ„غŒ ط¯ط³طھع¯ط§ظ‡</text>
+  <text x="1510" y="294" text-anchor="end" font-size="18" fill="#fff" class="en">OVERALL DIMENSIONS آ· L أ— W أ— H</text>
+  <text x="1276" y="390" text-anchor="middle" font-size="48" fill="#fff" font-weight="800" class="en">4800 أ— 2400 أ— 1750</text>
+  <text x="1276" y="432" text-anchor="middle" font-size="22" fill="#c7e8f5" class="en">mm</text>
+  <path d="M1045 462H1506" stroke="#ffffff" stroke-opacity=".22"/>
+  <g class="en" font-size="17" fill="#c7d7e5">
+    <text x="1500" y="510" text-anchor="end" fill="#fff">LENGTH / ط·ظˆظ„</text><text x="1038" y="510" fill="#9bdcf7" font-weight="700">4800 mm</text>
+    <text x="1500" y="558" text-anchor="end" fill="#fff">WIDTH / ط¹ط±ط¶</text><text x="1038" y="558" fill="#9bdcf7" font-weight="700">2400 mm</text>
+    <text x="1500" y="606" text-anchor="end" fill="#fff">HEIGHT / ط§ط±طھظپط§ط¹</text><text x="1038" y="606" fill="#9bdcf7" font-weight="700">1750 mm</text>
+  </g>
+
+  <!-- Technical views strip -->
+  <text x="1535" y="718" text-anchor="end" font-size="24" font-weight="800" class="fa">ظ†ظ…ط§ظ‡ط§غŒ ظپظ†غŒ ط´ظ…ط§طھغŒع©</text>
+  <text x="65" y="718" font-size="16" fill="#70869a" class="fa">ظˆط§ط­ط¯ ط§ظ†ط¯ط§ط²ظ‡â€Œع¯ط°ط§ط±غŒ: ظ…غŒظ„غŒâ€Œظ…طھط±</text>
+  <path d="M48 740H1552" stroke="#d8e5ef" stroke-width="2"/>
+
+  <!-- Top view, proportions follow the stated overall L:W ratio -->
+  <g transform="translate(65 765)">
+    <text x="425" y="0" text-anchor="end" class="label fa">ظ†ظ…ط§غŒ ط¨ط§ظ„ط§ آ· TOP VIEW</text>
+    <rect x="70" y="42" width="360" height="172" rx="8" class="machine"/>
+    <rect x="94" y="58" width="310" height="137" fill="#202a33" stroke="#596b79" stroke-width="2"/>
+    <path d="M110 72H389M110 84H389M110 96H389M110 108H389M110 120H389M110 132H389M110 144H389M110 156H389M110 168H389M110 180H389" stroke="#687887" stroke-width="2"/>
+    <path d="M250 43V213" stroke="#1684bd" stroke-width="11"/><rect x="236" y="103" width="28" height="40" rx="4" fill="#f8fafc" stroke="#28394a" stroke-width="2"/>
+    <path d="M70 230V248M430 230V248M70 243H430" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="250" y="271" text-anchor="middle" class="dim en">4800 mm</text>
+    <path d="M48 42H28M48 214H28M34 42V214" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="17" y="132" text-anchor="middle" transform="rotate(-90 17 132)" class="dim en">2400 mm</text>
+  </g>
+
+  <!-- Side view: schematic silhouette -->
+  <g transform="translate(575 765)">
+    <text x="425" y="0" text-anchor="end" class="label fa">ظ†ظ…ط§غŒ ط¬ط§ظ†ط¨غŒ آ· SIDE VIEW</text>
+    <rect x="65" y="115" width="360" height="88" rx="6" class="machine"/>
+    <rect x="78" y="127" width="330" height="21" fill="#1c2b38"/>
+    <rect x="84" y="153" width="322" height="35" fill="#0b5590"/>
+    <path d="M120 203v17m250-17v17M111 220h28m222 0h28" class="detail"/>
+    <path d="M220 113V67h47v46m-23-46v-16" class="detail" stroke-width="5"/>
+    <rect x="332" y="80" width="30" height="55" rx="4" fill="#e7f5fb" stroke="#28394a" stroke-width="2"/>
+    <path d="M65 230V248M425 230V248M65 243H425" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="245" y="271" text-anchor="middle" class="dim en">4800 mm</text>
+    <path d="M45 67H27M45 220H27M33 67V220" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="16" y="146" text-anchor="middle" transform="rotate(-90 16 146)" class="dim en">1750 mm</text>
+  </g>
+
+  <!-- Front view -->
+  <g transform="translate(1085 765)">
+    <text x="425" y="0" text-anchor="end" class="label fa">ظ†ظ…ط§غŒ ط¬ظ„ظˆ آ· FRONT VIEW</text>
+    <rect x="103" y="115" width="230" height="88" rx="6" class="machine"/>
+    <rect x="116" y="127" width="204" height="21" fill="#1c2b38"/>
+    <rect x="119" y="153" width="198" height="35" fill="#0b5590"/>
+    <path d="M154 203v17m128-17v17M145 220h26m102 0h26" class="detail"/>
+    <path d="M205 113V67h43v46m-21-46v-16" class="detail" stroke-width="5"/>
+    <rect x="325" y="82" width="27" height="52" rx="4" fill="#e7f5fb" stroke="#28394a" stroke-width="2"/>
+    <path d="M103 230V248M333 230V248M103 243H333" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="218" y="271" text-anchor="middle" class="dim en">2400 mm</text>
+    <path d="M84 67H66M84 220H66M72 67V220" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="55" y="146" text-anchor="middle" transform="rotate(-90 55 146)" class="dim en">1750 mm</text>
+  </g>
+
+  <rect x="48" y="1060" width="1504" height="24" rx="8" fill="#fff4df"/>
+  <text x="800" y="1078" text-anchor="middle" font-size="15" fill="#7a5627" class="fa">ط§ط¨ط¹ط§ط¯ ع©ظ„غŒ ظ…ط·ط§ط¨ظ‚ ظ¾ط§ط±ط§ظ…طھط±ظ‡ط§غŒ ظ†ظ…ظˆظ†ظ‡ظ” ط§ط±ط§ط¦ظ‡â€Œط´ط¯ظ‡ ط§ط³طھط› ظ†ظ…ط§ظ‡ط§غŒ ط¨ط§ظ„ط§طŒ ط¬ط§ظ†ط¨غŒ ظˆ ط¬ظ„ظˆ ط¨ط§ط²ط³ط§ط²غŒ ط´ظ…ط§طھغŒع© ط§ط² ط±ظˆغŒ ط±ظ†ط¯ط± ط¨ظˆط¯ظ‡ ظˆ ط¨ط±ط§غŒ ط³ط§ط®طھطŒ ظ†طµط¨ غŒط§ ظپظˆظ†ط¯ط§ط³غŒظˆظ† طھط£غŒغŒط¯ ظ†ط´ط¯ظ‡â€Œط§ظ†ط¯.</text>
+</svg>
+
