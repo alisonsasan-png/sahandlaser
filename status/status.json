@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-20T02:26:46.621+03:30",
+    "updatedAt":  "2026-10-20T02:41:55.944+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "ادامهٔ تکمیل کاتالوگ ۱۰۶ محصول و ایمن‌سازی pipeline",
-    "currentTask":  "Published a professionally white-background cleanup of a supplied 300 W pulsed-cleaner photo as an explicitly family-level reference for CL-002",
-    "nextTask":  "Continue matching the remaining shared-family images against supplied source assets, then complete sourced specs, technical/X-ray media, and original Persian education articles",
+    "currentTask":  "Repaired binary uploads for CL-002/CL-004; Chromium now renders all 106 catalog product images without error placeholders",
+    "nextTask":  "Continue matching supplied photos to remaining model families, then finish the remaining specifications, technical/X-ray assets, and Persian educational articles",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -3123,6 +3123,10 @@
                     {
                         "at":  "2026-10-20T02:26:46.621+03:30",
                         "text":  "Milestone: added a clean white-background image based on the actual supplied 300 W pulsed fiber cleaner photo to the CL-002 catalog record. Its public provenance explicitly says it is family-level and does not claim to depict the 500 W record exactly. Public catalog remains 106 products with 78 unique image paths; all 106 image URLs returned HTTP 200. Live Chromium rendered 106 cards and confirmed the CL-002 image/provenance and 3015 drawing link. main.py self-tests passed; GitHub Pages for 4c7db80550618ecc18d950ba953aceea0348eea1 succeeded."
+                    },
+                    {
+                        "at":  "2026-10-20T02:41:55.944+03:30",
+                        "text":  "Verification correction: the first upload of the CL-002 and CL-004 JPEGs was truncated by the transfer output limit even though URLs returned HTTP 200. Re-uploaded both with verified full base64 lengths and valid JPEG decoding (139,325 and 142,043 bytes). Fresh-profile Chromium now renders 106 product cards, all 106 product image elements, and zero error placeholders. All 106 image URLs return HTTP 200; the live page still contains the 3015 drawing link. Pages build succeeded at ae05bed1dd7f0b7effd6825688f30d11fbbe6a32."
                     }
                 ]
 }
