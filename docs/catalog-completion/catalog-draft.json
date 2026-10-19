@@ -1928,9 +1928,9 @@
       "visuals": {
         "status": "not_complete",
         "studio": {
-          "src": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
-          "type": "AI-assisted reconstruction from supplied photo",
-          "identityScope": "Generic laser-cleaning machine family reference; not proof of exact CL-002 casing, source, power, or installed configuration",
+          "src": "assets/catalog-v2/CL-002/studio-web.jpg",
+          "type": "AI background cleanup of a supplied photograph of a 300 W pulsed cleaner",
+          "identityScope": "Actual 300 W pulsed cleaner shown in the supplied image library and edited to a white studio background; family-level reference only, not proof of the 500 W CL-002 model or its installed configuration.",
           "visualReview": true
         }
       },
