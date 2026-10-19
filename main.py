@@ -802,6 +802,9 @@ def deploy_artifacts() -> None:
             raise RuntimeError(".env is not ignored by Git. Add it to .gitignore before deployment.")
     paths = ["main.py", "requirements.txt", ".env.example", ".gitignore", "AUTOMATION.md", "product_links.txt",
              "products_data.json", "catalog.html", "generated_xray", "output_catalog", "logo.png",
+             "docs/catalog-completion/catalog-draft.json", "assets/catalog-v2",
+             "assets/product-drawings/3015-standard-isometric.jpg",
+             "preview-32/drawings/single-table-standard-3015.svg",
              "assets/product-sheets/dz3015h-dimension.svg",
              "assets/product-sheets/dz3015h-studio.jpg",
              "assets/product-sheets/laser-4020-preliminary.svg",
@@ -881,6 +884,11 @@ def run_self_tests() -> None:
         generated_markup = generated_page.read_text(encoding="utf-8")
         assert 'href="sample.png"' in generated_markup
         assert 'src="sample.png"' in generated_markup
+        root_page = temp_root / "catalog.html"
+        generate_catalog_page(generated_dir, [{"name": "Sample", "model": "S1"}], root_page)
+        root_markup = root_page.read_text(encoding="utf-8")
+        assert 'href="output_catalog/sample.png"' in root_markup
+        assert 'src="output_catalog/sample.png"' in root_markup
         assert CATALOG_FILE == OUTPUT_DIR / "catalog.html"
     print("Self-tests passed: localized digits, unit conversion, dimension scope, host allowlist, product-link filtering, and isolated preview output.")
 
