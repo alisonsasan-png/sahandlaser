@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
   <title id="title">نقشهٔ ابعادی دستگاه برش لیزر تک‌میز استاندارد 3015</title>
   <desc id="desc">نمای ایزومتریک و سه نمای شماتیک با ابعاد کلی ۴۸۰۰ در ۲۴۰۰ در ۱۷۵۰ میلی‌متر. جزئیات نماها برای نمایش هستند و نقشهٔ ساخت نیستند.</desc>
@@ -13,12 +14,10 @@
   <rect width="1600" height="1120" fill="#f7fafc"/>
   <rect x="18" y="18" width="1564" height="1084" rx="24" fill="#fff" stroke="#d8e5ef" stroke-width="2"/>
   <path d="M20 155H1580" stroke="#dce7ef" stroke-width="2"/>
-  <!-- Brand wordmark treatment based on the supplied Sahand Laser logo -->
-  <g transform="translate(60 47)">
-    <path d="M10 39 51 2 42 36 67 20 54 67 34 52 15 71 23 43Z" fill="#c6272f"/>
-    <text x="82" y="36" font-size="31" font-weight="800" fill="#c6272f" class="fa">سهند لیزر</text>
-    <text x="84" y="65" font-size="18" font-weight="700" fill="#c6272f" class="en">SAHAND LASER</text>
-  </g>
+  <!-- Exact supplied Sahand mark, clipped from the user-provided source render -->
+  <svg x="52" y="35" width="230" height="78" viewBox="12 18 190 60" preserveAspectRatio="xMinYMid meet">
+    <image x="0" y="0" width="539" height="539" xlink:href="../../assets/product-drawings/3015-standard-source.jpg"/>
+  </svg>
   <text x="1535" y="67" text-anchor="end" font-size="38" font-weight="800" class="fa">دستگاه برش لیزر تک‌میز استاندارد 3015</text>
   <text x="1535" y="108" text-anchor="end" font-size="18" fill="#647b90" class="en">SINGLE TABLE FIBER LASER CUTTING MACHINE · 3015</text>
 
