@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-20T02:12:27.350+03:30",
+    "updatedAt":  "2026-10-20T02:26:46.621+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "ادامهٔ تکمیل کاتالوگ ۱۰۶ محصول و ایمن‌سازی pipeline",
-    "currentTask":  "Published separate WL-008/009/010 imagery; live Chromium confirms 106 cards, 106 product image URLs return HTTP 200, and 77 distinct studio-image paths",
-    "nextTask":  "Continue identifying original assets for the remaining 29 shared-image records and then finish sourced data, technical/X-ray sheets, and Persian educational articles",
+    "currentTask":  "Published a professionally white-background cleanup of a supplied 300 W pulsed-cleaner photo as an explicitly family-level reference for CL-002",
+    "nextTask":  "Continue matching the remaining shared-family images against supplied source assets, then complete sourced specs, technical/X-ray media, and original Persian education articles",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -3119,6 +3119,10 @@
                     {
                         "at":  "2026-10-20T02:12:27.350+03:30",
                         "text":  "Correction and publication verification: the public catalog previously had 74 unique studio-image paths, not 77; the local draft count included three not-yet-published assets. WL-008/009/010 images and metadata are now live. Remote catalog JSON parses with 106 product records and 77 unique studio-image paths (29 records still share family images); all 106 image URLs returned HTTP 200. Chromium headless rendered 106 product cards, detected the map link, and showed Persian product text. GitHub Pages deployment for commit 4021e8dfd5bbe09a1e3f5562d39a2debca08fdde succeeded."
+                    },
+                    {
+                        "at":  "2026-10-20T02:26:46.621+03:30",
+                        "text":  "Milestone: added a clean white-background image based on the actual supplied 300 W pulsed fiber cleaner photo to the CL-002 catalog record. Its public provenance explicitly says it is family-level and does not claim to depict the 500 W record exactly. Public catalog remains 106 products with 78 unique image paths; all 106 image URLs returned HTTP 200. Live Chromium rendered 106 cards and confirmed the CL-002 image/provenance and 3015 drawing link. main.py self-tests passed; GitHub Pages for 4c7db80550618ecc18d950ba953aceea0348eea1 succeeded."
                     }
                 ]
 }
