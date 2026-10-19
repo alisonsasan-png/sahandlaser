@@ -434,13 +434,8 @@ def scrape_products(urls: list[str], fetcher: SafeFetcher, default_unit: str = "
             LOG.info("[%s/%s] %s | model=%s | dimensions_mm=%s", index, len(urls), record.name, record.model or "—", dims)
         except Exception as exc:  # keep other product pages moving
             LOG.exception("[%s/%s] Failed to scrape %s: %s", index, len(urls), url, exc)
-            records.append(asdict(ProductRecord(
-                name=urlparse(url).path.rstrip("/").split("/")[-1] or url,
-                model=None, source_url=url, reference_image_url=None, reference_image_path=None,
-                scraped_at=datetime.now(timezone.utc).isoformat(),
-                dimensions_mm=None, dimensions_source=None, dimensions_source_excerpt=None,
-                dimensions_unit_note=None, extraction_status=f"fetch_error: {type(exc).__name__}",
-            )))
+            # A failed/stale URL is logged and skipped; do not turn a URL slug
+            # into a fake product record or an image-less catalog card.
     return records
 
 
