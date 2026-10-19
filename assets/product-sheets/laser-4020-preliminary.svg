@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">پیش‌نمونهٔ تصویری دستگاه برش لیزر تک‌میز استاندارد 4020</title>
+  <desc id="desc">تصویر مرجعِ خانوادهٔ سایز سفارشی. ابعاد کلی و محدودهٔ کاری درج‌شده تقریبی و مقدماتی هستند: ۵۲۰۰ در ۳۲۰۰ در ۱۸۰۰ میلی‌متر و محدودهٔ کاری ۴۰۰۰ در ۲۰۰۰ میلی‌متر. نقشهٔ تأییدشده یا ساخت نیست.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f4f8fb"/><stop offset="1" stop-color="#eaf1f6"/></linearGradient>
+    <linearGradient id="navy" x2="0" y2="1"><stop stop-color="#173955"/><stop offset="1" stop-color="#10283f"/></linearGradient>
+    <filter id="shadow" x="-.1" y="-.1" width="1.2" height="1.25"><feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#183752" flood-opacity=".12"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#10a7c7"/></marker>
+    <style>text{font-family:Tahoma,Arial,sans-serif;fill:#17334b}.fa{direction:rtl;unicode-bidi:plaintext}.en{font-family:Arial,sans-serif;letter-spacing:.08em}</style>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect x="28" y="28" width="1864" height="1024" rx="30" fill="#fff" stroke="#dce6ee" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="28" y="28" width="1864" height="12" rx="6" fill="#d68a35"/>
+  <text x="1810" y="108" text-anchor="end" font-size="46" font-weight="700" class="fa">دستگاه برش لیزر تک‌میز استاندارد 4020</text>
+  <text x="1810" y="154" text-anchor="end" font-size="20" fill="#668096" class="en">CUSTOM-SIZE FIBER LASER CUTTING · PRELIMINARY</text>
+  <rect x="75" y="190" width="1050" height="695" rx="24" fill="#fbfdff" stroke="#dfe9f0" stroke-width="2"/>
+  <image x="100" y="215" width="1000" height="645" preserveAspectRatio="xMidYMid meet" xlink:href="laser-4020-preliminary-studio.jpg"/>
+  <rect x="100" y="210" width="330" height="43" rx="21" fill="#173955"/>
+  <text x="265" y="239" text-anchor="middle" fill="#fff" font-size="18" class="fa">نمای ایزومتریک · مرجع خانواده</text>
+  <rect x="1160" y="190" width="685" height="695" rx="24" fill="url(#navy)"/>
+  <text x="1785" y="250" text-anchor="end" fill="#f4d4ae" font-size="24" font-weight="700" class="fa">ابعاد کلی · مقادیر تقریبی</text>
+  <text x="1785" y="296" text-anchor="end" fill="#f4d4ae" font-size="17" class="en">PRELIMINARY OVERALL SIZE · L × W × H</text>
+  <text x="1502" y="395" text-anchor="middle" fill="#fff" font-size="52" font-weight="700" class="en">5200 × 3200 × 1800</text>
+  <text x="1502" y="438" text-anchor="middle" fill="#f1d7b8" font-size="22" class="en">APPROX. MILLIMETERS</text>
+  <path d="M1220 480H1785" stroke="#fff" stroke-opacity=".22"/>
+  <g font-size="22" class="fa"><text x="1775" y="542" text-anchor="end" fill="#fff">طول کلی · تقریبی</text><text x="1235" y="542" fill="#f3c991" font-weight="700" class="en">5200 mm</text><text x="1775" y="602" text-anchor="end" fill="#fff">عرض کلی · تقریبی</text><text x="1235" y="602" fill="#f3c991" font-weight="700" class="en">3200 mm</text><text x="1775" y="662" text-anchor="end" fill="#fff">ارتفاع کلی · تقریبی</text><text x="1235" y="662" fill="#f3c991" font-weight="700" class="en">1800 mm</text></g>
+  <rect x="1220" y="710" width="565" height="90" rx="14" fill="#fff" fill-opacity=".09" stroke="#fff" stroke-opacity=".2"/>
+  <text x="1755" y="748" text-anchor="end" fill="#fff" font-size="19" class="fa">محدودهٔ کاری · تقریبی</text>
+  <text x="1250" y="778" fill="#f3c991" font-size="22" class="en">4000 × 2000 mm</text>
+  <rect x="75" y="915" width="1770" height="92" rx="18" fill="#fff5e8" stroke="#f1dfc7"/>
+  <text x="1805" y="955" text-anchor="end" font-size="19" font-weight="700" fill="#805a2c" class="fa">پیش‌نمونهٔ مقدماتی — نه مشخصات قطعی</text>
+  <text x="1805" y="986" text-anchor="end" font-size="17" fill="#805a2c" class="fa">تصویر فقط مرجع خانوادهٔ دستگاه است؛ مدل 4020 و همهٔ اعداد باید با نقشه/اندازه‌برداری محصول واقعی تطبیق داده شوند. نقشهٔ ساخت نیست.</text>
+  <text x="105" y="1020" font-size="14" fill="#70869a" class="en">SOURCE: CURRENT CATALOG ENTRY · FAMILY-REFERENCE STUDIO IMAGE: laser-4020-preliminary-studio.jpg</text>
+</svg>
