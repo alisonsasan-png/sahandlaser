@@ -23,7 +23,9 @@
   <rect width="1920" height="1400" fill="#f2f6f9"/>
   <rect x="25" y="25" width="1870" height="1350" rx="28" fill="#fff" stroke="#dce6ed" stroke-width="2" filter="url(#shadow)"/>
   <rect x="25" y="25" width="1870" height="12" rx="6" fill="#087eaf"/>
-  <image x="70" y="55" width="315" height="88" preserveAspectRatio="xMidYMid meet" href="../../logo.png"/>
+  <svg x="70" y="55" width="315" height="88" viewBox="12 18 190 60" preserveAspectRatio="xMinYMid meet">
+    <image x="0" y="0" width="539" height="539" href="../../assets/product-drawings/3015-standard-source.jpg"/>
+  </svg>
   <text x="1835" y="91" text-anchor="end" class="title fa">دستگاه برش لیزر تک‌میز استاندارد 3015</text>
   <text x="1835" y="130" text-anchor="end" class="subtitle en">SINGLE-TABLE FIBER LASER CUTTING MACHINE · 3015</text>
   <path d="M65 160H1855" stroke="#dce6ed" stroke-width="2"/>
