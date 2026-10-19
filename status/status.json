@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-20T01:47:39.298+03:30",
+    "updatedAt":  "2026-10-20T02:08:16.038+03:30",
     "timezone":  "Asia/Tehran",
     "state":  "ادامهٔ تکمیل کاتالوگ ۱۰۶ محصول و ایمن‌سازی pipeline",
-    "currentTask":  "Redrawn and locally verified the 3015 single-table isometric/dimension sheet from the supplied reference; publishing its vector source, logo crop and catalog thumbnail",
-    "nextTask":  "Continue remaining pipeline phases: complete product-specific images/data, X-ray and technical drawings, sourced Persian articles, then validate and publish",
+    "currentTask":  "Uploaded three distinct illustrative welding application visuals and corrected their catalog records; formal models 008–010 now use separate image paths",
+    "nextTask":  "Continue matching the remaining shared-family image records against the 408 supplied photo assets; then resume sourced specifications, X-ray/technical sheets, and articles",
     "reporting":  "در اجرای فعال هر ۱۰ دقیقه و پس از هر مرحله گزارش واقعی ثبت می‌شود. تازه‌سازی صفحه به معنای ادامه خودکار کار پس از قطع جلسه نیست. سایت اصلی و نسخه‌های قبلی تغییر نمی‌کنند.",
     "tasks":  [
                   {
@@ -3111,6 +3111,10 @@
                     {
                         "at":  "2026-10-20T01:47:39.298+03:30",
                         "text":  "Milestone: replaced the prior photo-as-isometric with an original SVG axonometric drawing for the 3015 single-table standard machine. It shows exterior-visible frame, slatted bed, gantry/head, control console, three schematic views and overall dimensions 4800×2400×1750 mm copied from the supplied dimensional reference, with the supplied Sahand Laser lockup. No hidden internals are depicted; the sheet is labeled as an illustrative, non-manufacturing drawing. Local SVG rendered and inspected in Chromium headless; XML parsed successfully. Publishing the SVG, logo crop and catalog card preview now; overall automation/catalog work remains incomplete."
+                    },
+                    {
+                        "at":  "2026-10-20T02:08:16.038+03:30",
+                        "text":  "Milestone: published separate generic application illustrations for WL-008 robotic welding, WL-009 jewelry welding, and WL-010 channel-letter welding; updated each catalog image path and provenance so these are clearly concepts, not exact installed-machine photos. The 106-record catalog now has 80 unique studio image files (up from 77) and all 106 local paths resolve. Added the dimension-sheet logo asset to the pipeline deployment allow-list and main.py self-tests still pass. These three product images are now live and need follow-up against supplied photos if exact installed units are identified; many shared-image groups remain."
                     }
                 ]
 }

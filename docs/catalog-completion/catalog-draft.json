@@ -8907,9 +8907,9 @@
       "visuals": {
         "status": "not_complete",
         "studio": {
-          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
-          "type": "AI-assisted reconstruction from supplied photo",
-          "identityScope": "Generic welding-family reference; not proof of exact WL-008 casing, source, power, or installed configuration",
+          "src": "assets/catalog-v2/WL-008/studio-web.jpg",
+          "type": "AI-generated generic robotic laser welding cell concept",
+          "identityScope": "Generic robotics application visual based on manufacturer-family description; not proof of the exact Sahand-installed robot, laser source, enclosure, controller, or cell configuration.",
           "visualReview": true
         }
       },
@@ -8996,9 +8996,9 @@
       "visuals": {
         "status": "not_complete",
         "studio": {
-          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
-          "type": "AI-assisted reconstruction from supplied photo",
-          "identityScope": "Generic welding-family reference; not proof of exact WL-009 casing, source, power, or installed configuration",
+          "src": "assets/catalog-v2/WL-009/studio-web.jpg",
+          "type": "AI-generated generic jewelry laser welding workstation concept",
+          "identityScope": "Generic jewelry application visual; not proof of the exact Sahand-installed machine, laser source, power, optics, or configuration.",
           "visualReview": true
         }
       },
@@ -9093,9 +9093,9 @@
       "visuals": {
         "status": "not_complete",
         "studio": {
-          "src": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
-          "type": "AI-assisted reconstruction from supplied photo",
-          "identityScope": "Generic welding-family reference; not proof of exact WL-010 casing, source, power, or installed configuration",
+          "src": "assets/catalog-v2/WL-010/studio-web.jpg",
+          "type": "AI-generated generic channel-letter laser welding workstation concept",
+          "identityScope": "Generic channel-letter fabrication application visual; not proof of the exact Sahand-installed machine, laser source, power, or configuration.",
           "visualReview": true
         }
       },

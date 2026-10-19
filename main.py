@@ -804,6 +804,7 @@ def deploy_artifacts() -> None:
              "products_data.json", "catalog.html", "generated_xray", "output_catalog", "logo.png",
              "docs/catalog-completion/catalog-draft.json", "assets/catalog-v2",
              "assets/product-drawings/3015-standard-isometric.jpg",
+             "assets/product-drawings/sahand-laser-dimensional-logo.png",
              "preview-32/drawings/single-table-standard-3015.svg",
              "assets/product-sheets/dz3015h-dimension.svg",
              "assets/product-sheets/dz3015h-studio.jpg",
