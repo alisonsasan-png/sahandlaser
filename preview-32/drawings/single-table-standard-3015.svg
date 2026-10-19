@@ -31,7 +31,7 @@
   <path d="M65 160H1855" stroke="#dce6ed" stroke-width="2"/>
 
   <rect x="65" y="190" width="1190" height="630" rx="24" fill="#fff" stroke="#dfe8ef" stroke-width="2"/>
-  <image x="75" y="205" width="1170" height="600" preserveAspectRatio="xMidYMid meet" href="../../assets/product-drawings/3015-standard-hero.png"/>
+  <image x="75" y="205" width="1170" height="600" preserveAspectRatio="xMidYMid meet" href="../../assets/product-drawings/3015-standard-hero.jpg"/>
   <rect x="95" y="210" width="236" height="43" rx="21" fill="#15395a"/>
   <text x="213" y="239" text-anchor="middle" font-size="18" font-weight="700" class="fa light">نمای ایزومتریک دستگاه</text>
   <text x="1215" y="792" text-anchor="end" font-size="15" fill="#687f91" class="fa">رندر تصویریِ بازسازی‌شده بر پایهٔ عکس‌های ارسالی</text>
