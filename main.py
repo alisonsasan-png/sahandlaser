@@ -44,6 +44,7 @@ DATA_FILE = ROOT / "products_data.json"
 XRAY_DIR = ROOT / "generated_xray"
 OUTPUT_DIR = ROOT / "output_catalog"
 CATALOG_FILE = OUTPUT_DIR / "catalog.html"
+CATALOG_DRAFT_FILE = ROOT / "docs" / "catalog-completion" / "catalog-draft.json"
 DEFAULT_PRODUCTS_PAGE = "https://sahandlaser.com/laser-cutting-machine/"
 USER_AGENT = "SahandLaserCatalogBot/1.0 (+local product-catalog workflow)"
 LOG = logging.getLogger("sahand_catalog")
@@ -439,6 +440,114 @@ def scrape_products(urls: list[str], fetcher: SafeFetcher, default_unit: str = "
     return records
 
 
+def catalog_entry_to_pipeline_record(product: dict[str, Any]) -> dict[str, Any]:
+    """Adapt an audited catalog entry without promoting family options to machine facts."""
+    code = str(product.get("code") or "").strip()
+    name = " ".join(str(product.get("name") or "").split())
+    if not code or not name:
+        raise ValueError("Catalog entries must have both a stable code and a product name.")
+
+    specs = product.get("specs") if isinstance(product.get("specs"), list) else []
+    model = None
+    model_scope = None
+    for spec in specs:
+        if not isinstance(spec, dict):
+            continue
+        label = str(spec.get("label") or "").strip().casefold()
+        if label in {"مدل", "مدل / خانواده", "model", "model / family"} and spec.get("value"):
+            model = " ".join(str(spec["value"]).split())
+            model_scope = spec.get("scope") or "catalog_identity_record"
+            break
+    if not model:
+        model = code
+        model_scope = "catalog_identifier_only"
+
+    dimensions = dimensions_source = dimensions_excerpt = dimensions_unit_note = None
+    overall_labels = ("overall dimensions", "overall machine dimensions", "ابعاد کلی", "ابعاد کلی دستگاه", "ابعاد کلی ماشین")
+    for spec in specs:
+        if not isinstance(spec, dict):
+            continue
+        label = " ".join(str(spec.get("label") or "").split()).casefold()
+        if not any(marker in label for marker in overall_labels) or not spec.get("value"):
+            continue
+        probe = f"{spec['label']}: {spec['value']}"
+        dimensions, _, dimensions_excerpt, dimensions_unit_note = extract_overall_dimensions(probe)
+        if dimensions:
+            dimensions_source = str(spec.get("source") or "catalog-draft explicit overall-dimension specification")
+            break
+
+    visuals = product.get("visuals") if isinstance(product.get("visuals"), dict) else {}
+    studio = visuals.get("studio") if isinstance(visuals.get("studio"), dict) else {}
+    image_path = studio.get("src") or product.get("image")
+    sources = product.get("sources") if isinstance(product.get("sources"), list) else []
+    source_url = next((str(item.get("url")) for item in sources
+                       if isinstance(item, dict) and str(item.get("url", "")).startswith(("https://", "http://"))), "")
+    if not source_url and sources and isinstance(sources[0], dict):
+        source_url = str(sources[0].get("url") or "")
+
+    record = {
+        "name": name,
+        "model": model,
+        "model_scope": model_scope,
+        "catalog_code": code,
+        "category": str(product.get("category") or "uncategorized"),
+        "source_url": source_url,
+        "source_evidence": sources,
+        "reference_image_url": None,
+        "reference_image_path": str(image_path).replace("\\", "/") if image_path else None,
+        "media_provenance": studio,
+        "scraped_at": datetime.now(timezone.utc).isoformat(),
+        "dimensions_mm": dimensions,
+        "dimensions_source": dimensions_source,
+        "dimensions_source_excerpt": dimensions_excerpt,
+        "dimensions_unit_note": dimensions_unit_note,
+        "extraction_status": "explicit_overall_dimensions_found" if dimensions else "overall_dimensions_not_published_in_record",
+        "catalog_visual_type": "catalog_visual",
+        "catalog_specs": specs,
+        "catalog_description": product.get("description"),
+        "catalog_record": product,
+    }
+    return record
+
+
+def load_catalog_draft_records(path: Path) -> list[dict[str, Any]]:
+    """Load all stable product records and validate their prepared local image assets."""
+    source = path if path.is_absolute() else ROOT / path
+    payload = json.loads(source.read_text(encoding="utf-8"))
+    products = payload.get("products") if isinstance(payload, dict) else None
+    if not isinstance(products, list):
+        raise ValueError(f"Catalog draft must contain a products array: {source}")
+    records: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for product in products:
+        if not isinstance(product, dict):
+            LOG.warning("Skipping non-object catalog entry in %s", source)
+            continue
+        try:
+            record = catalog_entry_to_pipeline_record(product)
+            code = record["catalog_code"]
+            if code in seen:
+                raise ValueError(f"Duplicate catalog code: {code}")
+            seen.add(code)
+            rel_image = record.get("reference_image_path")
+            if rel_image:
+                image_path = (ROOT / rel_image).resolve()
+                try:
+                    image_path.relative_to(ROOT.resolve())
+                except ValueError as exc:
+                    raise ValueError(f"Image path escapes the repository: {rel_image}") from exc
+                if not image_path.is_file():
+                    LOG.warning("Catalog image missing for %s: %s", code, rel_image)
+            else:
+                LOG.warning("No prepared studio image is listed for catalog product %s", code)
+            records.append(record)
+        except Exception as exc:
+            LOG.exception("Skipping invalid catalog entry %s: %s", product.get("code", "(unknown)"), exc)
+    if not records:
+        raise RuntimeError(f"No valid products found in catalog draft: {source}")
+    return records
+
+
 def write_json(path: Path, value: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -609,6 +718,25 @@ def _load_logo(logo_path: Path | None) -> Image.Image | None:
     return None
 
 
+def rasterize_svg_asset(source_path: Path, cache_dir: Path, slug: str) -> Path:
+    """Render a repository-owned SVG to a cached PNG for Pillow datasheets."""
+    if source_path.suffix.lower() != ".svg":
+        return source_path
+    import resvg_py
+
+    destination = cache_dir / f"{slug}.png"
+    if not destination.is_file() or destination.stat().st_mtime < source_path.stat().st_mtime:
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        png_bytes = resvg_py.svg_to_bytes(
+            svg_path=str(source_path), width=1600, background="#ffffff",
+            resources_dir=str(source_path.parent),
+        )
+        destination.write_bytes(png_bytes)
+    with Image.open(destination) as image:
+        image.verify()
+    return destination
+
+
 def _draw_arrow(draw: ImageDraw.ImageDraw, start: tuple[int, int], end: tuple[int, int], color: str = "#0879b9") -> None:
     draw.line((start, end), fill=color, width=3)
     import math
@@ -655,7 +783,8 @@ def create_datasheet(record: dict[str, Any], xray_path: Path, output_path: Path,
     py = image_box[1] + 30 + (image_box[3] - image_box[1] - 110 - subject_rgb.height) // 2
     canvas.paste(subject_rgb, (px, py))
     image_caption = ("AI X-RAY CONCEPT · INTERNALS UNVERIFIED" if image_kind == "xray_concept"
-                     else "SOURCE PHOTO · NO X-RAY GENERATED")
+                    else "CATALOG VISUAL · NO X-RAY GENERATED" if image_kind == "catalog_visual"
+                    else "SOURCE PHOTO · NO X-RAY GENERATED")
     _draw_text(draw, (image_box[0] + 22, image_box[1] + 20), image_caption, load_font(13), "#9a5a21")
 
     dims = record.get("dimensions_mm")
@@ -698,6 +827,9 @@ def create_datasheet(record: dict[str, Any], xray_path: Path, output_path: Path,
     if image_kind == "xray_concept":
         notice = "تصویر X-ray مفهومی است؛ اجزای داخلی تأیید نشده‌اند و برای مهندسی یا ساخت نیست."
         title_notice = "تصویر مفهومی مولد · اجزای داخلی تأییدشده نیستند"
+    elif image_kind == "catalog_visual":
+        notice = "این تصویر نمای آمادهٔ کاتالوگ محصول است؛ X-ray نیست و اجزای داخلی را نشان نمی‌دهد."
+        title_notice = "نمای کاتالوگ · تصویر داخلی تولید نشده است"
     else:
         notice = "فقط عکس بیرونی محصول است؛ قطعات داخلی نمایش داده نشده و این تصویر X-ray یا نقشهٔ مهندسی نیست."
         title_notice = "عکس مرجع بیرونی · تصویر داخلی تولید نشده است"
@@ -713,14 +845,19 @@ def create_datasheet(record: dict[str, Any], xray_path: Path, output_path: Path,
 def generate_catalog_page(output_dir: Path, records: list[dict[str, Any]], output_path: Path) -> Path:
     by_slug = {slug_for(item): item for item in records}
     cards: list[str] = []
-    for image_path in sorted(output_dir.glob("*.png")):
-        record = by_slug.get(image_path.stem, {})
+    for slug, record in sorted(by_slug.items(), key=lambda item: (str(item[1].get("name", "")).casefold(), item[0])):
+        image_path = output_dir / f"{slug}.png"
+        if not image_path.is_file():
+            LOG.warning("Skipping catalog card without its generated datasheet: %s", image_path)
+            continue
         name = html.escape(str(record.get("name") or image_path.stem))
         model = html.escape(str(record.get("model") or "مدل ثبت نشده"))
         image_name = html.escape(image_path.name)
         image_href = html.escape(Path(os.path.relpath(image_path, output_path.parent)).as_posix())
         visual_note = ("تصویر X-ray مفهومیِ مولد؛ اجزای داخلی تأییدشده نیستند."
                        if record.get("catalog_visual_type") == "xray_concept"
+                       else "نمای آمادهٔ کاتالوگ محصول؛ X-ray نیست."
+                       if record.get("catalog_visual_type") == "catalog_visual"
                        else "تصویر از عکس مرجع بیرونی ساخته شده؛ X-ray نیست.")
         dims = record.get("dimensions_mm")
         dimension_text = (f"ابعاد کلی (mm): {dims['length']} × {dims['width']} × {dims['height']}"
@@ -867,59 +1004,109 @@ def run_self_tests() -> None:
     ).a
     assert not _is_product_link(archive_doc, archive_doc["href"])
     assert _is_product_link(product_doc, product_doc["href"])
+    catalog_record = catalog_entry_to_pipeline_record({
+        "code": "TEST-3015", "category": "cutting", "name": "Test cutter",
+        "specs": [
+            {"label": "Model", "value": "Test 3015"},
+            {"label": "Overall dimensions", "value": "4800 × 2400 × 1750 mm"},
+        ],
+        "sources": [{"url": "https://sahandlaser.com/test/"}],
+        "visuals": {"studio": {"src": "assets/test.jpg", "type": "catalog visual"}},
+    })
+    assert catalog_record["catalog_code"] == "TEST-3015"
+    assert catalog_record["dimensions_mm"] == {"length": 4800, "width": 2400, "height": 1750}
+    assert catalog_record["model"] == "Test 3015"
     assert slug_for({"model": "3015", "name": "مدل استاندارد"}) != slug_for(
         {"model": "3015", "name": "مدل حرفه‌ای"}
     )
+    class _FakeResponse:
+        url = "https://sahandlaser.com/sample/"
+        text = "<html><h1>Fiber Laser Cutter 3015</h1></html>"
+
+    class _FakeFetcher:
+        def get(self, url: str) -> _FakeResponse:
+            if url.endswith("/missing/"):
+                raise requests.HTTPError("404 test fixture")
+            return _FakeResponse()
+
+    from unittest.mock import patch
+    with patch.object(LOG, "exception"):
+        surviving_records = scrape_products(
+            ["https://sahandlaser.com/sample/", "https://sahandlaser.com/missing/"],
+            _FakeFetcher(),
+        )
+    assert len(surviving_records) == 1, surviving_records
     with tempfile.TemporaryDirectory(prefix="sahand-catalog-test-") as temp:
         temp_root = Path(temp)
+        svg_path = temp_root / "vector.svg"
+        svg_path.write_text('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24"><rect width="32" height="24" fill="#fff"/></svg>', encoding="utf-8")
+        raster_path = rasterize_svg_asset(svg_path, temp_root / "renders", "vector")
+        with Image.open(raster_path) as raster:
+            assert raster.format == "PNG" and raster.width == 1600, (raster.format, raster.size)
         generated_dir = temp_root / "output_catalog"
         generated_dir.mkdir()
-        (generated_dir / "sample.png").write_bytes(b"test")
+        sample_record = {"name": "Sample", "model": "S1"}
+        sample_image = generated_dir / f"{slug_for(sample_record)}.png"
+        sample_image.write_bytes(b"test")
+        (generated_dir / "stale-unrelated.png").write_bytes(b"stale")
         generated_page = generated_dir / "catalog.html"
-        generate_catalog_page(generated_dir, [{"name": "Sample", "model": "S1"}], generated_page)
+        generate_catalog_page(generated_dir, [sample_record], generated_page)
         generated_markup = generated_page.read_text(encoding="utf-8")
-        assert 'href="sample.png"' in generated_markup
-        assert 'src="sample.png"' in generated_markup
+        assert f'href="{sample_image.name}"' in generated_markup
+        assert f'src="{sample_image.name}"' in generated_markup
+        assert "stale-unrelated.png" not in generated_markup
         root_page = temp_root / "catalog.html"
-        generate_catalog_page(generated_dir, [{"name": "Sample", "model": "S1"}], root_page)
+        generate_catalog_page(generated_dir, [sample_record], root_page)
         root_markup = root_page.read_text(encoding="utf-8")
-        assert 'href="output_catalog/sample.png"' in root_markup
-        assert 'src="output_catalog/sample.png"' in root_markup
+        assert f'href="output_catalog/{sample_image.name}"' in root_markup
+        assert f'src="output_catalog/{sample_image.name}"' in root_markup
         assert CATALOG_FILE == OUTPUT_DIR / "catalog.html"
     print("Self-tests passed: localized digits, unit conversion, dimension scope, host allowlist, product-link filtering, and isolated preview output.")
 
 
 def build(args: argparse.Namespace) -> None:
-    trusted_hosts = [host for host in os.getenv("TRUSTED_HOSTS", "sahandlaser.com").split(",") if host.strip()]
-    delay = float(os.getenv("REQUEST_DELAY_SECONDS", "1.0"))
-    fetcher = SafeFetcher(trusted_hosts, timeout=int(os.getenv("REQUEST_TIMEOUT", "25")), delay=delay)
     products_page = args.products_page or os.getenv("PRODUCTS_PAGE_URL", DEFAULT_PRODUCTS_PAGE)
-    urls = read_product_urls(args.links_file, args.product_url, products_page, fetcher)
-    if args.max_products:
-        urls = urls[:args.max_products]
-    if not urls:
-        raise RuntimeError("No product URLs to process.")
-    default_unit = os.getenv("DEFAULT_DIMENSION_UNIT", "mm")
-    records = scrape_products(urls, fetcher, default_unit)
-    for record in records:
-        if not record.get("reference_image_url"):
-            continue
-        try:
-            saved = download_reference_image(record["reference_image_url"], fetcher, args.reference_dir,
-                                             slug_for(record))
+    fetcher = None
+    if args.catalog_draft:
+        records = load_catalog_draft_records(args.catalog_draft)
+        products_page = str(args.catalog_draft)
+        LOG.info("Loaded %d catalog records from %s", len(records), args.catalog_draft)
+    else:
+        trusted_hosts = [host for host in os.getenv("TRUSTED_HOSTS", "sahandlaser.com").split(",") if host.strip()]
+        delay = float(os.getenv("REQUEST_DELAY_SECONDS", "1.0"))
+        fetcher = SafeFetcher(trusted_hosts, timeout=int(os.getenv("REQUEST_TIMEOUT", "25")), delay=delay)
+        urls = read_product_urls(args.links_file, args.product_url, products_page, fetcher)
+        if args.max_products:
+            urls = urls[:args.max_products]
+        if not urls:
+            raise RuntimeError("No product URLs to process.")
+        default_unit = os.getenv("DEFAULT_DIMENSION_UNIT", "mm")
+        records = scrape_products(urls, fetcher, default_unit)
+        for record in records:
+            if not record.get("reference_image_url"):
+                continue
             try:
-                record["reference_image_path"] = saved.resolve().relative_to(ROOT.resolve()).as_posix()
-            except ValueError:
-                record["reference_image_path"] = saved.resolve().as_posix()
-            LOG.info("Saved reference image for %s: %s", record.get("name"), saved)
-        except Exception as exc:
-            LOG.exception("Could not download reference image for %s: %s", record.get("name"), exc)
+                saved = download_reference_image(record["reference_image_url"], fetcher, args.reference_dir,
+                                                 slug_for(record))
+                try:
+                    record["reference_image_path"] = saved.resolve().relative_to(ROOT.resolve()).as_posix()
+                except ValueError:
+                    record["reference_image_path"] = saved.resolve().as_posix()
+                LOG.info("Saved reference image for %s: %s", record.get("name"), saved)
+            except Exception as exc:
+                LOG.exception("Could not download reference image for %s: %s", record.get("name"), exc)
+    if args.max_products:
+        records = records[:args.max_products]
+    if not records:
+        raise RuntimeError("No product records to process.")
     logo_path = args.logo or (Path(os.getenv("LOGO_PATH")).expanduser() if os.getenv("LOGO_PATH") else None)
     successes = 0
+    if args.generate_images and not os.getenv("OPENAI_API_KEY"):
+        LOG.warning("OPENAI_API_KEY is missing; keeping available product visuals and skipping X-ray API calls.")
     for record in records:
         slug = slug_for(record)
         xray_path = args.xray_dir / f"{slug}.png"
-        if args.generate_images:
+        if args.generate_images and os.getenv("OPENAI_API_KEY"):
             try:
                 generate_xray_image(record, xray_path, args.image_model, args.force_images)
             except Exception as exc:
@@ -929,7 +1116,13 @@ def build(args: argparse.Namespace) -> None:
         if visual_path is None and record.get("reference_image_path"):
             candidate = Path(record["reference_image_path"])
             visual_path = candidate if candidate.is_absolute() else ROOT / candidate
-            visual_type = "reference_photo"
+            visual_type = "catalog_visual" if args.catalog_draft else "reference_photo"
+        if visual_path is not None and visual_path.is_file():
+            try:
+                visual_path = rasterize_svg_asset(visual_path, args.output_dir / "_source_renders", slug)
+            except Exception as exc:
+                LOG.exception("Could not rasterize source visual for %s: %s", record.get("name"), exc)
+                visual_path = None
         if visual_path is not None and visual_path.is_file():
             try:
                 create_datasheet(record, visual_path, args.output_dir / f"{slug}.png", logo_path, visual_type)
@@ -962,6 +1155,8 @@ def make_parser() -> argparse.ArgumentParser:
     build_parser.add_argument("--products-page", help="Products listing URL; defaults to PRODUCTS_PAGE_URL or sahandlaser.com")
     build_parser.add_argument("--product-url", action="append", help="Explicit product URL (repeatable)")
     build_parser.add_argument("--max-products", type=int, help="Limit records for a small test run")
+    build_parser.add_argument("--catalog-draft", type=Path,
+                              help="Build all product datasheets from an audited catalog JSON and its prepared images")
     build_parser.add_argument("--data-file", type=Path, default=DATA_FILE)
     build_parser.add_argument("--xray-dir", type=Path, default=XRAY_DIR)
     build_parser.add_argument("--reference-dir", type=Path, default=ROOT / "reference_images")
@@ -1008,4 +1203,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
