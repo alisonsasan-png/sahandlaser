@@ -1,10 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" role="img" aria-labelledby="title desc">
-<title id="title">نمای عملکردی مسیر اپتیکی BM110</title><desc id="desc">ماژول‌های مستند در دفترچه BM110: رابط فیبر، محافظ بالایی، کولیمیشن، محافظ میانی، فوکوس، محافظ پایینی و نازل. نمودار عملکردی است، نه نقشه موقعیت تمام قطعات داخلی.</desc>
-<defs><linearGradient id="housing" x1="0" x2="1"><stop stop-color="#a2e5ed" stop-opacity=".15"/><stop offset="1" stop-color="#2dbacc" stop-opacity=".28"/></linearGradient><linearGradient id="glass"><stop stop-color="#d9f7fc"/><stop offset=".5" stop-color="#4cbed3"/><stop offset="1" stop-color="#d9f7fc"/></linearGradient></defs>
-<path d="M590 93H775V355L745 385V420H780V850L752 875V960L710 985L687 1055H633L604 985L577 960V875L550 850V420H584V385L554 355V110Z" fill="url(#housing)" stroke="#45b8c9" stroke-width="2"/>
-<path d="M660 90V260" stroke="#189ab5" stroke-width="3"/><path d="M648 260V625M672 260V625" stroke="#47c4dc" stroke-width="2" fill="none"/><path d="M648 630L660 1134L672 630Z" fill="#3dbad5" fill-opacity=".2" stroke="#168ba6" stroke-width="2"/>
-<g fill="url(#glass)" stroke="#177a94" stroke-width="2"><rect x="626" y="157" width="68" height="8" rx="2"/><ellipse cx="660" cy="272" rx="47" ry="10"/><ellipse cx="660" cy="286" rx="47" ry="10"/><ellipse cx="660" cy="617" rx="47" ry="10"/><ellipse cx="660" cy="631" rx="47" ry="10"/><rect x="627" y="435" width="66" height="8" rx="2"/><rect x="627" y="916" width="66" height="8" rx="2"/></g>
-<g fill="none" stroke="#338b9e" stroke-width="3"><rect x="608" y="134" width="104" height="51" rx="4"/><rect x="601" y="242" width="118" height="73" rx="5"/><rect x="609" y="416" width="102" height="43" rx="4"/><rect x="601" y="582" width="118" height="82" rx="5"/><rect x="609" y="897" width="102" height="43" rx="4"/><path d="M620 983H700L682 1046H638Z"/></g>
-<g font-family="Tahoma,Arial" font-size="20" fill="#11647b" text-anchor="middle"><g><circle cx="715" cy="161" r="18" fill="white" stroke="#58bdce"/><text x="715" y="168">1</text></g><g><circle cx="730" cy="280" r="18" fill="white" stroke="#58bdce"/><text x="730" y="287">2</text></g><g><circle cx="730" cy="624" r="18" fill="white" stroke="#58bdce"/><text x="730" y="631">4</text></g><g><circle cx="716" cy="920" r="18" fill="white" stroke="#58bdce"/><text x="716" y="927">5</text></g><g><circle cx="716" cy="439" r="18" fill="white" stroke="#58bdce"/><text x="716" y="446">3</text></g></g>
+  <title id="title">نمودار عملکردی مسیر اپتیکی هد BM110</title>
+  <desc id="desc">نمودار شماتیک ترتیب رابط QBH، سه شیشه محافظ، مجموعه‌های کولیمیشن و فوکوس، و مجموعه سرامیک و نازل بر پایه دفترچه BM110 V2.0. مکان و فاصله‌ها مقیاس‌دار نیستند.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f0f7fa"/></linearGradient>
+    <linearGradient id="glass" x2="1"><stop stop-color="#c9f8ff"/><stop offset=".5" stop-color="#11bcd7"/><stop offset="1" stop-color="#c9f8ff"/></linearGradient>
+    <filter id="soft" x="-.15" y="-.15" width="1.3" height="1.3"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#13354a" flood-opacity=".12"/></filter>
+    <style>
+      text{font-family:Tahoma,Arial,sans-serif}.fa{direction:rtl;unicode-bidi:plaintext}.en{font-family:Arial,sans-serif;letter-spacing:.04em}.title{font-size:30px;font-weight:800;fill:#14344b}.sub{font-size:15px;fill:#587385}.label{font-size:22px;font-weight:700;fill:#183a50}.small{font-size:15px;fill:#547183}.num{font:700 18px Arial,sans-serif;fill:#fff}.axis{stroke:#0daac8;stroke-width:4;stroke-dasharray:12 9}.leader{stroke:#80a9b8;stroke-width:2;fill:none}.chip{fill:#e9f7fa;stroke:#c5e8ee;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1254" height="1254" fill="#eaf1f5"/><rect x="22" y="22" width="1210" height="1210" rx="22" fill="url(#paper)" stroke="#d7e3ea" stroke-width="2"/>
+  <text x="1194" y="72" text-anchor="end" class="title fa">BM110 · نمودار عملکردی مسیر اپتیکی</text>
+  <text x="1194" y="102" text-anchor="end" class="sub en">RAYTOOLS V2.0 · MODULE ORDER · NOT TO SCALE</text>
+  <path d="M62 126H1192" stroke="#d7e3ea" stroke-width="2"/>
+
+  <!-- Optical axis and documented module order; no unverified housing geometry. -->
+  <path class="axis" d="M625 168V1048"/>
+  <g filter="url(#soft)">
+    <circle cx="625" cy="183" r="43" fill="#d8e3e8" stroke="#315b70" stroke-width="3"/><circle cx="625" cy="183" r="19" fill="#123b55" stroke="#20bfd8" stroke-width="4"/>
+    <rect x="568" y="296" width="114" height="15" rx="7" fill="url(#glass)" stroke="#078ca7" stroke-width="2"/>
+    <path d="M563 420Q625 377 687 420Q625 463 563 420Z" fill="#d7f7fb" stroke="#078ca7" stroke-width="3"/><path d="M563 454Q625 497 687 454Q625 411 563 454Z" fill="#d7f7fb" stroke="#078ca7" stroke-width="3"/>
+    <rect x="568" y="565" width="114" height="15" rx="7" fill="url(#glass)" stroke="#078ca7" stroke-width="2"/>
+    <path d="M563 679Q625 636 687 679Q625 722 563 679Z" fill="#d7f7fb" stroke="#078ca7" stroke-width="3"/><path d="M563 713Q625 756 687 713Q625 670 563 713Z" fill="#d7f7fb" stroke="#078ca7" stroke-width="3"/>
+    <rect x="568" y="824" width="114" height="15" rx="7" fill="url(#glass)" stroke="#078ca7" stroke-width="2"/>
+    <path d="M590 941H660L647 985H603Z" fill="#dcebf0" stroke="#386a80" stroke-width="3"/><path d="M603 985H647L636 1034H614Z" fill="#748c98" stroke="#386a80" stroke-width="3"/><path d="M614 1034H636L631 1068H619Z" fill="#d18549" stroke="#79543a" stroke-width="2"/>
+  </g>
+
+  <!-- numbered sequence -->
+  <g>
+    <g><circle cx="724" cy="183" r="19" fill="#143e57"/><text x="724" y="190" text-anchor="middle" class="num">1</text></g>
+    <g><circle cx="724" cy="303" r="19" fill="#143e57"/><text x="724" y="310" text-anchor="middle" class="num">2</text></g>
+    <g><circle cx="724" cy="437" r="19" fill="#143e57"/><text x="724" y="444" text-anchor="middle" class="num">3</text></g>
+    <g><circle cx="724" cy="572" r="19" fill="#143e57"/><text x="724" y="579" text-anchor="middle" class="num">4</text></g>
+    <g><circle cx="724" cy="696" r="19" fill="#143e57"/><text x="724" y="703" text-anchor="middle" class="num">5</text></g>
+    <g><circle cx="724" cy="831" r="19" fill="#143e57"/><text x="724" y="838" text-anchor="middle" class="num">6</text></g>
+    <g><circle cx="724" cy="1002" r="19" fill="#143e57"/><text x="724" y="1009" text-anchor="middle" class="num">7</text></g>
+  </g>
+
+  <!-- Left labels -->
+  <g class="fa">
+    <path class="leader" d="M582 303H450L420 270"/><rect class="chip" x="42" y="224" width="378" height="92" rx="13"/>
+    <text x="397" y="261" text-anchor="end" class="label">شیشهٔ محافظ بالایی</text><text x="397" y="290" text-anchor="end" class="small en">D24.9 × 1.5 mm · 211LCG0020</text>
+    <path class="leader" d="M563 572H450L420 539"/><rect class="chip" x="42" y="493" width="378" height="92" rx="13"/>
+    <text x="397" y="530" text-anchor="end" class="label">شیشهٔ محافظ میانی</text><text x="397" y="559" text-anchor="end" class="small en">D27.9 × 4.1 mm · 211LCG0037</text>
+    <path class="leader" d="M582 831H450L420 798"/><rect class="chip" x="42" y="752" width="378" height="92" rx="13"/>
+    <text x="397" y="789" text-anchor="end" class="label">شیشهٔ محافظ پایینی</text><text x="397" y="818" text-anchor="end" class="small en">D27.9 × 4.1 mm · 211LCG0037</text>
+  </g>
+  <!-- Right labels -->
+  <g class="fa">
+    <path class="leader" d="M668 183H820L846 211"/><rect class="chip" x="846" y="164" width="366" height="68" rx="13"/><text x="1186" y="207" text-anchor="end" class="label">رابط فیبر QBH</text>
+    <path class="leader" d="M687 437H820L846 466"/><rect class="chip" x="846" y="424" width="366" height="88" rx="13"/><text x="1186" y="460" text-anchor="end" class="label">مجموعهٔ کولیمیشن ترکیبی</text><text x="1186" y="490" text-anchor="end" class="small">شکل و آرایش عدسی‌ها شماتیک است</text>
+    <path class="leader" d="M687 696H820L846 726"/><rect class="chip" x="846" y="681" width="366" height="105" rx="13"/><text x="1186" y="718" text-anchor="end" class="label">مجموعهٔ فوکوس ترکیبی</text><text x="1186" y="748" text-anchor="end" class="small">محرک خودکار، جابه‌جایی تا ۲۲ mm</text><text x="1186" y="772" text-anchor="end" class="small">موتور سروو بیرونی؛ محل دقیق مشخص نیست</text>
+    <path class="leader" d="M660 1002H820L846 1030"/><rect class="chip" x="846" y="996" width="366" height="68" rx="13"/><text x="1186" y="1039" text-anchor="end" class="label">مجموعهٔ سرامیک و نازل</text>
+  </g>
+
+  <rect x="42" y="1114" width="1170" height="84" rx="14" fill="#12344a"/><text x="1186" y="1148" text-anchor="end" class="fa" font-size="17" font-weight="700" fill="#fff">شماتیک بر پایهٔ دفترچهٔ BM110 V2.0 · ترتیب ماژول‌ها مستند است</text><text x="1186" y="1178" text-anchor="end" class="fa" font-size="14" fill="#d5edf2">جایگاه، فاصله و هندسهٔ داخلی به مقیاس نیست؛ این نمودار، نقشهٔ مونتاژ نیست.</text>
 </svg>
 
