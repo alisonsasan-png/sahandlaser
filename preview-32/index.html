@@ -1377,20 +1377,24 @@ body{font-family:Tahoma,Arial,sans-serif;overflow-wrap:normal;word-break:normal}
   let articles=[];
   window.openExtractedArticle=index=>{
     const item=articles[index];if(!item||!reader)return;
-    reader.innerHTML=`<div class="cutting-detail-wrap"><div class="cutting-detail-top"><button class="article-reader-close" type="button" onclick="closeExtractedArticle()">← بازگشت به مقاله‌ها</button><span>${esc(item.kind)}</span></div><article class="article-reader-card"><span class="cutting-detail-kicker">${esc(item.date||'محتوای آموزشی')}</span><h2 class="text-3xl font-extrabold text-brand">${esc(item.title)}</h2><p class="text-sm text-slate-500">${esc(item.summary||'')}</p><div class="mt-7 text-slate-700 whitespace-pre-wrap">${esc(item.body)}</div>${item.sources?.length?`<section class="cutting-detail-section"><h3 class="font-bold">منابع</h3><ul>${item.sources.map(ref=>`<li>${ref.url?`<a class="text-accent underline" href="${esc(ref.url)}" target="_blank" rel="noopener">${esc(ref.title||ref.url)}</a>`:esc(ref.title||'منبع')}</li>`).join('')}</ul></section>`:''}${item.kind.includes('آرشیو')?'<p class="cutting-detail-note mt-6">این مطلب از سایت قدیمی استخراج شده است؛ تاریخ و متن اصلی حفظ شده و پیش از انتشار نهایی نیازمند بازبینی فنی است.</p>':''}</article></div>`;
-    reader.hidden=false;document.body.style.overflow='hidden';history.pushState({article:index},'',`#article-${index}`);
+    const articleContent=item.sections?.length?item.sections.map(section=>'<section class="mt-6"><h3 class="font-bold text-brand">'+esc(section.heading||'')+'</h3><p class="mt-2 leading-8">'+esc(section.body||'')+'</p></section>').join(''):'<div class="mt-7 text-slate-700 whitespace-pre-wrap">'+esc(item.body||'')+'</div>';
+    const sourceList=(item.sources||[]).map(ref=>'<li>'+(ref.url?'<a class="text-accent underline" href="'+esc(ref.url)+'" target="_blank" rel="noopener">'+esc(ref.title||ref.url)+'</a>':esc(ref.title||'منبع'))+'</li>').join('');
+    const archiveNote=item.kind.includes('آرشیو')?'<p class="cutting-detail-note mt-6">این مطلب از سایت قدیمی استخراج شده است؛ تاریخ و متن اصلی حفظ شده و پیش از انتشار نهایی نیازمند بازبینی فنی است.</p>':'';
+    reader.innerHTML='<div class="cutting-detail-wrap"><div class="cutting-detail-top"><button class="article-reader-close" type="button" onclick="closeExtractedArticle()">← بازگشت به مقاله‌ها</button><span>'+esc(item.kind)+'</span></div><article class="article-reader-card"><span class="cutting-detail-kicker">'+esc(item.date||'محتوای آموزشی')+'</span><h2 class="text-3xl font-extrabold text-brand">'+esc(item.title)+'</h2><p class="text-sm text-slate-500">'+esc(item.summary||'')+'</p>'+articleContent+(sourceList?'<section class="cutting-detail-section"><h3 class="font-bold">منابع</h3><ul>'+sourceList+'</ul></section>':'')+archiveNote+'</article></div>';
+    reader.hidden=false;document.body.style.overflow='hidden';history.pushState({article:index},'','#article-'+index);
   };
   window.closeExtractedArticle=()=>{reader.hidden=true;document.body.style.overflow='';if(location.hash.startsWith('#article-'))history.back();};
   const loadArticles=async()=>{
     if(!articleGrid)return;
-    try{
-      const oldResponse=await fetch('../data/legacy-articles.json');
-      if(!oldResponse.ok)throw new Error('legacy article source unavailable');
-      const oldData=await oldResponse.json();
-      const old=(oldData||[]).map(post=>({title:post.title,body:post.summary,summary:post.summary.slice(0,230),date:post.date,kind:'از آرشیو سایت قبلی',sources:[{title:'صفحهٔ قدیمی سهند لیزر',url:post.url}]}));
-      articles=old;
-      articleGrid.innerHTML=articles.map((article,index)=>`<article class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800"><span class="text-xs text-accent font-bold">${esc(article.kind)} · ${esc(article.date)}</span><h3 class="text-lg font-bold text-brand dark:text-white mt-2 mb-2">${esc(article.title)}</h3><p class="text-sm text-slate-500 leading-7">${esc(article.summary||article.body.slice(0,200))}…</p><button type="button" class="mt-4 text-accent font-bold text-sm" onclick="openExtractedArticle(${index})">خواندن مطلب ←</button></article>`).join('');
-    }catch(error){articleGrid.innerHTML='<p class="text-sm text-amber-700 bg-amber-50 p-4 rounded-xl">آرشیو مقاله‌های استخراج‌شده در این نسخه در دسترس نیست؛ از نمایش متن ناقص یا خراب خودداری شد.</p>';}
+    const [oldResult,newResult]=await Promise.allSettled([
+      fetch('../data/legacy-articles.json').then(response=>{if(!response.ok)throw new Error('legacy article source unavailable');return response.json()}),
+      fetch('../docs/catalog-completion/articles.json').then(response=>{if(!response.ok)throw new Error('educational article source unavailable');return response.json()})
+    ]);
+    const oldArticles=oldResult.status==='fulfilled'?(oldResult.value||[]).map(post=>({title:post.title,body:post.summary,summary:(post.summary||'').slice(0,230),date:post.date,kind:'از آرشیو سایت قبلی',sources:[{title:'صفحهٔ قدیمی سهند لیزر',url:post.url}]})):[];
+    const sourcedArticles=newResult.status==='fulfilled'?(newResult.value||[]).map(article=>({...article,kind:'راهنمای آموزشی با منابع فنی'})):[];
+    articles=[...sourcedArticles,...oldArticles];
+    if(!articles.length){articleGrid.innerHTML='<p class="text-sm text-amber-700 bg-amber-50 p-4 rounded-xl">مقاله‌ای در دسترس نیست؛ بارگیری منابع مقاله ناموفق بود.</p>';return;}
+    articleGrid.innerHTML=articles.map((article,index)=>'<article class="bg-white dark:bg-slate-950 rounded-2xl p-6 border border-slate-200 dark:border-slate-800"><span class="text-xs text-accent font-bold">'+esc(article.kind)+' · '+esc(article.date||'محتوای آموزشی')+'</span><h3 class="text-lg font-bold text-brand dark:text-white mt-2 mb-2">'+esc(article.title)+'</h3><p class="text-sm text-slate-500 leading-7">'+esc(article.summary||article.body||'')+'…</p><button type="button" class="mt-4 text-accent font-bold text-sm" onclick="openExtractedArticle('+index+')">خواندن مطلب ←</button></article>').join('');
   };
   loadArticles();
   const requested=new URL(location.href).searchParams.get('product');if(requested)setTimeout(()=>window.openCuttingProduct(requested,{fromHistory:true}),0);
