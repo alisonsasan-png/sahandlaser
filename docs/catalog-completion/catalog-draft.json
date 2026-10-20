@@ -9147,6 +9147,12 @@
           "value": "ندارد"
         },
         {
+          "label": "ابعاد کلی دستگاه",
+          "value": "4800 × 2400 × 1750 mm",
+          "scope": "user_supplied_dimensional_drawing",
+          "source": "preview-32/drawings/single-table-standard-3015.svg"
+        },
+        {
           "label": "گروه ابعادی محصول",
           "value": "3015",
           "scope": "user_requested_taxonomy"
@@ -12095,4 +12101,3 @@
     ]
   }
 }
-
