@@ -1019,6 +1019,18 @@ def run_self_tests() -> None:
     assert slug_for({"model": "3015", "name": "مدل استاندارد"}) != slug_for(
         {"model": "3015", "name": "مدل حرفه‌ای"}
     )
+    audited_records = load_catalog_draft_records(CATALOG_DRAFT_FILE)
+    assert len(audited_records) == 106, f"Expected 106 audited catalog records, found {len(audited_records)}"
+    catalog_codes = [record["catalog_code"] for record in audited_records]
+    assert len(set(catalog_codes)) == len(catalog_codes), "Catalog record codes must be unique"
+    missing_visuals = [record["catalog_code"] for record in audited_records
+                       if not record.get("reference_image_path")
+                       or not (ROOT / record["reference_image_path"]).is_file()]
+    assert not missing_visuals, f"Audited catalog visuals are missing: {missing_visuals}"
+    standard_3015 = next(record for record in audited_records if record["catalog_code"] == "CUT-3015-1")
+    assert standard_3015["dimensions_mm"] == {"length": 4800, "width": 2400, "height": 1750}
+    assert standard_3015["dimensions_source"] == "preview-32/drawings/single-table-standard-3015.svg"
+
     class _FakeResponse:
         url = "https://sahandlaser.com/sample/"
         text = "<html><h1>Fiber Laser Cutter 3015</h1></html>"
@@ -1061,7 +1073,7 @@ def run_self_tests() -> None:
         assert f'href="output_catalog/{sample_image.name}"' in root_markup
         assert f'src="output_catalog/{sample_image.name}"' in root_markup
         assert CATALOG_FILE == OUTPUT_DIR / "catalog.html"
-    print("Self-tests passed: localized digits, unit conversion, dimension scope, host allowlist, product-link filtering, and isolated preview output.")
+    print("Self-tests passed: 106 audited identities and image paths, 3015 drawing dimensions, localized units, URL safety, SVG rasterization, and isolated output.")
 
 
 def build(args: argparse.Namespace) -> None:
