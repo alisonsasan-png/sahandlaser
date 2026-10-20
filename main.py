@@ -959,6 +959,7 @@ def deploy_artifacts() -> None:
     paths = ["main.py", "requirements.txt", ".env.example", ".gitignore", "AUTOMATION.md", "product_links.txt",
              "products_data.json", "catalog.html", "generated_xray", "output_catalog", "logo.png",
              "docs/catalog-completion/catalog-draft.json", "assets/catalog-v2",
+             "tests/test_no_api_key.py",
              "assets/product-drawings/3015-standard-isometric.jpg",
              "assets/product-drawings/sahand-laser-dimensional-logo.png",
              "preview-32/drawings/single-table-standard-3015.svg",
@@ -1212,8 +1213,9 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    error_log_path = Path(os.getenv("ERROR_LOG_PATH", str(ROOT / "error_log.txt"))).expanduser()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s",
-                        handlers=[logging.StreamHandler(), logging.FileHandler(ROOT / "error_log.txt", encoding="utf-8")])
+                        handlers=[logging.StreamHandler(), logging.FileHandler(error_log_path, encoding="utf-8")])
     parser = make_parser()
     argv = sys.argv[1:]
     if not argv or argv[0] not in {"build", "deploy", "self-test"}:
