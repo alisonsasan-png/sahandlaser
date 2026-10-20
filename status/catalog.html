@@ -19,16 +19,17 @@
 </header>
 <section><h2>تصاویر سفید آماده‌شده</h2><div class="gallery" id="gallery"></div></section>
 <section id="opticalSection">
-<h2>نمای سه‌بعدی بخش اپتیکی هد BM110</h2>
-<p>با حرکت ماوس، کشیدن روی تصویر یا تغییر نوار، ماژول‌های اپتیکی را ببینید.</p>
+<h2>برش عملکردی مستند هد BM110</h2>
+<p>ماوس، لمس یا نوار را حرکت دهید تا عکس واقعی هد با برش عملکردی مستند مقایسه شود.</p>
 <div id="optical-stage" style="position:relative;aspect-ratio:1;max-width:620px;margin:auto;background:white;direction:ltr;touch-action:pan-y">
-<img src="../assets/catalog-v2/CP-RAY-BM110/studio-web.jpg" alt="نمای بیرونی هد BM110" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain">
-<div id="optical-layer" style="position:absolute;inset:0;clip-path:inset(0 50% 0 0)"><img id="optical-image" src="../assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg" alt="بازسازی سه‌بعدی ماژول‌های اپتیکی هد BM110" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain"></div>
+<img src="../assets/catalog-v2/CP-RAY-BM110/studio-web.jpg" alt="عکس مرجع بیرونی هد BM110" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain">
+<div id="optical-layer" style="position:absolute;inset:0;clip-path:inset(0 50% 0 0)"><img id="optical-image" src="../assets/catalog-v2/CP-RAY-BM110/xray-source-v6.svg" alt="برش عملکردی BM110 بر پایه دفترچه سازنده؛ جایگاه‌ها شماتیک‌اند و مقیاس‌دار نیست" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain"></div>
 <div id="optical-divider" style="position:absolute;top:0;bottom:0;left:50%;width:2px;background:#239ab2;pointer-events:none"></div>
 </div>
-<p style="text-align:center"><button type="button" id="optical-mode" aria-pressed="false">نمایش نمودار عملکردی</button></p>
-<label style="display:block;text-align:center">میزان نمایش داخلی <input id="optical-range" type="range" min="0" max="100" value="50" style="width:70%;direction:ltr"></label>
-<p class="note">بازسازی بخش اپتیکی با ترتیب محافظ بالایی، کولیمیشن، محافظ میانی، فوکوس و محافظ پایینی. شکل دقیق قطعات پنهان، مکانیزم محرک و مسیرهای خنک‌کاری در این تصویر مستند نشده‌اند؛ این تصویر جایگزین نقشه مونتاژ سازنده نیست.</p>
+<p style="text-align:center"><button type="button" id="optical-mode" aria-pressed="false">نمایش نمودار عملکردی ساده</button></p>
+<label style="display:block;text-align:center">میزان نمایش لایهٔ داخلی <input id="optical-range" type="range" min="0" max="100" value="50" aria-label="میزان نمایش برش عملکردی BM110" aria-controls="optical-layer" style="width:70%;direction:ltr"></label>
+<p class="note">ترتیب اپتیکی و سه پنجرهٔ محافظ از دفترچهٔ BM110 V2.0 گرفته شده‌اند. محل، فاصله و شکل هندسی دقیق عدسی‌ها و سازوکار داخلی محرک مستند نشده و در تصویر شماتیک‌اند؛ این تصویر نقشهٔ مونتاژ یا CAD ساخت نیست.</p>
+<p><a href="https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf" target="_blank" rel="noopener">دفترچهٔ رسمی سازنده، BM110 V2.0</a></p>
 </section>
 <section><h2>کاتالوگ در حال تکمیل</h2><label>جست‌وجوی مدل <input id="query" type="search" placeholder="نام یا کد محصول"></label><label>گروه <select id="category"><option value="">همه گروه‌ها</option></select></label><p id="count"></p><div id="catalog"></div></section>
 <section><h2>مقالات آموزشی — پیش‌نویس</h2><div id="articles"></div></section>
@@ -89,8 +90,10 @@ async function start(){
 document.getElementById('query').addEventListener('input',render);document.getElementById('category').addEventListener('change',render);
 const stage=document.getElementById('optical-stage'),range=document.getElementById('optical-range');
 function reveal(value){const amount=Math.max(0,Math.min(100,Number(value)));range.value=String(amount);document.getElementById('optical-layer').style.clipPath='inset(0 '+(100-amount)+'% 0 0)';document.getElementById('optical-divider').style.left=amount+'%'}
-document.getElementById('optical-mode').addEventListener('click',event=>{const schematic=event.currentTarget.getAttribute('aria-pressed')!=='true';event.currentTarget.setAttribute('aria-pressed',String(schematic));event.currentTarget.textContent=schematic?'نمایش بازسازی سه‌بعدی':'نمایش نمودار عملکردی';const image=document.getElementById('optical-image');image.src='../assets/catalog-v2/CP-RAY-BM110/'+(schematic?'optical-schematic.svg':'xray-web-v5.jpg');image.alt=schematic?'نمودار عملکردی اپتیکی':'بازسازی سه‌بعدی ماژول‌های اپتیکی'});
-range.addEventListener('input',()=>reveal(range.value));stage.addEventListener('pointermove',event=>{if(event.pointerType==='touch'&&!event.buttons)return;const rect=stage.getBoundingClientRect();if(rect.width)reveal((event.clientX-rect.left)/rect.width*100)});stage.addEventListener('pointerdown',event=>{if(stage.setPointerCapture)stage.setPointerCapture(event.pointerId);const rect=stage.getBoundingClientRect();if(rect.width)reveal((event.clientX-rect.left)/rect.width*100)});
+document.getElementById('optical-mode').addEventListener('click',event=>{const schematic=event.currentTarget.getAttribute('aria-pressed')!=='true';event.currentTarget.setAttribute('aria-pressed',String(schematic));event.currentTarget.textContent=schematic?'نمایش برش عملکردی مستند':'نمایش نمودار عملکردی ساده';const image=document.getElementById('optical-image');image.src='../assets/catalog-v2/CP-RAY-BM110/'+(schematic?'optical-schematic.svg':'xray-source-v6.svg');image.alt=schematic?'نمودار شماتیک ترتیب اپتیکی BM110':'برش عملکردی BM110 بر پایه دفترچه سازنده؛ جایگاه‌ها شماتیک‌اند'});
+range.addEventListener('input',()=>reveal(range.value));
+stage.addEventListener('pointermove',event=>{if(event.pointerType==='touch'&&!event.buttons)return;const rect=stage.getBoundingClientRect();if(rect.width)reveal((event.clientX-rect.left)/rect.width*100)});
+stage.addEventListener('pointerdown',event=>{if(stage.setPointerCapture)stage.setPointerCapture(event.pointerId);const rect=stage.getBoundingClientRect();if(rect.width)reveal((event.clientX-rect.left)/rect.width*100)});
 start();
 </script>
 </body></html>
