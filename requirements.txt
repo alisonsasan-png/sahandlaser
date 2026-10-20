@@ -1,5 +1,6 @@
 openai>=2.10,<3
 Pillow>=11,<13
+resvg_py>=0.5,<1
 requests>=2.32,<3
 beautifulsoup4>=4.12,<5
 python-dotenv>=1.0,<2
