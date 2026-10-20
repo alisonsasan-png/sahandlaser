@@ -2,46 +2,123 @@
   "description": "Evidence for subsequent per-model visual work; not a finished X-ray or manufacturing CAD.",
   "models": [
     {
-      "codes": ["CP-RAY-BM110"],
+      "codes": [
+        "CP-RAY-BM110"
+      ],
       "model": "BM110",
       "revision": "3.3 kW auto-focus V2.0 manual",
       "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BM110_3.3KW%20Auto%20Focus%20Laser%20Cutting%20Head_2023.11.pdf",
-      "documentPages": [19, 20, 24, 26],
+      "documentPages": [
+        19,
+        20,
+        24,
+        26
+      ],
       "focusActuation": "automatic focus; the overview indicates an internal drive, but complete drive geometry is not documented",
-      "opticalOrder": ["QBH", "upper cover window", "compound collimation", "middle cover window", "compound focusing", "lower cover window", "ceramic/nozzle assembly"],
+      "opticalOrder": [
+        "QBH",
+        "upper cover window",
+        "compound collimation",
+        "middle cover window",
+        "compound focusing",
+        "lower cover window",
+        "ceramic/nozzle assembly"
+      ],
       "coverWindowCount": 3,
-      "topWindow": {"diameterMm": 24.9, "thicknessMm": 1.5, "partNumber": "211LCG0020"},
-      "middleWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0037"},
-      "bottomWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0037"},
-      "unknown": ["exact hidden drive geometry", "precise retaining-barrel geometry", "installed stock revision", "complete cooling-channel geometry"],
-      "visualComplete": false
+      "topWindow": {
+        "diameterMm": 24.9,
+        "thicknessMm": 1.5,
+        "partNumber": "211LCG0020"
+      },
+      "middleWindow": {
+        "diameterMm": 27.9,
+        "thicknessMm": 4.1,
+        "partNumber": "211LCG0037"
+      },
+      "bottomWindow": {
+        "diameterMm": 27.9,
+        "thicknessMm": 4.1,
+        "partNumber": "211LCG0037"
+      },
+      "unknown": [
+        "exact hidden drive geometry",
+        "precise retaining-barrel geometry",
+        "installed stock revision",
+        "complete cooling-channel geometry"
+      ],
+      "visualComplete": false,
+      "visualAsset": "assets/catalog-v2/CP-RAY-BM110/xray-source-v6.svg",
+      "visualStatus": "source_based_functional_cutaway_v6; optical sequence and three cover-glass specifications sourced; positions and lens shapes are schematic"
     },
     {
-      "codes": ["CH001"],
+      "codes": [
+        "CH001"
+      ],
       "model": "BT240S",
       "revision": "3 kW manual V1.6",
       "source": "https://www.empower.cn/uploads/upload/20250120/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C-BT240S_3KW%E5%B9%B3%E9%9D%A2%E5%88%87%E5%89%B2%E5%A4%B4-20231128.pdf",
-      "documentPages": [3, 10, 12, 13, 14, 15, 17],
+      "documentPages": [
+        3,
+        10,
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
       "focusActuation": "manual graduated ring; do not draw an autofocus motor",
       "coverWindowCount": 2,
-      "topWindow": {"diameterMm": 24.9, "thicknessMm": 1.5, "partNumber": "110255IG0005"},
-      "bottomWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0035"},
-      "unknown": ["exact internal bore geometry", "installed stock revision", "precise cooling channels"],
+      "topWindow": {
+        "diameterMm": 24.9,
+        "thicknessMm": 1.5,
+        "partNumber": "110255IG0005"
+      },
+      "bottomWindow": {
+        "diameterMm": 27.9,
+        "thicknessMm": 4.1,
+        "partNumber": "211LCG0035"
+      },
+      "unknown": [
+        "exact internal bore geometry",
+        "installed stock revision",
+        "precise cooling channels"
+      ],
       "visualComplete": false
     },
     {
-      "codes": ["CP-RAY-BT220"],
+      "codes": [
+        "CP-RAY-BT220"
+      ],
       "model": "BT220",
       "revision": "2 kW English manual, 2023.11 filename",
       "source": "https://www.empower.cn/uploads/upload/20250208/User%20Manual-BT220_2kW%20Manual%20Focus%20Laser%20Cutting%20Head-2023.11.pdf",
-      "documentPages": [6, 7, 8, 20, 21, 22, 23, 26],
+      "documentPages": [
+        6,
+        7,
+        8,
+        20,
+        21,
+        22,
+        23,
+        26
+      ],
       "focusActuation": "manual; do not draw an autofocus motor",
       "coverWindowCount": 2,
-      "topWindow": {"diameterMm": 24.9, "thicknessMm": 1.5, "partNumber": "211LCG0020"},
-      "bottomWindow": {"diameterMm": 27.9, "thicknessMm": 4.1, "partNumber": "211LCG0037"},
-      "unknown": ["stock optical configuration", "exact manufacturing geometry"],
+      "topWindow": {
+        "diameterMm": 24.9,
+        "thicknessMm": 1.5,
+        "partNumber": "211LCG0020"
+      },
+      "bottomWindow": {
+        "diameterMm": 27.9,
+        "thicknessMm": 4.1,
+        "partNumber": "211LCG0037"
+      },
+      "unknown": [
+        "stock optical configuration",
+        "exact manufacturing geometry"
+      ],
       "visualComplete": false
     }
   ]
 }
-
