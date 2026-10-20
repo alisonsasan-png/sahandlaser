@@ -718,6 +718,30 @@ def _load_logo(logo_path: Path | None) -> Image.Image | None:
     return None
 
 
+def _datasheet_source_text(record: dict[str, Any]) -> str:
+    """Return the most relevant, record-scoped source for the displayed facts."""
+    dimensions_source = str(record.get("dimensions_source") or "").strip()
+    if dimensions_source:
+        return dimensions_source
+    source_url = str(record.get("source_url") or "").strip()
+    if source_url:
+        return urlparse(source_url).hostname or source_url
+    evidence = record.get("source_evidence") or record.get("sources") or []
+    catalog_record = record.get("catalog_record") or {}
+    if not evidence and isinstance(catalog_record, dict):
+        evidence = catalog_record.get("sources") or []
+    for item in evidence:
+        if not isinstance(item, dict):
+            continue
+        title = str(item.get("title") or "").strip()
+        url = str(item.get("url") or "").strip()
+        if title:
+            return title
+        if url:
+            return urlparse(url).hostname or url
+    return "No source recorded in this product record"
+
+
 def rasterize_svg_asset(source_path: Path, cache_dir: Path, slug: str) -> Path:
     """Render a repository-owned SVG to a cached PNG for Pillow datasheets."""
     if source_path.suffix.lower() != ".svg":
@@ -819,9 +843,9 @@ def create_datasheet(record: dict[str, Any], xray_path: Path, output_path: Path,
         _draw_text(draw, (1220, 522 + n * 43), line, load_font(20), navy)
     y = 690
     _draw_text(draw, (1778, y), "منبع", load_font(19), navy, anchor="ra")
-    source_url = str(record.get("source_url") or "")
-    source_host = urlparse(source_url).hostname or ""
-    _draw_text(draw, (1220, y + 35), source_host, load_font(15), muted)
+    source_text = _datasheet_source_text(record)
+    _draw_wrapped_text(draw, (1220, y + 30), source_text, load_font(14), muted,
+                       max_width=555, line_height=18, max_lines=2)
     y += 95
     draw.rounded_rectangle((1190, y, 1796, y + 125), radius=14, fill="#fff3df", outline="#f0d6ae")
     if image_kind == "xray_concept":
@@ -1030,6 +1054,7 @@ def run_self_tests() -> None:
     standard_3015 = next(record for record in audited_records if record["catalog_code"] == "CUT-3015-1")
     assert standard_3015["dimensions_mm"] == {"length": 4800, "width": 2400, "height": 1750}
     assert standard_3015["dimensions_source"] == "preview-32/drawings/single-table-standard-3015.svg"
+    assert _datasheet_source_text(standard_3015) == standard_3015["dimensions_source"]
 
     class _FakeResponse:
         url = "https://sahandlaser.com/sample/"
