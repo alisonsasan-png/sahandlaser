@@ -21,7 +21,7 @@
     "sources": [
       {
         "title": "TRUMPF â€” Laser cutting",
-        "url": "https://www.trumpf.com/en_INT/solutions/applications/laser-cutting/"
+        "url": "https://www.trumpf.com/en_GB/solutions/applications/laser-cutting/"
       }
     ],
     "kind": "original_persian_educational_article",
@@ -277,7 +277,11 @@
         "url": "https://www.raytools-de.com/product/raytools-bm110-auto-focus-laser-cutting-head/"
       },
       {
-        "title": "RayTools BM114 series manual",
+        "title": "Empower official BM114 Series Auto-Focusing Laser Cutting Head Quick Installation Guide (V1.0)",
+        "url": "https://file.empower.cn/ebook/114az-zh.pdf"
+      },
+      {
+        "title": "BM114 Series 6kW User Manual (archived mirror)",
         "url": "https://www.manualslib.com/manual/1616386/Raytools-Bm114-Series.html"
       }
     ],
