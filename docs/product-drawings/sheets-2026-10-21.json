@@ -1,0 +1,61 @@
+{
+  "updatedAt": "2026-10-21T10:23:22+03:30",
+  "generationMode": "built-in imagegen",
+  "sheets": [
+    {
+      "code": "CUT-3015-1",
+      "title": "تک‌میز استاندارد ۳۰۱۵",
+      "src": "assets/product-drawings/single-table-standard-3015-catalog-v2.jpg",
+      "dimensions": [
+        4900,
+        2500,
+        1700
+      ],
+      "dimensionScope": "catalog-family",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": "CUT-3015-2",
+      "title": "تک‌میز حرفه‌ای ۳۰۱۵",
+      "src": "assets/product-drawings/single-table-pro-3015-catalog-v1.jpg",
+      "dimensions": [
+        4900,
+        2500,
+        1700
+      ],
+      "dimensionScope": "catalog-family",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": "CUT-6020-1",
+      "title": "تک‌میز استاندارد ۶۰۲۰",
+      "src": "assets/product-drawings/single-table-standard-6020-catalog-v1.jpg",
+      "dimensions": [
+        8000,
+        3150,
+        1700
+      ],
+      "dimensionScope": "catalog-family",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": "CUT-6020-2",
+      "title": "تک‌میز حرفه‌ای ۶۰۲۰",
+      "src": "assets/product-drawings/single-table-pro-6020-catalog-v1.jpg",
+      "dimensions": [
+        8000,
+        3150,
+        1700
+      ],
+      "dimensionScope": "catalog-family",
+      "geometry": "schematic-photo-reconstruction"
+    }
+  ],
+  "remainingCount": 14,
+  "remainingReason": "Missing model-specific documented overall dimensions",
+  "prompts": {
+    "standard6020": "Create one high-resolution landscape 3:2 Sahand Laser dimensional sheet. Image 1 is approved template/style ONLY, image 2 is the actual product and all machine geometry must match image 2. Use template's red Persian/English Sahand Laser logo top left, navy header right, large elevated three-quarter faithful product render upper left, small isometric dimension diagram right, three orthographic schematic views (top, side, front) in bottom row with bilingual Persian/English captions. White/pale-blue background, fine blue border, blue dimension arrows, crisp readable typography. Actual product: standard single-table 6020 fiber laser cutter, long white and navy open bed, separate slim console on LEFT front attached arm, multiple small access doors on front navy panel, black gantry and cable chains, no rotary, no second bed. Preserve reference appearance. Header '6020' / 'دستگاه برش لیزر تک‌میز استاندارد' / 'Standard Single-table Fiber Laser'. Documented overall dimensions LENGTH 8000 mm WIDTH 3150 mm HEIGHT 1700 mm. Overall panel 'L × W × H' then '8000 × 3150 × 1700 mm'. Put these numbers correctly on corresponding arrows in isometric, top L8000/W3150, side L8000/H1700, front W3150/H1700. Draw top view longitudinal direction horizontally; side and front must be distinct consistent with actual product. Do NOT copy template's product or 3015 dimensions. No invented internal components. Footer 'ابعاد کلی بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'.",
+    "pro3015": "Create ONE landscape 3:2 high-resolution Sahand Laser dimensional catalog sheet. Input 1 is approved STYLE/layout only; input 2 is actual product identity. Render actual product faithfully: professional single-table 3015, blue/white sculpted rounded corner covers, distinctive horizontal RED stripe along long navy side, black open toothed bed, blue/white gantry and centered head, angled blue console on FRONT RIGHT on attached articulated arm. No rotary and no second bed. Main image elevated three-quarter top view upper left, red Sahand Laser Persian/English logo top left copied from style input, navy header right. Header exact '3015 PRO', 'دستگاه برش لیزر تک‌میز حرفه‌ای', 'Professional Single-table Fiber Laser'. Right panel 'ابعاد کلی دستگاه'/'Overall Dimensions' then 'L × W × H' and '4900 × 2500 × 1700 mm'. Same documented 3015 family overall dimensions in ALL arrows: isometric length4900 width2500 height1700; bottom top orthographic L4900/W2500, side L4900/H1700, front W2500/H1700. Bottom drawings must depict actual sculpted machine, red side stripe may be thin gray in line drawings, attached right-hand console and correct black arch cable chain; never copy standard machine from template. Distinct true schematic orthographic views with consistent proportions, no perspective in bottom views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Fine blue borders, clear blue dimensions, clean white/pale blue backdrop, readable accurate Persian lettering. Footer 'ابعاد کلی خانوادهٔ ۳۰۱۵ بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No additional specifications, no invented internals.",
+    "pro6020": "Create ONE landscape 3:2 high-resolution Sahand Laser dimensional catalog sheet. Input 1 is approved STYLE/layout only; input 2 is actual machine reference. Faithfully render this professional single-table 6020: very long WHITE bed frame, navy top side panels with repeated white L-shaped retaining tabs along long side, one broad rounded-corner navy FRONT panel, navy rounded front corners, slim separate console on LEFT-front mounted on arm, white gantry end covers, navy/white head assembly, black cable chain arch. Preserve original colors, NO red stripes, NO rotary, NO second bed. Upper left large elevated three-quarter product render, upper-left red Sahand Laser Persian/English logo from template. Right navy header exact '6020 PRO', 'دستگاه برش لیزر تک‌میز حرفه‌ای', 'Professional Single-table Fiber Laser'. Right overall dimensions panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '8000 × 3150 × 1700 mm'. Right small isometric dimension drawing with length8000 mm width3150 mm height1700 mm. Bottom three true schematic orthographic views must be coherent with long actual product and each other: top L8000/W3150, side L8000/H1700, front W3150/H1700, blue dimension arrows numbers all in mm, distinct side and front. Captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. White/pale-blue backdrop, fine blue outer border, navy section tab, crisp clear Persian typography. Footer 'ابعاد کلی خانوادهٔ ۶۰۲۰ بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No copied 3015 numbers or standard template machine parts, no invented interior."
+  }
+}
