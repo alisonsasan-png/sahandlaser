@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2026-10-21T11:41:48+03:30",
+  "generationMode": "built-in imagegen",
+  "sourceFilename": "4cc7275a-42be-4aa8-8d0c-44321ed0a1d4.jfif",
+  "dimensionSource": "User-supplied catalog cm converted to mm",
+  "geometry": "schematic reconstruction from catalog photos",
+  "jobs": [
+    {
+      "id": "weld-fiber-base",
+      "title": "دستگاه جوش لیزر فایبر پایه",
+      "en": "Cabinet Fiber Laser Welder",
+      "dimensions": [
+        1000,
+        600,
+        1450
+      ],
+      "ref": "LEFTMOST column when catalog page is read upright: tall white wheeled cabinet, burgundy/brown tall front ventilation grille, sloped top blue control panel, red cable loop/support rising at right side, side ventilation. Match the photo and dimension thumbnail in this column only. Do not use other column products.",
+      "header": "FIBER WELDER",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product catalog sheet. Reference1 is approved sheet template for layout, white/pale blue/navy styling and RED Sahand Laser Persian/English logo only. Reference2 is a photographed catalog PAGE ROTATED SIDEWAYS: mentally rotate to read upright, then use ONLY product column described here for actual machine identity: LEFTMOST column when catalog page is read upright: tall white wheeled cabinet, burgundy/brown tall front ventilation grille, sloped top blue control panel, red cable loop/support rising at right side, side ventilation. Match the photo and dimension thumbnail in this column only. Do not use other column products. Faithfully preserve visible exterior colors, controls, ventilation, cables and body geometry from that product. Large elevated three-quarter product render upper left on clean light background. Top left red سهند لیزر / SAHAND LASER logo from template. Right navy header 'FIBER WELDER', Persian 'دستگاه جوش لیزر فایبر پایه', English 'Cabinet Fiber Laser Welder'. Right panel 'ابعاد کلی دستگاه' / 'Overall Dimensions', 'L × W × H', '1000 × 600 × 1450 mm'. These dimensions are taken from supplied catalog, originally cm converted to mm. Do not copy template cutter or cutting dimensions. Small blue line isometric below panel with 1000 mm(L) length, 600 mm(W) width, 1450 mm(H) height, corresponding correctly to deep/long side versus front width. Bottom three consistent schematic orthographic top/side/front views of THIS welder, captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows length1000 width600, side length1000 height1450, front width600 height1450, numbers in mm. Respect actual appearance including console and cable arrangement; no invented internal components, additional machines or unsupported specifications. Thin blue outer border, clean white bottom drawings area, navy dimensional drawing tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. High clarity correct Persian typography. This is a catalog schematic, not manufacturing CAD.",
+      "src": "assets/product-drawings/weld-fiber-base-dimensional-v1.jpg"
+    },
+    {
+      "id": "weld-fiber-mini",
+      "title": "دستگاه جوش لیزر فایبر مینی",
+      "en": "Mini Fiber Laser Welder",
+      "dimensions": [
+        700,
+        350,
+        650
+      ],
+      "ref": "SECOND column from left upright: compact white box portable main welding unit with gray/black side ventilation, tilted dark top panel, coiled black/red welding cable on top. Product photo shows a SEPARATE small white companion box nearby; main dimensional thumbnail is main cabinet only, not combined two units. Reconstruct main cabinet only, no added companion in dimensioned outline.",
+      "header": "MINI WELDER",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product catalog sheet. Reference1 is approved sheet template for layout, white/pale blue/navy styling and RED Sahand Laser Persian/English logo only. Reference2 is a photographed catalog PAGE ROTATED SIDEWAYS: mentally rotate to read upright, then use ONLY product column described here for actual machine identity: SECOND column from left upright: compact white box portable main welding unit with gray/black side ventilation, tilted dark top panel, coiled black/red welding cable on top. Product photo shows a SEPARATE small white companion box nearby; main dimensional thumbnail is main cabinet only, not combined two units. Reconstruct main cabinet only, no added companion in dimensioned outline. Faithfully preserve visible exterior colors, controls, ventilation, cables and body geometry from that product. Large elevated three-quarter product render upper left on clean light background. Top left red سهند لیزر / SAHAND LASER logo from template. Right navy header 'MINI WELDER', Persian 'دستگاه جوش لیزر فایبر مینی', English 'Mini Fiber Laser Welder'. Right panel 'ابعاد کلی دستگاه' / 'Overall Dimensions', 'L × W × H', '700 × 350 × 650 mm'. These dimensions are taken from supplied catalog, originally cm converted to mm. Do not copy template cutter or cutting dimensions. Small blue line isometric below panel with 700 mm(L) length, 350 mm(W) width, 650 mm(H) height, corresponding correctly to deep/long side versus front width. Bottom three consistent schematic orthographic top/side/front views of THIS welder, captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows length700 width350, side length700 height650, front width350 height650, numbers in mm. Respect actual appearance including console and cable arrangement; no invented internal components, additional machines or unsupported specifications. Thin blue outer border, clean white bottom drawings area, navy dimensional drawing tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. High clarity correct Persian typography. This is a catalog schematic, not manufacturing CAD.",
+      "src": "assets/product-drawings/weld-fiber-mini-dimensional-v1.jpg"
+    },
+    {
+      "id": "weld-fiber-air-cooled",
+      "title": "دستگاه جوش لیزر فایبر هواخنک",
+      "en": "Air-cooled Fiber Laser Welder",
+      "dimensions": [
+        600,
+        350,
+        600
+      ],
+      "ref": "THIRD column from left upright: compact black-and-white air-cooled welder, tilted rectangular top touch screen, white side panel, large white wire spool mounted in black side/rear frame, compact projecting white lower equipment box, visible cable. Match this column main photo and dimensional thumbnail. Overall envelope for assembled main unit as illustrated; no external chiller.",
+      "header": "AIR-COOLED",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product catalog sheet. Reference1 is approved sheet template for layout, white/pale blue/navy styling and RED Sahand Laser Persian/English logo only. Reference2 is a photographed catalog PAGE ROTATED SIDEWAYS: mentally rotate to read upright, then use ONLY product column described here for actual machine identity: THIRD column from left upright: compact black-and-white air-cooled welder, tilted rectangular top touch screen, white side panel, large white wire spool mounted in black side/rear frame, compact projecting white lower equipment box, visible cable. Match this column main photo and dimensional thumbnail. Overall envelope for assembled main unit as illustrated; no external chiller. Faithfully preserve visible exterior colors, controls, ventilation, cables and body geometry from that product. Large elevated three-quarter product render upper left on clean light background. Top left red سهند لیزر / SAHAND LASER logo from template. Right navy header 'AIR-COOLED', Persian 'دستگاه جوش لیزر فایبر هواخنک', English 'Air-cooled Fiber Laser Welder'. Right panel 'ابعاد کلی دستگاه' / 'Overall Dimensions', 'L × W × H', '600 × 350 × 600 mm'. These dimensions are taken from supplied catalog, originally cm converted to mm. Do not copy template cutter or cutting dimensions. Small blue line isometric below panel with 600 mm(L) length, 350 mm(W) width, 600 mm(H) height, corresponding correctly to deep/long side versus front width. Bottom three consistent schematic orthographic top/side/front views of THIS welder, captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows length600 width350, side length600 height600, front width350 height600, numbers in mm. Respect actual appearance including console and cable arrangement; no invented internal components, additional machines or unsupported specifications. Thin blue outer border, clean white bottom drawings area, navy dimensional drawing tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. High clarity correct Persian typography. This is a catalog schematic, not manufacturing CAD.",
+      "src": "assets/product-drawings/weld-fiber-air-cooled-dimensional-v1.jpg"
+    },
+    {
+      "id": "weld-fiber-spot",
+      "title": "دستگاه جوش لیزر فایبر نقطه‌ای",
+      "en": "Fiber Laser Spot Welder",
+      "dimensions": [
+        600,
+        300,
+        850
+      ],
+      "ref": "RIGHTMOST column upright: compact benchtop enclosed spot welder white body with tall black side sections, sloping top with black/red detail, large dark rectangular front viewing window, small yellow laser warning sticker on upper side, side ventilation and handle. Match photograph and dimension thumbnail, do not replace by handheld cabinet or jewellery microscope machine.",
+      "header": "SPOT WELDER",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product catalog sheet. Reference1 is approved sheet template for layout, white/pale blue/navy styling and RED Sahand Laser Persian/English logo only. Reference2 is a photographed catalog PAGE ROTATED SIDEWAYS: mentally rotate to read upright, then use ONLY product column described here for actual machine identity: RIGHTMOST column upright: compact benchtop enclosed spot welder white body with tall black side sections, sloping top with black/red detail, large dark rectangular front viewing window, small yellow laser warning sticker on upper side, side ventilation and handle. Match photograph and dimension thumbnail, do not replace by handheld cabinet or jewellery microscope machine. Faithfully preserve visible exterior colors, controls, ventilation, cables and body geometry from that product. Large elevated three-quarter product render upper left on clean light background. Top left red سهند لیزر / SAHAND LASER logo from template. Right navy header 'SPOT WELDER', Persian 'دستگاه جوش لیزر فایبر نقطه‌ای', English 'Fiber Laser Spot Welder'. Right panel 'ابعاد کلی دستگاه' / 'Overall Dimensions', 'L × W × H', '600 × 300 × 850 mm'. These dimensions are taken from supplied catalog, originally cm converted to mm. Do not copy template cutter or cutting dimensions. Small blue line isometric below panel with 600 mm(L) length, 300 mm(W) width, 850 mm(H) height, corresponding correctly to deep/long side versus front width. Bottom three consistent schematic orthographic top/side/front views of THIS welder, captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows length600 width300, side length600 height850, front width300 height850, numbers in mm. Respect actual appearance including console and cable arrangement; no invented internal components, additional machines or unsupported specifications. Thin blue outer border, clean white bottom drawings area, navy dimensional drawing tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. High clarity correct Persian typography. This is a catalog schematic, not manufacturing CAD.",
+      "src": "assets/product-drawings/weld-fiber-spot-dimensional-v1.jpg"
+    }
+  ]
+}
