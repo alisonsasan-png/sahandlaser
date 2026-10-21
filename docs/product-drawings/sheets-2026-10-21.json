@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T10:46:15+03:30",
+  "updatedAt": "2026-10-21T11:08:12+03:30",
   "generationMode": "built-in imagegen",
   "sheets": [
     {
@@ -68,14 +68,254 @@
         1700
       ],
       "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "single-3015-pro-rotary",
+      "title": "تک‌میز 3015 حرفه‌ای با روتاری",
+      "src": "assets/product-drawings/single-3015-pro-rotary-estimated-v1.jpg",
+      "dimensions": [
+        7700,
+        3900,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "single-3015-standard-rotary",
+      "title": "تک‌میز 3015 استاندارد با روتاری",
+      "src": "assets/product-drawings/single-3015-standard-rotary-estimated-v1.jpg",
+      "dimensions": [
+        7700,
+        3900,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "single-6020-pro-rotary",
+      "title": "تک‌میز 6020 حرفه‌ای با روتاری",
+      "src": "assets/product-drawings/single-6020-pro-rotary-estimated-v1.jpg",
+      "dimensions": [
+        10700,
+        4550,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-3015-standard",
+      "title": "دومیز 3015 استاندارد",
+      "src": "assets/product-drawings/double-3015-standard-estimated-v1.jpg",
+      "dimensions": [
+        7900,
+        2500,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-3015-pro",
+      "title": "دومیز 3015 حرفه‌ای",
+      "src": "assets/product-drawings/double-3015-pro-estimated-v1.jpg",
+      "dimensions": [
+        7900,
+        2500,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-6020-standard",
+      "title": "دومیز 6020 استاندارد",
+      "src": "assets/product-drawings/double-6020-standard-estimated-v1.jpg",
+      "dimensions": [
+        14000,
+        3150,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-6020-pro",
+      "title": "دومیز 6020 حرفه‌ای",
+      "src": "assets/product-drawings/double-6020-pro-estimated-v1.jpg",
+      "dimensions": [
+        14000,
+        3150,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "geometry": "schematic-photo-reconstruction",
+      "sourceIdentityNote": "Folder is professional; supplied image filename says standard. Exact variant identity not verified."
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-3015-standard-rotary",
+      "title": "دومیز 3015 استاندارد با روتاری",
+      "src": "assets/product-drawings/double-3015-standard-rotary-estimated-v1.jpg",
+      "dimensions": [
+        10700,
+        3900,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-3015-pro-rotary",
+      "title": "دومیز 3015 حرفه‌ای با روتاری",
+      "src": "assets/product-drawings/double-3015-pro-rotary-estimated-v1.jpg",
+      "dimensions": [
+        10700,
+        3900,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-6020-standard-rotary",
+      "title": "دومیز 6020 استاندارد با روتاری",
+      "src": "assets/product-drawings/double-6020-standard-rotary-estimated-v1.jpg",
+      "dimensions": [
+        16700,
+        4550,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "double-6020-pro-rotary",
+      "title": "دومیز 6020 حرفه‌ای با روتاری",
+      "src": "assets/product-drawings/double-6020-pro-rotary-estimated-v1.jpg",
+      "dimensions": [
+        16700,
+        4550,
+        1700
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "cabin-3015-pro",
+      "title": "کابین‌دار 3015 حرفه‌ای",
+      "src": "assets/product-drawings/cabin-3015-pro-estimated-v1.jpg",
+      "dimensions": [
+        8360,
+        2250,
+        2300
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate cabin envelope based on unassigned catalog cabin reference 8360x2250x2300; 6020 adds 6000 length and 650 width. Model applicability unverified.",
+      "geometry": "schematic-photo-reconstruction"
+    },
+    {
+      "code": null,
+      "workspaceModel": "cabin-6020-pro",
+      "title": "کابین‌دار 6020 حرفه‌ای",
+      "src": "assets/product-drawings/cabin-6020-pro-estimated-v1.jpg",
+      "dimensions": [
+        14360,
+        2900,
+        2300
+      ],
+      "dimensionScope": "user-authorized-estimate",
+      "estimateBasis": "Approximate cabin envelope based on unassigned catalog cabin reference 8360x2250x2300; 6020 adds 6000 length and 650 width. Model applicability unverified.",
+      "geometry": "schematic-photo-reconstruction"
     }
   ],
-  "remainingCount": 13,
-  "remainingReason": "Missing model-specific documented overall dimensions",
+  "remainingCount": 0,
+  "remainingReason": null,
   "prompts": {
     "standard6020": "Create one high-resolution landscape 3:2 Sahand Laser dimensional sheet. Image 1 is approved template/style ONLY, image 2 is the actual product and all machine geometry must match image 2. Use template's red Persian/English Sahand Laser logo top left, navy header right, large elevated three-quarter faithful product render upper left, small isometric dimension diagram right, three orthographic schematic views (top, side, front) in bottom row with bilingual Persian/English captions. White/pale-blue background, fine blue border, blue dimension arrows, crisp readable typography. Actual product: standard single-table 6020 fiber laser cutter, long white and navy open bed, separate slim console on LEFT front attached arm, multiple small access doors on front navy panel, black gantry and cable chains, no rotary, no second bed. Preserve reference appearance. Header '6020' / 'دستگاه برش لیزر تک‌میز استاندارد' / 'Standard Single-table Fiber Laser'. Documented overall dimensions LENGTH 8000 mm WIDTH 3150 mm HEIGHT 1700 mm. Overall panel 'L × W × H' then '8000 × 3150 × 1700 mm'. Put these numbers correctly on corresponding arrows in isometric, top L8000/W3150, side L8000/H1700, front W3150/H1700. Draw top view longitudinal direction horizontally; side and front must be distinct consistent with actual product. Do NOT copy template's product or 3015 dimensions. No invented internal components. Footer 'ابعاد کلی بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'.",
     "pro3015": "Create ONE landscape 3:2 high-resolution Sahand Laser dimensional catalog sheet. Input 1 is approved STYLE/layout only; input 2 is actual product identity. Render actual product faithfully: professional single-table 3015, blue/white sculpted rounded corner covers, distinctive horizontal RED stripe along long navy side, black open toothed bed, blue/white gantry and centered head, angled blue console on FRONT RIGHT on attached articulated arm. No rotary and no second bed. Main image elevated three-quarter top view upper left, red Sahand Laser Persian/English logo top left copied from style input, navy header right. Header exact '3015 PRO', 'دستگاه برش لیزر تک‌میز حرفه‌ای', 'Professional Single-table Fiber Laser'. Right panel 'ابعاد کلی دستگاه'/'Overall Dimensions' then 'L × W × H' and '4900 × 2500 × 1700 mm'. Same documented 3015 family overall dimensions in ALL arrows: isometric length4900 width2500 height1700; bottom top orthographic L4900/W2500, side L4900/H1700, front W2500/H1700. Bottom drawings must depict actual sculpted machine, red side stripe may be thin gray in line drawings, attached right-hand console and correct black arch cable chain; never copy standard machine from template. Distinct true schematic orthographic views with consistent proportions, no perspective in bottom views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Fine blue borders, clear blue dimensions, clean white/pale blue backdrop, readable accurate Persian lettering. Footer 'ابعاد کلی خانوادهٔ ۳۰۱۵ بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No additional specifications, no invented internals.",
     "pro6020": "Create ONE landscape 3:2 high-resolution Sahand Laser dimensional catalog sheet. Input 1 is approved STYLE/layout only; input 2 is actual machine reference. Faithfully render this professional single-table 6020: very long WHITE bed frame, navy top side panels with repeated white L-shaped retaining tabs along long side, one broad rounded-corner navy FRONT panel, navy rounded front corners, slim separate console on LEFT-front mounted on arm, white gantry end covers, navy/white head assembly, black cable chain arch. Preserve original colors, NO red stripes, NO rotary, NO second bed. Upper left large elevated three-quarter product render, upper-left red Sahand Laser Persian/English logo from template. Right navy header exact '6020 PRO', 'دستگاه برش لیزر تک‌میز حرفه‌ای', 'Professional Single-table Fiber Laser'. Right overall dimensions panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '8000 × 3150 × 1700 mm'. Right small isometric dimension drawing with length8000 mm width3150 mm height1700 mm. Bottom three true schematic orthographic views must be coherent with long actual product and each other: top L8000/W3150, side L8000/H1700, front W3150/H1700, blue dimension arrows numbers all in mm, distinct side and front. Captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. White/pale-blue backdrop, fine blue outer border, navy section tab, crisp clear Persian typography. Footer 'ابعاد کلی خانوادهٔ ۶۰۲۰ بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No copied 3015 numbers or standard template machine parts, no invented interior.",
-    "standard4020": "Generate one high-resolution landscape 3:2 Sahand Laser dimensional catalog sheet. Image1 is approved template and brand styling ONLY. Image2 is actual standard single-table 4020 product; preserve its appearance faithfully: white frame, navy side panels, multiple navy front cabinet doors, LEFT-front upright console on attached arm, white/navy gantry, black cable-chain arch, single open bed, no rotary no second table. Large elevated three-quarter realistic product render upper left. Red Persian/English Sahand Laser logo top left from template. Right navy header exact '4020', 'دستگاه برش لیزر تک‌میز استاندارد', 'Standard Single-table Fiber Laser'. Right dimensions panel heading 'ابعاد کلی تخمینی' and 'Estimated Overall Dimensions'; 'L × W × H'; '6517 × 3325 × 2261 mm'. Small isometric blue line drawing of actual product under panel: length6517 mm (L), width3325 mm (W), height2261 mm (H). Bottom row three distinct true schematic orthographic views matching actual product (not template): top L6517/W3325, side L6517/H2261, front W3325/H2261. Blue arrows and crisp exact numbers on every dimension. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Fine blue outer border, pale blue upper background white drawing background, navy section tab. Footer legible Persian 'ابعاد تخمینی با ضریب ۱٫۳۳ نسبت به ۳۰۱۵ | نماها شماتیک هستند' and 'Unit: mm'. These are USER-AUTHORIZED estimated dimensions obtained by multiplying 4900,2500,1700 by1.33; do not call them manufacturer-certified or catalog-measured. Preserve product colors and do not add invented internals. Balanced uncluttered sheet and accurate Persian text."
-  }
+    "standard4020": "Generate one high-resolution landscape 3:2 Sahand Laser dimensional catalog sheet. Image1 is approved template and brand styling ONLY. Image2 is actual standard single-table 4020 product; preserve its appearance faithfully: white frame, navy side panels, multiple navy front cabinet doors, LEFT-front upright console on attached arm, white/navy gantry, black cable-chain arch, single open bed, no rotary no second table. Large elevated three-quarter realistic product render upper left. Red Persian/English Sahand Laser logo top left from template. Right navy header exact '4020', 'دستگاه برش لیزر تک‌میز استاندارد', 'Standard Single-table Fiber Laser'. Right dimensions panel heading 'ابعاد کلی تخمینی' and 'Estimated Overall Dimensions'; 'L × W × H'; '6517 × 3325 × 2261 mm'. Small isometric blue line drawing of actual product under panel: length6517 mm (L), width3325 mm (W), height2261 mm (H). Bottom row three distinct true schematic orthographic views matching actual product (not template): top L6517/W3325, side L6517/H2261, front W3325/H2261. Blue arrows and crisp exact numbers on every dimension. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Fine blue outer border, pale blue upper background white drawing background, navy section tab. Footer legible Persian 'ابعاد تخمینی با ضریب ۱٫۳۳ نسبت به ۳۰۱۵ | نماها شماتیک هستند' and 'Unit: mm'. These are USER-AUTHORIZED estimated dimensions obtained by multiplying 4900,2500,1700 by1.33; do not call them manufacturer-certified or catalog-measured. Preserve product colors and do not add invented internals. Balanced uncluttered sheet and accurate Persian text.",
+    "remaining13": [
+      {
+        "id": "single-3015-pro-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Silver/white and charcoal professional single-table sheet-and-tube cutter; broad black slatted bed, gray gantry, black arch chain, silver rounded end housings, console at far right. Retain exact visible rotary arrangement from photo, do not invent a separate tube rail if hidden. Header model '3015 PRO + ROTARY' and Persian title 'تک‌میز 3015 حرفه‌ای با روتاری' and English 'Single-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '7700 × 3900 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 7700 mm (L), width 3900 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=7700,W=3900; side L=7700,H=1700; front W=3900,H=1700. Every arrow number in mm. Orthographic length spans entire machine including bed and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "single-3015-standard-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Blue/white standard single-bed cutter with long bright-blue side rotary tube rail, vivid red rail stripe, large circular front chuck, intermediate supports and rear chuck, blue console at left, tall white/blue/red cabinet. Header model '3015 + ROTARY' and Persian title 'تک‌میز 3015 استاندارد با روتاری' and English 'Single-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '7700 × 3900 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 7700 mm (L), width 3900 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=7700,W=3900; side L=7700,H=1700; front W=3900,H=1700. Every arrow number in mm. Orthographic length spans entire machine including bed and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "single-6020-pro-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: White/navy long professional single-bed cutter with long left-side tube rail, circular chucks, white gantry/navy end caps, black arch chain, broad navy front panel, rear right tall cabinet and console. Header model '6020 PRO + ROTARY' and Persian title 'تک‌میز 6020 حرفه‌ای با روتاری' and English 'Single-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '10700 × 4550 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 10700 mm (L), width 4550 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=10700,W=4550; side L=10700,H=1700; front W=4550,H=1700. Every arrow number in mm. Orthographic length spans entire machine including bed and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-3015-standard",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Blue/white standard exchange-table cutter: TWO longitudinal sheet beds, rear unloading table fully visible, navy front cabinet doors, upright console in front of gantry, curved black side chain. Header model '3015' and Persian title 'دومیز 3015 استاندارد' and English 'Exchange-table Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '7900 × 2500 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 7900 mm (L), width 2500 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=7900,W=2500; side L=7900,H=1700; front W=2500,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-3015-pro",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Blue/white professional exchange-table cutter: TWO longitudinal beds, long rear unloading table, rounded blue corners, red stripe along blue side panel, angled console front right. Header model '3015 PRO' and Persian title 'دومیز 3015 حرفه‌ای' and English 'Exchange-table Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '7900 × 2500 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 7900 mm (L), width 2500 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=7900,W=2500; side L=7900,H=1700; front W=2500,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-6020-standard",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Very long standard 6020 exchange-table cutter, TWO beds with rear unloading table, white frame and charcoal lower side panels, blue rounded front corners, white/blue gantry. No visible control console in supplied image: do not invent one. Header model '6020' and Persian title 'دومیز 6020 استاندارد' and English 'Exchange-table Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '14000 × 3150 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 14000 mm (L), width 3150 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=14000,W=3150; side L=14000,H=1700; front W=3150,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-6020-pro",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Professional-folder reference shows blue/white exchange-table machine, TWO longitudinal beds, navy front cabinet doors, upright front console, curved side cable chain; preserve supplied image despite source filename saying standard. Header model '6020 PRO' and Persian title 'دومیز 6020 حرفه‌ای' and English 'Exchange-table Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '14000 × 3150 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 14000 mm (L), width 3150 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=14000,W=3150; side L=14000,H=1700; front W=3150,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-3015-standard-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Standard blue/white/red 3015 exchange-table sheet-and-tube cutter, TWO sheet beds and blue parallel tube rail with red stripe, large circular front chuck, tube supports, white/blue gantry, upright console at right. Header model '3015 + ROTARY' and Persian title 'دومیز 3015 استاندارد با روتاری' and English 'Exchange-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '10700 × 3900 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 10700 mm (L), width 3900 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=10700,W=3900; side L=10700,H=1700; front W=3900,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-3015-pro-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Professional 3015 exchange-table sheet-and-tube machine, white/silver frame with red stripe, TWO black sheet beds, long left-side tube rail with silver chucks, white/black gantry and black arch chain. No unsupported added console. Header model '3015 PRO + ROTARY' and Persian title 'دومیز 3015 حرفه‌ای با روتاری' and English 'Exchange-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '10700 × 3900 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 10700 mm (L), width 3900 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=10700,W=3900; side L=10700,H=1700; front W=3900,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-6020-standard-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Standard 6020 exchange-table sheet-and-tube machine, white/charcoal with red accents, TWO sheet beds plus side rotary rail and big circular chuck, tube supports, front-right console, tall rear cabinet. Header model '6020 + ROTARY' and Persian title 'دومیز 6020 استاندارد با روتاری' and English 'Exchange-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '16700 × 4550 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 16700 mm (L), width 4550 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=16700,W=4550; side L=16700,H=1700; front W=4550,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "double-6020-pro-rotary",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Professional 6020 exchange-table sheet-and-tube machine, white/charcoal color without red stripe, TWO longitudinal beds plus side tube rail, large circular chuck, tube supports, right-front console. Header model '6020 PRO + ROTARY' and Persian title 'دومیز 6020 حرفه‌ای با روتاری' and English 'Exchange-table Fiber Laser with Rotary'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '16700 × 4550 × 1700 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 16700 mm (L), width 4550 mm (W), height 1700 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=16700,W=4550; side L=16700,H=1700; front W=4550,H=1700. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table and rotary rail extensions; width spans entire assembly INCLUDING side rotary rail. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "cabin-3015-pro",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Fully enclosed professional 3015 machine, white cabin navy side panel red accents, dark blue observation window, front dual doors with black windows, integrated blue-screen control station, rear exchange unloading table visible outside cabin. No rotary. Header model '3015 PRO' and Persian title 'کابین‌دار 3015 حرفه‌ای' and English 'Enclosed Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '8360 × 2250 × 2300 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 8360 mm (L), width 2250 mm (W), height 2300 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=8360,W=2250; side L=8360,H=2300; front W=2250,H=2300. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      },
+      {
+        "id": "cabin-6020-pro",
+        "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved template layout and RED Sahand Laser Persian/English branding ONLY; input2 is actual product identity. Faithfully preserve actual machine shape, color, visible exterior modules and console position from input2. Product specifics: Very long fully enclosed professional 6020 machine, charcoal upper panels with BLUE square windows, vivid RED horizontal stripe, white lower access panels, dark front double doors and integrated control station at far right, long rear exchange unloading table outside cabin. No rotary. Header model '6020 PRO' and Persian title 'کابین‌دار 6020 حرفه‌ای' and English 'Enclosed Fiber Laser'. Upper left: large polished elevated three-quarter product render with ALL machine extensions fully visible. Top left red Persian سهند لیزر / SAHAND LASER logo copied from template. Right navy header; under it blue dimension panel exact 'ابعاد کلی تخمینی' / 'Estimated Overall Dimensions'; 'L × W × H'; '14360 × 2900 × 2300 mm'. Under that small isometric line drawing of SAME complete machine with blue arrow dimensions length 14360 mm (L), width 2900 mm (W), height 2300 mm (H). Bottom row schematic orthographic TOP, SIDE, FRONT drawings matching THIS actual product, not template machine. Correct direction and distinct geometries: top L=14360,W=2900; side L=14360,H=2300; front W=2900,H=2300. Every arrow number in mm. Orthographic length spans entire machine including rear exchange loading table; width spans entire assembly. Consistent gantry position in three views. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Thin blue outer border, pale blue upper background, white bottom drawings area, navy technical drawing section tab. Footer exact 'ابعاد تخمینی | نماها شماتیک هستند | مناسب نقشهٔ ساخت نیست' and 'Unit: mm'. DO NOT imply measured or manufacturer-certified dimensions; user authorized rough estimates. No invented internal components or additional products; no template numbers; clean crisp legible Persian."
+      }
+    ]
+  },
+  "scope": "18 top-level workspace machine folders; not all products in the company catalog",
+  "allDimensionalDrawingsAreSchematic": true,
+  "userAuthorization": "Explicitly permitted estimation and visible estimated labels for all remaining products."
 }

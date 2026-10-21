@@ -1,0 +1,266 @@
+{
+  "updatedAt": "2026-10-21T11:08:12+03:30",
+  "dimensionPolicy": "All 13 estimates explicitly authorized by user; labels required",
+  "jobs": [
+    {
+      "group": "تک میز با روتاری",
+      "model": "با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای",
+      "reference": "F:\\تصاویر فشرده\\برش\\تک میز با روتاری\\با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای\\دستگاه برش لیزر فایبر تک میز 3015 حرفه ای با روتاری.jpg",
+      "size": "3015",
+      "pro": true,
+      "rotary": true,
+      "double": false,
+      "cabin": false,
+      "id": "single-3015-pro-rotary",
+      "title": "تک‌میز 3015 حرفه‌ای با روتاری",
+      "dimensions": [
+        7700,
+        3900,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "single-3015-pro-rotary-estimated-v1.png",
+      "outputJpg": "single-3015-pro-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "تک میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\تک میز با روتاری\\دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری\\دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری.jpg",
+      "size": "3015",
+      "pro": false,
+      "rotary": true,
+      "double": false,
+      "cabin": false,
+      "id": "single-3015-standard-rotary",
+      "title": "تک‌میز 3015 استاندارد با روتاری",
+      "dimensions": [
+        7700,
+        3900,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "single-3015-standard-rotary-estimated-v1.png",
+      "outputJpg": "single-3015-standard-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "تک میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\تک میز با روتاری\\دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری\\دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری.jpg",
+      "size": "6020",
+      "pro": true,
+      "rotary": true,
+      "double": false,
+      "cabin": false,
+      "id": "single-6020-pro-rotary",
+      "title": "تک‌میز 6020 حرفه‌ای با روتاری",
+      "dimensions": [
+        10700,
+        4550,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "single-6020-pro-rotary-estimated-v1.png",
+      "outputJpg": "single-6020-pro-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز",
+      "model": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز\\دستگاه برش لیزر فایبر دومیز 3015  استاندارد\\دستگاه برش لیزر فایبر دومیز 3015  استاندارد.jpg",
+      "size": "3015",
+      "pro": false,
+      "rotary": false,
+      "double": true,
+      "cabin": false,
+      "id": "double-3015-standard",
+      "title": "دومیز 3015 استاندارد",
+      "dimensions": [
+        7900,
+        2500,
+        1700
+      ],
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "outputPng": "double-3015-standard-estimated-v1.png",
+      "outputJpg": "double-3015-standard-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز",
+      "model": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز\\دستگاه برش لیزر فایبر دومیز 3015 حرفه ای\\دستگاه برش لیزر فایبر دومیز 3015 حرفه ای.jpg",
+      "size": "3015",
+      "pro": true,
+      "rotary": false,
+      "double": true,
+      "cabin": false,
+      "id": "double-3015-pro",
+      "title": "دومیز 3015 حرفه‌ای",
+      "dimensions": [
+        7900,
+        2500,
+        1700
+      ],
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "outputPng": "double-3015-pro-estimated-v1.png",
+      "outputJpg": "double-3015-pro-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز",
+      "model": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز\\دستگاه برش لیزر فایبر دومیز 6020 استاندارد\\دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+      "size": "6020",
+      "pro": false,
+      "rotary": false,
+      "double": true,
+      "cabin": false,
+      "id": "double-6020-standard",
+      "title": "دومیز 6020 استاندارد",
+      "dimensions": [
+        14000,
+        3150,
+        1700
+      ],
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "outputPng": "double-6020-standard-estimated-v1.png",
+      "outputJpg": "double-6020-standard-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز",
+      "model": "دستگاه برش لیزر فایبر دومیز 6020 حرفه ای",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز\\دستگاه برش لیزر فایبر دومیز 6020 حرفه ای\\دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+      "size": "6020",
+      "pro": true,
+      "rotary": false,
+      "double": true,
+      "cabin": false,
+      "id": "double-6020-pro",
+      "title": "دومیز 6020 حرفه‌ای",
+      "dimensions": [
+        14000,
+        3150,
+        1700
+      ],
+      "estimateBasis": "Single-table catalog envelope plus one nominal working-bed length (3000/6000) for exchange table; width/height kept as a rough allowance.",
+      "outputPng": "double-6020-pro-estimated-v1.png",
+      "outputJpg": "double-6020-pro-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز با روتاری\\دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری\\دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری.jpg",
+      "size": "3015",
+      "pro": false,
+      "rotary": true,
+      "double": true,
+      "cabin": false,
+      "id": "double-3015-standard-rotary",
+      "title": "دومیز 3015 استاندارد با روتاری",
+      "dimensions": [
+        10700,
+        3900,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "double-3015-standard-rotary-estimated-v1.png",
+      "outputJpg": "double-3015-standard-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز با روتاری\\دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری\\دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری.jpg",
+      "size": "3015",
+      "pro": true,
+      "rotary": true,
+      "double": true,
+      "cabin": false,
+      "id": "double-3015-pro-rotary",
+      "title": "دومیز 3015 حرفه‌ای با روتاری",
+      "dimensions": [
+        10700,
+        3900,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "double-3015-pro-rotary-estimated-v1.png",
+      "outputJpg": "double-3015-pro-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز با روتاری\\دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری\\دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری.jpg",
+      "size": "6020",
+      "pro": false,
+      "rotary": true,
+      "double": true,
+      "cabin": false,
+      "id": "double-6020-standard-rotary",
+      "title": "دومیز 6020 استاندارد با روتاری",
+      "dimensions": [
+        16700,
+        4550,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "double-6020-standard-rotary-estimated-v1.png",
+      "outputJpg": "double-6020-standard-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "دو میز با روتاری",
+      "model": "دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری",
+      "reference": "F:\\تصاویر فشرده\\برش\\دو میز با روتاری\\دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری\\دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری.jpg",
+      "size": "6020",
+      "pro": true,
+      "rotary": true,
+      "double": true,
+      "cabin": false,
+      "id": "double-6020-pro-rotary",
+      "title": "دومیز 6020 حرفه‌ای با روتاری",
+      "dimensions": [
+        16700,
+        4550,
+        1700
+      ],
+      "estimateBasis": "Approximate 3015 sheet-and-tube catalog reference 7700x3900x1700; 6020 adds 3000 length and 650 width; exchange table adds 3000 or 6000 length.",
+      "outputPng": "double-6020-pro-rotary-estimated-v1.png",
+      "outputJpg": "double-6020-pro-rotary-estimated-v1.jpg"
+    },
+    {
+      "group": "کابین دار",
+      "model": "دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای",
+      "reference": "F:\\تصاویر فشرده\\برش\\کابین دار\\دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای\\بدون روتاری\\دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای.jpg",
+      "size": "3015",
+      "pro": true,
+      "rotary": false,
+      "double": false,
+      "cabin": true,
+      "id": "cabin-3015-pro",
+      "title": "کابین‌دار 3015 حرفه‌ای",
+      "dimensions": [
+        8360,
+        2250,
+        2300
+      ],
+      "estimateBasis": "Approximate cabin envelope based on unassigned catalog cabin reference 8360x2250x2300; 6020 adds 6000 length and 650 width. Model applicability unverified.",
+      "outputPng": "cabin-3015-pro-estimated-v1.png",
+      "outputJpg": "cabin-3015-pro-estimated-v1.jpg"
+    },
+    {
+      "group": "کابین دار",
+      "model": "دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای",
+      "reference": "F:\\تصاویر فشرده\\برش\\کابین دار\\دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای\\دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای.jpg",
+      "size": "6020",
+      "pro": true,
+      "rotary": false,
+      "double": false,
+      "cabin": true,
+      "id": "cabin-6020-pro",
+      "title": "کابین‌دار 6020 حرفه‌ای",
+      "dimensions": [
+        14360,
+        2900,
+        2300
+      ],
+      "estimateBasis": "Approximate cabin envelope based on unassigned catalog cabin reference 8360x2250x2300; 6020 adds 6000 length and 650 width. Model applicability unverified.",
+      "outputPng": "cabin-6020-pro-estimated-v1.png",
+      "outputJpg": "cabin-6020-pro-estimated-v1.jpg"
+    }
+  ]
+}
