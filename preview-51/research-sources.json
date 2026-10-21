@@ -1,0 +1,38 @@
+{
+  "reviewedDate": "2026-10-21",
+  "timezone": "Asia/Tehran",
+  "sources": [
+    {
+      "url": "https://www.trumpf.com/en_INT/solutions/applications/laser-cutting/",
+      "review": "Product categories and educational explanation of flame/fusion cutting inspected in the previous goal turn. A refresh this turn timed out; no new claims were inferred from the timeout.",
+      "usedIn": ["education.html#cutting-gas"],
+      "facts": ["Oxygen participates in flame cutting", "Nitrogen/argon assist fusion cutting without reacting with the molten metal"],
+      "scope": "General industry education; no TRUMPF product, service or performance promise attributed to Sahand Laser"
+    },
+    {
+      "url": "https://www.teyuchiller.com/water-chiller-units-cwfl-1500-with-environmental-refrigerant-for-fiber-lasers_p16.html",
+      "review": "Product categories, CWFL-1500 description, specifications and variant/working-condition notes inspected this turn.",
+      "usedIn": ["education.html#chiller", "products/CC001.html"],
+      "facts": ["Separate source/head cooling circuits described for the manufacturer page's CWFL-1500", "Manufacturer differentiates fiber, CO2 and handheld-welding chiller categories", "Page cautions that operating conditions and delivered product govern specifications"],
+      "scope": "Manufacturer-page information; not proof of a supplied unit's revision or installed equipment"
+    },
+    {
+      "url": "https://www.teyuchiller.com/service.html",
+      "review": "Customer-service page inspected: maintenance advice, operation/troubleshooting guidance and localized overseas service descriptions belong to TEYU. They were not reused as Sahand services.",
+      "usedIn": ["REVIEW.md"],
+      "scope": "Source review only; no Sahand warranty, geographic coverage, experience, or service promise inferred"
+    },
+    {
+      "url": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+      "usedIn": ["products.json", "products/*.html"],
+      "scope": "Existing product names and scoped historical specification records; original wording retained; field source and recorded scope shown separately"
+    },
+    {
+      "url": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+      "usedIn": ["image-matches.json"],
+      "scope": "Seven explicit reviewed exterior-image mappings; not an internal-assembly or installed-component claim"
+    }
+  ],
+  "unavailableRefreshes": ["https://www.trumpf.com/en_INT/services/", "https://www.teyuchiller.com/service_d3"],
+  "policy": "Only short original Persian educational summaries were newly written. Existing specification wording is preserved with its recorded scope and source, not upgraded to current manufacturer or Sahand-installed verification. Conflicting and unsourced fields are listed in unresolved.json. No new price, warranty, certification, company experience, installed component or service claim was added."
+}

@@ -1,0 +1,3543 @@
+[
+  {
+    "path": "logo.png",
+    "sha256": "655da1c297afc373c94ca8ad3193aaf1cdd5079da810f4f3a59bfa1b1a1997bc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/4020-dimension-preliminary.png",
+    "sha256": "4f2093daed51c1cd6f5d0e40d1156c89ccb0a4bb193828e860a3854c529cd362",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/dz3015h-dimension.png",
+    "sha256": "4f2093daed51c1cd6f5d0e40d1156c89ccb0a4bb193828e860a3854c529cd362",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-6/assets/sahand-ml004-exterior-branded.jpg",
+    "sha256": "667dab4daf6d751fc75329487b7d6769d80c610bf612063dbf190fdb221c53fd",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-6/assets/sahand-ml004-exterior.jpg",
+    "sha256": "b727c1dc4c32065cb6598d3e728c4c0b558bce2341c3688ff50467780d6e7832",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-6/assets/sahand-ml004-xray-branded.jpg",
+    "sha256": "5b5516fd7cc62ee0e1c88e89a8216eb0d03c5bb98aad995e0a4f38132ddc79f8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-6/assets/sahand-ml004-xray.jpg",
+    "sha256": "f7c6727dd7c569c0d23971efbd2e6c49febfa327b5bafa4880fea92c9c07d51e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-32/drawings/single-table-standard-3015.svg",
+    "sha256": "92ed2018efb62082da13d8ae0b6026c279d279cb892ff719af0bbb3b93ed17dc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/CT-001-commercial-v2.png",
+    "sha256": "22d772443ac13d750e44612b2f9b10dd34902f85b1e511e39957a75f332a4544",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/CT-002-commercial-v2.png",
+    "sha256": "0e193cef79f8302a64d575b11afd500896dcbfcb1306429ad7b05c1f89ab5e0c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/CT-003-commercial-v2.png",
+    "sha256": "2d293290ec18a0cb1954cd83f3897ac2251c13b480feffe9e44a730bbf3528bb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/CT-006-commercial-v2.png",
+    "sha256": "ac37eb27388fdf6d4cd59096d888b0bda4fc33e4ee00ec4968b7ef0dac25dc6f",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/CT-009-commercial-v2.png",
+    "sha256": "46e2a17393efd0889a1b1a037e3a6ae65533d979cc60767bf768385d56844b75",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/ML-004-commercial-v2.png",
+    "sha256": "6a5fdf2015aff7d8219db50388f67560ec3212870a82d370a1525ac2db7e98e4",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/ML-005-commercial-v2.png",
+    "sha256": "a10824729c7cd7312f5bc7c186fec06232999c23d216b854398cb8f1035dfb02",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/ML-007-commercial-v2.png",
+    "sha256": "761091780b61043ac7a774e6e8d9f89a2a7887667d8d4c1b9fa1303f833f2171",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "preview-2/assets/ML-009-commercial-v2.png",
+    "sha256": "cc8564cb6c7be107ba2d2ed9d90ac776a9f4518bbff716a70b76e71532d7dfb4",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/Air-cooled-welding-machine.jpg",
+    "sha256": "499b9c8f2dd01af2a1e4ec10f35d20a4eae57ceec54135bb0f11f18222e98605",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/Cleaning-Machine.jpg",
+    "sha256": "71662a56b0559859bd23329ceec4b5d082ab7520a69426cbc90208ff29d7f6af",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/source-documents/weld-1500-poster.jpg",
+    "sha256": "14a456311e4e83fa275fbee60c490cb9e027fda79489b1c9c6b3adc5b09e79f8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/source-documents/weld-2000-poster.jpg",
+    "sha256": "b47e041ad10265bc02597773fae1e72d3b4cbc8ba51c3b99dc486854ae38bfac",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/source-documents/weld-3000-poster.jpg",
+    "sha256": "2c9b4ce9ea2e6b15ae26c010ed7afa9ec6296d85eea33542417a5385211fe053",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/browser/live-optical-desktop.png",
+    "sha256": "839a20215018a3e4a721d6b96daef95629abe75e235d372c60e66f9d7a64c14a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/browser/live-optical-mobile.png",
+    "sha256": "576646c877a5534e723169580403b39c01c03cf67df1b40fbf5310976bd8194e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/browser/local-optical-desktop.png",
+    "sha256": "adf54a8dedd520d3d586e0597370de6605485af5a460c36aaf6c181f6dec7745",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "docs/catalog-completion/inspection/browser/local-optical-mobile.png",
+    "sha256": "e73662e962e053f337131a89dc52fa60b72b9f9c5d121c4e330deb0494995be6",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/01.jpg",
+    "sha256": "06aba303f4ec40e375c7ea0feb853530748b53b5fb3ea687bf18594bcd16d328",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/02.jpg",
+    "sha256": "98dc5f5cebf4bd073dbde3e3923ab2a08b8ca724795afa6c302d6b35813d2a83",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/03.jpg",
+    "sha256": "45f768e42d321286c91119deb88278a4e90f8057084796e3ab87ff64c6876b8d",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/04.jpg",
+    "sha256": "f72eb8a12c6e58aae0fa519678238a31f26d6be79e6b6b5e5a79f3fe861d8b54",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/05.jpg",
+    "sha256": "6d1bfec25b0c2ecf0ef2c41c01fb62408bea65564d4db94a4f2b420121f89abb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/06.jpg",
+    "sha256": "b2b106490a182cc6fc6e9d8bf29d4f739ef158b6d359525631d3feacb8765ea8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/07.jpg",
+    "sha256": "fd21a76a9db05b84f2edea7ff570e929b5fd124ca8345194cadb4d4c13546181",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/08.jpg",
+    "sha256": "9ab6574a09f4b9fd1c216c3d51c641c48291e093b2b489a23b7de3d2563e221c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/09.jpg",
+    "sha256": "f24eeae11484547e9eb1e451b1a9f569aa40daf86ea4a4bbae4b9ca25fd6051c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/10.jpg",
+    "sha256": "3b9649a5a436ee0f08b68b0e74578b04e02b544d5303ca9280438a9da8e1d57b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/11.jpg",
+    "sha256": "48510b43e56f76fa2a694d7abdfa9e5e8292e4dcbc4417194867cd44c95904b2",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/12.jpg",
+    "sha256": "cdf2c66ce8fb5822800fb106f6f36e678c5964d7ac2f3f172e65d00aebd795ad",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/13.jpg",
+    "sha256": "928b3b2f60aeaa0529c40ff4dda954007b1886b6f54d5b0ed64fa7f5fd2fd6fa",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/14.jpg",
+    "sha256": "643cd064133f740b5edaa92fcd25bacfb6284753fa98424c64b8872aef6bda53",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/15.jpg",
+    "sha256": "d641b1d9544d4dd009c97e6ea29ce64ac2eded31e66e982e1e0b9996df618655",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/16.jpg",
+    "sha256": "fc5fd829fdbdfa08da89bf6c72a6c49d3927fd2577a013c7dd0a03c6649adcab",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/17.jpg",
+    "sha256": "2aa3bbbb93f197a0cdd9b8b00dd5125a0d09d5a60d8cb1f8ab5f5e1180a9e521",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/18.jpg",
+    "sha256": "44ed26cf7f4ad7fb253d50fc0756d76c922d08201274ebd9a34b7cdbf25ff449",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/19.jpg",
+    "sha256": "f7aa024bb6f97f869cd63666c4105fce51d005f981a2fc6d6fa519bf985fe7ad",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/20.jpg",
+    "sha256": "472613e8457e8668eb1c0e317ee1e2029234a26f782ed10030a423678950dcc9",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/21.jpg",
+    "sha256": "420ab9472a48f8c4285a7a3a4c94af77c6bfd919adabc1925e87ea08c94dfb36",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/22.jpg",
+    "sha256": "091d984dff394efe65c6193d0edeb232bd6dd1e8ed94db8df4f3647f8c744629",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/23.jpg",
+    "sha256": "732da322403534baeba57603cdc6557319153093fd3016aa4b4ab1ed6e2debb8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/24.jpg",
+    "sha256": "4810984d05050b9a6e78abf71f4a9b51b3bab4bf6470d0d8a1f2a530e7a7bc25",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/25.jpg",
+    "sha256": "7824e5feaf10d21d19db1a0d97d1263067e116f1cccd379f8b6fd4393a41f03e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/26.jpg",
+    "sha256": "0b75291898078dc487a1f177f2ea39d4eeff1a8b81e2459564695c3c9c0046d7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/27.jpg",
+    "sha256": "614c64b576eeae39a445a12fcbd3f2b35d7e75c90eeb3270370534da9a197fec",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/28.jpg",
+    "sha256": "f818991d39a2f0ce1cca93a8f09d60274ccc8deba7ed9bafdd0ae91acf1d60bc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/29.jpg",
+    "sha256": "044ed5c1ef745e6fef84a8a541334e241d42b8fa44a49413826cbb3d18e9c1c3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/30.jpg",
+    "sha256": "701ff4eae8f24edecbbfc9ba969678b29d61fd97e5d0744fd889b618d9f514de",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/31.jpg",
+    "sha256": "73eb52568f6aa07fa8fa602d87c74c1e0fc4058f90f67257b504eb1b95e5b0fb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-32-products/32.jpg",
+    "sha256": "00638e20d42e69c0c38ce151a12ad8d832acc015bf25230fa6d9edad087ea97b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/01.jpg",
+    "sha256": "9f1a15b20c4d70c3def12ef93d90702ef8104079a246d461e07205442411b0fb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/02.jpg",
+    "sha256": "9caa6456807312e7e53b476bd7859250d1b57b5e54acddda2cceabaa659ac7b1",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/03.jpg",
+    "sha256": "171364c77938cdefa2881dcca08723d9172142b8c0dcb68b15992b1afe4d7450",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/04.jpg",
+    "sha256": "0cc028a76fdacb0eee677eb65901623cd077bff7a89d0a32632e30dc5c6b48db",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/05.jpg",
+    "sha256": "47986af44d9b603b75e34d2b2e1fa5b3f9233ba89a11e81d0e4af9410addc34b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/06.jpg",
+    "sha256": "93c4d393fa2617a15330a1cf31c01b8df653612b005cbf6a550e374a4d2cc14b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/07.jpg",
+    "sha256": "fb6864c1952a7e2004e97e41135b1bf1aa803a05ca17ab04cd87c8dc76a14fff",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/preview-50-xray/08.jpg",
+    "sha256": "6493381b592d442c894c9de1e7ee63010f973b7564529224067211379ef49b90",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/3015-standard-hero.jpg",
+    "sha256": "aa014b088a93a8c8b4e2c06f135c354a4ca7eede4e9f681255c54597b7097011",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/3015-standard-isometric.jpg",
+    "sha256": "54d58b282449d202f1289e1174a1ab92aee30e1dedd09f25afb722e42f3ae6f2",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/3015-standard-source.jpg",
+    "sha256": "4177f5613feae3f5558aa4240f30ea45a11dcdb98cf3fb01723d1133f2a9243c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/cabin-3015-pro-estimated-v1.jpg",
+    "sha256": "07050aa2cc147d10e8cb1dd54b8ccb78701b7e1f19b32fc4204b5bb20346ba20",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/cabin-6020-pro-estimated-v1.jpg",
+    "sha256": "80f0b88fd9f4323bdcd011360e61860f6818e38a3846f46c7f2562703d482d95",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/cleaning-fiber-continuous-dimensional-v1.jpg",
+    "sha256": "3ba4ed829d76a7af058cdecda3389035fdeeb2152530932eee39c27206e88c33",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/cleaning-fiber-pulsed-air-dimensional-v2.jpg",
+    "sha256": "087541bf40064292558f244d7ec9449b8f9faa8741f405c23ede1b4c13174f4f",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/cleaning-fiber-pulsed-water-dimensional-v1.jpg",
+    "sha256": "9e45483a6d73898b722cee4381e545133345715f33ae20af078990eec785f369",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-3015-pro-estimated-v1.jpg",
+    "sha256": "8a051177f1d8aa5960d427257fa78a4850ee4373deda8e885fcd2d930e9b4815",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-3015-pro-rotary-estimated-v1.jpg",
+    "sha256": "86b852c4642e65280f82e702014a174171c7ec48bae52d872d59371c207e46a8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-3015-standard-estimated-v1.jpg",
+    "sha256": "8e5b8b5ce2237b6c5dbeecd8e2df53c7d14984a29618eed8569239fde6ab9d74",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-3015-standard-rotary-estimated-v1.jpg",
+    "sha256": "91be6833eb41cdb8ee2123c24ef09bfbcea31d1463a545dcb4af4bf78f751592",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-6020-pro-estimated-v1.jpg",
+    "sha256": "45f5e563f4586d96b849fdb9b8fe8d5474e25fbc80502c5676a81e8b7d3d2b94",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-6020-pro-rotary-estimated-v1.jpg",
+    "sha256": "89edcaba827a00ca026ac80967c004872a74c4760688f1de6b04ae308fdb29fc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-6020-standard-estimated-v1.jpg",
+    "sha256": "f25ae779cedfebf8298eec6342aaa2d1a222bc37712924ef1f751838fadb4243",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/double-6020-standard-rotary-estimated-v1.jpg",
+    "sha256": "c3f169f953440c863550609f1fe487012645d6eebd4dd5fd172b429d3de725f2",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/marking-fiber-desktop-dimensional-v1.jpg",
+    "sha256": "ef9a8d44662d0e823262db353defbdf9ab1478d6c76d454400cac2691aedc491",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/marking-fiber-flying-dimensional-v1.jpg",
+    "sha256": "3c16eaa23a9f736dc196899165056d12d8ec30b52616c30edfe30328f616909d",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/marking-fiber-portable-dimensional-v1.jpg",
+    "sha256": "3b6b4306098da4812a7c32302accee3c1072a74539564a4c7358ccbca9aedabc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/marking-fiber-table-dimensional-v1.jpg",
+    "sha256": "b0558d5d5aea32ed4f2e767fb316e90797ee39cca359a4d26c0a2e899f41db48",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/sahand-laser-dimensional-logo.png",
+    "sha256": "4da98dae197b6522eb936df8fe7c9cad6e90135f12965fbe6f1f1bd90953a569",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-3015-pro-rotary-estimated-v1.jpg",
+    "sha256": "fce22d934c38ca35ae26b9d1701b517e7085e863fe354e0b0320ac1b1e351513",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-3015-standard-rotary-estimated-v1.jpg",
+    "sha256": "33e04fc3ff0a09dd836d4be72b1009640ed8627f235aebd2d7b175eae7b49930",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-6020-pro-rotary-estimated-v1.jpg",
+    "sha256": "3dd44a1349d00ef526a8f5dbee63c91db2157b98e90b49f596461aa32a5551ab",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-table-pro-3015-catalog-v1.jpg",
+    "sha256": "045e091fdc0d7c1fe25b551ec02294b23aed4a05092a69d1d18114bad4a4304a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-table-pro-6020-catalog-v1.jpg",
+    "sha256": "bfb35662b24c225d3126444f23757f37567c9843be9a4b9f520449fe96eff4d9",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-table-standard-3015-catalog-v2.jpg",
+    "sha256": "a92c53bd77fb1078bc9bb71f4229ca8ad0d4027fdfa9c4ddb1752ad87d947918",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-table-standard-4020-estimated-v1.jpg",
+    "sha256": "b8581ecf5ebcae798eab6a8bd3c9619f392f44794a8fdc6175526c2749779d56",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/single-table-standard-6020-catalog-v1.jpg",
+    "sha256": "dd6d1ea0dffc6609681a9b02e936f14cc71c537e1fbd9b86f266f1cc5ae98134",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/weld-fiber-air-cooled-dimensional-v1.jpg",
+    "sha256": "237e9c2cb3680d98cc97b7907440b8ed422f28f8a9e214d282d4d7f425afd226",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/weld-fiber-base-dimensional-v1.jpg",
+    "sha256": "ab8a29c36a769e23eb519babfdba1afeddcdec49497126c18fa8a48c93adf847",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/weld-fiber-mini-dimensional-v1.jpg",
+    "sha256": "f2bc84196b9302655bb3a0f31c4f62953e78be96a0437f19e39513ae89ea0333",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-drawings/weld-fiber-spot-dimensional-v1.jpg",
+    "sha256": "6db9a7dc4e5c65782d86d7bf8494567ab475744f6a6c25003c76ae0cec97e7e3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-sheets/dz3015h-studio.jpg",
+    "sha256": "cb8a545942daa392ccdf433a02f30514053d63eed6ecb6c3c56da273b0266175",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-sheets/laser-4020-preliminary-studio.jpg",
+    "sha256": "7378b6b84a3c718c622293c29bf3a52213b3e2f86f0e556cb9fc6e2a46ef5482",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/product-sheets/laser-4020-preliminary.svg",
+    "sha256": "e8cae2bdad787af34ee3439283e541add4fe13923a4410c6da6d910655f8a0d4",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/cover.webp",
+    "sha256": "2aebcd4bbecf867cc6839878b0d815673e15d89144c4d1a0b01bf8418edb748a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/exploded.webp",
+    "sha256": "eed54eb304f2f9e9a902e7fb1bc19e632bffd727adb3fab048619a4e1b7f027f",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-000.webp",
+    "sha256": "191954757150151beba836b3d92640f67187788527e7fccc691da5d379faab01",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-030.webp",
+    "sha256": "66a1ed21b017dd9ac53facb7b798c7b4b66815195e621bd8a4b68cefa3f2815b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-060.webp",
+    "sha256": "7ddc4376abc11e701e830de476478afb17a77f71fb796ec3a21e479cccab489e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-090.webp",
+    "sha256": "4a4a19599c522e3a46d1b4c0466b003661061109f974fcc585d376967f0dfd02",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-120.webp",
+    "sha256": "fdcddbda09da8a4e40ac1b21e8061e8b723222e4387d5f74b9e477538648f352",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-150.webp",
+    "sha256": "ba156c7769344064241688459f42b3cd24b642bcc5a9c0d80a768f71deab1ee0",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-180.webp",
+    "sha256": "392d0387eeababf6b782eaed67c73ea9f17f8bd508745ce8c33ceff7e92dfdd3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-210.webp",
+    "sha256": "1af72b8be4bc95a4e595779930c45a8acfcc00fc9e813a1522fa03b2c39c9aa5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-240.webp",
+    "sha256": "3f39d92e0a616aafc82e5fc7a673192634d00733c9e3b650cb9cfbfce86022f8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-270.webp",
+    "sha256": "a05883c46fce0fb63b9dbab113e1166c16801550f104f6474c4f79aedaac1a22",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-300.webp",
+    "sha256": "ee614f9d325d6e13d3104b98946296609f95f8eece4a6d086c981ce674ba1115",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/frame-330.webp",
+    "sha256": "1d8a0908a1722e27c258976337300d3456c8971e05c68fa13b523e1d54fa50c2",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/model-preview.webp",
+    "sha256": "c5686053f30a2a80d4af630218f135bf8a3acf626da32664da0caad7ceb34d94",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-001/technical.webp",
+    "sha256": "538bfbc92bbad6c0b03f21c55e139c9c286d663f023110603fa76636437bc9ba",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/cover.webp",
+    "sha256": "033aabefecaab7a37e73c1ff30006b9ebe17fbea3f0b42af5bf6d490ff2d4061",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/exploded.webp",
+    "sha256": "baea98f1dd6b8a040293d8152a9f41f7527692e34394826990c0d79054166573",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-000.webp",
+    "sha256": "34e8dd06e51671a121fa3b0ef20e6d3a7d65f7dc13c1627de945c82f64addff0",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-030.webp",
+    "sha256": "7d3552478665db32c4d647797593c331ed5373b650daa9ddaad0867e58e9fc2b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-060.webp",
+    "sha256": "b6869d4dd68bc145aeb028080091766393d64f1bd90d0a9b80b04a78fa6611a1",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-090.webp",
+    "sha256": "f76ae87279dea3b203107bb70ac2dc107995f6f7efad7ccd611714531f2ec3db",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-120.webp",
+    "sha256": "43496f7c0d6a0653f7559fcbc558e9546b9871860c296a976480cb82e3373faf",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-150.webp",
+    "sha256": "6caf12a149552cb08bafed4c16f9aeee14b153090c80b6840a904f53d67b27b3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-180.webp",
+    "sha256": "1f9261c0d835c540feb560fff8fb3c182f6ce44ebde6f6dbc9df4bcd3d10e8fb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-210.webp",
+    "sha256": "c9fc9d6e361232e4b4feef24fb763204ac441dce180fb4dd7ab383021278d220",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-240.webp",
+    "sha256": "eb62a6204c4261c0dc400e2661c7729dfa966bd47266d6405b0200cb9cf9259e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-270.webp",
+    "sha256": "70bb3d873c7d1d6b40a81d9ef3c3dc8df60fb8bf504b5cf822f1e60dea9f4a7e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-300.webp",
+    "sha256": "030517b12998e081a4e80255de2fa6b94e879eb71c5baef31288e355e7fc56d3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/frame-330.webp",
+    "sha256": "1fa59220990570f66b5edc3266bc4e5fe5584eac8f78a7a4517cfad3cbd86bb9",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/model-preview.webp",
+    "sha256": "87fd480d7982fc7b25a239dff5510a4f7b81afff7912c7d7c36c2346403d1061",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/technical.png",
+    "sha256": "bdd85a1d1b78740ad57219d68dc274a3343db6938421d655ed2c4e3533d96087",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/CT-010/technical.webp",
+    "sha256": "7a757ca1cc4e1a94bdec30797b5108c4175e5e66a310e4979495cb72962f48d6",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-004/_MG_4350.jpg",
+    "sha256": "581362d80960df1b7195e5992b11190ead307fb2a259cc5e7d073ba83d17fb1e",
+    "codes": [],
+    "candidateCodes": [
+      "ML-004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-004/_MG_4353.jpg",
+    "sha256": "50128581d704ffdd541f76ca461eb1164b041f61c71d45b6cd3c1e974a81591b",
+    "codes": [],
+    "candidateCodes": [
+      "ML-004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-004/_MG_4354.jpg",
+    "sha256": "2474ee00c9ad541a7f726d7427f62e16f8a0d78f6b0ac78db48ff15dd23f7e4d",
+    "codes": [],
+    "candidateCodes": [
+      "ML-004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-004/_MG_4357.jpg",
+    "sha256": "dad7325ca082c7b09dfc40d26a62471c169780ab80f24c1f8a0738dfc8d8cfec",
+    "codes": [],
+    "candidateCodes": [
+      "ML-004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-005/_MG_4146.jpg",
+    "sha256": "aa2b20acad0f528613ae92dfe1edc878e706750e3e1ae49d2d708c2274fc7594",
+    "codes": [],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-005/_MG_4149.jpg",
+    "sha256": "bc7ca8257db72167c2cbd7c0fea34f8492349d816b2bb6294266701b4d1f8f25",
+    "codes": [],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-005/_MG_4150.jpg",
+    "sha256": "49384df25f7a03971e9d8c69cb3639edc7cee0121400c68326e006759b315c7f",
+    "codes": [],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-005/_MG_4162.jpg",
+    "sha256": "56ac4404b6df2ce4b38d7cd57a79053e5b8ea760ec59ca106abdca4baff73131",
+    "codes": [],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-005/_MG_4165.jpg",
+    "sha256": "ce244d71dbc51cca4959f4df06fbff2e616f53c0303f01b0847df952977d2ed6",
+    "codes": [],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-007/_MG_4171.jpg",
+    "sha256": "93501205d19a3c8e0c36f099becd23dde4c6bcbbf96ae2ea8fbab2a28bf3d613",
+    "codes": [],
+    "candidateCodes": [
+      "ML-007"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-007/_MG_4184.jpg",
+    "sha256": "49e42e2bff1e1a050f886e003733123b58755f39d2f3dc9b492813febdfefde0",
+    "codes": [],
+    "candidateCodes": [
+      "ML-007"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-007/_MG_4206.jpg",
+    "sha256": "42ba5cc42825df34c07e1739a9100a1323bc989fa0895351869daf9d93ed83b7",
+    "codes": [],
+    "candidateCodes": [
+      "ML-007"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-007/_MG_4218.jpg",
+    "sha256": "3b13fb74db5db5c880fa94ce94f00655d2abd3bfffe677ece3699c6aa2a12515",
+    "codes": [],
+    "candidateCodes": [
+      "ML-007"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-009/_MG_4239.jpg",
+    "sha256": "c767ceb4954de3a0f3e74f163bbecf70c5cad91d922dfb79ee3ea4efcb36dd56",
+    "codes": [],
+    "candidateCodes": [
+      "ML-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-009/_MG_4266.jpg",
+    "sha256": "3b9b0c7e06ab4aac4852f7332fa619e17e752a16f8cc75acf6f26955171cb5c5",
+    "codes": [],
+    "candidateCodes": [
+      "ML-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-009/_MG_4269.jpg",
+    "sha256": "b4ce88667e8a440ea9f359015586948352a0e918539b81b0508b51ebb61e55cc",
+    "codes": [],
+    "candidateCodes": [
+      "ML-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-009/_MG_4270.jpg",
+    "sha256": "8ed1b7fed3b88d49c637d75e53f2fc786c46e18e9f2e414a5fdd94bb148c4cfe",
+    "codes": [],
+    "candidateCodes": [
+      "ML-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/products/ML-009/_MG_4275.jpg",
+    "sha256": "9a829c2fb8cf25b75fafcd2111a8296f16f8696f48f743cfcf15a3aa7d41a54d",
+    "codes": [],
+    "candidateCodes": [
+      "ML-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/air-cooled/studio-web.jpg",
+    "sha256": "624ad5d9c4514133582abf4b0d760d125ae324b09f95df0973027005591542b4",
+    "codes": [
+      "WL-003"
+    ],
+    "candidateCodes": [
+      "WL-003"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CC001/studio-web.jpg",
+    "sha256": "8c67120f63c9e3e77b39711fa8164b5970f58c90654d45d02a6b2602086c92c3",
+    "codes": [
+      "CC001"
+    ],
+    "candidateCodes": [
+      "CC001"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CC002/studio-web.jpg",
+    "sha256": "7c0a91170894d35d3d1e5530ca6c61834670962bf6dee6a542b6de8fb264b715",
+    "codes": [
+      "CC002"
+    ],
+    "candidateCodes": [
+      "CC002"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CC003/studio-web.jpg",
+    "sha256": "b472ff064c513fbb521f565759cf15d2bbf85a3c08d18791ca42d683d28f2b21",
+    "codes": [],
+    "candidateCodes": [
+      "CC003"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CC004/studio-v1.png",
+    "sha256": "34c2720a8489f80e33335813ee1e285d4f1758bf47ca5537a71a288e08e2f7be",
+    "codes": [],
+    "candidateCodes": [
+      "CC004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CC004/studio-web.jpg",
+    "sha256": "a1c99f223ffcfec62f7827f1a3fbf7fabe2ceb4daeb9adfbba57ea6ba8950766",
+    "codes": [],
+    "candidateCodes": [
+      "CC004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CC005/studio-v1.png",
+    "sha256": "b4b55201f7908964d052aee996c6b828c3d474191a75a13ac9d64c7b1143911b",
+    "codes": [],
+    "candidateCodes": [
+      "CC005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CC005/studio-web.jpg",
+    "sha256": "e83ce6f7cc89f15078b6bf192140da78ec197c5f2710538d41e029073a4d352a",
+    "codes": [],
+    "candidateCodes": [
+      "CC005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CC006/studio-web.jpg",
+    "sha256": "53a410e745b1dc83ca2d834e7c39dd4cb4809ef3ed34f749ff2b01c985d6716e",
+    "codes": [],
+    "candidateCodes": [
+      "CC006"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-HANLI-12000/studio-web.jpg",
+    "sha256": "7866fa903cb7c8e4173a2dcfc99d58f2f52b3e1927cfd0d96fbaacfada5a5a2b",
+    "codes": [],
+    "candidateCodes": [
+      "CH-HANLI-12000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-HANLI-6000/studio-web.jpg",
+    "sha256": "2f73073ec1001be52c77cf0ab2968b0003f94fd17d3c53c825c00c6e0b3b1ac4",
+    "codes": [],
+    "candidateCodes": [
+      "CH-HANLI-6000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-S&A-12000/studio-web.jpg",
+    "sha256": "a13f6a947460fd28d1caa3221e8189cbb38a7019a4272845bd442caadc36b484",
+    "codes": [],
+    "candidateCodes": [
+      "CH-S&A-12000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-S&A-20000/studio-web.jpg",
+    "sha256": "4acdc54bcfc8ce399e2e5ec9900e17322cc8cb83aad7ff78fe55cf2744c149f7",
+    "codes": [],
+    "candidateCodes": [
+      "CH-S&A-20000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-S&A-6000/studio-v1.png",
+    "sha256": "150017a4fc847e0ecf035e47300b5d723a622fdaa3531b0c6807ee260aa81b98",
+    "codes": [],
+    "candidateCodes": [
+      "CH-S&A-6000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH-S&A-6000/studio-web.jpg",
+    "sha256": "da21e506f5418470de8a7a7ca7c145d78aab274057b9af952c0a2030c4f00f27",
+    "codes": [],
+    "candidateCodes": [
+      "CH-S&A-6000"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH001/studio-v1.png",
+    "sha256": "6bc45705d2273d8437857fda5e659b00543c7e65f42f4f6d200e92c33bfdec0b",
+    "codes": [],
+    "candidateCodes": [
+      "CH001"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH001/studio-web.jpg",
+    "sha256": "f528988f4251343c848eb6577b5e1929edae8e8d56261582ea338b6dbf2c0542",
+    "codes": [],
+    "candidateCodes": [
+      "CH001"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH002/studio-web.jpg",
+    "sha256": "5417f1c94c723f5798af396fdbc930ffb2c0a8df8a15a972dc53f0a2252fc0ea",
+    "codes": [],
+    "candidateCodes": [
+      "CH002"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH003/studio-v1.png",
+    "sha256": "e014a2bd08b46f679abc4dd15917b6069a2c0ab872ab960dcd2ce50ce69a40b9",
+    "codes": [],
+    "candidateCodes": [
+      "CH003"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH003/studio-web.jpg",
+    "sha256": "fe79b53b72f7a3d457130802293bbdff3a74648f1ba79018d0bf31702705b437",
+    "codes": [],
+    "candidateCodes": [
+      "CH003"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH004/studio-v1.png",
+    "sha256": "9b057a0b253b0f66aeac836a066970126c27bd09184c94c712e471c0e63a5c71",
+    "codes": [],
+    "candidateCodes": [
+      "CH004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH004/studio-web.jpg",
+    "sha256": "924bde4d6561c39cd44f39310256481c3ddcce25bf636207724d722a20741612",
+    "codes": [],
+    "candidateCodes": [
+      "CH004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CH005/studio-web.jpg",
+    "sha256": "7337894db789ce749203931f7c4830848a5218c4b0ec8bec76fda08601f1f088",
+    "codes": [],
+    "candidateCodes": [
+      "CH005"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CL-002/studio-web.jpg",
+    "sha256": "d91359468e3003a7b4bc9d959950f3602c9c9d7f067c65d5aea514045b0c5049",
+    "codes": [],
+    "candidateCodes": [
+      "CL-002"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CL-004/studio-web.jpg",
+    "sha256": "9addcde7f118876a99ddc44a7a55edad7d3232bccbbb503ba0da637d99fe7263",
+    "codes": [],
+    "candidateCodes": [
+      "CL-004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+    "sha256": "124ec879aaf1a2af1251a7f7e622c55ab5b406f7303a78d978ee1e8445abd14c",
+    "codes": [],
+    "candidateCodes": [
+      "CL-001",
+      "CL-003",
+      "CLEAN-GENERIC"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CN001/studio-web.jpg",
+    "sha256": "00f5c65658fe104dfe3c2a4a70da74b895f478c3f28ab9b5e30fce1dd078954d",
+    "codes": [],
+    "candidateCodes": [
+      "CN001",
+      "CN002",
+      "CN003",
+      "CN004",
+      "CN006",
+      "CN007",
+      "CN008",
+      "CN009",
+      "CN010",
+      "CN011",
+      "CN012",
+      "CN013"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-CERAMIC/studio-web.jpg",
+    "sha256": "726210c450d2d63e2081feaef2d82faf73846e61eea09ff1916d49f4d7d0dadf",
+    "codes": [],
+    "candidateCodes": [
+      "CP-CERAMIC"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-LENS-BLT/studio-web.jpg",
+    "sha256": "de9808b76bde7df4f3ba26cb0fd519fc484be0b2f6e7dc9354afd8f7fe6619a2",
+    "codes": [],
+    "candidateCodes": [
+      "CP-LENS-BLT"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-LENS-RAY/studio-web.jpg",
+    "sha256": "a303b1ed2ece283a2f2f780c49cecb933a3cbc4272642e3960773c30cb349dae",
+    "codes": [],
+    "candidateCodes": [
+      "CP-LENS-RAY"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-LENS-WSX/studio-web.jpg",
+    "sha256": "f720654fd1004d3adccd2c1fd70b8b976d8a0178eb8424a3b2a0c10e7cb99c08",
+    "codes": [],
+    "candidateCodes": [
+      "CP-LENS-WSX"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM109/optical-schematic.svg",
+    "sha256": "5d0169a23694f1ee678d17b5068be92fc5c44e80a209c8543b28b361dce91876",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/exploded-modules.svg",
+    "sha256": "3baa9be080613774bd0155aba05847807fd28940ce7212814bc29fbcdb1262d2",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/optical-schematic.svg",
+    "sha256": "866a7de35df706911d5d4a77329358711efb08b755473dbedf214669c3f02e6e",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/studio-web.jpg",
+    "sha256": "78fd5af1f1fcd277d168c512a91b774d13443a2a1e96cd014b03518846298af2",
+    "codes": [
+      "CP-RAY-BM110"
+    ],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/technical-reference.svg",
+    "sha256": "20019b90f09e56d2d3b8a9ca0c5fde40157147687618d1afd6b651b679c81bd6",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/xray-source-v6.svg",
+    "sha256": "444d0632c505979edc49de0b626174eb18cce038aca0e805bd66034e4dc44ba7",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/xray-web-v3.jpg",
+    "sha256": "a9ab723426f31f69154db4b5b8554cf5a4bd3e271ff6c451b7d9a91d00b3667b",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
+    "sha256": "a36168c8281d582a358eaf33ac037870b49465c5b4ca1e4695a28904365b927a",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM110"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM111/optical-schematic.svg",
+    "sha256": "765dd3bf77cb5405eaed798cd6b7ab76a1017f7d365eaf03b3758cf0df774c9e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM114E/optical-schematic.svg",
+    "sha256": "899401971f7e81dde51a78fe10c433150441249f495dd0569c87057744cb0343",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM114E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM114E/studio-web.jpg",
+    "sha256": "19d09bbdde61135f2418c551bb3f8baa08b2f4e2ae6c50dddcc29c99aecc0816",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM114E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM115/studio-web.jpg",
+    "sha256": "b45ff80cd2bb95a215b66612caac4867b1c94a34ff3b04a3d496684be5268740",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM115"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM115E/optical-schematic.svg",
+    "sha256": "b6f49be55dbf7d89e58ea6f362273af45d32466b8777f41c75743e8b20d1bd46",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM115E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM115E/studio-web.jpg",
+    "sha256": "b207ed4537ffad8508c74f3553052271e3a65886061677de795a8880594a083e",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM115E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BM116E/studio-web.jpg",
+    "sha256": "2f4784d8a9f8a4d6e3a3fc73ba3dd78e53bf3eae1a7e1b24aad5d4915a530c3e",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BM116E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BT220/studio-web.jpg",
+    "sha256": "f7cef1f39617b5da3b50a4c41d335f37dd8f5a03d4f35dc6c8008148972e46bb",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BT220"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BT240/optical-schematic.svg",
+    "sha256": "059f660eb0232ca89ef3cd8c7c19f0af1d3c7d93a1528cb3c06f812f2c39fca5",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BT240"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-RAY-BT240/studio-web.jpg",
+    "sha256": "67751770d8ab62e03f283a8960db44ca5fe2ff5f59e9525671043ab1db875417",
+    "codes": [],
+    "candidateCodes": [
+      "CP-RAY-BT240"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-SMC-ITV1050/studio-web.jpg",
+    "sha256": "9682bd2bea59586a17c6ba8f8995bb896ab4ec98ff1c950fe490f56c5917a01c",
+    "codes": [],
+    "candidateCodes": [
+      "CP-SMC-ITV1050"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-SMC-ITV2050/studio-web.jpg",
+    "sha256": "d6b8d325d5fb250acd1d24cb426307bb4027c53fdfac468050f060c31249a6c3",
+    "codes": [],
+    "candidateCodes": [
+      "CP-SMC-ITV2050"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CP-TRA/studio-web.jpg",
+    "sha256": "8a5dcd34c48aae5e5980a4de73dac38da41ed913135e531d0471b5942f8f931d",
+    "codes": [],
+    "candidateCodes": [
+      "CP-TRA"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CTRL-FSCUT2000C/studio-web.jpg",
+    "sha256": "c7d8985a7335e691cb71a46e931582ba9e5feff38c8f036d6b12dc067af06f67",
+    "codes": [],
+    "candidateCodes": [
+      "CTRL-FSCUT2000C"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CTRL-FSCUT2000E/studio-web.jpg",
+    "sha256": "74389f7ef579463bfc31676b995469ff5137ad7d1a152e75fe24e92556291b3c",
+    "codes": [],
+    "candidateCodes": [
+      "CTRL-FSCUT2000E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CTRL-FSCUT4000E/studio-web.jpg",
+    "sha256": "d556632c28f05e8fcc14255f02d1ec55339ec74e56648ae072d68b07f1f39d1a",
+    "codes": [],
+    "candidateCodes": [
+      "CTRL-FSCUT4000E"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-3/studio-v1.png",
+    "sha256": "ef7270c5c1b999fb3c2cb92da02025ce1795541c701274abba6035e87c70818d",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-3"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-3/studio-web.jpg",
+    "sha256": "600abd499cec896fdcef6d77c1bb8d8bcecd67d4a8fb40a9ef6f8ae30c92e06a",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-3"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-4/studio-web.jpg",
+    "sha256": "556f742a6c337c8f614c89194080191126f7d25e2e383941701173637c7b823c",
+    "codes": [
+      "CUT-3015-4"
+    ],
+    "candidateCodes": [
+      "CUT-3015-4"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-5/studio-v1.jpg",
+    "sha256": "444ac81947440f16a3e2db01b7f2f059a1d51205f920af2013da42b6510e5579",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-5"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-5/studio-web.jpg",
+    "sha256": "444ac81947440f16a3e2db01b7f2f059a1d51205f920af2013da42b6510e5579",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-5"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-6/studio-v1.png",
+    "sha256": "2528c3d28f8a986c218fd50a9b9c5e37f152d8cc8c00f61b2f0585973edbf8c8",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-6"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-6/studio-web.jpg",
+    "sha256": "0cf87aa6fb53ac5ccdf7fa151dc73fd7afc7acdab6c6772ddece2eb7ca7660fb",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-6"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-7/studio-web.jpg",
+    "sha256": "ae47deea6799b6365739cc5bb4413e3c7919642c5d03a564cb0e0533184238cc",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-7"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-8/studio-web.jpg",
+    "sha256": "a5cf7627e1335999531e3c15c34a96ddb088bdd96826f7851395fb5cb2b83c08",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-8"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-3015-9/studio-web.jpg",
+    "sha256": "8755c1c7c3cc206b318aa19ea21e3a961baae1cdf2d246e15788995c230988d2",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-3015-9"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-1/studio-web.jpg",
+    "sha256": "fe75db7e9ecf08168fd42ed41bc2c5a9fbe04c5dd277d006555ad721f5d463d4",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-1"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-2/studio-web.jpg",
+    "sha256": "0da313be98678f6bb5a7cc326b9c74360214bd573986f50d117045404fde9b9a",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-2"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-3/studio-web.jpg",
+    "sha256": "c4e336300320d79841bfcba23fdfb9e2b3264fa6901be60ef95ae71b08eaeb48",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-3"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-4/studio-v1.png",
+    "sha256": "93df1a08a567e066694f3b7d54bb8d6fe1684d85e52b884f03768df7af68168c",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-4"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-4/studio-web.jpg",
+    "sha256": "c25956e2120bbc78292171248181aa5a7e9451e3e6c4e5772efc0d39c2043fe4",
+    "codes": [
+      "CUT-6020-4"
+    ],
+    "candidateCodes": [
+      "CUT-6020-4"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-5/studio-v1.png",
+    "sha256": "af8f01ec5285037bab446a2e7306e2d3ca1736b7e80636cae98156b89547e779",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-5"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-5/studio-web.jpg",
+    "sha256": "af8f01ec5285037bab446a2e7306e2d3ca1736b7e80636cae98156b89547e779",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-5"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-6/studio-v1.png",
+    "sha256": "e2f6fcb33b9b3061b5c9cf05b6061d3b09b5ebad6ab744ec12c36bde63a163f0",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-6"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-6/studio-web.jpg",
+    "sha256": "b607ca1982b87ac61e6be2a0a541cbb02e3f6dbf6d774f2d1ef516544da7e280",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-6"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-7/studio-v1.png",
+    "sha256": "8be9366d73f70bb7a962a828cdf5e339fa7c4ca494ccba8d961b6a5c41ea05bb",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-7"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-7/studio-web.jpg",
+    "sha256": "cb8e82b8fd0aff2a4445ed273e67c730d1801719d54f90870bd496e43170a4f1",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-7"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-8/studio-web.jpg",
+    "sha256": "c2090b62865f376a855fc141aad9eb15a2b4c3fc6105ec27455ed204609d0ce7",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-8"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-9/studio-v1.png",
+    "sha256": "5833d658c2e04d0b5e87c0725ffca242df3698699cc08f98fb5bb2b043a0f54a",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-9"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-6020-9/studio-web.jpg",
+    "sha256": "3f979b951ac9fcba457c65709dcce1fa0c5625d2a0a406a6543a6daeb834dfaa",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-6020-9"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-custom/studio-v1.png",
+    "sha256": "5f97172972b40e282b14646412a37aa0a4aadf3d4da35d8b651b10fee4dd5eb1",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-custom"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-custom/studio-web.jpg",
+    "sha256": "6cf4be382d8e256a64d88a9ccda9d3da4f2fb7dca25a086a4b9c8767af05232f",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-custom"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-robot/studio-v1.png",
+    "sha256": "42e7b169bcb9a9c7011402fae5818ea67cc7abee370868916861bdd449abe526",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-robot"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-robot/studio-web.jpg",
+    "sha256": "8f347957cecdd145f15f063e3ee5b438480575b60ea959d2c173da659e594415",
+    "codes": [],
+    "candidateCodes": [
+      "CUT-robot"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-ROBOT-REF/studio-v1.png",
+    "sha256": "42e7b169bcb9a9c7011402fae5818ea67cc7abee370868916861bdd449abe526",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/CUT-ROBOT-REF/studio-web.jpg",
+    "sha256": "8f347957cecdd145f15f063e3ee5b438480575b60ea959d2c173da659e594415",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS001/studio-web.jpg",
+    "sha256": "2f9ab50f4b3c83275b58fe7a13a64d2a6e4882f82cdc9a0a99870a1e2a977543",
+    "codes": [],
+    "candidateCodes": [
+      "FS001"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS002/studio-web.jpg",
+    "sha256": "3f0d3a6dbab362d182994cbab3d08c8f762a757238fba10b2ac944e8dc9506e7",
+    "codes": [],
+    "candidateCodes": [
+      "FS002"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS003/studio-web.jpg",
+    "sha256": "69b8d5b8698ccbe3d85504f5b05b0be0b0fdf8c52ce8660ece8807a71e806db7",
+    "codes": [],
+    "candidateCodes": [
+      "FS003"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS004/studio-web.jpg",
+    "sha256": "fef88f5d807cabb0d9b6c9e6fc2cafa3eb9f4fcc421642cac7bca5ecbcf309c1",
+    "codes": [],
+    "candidateCodes": [
+      "FS004"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS005/studio-web.jpg",
+    "sha256": "6b14c0f0731f5bde33446148eaf20fc92ce9afbd74d512397391b7493a026ce8",
+    "codes": [],
+    "candidateCodes": [
+      "FS005",
+      "SRC-RAY-QCW150"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS006/studio-web.jpg",
+    "sha256": "1905734f12837d11ba85d6ff9c4fbcead6f77d8fd84ff5461ecf6f697be25f2d",
+    "codes": [],
+    "candidateCodes": [
+      "FS006",
+      "SRC-RAY-C3000S"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS007/studio-web.jpg",
+    "sha256": "6e1865392e8b1a8f9d76bde887f197e103effc414f83c1ffacce4f59ecf6bea1",
+    "codes": [],
+    "candidateCodes": [
+      "FS007",
+      "SRC-RAY-C4000S"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/FS008/studio-web.jpg",
+    "sha256": "a57e125ca3dcc1dd1fc5e20edbe2d6e7d4dfeb81267ad68247f5a17daf314d02",
+    "codes": [],
+    "candidateCodes": [
+      "FS008",
+      "SRC-RAY-C6000S"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/MK-FIBER-GENERIC/studio-concept.svg",
+    "sha256": "8ffb8a41d89ba5d43fa52756d3a6bb5c9d94288ef18eb846113b3c988ad3f514",
+    "codes": [],
+    "candidateCodes": [
+      "MK-FIBER-GENERIC"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/ML-004/studio-web.jpg",
+    "sha256": "6819e05bd4fbe3952c2123b9f4b26819693820987bccd85cde8f7d2a21f28b25",
+    "codes": [
+      "ML-004"
+    ],
+    "candidateCodes": [
+      "ML-001",
+      "ML-002",
+      "ML-003",
+      "ML-004",
+      "ML-006",
+      "ML-009"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/ML-005/studio-web.jpg",
+    "sha256": "0818ba3dcdbf8282f20a7dc89ea00c7923afb01476da1fa3a927d46802184323",
+    "codes": [
+      "ML-005"
+    ],
+    "candidateCodes": [
+      "ML-005"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/ML-007/studio-web.jpg",
+    "sha256": "80ddc9912a5ee9dbee01e800d4235166623296d4c8160b762f865f18a66d27eb",
+    "codes": [
+      "ML-007"
+    ],
+    "candidateCodes": [
+      "ML-007"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/ML-008/studio-concept.svg",
+    "sha256": "a222d4025bd491e7f03aa0fb5804a393b1cda0c5aeedfc7d1001c1da63e52321",
+    "codes": [],
+    "candidateCodes": [
+      "ML-008"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/single-professional/studio-web.jpg",
+    "sha256": "7e4e1ac2b043601811d5b580ca94aa2f12e761d39babb72534ba9dec5a8a20f7",
+    "codes": [
+      "CUT-3015-2"
+    ],
+    "candidateCodes": [
+      "CUT-3015-2"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/single-standard/studio-web.jpg",
+    "sha256": "0b4645c482f4240592f9232e2018e929261a39dcecb2646d8a9af671e6819526",
+    "codes": [
+      "CUT-3015-1"
+    ],
+    "candidateCodes": [
+      "CUT-3015-1"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/tube-standard/studio-web.jpg",
+    "sha256": "f7dcd7e4423580d082e36cb32230c1d2e683cf08132ccdd160c84e2df9a91896",
+    "codes": [
+      "CUT-tube"
+    ],
+    "candidateCodes": [
+      "CUT-tube"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/WELD-1500/studio-web.jpg",
+    "sha256": "c5fd5860bb1b39954e46b0738cd19cfc312ec2419ba4fcaedc5952403128c8f0",
+    "codes": [
+      "WELD-1500"
+    ],
+    "candidateCodes": [
+      "WELD-1500"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/WELD-2000/studio-web.jpg",
+    "sha256": "54b770713b0f5845ee6b002c95e7cd6b77c073c449e566e1f2af71cc4a14d715",
+    "codes": [
+      "WELD-2000"
+    ],
+    "candidateCodes": [
+      "WELD-2000"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/WELD-3000/studio-web.jpg",
+    "sha256": "c28a3e8ced83cc1921758161f9d5096889764951eb5f41959a086cf2968bfa6a",
+    "codes": [
+      "WELD-3000"
+    ],
+    "candidateCodes": [
+      "WELD-3000"
+    ],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-v1.png",
+    "sha256": "84b2e0751aae6b3914b0f9f3f18940baab241bf3f00827512ef97a06625e31fc",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+    "sha256": "4acb261ef0d2507dc3ea69ff4d744f578f2794725358cdba1771f643e64d6695",
+    "codes": [],
+    "candidateCodes": [
+      "WL-001",
+      "WL-002",
+      "WL-004",
+      "WL-005",
+      "WL-006",
+      "WL-007"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/WL-008/studio-web.jpg",
+    "sha256": "8d2b1f7be1d2211a59725f6612742d1345f4aea03fa58b68ba44a427b7e8c146",
+    "codes": [],
+    "candidateCodes": [
+      "WL-008"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/WL-009/studio-web.jpg",
+    "sha256": "4b31f4fc6f508a04dbab8f044b4a681907fbeca1dd41e5e9ace7a4949bba5799",
+    "codes": [],
+    "candidateCodes": [
+      "WL-009"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "assets/catalog-v2/WL-010/studio-web.jpg",
+    "sha256": "99a6c47a7a2b1d1d96d6c02455c5e87311b981363e001903eb40d535c8cc0489",
+    "codes": [],
+    "candidateCodes": [
+      "WL-010"
+    ],
+    "status": "candidate_only",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/Single table laser cutting machine 3015.jpg",
+    "sha256": "ba1e73f92a5bebcbb8b297f18de857f6ec7bd4222404764f04ec996fc52c8b2e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/دستگاه برش لیزر تک میز استاندارد 3015.jpg",
+    "sha256": "bae8780d6bb2dbc3d456481c58dc097fcb5c171e8f32306aa5db8cbab3fef8cc",
+    "codes": [
+      "CUT-3015-1"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/دستگاه+برش+لیزر+تک+میز+استاندارد+3015_881784.jpg",
+    "sha256": "9be3ed4036b6b3e1505429ec9694f775f5359d6c2f01dd04302800acaf151c54",
+    "codes": [
+      "CUT-3015-1"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/4020 استاندارد.jpg",
+    "sha256": "6db1b5f4a67f4acc10dba50b9be0da625b8688cb4df9922f9b358ac0822a6b8c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/دستگاه برش لیزر تک میز استاندارد 4020.jpg",
+    "sha256": "391a8ca5dcf37a9ba4f44d84fe13d89f58df803cbe5c01c6caeac699cb3a09e3",
+    "codes": [
+      "workspace-6a75cccbbbec"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/دستگاه+برش+لیزر+تک+میز+استاندارد+4020_977926.jpg",
+    "sha256": "8d0d4f5fa1b5d97f84cf65b2094b6e815b9f9b9c739ba086995a1c1930c63c18",
+    "codes": [
+      "workspace-6a75cccbbbec"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/Standard single table laser cutting machine 6020.jpg",
+    "sha256": "a5d0aa3bc9f61debca2071267e790dc979c526ce432723d83aa887c104c4cd3f",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/دستگاه برش لیزر فایبر تک میز استاندارد 6020.jpg",
+    "sha256": "efa7aa5d4f33564feb94d8706bc66658d175498e9c0fca79b515a0f00b5d6ea9",
+    "codes": [
+      "CUT-6020-1"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/دستگاه+برش+لیزر+فایبر+تک+میز+استاندارد+6020_743437.jpg",
+    "sha256": "4e7e8bf7186770809300be1bbe485c859b4a0b97d05dde4014395a31674ce3aa",
+    "codes": [
+      "CUT-6020-1"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/Professional single table laser cutting machine 3015.jpg",
+    "sha256": "37aff5ec1d19de8f3dea1df7ada35ee0ab8865db1bfa43fbc42d7dd3fa7b838e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/دستگاه برش لیزر تک میز حرفه ای 3015.jpg",
+    "sha256": "c8c409103087c55ab1e0ae5081a26b9ed6daf81be9f784f01d07848ba665a67a",
+    "codes": [
+      "CUT-3015-2"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/دستگاه+برش+لیزر+تک+میز+حرفه+ای+3015_984362.jpg",
+    "sha256": "c35e571322026faa9bef7b6bd753624ce93be94d1f7c6fd9f09fd5a4d0f1cdc0",
+    "codes": [
+      "CUT-3015-2"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز حزفه ای 6020/Professional single table laser cutting machine 6020.jpg",
+    "sha256": "cb141132a3707e5e3e86435ca8c872f5f92578085e09e4a3475e601a5100085f",
+    "codes": [
+      "CUT-6020-2"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "62776b7cba66fb4e6c1ff48cad37baa31a0eb7f9c4706685254540b16be63fee",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/معرفی محصول/معرفی+محصول_915904.jpg",
+    "sha256": "5f3258a6c3bf8f5987e06e4e8453bd43f804a0683c0c129ab3e57b0df080cd4d",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/4020 استاندارد.jpg",
+    "sha256": "6db1b5f4a67f4acc10dba50b9be0da625b8688cb4df9922f9b358ac0822a6b8c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/معرفی محصول.jpg",
+    "sha256": "6575adc8816897eb29f586d40d2326af3452d4f17f8c5e2cd15cc4273a86f8aa",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/معرفی+محصول_609796.jpg",
+    "sha256": "d27ff4f195bd04a9107eb0d8d4548c72885b2c62bd0640a26c04130f8aa2dc96",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/دستگاه برش لیزر فایبر تک میز 3015 حرفه ای با روتاری.jpg",
+    "sha256": "538b2ac8505ee6a5de7943b63adb31a044efb1933f1b4b4fc9c89de6a6c61e40",
+    "codes": [
+      "workspace-37417d7c2284"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/دستگاه+برش+لیزر+فایبر+تک+میز+3015+حرفه+ای+با+روتاری_405318.jpg",
+    "sha256": "55fe72a33002a7a47d4ec761797a7f5a71d6c16a836350ec849e8359cdcb0952",
+    "codes": [
+      "workspace-37417d7c2284"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری.jpg",
+    "sha256": "5d5bad35228925c1d0c4c977d631c44a2b62a6d07d125ef66f4e3457c2ad5ead",
+    "codes": [
+      "workspace-7f62e2e9c809"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+تک+میز+3015+استاندارد+با+روتاری_292424.jpg",
+    "sha256": "1896e66ea95a36b702e98c2db59cb2c85e1fa2e74e3ca266ff0a38ca93df5f76",
+    "codes": [
+      "workspace-7f62e2e9c809"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/Professional 6020 single table laser cutting machine with rotary.jpg",
+    "sha256": "eb0f472b7fc485394088ac6266324913a498418724636e884683008644ce48f4",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری.jpg",
+    "sha256": "240bc7b4f49d3648863782c99bc153f69f4b686628a0e3492926c0a897c8b26d",
+    "codes": [
+      "workspace-e8b8b5d46e03"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+تک+میز+6020+حرفه+ای+با+روتاری_546827.jpg",
+    "sha256": "87ff3081e594589fb4b06b2b2d2f5565b371a0dd8db6709ca935f28ec3b6723d",
+    "codes": [
+      "workspace-e8b8b5d46e03"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "1822016b438243ac94520b3a80de8139855085912e414925516e4c22bd9fb00a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_428917.jpg",
+    "sha256": "2a244af4a467e93c8a5c0f8db7c465df32645aa4c61ce75ef32edb21f0d750ab",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "5120553b0b8e66cd6b8507820a9ea26f6e39c6d6382b50e63ba39c212452c6c5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/معرفی محصول/معرفی+محصول_159953.jpg",
+    "sha256": "8e8b59cefa00aa7e1f8c3050be2436582d0a187b755d91f7c5884c4255f6fddb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/دستگاه برش لیزر فایبر دومیز 3015  استاندارد.jpg",
+    "sha256": "8e65607a9d026e853595a72d36919a29747751689667f4777a8b91696c9e21c7",
+    "codes": [
+      "workspace-0e90347fde75"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد_937676.jpg",
+    "sha256": "2cc609c5a582696c2999bbe2a6cf1622a215e0c7935449cb98ac9196ef5164b9",
+    "codes": [
+      "workspace-0e90347fde75"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای.jpg",
+    "sha256": "ab34eed06c88f1e10a707c29334a1246409483c86ed94e107e2f36374a19c49b",
+    "codes": [
+      "workspace-4d9c4fc24ca9"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای/دستگاه+برش+لیزر+فایبر+دومیز+3015+حرفه+ای_358276.jpg",
+    "sha256": "879441e073bdd5e7a6f3b0a35cb0a42087e9d9c03ad1152f90efc5d7702435eb",
+    "codes": [
+      "workspace-4d9c4fc24ca9"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/fiber laser cutting machine exchange 6020.jpg",
+    "sha256": "b45d8c1af2ea3988c5f16e1dedce9078069763cec4cd9f009c8d6957426b794d",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+    "sha256": "9c902b0ecc992c5a5eb9fe97d4b79a868139b7a0f6a5e819383f20b7774f8f35",
+    "codes": [
+      "workspace-b67ebb122421"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+    "sha256": "6ffc6279537f62aaef16ebb1eddae59c8f69dfe403b379e447a3c268e5835c03",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "Professional folder conflicts with standard filename."
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای/معرفی محصول/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+    "sha256": "efbf42f17f2c18a565a6d3fa493b78be494ff3f2f543312654ed7d79bc377b60",
+    "codes": [
+      "workspace-b67ebb122421"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای/معرفی محصول/دستگاه+برش+لیزر+فایبر+دومیز+6020+استاندارد_535111.jpg",
+    "sha256": "0dfe380d4c50fb288806b2ce883e6f999611ff2179e8efc060f74ad54dcd5881",
+    "codes": [
+      "workspace-b67ebb122421"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/معرفی محصول/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+    "sha256": "efbf42f17f2c18a565a6d3fa493b78be494ff3f2f543312654ed7d79bc377b60",
+    "codes": [
+      "workspace-b67ebb122421"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/معرفی محصول/دستگاه+برش+لیزر+فایبر+دومیز+6020+استاندارد_535111.jpg",
+    "sha256": "0dfe380d4c50fb288806b2ce883e6f999611ff2179e8efc060f74ad54dcd5881",
+    "codes": [
+      "workspace-b67ebb122421"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/معرفی محصول/دستگاه برش لیزر فایبر دومیز 3015  استاندارد.jpg",
+    "sha256": "64b16c9a2e398f0e0a2a2db8657c51564c9603e7363eaac0aa9ac0636b671b6b",
+    "codes": [
+      "workspace-0e90347fde75"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/معرفی محصول/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد_852719.jpg",
+    "sha256": "803f92a1d3385b719aea850cabdc06dd2516a86d52c82e4c7bd556b71f779242",
+    "codes": [
+      "workspace-0e90347fde75"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/Standard 3015 double table laser cutting machine with rotary.jpg",
+    "sha256": "a804ee520ced5fffdcf4b881ff3c4c1b0c4007fdbf688659b508cfbdb9efad9a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری.jpg",
+    "sha256": "8f7cd60bd3ec7e5d9d91c5b390513df5a6ffd4129887e7b8cdba1a9b5835c7fa",
+    "codes": [
+      "workspace-881d7fde7f59"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد+با+روتاری_139534.jpg",
+    "sha256": "89d4849a7476ce8c900467100e49f19e042b2b18da1dcfcc26bc40d858809d6e",
+    "codes": [
+      "workspace-881d7fde7f59"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری.jpg",
+    "sha256": "82ea9b8d3b789bd75ab7ba73bca53e7fa432dca70b75acec2ef083c59d955403",
+    "codes": [
+      "workspace-dfa612a5abc4"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+3015+حرفه+ای+با+روتاری_222531.jpg",
+    "sha256": "d46386851b5b4d66918c10df6653f08b1ae2eedd427e3bdf9b6d81aaf6d726f0",
+    "codes": [
+      "workspace-dfa612a5abc4"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/3015交换台带切管.jpg",
+    "sha256": "8fde4449fb76f737af6708427f8129559bbeb4e9f6986c91b77ea0d664d3e326",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/6015 with 6m pipe cutting.jpg",
+    "sha256": "45b1721b987661cedd3b23f5769e3bb8c45b83ba70b77e662ce0995a2d25eb7c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/6020钣管一体机.jpg",
+    "sha256": "8a82ceac9c0c6a77c64fa25f8f01c647bd052fd17bffb63b4d3c660cab9b10cd",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری.jpg",
+    "sha256": "da4d2ed9b1c3f3f8cc27b4d9c96e3e52fc7a94cf10be85ee79143e1124b0ffd3",
+    "codes": [
+      "workspace-c3d1a361f0da"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+6020+استاندارد+با+روتاری_957943.jpg",
+    "sha256": "4e728882c36f397733e17cc7eea8dfb60605251d477bc97a69084f7dff838097",
+    "codes": [
+      "workspace-c3d1a361f0da"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322143304.jpg",
+    "sha256": "f4dcf79df41b87ec2fbf1c77dae2d698a95667725f2c129be013207b49628fbb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322143309.jpg",
+    "sha256": "6112a3ae03df8d13dfc3a6b2b05640e0bdf0704f483bb1b8e5ec159b699983c0",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322161457.jpg",
+    "sha256": "82d52f09bb208d2c920db2680d87eab0691435fe74124258c277871c1ca0d5bd",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322163307.jpg",
+    "sha256": "a1baa8dd40fcee99c63719a433e130f710694a156c4f0c6387ad16f02ef45b87",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_202207221451351.jpg",
+    "sha256": "2532c7a923f2114fb12441201532945f453d841a83ffbe5aacb9deffb805bf05",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/6020钣管一体机.jpg",
+    "sha256": "8a82ceac9c0c6a77c64fa25f8f01c647bd052fd17bffb63b4d3c660cab9b10cd",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/Professional 6020 Double Table Laser Cutting Machine with Rotary.jpg",
+    "sha256": "10ea99c1d6647ce1b26b08e5475c6e35c4e7f2a860781e4faf3d78167502ecc5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری.jpg",
+    "sha256": "84b01043ceac6a948e3c29e63a41ff6483e186b629132f2ef6692bfa171672af",
+    "codes": [
+      "workspace-ee07a81d3d55"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+6020+حرفه+ای+با+روتاری_820245.jpg",
+    "sha256": "6e8e029ecb1b4701b5cd6382689b093c7477c0548a35df6e1f72121cb9601a1d",
+    "codes": [
+      "workspace-ee07a81d3d55"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_820565.jpg",
+    "sha256": "468e9a964a273760d84e0c652caaafe733da375f070844d606f767226b9c9679",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "e5cba3e92df1ca613cb981577bb8f73af2395915fea291d5385bdf5d11425c09",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "5605647db0f0bd16fc0e7f2a8d84821489f9812adbf40bfae0f7e8c7b815c7e7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_298649.jpg",
+    "sha256": "140da243d50ecce27cab9dea796d5225ddaac57d332f09226ef0e06c2ca476a5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025-1.jpg",
+    "sha256": "0fd49e99fe44c2d75b2b2bd45f70da2e4a287d613b04a653321f177041062e14",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025-2.jpg",
+    "sha256": "4f9331646deb38429afa66f7eebf290e026185decac54597f5f3c964b09688c9",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025.jpg",
+    "sha256": "4d64d45f87a2d5b855776e64d83e521c6a34fd3e63ef8e0de9a97eff1155138a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/Professional 6020 cabin laser cutting machine.jpg",
+    "sha256": "125088e6571811ceb062f1a5fcfec7203d68f8d6b1af945797542d11ac05edd5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M-灰黑橙.103.jpg",
+    "sha256": "d19e5e557d7e36c38c750cd6010d9329996783d1e6bb532ca5d7d28c854f9bee",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M-灰黑橙.104.jpg",
+    "sha256": "dc1f103485c1fb2d46c4c2e6db48dcad16988dd18135f1f3398c725ea61e1574",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M3-灰白 红.113.jpg",
+    "sha256": "fcb6a35588ddc89bfcf359d75bbbe4e2d2318a3c83a6318a9ae07962882d8fcf",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M3-灰白 红.115.jpg",
+    "sha256": "9309aeb6d08a32e868243291c3f92e365259cd9f404a4f194bb7ad05b43fd064",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای.jpg",
+    "sha256": "a4d011edc9eca14d7ebc4ca8fd1f9e511262be5437c140302d37cc2e8a097170",
+    "codes": [
+      "workspace-b763c31bfb31"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/دستگاه+برش+لیزر+فایبر+کابین+دار+6020+حرفه+ای_734405.jpg",
+    "sha256": "85f91030d1530847a17d28c2c39f7cf9c299981ce0653c91429ace4624ac54e2",
+    "codes": [
+      "workspace-b763c31bfb31"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20221017133204.jpg",
+    "sha256": "c84952a6e1580908491293aef8e1c79e2d32290bca6cc212210e964f3b2e5401",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20221017133209.jpg",
+    "sha256": "affa11d6f5a29c3f9646f7853fd04a42563a947579e399eeff235476421fd17a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807105156.jpg",
+    "sha256": "996f3288a3e70fd723bcf5859660a0be76ff97ad23038f93517f564266252d36",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807105157.jpg",
+    "sha256": "116bd4114f33732e842300891c9325987be9a7bb28259b4ff88289f5d1f7b602",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807110016.jpg",
+    "sha256": "ee939c620e78dac84340a1932da62936ee60e57cff2929580d39a193eb1b962e",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807110142.jpg",
+    "sha256": "60670c49d1e3d8115b33ad9e67020f37b15ab57098a09dd74037eaec83bd9d88",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-灰黑红-前.jpg",
+    "sha256": "7d3b8b62bf4a620e87ddfba6b4d06d58e57bd6523ed7f4d6cdfc536ccb1693a7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-灰黑红-后.jpg",
+    "sha256": "4c6f12120837a0e51b5c170092d1d6eec09094ebb5b00453fbc455244f45a135",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-蓝白.jpg",
+    "sha256": "93b983a35978c70691aaf4a7edd6fc4fc1eb4aa50836424028b8f94175460042",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "6025 filename conflicts with 6020 folder."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/معرفی محصول/معرفی محصول.jpg",
+    "sha256": "11a8433a8df991ebe192c5232c7a0b5de19351059d7166b27978349d5768ef60",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/معرفی محصول/معرفی+محصول_683805.jpg",
+    "sha256": "99536f4bc9fc41d5365d7dae48d6eec5f9c57a10ec67054acd4b83c0a519a041",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ pipe and shhet.jpg",
+    "sha256": "b6a834532d1e4be1925104f71525bec9ffd630bf1007fdfbf33b1146025f83a0",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 10.jpg",
+    "sha256": "a2c017b8e9c6360cfbb62a1e1e0b1daba4e6807b48b02d258fe87a946a3119e8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 12.jpg",
+    "sha256": "b6c5afb9396451844baf7bb48ca2a2773daec279f2a144d7b993b766be51f706",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 13.jpg",
+    "sha256": "b15ef01693f629da7427d95a1f252b5e298ecdae19b4b940ee1457f2698a89bb",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 14.jpg",
+    "sha256": "c9a5ddf60ae13f088692c900890b64aca51144821a1a3a0fd25b368e83c7412b",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/Professional 3015 cabin laser cutting machine with rotary.jpg",
+    "sha256": "6acbd8c6b27bdbcc70cb744ab58d3179a0bb9e36eeae6de105ea69e731f3235d",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای با روتاری.jpg",
+    "sha256": "648ae47e7a1d1dd73377ea30f965bdcd433d5b81e1e91ac8c33d083178548853",
+    "codes": [
+      "workspace-38386958a1df"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/دستگاه+برش+لیزر+فایبر+کابین+دار+3015+حرفه+ای+با+روتاری_354409.jpg",
+    "sha256": "ae85c19f7c0ba77ceb2878566a8c58493d0041d73d3c74bbe2e3f391c1f50e81",
+    "codes": [
+      "workspace-38386958a1df"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_202203101020385.jpg",
+    "sha256": "e7bf17ab48ddd8a4478c6b9254a6988988adf50e79672c23db2876ecadeee882",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220727094231.jpg",
+    "sha256": "e49adbea149e27dcfb9a49ba4c20dc4bd683d7fb2b26c3fe46dd167f7f6cd5a3",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181508.jpg",
+    "sha256": "6432f735950d8f6bc15fc7828dab3836133885614ca1e384a696ae7877de5af6",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181605.jpg",
+    "sha256": "8435dda62888abe232aac3ce243d8512c7e087377194f021cb2849f870546e30",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181615.jpg",
+    "sha256": "ce48d0057f6e5bfd2629107129ce4b7ec448e91ec7532a6006f6fe31d9cd9eb4",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181620.jpg",
+    "sha256": "36ad5e0dce1254ca92fbdfaa53402c0f31fee28eeb14c9af7564267b27cf09ae",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 1.jpg",
+    "sha256": "6669f17a5ffdc6903d6b2dc3e1a03f37ad7180a8dc4b383852339593a1ec26e7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 2.jpg",
+    "sha256": "17632335f605bf3ae4e883d4731eb9fc0199a3080b6e782824336b506a385b84",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 3.jpg",
+    "sha256": "606d079dac5a24a54e5535da43d8d2a2f57fc0516d5b8925aeb338c1d6589813",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015交换台包围切管.jpg",
+    "sha256": "e7bf17ab48ddd8a4478c6b9254a6988988adf50e79672c23db2876ecadeee882",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015交换台包围钣管一体机.jpg",
+    "sha256": "4f06ee81efa02f94bef7671fdecd60ad2000e63b46cae36a2413e4e3680783e6",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6cc3677ed3be3fa85323476cd1ff5d8c.jpg",
+    "sha256": "4d4372879e0efc9edb1212e1490907973aaaacf8c8b8fb4d6d2e7505e2688224",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine  2.jpg",
+    "sha256": "17632335f605bf3ae4e883d4731eb9fc0199a3080b6e782824336b506a385b84",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 3.jpg",
+    "sha256": "606d079dac5a24a54e5535da43d8d2a2f57fc0516d5b8925aeb338c1d6589813",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 4.jpg",
+    "sha256": "e9e73d33a51f260229f65aee5e36ad2b2f1f80dcac901ddfb699b66e5d30c67c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 5.jpg",
+    "sha256": "3490de5bcc3e9e95a9fd415362ac7832b9d14f34ea0bbe98a28d6e1e051f7dd8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 6.jpg",
+    "sha256": "3f82cfadedf082ee6cef54e0c8968caf0b273e7257a22a581f51320b37432eb8",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine.jpg",
+    "sha256": "6669f17a5ffdc6903d6b2dc3e1a03f37ad7180a8dc4b383852339593a1ec26e7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 20.jpg",
+    "sha256": "8a4e34291b6d5b603d81928a03c7a8daea9967e693e5f95a2c798a0ce5616552",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 26.jpg",
+    "sha256": "2fdaea8b42c281a9d7b04770d05f7a36b2d8b526f955e0c294e2a2ed0774ae04",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 27.jpg",
+    "sha256": "4635f9872c8a72082ed41031aee4f27e7567b74a84dd61e7eb5e74c7ca73462c",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ1530FB-NS-_ٍ___د______.52.jpg",
+    "sha256": "f693b21d17f07b34a2f02697bc4fa8de6f42d65aa0b6c2c4fb6b0c8c28647872",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ3015FB.jpg",
+    "sha256": "8d0759e549a7ea79de6d03445bb9dbc2930a80454e12c0b4edbbb778f4ebb631",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/EhXjEG2U8AAHQcV.jpg",
+    "sha256": "641985f5c2666ecb63c1a40a3befc0b1f56094fb186ff36b4ebb5588536ea9bf",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine.jpg",
+    "sha256": "e3d15e176546414cb723f9161d82fff952d7ca098376c1e090686b111ad98d29",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine2.jpg",
+    "sha256": "31b3838fac604a538fa21648f1b5f85767dbeeaae91800e11854960d7157d551",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine3.jpg",
+    "sha256": "8d0759e549a7ea79de6d03445bb9dbc2930a80454e12c0b4edbbb778f4ebb631",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H0e19ef4588464869a0f23f85b77860960.jpg",
+    "sha256": "87923df69d95d3f7b5feb95585758fe6406f9e6d8dcf49d3f9049085228f4d9a",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H8d9194eb7d9b47c1b80eb8ab7fc19073g.jpg",
+    "sha256": "3f3d2fd405a7c32121dfec6a3e432bab8958d45fb9d76cc8aec0475bd1ac8839",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H91b44a111e52462cbc2661bb2e18dd50T.jpg",
+    "sha256": "83ee337ba8428c1d7ff42fde035f7092d902859d2ccaf96510c0f436e9b960b7",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Machine cover3.jpg",
+    "sha256": "c94cf16504e841c32be30004556f9558dd352c772374010adfac343ab7343102",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Professional 3015 cabin laser cutting machine (3).jpg",
+    "sha256": "0419090901c6e924129269ffab3ef97b371a88f6b9687ab924c239c21c0d34f5",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Professional 3015 cabin laser cutting machine.jpg",
+    "sha256": "3ec7cd559977aa32e54a7fcf2e8875077de7f642a6ed8f34b5a300e8ba307ec2",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/_ت_____ش_2022072110020346.jpg",
+    "sha256": "e3d15e176546414cb723f9161d82fff952d7ca098376c1e090686b111ad98d29",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/_ت_____ش_2022072110020347.jpg",
+    "sha256": "31b3838fac604a538fa21648f1b5f85767dbeeaae91800e11854960d7157d551",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای.jpg",
+    "sha256": "5e6aad3be6cd709b5681276f5f7b356c7a76dfc5ba4b45e5bad67021f5934fb2",
+    "codes": [
+      "workspace-a69ede1eea6f"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/دستگاه+برش+لیزر+فایبر+کابین+دار+3015+حرفه+ای_130097.jpg",
+    "sha256": "0eb9a585a3e3c193ddb9be66b10a3af2035ea00f089046e477a09a109db0b89a",
+    "codes": [
+      "workspace-a69ede1eea6f"
+    ],
+    "candidateCodes": [],
+    "status": "confirmed_content_hash",
+    "reason": null
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/معرفی با محصول/معرفی محصول.jpg",
+    "sha256": "b2d9ea63c508ca9fedc1fa59408114ef655ee0652648bc5fb227f86e714a62d9",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  },
+  {
+    "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/معرفی با محصول/معرفی محصول.jpg",
+    "sha256": "d52e23cf2cead397a725ecbc40424366e2846c9f1be36ef4eaffd526454b7e55",
+    "codes": [],
+    "candidateCodes": [],
+    "status": "unassigned",
+    "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+  }
+]

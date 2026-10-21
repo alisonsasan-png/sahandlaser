@@ -1,0 +1,2673 @@
+{
+  "images": [
+    {
+      "code": "CC003",
+      "image": "assets/catalog-v2/CC003/studio-web.jpg",
+      "reason": "Generated front panel changes the relative placement of display and switch compared with supplied cwfl3000-lite.png. Do not automatically replace the existing photo.",
+      "status": "held"
+    },
+    {
+      "code": "CC004",
+      "image": "assets/catalog-v2/CC004/studio-web.jpg",
+      "reason": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-1500-QG2/2 manual row; not an exact photographed HL-1500 casing or nameplate",
+      "status": "not_attached"
+    },
+    {
+      "code": "CC005",
+      "image": "assets/catalog-v2/CC005/studio-web.jpg",
+      "reason": "Hanli chiller family reconstruction based on the reviewed HL-3000 family image and HL-2000-QG2/2 manual row; not an exact photographed HL-2000 casing or nameplate",
+      "status": "not_attached"
+    },
+    {
+      "code": "CC006",
+      "image": "assets/catalog-v2/CC006/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "image": "assets/catalog-v2/CH-HANLI-12000/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "image": "assets/catalog-v2/CH-HANLI-6000/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH-S&A-12000",
+      "image": "assets/catalog-v2/CH-S&A-12000/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH-S&A-20000",
+      "image": "assets/catalog-v2/CH-S&A-20000/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH-S&A-6000",
+      "image": "assets/catalog-v2/CH-S&A-6000/studio-web.jpg",
+      "reason": "Artwork title says CWFL-6000, but photographed casing is visibly labelled CW-6000. These are distinct chiller families; do not relabel the photograph.",
+      "status": "held"
+    },
+    {
+      "code": "CH001",
+      "image": "assets/catalog-v2/CH001/studio-web.jpg",
+      "reason": "Generic manual-focus fiber cutting-head family reconstruction; not an exact BT240S photograph, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH002",
+      "image": "assets/catalog-v2/CH002/studio-web.jpg",
+      "reason": "Current contact-sheet review: pictured green multi-axis/scan-style assembly does not establish the BM109 cutting-head identity. Historical visualReview flag is insufficient.",
+      "status": "held"
+    },
+    {
+      "code": "CH003",
+      "image": "assets/catalog-v2/CH003/studio-web.jpg",
+      "reason": "Supplied BM111 artwork uses a mirrored generic head photo with no legible model plate. Reconcile with BM111 manufacturer outline before preparing exact-model media.",
+      "status": "held"
+    },
+    {
+      "code": "CH004",
+      "image": "assets/catalog-v2/CH004/studio-web.jpg",
+      "reason": "BM114-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CH005",
+      "image": "assets/catalog-v2/CH005/studio-web.jpg",
+      "reason": "BM115-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CL-001",
+      "image": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "reason": "Generic laser-cleaning machine family reference; not proof of exact CL-001 casing, source, power, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "CL-002",
+      "image": "assets/catalog-v2/CL-002/studio-web.jpg",
+      "reason": "Actual 300 W pulsed cleaner shown in the supplied image library and edited to a white studio background; family-level reference only, not proof of the 500 W CL-002 model or its installed configuration.",
+      "status": "not_attached"
+    },
+    {
+      "code": "CL-003",
+      "image": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "reason": "Generic laser-cleaning machine family reference; not proof of exact CL-003 casing, source, power, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "CL-004",
+      "image": "assets/catalog-v2/CL-004/studio-web.jpg",
+      "reason": "Actual 2000 W continuous-wave cleaner shown in the supplied image library and edited to a white studio background; family-level reference only, not proof of the 1500 W CL-004 model or its installed configuration.",
+      "status": "not_attached"
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "image": "assets/catalog-v2/CLEAN-GENERIC/studio-web.jpg",
+      "reason": "Supplied cleaning cabinet family artwork; not proof of power, laser type or exact installed unit",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN001",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic RayTools nozzle-family reference; not proof of exact CN001 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN002",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN002 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN003",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN003 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN004",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN004 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN006",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN006 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN007",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN007 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN008",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN008 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN009",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN009 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN010",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN010 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN011",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN011 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN012",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN012 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CN013",
+      "image": "assets/catalog-v2/CN001/studio-web.jpg",
+      "reason": "Generic family reference; not proof of exact CN013 part number, thread, aperture, coating, or packaging",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-CERAMIC",
+      "image": "assets/catalog-v2/CP-CERAMIC/studio-web.jpg",
+      "reason": "supplied product artwork; generated label is not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "image": "assets/catalog-v2/CP-LENS-BLT/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "image": "assets/catalog-v2/CP-LENS-RAY/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "image": "assets/catalog-v2/CP-LENS-WSX/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "image": "assets/catalog-v2/CP-RAY-BM114E/studio-web.jpg",
+      "reason": "BM114-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "image": "assets/catalog-v2/CP-RAY-BM115/studio-web.jpg",
+      "reason": "BM115-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "image": "assets/catalog-v2/CP-RAY-BM115E/studio-web.jpg",
+      "reason": "BM115-E-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "image": "assets/catalog-v2/CP-RAY-BM116E/studio-web.jpg",
+      "reason": "BM116-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "image": "assets/catalog-v2/CP-RAY-BT220/studio-web.jpg",
+      "reason": "BT220-class external family reconstruction; not an exact photographed head, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "image": "assets/catalog-v2/CP-RAY-BT240/studio-web.jpg",
+      "reason": "BT240-family external reference; not proof of exact photographed head, nameplate, installed revision, or internal optical/mechanical assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "image": "assets/catalog-v2/CP-SMC-ITV1050/studio-web.jpg",
+      "reason": "Current contact-sheet review: generated product lettering cannot establish SMC ITV1050 identity; exact supplied-model outline comparison is missing.",
+      "status": "held"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "image": "assets/catalog-v2/CP-SMC-ITV2050/studio-web.jpg",
+      "reason": "supplied product artwork; generated label is not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CP-TRA",
+      "image": "assets/catalog-v2/CP-TRA/studio-web.jpg",
+      "reason": "Supplied TRA assembly artwork, two exterior views; not a complete optical head or exact installed variant",
+      "status": "not_attached"
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "image": "assets/catalog-v2/CTRL-FSCUT2000C/studio-web.jpg",
+      "reason": "supplied product artwork, family exterior reference; exact suffix and generated label are not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "image": "assets/catalog-v2/CTRL-FSCUT2000E/studio-web.jpg",
+      "reason": "Current contact-sheet review: pictured red PCIe-style board has no verified BMC228 revision identity; exact manufacturer-board comparison is missing.",
+      "status": "held"
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "image": "assets/catalog-v2/CTRL-FSCUT4000E/studio-web.jpg",
+      "reason": "supplied product artwork; generated label is not identification evidence",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS001",
+      "image": "assets/catalog-v2/FS001/studio-web.jpg",
+      "reason": "Generic P30Q-family source reference; exact P30QS versus P30QB variant, casing, nameplate and internal assembly are not established",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS002",
+      "image": "assets/catalog-v2/FS002/studio-web.jpg",
+      "reason": "Generic P50QB-family source reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS003",
+      "image": "assets/catalog-v2/FS003/studio-web.jpg",
+      "reason": "Generic C1000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS004",
+      "image": "assets/catalog-v2/FS004/studio-web.jpg",
+      "reason": "Raycus source-family reference; not proof of exact FS004 casing or installed revision",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS005",
+      "image": "assets/catalog-v2/FS005/studio-web.jpg",
+      "reason": "Generic C2000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS006",
+      "image": "assets/catalog-v2/FS006/studio-web.jpg",
+      "reason": "Generic C3000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS007",
+      "image": "assets/catalog-v2/FS007/studio-web.jpg",
+      "reason": "Generic C4000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "FS008",
+      "image": "assets/catalog-v2/FS008/studio-web.jpg",
+      "reason": "Generic C6000-family source cabinet reference; not proof of exact photographed casing, nameplate, installed revision, or internal assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "image": "assets/catalog-v2/MK-FIBER-GENERIC/studio-concept.svg",
+      "reason": "generic family-level concept only",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-001",
+      "image": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "reason": "Generic fiber-marking family reference; not proof of exact ML-001 casing or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-002",
+      "image": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "reason": "Generic fiber-marking family reference; not proof of exact ML-002 casing or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-003",
+      "image": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "reason": "Generic fiber-marking family reference; not proof of exact ML-003 casing or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-006",
+      "image": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "reason": "Generic fiber-marking family reference; not proof of exact ML-006 casing or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-008",
+      "image": "assets/catalog-v2/ML-008/studio-concept.svg",
+      "reason": "generic family-level concept only",
+      "status": "not_attached"
+    },
+    {
+      "code": "ML-009",
+      "image": "assets/catalog-v2/ML-004/studio-web.jpg",
+      "reason": "Generic fiber-marking family reference; not proof of exact ML-009 casing or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "image": "assets/catalog-v2/FS006/studio-web.jpg",
+      "reason": "Artwork title is RFL-C3000S-CE, photographed fascia says RFL-C3000, catalog model is RFL-C3000S-HP. Do not use this image as an exact HP-model photo.",
+      "status": "held"
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "image": "assets/catalog-v2/FS007/studio-web.jpg",
+      "reason": "C4000-family reference; not proof of exact installed casing or revision",
+      "status": "not_attached"
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "image": "assets/catalog-v2/FS008/studio-web.jpg",
+      "reason": "Artwork title is RFL-C6000S-CE, photographed cabinet says RFL-C6000H, catalog model is RFL-C6000S-HP. Three identities do not match.",
+      "status": "held"
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "image": "assets/catalog-v2/FS005/studio-web.jpg",
+      "reason": "Raycus QCW/source-family reference; not proof of exact installed casing or revision",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-001",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "Generic portable handheld welding family reference; not proof of exact WL-001 casing, source, power, controller, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-002",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "Generic portable handheld welding family reference; not proof of exact WL-002 casing, source, power, controller, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-004",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "Generic portable handheld welding family reference; not proof of exact WL-004 casing, source, power, controller, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-005",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "QCW machine is assigned a generic handheld welder image; configuration not matched.",
+      "status": "held"
+    },
+    {
+      "code": "WL-006",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "Generic welding-family reference; not proof of exact WL-006 casing, source, power, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-007",
+      "image": "assets/catalog-v2/WELD-HANDHELD-FAMILY/studio-web.jpg",
+      "reason": "Generic welding-family reference; not proof of exact WL-007 casing, source, power, or installed configuration",
+      "status": "not_attached"
+    },
+    {
+      "code": "WL-008",
+      "image": "assets/catalog-v2/WL-008/studio-web.jpg",
+      "reason": "Robotic welding model is assigned a handheld cabinet image, not a robot cell.",
+      "status": "held"
+    },
+    {
+      "code": "WL-009",
+      "image": "assets/catalog-v2/WL-009/studio-web.jpg",
+      "reason": "Jewelry welder is assigned a handheld cabinet image; configuration mismatch.",
+      "status": "held"
+    },
+    {
+      "code": "WL-010",
+      "image": "assets/catalog-v2/WL-010/studio-web.jpg",
+      "reason": "Channel-letter welder is assigned a handheld cabinet image; configuration not matched.",
+      "status": "held"
+    },
+    {
+      "code": "CUT-3015-3",
+      "image": "assets/catalog-v2/CUT-3015-3/studio-web.jpg",
+      "reason": "LD-family single-table configuration reference; not proof of exact Sahand casing, installed manufacturer revision, controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-3015-5",
+      "image": "assets/catalog-v2/CUT-3015-5/studio-web.jpg",
+      "reason": "User-library Sahand-branded two-table 3015 family reference; no legible LD3015 model identity or installed revision proven",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-3015-6",
+      "image": "assets/catalog-v2/CUT-3015-6/studio-web.jpg",
+      "reason": "Supplied 3015 cabin CAD with external exchange table; folder title is not proof of table count or exact installed manufacturer revision",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-3015-7",
+      "image": "assets/catalog-v2/CUT-3015-7/studio-web.jpg",
+      "reason": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-3015-8",
+      "image": "assets/catalog-v2/CUT-3015-8/studio-web.jpg",
+      "reason": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-3015-9",
+      "image": "assets/catalog-v2/CUT-3015-9/studio-web.jpg",
+      "reason": "Generic enclosed dual-table 3015 plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-1",
+      "image": "assets/catalog-v2/CUT-6020-1/studio-web.jpg",
+      "reason": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-2",
+      "image": "assets/catalog-v2/CUT-6020-2/studio-web.jpg",
+      "reason": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-3",
+      "image": "assets/catalog-v2/CUT-6020-3/studio-web.jpg",
+      "reason": "Generic LD-family single-table 6020 external reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-5",
+      "image": "assets/catalog-v2/CUT-6020-5/studio-web.jpg",
+      "reason": "User-library two-table 6020 exchange-table family reference; no legible LD6020 model identity, exact manufacturer revision, or installed controller proven",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-6",
+      "image": "assets/catalog-v2/CUT-6020-6/studio-web.jpg",
+      "reason": "Supplied 6020 cabin CAD with visible external exchange table; exterior configuration reconstruction, not proof of exact installed revision",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-7",
+      "image": "assets/catalog-v2/CUT-6020-7/studio-web.jpg",
+      "reason": "Generic 6020 single-table plus rotary/tube-cutting configuration reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-8",
+      "image": "assets/catalog-v2/CUT-6020-8/studio-web.jpg",
+      "reason": "supplied named size/configuration artwork; exact manufacturer suffix and hidden assemblies are not established by this render",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-6020-9",
+      "image": "assets/catalog-v2/CUT-6020-9/studio-web.jpg",
+      "reason": "AI-assisted external configuration reconstruction combining the supplied 6020 cabin family reference with the supplied 6020 exchange-table rotary reference; not proof of exact Sahand casing, manufacturer, installed controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-custom",
+      "image": "assets/catalog-v2/CUT-custom/studio-web.jpg",
+      "reason": "Conceptual custom-size configuration reference; not proof of exact Sahand bed dimensions, manufacturer, installed controller, or hidden assembly",
+      "status": "not_attached"
+    },
+    {
+      "code": "CUT-robot",
+      "image": "assets/catalog-v2/CUT-robot/studio-web.jpg",
+      "reason": "User-requested industry reference for the robot-cutting family: generic articulated six-axis robot cell; not proof of Sahand installed model, manufacturer, controller, laser source, or hidden assembly",
+      "status": "not_attached"
+    }
+  ],
+  "omittedSpecifications": [
+    {
+      "code": "CC001",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 1.5kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC001",
+      "spec": {
+        "label": "دقت کنترل اعلامی خانواده",
+        "value": "±0.5°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC001",
+      "spec": {
+        "label": "کنترل دما",
+        "value": "دو مدار / دو دما در خانواده CWFL",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC002",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 2kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC002",
+      "spec": {
+        "label": "دقت کنترل اعلامی خانواده",
+        "value": "±0.5°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC002",
+      "spec": {
+        "label": "کنترل دما",
+        "value": "دو مدار / دو دما در خانواده CWFL",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC003",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 3kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CC003",
+      "spec": {
+        "label": "دقت کنترل معمول سری",
+        "value": "±0.5°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-12000",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 12kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-12000",
+      "spec": {
+        "label": "دقت کنترل معمول سری",
+        "value": "±1°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-20000",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 20kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-20000",
+      "spec": {
+        "label": "دقت کنترل معمول سری",
+        "value": "±1.5°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-6000",
+      "spec": {
+        "label": "کاربرد سری",
+        "value": "سیستم فایبر 6kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CH-S&A-6000",
+      "spec": {
+        "label": "دقت کنترل معمول سری",
+        "value": "±1°C",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CL-001",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "200 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CL-002",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "500 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CL-003",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "1000 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CL-004",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "1500 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "رده توان سری",
+        "value": "3.3kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "کورس فوکوس",
+        "value": "حدود 22mm",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "دقت تنظیم",
+        "value": "0.05mm",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "گروه لنز",
+        "value": "D30",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "رابط",
+        "value": "QBH",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "spec": {
+        "label": "خنک‌کاری",
+        "value": "آبی",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "spec": {
+        "label": "تغذیه خانواده ITV1000",
+        "value": "24V DC ±10%",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "spec": {
+        "label": "درجه حفاظت خانواده",
+        "value": "IP65",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "spec": {
+        "label": "گزینه‌های سیگنال ورودی",
+        "value": "4–20mA / 0–20mA / 0–5V / 0–10V؛ وابسته به پسوند",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "spec": {
+        "label": "بازه فشار در بعضی پیکربندی‌ها",
+        "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "spec": {
+        "label": "تغذیه خانواده ITV2000",
+        "value": "24V DC ±10%",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "spec": {
+        "label": "درجه حفاظت خانواده",
+        "value": "IP65",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "spec": {
+        "label": "گزینه‌های سیگنال ورودی",
+        "value": "4–20mA / 0–10V؛ وابسته به پسوند",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "spec": {
+        "label": "بازه فشار در بعضی پیکربندی‌ها",
+        "value": "تا 0.9MPa؛ نیازمند شماره فنی کامل",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "spec": {
+        "label": "کاربرد مرجع",
+        "value": "برش فلز و غیرفلز",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "spec": {
+        "label": "شبکه کنترل",
+        "value": "EtherCAT",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "spec": {
+        "label": "بازه توان کاربرد",
+        "value": "1–4kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "spec": {
+        "label": "اجزای مرجع",
+        "value": "BMC228B + BCL4566E + WKB V6",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "spec": {
+        "label": "شبکه کنترل",
+        "value": "EtherCAT",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "spec": {
+        "label": "بازه توان کاربرد",
+        "value": "حدود 1.5–8kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "spec": {
+        "label": "کنترل",
+        "value": "حرکت، لیزر و گاز برش",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS001",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "30 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS002",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "50 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS004",
+      "spec": {
+        "label": "توان",
+        "value": "1500W",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS004",
+      "spec": {
+        "label": "حالت خروجی",
+        "value": "CW / Modulated",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS004",
+      "spec": {
+        "label": "طول موج",
+        "value": "1080±5nm",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS004",
+      "spec": {
+        "label": "خنک‌کاری",
+        "value": "آبی",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "FS006",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "3000 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "ML-001",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "30 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "ML-002",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "50 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "ML-003",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "100 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "spec": {
+        "label": "سری",
+        "value": "HP-Series",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "spec": {
+        "label": "توان نامی مرجع",
+        "value": "حدود 3kW",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "spec": {
+        "label": "کاربرد مرجع",
+        "value": "برش / جوش صنعتی",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "spec": {
+        "label": "خروجی طبق راهنمای مرجع",
+        "value": "6100±100W",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "spec": {
+        "label": "وزن اعلامی",
+        "value": "کمتر از 85kg",
+        "scope": "family_reference"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "WELD-1500",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "1500 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "WELD-2000",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "2000 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "WELD-3000",
+      "spec": {
+        "label": "توان نام‌گذاری‌شده مدل",
+        "value": "3000 W",
+        "scope": "catalog_identity"
+      },
+      "reason": "No field-level source; historical draft not independently sufficient"
+    },
+    {
+      "code": "WL-001",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Smart Series / Mini 4-in-1",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-002",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Medium Series / Handheld",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-003",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Air-Cooled",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-004",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Air Cooling Portable",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-005",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "QCW Laser Spot Welding",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-006",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "HP Series",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-007",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Modern Series",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-008",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Robotic Laser Welding",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-009",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Jewelry Laser Welding",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "WL-010",
+      "spec": {
+        "label": "خانواده محصول",
+        "value": "Channel Letter Laser Welding",
+        "scope": null
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز DZ3015S"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "ابعاد کلی دستگاه",
+        "value": "4800 × 2400 × 1750 mm",
+        "scope": "user_supplied_dimensional_drawing",
+        "source": "preview-32/drawings/single-table-standard-3015.svg"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-1",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-2",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز DZ3015H"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-2",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-2",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-2",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-2",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-3",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز LD3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-3",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-3",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-3",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-3",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-4",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز DZ3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-4",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-4",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-4",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-4",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-5",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز LD3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-5",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-5",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-5",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-5",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-6",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز کابین‌دار DZ3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-6",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-6",
+      "spec": {
+        "label": "کابین",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-6",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-6",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-7",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز 3015 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-7",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-7",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-7",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-7",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-8",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز 3015 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-8",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-8",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-8",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-8",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-9",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز کابین‌دار 3015 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-9",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "3015"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-9",
+      "spec": {
+        "label": "کابین",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-9",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-3015-9",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "3015",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-1",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز DZ6020S"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-1",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-1",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-1",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-1",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-2",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز DZ6020H"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-2",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-2",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-2",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-2",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-3",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز LD6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-3",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-3",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-3",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-3",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-4",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز DZ6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-4",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-4",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-4",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-4",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-5",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز LD6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-5",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-5",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-5",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-5",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-6",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز کابین‌دار 6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-6",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-6",
+      "spec": {
+        "label": "کابین",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-6",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-6",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-7",
+      "spec": {
+        "label": "مدل",
+        "value": "تک میز 6020 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-7",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-7",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-7",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-7",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-8",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز 6020 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-8",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-8",
+      "spec": {
+        "label": "کابین",
+        "value": "ندارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-8",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-8",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-9",
+      "spec": {
+        "label": "مدل",
+        "value": "دو میز کابین‌دار 6020 + لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-9",
+      "spec": {
+        "label": "گروه ابعادی",
+        "value": "6020"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-9",
+      "spec": {
+        "label": "کابین",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-9",
+      "spec": {
+        "label": "لوله‌بر",
+        "value": "دارد"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-6020-9",
+      "spec": {
+        "label": "گروه ابعادی محصول",
+        "value": "6020",
+        "scope": "user_requested_taxonomy"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-custom",
+      "spec": {
+        "label": "نوع دستگاه",
+        "value": "برش سایز سفارشی"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-tube",
+      "spec": {
+        "label": "نوع دستگاه",
+        "value": "برش لوله‌بر"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    },
+    {
+      "code": "CUT-robot",
+      "spec": {
+        "label": "نوع دستگاه",
+        "value": "برش ربات"
+      },
+      "reason": "Conflicting cutting dimensions or no field-level scope; not reasserted"
+    }
+  ],
+  "localUnassigned": [
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/Single table laser cutting machine 3015.jpg",
+      "sha256": "ba1e73f92a5bebcbb8b297f18de857f6ec7bd4222404764f04ec996fc52c8b2e",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/4020 استاندارد.jpg",
+      "sha256": "6db1b5f4a67f4acc10dba50b9be0da625b8688cb4df9922f9b358ac0822a6b8c",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/Standard single table laser cutting machine 6020.jpg",
+      "sha256": "a5d0aa3bc9f61debca2071267e790dc979c526ce432723d83aa887c104c4cd3f",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/Professional single table laser cutting machine 3015.jpg",
+      "sha256": "37aff5ec1d19de8f3dea1df7ada35ee0ab8865db1bfa43fbc42d7dd3fa7b838e",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "62776b7cba66fb4e6c1ff48cad37baa31a0eb7f9c4706685254540b16be63fee",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/معرفی محصول/معرفی+محصول_915904.jpg",
+      "sha256": "5f3258a6c3bf8f5987e06e4e8453bd43f804a0683c0c129ab3e57b0df080cd4d",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/4020 استاندارد.jpg",
+      "sha256": "6db1b5f4a67f4acc10dba50b9be0da625b8688cb4df9922f9b358ac0822a6b8c",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/معرفی محصول.jpg",
+      "sha256": "6575adc8816897eb29f586d40d2326af3452d4f17f8c5e2cd15cc4273a86f8aa",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/معرفی با محصول/معرفی+محصول_609796.jpg",
+      "sha256": "d27ff4f195bd04a9107eb0d8d4548c72885b2c62bd0640a26c04130f8aa2dc96",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/Professional 6020 single table laser cutting machine with rotary.jpg",
+      "sha256": "eb0f472b7fc485394088ac6266324913a498418724636e884683008644ce48f4",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "1822016b438243ac94520b3a80de8139855085912e414925516e4c22bd9fb00a",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_428917.jpg",
+      "sha256": "2a244af4a467e93c8a5c0f8db7c465df32645aa4c61ce75ef32edb21f0d750ab",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "5120553b0b8e66cd6b8507820a9ea26f6e39c6d6382b50e63ba39c212452c6c5",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/معرفی محصول/معرفی+محصول_159953.jpg",
+      "sha256": "8e8b59cefa00aa7e1f8c3050be2436582d0a187b755d91f7c5884c4255f6fddb",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/fiber laser cutting machine exchange 6020.jpg",
+      "sha256": "b45d8c1af2ea3988c5f16e1dedce9078069763cec4cd9f009c8d6957426b794d",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg",
+      "sha256": "6ffc6279537f62aaef16ebb1eddae59c8f69dfe403b379e447a3c268e5835c03",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "Professional folder conflicts with standard filename."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/Standard 3015 double table laser cutting machine with rotary.jpg",
+      "sha256": "a804ee520ced5fffdcf4b881ff3c4c1b0c4007fdbf688659b508cfbdb9efad9a",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/3015交换台带切管.jpg",
+      "sha256": "8fde4449fb76f737af6708427f8129559bbeb4e9f6986c91b77ea0d664d3e326",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/6015 with 6m pipe cutting.jpg",
+      "sha256": "45b1721b987661cedd3b23f5769e3bb8c45b83ba70b77e662ce0995a2d25eb7c",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/6020钣管一体机.jpg",
+      "sha256": "8a82ceac9c0c6a77c64fa25f8f01c647bd052fd17bffb63b4d3c660cab9b10cd",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322143304.jpg",
+      "sha256": "f4dcf79df41b87ec2fbf1c77dae2d698a95667725f2c129be013207b49628fbb",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322143309.jpg",
+      "sha256": "6112a3ae03df8d13dfc3a6b2b05640e0bdf0704f483bb1b8e5ec159b699983c0",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322161457.jpg",
+      "sha256": "82d52f09bb208d2c920db2680d87eab0691435fe74124258c277871c1ca0d5bd",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_20220322163307.jpg",
+      "sha256": "a1baa8dd40fcee99c63719a433e130f710694a156c4f0c6387ad16f02ef45b87",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/微信图片_202207221451351.jpg",
+      "sha256": "2532c7a923f2114fb12441201532945f453d841a83ffbe5aacb9deffb805bf05",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/6020钣管一体机.jpg",
+      "sha256": "8a82ceac9c0c6a77c64fa25f8f01c647bd052fd17bffb63b4d3c660cab9b10cd",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/Professional 6020 Double Table Laser Cutting Machine with Rotary.jpg",
+      "sha256": "10ea99c1d6647ce1b26b08e5475c6e35c4e7f2a860781e4faf3d78167502ecc5",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_820565.jpg",
+      "sha256": "468e9a964a273760d84e0c652caaafe733da375f070844d606f767226b9c9679",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "e5cba3e92df1ca613cb981577bb8f73af2395915fea291d5385bdf5d11425c09",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "5605647db0f0bd16fc0e7f2a8d84821489f9812adbf40bfae0f7e8c7b815c7e7",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/معرفی محصول/معرفی+محصول_298649.jpg",
+      "sha256": "140da243d50ecce27cab9dea796d5225ddaac57d332f09226ef0e06c2ca476a5",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025-1.jpg",
+      "sha256": "0fd49e99fe44c2d75b2b2bd45f70da2e4a287d613b04a653321f177041062e14",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025-2.jpg",
+      "sha256": "4f9331646deb38429afa66f7eebf290e026185decac54597f5f3c964b09688c9",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/6025.jpg",
+      "sha256": "4d64d45f87a2d5b855776e64d83e521c6a34fd3e63ef8e0de9a97eff1155138a",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/Professional 6020 cabin laser cutting machine.jpg",
+      "sha256": "125088e6571811ceb062f1a5fcfec7203d68f8d6b1af945797542d11ac05edd5",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M-灰黑橙.103.jpg",
+      "sha256": "d19e5e557d7e36c38c750cd6010d9329996783d1e6bb532ca5d7d28c854f9bee",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M-灰黑橙.104.jpg",
+      "sha256": "dc1f103485c1fb2d46c4c2e6db48dcad16988dd18135f1f3398c725ea61e1574",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M3-灰白 红.113.jpg",
+      "sha256": "fcb6a35588ddc89bfcf359d75bbbe4e2d2318a3c83a6318a9ae07962882d8fcf",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/QH6025FB-M3-灰白 红.115.jpg",
+      "sha256": "9309aeb6d08a32e868243291c3f92e365259cd9f404a4f194bb7ad05b43fd064",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20221017133204.jpg",
+      "sha256": "c84952a6e1580908491293aef8e1c79e2d32290bca6cc212210e964f3b2e5401",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20221017133209.jpg",
+      "sha256": "affa11d6f5a29c3f9646f7853fd04a42563a947579e399eeff235476421fd17a",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807105156.jpg",
+      "sha256": "996f3288a3e70fd723bcf5859660a0be76ff97ad23038f93517f564266252d36",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807105157.jpg",
+      "sha256": "116bd4114f33732e842300891c9325987be9a7bb28259b4ff88289f5d1f7b602",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807110016.jpg",
+      "sha256": "ee939c620e78dac84340a1932da62936ee60e57cff2929580d39a193eb1b962e",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/微信图片_20230807110142.jpg",
+      "sha256": "60670c49d1e3d8115b33ad9e67020f37b15ab57098a09dd74037eaec83bd9d88",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-灰黑红-前.jpg",
+      "sha256": "7d3b8b62bf4a620e87ddfba6b4d06d58e57bd6523ed7f4d6cdfc536ccb1693a7",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-灰黑红-后.jpg",
+      "sha256": "4c6f12120837a0e51b5c170092d1d6eec09094ebb5b00453fbc455244f45a135",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/高功率6025-蓝白.jpg",
+      "sha256": "93b983a35978c70691aaf4a7edd6fc4fc1eb4aa50836424028b8f94175460042",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "6025 filename conflicts with 6020 folder."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/معرفی محصول/معرفی محصول.jpg",
+      "sha256": "11a8433a8df991ebe192c5232c7a0b5de19351059d7166b27978349d5768ef60",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/معرفی محصول/معرفی+محصول_683805.jpg",
+      "sha256": "99536f4bc9fc41d5365d7dae48d6eec5f9c57a10ec67054acd4b83c0a519a041",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ pipe and shhet.jpg",
+      "sha256": "b6a834532d1e4be1925104f71525bec9ffd630bf1007fdfbf33b1146025f83a0",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 10.jpg",
+      "sha256": "a2c017b8e9c6360cfbb62a1e1e0b1daba4e6807b48b02d258fe87a946a3119e8",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 12.jpg",
+      "sha256": "b6c5afb9396451844baf7bb48ca2a2773daec279f2a144d7b993b766be51f706",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 13.jpg",
+      "sha256": "b15ef01693f629da7427d95a1f252b5e298ecdae19b4b940ee1457f2698a89bb",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/DZ rotary 14.jpg",
+      "sha256": "c9a5ddf60ae13f088692c900890b64aca51144821a1a3a0fd25b368e83c7412b",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/Professional 3015 cabin laser cutting machine with rotary.jpg",
+      "sha256": "6acbd8c6b27bdbcc70cb744ab58d3179a0bb9e36eeae6de105ea69e731f3235d",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_202203101020385.jpg",
+      "sha256": "e7bf17ab48ddd8a4478c6b9254a6988988adf50e79672c23db2876ecadeee882",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220727094231.jpg",
+      "sha256": "e49adbea149e27dcfb9a49ba4c20dc4bd683d7fb2b26c3fe46dd167f7f6cd5a3",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181508.jpg",
+      "sha256": "6432f735950d8f6bc15fc7828dab3836133885614ca1e384a696ae7877de5af6",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181605.jpg",
+      "sha256": "8435dda62888abe232aac3ce243d8512c7e087377194f021cb2849f870546e30",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181615.jpg",
+      "sha256": "ce48d0057f6e5bfd2629107129ce4b7ec448e91ec7532a6006f6fe31d9cd9eb4",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/微信图片_20220804181620.jpg",
+      "sha256": "36ad5e0dce1254ca92fbdfaa53402c0f31fee28eeb14c9af7564267b27cf09ae",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 1.jpg",
+      "sha256": "6669f17a5ffdc6903d6b2dc3e1a03f37ad7180a8dc4b383852339593a1ec26e7",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 2.jpg",
+      "sha256": "17632335f605bf3ae4e883d4731eb9fc0199a3080b6e782824336b506a385b84",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015 6kw 3.jpg",
+      "sha256": "606d079dac5a24a54e5535da43d8d2a2f57fc0516d5b8925aeb338c1d6589813",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015交换台包围切管.jpg",
+      "sha256": "e7bf17ab48ddd8a4478c6b9254a6988988adf50e79672c23db2876ecadeee882",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/3015交换台包围钣管一体机.jpg",
+      "sha256": "4f06ee81efa02f94bef7671fdecd60ad2000e63b46cae36a2413e4e3680783e6",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6cc3677ed3be3fa85323476cd1ff5d8c.jpg",
+      "sha256": "4d4372879e0efc9edb1212e1490907973aaaacf8c8b8fb4d6d2e7505e2688224",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine  2.jpg",
+      "sha256": "17632335f605bf3ae4e883d4731eb9fc0199a3080b6e782824336b506a385b84",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 3.jpg",
+      "sha256": "606d079dac5a24a54e5535da43d8d2a2f57fc0516d5b8925aeb338c1d6589813",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 4.jpg",
+      "sha256": "e9e73d33a51f260229f65aee5e36ad2b2f1f80dcac901ddfb699b66e5d30c67c",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 5.jpg",
+      "sha256": "3490de5bcc3e9e95a9fd415362ac7832b9d14f34ea0bbe98a28d6e1e051f7dd8",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine 6.jpg",
+      "sha256": "3f82cfadedf082ee6cef54e0c8968caf0b273e7257a22a581f51320b37432eb8",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/6kw machine.jpg",
+      "sha256": "6669f17a5ffdc6903d6b2dc3e1a03f37ad7180a8dc4b383852339593a1ec26e7",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 20.jpg",
+      "sha256": "8a4e34291b6d5b603d81928a03c7a8daea9967e693e5f95a2c798a0ce5616552",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 26.jpg",
+      "sha256": "2fdaea8b42c281a9d7b04770d05f7a36b2d8b526f955e0c294e2a2ed0774ae04",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ laser machine 27.jpg",
+      "sha256": "4635f9872c8a72082ed41031aee4f27e7567b74a84dd61e7eb5e74c7ca73462c",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ1530FB-NS-_ٍ___د______.52.jpg",
+      "sha256": "f693b21d17f07b34a2f02697bc4fa8de6f42d65aa0b6c2c4fb6b0c8c28647872",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/DZ3015FB.jpg",
+      "sha256": "8d0759e549a7ea79de6d03445bb9dbc2930a80454e12c0b4edbbb778f4ebb631",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/EhXjEG2U8AAHQcV.jpg",
+      "sha256": "641985f5c2666ecb63c1a40a3befc0b1f56094fb186ff36b4ebb5588536ea9bf",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine.jpg",
+      "sha256": "e3d15e176546414cb723f9161d82fff952d7ca098376c1e090686b111ad98d29",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine2.jpg",
+      "sha256": "31b3838fac604a538fa21648f1b5f85767dbeeaae91800e11854960d7157d551",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/exchangr table machine3.jpg",
+      "sha256": "8d0759e549a7ea79de6d03445bb9dbc2930a80454e12c0b4edbbb778f4ebb631",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H0e19ef4588464869a0f23f85b77860960.jpg",
+      "sha256": "87923df69d95d3f7b5feb95585758fe6406f9e6d8dcf49d3f9049085228f4d9a",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H8d9194eb7d9b47c1b80eb8ab7fc19073g.jpg",
+      "sha256": "3f3d2fd405a7c32121dfec6a3e432bab8958d45fb9d76cc8aec0475bd1ac8839",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/H91b44a111e52462cbc2661bb2e18dd50T.jpg",
+      "sha256": "83ee337ba8428c1d7ff42fde035f7092d902859d2ccaf96510c0f436e9b960b7",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Machine cover3.jpg",
+      "sha256": "c94cf16504e841c32be30004556f9558dd352c772374010adfac343ab7343102",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Professional 3015 cabin laser cutting machine (3).jpg",
+      "sha256": "0419090901c6e924129269ffab3ef97b371a88f6b9687ab924c239c21c0d34f5",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/Professional 3015 cabin laser cutting machine.jpg",
+      "sha256": "3ec7cd559977aa32e54a7fcf2e8875077de7f642a6ed8f34b5a300e8ba307ec2",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/_ت_____ش_2022072110020346.jpg",
+      "sha256": "e3d15e176546414cb723f9161d82fff952d7ca098376c1e090686b111ad98d29",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/_ت_____ش_2022072110020347.jpg",
+      "sha256": "31b3838fac604a538fa21648f1b5f85767dbeeaae91800e11854960d7157d551",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/معرفی با محصول/معرفی محصول.jpg",
+      "sha256": "b2d9ea63c508ca9fedc1fa59408114ef655ee0652648bc5fb227f86e714a62d9",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    },
+    {
+      "path": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/معرفی با محصول/معرفی محصول.jpg",
+      "sha256": "d52e23cf2cead397a725ecbc40424366e2846c9f1be36ef4eaffd526454b7e55",
+      "codes": [],
+      "candidateCodes": [],
+      "status": "unassigned",
+      "reason": "No exact product identity established from filename/path; derived drawings and promotional graphics are not exact product photographs."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "WELD-1500": {"decision":"use","src":"assets/catalog-v2/WELD-1500/studio-web.jpg","name":"دستگاه جوش لیزر ۱۵۰۰ وات","reference":"docs/catalog-completion/source-documents/weld-1500-poster.jpg","reason":"Compared with supplied C1500 poster: blue upper cabinet, hose, two upper buttons, lower display, gauge and side grille match the exterior. No internal assembly claim."},
+  "WELD-2000": {"decision":"use","src":"assets/catalog-v2/WELD-2000/studio-web.jpg","name":"دستگاه جوش لیزر ۲۰۰۰ وات","reference":"docs/catalog-completion/source-documents/weld-2000-poster.jpg","reason":"Compared with supplied C2000 poster: purple cabinet, perforated side, front hinged panel, display and three buttons match the exterior."},
+  "WELD-3000": {"decision":"use","src":"assets/catalog-v2/WELD-3000/studio-web.jpg","name":"دستگاه جوش لیزر ۳۰۰۰ وات","reference":"docs/catalog-completion/source-documents/weld-3000-poster.jpg","reason":"Compared with supplied C3000 poster: red cabinet, separate wire feeder, orange cable, front rail and display arrangement match the exterior."},
+  "CUT-3015-4": {"decision":"use","src":"assets/catalog-v2/CUT-3015-4/studio-web.jpg","name":"دو میز DZ3015","reference":"عکس دستگاه ها/دو میز 3015/laser cutting nachine 3015 exchange 1.jpg","reason":"Exterior compared with supplied 3015 exchange-table CAD: both beds, front control pedestal, blue panels, bellows, gantry and cable chain match. Render does not establish hidden assemblies or manufacturer suffix."},
+  "CUT-6020-4": {"decision":"use","src":"assets/catalog-v2/CUT-6020-4/studio-web.jpg","name":"دو میز DZ6020","reference":"عکس دستگاه ها/دومیز استاندارد 6020/laser cutting machine 6020 exchange 1.png","reason":"Exterior compared with named 6020 exchange-table artwork: long rear table, dark side panels, blue end covers and gantry configuration match. No hidden component inference."},
+  "CC001": {
+    "decision": "use",
+    "src": "assets/catalog-v2/CC001/studio-web.jpg",
+    "name": "چیلر فایبر S&A CWFL-1500",
+    "reference": "عکس های سایت/cwfl1500-lite.png",
+    "reason": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and pressure gauge, right-side grille, blue stripe and upper fan agree. Generated labels are not technical evidence."
+  },
+  "CC002": {
+    "decision": "use",
+    "src": "assets/catalog-v2/CC002/studio-web.jpg",
+    "name": "چیلر فایبر S&A CWFL-2000",
+    "reference": "عکس های سایت/cwfl2000-lite.png",
+    "reason": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and gauge, right-side grille, upper fan and red wheels agree. No internal assembly claim."
+  },
+  "CC003": {
+    "decision": "hold",
+    "reason": "Generated front panel changes the relative placement of display and switch compared with supplied cwfl3000-lite.png. Do not automatically replace the existing photo."
+  },
+  "WL-005": {"decision":"hold","reason":"QCW machine is assigned a generic handheld welder image; configuration not matched."},
+  "WL-008": {"decision":"hold","reason":"Robotic welding model is assigned a handheld cabinet image, not a robot cell."},
+  "WL-009": {"decision":"hold","reason":"Jewelry welder is assigned a handheld cabinet image; configuration mismatch."},
+  "WL-010": {"decision":"hold","reason":"Channel-letter welder is assigned a handheld cabinet image; configuration not matched."}
+}

@@ -1,0 +1,32 @@
+{
+  "products": 120,
+  "localUrl": "http://127.0.0.1:8751/preview-51/",
+  "pagesPathSimulation": "https://alisonsasan-png.github.io/sahandlaser/preview-51/",
+  "livePreviewDeployed": false,
+  "localLinksChecked": 646,
+  "browserImagesChecked": 53,
+  "pagesBaseImageRequests": 53,
+  "categoriesChecked": [
+    "cleaning",
+    "consumables",
+    "cutting",
+    "head",
+    "marking",
+    "parts",
+    "source",
+    "welding"
+  ],
+  "browserErrors": [],
+  "mobilePagesChecked": 120,
+  "searchCases": [
+    "exact code",
+    "Persian digits",
+    "Arabic yeh",
+    "empty state",
+    "combined filter",
+    "clear"
+  ],
+  "trackedFilesUnchanged": true,
+  "localMainHead": "4c1a30fbef81e759b14c0e1fee2d1814874cde93",
+  "previewBase": "1f597a8de835bd43e65d1efe136e161056202129"
+}

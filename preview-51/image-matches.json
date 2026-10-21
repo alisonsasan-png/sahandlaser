@@ -1,0 +1,532 @@
+[
+  {
+    "code": "CC001",
+    "name": "چیلر فایبر S&A CWFL-1500",
+    "src": "media/8c67120f63c9e3e77b39.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "8c67120f63c9e3e77b39711fa8164b5970f58c90654d45d02a6b2602086c92c3",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and pressure gauge, right-side grille, blue stripe and upper fan agree. Generated labels are not technical evidence.",
+    "origin": "assets/catalog-v2/CC001/studio-web.jpg"
+  },
+  {
+    "code": "CC002",
+    "name": "چیلر فایبر S&A CWFL-2000",
+    "src": "media/7c0a91170894d35d3d1e.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "7c0a91170894d35d3d1e5530ca6c61834670962bf6dee6a542b6de8fb264b715",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Exterior reconstruction compared visually with supplied artwork: two displays, front switch and gauge, right-side grille, upper fan and red wheels agree. No internal assembly claim.",
+    "origin": "assets/catalog-v2/CC002/studio-web.jpg"
+  },
+  {
+    "code": "CP-RAY-BM110",
+    "name": "هد برش فایبر RayTools BM110",
+    "src": "media/78fd5af1f1fcd277d168.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "78fd5af1f1fcd277d168c512a91b774d13443a2a1e96cd014b03518846298af2",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/CP-RAY-BM110/studio-web.jpg"
+  },
+  {
+    "code": "ML-004",
+    "name": "دستگاه حکاکی میزدار UV",
+    "src": "media/6819e05bd4fbe3952c21.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "6819e05bd4fbe3952c2123b9f4b26819693820987bccd85cde8f7d2a21f28b25",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/ML-004/studio-web.jpg"
+  },
+  {
+    "code": "ML-005",
+    "name": "دستگاه حکاکی پرتابل فایبر",
+    "src": "media/0818ba3dcdbf8282f20a.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "0818ba3dcdbf8282f20a7dc89ea00c7923afb01476da1fa3a927d46802184323",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/ML-005/studio-web.jpg"
+  },
+  {
+    "code": "ML-007",
+    "name": "دستگاه حکاکی رومیزی فایبر",
+    "src": "media/80ddc9912a5ee9dbee01.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "80ddc9912a5ee9dbee01e800d4235166623296d4c8160b762f865f18a66d27eb",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/ML-007/studio-web.jpg"
+  },
+  {
+    "code": "WELD-1500",
+    "name": "دستگاه جوش فایبر 1500 وات",
+    "src": "media/c5fd5860bb1b39954e46.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "c5fd5860bb1b39954e46b0738cd19cfc312ec2419ba4fcaedc5952403128c8f0",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Compared with supplied C1500 poster: blue upper cabinet, hose, two upper buttons, lower display, gauge and side grille match the exterior. No internal assembly claim.",
+    "origin": "assets/catalog-v2/WELD-1500/studio-web.jpg"
+  },
+  {
+    "code": "WELD-2000",
+    "name": "دستگاه جوش فایبر 2000 وات",
+    "src": "media/54b770713b0f5845ee6b.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "54b770713b0f5845ee6b002c95e7cd6b77c073c449e566e1f2af71cc4a14d715",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Compared with supplied C2000 poster: purple cabinet, perforated side, front hinged panel, display and three buttons match the exterior.",
+    "origin": "assets/catalog-v2/WELD-2000/studio-web.jpg"
+  },
+  {
+    "code": "WELD-3000",
+    "name": "دستگاه جوش فایبر 3000 وات",
+    "src": "media/c28a3e8ced83cc192175.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "c28a3e8ced83cc1921758161f9d5096889764951eb5f41959a086cf2968bfa6a",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Compared with supplied C3000 poster: red cabinet, separate wire feeder, orange cable, front rail and display arrangement match the exterior.",
+    "origin": "assets/catalog-v2/WELD-3000/studio-web.jpg"
+  },
+  {
+    "code": "WL-003",
+    "name": "دستگاه جوش لیزر Air-Cooled",
+    "src": "media/624ad5d9c4514133582a.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "624ad5d9c4514133582abf4b0d760d125ae324b09f95df0973027005591542b4",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/air-cooled/studio-web.jpg"
+  },
+  {
+    "code": "CUT-3015-1",
+    "name": "تک میز DZ3015S",
+    "src": "media/bae8780d6bb2dbc3d456.jpg",
+    "caption": "تصویر ارسالیِ نام‌گذاری‌شده؛ تطبیق نام خانواده با فهرست شیت‌های ثبت‌شده",
+    "sha256": "bae8780d6bb2dbc3d456481c58dc097fcb5c171e8f32306aa5db8cbab3fef8cc",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/product-drawings/sheets-2026-10-21.json",
+    "scope": "نام فایل و کد ثبت‌شده در فهرست شیت‌ها؛ اثبات‌کنندهٔ پیکربندی نصب‌شده نیست",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/دستگاه برش لیزر تک میز استاندارد 3015.jpg"
+  },
+  {
+    "code": "CUT-3015-1",
+    "name": "تک میز DZ3015S",
+    "src": "media/0b4645c482f4240592f9.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "0b4645c482f4240592f9232e2018e929261a39dcecb2646d8a9af671e6819526",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/single-standard/studio-web.jpg"
+  },
+  {
+    "code": "CUT-3015-2",
+    "name": "تک میز DZ3015H",
+    "src": "media/c8c409103087c55ab1e0.jpg",
+    "caption": "تصویر ارسالیِ نام‌گذاری‌شده؛ تطبیق نام خانواده با فهرست شیت‌های ثبت‌شده",
+    "sha256": "c8c409103087c55ab1e0ae5081a26b9ed6daf81be9f784f01d07848ba665a67a",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/product-drawings/sheets-2026-10-21.json",
+    "scope": "نام فایل و کد ثبت‌شده در فهرست شیت‌ها؛ اثبات‌کنندهٔ پیکربندی نصب‌شده نیست",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/دستگاه برش لیزر تک میز حرفه ای 3015.jpg"
+  },
+  {
+    "code": "CUT-3015-2",
+    "name": "تک میز DZ3015H",
+    "src": "media/7e4e1ac2b043601811d5.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "7e4e1ac2b043601811d5b580ca94aa2f12e761d39babb72534ba9dec5a8a20f7",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/single-professional/studio-web.jpg"
+  },
+  {
+    "code": "CUT-3015-4",
+    "name": "دو میز DZ3015",
+    "src": "media/556f742a6c337c8f614c.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "556f742a6c337c8f614c89194080191126f7d25e2e383941701173637c7b823c",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Exterior compared with supplied 3015 exchange-table CAD: both beds, front control pedestal, blue panels, bellows, gantry and cable chain match. Render does not establish hidden assemblies or manufacturer suffix.",
+    "origin": "assets/catalog-v2/CUT-3015-4/studio-web.jpg"
+  },
+  {
+    "code": "CUT-6020-1",
+    "name": "تک میز DZ6020S",
+    "src": "media/efa7aa5d4f33564feb94.jpg",
+    "caption": "تصویر ارسالیِ نام‌گذاری‌شده؛ تطبیق نام خانواده با فهرست شیت‌های ثبت‌شده",
+    "sha256": "efa7aa5d4f33564feb94d8706bc66658d175498e9c0fca79b515a0f00b5d6ea9",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/product-drawings/sheets-2026-10-21.json",
+    "scope": "نام فایل و کد ثبت‌شده در فهرست شیت‌ها؛ اثبات‌کنندهٔ پیکربندی نصب‌شده نیست",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/دستگاه برش لیزر فایبر تک میز استاندارد 6020.jpg"
+  },
+  {
+    "code": "CUT-6020-2",
+    "name": "تک میز DZ6020H",
+    "src": "media/cb141132a3707e5e3e86.jpg",
+    "caption": "تصویر ارسالیِ نام‌گذاری‌شده؛ تطبیق نام خانواده با فهرست شیت‌های ثبت‌شده",
+    "sha256": "cb141132a3707e5e3e86435ca8c872f5f92578085e09e4a3475e601a5100085f",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/product-drawings/sheets-2026-10-21.json",
+    "scope": "نام فایل و کد ثبت‌شده در فهرست شیت‌ها؛ اثبات‌کنندهٔ پیکربندی نصب‌شده نیست",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز حزفه ای 6020/Professional single table laser cutting machine 6020.jpg"
+  },
+  {
+    "code": "CUT-6020-4",
+    "name": "دو میز DZ6020",
+    "src": "media/c25956e2120bbc782921.jpg",
+    "caption": "بازسازی نمای بیرونی؛ تطبیق مستند با مرجع نام‌گذاری‌شده",
+    "sha256": "c25956e2120bbc78292171248181aa5a7e9451e3e6c4e5772efc0d39c2043fe4",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/image-decisions.json",
+    "scope": "Exterior compared with named 6020 exchange-table artwork: long rear table, dark side panels, blue end covers and gantry configuration match. No hidden component inference.",
+    "origin": "assets/catalog-v2/CUT-6020-4/studio-web.jpg"
+  },
+  {
+    "code": "CUT-tube",
+    "name": "برش لوله‌بر",
+    "src": "media/f7dcd7e4423580d082e3.jpg",
+    "caption": "بازسازی تصویر مرجعِ ثبت‌شده برای این خانواده",
+    "sha256": "f7dcd7e4423580d082e36cb32230c1d2e683cf08132ccdd160c84e2df9a91896",
+    "evidence": "https://github.com/alisonsasan-png/sahandlaser/blob/1f597a8de835bd43e65d1efe136e161056202129/docs/catalog-completion/catalog-draft.json",
+    "scope": "supplied series photograph or CAD",
+    "origin": "assets/catalog-v2/tube-standard/studio-web.jpg"
+  },
+  {
+    "code": "workspace-6a75cccbbbec",
+    "name": "دستگاه برش لیزر تک میز استاندارد 4020",
+    "src": "media/391a8ca5dcf37a9ba4f4.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "391a8ca5dcf37a9ba4f44d84fe13d89f58df803cbe5c01c6caeac699cb3a09e3",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/دستگاه برش لیزر تک میز استاندارد 4020.jpg"
+  },
+  {
+    "code": "workspace-37417d7c2284",
+    "name": "دستگاه برش لیزر فایبر تک میز 3015 حرفه ای با روتاری",
+    "src": "media/538b2ac8505ee6a5de79.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "538b2ac8505ee6a5de7943b63adb31a044efb1933f1b4b4fc9c89de6a6c61e40",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/دستگاه برش لیزر فایبر تک میز 3015 حرفه ای با روتاری.jpg"
+  },
+  {
+    "code": "workspace-7f62e2e9c809",
+    "name": "دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری",
+    "src": "media/5d5bad35228925c1d0c4.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "5d5bad35228925c1d0c4c977d631c44a2b62a6d07d125ef66f4e3457c2ad5ead",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری.jpg"
+  },
+  {
+    "code": "workspace-e8b8b5d46e03",
+    "name": "دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری",
+    "src": "media/240bc7b4f49d36488637.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "240bc7b4f49d3648863782c99bc153f69f4b686628a0e3492926c0a897c8b26d",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری.jpg"
+  },
+  {
+    "code": "workspace-0e90347fde75",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد",
+    "src": "media/8e65607a9d026e853595.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "8e65607a9d026e853595a72d36919a29747751689667f4777a8b91696c9e21c7",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/دستگاه برش لیزر فایبر دومیز 3015  استاندارد.jpg"
+  },
+  {
+    "code": "workspace-4d9c4fc24ca9",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای",
+    "src": "media/ab34eed06c88f1e10a70.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "ab34eed06c88f1e10a707c29334a1246409483c86ed94e107e2f36374a19c49b",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای.jpg"
+  },
+  {
+    "code": "workspace-b67ebb122421",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد",
+    "src": "media/9c902b0ecc992c5a5eb9.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "9c902b0ecc992c5a5eb9fe97d4b79a868139b7a0f6a5e819383f20b7774f8f35",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg"
+  },
+  {
+    "code": "workspace-b67ebb122421",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد",
+    "src": "media/efbf42f17f2c18a565a6.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "efbf42f17f2c18a565a6d3fa493b78be494ff3f2f543312654ed7d79bc377b60",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 استاندارد/معرفی محصول/دستگاه برش لیزر فایبر دومیز 6020 استاندارد.jpg"
+  },
+  {
+    "code": "workspace-0e90347fde75",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد",
+    "src": "media/64b16c9a2e398f0e0a2a.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "64b16c9a2e398f0e0a2a2db8657c51564c9603e7363eaac0aa9ac0636b671b6b",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/معرفی محصول/دستگاه برش لیزر فایبر دومیز 3015  استاندارد.jpg"
+  },
+  {
+    "code": "workspace-881d7fde7f59",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری",
+    "src": "media/8f7cd60bd3ec7e5d9d91.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "8f7cd60bd3ec7e5d9d91c5b390513df5a6ffd4129887e7b8cdba1a9b5835c7fa",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری.jpg"
+  },
+  {
+    "code": "workspace-dfa612a5abc4",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری",
+    "src": "media/82ea9b8d3b789bd75ab7.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "82ea9b8d3b789bd75ab7ba73bca53e7fa432dca70b75acec2ef083c59d955403",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری.jpg"
+  },
+  {
+    "code": "workspace-c3d1a361f0da",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری",
+    "src": "media/da4d2ed9b1c3f3f8cc27.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "da4d2ed9b1c3f3f8cc27b4d9c96e3e52fc7a94cf10be85ee79143e1124b0ffd3",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری.jpg"
+  },
+  {
+    "code": "workspace-ee07a81d3d55",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری",
+    "src": "media/84b01043ceac6a948e3c.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "84b01043ceac6a948e3c29e63a41ff6483e186b629132f2ef6692bfa171672af",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری.jpg"
+  },
+  {
+    "code": "workspace-b763c31bfb31",
+    "name": "دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای",
+    "src": "media/a4d011edc9eca14d7ebc.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "a4d011edc9eca14d7ebc4ca8fd1f9e511262be5437c140302d37cc2e8a097170",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای.jpg"
+  },
+  {
+    "code": "workspace-38386958a1df",
+    "name": "دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای با روتاری",
+    "src": "media/648ae47e7a1d1dd73377.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "648ae47e7a1d1dd73377ea30f965bdcd433d5b81e1e91ac8c33d083178548853",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای با روتاری.jpg"
+  },
+  {
+    "code": "workspace-a69ede1eea6f",
+    "name": "دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای",
+    "src": "media/5e6aad3be6cd709b5681.jpg",
+    "caption": "تصویر نام‌گذاری‌شده در مجموعهٔ ارسالی؛ بدون انتساب کد فنی یا مشخصات نصب‌شده",
+    "sha256": "5e6aad3be6cd709b5681276f5f7b356c7a76dfc5ba4b45e5bad67021f5934fb2",
+    "evidence": "../image-matches.json",
+    "scope": "نام محصول از نام فایل ارسالی حفظ شده است؛ تصویر تبلیغاتی/رندر است، نه تأیید مشخصات فنی",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای.jpg"
+  },
+  {
+    "code": "CUT-3015-1",
+    "name": "تک میز DZ3015S",
+    "src": "media/9be3ed4036b6b3e15054.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "9be3ed4036b6b3e1505429ec9694f775f5359d6c2f01dd04302800acaf151c54",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 3015/دستگاه+برش+لیزر+تک+میز+استاندارد+3015_881784.jpg"
+  },
+  {
+    "code": "workspace-6a75cccbbbec",
+    "name": "دستگاه برش لیزر تک میز استاندارد 4020",
+    "src": "media/8d0d4f5fa1b5d97f84cf.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "8d0d4f5fa1b5d97f84cf65b2094b6e815b9f9b9c739ba086995a1c1930c63c18",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 4020/دستگاه+برش+لیزر+تک+میز+استاندارد+4020_977926.jpg"
+  },
+  {
+    "code": "CUT-6020-1",
+    "name": "تک میز DZ6020S",
+    "src": "media/4e7e8bf7186770809300.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "4e7e8bf7186770809300be1bbe485c859b4a0b97d05dde4014395a31674ce3aa",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز استاندارد 6020/دستگاه+برش+لیزر+فایبر+تک+میز+استاندارد+6020_743437.jpg"
+  },
+  {
+    "code": "CUT-3015-2",
+    "name": "تک میز DZ3015H",
+    "src": "media/c35e571322026faa9bef.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "c35e571322026faa9bef7b6bd753624ce93be94d1f7c6fd9f09fd5a4d0f1cdc0",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز/دستگاه برش لیزر تک میز حرفه ای 3015/دستگاه+برش+لیزر+تک+میز+حرفه+ای+3015_984362.jpg"
+  },
+  {
+    "code": "workspace-37417d7c2284",
+    "name": "دستگاه برش لیزر فایبر تک میز 3015 حرفه ای با روتاری",
+    "src": "media/55fe72a33002a7a47d4e.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "55fe72a33002a7a47d4ec761797a7f5a71d6c16a836350ec849e8359cdcb0952",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز با روتاری/با روتاری دستگاه برش لیزر فایبر تک میز 3015 حرفه ای/دستگاه+برش+لیزر+فایبر+تک+میز+3015+حرفه+ای+با+روتاری_405318.jpg"
+  },
+  {
+    "code": "workspace-7f62e2e9c809",
+    "name": "دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری",
+    "src": "media/1896e66ea95a36b702e9.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "1896e66ea95a36b702e98c2db59cb2c85e1fa2e74e3ca266ff0a38ca93df5f76",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 3015 استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+تک+میز+3015+استاندارد+با+روتاری_292424.jpg"
+  },
+  {
+    "code": "workspace-e8b8b5d46e03",
+    "name": "دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری",
+    "src": "media/87ff3081e594589fb4b0.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "87ff3081e594589fb4b06b2b2d2f5565b371a0dd8db6709ca935f28ec3b6723d",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/تک میز با روتاری/دستگاه برش لیزر فایبر تک میز 6020 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+تک+میز+6020+حرفه+ای+با+روتاری_546827.jpg"
+  },
+  {
+    "code": "workspace-0e90347fde75",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد",
+    "src": "media/2cc609c5a582696c2999.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "2cc609c5a582696c2999bbe2a6cf1622a215e0c7935449cb98ac9196ef5164b9",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد_937676.jpg"
+  },
+  {
+    "code": "workspace-4d9c4fc24ca9",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای",
+    "src": "media/879441e073bdd5e7a6f3.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "879441e073bdd5e7a6f3b0a35cb0a42087e9d9c03ad1152f90efc5d7702435eb",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای/دستگاه+برش+لیزر+فایبر+دومیز+3015+حرفه+ای_358276.jpg"
+  },
+  {
+    "code": "workspace-b67ebb122421",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد",
+    "src": "media/0dfe380d4c50fb288806.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "0dfe380d4c50fb288806b2ce883e6f999611ff2179e8efc060f74ad54dcd5881",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای/معرفی محصول/دستگاه+برش+لیزر+فایبر+دومیز+6020+استاندارد_535111.jpg"
+  },
+  {
+    "code": "workspace-0e90347fde75",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد",
+    "src": "media/803f92a1d3385b719aea.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "803f92a1d3385b719aea850cabdc06dd2516a86d52c82e4c7bd556b71f779242",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز/دستگاه برش لیزر فایبر دومیز 3015  استاندارد/معرفی محصول/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد_852719.jpg"
+  },
+  {
+    "code": "workspace-881d7fde7f59",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری",
+    "src": "media/89d4849a7476ce8c9004.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "89d4849a7476ce8c900467100e49f19e042b2b18da1dcfcc26bc40d858809d6e",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015  استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+3015++استاندارد+با+روتاری_139534.jpg"
+  },
+  {
+    "code": "workspace-dfa612a5abc4",
+    "name": "دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری",
+    "src": "media/d46386851b5b4d66918c.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "d46386851b5b4d66918c10df6653f08b1ae2eedd427e3bdf9b6d81aaf6d726f0",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 3015 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+3015+حرفه+ای+با+روتاری_222531.jpg"
+  },
+  {
+    "code": "workspace-c3d1a361f0da",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری",
+    "src": "media/4e728882c36f397733e1.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "4e728882c36f397733e17cc7eea8dfb60605251d477bc97a69084f7dff838097",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 استاندارد با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+6020+استاندارد+با+روتاری_957943.jpg"
+  },
+  {
+    "code": "workspace-ee07a81d3d55",
+    "name": "دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری",
+    "src": "media/6e8e029ecb1b4701b5cd.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "6e8e029ecb1b4701b5cd6382689b093c7477c0548a35df6e1f72121cb9601a1d",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/دو میز با روتاری/دستگاه برش لیزر فایبر دومیز 6020 حرفه ای با روتاری/دستگاه+برش+لیزر+فایبر+دومیز+6020+حرفه+ای+با+روتاری_820245.jpg"
+  },
+  {
+    "code": "workspace-b763c31bfb31",
+    "name": "دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای",
+    "src": "media/85f91030d1530847a17d.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "85f91030d1530847a17d28c2c39f7cf9c299981ce0653c91429ace4624ac54e2",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 6020 حرفه ای/دستگاه+برش+لیزر+فایبر+کابین+دار+6020+حرفه+ای_734405.jpg"
+  },
+  {
+    "code": "workspace-38386958a1df",
+    "name": "دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای با روتاری",
+    "src": "media/ae85c19f7c0ba77ceb28.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "ae85c19f7c0ba77ceb2878566a8c58493d0041d73d3c74bbe2e3f391c1f50e81",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/با روتاری/دستگاه+برش+لیزر+فایبر+کابین+دار+3015+حرفه+ای+با+روتاری_354409.jpg"
+  },
+  {
+    "code": "workspace-a69ede1eea6f",
+    "name": "دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای",
+    "src": "media/0eb9a585a3e3c193ddb9.jpg",
+    "caption": "نسخهٔ نام‌گذاری‌شدهٔ همان محصول در مجموعهٔ ارسالی",
+    "sha256": "0eb9a585a3e3c193ddb9be66b10a3af2035ea00f089046e477a09a109db0b89a",
+    "evidence": "../image-matches.json",
+    "scope": "تطبیق کامل نام فایل پس از تبدیل + به فاصله؛ بدون حدس دربارهٔ کد مدل",
+    "origin": "workspace/کابین دار/دستگاه برش لیزر فایبر کابین دار 3015 حرفه ای/بدون روتاری/دستگاه+برش+لیزر+فایبر+کابین+دار+3015+حرفه+ای_130097.jpg"
+  }
+]
