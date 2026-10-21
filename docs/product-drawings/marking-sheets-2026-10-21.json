@@ -1,0 +1,66 @@
+{
+  "updatedAt": "2026-10-21T14:28:59+03:30",
+  "generationMode": "built-in imagegen",
+  "sourceFilename": "حکاکی).jfif",
+  "sourceContent": "Corrected marking catalog page with four marking types",
+  "dimensionSource": "User-supplied catalog cm converted to mm",
+  "geometry": "schematic",
+  "jobs": [
+    {
+      "id": "marking-fiber-desktop",
+      "title": "دستگاه حکاکی لیزر فایبر رومیزی",
+      "en": "Desktop Fiber Laser Marker",
+      "header": "DESKTOP MARKER",
+      "dimensions": [
+        600,
+        300,
+        850
+      ],
+      "ref": "LEFTMOST column upright, title حکاکی لیزر فایبر رومیزی. Actual product: low elongated rectangular silver/gray desktop base, dark burgundy/brown long side panel, blue/dark short front control fascia with switches and red emergency stop. Single tall aluminum vertical Z column mounted at rear of base, horizontal silver galvo marking head projecting over base working area, black cable looping from head down to base. No separate computer monitor, no full desk or enclosed cabinet. Preserve proportions/visible colors from photo and thumbnail.",
+      "src": "assets/product-drawings/marking-fiber-desktop-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved catalog sheet template: copy ONLY its page layout, navy/pale-blue/white palette and RED Persian-English Sahand Laser logo. Input2 is actual marking machine catalog page, photographed SIDEWAYS; mentally rotate to read upright. Use ONLY this specific column for product identity: LEFTMOST column upright, title حکاکی لیزر فایبر رومیزی. Actual product: low elongated rectangular silver/gray desktop base, dark burgundy/brown long side panel, blue/dark short front control fascia with switches and red emergency stop. Single tall aluminum vertical Z column mounted at rear of base, horizontal silver galvo marking head projecting over base working area, black cable looping from head down to base. No separate computer monitor, no full desk or enclosed cabinet. Preserve proportions/visible colors from photo and thumbnail. Upper left large faithful elevated three-quarter product render, clean white/light-blue backdrop, preserve actual product exterior and arrangement. Top-left red سهند لیزر / SAHAND LASER logo. Right navy header 'DESKTOP MARKER' then 'دستگاه حکاکی لیزر فایبر رومیزی' then 'Desktop Fiber Laser Marker'. Right blue panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '600 × 300 × 850 mm'. Values are from user-supplied catalog cm converted to mm, not invented. Under panel small blue isometric line drawing of same machine with dimension arrows length600mm(L), width300mm(W), height850mm(H). Bottom three schematic orthographic top/side/front views coherent with main machine and reference thumbnail: top L600/W300, side L600/H850, front W300/H850. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Blue measurement lines/numbers, white technical area, thin blue rounded outer border, navy section tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. Preserve column positions, galvo head, cable routing and distinct model shape. Do not mix columns, add internals or substitute a welder/cutter. No additional equipment or unsupported specifications. Crisp exact Persian and numerals, professional catalog finish. These are schematic catalog illustrations, not CAD manufacturing drawings."
+    },
+    {
+      "id": "marking-fiber-portable",
+      "title": "دستگاه حکاکی لیزر فایبر پرتابل",
+      "en": "Portable Fiber Laser Marker",
+      "header": "PORTABLE MARKER",
+      "dimensions": [
+        600,
+        500,
+        700
+      ],
+      "ref": "SECOND column upright, title حکاکی لیزر فایبر پرتابل. White/light-gray separate slim vertical electronics control box at rear LEFT with top/side vents and front switches. Flat square silver marking base plate with black front edge. Tall aluminum column rises from rear RIGHT of plate, horizontal light-gray galvo head projects forward, black cable loop and red/orange small rear head housing visible. Whole assembly is one portable marker with controller box beside work plate. No built-in full table or separate computer monitor. Match reference photo/thumbnail.",
+      "src": "assets/product-drawings/marking-fiber-portable-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved catalog sheet template: copy ONLY its page layout, navy/pale-blue/white palette and RED Persian-English Sahand Laser logo. Input2 is actual marking machine catalog page, photographed SIDEWAYS; mentally rotate to read upright. Use ONLY this specific column for product identity: SECOND column upright, title حکاکی لیزر فایبر پرتابل. White/light-gray separate slim vertical electronics control box at rear LEFT with top/side vents and front switches. Flat square silver marking base plate with black front edge. Tall aluminum column rises from rear RIGHT of plate, horizontal light-gray galvo head projects forward, black cable loop and red/orange small rear head housing visible. Whole assembly is one portable marker with controller box beside work plate. No built-in full table or separate computer monitor. Match reference photo/thumbnail. Upper left large faithful elevated three-quarter product render, clean white/light-blue backdrop, preserve actual product exterior and arrangement. Top-left red سهند لیزر / SAHAND LASER logo. Right navy header 'PORTABLE MARKER' then 'دستگاه حکاکی لیزر فایبر پرتابل' then 'Portable Fiber Laser Marker'. Right blue panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '600 × 500 × 700 mm'. Values are from user-supplied catalog cm converted to mm, not invented. Under panel small blue isometric line drawing of same machine with dimension arrows length600mm(L), width500mm(W), height700mm(H). Bottom three schematic orthographic top/side/front views coherent with main machine and reference thumbnail: top L600/W500, side L600/H700, front W500/H700. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Blue measurement lines/numbers, white technical area, thin blue rounded outer border, navy section tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. Preserve column positions, galvo head, cable routing and distinct model shape. Do not mix columns, add internals or substitute a welder/cutter. No additional equipment or unsupported specifications. Crisp exact Persian and numerals, professional catalog finish. These are schematic catalog illustrations, not CAD manufacturing drawings."
+    },
+    {
+      "id": "marking-fiber-flying",
+      "title": "دستگاه حکاکی لیزر فایبر برخط",
+      "en": "Flying Fiber Laser Marker",
+      "header": "FLYING MARKER",
+      "dimensions": [
+        600,
+        600,
+        1250
+      ],
+      "ref": "THIRD column upright, title لیزر حکاکی برخط. Industrial marking stand on open H-shaped silver tubular wheeled floor base. Tall vertical silver Z post, white horizontal cantilever carrying compact white galvo marking head at top, small rectangular monitor on arm high behind/left. Small vertical white control cabinet attached low on side of post, navy/blue large side panel, black cable runs in loose loop from head to lower cabinet. NO worktable top or marking base plate; open floor stand for conveyor integration. Match photo and dimension thumbnail.",
+      "src": "assets/product-drawings/marking-fiber-flying-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved catalog sheet template: copy ONLY its page layout, navy/pale-blue/white palette and RED Persian-English Sahand Laser logo. Input2 is actual marking machine catalog page, photographed SIDEWAYS; mentally rotate to read upright. Use ONLY this specific column for product identity: THIRD column upright, title لیزر حکاکی برخط. Industrial marking stand on open H-shaped silver tubular wheeled floor base. Tall vertical silver Z post, white horizontal cantilever carrying compact white galvo marking head at top, small rectangular monitor on arm high behind/left. Small vertical white control cabinet attached low on side of post, navy/blue large side panel, black cable runs in loose loop from head to lower cabinet. NO worktable top or marking base plate; open floor stand for conveyor integration. Match photo and dimension thumbnail. Upper left large faithful elevated three-quarter product render, clean white/light-blue backdrop, preserve actual product exterior and arrangement. Top-left red سهند لیزر / SAHAND LASER logo. Right navy header 'FLYING MARKER' then 'دستگاه حکاکی لیزر فایبر برخط' then 'Flying Fiber Laser Marker'. Right blue panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '600 × 600 × 1250 mm'. Values are from user-supplied catalog cm converted to mm, not invented. Under panel small blue isometric line drawing of same machine with dimension arrows length600mm(L), width600mm(W), height1250mm(H). Bottom three schematic orthographic top/side/front views coherent with main machine and reference thumbnail: top L600/W600, side L600/H1250, front W600/H1250. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Blue measurement lines/numbers, white technical area, thin blue rounded outer border, navy section tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. Preserve column positions, galvo head, cable routing and distinct model shape. Do not mix columns, add internals or substitute a welder/cutter. No additional equipment or unsupported specifications. Crisp exact Persian and numerals, professional catalog finish. These are schematic catalog illustrations, not CAD manufacturing drawings."
+    },
+    {
+      "id": "marking-fiber-table",
+      "title": "دستگاه حکاکی لیزر فایبر میزدار",
+      "en": "Table-type Fiber Laser Marker",
+      "header": "TABLE-TYPE MARKER",
+      "dimensions": [
+        900,
+        750,
+        880
+      ],
+      "ref": "RIGHTMOST column upright, title حکاکی لیزر فایبر میزدار. Full white workstation desk/cabinet with rectangular gray tabletop, short left work-surface extension on two white angled supports, lower white integrated cabinet with ventilation and door, black flat monitor on right side of desk, aluminum vertical Z column rising at rear center with silver marking head projecting over perforated gray marking area, small red/orange head rear block, keyboard on work surface. Match desk shape and all visible features. No separate floor stand.",
+      "src": "assets/product-drawings/marking-fiber-table-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional product sheet. Input1 is approved catalog sheet template: copy ONLY its page layout, navy/pale-blue/white palette and RED Persian-English Sahand Laser logo. Input2 is actual marking machine catalog page, photographed SIDEWAYS; mentally rotate to read upright. Use ONLY this specific column for product identity: RIGHTMOST column upright, title حکاکی لیزر فایبر میزدار. Full white workstation desk/cabinet with rectangular gray tabletop, short left work-surface extension on two white angled supports, lower white integrated cabinet with ventilation and door, black flat monitor on right side of desk, aluminum vertical Z column rising at rear center with silver marking head projecting over perforated gray marking area, small red/orange head rear block, keyboard on work surface. Match desk shape and all visible features. No separate floor stand. Upper left large faithful elevated three-quarter product render, clean white/light-blue backdrop, preserve actual product exterior and arrangement. Top-left red سهند لیزر / SAHAND LASER logo. Right navy header 'TABLE-TYPE MARKER' then 'دستگاه حکاکی لیزر فایبر میزدار' then 'Table-type Fiber Laser Marker'. Right blue panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '900 × 750 × 880 mm'. Values are from user-supplied catalog cm converted to mm, not invented. Under panel small blue isometric line drawing of same machine with dimension arrows length900mm(L), width750mm(W), height880mm(H). Bottom three schematic orthographic top/side/front views coherent with main machine and reference thumbnail: top L900/W750, side L900/H880, front W750/H880. Bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Blue measurement lines/numbers, white technical area, thin blue rounded outer border, navy section tab. Footer 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. Preserve column positions, galvo head, cable routing and distinct model shape. Do not mix columns, add internals or substitute a welder/cutter. No additional equipment or unsupported specifications. Crisp exact Persian and numerals, professional catalog finish. These are schematic catalog illustrations, not CAD manufacturing drawings."
+    }
+  ]
+}
