@@ -1,0 +1,31 @@
+{
+  "repository": "alisonsasan-png/sahandlaser",
+  "previewNumber": 51,
+  "branch": "preview-51-catalog",
+  "baseCommit": "1f597a8de835bd43e65d1efe136e161056202129",
+  "testedRuntimeCommit": "e2dbc50dd24adbdabf1defa67523604c193ed71d",
+  "testedRuntimeTree": "fb733cd85168e44cca9dca7b3819b6cab94bf2f8",
+  "testedUrl": "https://rawcdn.githack.com/alisonsasan-png/sahandlaser/e2dbc50dd24adbdabf1defa67523604c193ed71d/preview-51/index.html",
+  "hosting": "Independent CDN view of immutable GitHub preview commit; not the main GitHub Pages deployment",
+  "initialRemoteTreeAudit": {
+    "existingEntriesUnchanged": 675,
+    "addedFiles": 193,
+    "pathsOutsidePreview": 0,
+    "manifestHashMismatches": 0,
+    "truncated": false
+  },
+  "initialBranchCompare": {
+    "commitsAheadOfBase": 1,
+    "addedFiles": 193,
+    "modifiedOrDeletedExistingFiles": 0
+  },
+  "workflowRunsForPreviewBranch": 0,
+  "mainRefWrittenByThisWork": false,
+  "pagesSettingsChanged": false,
+  "publicCatalogChanged": false,
+  "preparationCatalogChanged": false,
+  "previousPreviewsChanged": false,
+  "localMainHeadPreserved": "4c1a30fbef81e759b14c0e1fee2d1814874cde93",
+  "tests": {"local": "checks/results.json", "live": "checks/live-results.json"},
+  "note": "Other concurrent main-branch commits changed Preview 50 during this task; this work neither authored nor reverted them. The preview branch is pinned to its inspected base. Final reporting-only commits preserve the runtime/media blobs that passed live checks."
+}

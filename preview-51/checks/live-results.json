@@ -1,0 +1,616 @@
+{
+  "commit": "e2dbc50dd24adbdabf1defa67523604c193ed71d",
+  "url": "https://rawcdn.githack.com/alisonsasan-png/sahandlaser/e2dbc50dd24adbdabf1defa67523604c193ed71d/preview-51/index.html",
+  "hosting": "Independent read-only CDN view of preview branch commit; not main GitHub Pages",
+  "localTestResults": "checks/results.json",
+  "browserImagesLoaded": 53,
+  "productCount": 120,
+  "searchPassed": true,
+  "categoryFiltersPassed": 8,
+  "productNavigationPassed": true,
+  "mobileOverflow": false,
+  "browserErrors": [],
+  "pages": [
+    {
+      "code": "CC004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CC003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CC002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CC001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CC005",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CC006",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH-S&A-12000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH-S&A-20000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH-S&A-6000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CH005",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CL-001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CL-002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CL-003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CL-004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN008",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN007",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN009",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN006",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN013",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN010",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN011",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CN012",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-CERAMIC",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CP-TRA",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS005",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS006",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS007",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "FS008",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-006",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-005",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-007",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-008",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "ML-009",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WELD-1500",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WELD-2000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-001",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WELD-3000",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-002",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-003",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-004",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-005",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-006",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-007",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-1",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-009",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-008",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "WL-010",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-2",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-3",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-5",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-4",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-8",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-6",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-7",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-3015-9",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-2",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-3",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-1",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-4",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-8",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-7",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-6",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-5",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-custom",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-robot",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-6020-9",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "CUT-tube",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-6a75cccbbbec",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-e8b8b5d46e03",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-0e90347fde75",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-4d9c4fc24ca9",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-37417d7c2284",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-7f62e2e9c809",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-881d7fde7f59",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-b67ebb122421",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-c3d1a361f0da",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-dfa612a5abc4",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-ee07a81d3d55",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-b763c31bfb31",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-38386958a1df",
+      "status": 200,
+      "titleFound": true
+    },
+    {
+      "code": "workspace-a69ede1eea6f",
+      "status": 200,
+      "titleFound": true
+    }
+  ],
+  "liveProductPagesChecked": 120
+}
