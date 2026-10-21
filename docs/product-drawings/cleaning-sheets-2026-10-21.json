@@ -1,0 +1,67 @@
+{
+  "updatedAt": "2026-10-21T12:52:00+03:30",
+  "generationMode": "built-in imagegen",
+  "sourceFilename": "5bae2795-92ee-45e4-a49d-67dbe51c12a7.jfif",
+  "dimensionSource": "User-supplied catalog cm converted to mm",
+  "geometry": "schematic",
+  "jobs": [
+    {
+      "id": "cleaning-fiber-continuous",
+      "title": "دستگاه تمیزکاری لیزر فایبر پیوسته",
+      "en": "Continuous-wave Fiber Laser Cleaner",
+      "header": "CW LASER CLEANER",
+      "dimensions": [
+        1000,
+        600,
+        1450
+      ],
+      "ref": "TOP ROW product: large white wheeled rectangular cabinet, blue sloping top control panel, navy/blue vertical front panel with red narrow accent stripe, white perforated/ventilated large side, tall red T-shaped cable-support handle with cable coiled on top. Preserve real blue/white/red colors and proportions. Do not use bottom portable cleaner.",
+      "powersW": [
+        1500,
+        3000,
+        6000
+      ],
+      "src": "assets/product-drawings/cleaning-fiber-continuous-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional sheet. Input1 is approved template layout/red Persian-English Sahand logo ONLY; input2 is actual catalog reference. Use ONLY this product in input2: TOP ROW product: large white wheeled rectangular cabinet, blue sloping top control panel, navy/blue vertical front panel with red narrow accent stripe, white perforated/ventilated large side, tall red T-shaped cable-support handle with cable coiled on top. Preserve real blue/white/red colors and proportions. Do not use bottom portable cleaner. Large faithful elevated three-quarter product render upper left, preserve actual external shape/color/controls. Red سهند لیزر / SAHAND LASER logo top left from input1. Right navy header 'CW LASER CLEANER', Persian 'دستگاه تمیزکاری لیزر فایبر پیوسته', English 'Continuous-wave Fiber Laser Cleaner'. Right panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '1000 × 600 × 1450 mm'. Dimensions are documented in supplied catalog in cm, converted to mm. Small isometric blue line drawing of this exact complete main cabinet under right panel with length1000 mm(L), width600 mm(W), height1450 mm(H). Bottom three coherent schematic orthographic TOP/SIDE/FRONT views matching this product, bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows L1000/W600; side L1000/H1450; front W600/H1450. Treat L as long/depth side, W as front width. Fine blue border, pale blue upper backdrop, white technical drawings area, navy section tab. Footer exact 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No unrelated equipment, invented internals, manufacturing precision claims, cutting machine or welding sheet copied. Crisp clear accurate Persian and numbers."
+    },
+    {
+      "id": "cleaning-fiber-pulsed-water",
+      "title": "دستگاه تمیزکاری لیزر فایبر پالسی آب‌خنک",
+      "en": "Water-cooled Pulsed Laser Cleaner",
+      "header": "PULSED / WATER-COOLED",
+      "dimensions": [
+        1050,
+        650,
+        1100
+      ],
+      "ref": "MIDDLE ROW product: white/off-white wheeled cabinet, thin red horizontal stripe near upper edge, charcoal sloping control console top front, broad curved black top carrying/push handle arch, white large side panels with rectangular ventilation arrays, small caster wheels. Precisely use this actual water-cooled product, not top blue cabinet or bottom portable.",
+      "powersW": [
+        500,
+        1000,
+        2000
+      ],
+      "src": "assets/product-drawings/cleaning-fiber-pulsed-water-dimensional-v1.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional sheet. Input1 is approved template layout/red Persian-English Sahand logo ONLY; input2 is actual catalog reference. Use ONLY this product in input2: MIDDLE ROW product: white/off-white wheeled cabinet, thin red horizontal stripe near upper edge, charcoal sloping control console top front, broad curved black top carrying/push handle arch, white large side panels with rectangular ventilation arrays, small caster wheels. Precisely use this actual water-cooled product, not top blue cabinet or bottom portable. Large faithful elevated three-quarter product render upper left, preserve actual external shape/color/controls. Red سهند لیزر / SAHAND LASER logo top left from input1. Right navy header 'PULSED / WATER-COOLED', Persian 'دستگاه تمیزکاری لیزر فایبر پالسی آب‌خنک', English 'Water-cooled Pulsed Laser Cleaner'. Right panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '1050 × 650 × 1100 mm'. Dimensions are documented in supplied catalog in cm, converted to mm. Small isometric blue line drawing of this exact complete main cabinet under right panel with length1050 mm(L), width650 mm(W), height1100 mm(H). Bottom three coherent schematic orthographic TOP/SIDE/FRONT views matching this product, bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows L1050/W650; side L1050/H1100; front W650/H1100. Treat L as long/depth side, W as front width. Fine blue border, pale blue upper backdrop, white technical drawings area, navy section tab. Footer exact 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No unrelated equipment, invented internals, manufacturing precision claims, cutting machine or welding sheet copied. Crisp clear accurate Persian and numbers."
+    },
+    {
+      "id": "cleaning-fiber-pulsed-air",
+      "title": "دستگاه تمیزکاری لیزر فایبر پالسی هواخنک",
+      "en": "Air-cooled Pulsed Laser Cleaner",
+      "header": "PULSED / AIR-COOLED",
+      "dimensions": [
+        600,
+        350,
+        600
+      ],
+      "ref": "BOTTOM ROW product: compact portable white/gray vertical box, large charcoal black front grille, dark small screen/control panel near top front, yellow accent line low on front, black cable/hose loop on left side, silver top handle, small feet, red-accented laser cleaning handpiece at cable end. Match photo/thumbnail only. No big wire reel, external chiller or welding gun invention.",
+      "powersW": [
+        200,
+        300,
+        500
+      ],
+      "src": "assets/product-drawings/cleaning-fiber-pulsed-air-dimensional-v2.jpg",
+      "prompt": "Create ONE high-resolution landscape 3:2 Sahand Laser dimensional sheet. Input1 is approved template layout/red Persian-English Sahand logo ONLY; input2 is actual catalog reference. Use ONLY this product in input2: BOTTOM ROW product: compact portable white/gray vertical box, large charcoal black front grille, dark small screen/control panel near top front, yellow accent line low on front, black cable/hose loop on left side, silver top handle, small feet, red-accented laser cleaning handpiece at cable end. Match photo/thumbnail only. No big wire reel, external chiller or welding gun invention. Large faithful elevated three-quarter product render upper left, preserve actual external shape/color/controls. Red سهند لیزر / SAHAND LASER logo top left from input1. Right navy header 'PULSED / AIR-COOLED', Persian 'دستگاه تمیزکاری لیزر فایبر پالسی هواخنک', English 'Air-cooled Pulsed Laser Cleaner'. Right panel 'ابعاد کلی دستگاه'/'Overall Dimensions', 'L × W × H', '600 × 350 × 600 mm'. Dimensions are documented in supplied catalog in cm, converted to mm. Small isometric blue line drawing of this exact complete main cabinet under right panel with length600 mm(L), width350 mm(W), height600 mm(H). Bottom three coherent schematic orthographic TOP/SIDE/FRONT views matching this product, bilingual captions 'نمای بالا / Top View', 'نمای جانبی / Side View', 'نمای جلو / Front View'. Top arrows L600/W350; side L600/H600; front W350/H600. Treat L as long/depth side, W as front width. Fine blue border, pale blue upper backdrop, white technical drawings area, navy section tab. Footer exact 'ابعاد بر اساس کاتالوگ سهند لیزر | نماها شماتیک هستند' and 'Unit: mm'. No unrelated equipment, invented internals, manufacturing precision claims, cutting machine or welding sheet copied. Crisp clear accurate Persian and numbers.",
+      "revisionPrompt": "Edit image1 ONLY to fix actual identity of AIR-COOLED cleaner, using BOTTOM ROW product photo and BOTTOM RIGHT dimensional thumbnail in image2. Preserve entire sheet layout, logo, all headings, all numbers 600×350×600 mm, captions and dimension arrows. Existing machine wrongly copies middle water-cooled cabinet! Replace render and three technical views and isometric with bottom-row compact industrial air-cooled portable cleaner: silver/off-white/gray box, dark gray front with small rectangular control screen on upper fascia and a LARGE BLACK HONEYCOMB FRONT GRILLE below, narrow YELLOW trim near lower front, sturdy dark rounded corner rails/feet, plain light side panels, simple SILVER horizontal top carrying handle fixed close to top. Black cable loop on left, red cleaning handpiece. NO continuous red stripe anywhere on cabinet. NO X-shaped side perforations. NO tall vertical T-pole (the red/gray T pole belongs to TOP ROW cleaner, not this one). NO water-cooled middle-row cabinet body. Main cabinet should look like compact rugged case, not a tall wheeled water chiller. Accurately match bottom reference photograph/thumbnail. Retain white and gray true product colors, tiny yellow accent. Orthographic and isometric views must match corrected main render. This is external schematic, no internals. Preserve all accurate Persian text and dimensional values."
+    }
+  ]
+}
