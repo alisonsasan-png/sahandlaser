@@ -23,3 +23,10 @@
 @media(max-width:1100px){.lab-cards{grid-template-columns:repeat(2,1fr)}[data-preview-theme=technical] .lab-cards{grid-template-columns:repeat(3,1fr)}[data-preview-theme=rail] .lab-primary-menu{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:700px){.lab-browser{padding:20px 14px 70px}.lab-heading{display:block;padding:25px 0}.lab-menu-toggle{margin-top:18px;width:100%}.lab-category-menu{grid-template-columns:repeat(2,1fr)!important}.lab-category{padding:15px 12px;min-height:95px!important}.lab-category>span{font-size:13px}.lab-layout{grid-template-columns:1fr!important}.lab-filters{position:static}.lab-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px}.lab-photo{height:150px!important}.lab-card-copy{padding:12px}.lab-card h2{font-size:13px}.lab-card p{font-size:11px}.lab-card small{font-size:9px}.lab-search{gap:8px}.lab-search input{font-size:13px}[data-preview-theme=split] .lab-browser{display:block}[data-preview-theme=split] .lab-primary-menu{position:static}[data-preview-theme=rail] .lab-card{display:flex}.lab-dimensional,.lab-comparison,.lab-family{padding:16px}.lab-dimensional h2,.lab-comparison h2,.lab-family h2{font-size:19px}.lab-product-nav{font-size:12px}.lab-preview-badge{font-size:10px;bottom:8px;right:8px}.lab-topline{font-size:11px}.lab-graphic-menu{padding:12px}.lab-menu-scene svg{height:100px}}
 @media(prefers-reduced-motion:reduce){.lab-browser *,.lab-browser *:before,.lab-browser *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.laser-trace rect{stroke-dashoffset:0}.lab-category{transform:none!important}}
+
+/* Keep the product photograph and its specification column in separate layers. */
+#view-product main>.grid{align-items:start;isolation:isolate}
+#view-product main>.grid>div{position:relative;min-width:0}
+#view-product #spin-viewer{position:relative;z-index:0;isolation:isolate;overflow:hidden}
+#view-product #spin-viewer img{z-index:0}
+#view-product main>.grid>div:nth-child(2){z-index:1;background:var(--lab-panel,#fff);border-radius:18px}

@@ -78,7 +78,7 @@
     if(state.category==='cutting'&&!modern){const label=document.createElement('label');label.className='lab-check';label.innerHTML=`<input type="checkbox" ${state.tube?'checked':''}> فقط ورق و لوله`;label.querySelector('input').onchange=e=>{state.tube=e.target.checked;draw();};root.querySelector('.lab-filters').append(label);}
     root.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>{lastCategory=b.dataset.category;Object.assign(state,{category:b.dataset.category,group:'all',size:'all',cabinet:false,tube:false});draw();});
     root.querySelectorAll('[data-group]').forEach(b=>b.onclick=()=>{state.group=b.dataset.group;draw();});
-    root.querySelector('[data-reset]').onclick=()=>{Object.assign(state,{category:'all',group:'all',size:'all',cabinet:false,query:''});draw();};
+    root.querySelector('[data-reset]').onclick=()=>{Object.assign(state,{category:'all',group:'all',size:'all',cabinet:false,tube:false,query:''});lastCategory='all';draw();};
     root.querySelector('#lab-size')?.addEventListener('change',e=>{state.size=e.target.value;draw();});
     root.querySelector('#lab-cabinet')?.addEventListener('change',e=>{state.cabinet=e.target.checked;draw();});
     const search=root.querySelector('#lab-search');search.oninput=e=>{const pos=e.target.selectionStart;state.query=e.target.value;draw();const next=root.querySelector('#lab-search');next.focus();next.setSelectionRange(pos,pos);};
@@ -113,7 +113,7 @@
     extra.querySelectorAll('.lab-compare-picks input').forEach(i=>i.onchange=()=>{compare=[...extra.querySelectorAll('.lab-compare-picks input:checked')].map(x=>x.value);drawComparison();});drawComparison();
     const modelList=document.getElementById('models-list');if(modelList)modelList.innerHTML=list.filter(p=>p.category===item.category).slice(0,12).map(p=>`<a class="lab-peer" href="${route('#product='+encodeURIComponent(p.code))}">${esc(p.name)}</a>`).join('');
   };
-  window.openCategory=id=>{Object.assign(state,{category:id,group:'all',size:'all',cabinet:false});lastCategory=id;location.hash='products';draw();};
+  window.openCategory=id=>{Object.assign(state,{category:id,group:'all',size:'all',cabinet:false,tube:false});lastCategory=id;location.hash='products';draw();};
   window.filterCatalog=id=>window.openCategory(id);
   const priorRoute=window.applyRoute;
   window.applyRoute=function(){priorRoute();if(location.hash==='#products'){state.category=lastCategory;draw();}};
@@ -127,7 +127,7 @@
     const direct=new URL(location.href).searchParams.get('product');
     if(direct&&registry[direct])history.replaceState(null,'',location.pathname+location.search+'#product='+encodeURIComponent(direct));
     draw();window.applyRoute();
-    if(!location.hash)location.hash='products';
+    if(!location.hash)location.hash=config.homeOnLoad?'home':'products';
     window.PREVIEW_LAB_DIAGNOSTICS={products:list.length,sheets:sheetByCode.size,version:config.number,records:list};
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
