@@ -11,6 +11,8 @@
   - product route `#product=P58-1` verified with Main → Dimensional Drawing → X-Ray
   - language buttons switch FA/EN/AR/TR direction state
 - media_qa:
+  - 106 product image references audited against the repository tree; missing=0 after the verified docs-path normalization
+  - all 32 Preview 50 X-Ray URLs returned HTTP 200
   - main image, dimensional drawing, preview-32 image, and preview-50 X-Ray returned HTTP 200
   - unavailable media is shown as an empty state; no substitute image is assigned
 - previews:
