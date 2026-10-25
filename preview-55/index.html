@@ -1174,7 +1174,7 @@ for(const [kind,name] of [['custom','برش سایز سفارشی'],['tube','ب�
     const p=all.find(x=>x.code===code||x.name.includes(code));
     document.querySelectorAll('.lab-xray-box').forEach(x=>x.remove());
     if(!p)return;
-    const section=document.createElement('section');section.className='lab-xray-box';
+    const section=document.createElement('section');section.className='lab-xray-box';section.dataset.code=code;
     section.innerHTML='<h2>مقایسه تصویر اصلی و X-Ray</h2><p class="lab-xray-note">با موس یا انگشت روی تصویر بکشید تا بین تصویر اصلی و نمای X-Ray همین محصول جابه‌جا شوید.</p><div class="lab-xray-compare" id="lab-xray-compare"><img src="../assets/preview-32-products/'+String(p.number).padStart(2,'0')+'.jpg" alt="'+p.name+'"><img class="lab-xray-layer" src="../assets/preview-50-xray/'+String(p.number).padStart(2,'0')+'.jpg" alt="X-Ray '+p.name+'"><div class="lab-xray-line"><span>‹›</span></div></div>');
     root.appendChild(section);
     const box=section.querySelector('#lab-xray-compare');let drag=false;
