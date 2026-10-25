@@ -24,11 +24,11 @@ if(typeof baseRender==='function')window.renderProduct=function(code){
     const same=products.filter(x=>x.code===code);
     p=code==='CUT-3015-1'?same.find(x=>x.number===27):(same.length===1?same[0]:null);
   }
-  if(!p)return;
+  const familyIds=p?(window.PREVIEW56_FAMILY_SHEETS[p.number]||[]):(window.PREVIEW56_ORIGINAL_FAMILY_SHEETS[code]||[]);
+  if(!p&&!familyIds.length)return;
   const target=document.querySelector('.lab-product-extra');
   if(!target)return;
   const drawing=target.querySelector('.lab-dimensional');
-  const familyIds=window.PREVIEW56_FAMILY_SHEETS[p.number]||[];
   if(drawing&&familyIds.length){
     const empty=drawing.querySelector('.lab-no-sheet');if(empty)empty.remove();
     const heading=document.createElement('h3');heading.textContent='نقشه‌های مرجع هم‌خانواده';drawing.append(heading);
@@ -41,6 +41,7 @@ if(typeof baseRender==='function')window.renderProduct=function(code){
       link.append(img,caption);drawing.append(link);
     }
   }
+  if(!p)return;
   const section=document.createElement('section');section.className='p56-product-xray';
   const title=document.createElement('h2');title.textContent='تصویر اصلی و X-Ray '+p.name;
   const stage=document.createElement('div');stage.className='p56-compare';stage.style.setProperty('--reveal','50%');
