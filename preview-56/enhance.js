@@ -19,7 +19,11 @@ const baseRender=window.renderProduct;
 if(typeof baseRender==='function')window.renderProduct=function(code){
   baseRender(code);
   document.querySelectorAll('.p56-product-xray').forEach(n=>n.remove());
-  const p=products.find(x=>window.PREVIEW56_ROUTE_CODE(x.number)===code);
+  let p=products.find(x=>window.PREVIEW56_ROUTE_CODE(x.number)===code);
+  if(!p){
+    const same=products.filter(x=>x.code===code);
+    p=code==='CUT-3015-1'?same.find(x=>x.number===27):(same.length===1?same[0]:null);
+  }
   if(!p)return;
   const target=document.querySelector('.lab-product-extra');
   if(!target)return;
