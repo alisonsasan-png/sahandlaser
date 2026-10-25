@@ -1,6 +1,6 @@
 /* Preview 56: full site additions, using Preview 29 categories, Preview 33 sheets, Preview 50 X-rays. */
 (function(){'use strict';
-const products=window.PREVIEW32_IMAGES||[],sheets=window.PREVIEW_DIMENSIONAL_SHEETS||[];
+const products=window.PREVIEW32_IMAGES||[],sheets=window.PREVIEW_DIMENSIONAL_SHEETS||[];\nconst PREVIEW57_FULL3_CATEGORIES=new Set(['cutting','welding','marking','source']);\nconst isFull3=p=>PREVIEW57_FULL3_CATEGORIES.has(p?.category);
 const labels=window.PREVIEW57_CATEGORY_LABELS||{},root=document.createElement('section');
 root.id='preview56-catalog';root.className='p56-wrap';
 root.innerHTML='<div class="p56-head"><span>۳۲ محصول با نمای X-Ray</span><h2>محصولات تصویری سهند لیزر</h2><p>هر محصول صفحه‌ی اختصاصی دارد؛ تصویر اصلی و X-Ray با اسلایدر لمسی مقایسه می‌شوند و نقشه‌های ابعادی موجود نیز نمایش داده می‌شوند.</p></div><div id="p56-categories" class="p56-categories"></div><div class="p56-search"><input id="p56-search" type="search" placeholder="جست‌وجوی نام یا مدل" aria-label="جست‌وجوی محصول"><span id="p56-count"></span></div><div id="p56-cards" class="p56-cards"></div><div id="preview56-sheets" class="p56-sheets"><h2>نقشه‌های ابعادی Preview 33</h2><p>تمام شیت‌های ساخته‌شده در این مجموعه در دسترس هستند. نقشه‌های تخمینی با برچسب مشخص شده‌اند.</p><div id="p56-sheet-cards" class="p56-sheet-cards"></div></div>';
@@ -42,7 +42,7 @@ if(typeof baseRender==='function')window.renderProduct=function(code){
       link.append(img,caption);drawing.append(link);
     }
   }
-  if(!p&&!existingXray)return;
+  if(!p&&!existingXray)return;\n  if(!needsThree&&!existingXray)return;
   const catalogItem=!p?(window.PREVIEW29_PRODUCTS||[]).find(x=>x.code===code):null;
   const displayName=p?p.name:(catalogItem?.name||code);
   const section=document.createElement('section');section.className='p56-product-xray';
