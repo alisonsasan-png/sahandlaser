@@ -11,6 +11,16 @@ window.PREVIEW56_FAMILY_SHEETS={
   28:["cabin-3015-pro"],29:["single-3015-standard-rotary"],
   30:["single-6020-pro-rotary"],32:["cleaning-fiber-continuous"]
 };
+window.PREVIEW56_ORIGINAL_FAMILY_SHEETS={
+  "CL-003":["cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
+  "CLEAN-GENERIC":["cleaning-fiber-continuous","cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
+  "MK-FIBER-GENERIC":["marking-fiber-desktop","marking-fiber-portable","marking-fiber-flying","marking-fiber-table"],
+  "ML-001":["marking-fiber-desktop"],"ML-002":["marking-fiber-desktop"],
+  "ML-003":["marking-fiber-desktop"],"ML-008":["marking-fiber-desktop"],
+  "WELD-1500":["weld-fiber-base"],"WELD-2000":["weld-fiber-base"],
+  "WELD-3000":["weld-fiber-base"],"WL-002":["weld-fiber-base"],
+  "WL-004":["weld-fiber-air-cooled"]
+};
 window.PREVIEW56_CATEGORY_LABELS={cutting:"برش",marking:"حکاکی و مارکینگ",welding:"جوش",cleaning:"تمیزکاری"};
 
 /* Register all 32 illustrated items as genuine product routes in the Preview 56 site.
