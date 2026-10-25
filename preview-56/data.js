@@ -26,13 +26,20 @@ for(const item of window.PREVIEW32_IMAGES||[]){
   const matching=preview56Catalog.find(p=>p.code===item.code&&p.category===item.category);
   const verifiedMatch=matching&&item.number!==1;
   const sizeMatch=item.name.match(/(?:3015|6020|6025|1325|1390|1610|9060|6040)/);
+  const knownSize=sizeMatch?sizeMatch[0]:'برای این مدل تأیید نشده';
+  const table=/تک.?میز/.test(item.name)?'تک میز':/دو.?میز/.test(item.name)?'دو میز':'در نام مدل مشخص نشده';
+  const cabin=/کابین/.test(item.name)?'کابین‌دار':'در نام مدل مشخص نشده';
+  const tube=/لوله/.test(item.name)?'در نام مدل ذکر شده':'در نام مدل مشخص نشده';
+  const usage={cutting:'برش',marking:'حکاکی و مارکینگ',welding:'جوش',cleaning:'تمیزکاری'}[item.category]||item.category;
   const derivedSpecs=[
-    {label:'مدل',value:item.code,scope:'identity'},
-    {label:'گروه محصول',value:window.PREVIEW56_CATEGORY_LABELS[item.category]||item.category,scope:'identity'},
-    ...(sizeMatch?[{label:'گروه ابعادی در نام مدل',value:sizeMatch[0],scope:'name_only'}]:[]),
-    ...(/کابین/.test(item.name)?[{label:'پیکربندی کابین در نام مدل',value:'کابین‌دار',scope:'name_only'}]:[]),
-    ...(/لوله/.test(item.name)?[{label:'کاربری لوله در نام مدل',value:'ذکر شده',scope:'name_only'}]:[]),
-    ...(/تک.?میز/.test(item.name)?[{label:'ساختار میز در نام مدل',value:'تک‌میز',scope:'name_only'}]:[])
+    {label:'مدل',value:item.name,scope:'identity'},
+    {label:'گروه ابعادی',value:knownSize,scope:sizeMatch?'name_only':'unverified'},
+    {label:'کابین',value:cabin,scope:'name_only'},
+    {label:'لوله‌بر',value:tube,scope:'name_only'},
+    {label:'گروه ابعادی محصول',value:knownSize,scope:sizeMatch?'name_only':'unverified'},
+    {label:'ساختار میز',value:table,scope:'name_only'},
+    {label:'پیکربندی کابین در نام مدل',value:cabin,scope:'name_only'},
+    {label:'گروه کاربرد محصول',value:usage,scope:'identity'}
   ];
   preview56Catalog.push({
     code,name:item.name,category:item.category,
