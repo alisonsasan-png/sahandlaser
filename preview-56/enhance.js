@@ -10,14 +10,51 @@ let active='all',search='';
 const cats=[['all','همه'],['cutting','برش'],['welding','جوش'],['marking','حکاکی و مارکینگ'],['cleaning','تمیزکاری']];
 const catEl=root.querySelector('#p56-categories'),cards=root.querySelector('#p56-cards');
 for(const [key,title] of cats){const b=document.createElement('button');b.type='button';b.textContent=title;b.dataset.category=key;b.onclick=()=>{active=key;draw()};catEl.append(b)}
-function draw(){catEl.querySelectorAll('button').forEach(b=>b.classList.toggle('is-active',b.dataset.category===active));const list=products.filter(p=>(active==='all'||p.category===active)&&(!search||(p.code+' '+p.name).toLocaleLowerCase().includes(search)));root.querySelector('#p56-count').textContent=list.length+' محصول';cards.replaceChildren();for(const p of list){const article=document.createElement('article');article.className='p56-card';const link=document.createElement('a');link.href='preview-56/product.html?id='+p.number;const img=document.createElement('img');img.src=p.image;img.alt=p.name;img.loading='lazy';const pair=document.createElement('div');pair.className='p56-card-pair';const original=document.createElement('div');const xr=document.createElement('div');const ximg=document.createElement('img');ximg.src='assets/preview-50-xray/'+String(p.number).padStart(2,'0')+'.jpg';ximg.alt='نمای X-Ray '+p.name;ximg.loading='lazy';const firstLabel=document.createElement('span');firstLabel.textContent='تصویر اصلی';const secondLabel=document.createElement('span');secondLabel.textContent='X-Ray';original.append(img,firstLabel);xr.append(ximg,secondLabel);pair.append(original,xr);link.append(pair);article.append(link);const box=document.createElement('div');const small=document.createElement('small');small.textContent=(labels[p.category]||p.category)+' · '+p.code;const h=document.createElement('h3');h.textContent=p.name;const open=document.createElement('a');open.className='p56-open';open.href=link.href;open.textContent='تصویر، X-Ray و نقشه ←';box.append(small,h,open);article.append(box);cards.append(article)}}
+function draw(){catEl.querySelectorAll('button').forEach(b=>b.classList.toggle('is-active',b.dataset.category===active));const list=products.filter(p=>(active==='all'||p.category===active)&&(!search||(p.code+' '+p.name).toLocaleLowerCase().includes(search)));root.querySelector('#p56-count').textContent=list.length+' محصول';cards.replaceChildren();for(const p of list){const article=document.createElement('article');article.className='p56-card';const link=document.createElement('a');link.href=location.pathname+location.search+'#product='+window.PREVIEW56_ROUTE_CODE(p.number);const img=document.createElement('img');img.src=p.image;img.alt=p.name;img.loading='lazy';const pair=document.createElement('div');pair.className='p56-card-pair';const original=document.createElement('div');const xr=document.createElement('div');const ximg=document.createElement('img');ximg.src='assets/preview-50-xray/'+String(p.number).padStart(2,'0')+'.jpg';ximg.alt='نمای X-Ray '+p.name;ximg.loading='lazy';const firstLabel=document.createElement('span');firstLabel.textContent='تصویر اصلی';const secondLabel=document.createElement('span');secondLabel.textContent='X-Ray';original.append(img,firstLabel);xr.append(ximg,secondLabel);pair.append(original,xr);link.append(pair);article.append(link);const box=document.createElement('div');const small=document.createElement('small');small.textContent=(labels[p.category]||p.category)+' · '+p.code;const h=document.createElement('h3');h.textContent=p.name;const open=document.createElement('a');open.className='p56-open';open.href=link.href;open.textContent='تصویر، X-Ray و نقشه ←';box.append(small,h,open);article.append(box);cards.append(article)}}
 root.querySelector('#p56-search').oninput=e=>{search=e.target.value.toLocaleLowerCase().trim();draw()};draw();
 const sheetCards=root.querySelector('#p56-sheet-cards');
 for(const s of sheets){const article=document.createElement('article');article.className='p56-sheet';const a=document.createElement('a');a.href=s.src;a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.src=s.src;img.alt='نقشه ابعادی '+s.title;img.loading='lazy';const h=document.createElement('h3');h.textContent=s.title;const small=document.createElement('small');small.textContent=s.dimensions.join(' × ')+' mm'+(s.estimated?' · تخمینی':'');a.append(img,h,small);article.append(a);sheetCards.append(article)}
-/* Add the matching X-ray to the native catalog product route too. */
-const byCode=new Map();for(const p of products){if(!byCode.has(p.code))byCode.set(p.code,p);else if(p.code==='CUT-3015-1'&&p.number===27)byCode.set(p.code,p);else if(p.code==='LC6040')byCode.set(p.code,null)}
+/* The main site's own product route now contains the image, drawing and X-Ray. */
 const baseRender=window.renderProduct;
-if(typeof baseRender==='function')window.renderProduct=function(code){baseRender(code);document.querySelectorAll('.p56-product-xray').forEach(n=>n.remove());const p=byCode.get(code);if(!p)return;const target=document.querySelector('.lab-product-extra')||document.getElementById('product-large-sections');if(!target)return;
-const section=document.createElement('section');section.className='p56-product-xray';const title=document.createElement('h2');title.textContent='تصویر اصلی و X-Ray '+p.name;const stage=document.createElement('div');stage.className='p56-compare';stage.style.setProperty('--reveal','50%');const n=String(p.number).padStart(2,'0');const a=document.createElement('img');a.src='assets/preview-32-products/'+n+'.jpg';a.alt='تصویر اصلی '+p.name;const x=document.createElement('img');x.src='assets/preview-50-xray/'+n+'.jpg';x.alt='نمای X-Ray '+p.name;x.className='p56-xray';const line=document.createElement('span');line.className='p56-line';stage.append(a,x,line);const range=document.createElement('input');range.type='range';range.min='0';range.max='100';range.value='50';range.setAttribute('aria-label','میزان آشکارشدن X-Ray');const note=document.createElement('p');note.textContent='با موس یا انگشت روی تصویر بکشید؛ این نمای داخلی بازسازی مفهومی است.';section.append(title,stage,range,note);target.before(section);
-let drag=false;function move(e){const rect=stage.getBoundingClientRect(),v=Math.max(0,Math.min(100,(e.clientX-rect.left)/rect.width*100));stage.style.setProperty('--reveal',v+'%');range.value=v}stage.addEventListener('pointerdown',e=>{drag=true;stage.setPointerCapture(e.pointerId);move(e)});stage.addEventListener('pointermove',e=>{if(drag)move(e)});stage.addEventListener('pointerup',()=>drag=false);stage.addEventListener('pointercancel',()=>drag=false);range.oninput=()=>stage.style.setProperty('--reveal',range.value+'%')};
+if(typeof baseRender==='function')window.renderProduct=function(code){
+  baseRender(code);
+  document.querySelectorAll('.p56-product-xray').forEach(n=>n.remove());
+  const p=products.find(x=>window.PREVIEW56_ROUTE_CODE(x.number)===code);
+  if(!p)return;
+  const target=document.querySelector('.lab-product-extra');
+  if(!target)return;
+  const drawing=target.querySelector('.lab-dimensional');
+  const familyIds=window.PREVIEW56_FAMILY_SHEETS[p.number]||[];
+  if(drawing&&familyIds.length){
+    const empty=drawing.querySelector('.lab-no-sheet');if(empty)empty.remove();
+    const heading=document.createElement('h3');heading.textContent='نقشه‌های مرجع هم‌خانواده';drawing.append(heading);
+    const warning=document.createElement('p');warning.textContent='این نقشه‌ها متعلق به خانوادهٔ مشابه‌اند؛ ابعاد نسخهٔ دقیق این محصول تأیید نشده است.';drawing.append(warning);
+    for(const id of familyIds){
+      const s=sheets.find(x=>x.id===id);if(!s)continue;
+      const link=document.createElement('a');link.href=s.src;link.target='_blank';link.rel='noopener';
+      const img=document.createElement('img');img.src=s.src;img.alt='نقشه مرجع '+s.title;img.loading='lazy';
+      const caption=document.createElement('span');caption.textContent=s.title+' · '+s.dimensions.join(' × ')+' mm'+(s.estimated?' · تخمینی':'');
+      link.append(img,caption);drawing.append(link);
+    }
+  }
+  const section=document.createElement('section');section.className='p56-product-xray';
+  const title=document.createElement('h2');title.textContent='تصویر اصلی و X-Ray '+p.name;
+  const stage=document.createElement('div');stage.className='p56-compare';stage.style.setProperty('--reveal','50%');
+  const n=String(p.number).padStart(2,'0');
+  const photo=document.createElement('img');photo.src='assets/preview-32-products/'+n+'.jpg';photo.alt='تصویر اصلی '+p.name;
+  const xray=document.createElement('img');xray.src='assets/preview-50-xray/'+n+'.jpg';xray.alt='نمای X-Ray '+p.name;xray.className='p56-xray';
+  const line=document.createElement('span');line.className='p56-line';
+  stage.append(photo,xray,line);
+  const range=document.createElement('input');range.type='range';range.min='0';range.max='100';range.value='50';range.setAttribute('aria-label','میزان آشکارشدن X-Ray');
+  const note=document.createElement('p');note.textContent='با موس یا انگشت روی تصویر بکشید؛ این نمای داخلی بازسازی مفهومی است.';
+  section.append(title,stage,range,note);
+  if(drawing)drawing.after(section);else target.append(section);
+  let drag=false;
+  function move(e){const rect=stage.getBoundingClientRect(),v=Math.max(0,Math.min(100,(e.clientX-rect.left)/rect.width*100));stage.style.setProperty('--reveal',v+'%');range.value=v}
+  stage.addEventListener('pointerdown',e=>{drag=true;stage.setPointerCapture(e.pointerId);move(e)});
+  stage.addEventListener('pointermove',e=>{if(drag)move(e)});
+  stage.addEventListener('pointerup',()=>drag=false);
+  stage.addEventListener('pointercancel',()=>drag=false);
+  range.oninput=()=>stage.style.setProperty('--reveal',range.value+'%');
+};
 })();
