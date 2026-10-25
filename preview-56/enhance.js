@@ -25,7 +25,8 @@ if(typeof baseRender==='function')window.renderProduct=function(code){
     p=code==='CUT-3015-1'?same.find(x=>x.number===27):(same.length===1?same[0]:null);
   }
   const familyIds=p?(window.PREVIEW56_FAMILY_SHEETS[p.number]||[]):(window.PREVIEW56_ORIGINAL_FAMILY_SHEETS[code]||[]);
-  if(!p&&!familyIds.length)return;
+  const existingXray=window.PREVIEW56_EXISTING_XRAYS[code];
+  if(!p&&!familyIds.length&&!existingXray)return;
   const target=document.querySelector('.lab-product-extra');
   if(!target)return;
   const drawing=target.querySelector('.lab-dimensional');
@@ -41,13 +42,15 @@ if(typeof baseRender==='function')window.renderProduct=function(code){
       link.append(img,caption);drawing.append(link);
     }
   }
-  if(!p)return;
+  if(!p&&!existingXray)return;
+  const catalogItem=!p?(window.PREVIEW29_PRODUCTS||[]).find(x=>x.code===code):null;
+  const displayName=p?p.name:(catalogItem?.name||code);
   const section=document.createElement('section');section.className='p56-product-xray';
-  const title=document.createElement('h2');title.textContent='تصویر اصلی و X-Ray '+p.name;
+  const title=document.createElement('h2');title.textContent='تصویر اصلی و X-Ray '+displayName;
   const stage=document.createElement('div');stage.className='p56-compare';stage.style.setProperty('--reveal','50%');
-  const n=String(p.number).padStart(2,'0');
-  const photo=document.createElement('img');photo.src='assets/preview-32-products/'+n+'.jpg';photo.alt='تصویر اصلی '+p.name;
-  const xray=document.createElement('img');xray.src='assets/preview-50-xray/'+n+'.jpg';xray.alt='نمای X-Ray '+p.name;xray.className='p56-xray';
+  const n=p?String(p.number).padStart(2,'0'):null;
+  const photo=document.createElement('img');photo.src=p?'assets/preview-32-products/'+n+'.jpg':catalogItem.image;photo.alt='تصویر اصلی '+displayName;
+  const xray=document.createElement('img');xray.src=p?'assets/preview-50-xray/'+n+'.jpg':existingXray;xray.alt='نمای X-Ray '+displayName;xray.className='p56-xray';
   const line=document.createElement('span');line.className='p56-line';
   stage.append(photo,xray,line);
   const range=document.createElement('input');range.type='range';range.min='0';range.max='100';range.value='50';range.setAttribute('aria-label','میزان آشکارشدن X-Ray');
