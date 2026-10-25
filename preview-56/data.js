@@ -25,11 +25,20 @@ for(const item of window.PREVIEW32_IMAGES||[]){
   const sheet=sheetId?preview56SheetRegistry.find(s=>s.id===sheetId):undefined;
   const matching=preview56Catalog.find(p=>p.code===item.code&&p.category===item.category);
   const verifiedMatch=matching&&item.number!==1;
+  const sizeMatch=item.name.match(/(?:3015|6020|6025|1325|1390|1610|9060|6040)/);
+  const derivedSpecs=[
+    {label:'مدل',value:item.code,scope:'identity'},
+    {label:'گروه محصول',value:window.PREVIEW56_CATEGORY_LABELS[item.category]||item.category,scope:'identity'},
+    ...(sizeMatch?[{label:'گروه ابعادی در نام مدل',value:sizeMatch[0],scope:'name_only'}]:[]),
+    ...(/کابین/.test(item.name)?[{label:'پیکربندی کابین در نام مدل',value:'کابین‌دار',scope:'name_only'}]:[]),
+    ...(/لوله/.test(item.name)?[{label:'کاربری لوله در نام مدل',value:'ذکر شده',scope:'name_only'}]:[]),
+    ...(/تک.?میز/.test(item.name)?[{label:'ساختار میز در نام مدل',value:'تک‌میز',scope:'name_only'}]:[])
+  ];
   preview56Catalog.push({
     code,name:item.name,category:item.category,
     subgroup:'محصولات تصویری پیش‌نمایش ۳۲',
     description:verifiedMatch?matching.description:'تصویر اصلی و X-Ray بازسازی‌شدهٔ این محصول در همین صفحه قرار دارد. ابعاد فقط در صورت وجود نقشهٔ منطبق یا مرجع خانواده نمایش داده می‌شوند.',
-    specs:[{label:'شناسه محصول',value:item.code,scope:'identity'},...(verifiedMatch?matching.specs||[]:[])],
+    specs:verifiedMatch?[{label:'شناسه تصویر',value:item.code,scope:'identity'},...(matching.specs||[])]:derivedSpecs,
     image:item.image,imageLabel:'تصویر محصول',imageDecision:'use',
     preview56Number:item.number,preview56OriginalCode:item.code,
     ...(sheet?{sheet,sheetId:sheet.id}:{}),
