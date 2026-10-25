@@ -2,14 +2,15 @@
    Only exact model matches are marked exact. Other sheets are clearly family references. */
 window.PREVIEW56_SHEET_MATCHES={23:"marking-fiber-portable",27:"CUT-3015-1"};
 window.PREVIEW56_FAMILY_SHEETS={
-  1:["CUT-3015-1"],
-  4:["single-3015-standard-rotary"],
-  8:["weld-fiber-base"],
-  17:["marking-fiber-desktop"],18:["marking-fiber-desktop"],
-  19:["marking-fiber-desktop"],20:["marking-fiber-desktop"],
-  24:["marking-fiber-table"],25:["weld-fiber-base"],
-  28:["cabin-3015-pro"],29:["single-3015-standard-rotary"],
-  30:["single-6020-pro-rotary"],32:["cleaning-fiber-continuous"]
+  1:["CUT-3015-1"],2:["CUT-6020-1"],3:["CUT-6020-1"],4:["single-3015-standard-rotary"],
+  5:["CUT-6020-1"],6:["CUT-6020-1"],7:["CUT-3015-1"],8:["weld-fiber-base"],
+  9:["CUT-3015-1"],10:["CUT-6020-1"],11:["CUT-3015-1"],12:["CUT-3015-1"],
+  13:["CUT-3015-1"],14:["CUT-3015-2"],15:["CUT-6020-2"],16:["CUT-3015-1"],
+  17:["marking-fiber-desktop"],18:["marking-fiber-desktop"],19:["marking-fiber-desktop"],
+  20:["marking-fiber-desktop"],21:["marking-fiber-desktop"],22:["marking-fiber-desktop"],
+  24:["marking-fiber-table"],25:["weld-fiber-base"],26:["weld-fiber-base"],
+  28:["cabin-3015-pro"],29:["single-3015-standard-rotary"],30:["single-6020-pro-rotary"],
+  31:["weld-fiber-base"],32:["cleaning-fiber-continuous"]
 };
 window.PREVIEW56_EXISTING_XRAYS={
   "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg"
