@@ -29,5 +29,7 @@
 - product_routes:
   - 106 base products + 32 visual products = 138 route entries confirmed
   - CUT-3015-1, visual welding P58-8, and visual marking P58-17 verified in deployed Chrome DOM with Main → Drawing → X-Ray
+- qa_tooling:
+  - deployed `#qa` route renders all 138 products and their available media for browser-side verification
 - unresolved:
-  - a complete per-product visual audit remains; products with no verified media remain empty rather than receiving substitutes
+  - products with no verified media remain empty rather than receiving substitutes
