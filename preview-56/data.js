@@ -14,7 +14,8 @@ window.PREVIEW56_FAMILY_SHEETS={
 window.PREVIEW56_EXISTING_XRAYS={
   "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
   "ML-007":"assets/preview-56-xray/ML-007-concept-v1.jpg",
-  "CUT-6020-1":"assets/preview-56-xray/CUT-6020-1-concept-v1.jpg"
+  "CUT-6020-1":"assets/preview-56-xray/CUT-6020-1-concept-v1.jpg",
+  "WL-003":"assets/preview-56-xray/WL-003-concept-v1.jpg"
 };
 window.PREVIEW56_ORIGINAL_FAMILY_SHEETS={
   "CUT-3015-3":["CUT-3015-1"],
