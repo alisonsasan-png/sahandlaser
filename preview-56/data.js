@@ -23,11 +23,13 @@ for(const item of window.PREVIEW32_IMAGES||[]){
   if(preview56Catalog.some(p=>p.code===code))continue;
   const sheetId=window.PREVIEW56_SHEET_MATCHES[item.number];
   const sheet=sheetId?preview56SheetRegistry.find(s=>s.id===sheetId):undefined;
+  const matching=preview56Catalog.find(p=>p.code===item.code&&p.category===item.category);
+  const verifiedMatch=matching&&item.number!==1;
   preview56Catalog.push({
     code,name:item.name,category:item.category,
     subgroup:'محصولات تصویری پیش‌نمایش ۳۲',
-    description:'تصویر اصلی و X-Ray بازسازی‌شدهٔ این محصول در همین صفحه قرار دارد. ابعاد فقط در صورت وجود نقشهٔ منطبق یا مرجع خانواده نمایش داده می‌شوند.',
-    specs:[{label:'شناسه محصول',value:item.code,scope:'identity'}],
+    description:verifiedMatch?matching.description:'تصویر اصلی و X-Ray بازسازی‌شدهٔ این محصول در همین صفحه قرار دارد. ابعاد فقط در صورت وجود نقشهٔ منطبق یا مرجع خانواده نمایش داده می‌شوند.',
+    specs:[{label:'شناسه محصول',value:item.code,scope:'identity'},...(verifiedMatch?matching.specs||[]:[])],
     image:item.image,imageLabel:'تصویر محصول',imageDecision:'use',
     preview56Number:item.number,preview56OriginalCode:item.code,
     ...(sheet?{sheet,sheetId:sheet.id}:{}),
