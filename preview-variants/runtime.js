@@ -1,124 +1,97 @@
-/* Shared presentation runtime for Preview 58–70. It never changes Preview 57. */
+/* Independent product-site renderer for Previews 58–70.
+   This file is intentionally scoped to the design alternatives only. */
 (function(){
 'use strict';
-const meta=document.querySelector('meta[name="preview-variant"]');
-const v=Number(meta?.content||document.body?.dataset.variant||58);
-const configs={
-58:{name:'Minimal Industrial',kicker:'PRECISION / SIMPLICITY',note:'Clean industrial discovery with generous space.',mode:'minimal'},
-59:{name:'Premium Corporate',kicker:'ENGINEERED FOR TRUST',note:'A refined B2B manufacturer presentation.',mode:'premium'},
-60:{name:'Modern Technology',kicker:'LASER SYSTEMS / NEXT',note:'A contemporary technical interface for modern production.',mode:'tech'},
-61:{name:'Engineering Focused',kicker:'TECHNICAL CONTROL ROOM',note:'Specifications and dimensional evidence come first.',mode:'engineering'},
-62:{name:'Product First',kicker:'FIND THE RIGHT MACHINE',note:'A product-led path from category to inquiry.',mode:'product'},
-63:{name:'Catalog Style',kicker:'INDUSTRIAL CATALOG',note:'A structured taxonomy for technical buyers.',mode:'catalog'},
-64:{name:'Clean European Industrial',kicker:'FORM / FUNCTION / SERVICE',note:'Restrained, precise and quietly confident.',mode:'european'},
-65:{name:'High-Tech Dark',kicker:'INDUSTRIAL INTELLIGENCE',note:'A serious dark interface for high-performance equipment.',mode:'dark'},
-66:{name:'Light Technical',kicker:'CLEAR TECHNICAL DATA',note:'Bright surfaces and readable engineering information.',mode:'lighttech'},
-67:{name:'Visual Product Photography',kicker:'SEE THE MACHINE',note:'Product imagery leads the discovery journey.',mode:'visual'},
-68:{name:'Conversion Focused',kicker:'FROM MACHINE TO QUOTE',note:'A clear route from product confidence to contact.',mode:'conversion'},
-69:{name:'Information-Dense Professional',kicker:'DECISION SUPPORT',note:'Dense, organized information for technical purchasing.',mode:'dense'},
-70:{name:'Recommended Final Direction',kicker:'SAHAND LASER / MASTER DIRECTION',note:'Balanced product clarity, technical trust and B2B action.',mode:'best'}
-};
-const cfg=configs[v]||configs[58];
-document.documentElement.dataset.previewVariant=String(v);
-document.body.dataset.variant=String(v);
-document.body.classList.add('variant-'+cfg.mode);
-const style=document.createElement('style');
-style.textContent=`
-:root{--v-accent:#b42318;--v-ink:#172554;--v-paper:#f8fafc;--v-muted:#64748b;--v-line:#dbe4ef}
-body{overflow-x:hidden}
-.variant-banner{max-width:1360px;margin:24px auto 0;padding:clamp(20px,4vw,52px);border:1px solid var(--v-line);background:var(--v-paper);position:relative;overflow:hidden}
-.variant-banner:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--v-accent)}
-.variant-banner .v-kicker{display:block;color:var(--v-accent);font:700 11px/1.4 ui-monospace,monospace;letter-spacing:.16em}
-.variant-banner h1{margin:10px 0 6px;font-size:clamp(28px,5vw,62px);line-height:1.05;letter-spacing:-.04em}
-.variant-banner p{margin:0;color:var(--v-muted);max-width:680px}
-.variant-banner .v-index{position:absolute;inset-block-start:20px;inset-inline-end:24px;color:var(--v-accent);font:800 clamp(32px,7vw,90px)/1 ui-monospace,monospace;opacity:.13}
-.variant-banner .v-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.variant-banner a{display:inline-flex;min-height:44px;align-items:center;padding:10px 16px;border-radius:9px;background:var(--v-ink);color:#fff!important;text-decoration:none;font-weight:700}
-.variant-banner a.secondary{background:transparent;color:var(--v-ink)!important;border:1px solid var(--v-line)}
-.variant-cta{max-width:1360px;margin:26px auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--v-ink);color:#fff;border-radius:12px}
-.variant-cta a{color:#fff!important;background:var(--v-accent);padding:10px 16px;border-radius:8px;white-space:nowrap}
-#preview56-catalog{margin-top:32px}
-#preview56-catalog .p56-cards{gap:20px}
-#preview56-catalog .p56-card,#preview56-catalog .p56-sheet{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
-#preview56-catalog .p56-card:hover,#preview56-catalog .p56-sheet:hover{transform:translateY(-4px);border-color:var(--v-accent)}
-.p56-product-xray{order:3}
-.lab-dimensional{order:2}
-@media(max-width:700px){.variant-banner{margin:14px 12px 0}.variant-banner .v-index{inset-inline-end:14px}.variant-cta{margin:18px 12px;display:block}.variant-cta a{display:inline-block;margin-top:10px}}
-body.variant-minimal{--v-accent:#0f766e;--v-ink:#12343b;--v-paper:#fff}
-body.variant-minimal .variant-banner{background:#fff;border-width:0 0 1px;border-radius:0;padding-inline:0}
-body.variant-minimal #preview56-catalog{box-shadow:none;border-radius:0;background:#fff}
-body.variant-minimal #preview56-catalog .p56-cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-body.variant-premium{--v-accent:#b28a45;--v-ink:#1f2937;--v-paper:#fbf8f1}
-body.variant-premium .variant-banner{border-radius:2px;background:linear-gradient(120deg,#fbf8f1,#fff)}
-body.variant-premium .variant-banner h1{font-family:Georgia,serif;font-weight:500}
-body.variant-premium #preview56-catalog{border-radius:2px;box-shadow:0 20px 50px #1f293714}
-body.variant-tech{--v-accent:#00a6c7;--v-ink:#082f49;--v-paper:#edfaff}
-body.variant-tech .variant-banner{background:#082f49;color:#e6faff;border-color:#0e7490;clip-path:polygon(0 0,98% 0,100% 82%,96% 100%,0 100%)}
-body.variant-tech .variant-banner p{color:#b8e5ee}
-body.variant-tech #preview56-catalog{background:#f0fbff;border-color:#8ed7e5}
-body.variant-tech #preview56-catalog .p56-card{border-radius:4px;box-shadow:0 0 0 1px #00a6c733}
-body.variant-engineering{--v-accent:#d97706;--v-ink:#172033;--v-paper:#f2f5f7}
-body.variant-engineering .variant-banner{background:#172033;color:#f8fafc;border:0}
-body.variant-engineering .variant-banner p{color:#cbd5e1}
-body.variant-engineering #preview56-catalog{border-radius:4px}
-body.variant-engineering #preview56-catalog .p56-card h3,body.variant-engineering .lab-product-extra h2,body.variant-engineering table{font-family:ui-monospace,monospace}
-body.variant-product{--v-accent:#dc2626;--v-ink:#111827;--v-paper:#fff}
-body.variant-product .variant-banner{padding-block:26px;background:#fff;border:0}
-body.variant-product #preview56-catalog{margin-top:12px}
-body.variant-product #preview56-catalog .p56-cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-body.variant-product #preview56-catalog .p56-card-pair img{aspect-ratio:1.2}
-body.variant-catalog{--v-accent:#2563eb;--v-ink:#172554;--v-paper:#f1f5f9}
-body.variant-catalog .variant-banner{border-radius:18px}
-body.variant-catalog #preview56-catalog{display:grid;grid-template-columns:180px 1fr;gap:22px}
-body.variant-catalog #preview56-catalog .p56-head,body.variant-catalog #preview56-catalog .p56-search,body.variant-catalog #preview56-catalog .p56-cards,body.variant-catalog #preview56-catalog .p56-sheets{grid-column:2}
-body.variant-catalog #preview56-catalog:before{content:"CATALOG\A CUTTING\A WELDING\A MARKING\A CLEANING\A SOURCES\A COMPONENTS";white-space:pre;grid-column:1;grid-row:1 / span 4;padding:18px;background:#172554;color:#dbeafe;border-radius:12px;font:700 12px/3 ui-monospace,monospace}
-@media(max-width:800px){body.variant-catalog #preview56-catalog{display:block}body.variant-catalog #preview56-catalog:before{display:none}}
-body.variant-european{--v-accent:#334155;--v-ink:#0f172a;--v-paper:#fff}
-body.variant-european .variant-banner{border-radius:0;background:#fff;border-inline:0;padding-inline:0}
-body.variant-european #preview56-catalog{background:#fff;border-radius:0;box-shadow:none}
-body.variant-european #preview56-catalog .p56-card{border-radius:0;box-shadow:none}
-body.variant-dark{--v-accent:#2dd4bf;--v-ink:#e2e8f0;--v-paper:#0b1220;--v-line:#294154}
-body.variant-dark,.variant-dark .variant-banner{background:#080f1b;color:#e2e8f0}
-body.variant-dark .variant-banner p{color:#94a3b8}
-body.variant-dark #preview56-catalog{background:#0b1220;color:#e2e8f0;border-color:#294154}
-body.variant-dark #preview56-catalog .p56-card,body.variant-dark #preview56-catalog .p56-sheet{background:#101b2d;border-color:#294154;color:#e2e8f0}
-body.variant-dark #preview56-catalog .p56-card small,body.variant-dark #preview56-catalog p{color:#94a3b8}
-body.variant-lighttech{--v-accent:#0284c7;--v-ink:#075985;--v-paper:#eff6ff}
-body.variant-lighttech .variant-banner{background:#eff6ff;border-color:#bae6fd}
-body.variant-lighttech #preview56-catalog{background:#fff;border-color:#bae6fd}
-body.variant-lighttech #preview56-catalog .p56-card{box-shadow:0 6px 20px #0369a115}
-body.variant-visual{--v-accent:#be123c;--v-ink:#3f1d2e;--v-paper:#fff1f2}
-body.variant-visual .variant-banner{min-height:260px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(120deg,#fff1f2,#fff)}
-body.variant-visual #preview56-catalog .p56-cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-body.variant-visual #preview56-catalog .p56-card-pair{grid-template-columns:1fr}
-body.variant-visual #preview56-catalog .p56-card-pair>div:nth-child(2){display:none}
-body.variant-visual #preview56-catalog .p56-card-pair img{aspect-ratio:16/10}
-body.variant-conversion{--v-accent:#ea580c;--v-ink:#1c1917;--v-paper:#fff7ed}
-body.variant-conversion .variant-banner{border:0;border-radius:18px;background:#fff7ed}
-body.variant-conversion .variant-cta{position:sticky;bottom:12px;z-index:40;box-shadow:0 10px 30px #0003}
-body.variant-conversion #preview56-catalog .p56-open{background:#ea580c}
-body.variant-dense{--v-accent:#475569;--v-ink:#0f172a;--v-paper:#f1f5f9}
-body.variant-dense .variant-banner{padding:22px 28px;border-radius:6px}
-body.variant-dense #preview56-catalog{padding:18px;margin-top:14px}
-body.variant-dense #preview56-catalog .p56-cards{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px}
-body.variant-dense #preview56-catalog .p56-card h3{font-size:14px}
-body.variant-best{--v-accent:#a61c1c;--v-ink:#172856;--v-paper:#f8fafc}
-body.variant-best .variant-banner{border-radius:24px;background:linear-gradient(110deg,#f8fafc,#fff)}
-body.variant-best #preview56-catalog{box-shadow:0 14px 45px #17285614}
-body.variant-best #preview56-catalog .p56-cards{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-`;
-document.head.append(style);
-const banner=document.createElement('section');
-banner.className='variant-banner';
-banner.innerHTML='<span class="v-kicker">'+cfg.kicker+'</span><span class="v-index">0'+v+'</span><h1>'+cfg.name+'</h1><p>'+cfg.note+'</p><div class="v-links"><a href="#preview56-catalog">مشاهده محصولات</a><a class="secondary" href="#contact">تماس با سهند لیزر</a></div>';
-const main=document.querySelector('main');
-if(main)main.prepend(banner);else document.body.prepend(banner);
-if(cfg.mode==='conversion'||cfg.mode==='best'){
- const cta=document.createElement('div');cta.className='variant-cta';cta.innerHTML='<span>برای انتخاب دستگاه مناسب، مشخصات مدل را با کارشناس سهند لیزر بررسی کنید.</span><a href="https://wa.me/989125855548" target="_blank" rel="noopener">دریافت مشاوره در واتساپ</a>';
- const cat=document.querySelector('#preview56-catalog'); if(cat)cat.before(cta);
+var meta=document.querySelector('meta[name="preview-variant"]');
+var variant=Number(meta&&meta.content||document.body.dataset.variant||58);
+var config={
+58:{name:'Minimal Industrial',kicker:'PRECISION / SIMPLICITY',mode:'minimal'},
+59:{name:'Premium Corporate',kicker:'ENGINEERED FOR TRUST',mode:'premium'},
+60:{name:'Modern Technology',kicker:'LASER SYSTEMS / NEXT',mode:'tech'},
+61:{name:'Engineering Focused',kicker:'TECHNICAL CONTROL ROOM',mode:'engineering'},
+62:{name:'Product First',kicker:'FIND THE RIGHT MACHINE',mode:'product'},
+63:{name:'Catalog Style',kicker:'INDUSTRIAL CATALOG',mode:'catalog'},
+64:{name:'Clean European Industrial',kicker:'FORM / FUNCTION / SERVICE',mode:'european'},
+65:{name:'High-Tech Dark',kicker:'INDUSTRIAL INTELLIGENCE',mode:'dark'},
+66:{name:'Light Technical',kicker:'CLEAR TECHNICAL DATA',mode:'lighttech'},
+67:{name:'Visual Product Photography',kicker:'SEE THE MACHINE',mode:'visual'},
+68:{name:'Conversion Focused',kicker:'FROM MACHINE TO QUOTE',mode:'conversion'},
+69:{name:'Information-Dense Professional',kicker:'DECISION SUPPORT',mode:'dense'},
+70:{name:'Recommended Final Direction',kicker:'SAHAND LASER / MASTER DIRECTION',mode:'best'}
+}[variant]||{name:'Minimal Industrial',kicker:'PRECISION / SIMPLICITY',mode:'minimal'};
+var lang=localStorage.getItem('lang')||'fa';
+var labels={fa:{products:'محصولات',categories:'دسته‌بندی‌ها',contact:'تماس با ما',quote:'دریافت مشاوره',search:'جست‌وجوی محصول یا مدل',all:'همه',main:'تصویر اصلی',drawing:'نقشهٔ ابعادی',xray:'نمای X-Ray',back:'بازگشت به محصولات',details:'مشخصات فنی',noDrawing:'نقشهٔ منطبق در مخزن پیدا نشد',noXray:'X-Ray منطبق در مخزن پیدا نشد'},en:{products:'Products',categories:'Categories',contact:'Contact',quote:'Request a quote',search:'Search product or model',all:'All',main:'Main image',drawing:'Dimensional drawing',xray:'X-Ray',back:'Back to products',details:'Technical specifications',noDrawing:'No verified drawing found',noXray:'No verified X-Ray found'},ar:{products:'المنتجات',categories:'الفئات',contact:'اتصل بنا',quote:'طلب استشارة',search:'البحث عن المنتج أو الطراز',all:'الكل',main:'الصورة الرئيسية',drawing:'الرسم البُعدي',xray:'الأشعة السينية',back:'العودة إلى المنتجات',details:'المواصفات الفنية',noDrawing:'لا يوجد رسم مؤكد',noXray:'لا توجد صورة X-Ray مؤكدة'},tr:{products:'Ürünler',categories:'Kategoriler',contact:'İletişim',quote:'Teklif isteyin',search:'Ürün veya model ara',all:'Tümü',main:'Ana görsel',drawing:'Ölçü çizimi',xray:'X-Ray',back:'Ürünlere dön',details:'Teknik özellikler',noDrawing:'Doğrulanmış çizim yok',noXray:'Doğrulanmış X-Ray yok'}};
+function t(k){return (labels[lang]||labels.fa)[k]||k}
+var full3={cutting:1,welding:1,marking:1,source:1};
+var base=window.PREVIEW29_PRODUCTS||[];
+var visual=(window.PREVIEW32_IMAGES||[]).map(function(x){return {number:x.number,code:'P56-'+String(x.number).padStart(2,'0'),originalCode:x.code,name:x.name,category:x.category,image:x.image,visual:true};});
+var products=base.concat(visual);
+var sheets=window.PREVIEW_DIMENSIONAL_SHEETS||[];
+var family=window.PREVIEW57_FAMILY_SHEETS||{};
+var originals=window.PREVIEW57_ORIGINAL_FAMILY_SHEETS||{};
+var xrays=window.PREVIEW57_EXISTING_XRAYS||{};
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function route(p){return p.visual?'P56-'+String(p.number).padStart(2,'0'):p.code}
+function image(p){return p.image||''}
+function sheetIds(p){return p.visual?(family[p.number]||[]):(originals[p.code]||[])}
+function sheetList(p){return sheetIds(p).map(function(id){return sheets.find(function(s){return s.id===id})}).filter(Boolean)}
+function xray(p){if(p.visual)return 'assets/preview-50-xray/'+String(p.number).padStart(2,'0')+'.jpg';return xrays[p.code]||''}
+function catName(c){return ({cutting:'برش',welding:'جوش',marking:'مارکینگ',cleaning:'تمیزکاری',source:'سورس',parts:'قطعات',head:'هد و کنترلر',consumables:'مصرفی'})[c]||c}
+function groupA(p){return !!full3[p.category]}
+function productByRoute(id){return products.find(function(p){return route(p)===id||p.code===id})}
+function setLang(next){lang=next;localStorage.setItem('lang',next);document.documentElement.lang=next;document.documentElement.dir=(next==='fa'||next==='ar')?'rtl':'ltr';render()}
+function css(){
+return [
+'*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}a{color:inherit}.site{min-height:100vh}.shell{max-width:1440px;margin:auto;padding:0 24px}.topbar{border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.topbar-inner{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:9px 0}.langs{display:flex;gap:5px}.langs button,.chip,.ghost,.solid{min-height:42px;border:1px solid var(--line);background:transparent;color:inherit;border-radius:8px;padding:8px 13px;cursor:pointer;font:inherit}.langs button.active,.solid{background:var(--accent);border-color:var(--accent);color:#fff}.navbar{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:18px 0;position:relative;z-index:5}.brand{font-weight:900;font-size:20px;letter-spacing:-.04em}.brand small{display:block;font:10px ui-monospace,monospace;letter-spacing:.2em;color:var(--accent)}.navlinks{display:flex;gap:18px;font-size:13px}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--accent)}.hero{padding:clamp(42px,8vw,115px) 0 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}.eyebrow{font:700 11px ui-monospace,monospace;letter-spacing:.18em;color:var(--accent)}h1{font-size:clamp(42px,7vw,100px);line-height:1.02;letter-spacing:-.07em;margin:15px 0}.hero p{font-size:18px;color:var(--muted);max-width:650px}.hero-art{min-height:290px;border:1px solid var(--line);background:var(--panel);display:grid;place-items:center;position:relative;overflow:hidden}.hero-art img{width:100%;height:100%;object-fit:contain}.hero-art span{position:absolute;bottom:14px;inset-inline-start:14px;background:var(--ink);color:var(--bg);padding:6px 10px;font:11px ui-monospace,monospace}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:50px 0 18px}.section-head h2{font-size:clamp(24px,4vw,44px);margin:0;letter-spacing:-.05em}.section-head p{color:var(--muted);margin:0}.category-row{display:flex;gap:8px;overflow:auto;padding-bottom:10px}.category-row button{white-space:nowrap}.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:18px 0;flex-wrap:wrap}.toolbar input{min-height:46px;min-width:min(420px,100%);border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:10px 14px;color:inherit;font:inherit}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);background:var(--panel);overflow:hidden;min-width:0}.card-media{aspect-ratio:4/3;background:#e9eef3;position:relative}.card-media img{width:100%;height:100%;object-fit:contain;display:block}.card-body{padding:15px}.card small{color:var(--accent);font:11px ui-monospace,monospace}.card h3{font-size:17px;line-height:1.45;margin:7px 0}.card p{color:var(--muted);font-size:12px;margin:0}.card a{text-decoration:none}.compare-mini{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}.compare-mini img{width:100%;aspect-ratio:1/1;object-fit:contain;background:var(--panel)}.footer{margin-top:80px;border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.product-page{padding:38px 0 80px}.back{display:inline-flex;margin-bottom:22px;color:var(--accent);text-decoration:none}.product-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.product-title h1{font-size:clamp(34px,5vw,72px);margin:8px 0}.product-title p{color:var(--muted)}.product-meta{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.product-visual{border:1px solid var(--line);background:var(--panel);padding:15px}.product-visual img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain}.asset-block{margin-top:28px;border-top:2px solid var(--accent);padding-top:18px}.asset-block h2{font-size:22px;margin:0 0 12px}.asset-block img{width:100%;max-height:550px;object-fit:contain;background:var(--panel);border:1px solid var(--line)}.asset-note{color:var(--muted);font-size:13px}.specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:18px}.spec{border:1px solid var(--line);padding:10px;background:var(--panel)}.spec b{display:block;color:var(--muted);font-size:11px}.spec span{font-size:14px}.mobile-menu{display:none}.empty{padding:30px;border:1px dashed var(--line);color:var(--muted)}',
+'body.mode-minimal{--bg:#fff;--panel:#fff;--ink:#172b32;--muted:#65767b;--line:#dfe8e9;--accent:#0f766e}.mode-minimal .hero{border-bottom:1px solid var(--line)}.mode-minimal .card{border-radius:0}.mode-minimal .solid{border-radius:2px}',
+'body.mode-premium{--bg:#f6f2ea;--panel:#fffdf8;--ink:#26303a;--muted:#7b746b;--line:#ded5c7;--accent:#9a7335}.mode-premium h1,.mode-premium h2,.mode-premium h3{font-family:Georgia,serif;font-weight:500}.mode-premium .hero{min-height:600px}.mode-premium .card,.mode-premium .hero-art{border-radius:2px;box-shadow:0 18px 40px #39281514}',
+'body.mode-tech{--bg:#061421;--panel:#0a2131;--ink:#e8fbff;--muted:#8bb7c5;--line:#1d566c;--accent:#22d3ee}.mode-tech .hero{background:linear-gradient(135deg,#061421,#0a3041);padding-inline:28px}.mode-tech .hero-art{box-shadow:0 0 0 1px #22d3ee55,0 0 70px #22d3ee18}.mode-tech .card{border-color:#1d566c}.mode-tech .solid{color:#061421}',
+'body.mode-engineering{--bg:#eef2f4;--panel:#fff;--ink:#18212b;--muted:#53616c;--line:#c6d1d8;--accent:#d97706}.mode-engineering .hero{grid-template-columns:1fr;padding-block:44px}.mode-engineering .hero-art{display:none}.mode-engineering .grid{grid-template-columns:repeat(3,minmax(0,1fr))}.mode-engineering .card h3,.mode-engineering .spec span{font-family:ui-monospace,monospace;font-size:14px}',
+'body.mode-product{--bg:#fbfbfb;--panel:#fff;--ink:#151515;--muted:#666;--line:#e4e4e4;--accent:#dc2626}.mode-product .hero{display:block;padding-block:36px}.mode-product .hero-art{display:none}.mode-product .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.mode-product .card-media{aspect-ratio:1.35}.mode-product .card-body{padding:20px}',
+'body.mode-catalog{--bg:#f0f3f7;--panel:#fff;--ink:#172554;--muted:#64748b;--line:#d7e0eb;--accent:#2563eb}.mode-catalog .hero{padding-block:40px}.mode-catalog .grid{grid-template-columns:repeat(4,minmax(0,1fr))}.mode-catalog .card{border-radius:8px}.mode-catalog .category-row{background:#172554;padding:12px;border-radius:8px}.mode-catalog .category-row button{color:#fff;border-color:#4963a0}',
+'body.mode-european{--bg:#fff;--panel:#fff;--ink:#17202a;--muted:#66717c;--line:#d8dde2;--accent:#334155}.mode-european .shell{max-width:1280px}.mode-european .hero{grid-template-columns:1fr;padding-block:95px}.mode-european .hero-art{display:none}.mode-european .card{border-inline:0;border-top:0}.mode-european .card-media{background:#f4f5f6}',
+'body.mode-dark{--bg:#070b12;--panel:#0e1724;--ink:#e5edf5;--muted:#92a5b7;--line:#263b4d;--accent:#2dd4bf}.mode-dark .hero{border-bottom:1px solid var(--line)}.mode-dark .hero-art{box-shadow:0 0 80px #2dd4bf1c}.mode-dark .card{border-radius:6px}.mode-dark .card-media{background:#071018}',
+'body.mode-lighttech{--bg:#eef7ff;--panel:#fff;--ink:#0c3b5e;--muted:#52748c;--line:#c9e0ef;--accent:#0284c7}.mode-lighttech .hero{grid-template-columns:1fr 1fr}.mode-lighttech .hero-art{border-radius:18px}.mode-lighttech .card{border-radius:14px;box-shadow:0 8px 26px #0369a112}',
+'body.mode-visual{--bg:#fff4f5;--panel:#fff;--ink:#3f1d2e;--muted:#805e6d;--line:#f0ccd4;--accent:#be123c}.mode-visual .hero{grid-template-columns:1fr;padding:0;min-height:600px;position:relative}.mode-visual .hero-art{position:absolute;inset:0;opacity:.3;border:0}.mode-visual .hero-copy{position:relative;z-index:1;padding:80px 0}.mode-visual .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.mode-visual .card-media{aspect-ratio:16/10}',
+'body.mode-conversion{--bg:#fffaf5;--panel:#fff;--ink:#29221d;--muted:#796d64;--line:#f0d9c7;--accent:#ea580c}.mode-conversion .hero{background:#fff0df;padding:55px 28px;border-radius:18px}.mode-conversion .hero-art{border-radius:14px}.mode-conversion .card{border-radius:12px}.mode-conversion .quote-strip{display:flex}',
+'body.mode-dense{--bg:#f1f5f9;--panel:#fff;--ink:#0f172a;--muted:#526070;--line:#cdd7e2;--accent:#475569}.mode-dense .hero{padding-block:32px}.mode-dense h1{font-size:clamp(34px,5vw,66px)}.mode-dense .grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.mode-dense .card-body{padding:10px}.mode-dense .card h3{font-size:13px}.mode-dense .card-media{aspect-ratio:1.25}',
+'body.mode-best{--bg:#f7f9fc;--panel:#fff;--ink:#172856;--muted:#61708d;--line:#d7e0ef;--accent:#a61c1c}.mode-best .hero{grid-template-columns:1fr 1fr;background:linear-gradient(110deg,#eef2f9,#fff);padding:70px 28px;border-radius:24px}.mode-best .hero-art{border-radius:18px}.mode-best .card{border-radius:14px;box-shadow:0 12px 32px #17285612}',
+'@media(max-width:1000px){.grid,.mode-engineering .grid,.mode-catalog .grid,.mode-dense .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-head,.hero,.mode-lighttech .hero,.mode-best .hero{grid-template-columns:1fr}.navlinks{display:none}.mobile-menu{display:block}.hero-art{min-height:230px}}@media(max-width:560px){.shell{padding:0 14px}.topbar-inner{align-items:flex-start;flex-direction:column}.grid,.mode-product .grid,.mode-visual .grid{grid-template-columns:1fr}.specs{grid-template-columns:1fr}.hero h1{font-size:48px}.hero p{font-size:15px}.product-title h1{font-size:40px}.navbar{padding-block:13px}.hero-art{min-height:190px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}'
+].join('\\n');
 }
-if(cfg.mode==='catalog'){
- const cat=document.querySelector('#preview56-catalog'); if(cat)cat.setAttribute('aria-label','فهرست ساختاریافته محصولات');
+function head(){
+var style=document.createElement('style');style.textContent=css();document.head.appendChild(style);
+document.documentElement.lang=lang;document.documentElement.dir=(lang==='fa'||lang==='ar')?'rtl':'ltr';
+document.body.className='mode-'+config.mode;
 }
+function productCard(p){
+var xr=xray(p),visual=xr?'<div class="compare-mini"><img src="'+esc(image(p))+'" alt="'+esc(t('main')+' '+p.name)+'"><img src="'+esc(xr)+'" alt="'+esc(t('xray')+' '+p.name)+'"></div>':'<div class="card-media"><img loading="lazy" src="'+esc(image(p))+'" alt="'+esc(p.name)+'"></div>';
+return '<article class="card"><a href="#product='+esc(route(p))+'">'+visual+'</a><div class="card-body"><small>'+esc(catName(p.category))+' · '+esc(p.code)+'</small><h3><a href="#product='+esc(route(p))+'">'+esc(p.name)+'</a></h3><p>'+esc((p.description||'').slice(0,110))+'</p></div></article>';
+}
+function header(){
+return '<div class="topbar"><div class="shell topbar-inner"><span>فناوران پرتو لیزر سهند · SAHAND LASER</span><div class="langs">'+['fa','en','ar','tr'].map(function(x){return '<button class="'+(lang===x?'active':'')+'" data-lang="'+x+'">'+x.toUpperCase()+'</button>'}).join('')+'</div></div></div><header class="shell navbar"><a class="brand" href="#home">سهند لیزر<small>INDUSTRIAL LASER SYSTEMS</small></a><nav class="navlinks"><a href="#home">خانه</a><a href="#products">'+t('products')+'</a><a href="#about">درباره ما</a><a href="#services">خدمات</a><a href="#contact">'+t('contact')+'</a></nav><a class="solid" href="https://wa.me/989125855548" target="_blank" rel="noopener">'+t('quote')+'</a></header>';
+}
+function home(){
+var featured=products.filter(function(p){return p.visual}).slice(0,variant===62?18:12);
+var cats=['all','cutting','welding','marking','source','cleaning','parts'];
+var heroImage=featured[0];
+return '<main class="shell"><section class="hero"><div class="hero-copy"><span class="eyebrow">'+config.kicker+'</span><h1>'+({minimal:'Laser systems, clearly specified.',premium:'Built for the work that matters.',tech:'The machine is the interface.',engineering:'Evidence before expectation.',product:'Start with the right machine.',catalog:'A structured view of production.',european:'Precision made visible.',dark:'See beyond the enclosure.',lighttech:'Technical clarity for every shift.',visual:'Meet the machines behind the result.',conversion:'Choose with confidence. Act faster.',dense:'The information technical buyers need.',best:'Industrial laser, made legible.'}[config.mode])+'</h1><p>راهکارهای تخصصی برش، جوش، مارکینگ، سورس و تجهیزات لیزر صنعتی سهند؛ با اطلاعات فنی و مسیر روشن برای انتخاب و مشاوره.</p><div class="hero-actions"><a class="solid" href="#products">'+t('products')+'</a><a class="ghost" href="https://wa.me/989125855548" target="_blank" rel="noopener">'+t('quote')+'</a></div></div><div class="hero-art">'+(heroImage?'<img src="'+esc(image(heroImage))+'" alt="'+esc(heroImage.name)+'"><span>'+esc(heroImage.code)+'</span>':'')+'</div></section><section id="products"><div class="section-head"><div><span class="eyebrow">'+t('categories')+'</span><h2>'+t('products')+'</h2></div><p>'+products.length+' مدل در بانک محصولات</p></div><div class="category-row">'+cats.map(function(c){return '<button class="chip" data-cat="'+c+'">'+(c==='all'?t('all'):catName(c))+'</button>'}).join('')+'</div><div class="toolbar"><input id="search" type="search" placeholder="'+t('search')+'"><span id="count"></span></div><div id="grid" class="grid"></div></section><section id="about" class="section-head"><div><span class="eyebrow">SAHAND LASER</span><h2>تجهیزات، آموزش و پشتیبانی</h2></div><p>اطلاعات محصول، نقشه‌های موجود و ارتباط مستقیم با تیم سهند لیزر.</p></section><section id="services" class="empty">خدمات فنی، تأمین تجهیزات و مشاورهٔ انتخاب دستگاه در ساختار محتوایی نسخهٔ مرجع حفظ شده است.</section></main>';
+}
+function productPage(p){
+var dr=sheetList(p),xr=xray(p),isA=groupA(p);
+var drawing=dr.length?'<section class="asset-block"><h2>02 · '+t('drawing')+'</h2>'+dr.map(function(s){return '<img loading="lazy" src="'+esc(s.src)+'" alt="'+esc(s.title)+'"><p class="asset-note">'+esc(s.title)+' · '+s.dimensions.join(' × ')+' mm'+(s.estimated?' · مرجع تخمینی':'')+'</p>'}).join('')+'</section>':'<section class="asset-block"><h2>02 · '+t('drawing')+'</h2><div class="empty">'+t('noDrawing')+'</div></section>';
+var xsection=isA?(xr?'<section class="asset-block"><h2>03 · '+t('xray')+'</h2><img loading="lazy" src="'+esc(xr)+'" alt="'+esc(t('xray')+' '+p.name)+'"><p class="asset-note">نمای X-Ray موجود در آرشیو پروژه.</p></section>':'<section class="asset-block"><h2>03 · '+t('xray')+'</h2><div class="empty">'+t('noXray')+'</div></section>'):'';
+var specs=(p.specs||[]).slice(0,variant===69?18:10).map(function(s){return '<div class="spec"><b>'+esc(s.label)+'</b><span>'+esc(s.value)+'</span></div>'}).join('');
+return '<main class="shell product-page"><a class="back" href="#home">← '+t('back')+'</a><div class="product-head"><div class="product-title"><span class="eyebrow">'+esc(catName(p.category))+' · '+esc(p.code)+'</span><h1>'+esc(p.name)+'</h1><p>'+esc(p.description||'اطلاعات تأییدشدهٔ این محصول در بانک اطلاعاتی سهند لیزر.')+'</p><div class="product-meta"><span class="chip">'+(isA?'Main → Drawing → X-Ray':'Main image only')+'</span><a class="solid" href="https://wa.me/989125855548" target="_blank" rel="noopener">'+t('quote')+'</a></div><h2>'+t('details')+'</h2><div class="specs">'+specs+'</div></div><div class="product-visual"><h2>01 · '+t('main')+'</h2><img src="'+esc(image(p))+'" alt="'+esc(p.name)+'"></div></div>'+drawing+xsection+'</main>';
+}
+function bind(){
+document.querySelectorAll('[data-lang]').forEach(function(b){b.onclick=function(){setLang(b.dataset.lang)}});document.querySelectorAll('[data-cat]').forEach(function(b){b.onclick=function(){filter(b.dataset.cat)}});var q=document.getElementById('search');if(q)q.oninput=function(){filter('search',q.value)};window.onhashchange=render;
+}
+function filter(cat,q){
+var list=products;if(cat&&cat!=='all'&&cat!=='search')list=list.filter(function(p){return p.category===cat});if(cat==='search')list=products.filter(function(p){return (p.name+' '+p.code).toLocaleLowerCase().includes((q||'').toLocaleLowerCase())});var grid=document.getElementById('grid');if(grid)grid.innerHTML=list.map(productCard).join('');var count=document.getElementById('count');if(count)count.textContent=list.length+' '+t('products');bind();
+}
+function render(){
+head();var id=(location.hash.match(/^#product=(.+)$/)||[])[1];document.body.innerHTML='<div class="site">'+header()+(id&&productByRoute(id)?productPage(productByRoute(id)):home())+'<footer class="shell footer"><span>© Sahand Laser</span><span>WhatsApp · Technical support · 4 languages</span></footer></div>';filter('all');bind();
+}
+render();
 })();
