@@ -1188,4 +1188,20 @@ for(const [kind,name] of [['custom','برش سایز سفارشی'],['tube','ب�
   window.addEventListener('hashchange',()=>setTimeout(install,80));
   setTimeout(install,300);
 })();
+</script><style>
+.preview55-xray-catalog{margin:56px auto;padding:28px;border-radius:24px;background:#f8fafc;border:1px solid #cbd5e1}
+.preview55-xray-catalog h2{font-size:clamp(24px,4vw,36px);font-weight:800;margin:0 0 8px}
+.preview55-xray-catalog .lead{color:#64748b;margin:0 0 22px}
+.preview55-xray-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.preview55-xray-card{background:#fff;border:1px solid #dbe3f0;border-radius:16px;overflow:hidden;box-shadow:0 8px 22px #14234a0b}
+.preview55-xray-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.preview55-xray-card div{padding:13px}.preview55-xray-card h3{margin:4px 0;font-size:16px}.preview55-xray-card small{color:#64748b}.preview55-xray-card a{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:9px;background:#a61c1c;color:#fff}
+@media(max-width:1000px){.preview55-xray-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.preview55-xray-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.preview55-xray-grid{grid-template-columns:1fr}}
+</style>
+<section id="preview55-xray-catalog" class="preview55-xray-catalog">
+<div class="wrap"><span class="eyebrow">کاتالوگ ۳۲ محصول · X-Ray + نقشه ابعادی</span><h2>محصولات با صفحه‌ی اختصاصی</h2><p class="lead">از اینجا صفحه‌ی اختصاصی هر محصول را باز کنید؛ در آن صفحه نقشه‌ی ابعادی و مقایسه‌ی تصویر اصلی با X-Ray همان محصول قرار دارد.</p><div id="preview55-xray-grid" class="preview55-xray-grid"></div></div>
+</section>
+<script src="data.js"></script>
+<script>
+(function(){const P=window.PREVIEW53_PRODUCTS||[],root=document.getElementById('preview55-xray-grid');if(!root)return;root.innerHTML=P.map(p=>'<article class="preview55-xray-card"><img src="../'+p.image+'" alt="'+p.name+'" loading="lazy"><div><small>'+p.code+' · '+p.category+'</small><h3>'+p.name+'</h3><a href="product.html?id='+p.number+'">نقشه + X-Ray محصول</a></div></article>').join('')})();
 </script></body></html>
