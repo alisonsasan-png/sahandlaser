@@ -1,0 +1,22 @@
+# Preview 58–70 Progress
+
+- architecture: shared runtime at `preview-shared/core.js`, shared design system at `preview-shared/base.css`
+- diagnosis:
+  - previous previews were identical single-file implementations
+  - deployed runtime had a JavaScript syntax error in image fallback handling
+  - product media paths were missing the repository-relative `../` prefix
+- preview_58:
+  - deployed and browser-rendered successfully
+  - homepage, navigation, product cards, services, about, applications, articles, footer verified
+  - product route `#product=P58-1` verified with Main → Dimensional Drawing → X-Ray
+  - language buttons switch FA/EN/AR/TR direction state
+- media_qa:
+  - main image, dimensional drawing, preview-32 image, and preview-50 X-Ray returned HTTP 200
+  - unavailable media is shown as an empty state; no substitute image is assigned
+- previews:
+  - 58–70 rebuilt with separate design classes and responsive layout variants
+  - all preview index URLs and shared assets return HTTP 200
+- deployment:
+  - latest GitHub Pages workflow succeeded for commit `ebb6c558126f70da831005143831bda4ec28cae4`
+- unresolved:
+  - full browser-console and every-product visual audit remains to be expanded beyond the validated Preview 58 samples
