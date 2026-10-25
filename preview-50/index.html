@@ -12,20 +12,20 @@
 <body>
 <header><div class="brand">سهند لیزر<small>INTERACTIVE PRODUCT LAB</small></div><span>پیش‌نمایش ۵۰ · بیرونی / X-Ray</span></header>
 <main class="wrap">
-<section class="intro"><div><div style="color:#32d6ed;font-size:10px;letter-spacing:2px">PRODUCT X-RAY LAB</div><h1>بدنه را کنار بزن؛ ساختار محصول را ببین.</h1><p>یک محصول را انتخاب کن و خط اسکن را با موس، لمس یا اسلایدر حرکت بده. لایه‌ی X-Ray فعلاً با حفظ قاب و تناسب تصویر محصول ساخته شده و با تصاویر داخلی اختصاصی جایگزین می‌شود.</p></div><span class="badge" id="count">محصول ۱ از ۳۲</span></section>
+<section class="intro"><div><div style="color:#32d6ed;font-size:10px;letter-spacing:2px">PRODUCT X-RAY LAB</div><h1>بدنه را کنار بزن؛ ساختار محصول را ببین.</h1><p>یک محصول را انتخاب کن و خط اسکن را با موس، لمس یا اسلایدر حرکت بده. برای هر محصول، لایه‌ی X-Ray اختصاصی همان محصول با حفظ قاب، زاویه و تناسب تصویر قرار داده شده است.</p></div><span class="badge" id="count">محصول ۱ از ۳۲</span></section>
 <nav class="products" id="products" aria-label="انتخاب محصول"></nav>
 <section class="viewer">
 <div class="stage" id="stage"><img id="outer" class="scene" alt=""><img id="xray" class="scene xray" alt=""><div class="shade"></div><span class="label left">نمای داخلی / X-RAY</span><span class="label right">بدنه / EXTERIOR</span><div class="line"><span class="handle">‹ ›</span></div></div>
 <aside class="panel"><h2 id="name">در حال بارگذاری…</h2><p id="code"></p><label class="slider-label"><span>میزان آشکارشدن X-Ray</span><strong id="percent">۵۰٪</strong></label><input id="range" class="range" type="range" min="0" max="100" value="50" aria-label="میزان آشکارشدن X-Ray"><button data-value="0">فقط بدنه</button><button data-value="50">نیمه‌شفاف</button><button data-value="100">نمای داخلی کامل</button><div class="note">دسکتاپ: حرکت موس · موبایل: لمس و کشیدن · کیبورد: اسلایدر</div></aside>
 </section>
-<p class="source">منبع تصاویر محصول: پیش‌نمایش ۳۲. X-Rayهای اختصاصی هر محصول بر اساس عکس‌های مرجع، نقشه‌های ابعادی و اطلاعات فنی قابل‌تأیید تکمیل خواهند شد.</p>
+<p class="source">منبع تصاویر محصول: پیش‌نمایش ۳۲. X-Ray هر محصول بر اساس عکس مرجع همان محصول ساخته شده است.</p>
 </main>
 <script src="../preview-32/product-images.js"></script>
 <script>
 const products=window.PREVIEW32_IMAGES||[],stage=document.querySelector('#stage'),outer=document.querySelector('#outer'),xray=document.querySelector('#xray'),range=document.querySelector('#range'),percent=document.querySelector('#percent'),nameEl=document.querySelector('#name'),codeEl=document.querySelector('#code'),count=document.querySelector('#count'),nav=document.querySelector('#products');let current=0,drag=false;
 const fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
 function setReveal(v){v=Math.max(0,Math.min(100,Number(v)||0));stage.style.setProperty('--reveal',v+'%');range.value=v;percent.textContent=fa(Math.round(v))+'٪'}
-function select(i){current=i;const p=products[i];outer.src='../'+p.image;xray.src=i<16?'../assets/preview-50-xray/'+String(i+1).padStart(2,'0')+'.jpg':'../'+p.image;outer.alt=p.name;xray.alt='نمای X-Ray مفهومی '+p.name;nameEl.textContent=p.name;codeEl.textContent=p.code+' · '+p.category;count.textContent='محصول '+fa(i+1)+' از '+fa(products.length);[...nav.children].forEach((b,j)=>b.classList.toggle('active',j===i));setReveal(50)}
+function select(i){current=i;const p=products[i];outer.src='../'+p.image;xray.src=i<32?'../assets/preview-50-xray/'+String(i+1).padStart(2,'0')+'.jpg':'../'+p.image;outer.alt=p.name;xray.alt='نمای X-Ray مفهومی '+p.name;nameEl.textContent=p.name;codeEl.textContent=p.code+' · '+p.category;count.textContent='محصول '+fa(i+1)+' از '+fa(products.length);[...nav.children].forEach((b,j)=>b.classList.toggle('active',j===i));setReveal(50)}
 products.forEach((p,i)=>{const b=document.createElement('button');b.textContent=fa(p.number)+' · '+p.code;b.onclick=()=>select(i);nav.appendChild(b)});
 function move(e){const r=stage.getBoundingClientRect();setReveal((e.clientX-r.left)/r.width*100)}
 stage.addEventListener('pointermove',e=>{if(e.pointerType==='mouse'||drag)move(e)});stage.addEventListener('pointerdown',e=>{drag=true;stage.setPointerCapture(e.pointerId);move(e)});stage.addEventListener('pointerup',()=>drag=false);stage.addEventListener('pointercancel',()=>drag=false);range.oninput=()=>setReveal(range.value);document.querySelectorAll('[data-value]').forEach(b=>b.onclick=()=>setReveal(b.dataset.value));select(0);
