@@ -11,6 +11,9 @@ window.PREVIEW56_FAMILY_SHEETS={
   28:["cabin-3015-pro"],29:["single-3015-standard-rotary"],
   30:["single-6020-pro-rotary"],32:["cleaning-fiber-continuous"]
 };
+window.PREVIEW56_EXISTING_XRAYS={
+  "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg"
+};
 window.PREVIEW56_ORIGINAL_FAMILY_SHEETS={
   "CL-003":["cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
   "CLEAN-GENERIC":["cleaning-fiber-continuous","cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
