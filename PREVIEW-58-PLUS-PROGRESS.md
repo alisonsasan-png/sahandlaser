@@ -23,6 +23,7 @@
 - deployment:
   - latest GitHub Pages workflow succeeded for commit `ebb6c558126f70da831005143831bda4ec28cae4`
 - product_routes:
-  - CUT-3015-1 and visual welding route P58-8 verified in deployed Chrome DOM with Main → Drawing → X-Ray
+  - 106 base products + 32 visual products = 138 route entries confirmed
+  - CUT-3015-1, visual welding P58-8, and visual marking P58-17 verified in deployed Chrome DOM with Main → Drawing → X-Ray
 - unresolved:
   - a complete per-product visual audit remains; products with no verified media remain empty rather than receiving substitutes
