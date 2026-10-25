@@ -13,7 +13,6 @@ window.PREVIEW57_FAMILY_SHEETS={
   31:["weld-fiber-base"],32:["cleaning-fiber-continuous"]
 };
 window.PREVIEW57_EXISTING_XRAYS={
-  "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg"
 ,"ML-004":"preview-6/assets/sahand-ml004-xray-branded.jpg"};
 window.PREVIEW57_ORIGINAL_FAMILY_SHEETS={
   "CUT-3015-3":["CUT-3015-1"],
