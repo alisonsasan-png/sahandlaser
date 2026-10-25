@@ -19,4 +19,4 @@
 - deployment:
   - latest GitHub Pages workflow succeeded for commit `ebb6c558126f70da831005143831bda4ec28cae4`
 - unresolved:
-  - full browser-console and every-product visual audit remains to be expanded beyond the validated Preview 58 samples
+  - a complete per-product visual audit remains; products with no verified media remain empty rather than receiving substitutes
