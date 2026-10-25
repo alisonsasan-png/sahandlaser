@@ -20,7 +20,8 @@
   - all 13 deployed entry points returned HTTP 200, include their own design class, load shared runtime/CSS, and contain no preview-57/preview-71 private runtime dependency
   - all preview index URLs and shared assets return HTTP 200
 - ui_qa:
-  - persistent light/dark theme control added to shared runtime and CSS; no new preview-specific dependency introduced
+  - persistent light/dark theme control added
+  - FA/EN/AR/TR controls now translate core navigation, CTA, search, and section labels while switching RTL/LTR to shared runtime and CSS; no new preview-specific dependency introduced
 - seo:
   - Organization JSON-LD added to all Preview 58–70 HTML entry points
 - deployment:
