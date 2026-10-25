@@ -12,7 +12,8 @@ window.PREVIEW56_FAMILY_SHEETS={
   30:["single-6020-pro-rotary"],32:["cleaning-fiber-continuous"]
 };
 window.PREVIEW56_EXISTING_XRAYS={
-  "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg"
+  "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg",
+  "ML-007":"assets/preview-56-xray/ML-007-concept-v1.jpg"
 };
 window.PREVIEW56_ORIGINAL_FAMILY_SHEETS={
   "CUT-3015-3":["CUT-3015-1"],
