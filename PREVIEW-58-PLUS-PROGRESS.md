@@ -16,6 +16,8 @@
 - previews:
   - 58–70 rebuilt with separate design classes and responsive layout variants
   - all preview index URLs and shared assets return HTTP 200
+- seo:
+  - Organization JSON-LD added to all Preview 58–70 HTML entry points
 - deployment:
   - latest GitHub Pages workflow succeeded for commit `ebb6c558126f70da831005143831bda4ec28cae4`
 - unresolved:
