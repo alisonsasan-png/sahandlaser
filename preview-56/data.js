@@ -41,11 +41,14 @@ for(const item of window.PREVIEW32_IMAGES||[]){
     {label:'پیکربندی کابین در نام مدل',value:cabin,scope:'name_only'},
     {label:'گروه کاربرد محصول',value:usage,scope:'identity'}
   ];
+  const specByLabel=new Map(derivedSpecs.map(s=>[s.label,s]));
+  if(verifiedMatch)for(const s of matching.specs||[])specByLabel.set(s.label,s);
+  const mergedSpecs=[...specByLabel.values()];
   preview56Catalog.push({
     code,name:item.name,category:item.category,
     subgroup:'محصولات تصویری پیش‌نمایش ۳۲',
     description:verifiedMatch?matching.description:'تصویر اصلی و X-Ray بازسازی‌شدهٔ این محصول در همین صفحه قرار دارد. ابعاد فقط در صورت وجود نقشهٔ منطبق یا مرجع خانواده نمایش داده می‌شوند.',
-    specs:verifiedMatch?[{label:'شناسه تصویر',value:item.code,scope:'identity'},...(matching.specs||[])]:derivedSpecs,
+    specs:mergedSpecs,
     image:item.image,imageLabel:'تصویر محصول',imageDecision:'use',
     preview56Number:item.number,preview56OriginalCode:item.code,
     ...(sheet?{sheet,sheetId:sheet.id}:{}),
