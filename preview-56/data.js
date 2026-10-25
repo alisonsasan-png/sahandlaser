@@ -15,6 +15,14 @@ window.PREVIEW56_EXISTING_XRAYS={
   "CP-RAY-BM110":"assets/catalog-v2/CP-RAY-BM110/xray-web-v5.jpg"
 };
 window.PREVIEW56_ORIGINAL_FAMILY_SHEETS={
+  "CUT-3015-3":["CUT-3015-1"],
+  "CUT-3015-5":["double-3015-pro"],
+  "CUT-3015-7":["single-3015-standard-rotary"],
+  "CUT-3015-8":["double-3015-standard-rotary"],
+  "CUT-6020-3":["CUT-6020-1"],
+  "CUT-6020-5":["double-6020-pro"],
+  "CUT-6020-7":["single-6020-pro-rotary"],
+  "CUT-6020-8":["double-6020-standard-rotary"],
   "CL-003":["cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
   "CLEAN-GENERIC":["cleaning-fiber-continuous","cleaning-fiber-pulsed-water","cleaning-fiber-pulsed-air"],
   "MK-FIBER-GENERIC":["marking-fiber-desktop","marking-fiber-portable","marking-fiber-flying","marking-fiber-table"],
