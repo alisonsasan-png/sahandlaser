@@ -88,8 +88,6 @@
 <script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}for(const p of ["./vendor/fontawesome.css","./vendor/fonts.css"]){const l=document.createElement("link");l.rel="stylesheet";l.href=assetUrl(p);l.dataset.hostAsset=p;l.onload=()=>document.documentElement.classList.add('host-fonts-ready');document.head.append(l);}</script>
 <style>
 .family-catalog,.family-panel{padding:24px;border:1px solid #cbd5e1;border-radius:24px;margin-bottom:32px;background:var(--surface,#fff);color:#1e2a5e}.family-catalog h2{font-size:clamp(24px,4vw,36px);font-weight:800;margin:12px 0 24px}.family-panel h2{font-weight:700;margin:12px 0}.family-links{display:flex;flex-wrap:wrap;gap:8px}.family-links a,.family-links button{border:1px solid #cbd5e1;padding:10px 14px;border-radius:12px;font-size:13px;transition:background .25s,transform .25s}.family-links a:hover,.family-links button:hover{transform:translateY(-2px)}.family-links [aria-current=page],.family-links [aria-pressed=true]{background:#1e2a5e;color:#fff}.family-filters{display:flex;gap:16px;flex-wrap:wrap;margin:24px 0}.family-filters label{display:grid;gap:6px;font-size:13px}.family-filters select{border:1px solid #cbd5e1;border-radius:10px;padding:10px;background:white;color:#1e2a5e}.family-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.family-cards article{padding:24px;background:#f8fafc;border-radius:18px;border:1px solid #e2e8f0;transition:transform .3s,box-shadow .3s}.family-cards article:hover{transform:translateY(-5px);box-shadow:0 15px 35px #1e2a5e15}.family-cards span,.family-cards p{font-size:13px;color:#64748b}.family-cards h3{font-weight:700;margin:12px 0}.family-cards a{display:block;margin-top:20px;color:#a61c1c;font-weight:700}.compare-scroll{overflow:auto}table{border-collapse:collapse;width:100%;margin-top:16px}td,th{padding:12px;text-align:right;border-bottom:1px solid #cbd5e1}details{margin-top:24px}summary{cursor:pointer;font-weight:bold}.reveal{opacity:0;transform:translateX(28px);transition:opacity .8s ease var(--delay,0ms),transform .8s cubic-bezier(.22,1,.36,1) var(--delay,0ms)}.reveal:nth-child(even){transform:translateX(-28px)}.revealed{opacity:1;transform:none!important}.dark .family-catalog,.dark .family-panel{background:#0f172a;color:#e2e8f0}.dark .family-cards article{background:#172033;border-color:#334155}@media(max-width:720px){.family-cards{grid-template-columns:1fr}.family-catalog,.family-panel{padding:16px}.family-links{max-height:240px;overflow:auto}}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{scroll-behavior:auto!important}}
-</style><style>
-:root{--brand:#132c34;--accent:#c8804d}body{background:#0d191e!important;color:#e5edee!important}header{background:#102329ed!important;border-color:#34505a!important}header a,header button{color:#e5edee!important}.view{background:#0d191e}.view h1,.view h2,.view h3{color:#e5edee!important}.family-catalog,.family-panel{background:#152a32!important;color:#e5edee!important;border-color:#35515b}.family-cards article{background:#1c3540!important;border-color:#35515b}.family-links a,.family-links button{color:#e5edee;border-color:#47636d}.family-links [aria-current=page],.family-links [aria-pressed=true]{background:#c8804d;color:#0d191e}.family-cards a{color:#f0b281}.studio-hero{min-height:78vh;max-width:1280px;margin:auto;padding:70px 28px;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}.studio-hero h1{font-size:clamp(42px,6vw,80px);line-height:1.4;margin:20px 0;font-weight:900}.studio-hero em{color:#edb184;font-style:normal}.studio-hero p{color:#b3c9d1;line-height:2;max-width:530px}.studio-tag{letter-spacing:3px;font-size:12px;color:#edb184}.studio-art{background:radial-gradient(ellipse,#35515b,#0d191e);border:1px solid #35515b;border-radius:50% 50% 14px 14px;padding:50px 20px}.studio-art img{width:100%;filter:drop-shadow(0 30px 20px #0006)}.studio-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.studio-actions a{padding:13px 24px;border:1px solid #edb184;border-radius:5px;color:#edb184}.studio-actions a:first-child{background:#edb184;color:#0d191e}.studio-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:25px 28px;max-width:1280px;margin:auto;border-top:1px solid #35515b;border-bottom:1px solid #35515b}.studio-strip span{color:#adc2c9;font-size:13px}.studio-strip b{display:block;color:#fff}.studio-section{max-width:1280px;margin:auto;padding:65px 28px}.studio-section h2{font-size:36px;margin-bottom:25px}.studio-services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.studio-services article{border:1px solid #35515b;background:#152a32;padding:28px}.studio-services strong{color:#edb184;font-size:13px}.studio-services p{color:#adc2c9;line-height:2}.studio-services h3{font-size:22px;margin:14px 0}.studio-about{border:1px solid #35515b;padding:35px;margin-top:50px;line-height:2;color:#adc2c9}.studio-about a{color:#edb184}@media(max-width:760px){.studio-hero{grid-template-columns:1fr;gap:30px;padding:40px 20px}.studio-services{grid-template-columns:1fr}.studio-strip{grid-template-columns:1fr 1fr}.studio-section{padding:40px 20px}}
 </style></head>
 
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">
@@ -196,8 +194,7 @@
 </div>
 
 <!-- ============ VIEW: HOME ============ -->
-<div id="view-home" class="view active"><div class="studio-hero"><div><span class="studio-tag">فناوران پرتو لیزر سهند</span><h1>مهندسی نور.<br><em>قدرت تولید.</em></h1><p>از انتخاب دستگاه تا راه‌اندازی و پشتیبانی؛ راهکارهای لیزر صنعتی برای خط تولید شما.</p><div class="studio-actions"><a href="preview-4/#products">انتخاب دستگاه ←</a><a href="preview-4/#contact">گفت‌وگو با کارشناس</a></div></div><div class="studio-art"><img src="products/CT-005/images/reference.webp" alt="دستگاه برش لیزر سهند"></div></div><div class="studio-strip"><div><b>برش و جوش</b><span>راهکارهای تولید صنعتی</span></div><div><b>حکاکی و تمیزکاری</b><span>پردازش دقیق سطح</span></div><div><b>قطعات و تجهیزات</b><span>تأمین اجزای دستگاه</span></div><div><b>آموزش و پشتیبانی</b><span>همراهی با تیم تولید</span></div></div><section class="studio-section"><span class="studio-tag">از نیاز واقعی صنعت تا راهکار قابل اجرا</span><h2>برای هر مرحله از تولید</h2><div id="home-products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"></div><div class="studio-services"><article class="card-hover"><strong>01 / انتخاب</strong><h3>پیکربندی مناسب شما</h3><p>انتخاب دستگاه بر اساس جنس، ضخامت، حجم تولید و شرایط کارگاه.</p></article><article class="card-hover"><strong>02 / راه‌اندازی</strong><h3>آماده برای تولید</h3><p>نصب دستگاه و آموزش اپراتور و تیم فنی برای شروع کار.</p></article><article class="card-hover"><strong>03 / پشتیبانی</strong><h3>همراه خط تولید</h3><p>خدمات فنی، تأمین قطعات و تعمیر دستگاه‌های سایر برندها.</p></article></div><div class="studio-about"><h2>سهند لیزر</h2><p>فناوران پرتو لیزر سهند در زمینه طراحی، تأمین و پشتیبانی تجهیزات لیزر صنعتی فعالیت می‌کند. دستگاه‌های برش، جوش، حکاکی و تمیزکاری، سورس، هد، کنترلر و تجهیزات وابسته در مجموعه محصولات ما قرار دارند.</p><a href="preview-4/#contact">درباره نیازتان با ما صحبت کنید ←</a></div></section></div>
-<div hidden aria-hidden="true"><div id="retained-home-hooks" class="view active">
+<div id="view-home" class="view active">
 
   <!-- ===== HERO SLIDER ===== -->
   <section class="hero-slider">
@@ -330,7 +327,7 @@
         <span class="text-accent font-semibold text-sm" data-i18n="products_tag">محصولات ما</span>
         <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-brand dark:text-white" data-i18n="products_title">راهکارهای کامل لیزر فایبر</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="retained-home-products-grid"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5" id="home-products-grid"></div>
       <div class="text-center mt-10">
         <a href="preview-4/#products" onclick="navigateTo('products');return false;" class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white font-semibold rounded-xl transition-all cursor-pointer">
           <span data-i18n="view_all_products">مشاهده همه محصولات</span> <i class="fa-solid fa-arrow-left"></i>
@@ -563,7 +560,7 @@
 </div>
 
 <!-- ============ VIEW: PRODUCTS ============ -->
-</div><div id="view-products" class="view">
+<div id="view-products" class="view">
   <main class="max-w-7xl mx-auto px-6 py-12">
     <nav class="text-sm text-slate-500 mb-6"><a href="preview-4/#home" onclick="navigateTo('home');return false;" class="hover:text-accent cursor-pointer">خانه</a> <span class="mx-2">/</span> <span>محصولات</span></nav>
     <div class="text-center max-w-2xl mx-auto mb-12">
@@ -1148,60 +1145,67 @@ window.SAHAND_MODEL_ENTRIES=entries;
 for(const [kind,name] of [['custom','برش سایز سفارشی'],['tube','برش لوله‌بر'],['robot','برش ربات']]){const p=JSON.parse(JSON.stringify(window.SAHAND_PRODUCTS['CUT-3015-1']));p.code='CUT-'+kind;p.title={fa:name,en:name,ar:name,tr:name};p.specs=[{label:{fa:'نوع دستگاه',en:'Type'},value:name,scope:'user_confirmed'}];window.SAHAND_PRODUCTS[p.code]=p;}</script>
 <script src="data/reviewed-product-images.js?v=media-review-1"></script>
 <script src="runtime/app.js?v=mobile3d-20261006"></script>
-
-<script>
-(function(){
-const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const entries=window.SAHAND_MODEL_ENTRIES,oldRender=window.renderProduct;
-let group='3015',table='all',series='all',tube='all';
-window.renderProduct=function(id){oldRender(id);const p=window.SAHAND_PRODUCTS[id];if(!p)return;const e=entries.find(x=>x.code===id);const peers=e?entries.filter(x=>x.size===e.size):Object.values(window.SAHAND_PRODUCTS).filter(x=>x.categoryId===p.categoryId).map(x=>({code:x.code,name:x.title.fa}));let box=document.getElementById('family-navigation');if(!box){box=document.createElement('nav');box.id='family-navigation';box.className='family-panel';box.setAttribute('aria-label','انتخاب مدل‌های هم‌گروه');document.getElementById('product-title').before(box);}box.innerHTML='<a href="preview-4/#products">محصولات / '+escape(e?'برش '+e.size:p.cat.fa)+'</a><h2>مدل‌های این گروه</h2><div class="family-links">'+peers.map(x=>'<a href="preview-4/#product='+x.code+'" '+(x.code===id?'aria-current="page"':'')+'>'+escape(x.name)+'</a>').join('')+'</div>';};
-const catalog=document.createElement('section');catalog.className='family-catalog reveal';catalog.id='family-catalog';
-document.getElementById('products-grid-1').before(catalog);
-function draw(){
-const found=entries.filter(x=>x.size===group&&(table==='all'||x.table===table)&&(series==='all'||x.series===series)&&(tube==='all'||String(x.tube)===tube));
-catalog.innerHTML='<span class="text-accent">دستگاه‌های برش لیزر</span><h2>مدل مناسب خط تولید شما</h2><div class="family-links">'+['3015','6020'].map(s=>'<button data-size="'+s+'" aria-pressed="'+(s===group)+'">برش '+s+'</button>').join('')+'<button data-extra="custom">برش سایز سفارشی</button><button data-extra="tube">برش لوله‌بر</button><button data-extra="robot">برش ربات</button></div><div class="family-filters"><label>ساختار میز <select data-filter="table"><option value="all">همه</option><option value="single">تک میز</option><option value="dual">دو میز</option></select></label><label>سری <select data-filter="series"><option value="all">همه</option><option>DZ</option><option>LD</option></select></label><label>لوله‌بر <select data-filter="tube"><option value="all">همه</option><option value="true">دارای لوله‌بر</option><option value="false">بدون لوله‌بر</option></select></label></div><div class="family-cards">'+found.map(x=>'<article><span>'+escape(x.series)+' / '+x.size+'</span><h3>'+escape(x.name)+'</h3><p>'+ (x.table==='single'?'تک میز':'دو میز')+(x.cabin?' · کابین‌دار':'')+(x.tube?' · مجهز به لوله‌بر':'')+'</p><a href="preview-4/#product='+x.code+'">مشاهده مدل ←</a></article>').join('')+'</div><details><summary>مقایسه ساختار مدل‌ها</summary><div class="compare-scroll"><table><thead><tr><th>مدل</th><th>میز</th><th>کابین</th><th>لوله‌بر</th></tr></thead><tbody>'+found.map(x=>'<tr><td>'+escape(x.name)+'</td><td>'+(x.table==='single'?'تک':'دو')+'</td><td>'+(x.cabin?'دارد':'—')+'</td><td>'+(x.tube?'دارد':'—')+'</td></tr>').join('')+'</tbody></table></div></details>';
-catalog.querySelectorAll('[data-size]').forEach(b=>b.onclick=()=>{group=b.dataset.size;draw()});
-catalog.querySelectorAll('[data-extra]').forEach(b=>b.onclick=()=>location.hash='product=CUT-'+b.dataset.extra);
-catalog.querySelectorAll('[data-filter]').forEach(s=>{s.value=({table,series,tube})[s.dataset.filter];s.onchange=()=>{if(s.dataset.filter==='table')table=s.value;if(s.dataset.filter==='series')series=s.value;if(s.dataset.filter==='tube')tube=s.value;draw()}});
-}draw();
-const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(!reduced&&'IntersectionObserver' in window){const observer=new IntersectionObserver(list=>list.forEach(x=>{if(x.isIntersecting){x.target.classList.add('revealed');observer.unobserve(x.target)}}),{threshold:.08});document.querySelectorAll('.family-catalog,.card-hover,.product-large-section').forEach((x,i)=>{x.classList.add('reveal');x.style.setProperty('--delay',(i%4)*60+'ms');observer.observe(x)});}
-window.addEventListener('hashchange',()=>{document.querySelectorAll('.view.active .reveal').forEach(x=>x.classList.add('revealed'))});
-if(location.hash.startsWith('#product='))window.renderProduct(location.hash.split('=')[1]);
-})();</script></body>
-<style>[hidden]{display:none!important}.quick-families{margin-top:22px;padding-top:20px;border-top:1px solid #35515b}.quick-count{color:#adc2c9;font-size:13px;margin:20px 0}.quick-categories{gap:10px}.family-cards article{min-width:0}@media(max-width:640px){.quick-categories,.quick-families{display:flex;flex-wrap:nowrap;overflow:auto;padding-bottom:10px}.quick-categories button,.quick-families button{flex-shrink:0;min-height:44px}.family-cards{grid-template-columns:1fr}}</style><script>
+<style>
+#category-browser{margin:0 0 48px}.browser-crumb{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px;color:#64748b;margin-bottom:24px}.browser-crumb a:hover{color:#a61c1c}.browser-title{font-size:clamp(25px,3vw,36px);font-weight:800;color:#1e2a5e;margin-bottom:10px}.browser-intro{color:#64748b;line-height:1.9;margin-bottom:28px}.browser-categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.browser-category,.browser-model{border:1px solid #e2e8f0;background:#fff;border-radius:20px;padding:26px;text-align:right;transition:transform .35s,box-shadow .35s,border-color .35s}.browser-category:hover,.browser-model:hover{transform:translateY(-5px);border-color:#a61c1c80;box-shadow:0 16px 32px #1e2a5e12}.browser-symbol{height:100px;border-radius:14px;background:linear-gradient(135deg,#1e2a5e,#36477f);display:grid;place-items:center;color:white;font-size:32px;margin-bottom:22px}.browser-category h3,.browser-model h3{font-size:20px;font-weight:700;color:#1e2a5e;margin:10px 0}.browser-category p,.browser-model p{color:#64748b;font-size:14px;line-height:1.8}.browser-category>span,.browser-model>a{display:block;margin-top:24px;color:#a61c1c;font-weight:700;font-size:14px}.browser-models{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.browser-model-top{display:flex;justify-content:space-between;color:#64748b;font-size:12px}.browser-model-top span{padding:4px 10px;background:#f1f5f9;border-radius:8px}.browser-heading{display:flex;justify-content:space-between;align-items:start;gap:20px}.browser-heading>a{color:#a61c1c;white-space:nowrap;font-size:14px}.browser-filters{display:flex;gap:16px;flex-wrap:wrap;padding:18px;background:#f1f5f9;border-radius:16px;margin-bottom:24px}.browser-filters label{display:grid;gap:8px;font-size:13px;flex:1;min-width:150px}.browser-filters select{border:1px solid #cbd5e1;border-radius:10px;padding:10px;background:white;color:#1e2a5e}.dark .browser-category,.dark .browser-model{background:#0f172a;border-color:#334155}.dark .browser-title,.dark .browser-category h3,.dark .browser-model h3{color:#f1f5f9}.dark .browser-filters{background:#0f172a}.dark .browser-model-top span{background:#1e293b}.dark .browser-intro,.dark .browser-category p,.dark .browser-model p,.dark .browser-crumb{color:#94a3b8}[hidden]{display:none!important}@media(max-width:800px){.browser-categories,.browser-models{grid-template-columns:repeat(2,minmax(0,1fr))}.browser-heading{display:block}}@media(max-width:520px){.browser-categories,.browser-models{grid-template-columns:1fr}.browser-symbol{height:75px}}@media(prefers-reduced-motion:reduce){.browser-category,.browser-model{transition:none}}
+</style><script>
 (function(){
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const entries=window.SAHAND_MODEL_ENTRIES;entries.forEach((e,i)=>{e.table=i%9<3||i%9===6?'single':'dual'});
-const categories={cutting:'دستگاه‌های برش لیزر',welding:'دستگاه‌های جوش',marking:'حکاکی',cleaning:'تمیزکاری',source:'سورس لیزر',head:'هد و کنترلر',parts:'قطعات دستگاه',consumables:'مصرفی‌ها'};
-const families=[['3015','برش 3015'],['6020','برش 6020'],['custom','برش سایز سفارشی'],['tube','برش لوله‌بر'],['robot','برش ربات']];
-let category='cutting',family='3015';
-const section=document.getElementById('family-catalog');section.classList.remove('reveal');section.classList.add('revealed');
-function draw(){
-const items=category==='cutting'?(family==='3015'||family==='6020'?entries.filter(e=>e.size===family).map(e=>products[e.code]):[products['CUT-'+family]]):Object.values(products).filter(p=>p.categoryId===category);
-section.innerHTML='<h2>محصول مناسب کار شما</h2><div class="family-links quick-categories" aria-label="دسته محصولات">'+Object.entries(categories).map(([id,name])=>'<button type="button" data-category="'+id+'" aria-pressed="'+(id===category)+'">'+name+'</button>').join('')+'</div>'+(category==='cutting'?'<div class="family-links quick-families" aria-label="گروه‌های برش">'+families.map(([id,name])=>'<button type="button" data-family="'+id+'" aria-pressed="'+(id===family)+'">'+name+'</button>').join('')+'</div>':'')+'<p class="quick-count">'+items.length+' محصول</p><div class="family-cards">'+items.filter(Boolean).map(p=>'<article><h3>'+esc(p.title.fa)+'</h3><p>'+esc(p.subtitle.fa||'')+'</p><a href="preview-4/#product='+p.code+'">مشاهده محصول ←</a></article>').join('')+'</div>';
-section.querySelectorAll('[data-category]').forEach(b=>b.onclick=()=>select(b.dataset.category,family));
-section.querySelectorAll('[data-family]').forEach(b=>b.onclick=()=>select('cutting',b.dataset.family));
+const entries=window.SAHAND_MODEL_ENTRIES;
+entries.forEach((e,i)=>{e.table=(i%9<3||i%9===6)?'single':'dual'});
+const groups=[['3015','برش 3015','۹ مدل تک میز، دو میز و ترکیبی'],['6020','برش 6020','۹ مدل تک میز، دو میز و ترکیبی'],['custom','برش سایز سفارشی','انتخاب ابعاد متناسب با پروژه'],['tube','برش لوله‌بر','برش لوله و پروفیل'],['robot','برش ربات','راهکار برش رباتیک']];
+const link=hash=>'preview-4/'+hash;
+const originalRoute=window.applyRoute,originalProduct=window.renderProduct;
+let selectedTable='all',selectedSeries='all',selectedTube='all';
+window.renderProductsGrid=function(){
+const g1=document.getElementById('products-grid-1'),g2=document.getElementById('products-grid-2');
+if(g1)g1.innerHTML=cats.slice(0,4).map(renderCatCard).join('');
+if(g2)g2.innerHTML=cats.slice(4).map(renderCatCard).join('');
+};
+window.openCategory=function(id){location.hash='category='+id};
+function root(){let node=document.getElementById('category-browser');if(!node){node=document.createElement('section');node.id='category-browser';document.getElementById('products-grid-1').before(node)}return node}
+function visibility(nested){
+['products-grid-1','products-grid-2','full-catalog-section'].forEach(id=>{const el=document.getElementById(id);if(el)el.hidden=nested});
+['products-grid-1','products-grid-2'].forEach(id=>{const heading=document.getElementById(id)?.previousElementSibling;if(heading&&heading.tagName==='H2')heading.hidden=nested});
+root().hidden=!nested;
 }
-function select(id,size){category=categories[id]?id:'cutting';family=families.some(x=>x[0]===size)?size:'3015';location.hash='catalog='+category+'&family='+family;draw()}
-window.openCategory=id=>select(id,family);
-const previousRoute=window.applyRoute;
+function crumb(family){return '<nav class="browser-crumb"><a href="'+link('#products')+'">محصولات</a><span>/</span><a href="'+link('#category=cutting')+'">دستگاه‌های برش لیزر</a>'+(family?'<span>/</span><span>برش '+family+'</span>':'')+'</nav>'}
+function drawCategory(id){
+const node=root();visibility(true);
+if(id==='cutting'){node.innerHTML=crumb()+'<h2 class="browser-title">دستگاه‌های برش لیزر</h2><p class="browser-intro">نوع دستگاه را انتخاب کنید.</p><div class="browser-categories">'+groups.map(([key,name,desc],i)=>'<a class="browser-category" href="'+link(key==='3015'||key==='6020'?'#family='+key:'#product=CUT-'+key)+'"><div class="browser-symbol"><i class="fa-solid '+['fa-border-all','fa-expand','fa-ruler-combined','fa-grip-lines','fa-gears'][i]+'" aria-hidden="true"></i></div><h3>'+name+'</h3><p>'+desc+'</p><span>مشاهده '+(i<2?'مدل‌ها':'دستگاه')+' ←</span></a>').join('')+'</div>';return}
+const items=Object.values(products).filter(p=>p.categoryId===id);
+node.innerHTML='<nav class="browser-crumb"><a href="'+link('#products')+'">محصولات</a></nav><h2 class="browser-title">'+esc(items[0]?.cat.fa||'محصولات')+'</h2><div class="browser-models">'+items.map(p=>'<article class="browser-model"><h3>'+esc(p.title.fa)+'</h3><a href="'+link('#product='+p.code)+'">مشاهده محصول ←</a></article>').join('')+'</div>';
+}
+function drawFamily(size){
+const node=root();visibility(true);
+const items=entries.filter(e=>e.size===size&&(selectedTable==='all'||e.table===selectedTable)&&(selectedSeries==='all'||e.series===selectedSeries)&&(selectedTube==='all'||String(e.tube)===selectedTube));
+node.innerHTML=crumb(size)+'<div class="browser-heading"><div><h2 class="browser-title">برش '+size+'</h2><p class="browser-intro">مدل موردنظر را انتخاب کنید؛ در صفحه هر مدل، سایر مدل‌های این گروه هم در دسترس هستند.</p></div><a href="'+link('#family='+(size==='3015'?'6020':'3015'))+'">مشاهده برش '+(size==='3015'?'6020':'3015')+' ←</a></div><div class="browser-filters"><label>ساختار میز<select data-filter="table"><option value="all">همه مدل‌ها</option><option value="single">تک میز</option><option value="dual">دو میز</option></select></label><label>سری دستگاه<select data-filter="series"><option value="all">همه سری‌ها</option><option>DZ</option><option>LD</option></select></label><label>لوله‌بر<select data-filter="tube"><option value="all">همه</option><option value="true">دارای لوله‌بر</option><option value="false">بدون لوله‌بر</option></select></label></div><div class="browser-models">'+items.map(e=>'<article class="browser-model"><div class="browser-model-top"><span>'+size+'</span><span>'+e.series+'</span></div><h3>'+esc(e.name)+'</h3><p>'+[e.table==='single'?'تک میز':'دو میز',e.cabin?'کابین‌دار':'',e.tube?'دارای لوله‌بر':''].filter(Boolean).join(' · ')+'</p><a href="'+link('#product='+e.code)+'">مشاهده مشخصات مدل ←</a></article>').join('')+'</div>';
+node.querySelectorAll('[data-filter]').forEach(s=>{s.value=({table:selectedTable,series:selectedSeries,tube:selectedTube})[s.dataset.filter];s.onchange=()=>{if(s.dataset.filter==='table')selectedTable=s.value;if(s.dataset.filter==='series')selectedSeries=s.value;if(s.dataset.filter==='tube')selectedTube=s.value;drawFamily(size)}});
+}
 window.applyRoute=function(){
-if(location.hash.startsWith('#catalog=')){const params=new URLSearchParams(location.hash.slice(1));category=categories[params.get('catalog')]?params.get('catalog'):'cutting';family=families.some(x=>x[0]===params.get('family'))?params.get('family'):'3015';showView('products');updateActiveNav('products');currentProductId=null;draw();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});return}
-previousRoute();if(location.hash==='#products')draw();
+const hash=location.hash;
+if(hash.startsWith('#family=')||hash.startsWith('#category=')){
+showView('products');updateActiveNav('products');currentProductId=null;
+if(hash.startsWith('#family=')){const size=hash.slice(8);if(!['3015','6020'].includes(size)){location.hash='category=cutting';return}selectedTable=selectedSeries=selectedTube='all';drawFamily(size);document.title='برش '+size+' | سهند لیزر'}else drawCategory(hash.slice(10));
+window.scrollTo({top:0,behavior:'smooth'});return;
+}
+visibility(false);originalRoute();
+};
+window.renderProduct=function(id){
+originalProduct(id);const p=products[id];if(!p)return;const e=entries.find(x=>x.code===id);
+let box=document.getElementById('family-navigation');if(!box){box=document.createElement('nav');box.id='family-navigation';box.className='family-panel';document.getElementById('product-title').before(box)}
+const peers=e?entries.filter(x=>x.size===e.size):Object.values(products).filter(x=>x.categoryId===p.categoryId&&!x.code.startsWith('CT-')).map(x=>({code:x.code,name:x.title.fa}));
+box.innerHTML='<a href="'+link(e?'#family='+e.size:'#category='+p.categoryId)+'">← بازگشت به '+esc(e?'برش '+e.size:p.cat.fa)+'</a><h2>مدل‌های این گروه</h2><div class="family-links">'+peers.map(x=>'<a href="'+link('#product='+x.code)+'" '+(x.code===id?'aria-current="page"':'')+'>'+esc(x.name)+'</a>').join('')+'</div>';
 };
 document.addEventListener('DOMContentLoaded',()=>{
-['products-grid-1','products-grid-2','full-catalog-section'].forEach(id=>{const el=document.getElementById(id);if(el){el.hidden=true;const heading=el.previousElementSibling;if(heading?.tagName==='H2')heading.hidden=true}});
-const menu=document.querySelector('#view-products');menu.querySelectorAll('[data-i18n="products_full_desc"]').forEach(p=>p.textContent='دسته و گروه را همین‌جا انتخاب کنید و مستقیم وارد صفحه محصول شوید.');
-const dropdown=document.querySelector('header .menu-dropdown-content');
-if(dropdown){dropdown.innerHTML='<a href="preview-4/#catalog=cutting&family=3015">برش 3015</a><a href="preview-4/#catalog=cutting&family=6020">برش 6020</a>'+Object.entries(categories).map(([id,name])=>'<a href="preview-4/#catalog='+id+'&family=3015">'+name+'</a>').join('')}
-draw();window.applyRoute();
+document.querySelectorAll('.dropdown-menu a').forEach((a,i)=>{const ids=['cutting','welding','marking','cleaning','source','head','parts','consumables'];if(ids[i]){a.href=link('#category='+ids[i]);a.onclick=null}});
+window.applyRoute();
 });
 })();
-</script><style>
+</script>
+<style>
 .compare-hint{color:#64748b;margin:12px 0}.compare-picks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.compare-picks label{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #cbd5e1;border-radius:12px;font-size:13px;cursor:pointer}.compare-picks input{width:18px;height:18px;accent-color:#1e2a5e}.model-compare{min-width:600px;width:100%;border-collapse:collapse}.model-compare th,.model-compare td{padding:15px;text-align:right;border-bottom:1px solid #cbd5e1;vertical-align:top}.model-compare thead th{background:#1e2a5e;color:#fff}.model-compare tbody th{min-width:130px}.model-compare caption{text-align:right;padding:10px;font-weight:700}.peer-model{display:block;padding:14px;border:1px solid #cbd5e1;border-radius:10px;margin-bottom:8px}.peer-model[aria-current=page]{background:#1e2a5e;color:white}.model-identity{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:300px;padding:30px;background:linear-gradient(135deg,#1e2a5e,#36477f);color:white;text-align:center;gap:16px}.model-identity strong{font-size:clamp(22px,3vw,34px)}.model-identity p{font-size:13px;line-height:2}.mobile-product-actions{display:none}.family-links{max-height:220px;overflow:auto}.enter-card{opacity:0;transform:translateY(20px) translateX(12px);transition:opacity .6s ease var(--entry-delay,0ms),transform .6s ease var(--entry-delay,0ms)}.enter-card.entered{opacity:1;transform:none}.dark .compare-picks label,.dark .peer-model{border-color:#334155}.dark .model-compare th,.dark .model-compare td{border-color:#334155}@media(max-width:640px){.mobile-product-actions{display:flex;position:sticky;bottom:0;z-index:35;gap:10px;padding:12px;background:#fff;border-top:1px solid #cbd5e1}.mobile-product-actions a{flex:1;text-align:center;padding:12px;border-radius:10px;background:#1e2a5e;color:white;font-size:13px}.mobile-product-actions a:last-child{background:#15803d}.dark .mobile-product-actions{background:#0f172a}.family-links{display:grid;grid-template-columns:1fr 1fr}.family-links a{font-size:12px}.compare-picks{max-height:240px;overflow:auto}.browser-model,.browser-category{min-width:0}.browser-heading>a{white-space:normal}.compare-scroll{max-width:100%;overscroll-behavior:contain}button,a,input,select{touch-action:manipulation}}
 @media(prefers-reduced-motion:reduce){.enter-card{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-</style><style>#product-comparison{color:#e5edee;border-color:#35515b;background:#152a32;padding:24px;border-radius:20px}.compare-hint{color:#adc2c9}.compare-picks label,.peer-model{border-color:#47636d}.model-compare thead th{background:#243e48;color:#edb184}.model-compare th,.model-compare td{border-color:#35515b}.peer-model[aria-current=page]{background:#c8804d;color:#0d191e}</style><script>
+</style><script>
 (function(){
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const entries=window.SAHAND_MODEL_ENTRIES;
@@ -1263,10 +1267,17 @@ document.querySelectorAll('#product-large-sections .product-large-section').forE
 let bar=document.getElementById('mobile-product-actions');if(!bar){bar=document.createElement('div');bar.id='mobile-product-actions';bar.className='mobile-product-actions';document.getElementById('view-product').append(bar)}
 bar.innerHTML='<a href="tel:+989125855548">تماس با فروش</a><a href="https://wa.me/989125855548?text='+encodeURIComponent('درخواست مشخصات و پیش‌فاکتور برای '+p.title.fa)+'" target="_blank" rel="noopener noreferrer">مشاوره این مدل</a>';
 };
-
+function observe(){
+if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+const observer=new IntersectionObserver(xs=>xs.forEach(x=>{if(x.isIntersecting){x.target.classList.add('entered');observer.unobserve(x.target)}}),{threshold:.05});
+document.querySelectorAll('.browser-category,.browser-model').forEach((el,i)=>{el.classList.add('enter-card');el.style.setProperty('--entry-delay',(i%3)*70+'ms');observer.observe(el)});
+}
+const prevRoute=window.applyRoute;window.applyRoute=function(){prevRoute();requestAnimationFrame(observe)};
 document.addEventListener('DOMContentLoaded',()=>{
-if(location.hash.startsWith('#product='))window.renderProduct(location.hash.slice(9));
+document.querySelectorAll('img').forEach(img=>{img.decoding='async';if(!img.closest('.hero-slide,.spin-viewer'))img.loading='lazy'});
+const view=document.getElementById('view-products');const mo=new MutationObserver(()=>{observe()});mo.observe(document.getElementById('category-browser'),{childList:true,subtree:false});
+window.applyRoute();
 });
 })();
-</script></html>
+</script></body></html>
 
