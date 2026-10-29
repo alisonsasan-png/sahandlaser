@@ -1488,5 +1488,20 @@ function render(){
 }
 new MutationObserver(render).observe(document.body,{subtree:true,childList:true});setInterval(render,400);
 })();
+</script><script>
+(function(){
+const exact={"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg","single-table-pro-3015-catalog-v1.jpg","single-3015-pro-rotary-estimated-v1.jpg","single-3015-standard-rotary-estimated-v1.jpg"],"DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],"DZT3015T":["double-3015-pro-estimated-v1.jpg","double-3015-pro-rotary-estimated-v1.jpg","double-3015-standard-estimated-v1.jpg","double-3015-standard-rotary-estimated-v1.jpg"],"DZT6020T":["cabin-6020-pro-estimated-v1.jpg","double-6020-pro-estimated-v1.jpg","double-6020-pro-rotary-estimated-v1.jpg","double-6020-standard-estimated-v1.jpg","double-6020-standard-rotary-estimated-v1.jpg","single-table-pro-6020-catalog-v1.jpg","single-table-standard-6020-catalog-v1.jpg","single-6020-pro-rotary-estimated-v1.jpg"],"DW3015":["weld-fiber-air-cooled-dimensional-v1.jpg","weld-fiber-base-dimensional-v1.jpg","weld-fiber-mini-dimensional-v1.jpg","weld-fiber-spot-dimensional-v1.jpg"],"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg","cleaning-fiber-pulsed-air-dimensional-v2.jpg","cleaning-fiber-pulsed-water-dimensional-v1.jpg"],"ML-001":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],"ML-002":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],"ML-005":["marking-fiber-portable-dimensional-v1.jpg"],"SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],"LR30":["weld-fiber-mini-dimensional-v1.jpg"],"LG60":["weld-fiber-spot-dimensional-v1.jpg"]};
+const fallback={cutting:["cabin-3015-pro-estimated-v1.jpg","cabin-6020-pro-estimated-v1.jpg","double-3015-pro-estimated-v1.jpg","double-3015-pro-rotary-estimated-v1.jpg","double-3015-standard-estimated-v1.jpg","double-3015-standard-rotary-estimated-v1.jpg","double-6020-pro-estimated-v1.jpg","double-6020-pro-rotary-estimated-v1.jpg","double-6020-standard-estimated-v1.jpg","double-6020-standard-rotary-estimated-v1.jpg","single-3015-pro-rotary-estimated-v1.jpg","single-3015-standard-rotary-estimated-v1.jpg","single-6020-pro-rotary-estimated-v1.jpg","single-table-pro-3015-catalog-v1.jpg","single-table-pro-6020-catalog-v1.jpg","single-table-standard-3015-catalog-v2.jpg","single-table-standard-4020-estimated-v1.jpg","single-table-standard-6020-catalog-v1.jpg"],marking:["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg","marking-fiber-portable-dimensional-v1.jpg","marking-fiber-table-dimensional-v1.jpg"],welding:["weld-fiber-air-cooled-dimensional-v1.jpg","weld-fiber-base-dimensional-v1.jpg","weld-fiber-mini-dimensional-v1.jpg","weld-fiber-spot-dimensional-v1.jpg"],cleaning:["cleaning-fiber-continuous-dimensional-v1.jpg","cleaning-fiber-pulsed-air-dimensional-v2.jpg","cleaning-fiber-pulsed-water-dimensional-v1.jpg"]};
+function render(){
+ const card=document.querySelector(".cutting-detail-card");if(!card||card.querySelector(".verified-drawings"))return;
+ const kicker=card.querySelector(".cutting-detail-kicker");const raw=kicker?kicker.textContent:"";const m=raw.match(/کد\s*([A-Z0-9-]+)/i);const code=m?m[1].toUpperCase():"";
+ const cat=/حکاک|مارک/i.test(raw)?"marking":/جوش/i.test(raw)?"welding":/تمیز/i.test(raw)?"cleaning":"cutting";
+ const files=exact[code]||fallback[cat];if(!files)return;
+ const sec=document.createElement("section");sec.className="cutting-detail-section verified-drawings";sec.innerHTML="<h2>نقشه‌های ابعادی موجود</h2><p>فایل‌های نقشهٔ ابعادی ثبت‌شده برای این محصول یا خانوادهٔ محصول:</p>";
+ files.forEach((file,i)=>{const img=document.createElement("img");img.src="../assets/product-drawings/"+file+"?v=5";img.alt="نقشه ابعادی "+(code||cat)+" "+(i+1);img.style="display:block;width:100%;max-height:620px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px;margin:14px 0";img.loading="lazy";sec.appendChild(img)});
+ card.appendChild(sec);
+}
+new MutationObserver(render).observe(document.body,{subtree:true,childList:true});setInterval(render,300);
+})();
 </script></body>
 </html>
