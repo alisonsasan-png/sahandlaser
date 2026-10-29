@@ -1449,44 +1449,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script><script>
 (function(){
-const drawings={
-"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg"],
-"DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],
-"DZT3015T":["double-3015-standard-rotary-estimated-v1.jpg"],
-"DZT6020T":["double-6020-standard-rotary-estimated-v1.jpg"],
-"ML-001":["marking-fiber-desktop-dimensional-v1.jpg"],
-"ML-002":["marking-fiber-desktop-dimensional-v1.jpg"],
-"ML-005":["marking-fiber-portable-dimensional-v1.jpg"],
-"SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],
-"LR30":["weld-fiber-mini-dimensional-v1.jpg"],
-"LG60":["weld-fiber-spot-dimensional-v1.jpg"],
-"DW3015":["weld-fiber-base-dimensional-v1.jpg"],
-"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg"]
-};
-function render(){
- const card=document.querySelector(".cutting-detail-card");
- if(!card||card.querySelector(".model-specific-drawing"))return;
- const kicker=card.querySelector(".cutting-detail-kicker");
- const text=kicker?kicker.textContent:"";
- const match=text.match(/کد\s*([A-Z0-9-]+)/i);
- const code=match?match[1].toUpperCase():"";
- const files=drawings[code];
+const drawings={"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg"],"DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],"DZT3015T":["double-3015-standard-rotary-estimated-v1.jpg"],"DZT6020T":["double-6020-standard-rotary-estimated-v1.jpg"],"ML-001":["marking-fiber-desktop-dimensional-v1.jpg"],"ML-002":["marking-fiber-desktop-dimensional-v1.jpg"],"ML-005":["marking-fiber-portable-dimensional-v1.jpg"],"SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],"LR30":["weld-fiber-mini-dimensional-v1.jpg"],"LG60":["weld-fiber-spot-dimensional-v1.jpg"],"DW3015":["weld-fiber-base-dimensional-v1.jpg"],"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg"]};
+const original=window.openCuttingProduct;
+if(!original)return;
+window.openCuttingProduct=function(code,options){
+ original(code,options);
+ const files=drawings[String(code).toUpperCase()];
  if(!files)return;
- const section=document.createElement("section");
- section.className="cutting-detail-section model-specific-drawing";
- section.innerHTML="<h2>نقشهٔ ابعادی اختصاصی این مدل</h2><p>این نقشه فقط به همین مدل متصل شده است.</p>";
- files.forEach((file,index)=>{
+ setTimeout(function(){
+  const card=document.querySelector(".cutting-detail-card");
+  if(!card||card.querySelector(".model-specific-drawing"))return;
+  const section=document.createElement("section");
+  section.className="cutting-detail-section model-specific-drawing";
+  section.innerHTML="<h2>نقشهٔ ابعادی اختصاصی این مدل</h2><p>این نقشه فقط به محصول "+String(code)+" اختصاص دارد.</p>";
+  files.forEach(function(file){
    const img=document.createElement("img");
-   img.src="../assets/product-drawings/"+file+"?model="+encodeURIComponent(code);
-   img.alt="نقشه ابعادی اختصاصی "+code;
+   img.src="../assets/product-drawings/"+file+"?product="+encodeURIComponent(code);
+   img.alt="نقشهٔ ابعادی "+code;
    img.style="display:block;width:100%;max-height:700px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px;margin:18px 0";
-   img.loading="lazy";
    section.appendChild(img);
- });
- card.appendChild(section);
-}
-new MutationObserver(render).observe(document.body,{subtree:true,childList:true});
-setInterval(render,500);
+  });
+  card.appendChild(section);
+ },120);
+};
 })();
 </script></body>
 </html>
