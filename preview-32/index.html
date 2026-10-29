@@ -1448,10 +1448,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setSlideText(3, 'تمیزکاری لیزری', 'دستگاه‌های تمیزکاری لیزری', 'راهکارهای پاک‌سازی لیزری و تجهیزات مرتبط با خدمات سهند لیزر', 'مشاهدهٔ دستگاه‌های تمیزکاری', 'cleaning');
 });
 </script><script>
-(function(){
+document.addEventListener("DOMContentLoaded",function(){
 const drawings={"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg"],"DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],"DZT3015T":["double-3015-standard-rotary-estimated-v1.jpg"],"DZT6020T":["double-6020-standard-rotary-estimated-v1.jpg"],"ML-001":["marking-fiber-desktop-dimensional-v1.jpg"],"ML-002":["marking-fiber-desktop-dimensional-v1.jpg"],"ML-005":["marking-fiber-portable-dimensional-v1.jpg"],"SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],"LR30":["weld-fiber-mini-dimensional-v1.jpg"],"LG60":["weld-fiber-spot-dimensional-v1.jpg"],"DW3015":["weld-fiber-base-dimensional-v1.jpg"],"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg"]};
 const original=window.openCuttingProduct;
-if(!original)return;
+if(typeof original!=="function")return;
 window.openCuttingProduct=function(code,options){
  original(code,options);
  const files=drawings[String(code).toUpperCase()];
@@ -1470,8 +1470,8 @@ window.openCuttingProduct=function(code,options){
    section.appendChild(img);
   });
   card.appendChild(section);
- },120);
+ },180);
 };
-})();
+});
 </script></body>
 </html>
