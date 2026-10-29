@@ -87,7 +87,7 @@
 <script>function assetUrl(p){if(!p)return "";if(/^(https?:|data:|blob:)/.test(p))return p;if(p.startsWith('./'))return new URL(p,document.baseURI).href;return (window.SAHAND_ASSET_OVERRIDES||{})[p]||new URL(window.SAHAND_CONFIG.assetBaseUrl+p,document.baseURI).href;}for(const p of ["./vendor/fontawesome.css","./vendor/fonts.css"]){const l=document.createElement("link");l.rel="stylesheet";l.href=assetUrl(p);l.dataset.hostAsset=p;l.onload=()=>document.documentElement.classList.add('host-fonts-ready');document.head.append(l);}</script>
 </head>
 
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen">
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 min-h-screen"><nav style="position:sticky;top:0;z-index:10;padding:12px 20px;background:#102b43;color:#fff;display:flex;gap:10px;flex-wrap:wrap;font-family:Tahoma,Arial,sans-serif"><a href="catalog.html" style="color:#fff;text-decoration:none;padding:7px 11px;border:1px solid #6cc6d5;border-radius:8px">کاتالوگ محصولات</a><a href="drawings.html" style="color:#fff;text-decoration:none;padding:7px 11px;border:1px solid #6cc6d5;border-radius:8px">نقشه‌های ابعادی</a><a href="previews.html" style="color:#fff;text-decoration:none;padding:7px 11px;border:1px solid #6cc6d5;border-radius:8px">پیش‌نمایش‌های صنعتی</a></nav>
 
 <!-- ============ TOP BAR ============ -->
 <div class="bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
