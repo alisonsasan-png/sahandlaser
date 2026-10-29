@@ -29,3 +29,10 @@ LR30، LG60
 - assets/xray/fiber-marking-xray.svg
 
 این دو فایل نمای داخلی شماتیک خانواده‌ای هستند و جایگزین نقشه انفجاری یا نقشه ساخت کارخانه‌ای نیستند. کاتالوگ برای محصولات دسته برش و مارکینگ به آن‌ها لینک می‌دهد.
+
+## منابع بیرونی بررسی‌شده
+
+- LR30: GWEIKE CO₂ marking machine reference — https://www.gwklaser.com/marking/LR30.html
+- LG60: GWEIKE CO₂ marking machine reference — https://www.gweikecnc.com/product/154.html
+
+این منابع نوع لیزر، توان و میدان مارکینگ را نشان می‌دهند، اما ابعاد کلی دقیق بدنه را برای تطبیق با تصویر ورک‌اسپیس ارائه نمی‌کنند؛ بنابراین هنوز نقشه‌ی ابعادی Art-Line برای این دو مدل منتشر نشده است.
