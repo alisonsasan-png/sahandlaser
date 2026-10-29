@@ -1447,61 +1447,46 @@ document.addEventListener('DOMContentLoaded', () => {
   setSlideText(2, 'حکاکی و مارکینگ لیزری', 'دستگاه‌های حکاکی و مارکینگ', 'راهکارهای حکاکی لیزری برای نشانه‌گذاری و شخصی‌سازی قطعات و محصولات', 'مشاهدهٔ دستگاه‌های حکاکی', 'marking');
   setSlideText(3, 'تمیزکاری لیزری', 'دستگاه‌های تمیزکاری لیزری', 'راهکارهای پاک‌سازی لیزری و تجهیزات مرتبط با خدمات سهند لیزر', 'مشاهدهٔ دستگاه‌های تمیزکاری', 'cleaning');
 });
-</script>
-<script>(function(){const drawings={"CUT-3015-1":"assets/product-drawings/single-table-standard-3015-catalog-v2.jpg","DZ3015E":"assets/product-drawings/cabin-3015-pro-estimated-v1.jpg","DZT3015T":"assets/product-drawings/double-3015-standard-rotary-estimated-v1.jpg","DZT6020T":"assets/product-drawings/double-6020-standard-rotary-estimated-v1.jpg","DW3015":"assets/product-drawings/weld-fiber-base-dimensional-v1.jpg","DC3000":"assets/product-drawings/cleaning-fiber-continuous-dimensional-v1.jpg","LR30":"assets/product-drawings/weld-fiber-mini-dimensional-v1.jpg","LG60":"assets/product-drawings/weld-fiber-spot-dimensional-v1.jpg","ML-001":"assets/product-drawings/marking-fiber-portable-dimensional-v1.jpg","ML-002":"assets/product-drawings/marking-fiber-desktop-dimensional-v1.jpg","ML-005":"assets/product-drawings/marking-fiber-portable-dimensional-v1.jpg","SPLIT-MARK":"assets/product-drawings/marking-fiber-table-dimensional-v1.jpg"};const oldOpen=window.openCuttingProduct;if(!oldOpen)return;window.openCuttingProduct=function(code,options){oldOpen(code,options);setTimeout(function(){const path=drawings[code],card=document.querySelector(".cutting-detail-card");if(!path||!card||card.querySelector(".product-dimensional-drawing"))return;const section=document.createElement("section");section.className="cutting-detail-section product-dimensional-drawing";section.innerHTML='<h2>نقشهٔ ابعادی محصول</h2><p>نقشهٔ ابعادی موجود برای این مدل:</p><img src="../'+path+'" alt="نقشه ابعادی '+code+'" style="display:block;width:100%;max-height:620px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px" loading="lazy"><p style="font-size:12px;color:#64748b;margin-top:10px">ابعاد مطابق نقشهٔ فنی ثبت‌شده نمایش داده شده است.</p>';card.appendChild(section)},80)}})();</script><script>
-(function(){
-const map={"CUT-3015-1":"single-table-standard-3015-catalog-v2.jpg","DZ3015E":"cabin-3015-pro-estimated-v1.jpg","DZT3015T":"double-3015-standard-rotary-estimated-v1.jpg","DZT6020T":"double-6020-standard-rotary-estimated-v1.jpg","DW3015":"weld-fiber-base-dimensional-v1.jpg","DC3000":"cleaning-fiber-continuous-dimensional-v1.jpg","LR30":"weld-fiber-mini-dimensional-v1.jpg","LG60":"weld-fiber-spot-dimensional-v1.jpg","ML-001":"marking-fiber-portable-dimensional-v1.jpg","ML-002":"marking-fiber-desktop-dimensional-v1.jpg","ML-005":"marking-fiber-portable-dimensional-v1.jpg","SPLIT-MARK":"marking-fiber-table-dimensional-v1.jpg"};
-function add(){
- const card=document.querySelector(".cutting-detail-card"); if(!card||card.querySelector(".drawing-visible"))return;
- const text=card.textContent||""; const code=Object.keys(map).find(k=>text.includes(k)); if(!code)return;
- const sec=document.createElement("section");sec.className="cutting-detail-section drawing-visible";
- sec.innerHTML="<h2>نقشهٔ ابعادی محصول</h2><p>نقشهٔ ابعادی ثبت‌شده برای این محصول:</p><img src=\"../assets/product-drawings/"+map[code]+"?v=2\" alt=\"نقشه ابعادی "+code+"\" style=\"display:block;width:100%;max-height:620px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px\" loading=\"lazy\"><p style=\"font-size:12px;color:#64748b;margin-top:10px\">ابعاد مطابق نقشهٔ فنی ثبت‌شده نمایش داده شده است.</p>";
- card.appendChild(sec);
-}
-new MutationObserver(add).observe(document.body,{subtree:true,childList:true});
-setInterval(add,500);
-})();
 </script><script>
 (function(){
 const drawings={
-"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg","single-table-pro-3015-catalog-v1.jpg","single-3015-pro-rotary-estimated-v1.jpg","single-3015-standard-rotary-estimated-v1.jpg"],
+"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg"],
 "DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],
-"DZT3015T":["double-3015-pro-estimated-v1.jpg","double-3015-pro-rotary-estimated-v1.jpg","double-3015-standard-estimated-v1.jpg","double-3015-standard-rotary-estimated-v1.jpg"],
-"DZT6020T":["cabin-6020-pro-estimated-v1.jpg","double-6020-pro-estimated-v1.jpg","double-6020-pro-rotary-estimated-v1.jpg","double-6020-standard-estimated-v1.jpg","double-6020-standard-rotary-estimated-v1.jpg","single-table-pro-6020-catalog-v1.jpg","single-table-standard-6020-catalog-v1.jpg","single-6020-pro-rotary-estimated-v1.jpg"],
-"DW3015":["weld-fiber-air-cooled-dimensional-v1.jpg","weld-fiber-base-dimensional-v1.jpg","weld-fiber-mini-dimensional-v1.jpg","weld-fiber-spot-dimensional-v1.jpg"],
-"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg","cleaning-fiber-pulsed-air-dimensional-v2.jpg","cleaning-fiber-pulsed-water-dimensional-v1.jpg"],
-"ML-001":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],
-"ML-002":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],
+"DZT3015T":["double-3015-standard-rotary-estimated-v1.jpg"],
+"DZT6020T":["double-6020-standard-rotary-estimated-v1.jpg"],
+"ML-001":["marking-fiber-desktop-dimensional-v1.jpg"],
+"ML-002":["marking-fiber-desktop-dimensional-v1.jpg"],
 "ML-005":["marking-fiber-portable-dimensional-v1.jpg"],
 "SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],
 "LR30":["weld-fiber-mini-dimensional-v1.jpg"],
-"LG60":["weld-fiber-spot-dimensional-v1.jpg"]
+"LG60":["weld-fiber-spot-dimensional-v1.jpg"],
+"DW3015":["weld-fiber-base-dimensional-v1.jpg"],
+"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg"]
 };
 function render(){
- const card=document.querySelector(".cutting-detail-card");if(!card||card.querySelector(".all-drawings-visible"))return;
- const text=card.textContent||"";const code=Object.keys(drawings).find(k=>text.includes(k));if(!code)return;
- const sec=document.createElement("section");sec.className="cutting-detail-section all-drawings-visible";
- sec.innerHTML="<h2>نقشه‌های ابعادی محصول</h2><p>همهٔ نقشه‌های ابعادی ثبت‌شده برای این محصول:</p><div class=\"preview32-drawing-grid\"></div>";
- const grid=sec.querySelector(".preview32-drawing-grid");
- drawings[code].forEach((file,i)=>{const figure=document.createElement("figure");figure.style="margin:18px 0";figure.innerHTML="<figcaption style=\"font-weight:700;margin:8px 0\">نقشه "+(i+1)+"</figcaption><img src=\"../assets/product-drawings/"+file+"?v=4\" alt=\"نقشه ابعادی "+code+" "+(i+1)+"\" style=\"display:block;width:100%;max-height:620px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px\" loading=\"lazy\">";grid.appendChild(figure)});
- card.appendChild(sec);
+ const card=document.querySelector(".cutting-detail-card");
+ if(!card||card.querySelector(".model-specific-drawing"))return;
+ const kicker=card.querySelector(".cutting-detail-kicker");
+ const text=kicker?kicker.textContent:"";
+ const match=text.match(/کد\s*([A-Z0-9-]+)/i);
+ const code=match?match[1].toUpperCase():"";
+ const files=drawings[code];
+ if(!files)return;
+ const section=document.createElement("section");
+ section.className="cutting-detail-section model-specific-drawing";
+ section.innerHTML="<h2>نقشهٔ ابعادی اختصاصی این مدل</h2><p>این نقشه فقط به همین مدل متصل شده است.</p>";
+ files.forEach((file,index)=>{
+   const img=document.createElement("img");
+   img.src="../assets/product-drawings/"+file+"?model="+encodeURIComponent(code);
+   img.alt="نقشه ابعادی اختصاصی "+code;
+   img.style="display:block;width:100%;max-height:700px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px;margin:18px 0";
+   img.loading="lazy";
+   section.appendChild(img);
+ });
+ card.appendChild(section);
 }
-new MutationObserver(render).observe(document.body,{subtree:true,childList:true});setInterval(render,400);
-})();
-</script><script>
-(function(){
-const exact={"CUT-3015-1":["single-table-standard-3015-catalog-v2.jpg","single-table-pro-3015-catalog-v1.jpg","single-3015-pro-rotary-estimated-v1.jpg","single-3015-standard-rotary-estimated-v1.jpg"],"DZ3015E":["cabin-3015-pro-estimated-v1.jpg"],"DZT3015T":["double-3015-pro-estimated-v1.jpg","double-3015-pro-rotary-estimated-v1.jpg","double-3015-standard-estimated-v1.jpg","double-3015-standard-rotary-estimated-v1.jpg"],"DZT6020T":["cabin-6020-pro-estimated-v1.jpg","double-6020-pro-estimated-v1.jpg","double-6020-pro-rotary-estimated-v1.jpg","double-6020-standard-estimated-v1.jpg","double-6020-standard-rotary-estimated-v1.jpg","single-table-pro-6020-catalog-v1.jpg","single-table-standard-6020-catalog-v1.jpg","single-6020-pro-rotary-estimated-v1.jpg"],"DW3015":["weld-fiber-air-cooled-dimensional-v1.jpg","weld-fiber-base-dimensional-v1.jpg","weld-fiber-mini-dimensional-v1.jpg","weld-fiber-spot-dimensional-v1.jpg"],"DC3000":["cleaning-fiber-continuous-dimensional-v1.jpg","cleaning-fiber-pulsed-air-dimensional-v2.jpg","cleaning-fiber-pulsed-water-dimensional-v1.jpg"],"ML-001":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],"ML-002":["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg"],"ML-005":["marking-fiber-portable-dimensional-v1.jpg"],"SPLIT-MARK":["marking-fiber-table-dimensional-v1.jpg"],"LR30":["weld-fiber-mini-dimensional-v1.jpg"],"LG60":["weld-fiber-spot-dimensional-v1.jpg"]};
-const fallback={cutting:["cabin-3015-pro-estimated-v1.jpg","cabin-6020-pro-estimated-v1.jpg","double-3015-pro-estimated-v1.jpg","double-3015-pro-rotary-estimated-v1.jpg","double-3015-standard-estimated-v1.jpg","double-3015-standard-rotary-estimated-v1.jpg","double-6020-pro-estimated-v1.jpg","double-6020-pro-rotary-estimated-v1.jpg","double-6020-standard-estimated-v1.jpg","double-6020-standard-rotary-estimated-v1.jpg","single-3015-pro-rotary-estimated-v1.jpg","single-3015-standard-rotary-estimated-v1.jpg","single-6020-pro-rotary-estimated-v1.jpg","single-table-pro-3015-catalog-v1.jpg","single-table-pro-6020-catalog-v1.jpg","single-table-standard-3015-catalog-v2.jpg","single-table-standard-4020-estimated-v1.jpg","single-table-standard-6020-catalog-v1.jpg"],marking:["marking-fiber-desktop-dimensional-v1.jpg","marking-fiber-flying-dimensional-v1.jpg","marking-fiber-portable-dimensional-v1.jpg","marking-fiber-table-dimensional-v1.jpg"],welding:["weld-fiber-air-cooled-dimensional-v1.jpg","weld-fiber-base-dimensional-v1.jpg","weld-fiber-mini-dimensional-v1.jpg","weld-fiber-spot-dimensional-v1.jpg"],cleaning:["cleaning-fiber-continuous-dimensional-v1.jpg","cleaning-fiber-pulsed-air-dimensional-v2.jpg","cleaning-fiber-pulsed-water-dimensional-v1.jpg"]};
-function render(){
- const card=document.querySelector(".cutting-detail-card");if(!card||card.querySelector(".verified-drawings"))return;
- const kicker=card.querySelector(".cutting-detail-kicker");const raw=kicker?kicker.textContent:"";const m=raw.match(/کد\s*([A-Z0-9-]+)/i);const code=m?m[1].toUpperCase():"";
- const cat=/حکاک|مارک/i.test(raw)?"marking":/جوش/i.test(raw)?"welding":/تمیز/i.test(raw)?"cleaning":"cutting";
- const files=exact[code]||fallback[cat];if(!files)return;
- const sec=document.createElement("section");sec.className="cutting-detail-section verified-drawings";sec.innerHTML="<h2>نقشه‌های ابعادی موجود</h2><p>فایل‌های نقشهٔ ابعادی ثبت‌شده برای این محصول یا خانوادهٔ محصول:</p>";
- files.forEach((file,i)=>{const img=document.createElement("img");img.src="../assets/product-drawings/"+file+"?v=5";img.alt="نقشه ابعادی "+(code||cat)+" "+(i+1);img.style="display:block;width:100%;max-height:620px;object-fit:contain;background:#fff;border-radius:16px;border:1px solid #e2e8f0;padding:12px;margin:14px 0";img.loading="lazy";sec.appendChild(img)});
- card.appendChild(sec);
-}
-new MutationObserver(render).observe(document.body,{subtree:true,childList:true});setInterval(render,300);
+new MutationObserver(render).observe(document.body,{subtree:true,childList:true});
+setInterval(render,500);
 })();
 </script></body>
 </html>
