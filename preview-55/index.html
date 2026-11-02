@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>فناوران پرتو لیزر سهند | دستگاه‌های لیزر فایبر</title>
+<meta name="description" content="فروش و خدمات دستگاه‌های لیزر فایبر برش، جوش و مارکینگ در اصفهان.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap">
+<style>
+:root{--ink:#0d2038;--navy:#08192d;--navy2:#0f2a47;--mute:#5a6b7e;--line:#dce3ec;--paper:#f5f8fb;--white:#fff;--teal:#0b7a75;--teal2:#27c4bb;--beam:#ff3b30;--r:12px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Vazirmatn',Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:1.9;overflow-x:hidden}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--teal2);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ---------- loader: a laser beam cuts the screen open ---------- */
+.ld{position:fixed;inset:0;z-index:100;pointer-events:none;animation:ldHide 0s linear 2.4s forwards}
+.ld i{position:absolute;left:0;right:0;height:50%;background:var(--navy);animation:ldOpen .8s cubic-bezier(.7,0,.2,1) 1.5s forwards}
+.ld .t{top:0}.ld .b{bottom:0;--d:100%}
+.ld .t{--d:-100%}
+.ld b{position:absolute;top:50%;left:0;right:0;height:3px;margin-top:-1.5px;background:var(--beam);box-shadow:0 0 18px 4px rgba(255,59,48,.8);transform:scaleX(0);transform-origin:right;animation:ldBeam 1s cubic-bezier(.6,0,.2,1) .3s forwards,ldFade .3s ease 1.4s forwards;z-index:2}
+.ld p{position:absolute;top:calc(50% - 64px);left:0;right:0;margin:0;text-align:center;color:#fff;font-weight:900;font-size:clamp(22px,5vw,38px);opacity:0;animation:ldIn .6s ease .5s forwards,ldFade .3s ease 1.4s forwards;z-index:2}
+@keyframes ldBeam{to{transform:scaleX(1)}}
+@keyframes ldFade{to{opacity:0}}
+@keyframes ldIn{to{opacity:1}}
+@keyframes ldOpen{to{transform:translateY(var(--d))}}
+@keyframes ldHide{to{visibility:hidden}}
+
+/* ---------- header & menu ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .3s,box-shadow .3s}
+header.s{background:rgba(8,25,45,.92);backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;transition:min-height .3s}
+header.s .bar{min-height:62px}
+.logo{font-weight:900;font-size:19px;text-decoration:none;color:#fff;display:flex;align-items:center;gap:10px}
+.logo svg{width:26px;height:26px}
+nav{display:flex;gap:6px}
+nav a{position:relative;color:#cdd8e6;text-decoration:none;font-size:15px;padding:8px 14px}
+nav a::after{content:"";position:absolute;right:14px;left:14px;bottom:2px;height:2px;background:var(--beam);box-shadow:0 0 8px var(--beam);transform:scaleX(0);transform-origin:right;transition:transform .35s cubic-bezier(.6,0,.2,1)}
+nav a:hover,nav a.on{color:#fff}
+nav a:hover::after,nav a.on::after{transform:scaleX(1)}
+.btn{position:relative;display:inline-block;overflow:hidden;background:var(--teal);color:#fff;padding:13px 26px;border-radius:var(--r);font-weight:700;text-decoration:none;font-size:15px;border:0;cursor:pointer;font-family:inherit;isolation:isolate}
+.btn::before{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s ease;z-index:-1}
+.btn:hover::before{left:130%}
+.btn.line{background:transparent;border:1px solid rgba(255,255,255,.4)}
+.menu-btn{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.35);background:transparent;border-radius:var(--r);cursor:pointer;position:relative;z-index:30}
+.menu-btn span{position:absolute;right:12px;left:12px;height:2px;background:#fff;transition:transform .35s,opacity .2s,top .35s}
+.menu-btn span:nth-child(1){top:16px}.menu-btn span:nth-child(2){top:22px}.menu-btn span:nth-child(3){top:28px}
+.open .menu-btn span:nth-child(1){top:22px;transform:rotate(45deg)}
+.open .menu-btn span:nth-child(2){opacity:0}
+.open .menu-btn span:nth-child(3){top:22px;transform:rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(900px 500px at 15% 20%,#12365c 0,transparent 60%),var(--navy);color:#fff;padding:150px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000 30%,transparent 95%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.kicker{color:var(--teal2);font-weight:600;font-size:15px;margin:0 0 10px}
+h1{font-size:clamp(30px,4.6vw,54px);line-height:1.4;font-weight:900;margin:0 0 18px}
+.lead{font-size:17px;color:#b9c8da;margin:0 0 30px;max-width:33em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stage{position:relative;aspect-ratio:4/3;border:1px solid rgba(255,255,255,.14);border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));overflow:hidden}
+.stage svg{width:100%;height:100%}
+.stage .cap{position:absolute;bottom:12px;right:16px;font-size:12px;color:#8fa3bb}
+.plate{fill:rgba(39,196,187,.08);stroke:rgba(255,255,255,.18);stroke-width:1}
+.cut{fill:none;stroke:var(--teal2);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;animation:draw 5s linear 2.2s infinite;filter:drop-shadow(0 0 4px var(--teal2))}
+@keyframes draw{0%{stroke-dashoffset:100}80%{stroke-dashoffset:0}92%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.head{filter:drop-shadow(0 0 8px var(--beam)) drop-shadow(0 0 16px var(--beam))}
+
+/* ---------- sections ---------- */
+.trust{background:var(--white);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust .it{padding:30px 24px;border-left:1px solid var(--line)}
+.trust .it:last-child{border-left:0}
+.num{font-size:34px;font-weight:900;color:var(--teal);line-height:1.3}
+.lab{font-size:14px;color:var(--mute)}
+section{padding:84px 0}
+h2{font-size:clamp(24px,3vw,34px);font-weight:900;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 36px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ph{background:repeating-linear-gradient(135deg,#e9eff5 0 12px,#f1f5f9 12px 24px);border:1px dashed #9fb0c3;border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:14px;text-align:center;padding:16px}
+.card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;transition:transform .35s,box-shadow .35s}
+.card::before{content:"";position:absolute;top:-1px;right:16px;left:16px;height:3px;background:var(--beam);box-shadow:0 0 10px var(--beam);transform:scaleX(0);transform-origin:right;transition:transform .45s cubic-bezier(.6,0,.2,1)}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 40px -18px rgba(8,25,45,.35)}
+.card:hover::before{transform:scaleX(1)}
+.card .ph{aspect-ratio:16/10}
+.card h3{margin:0;font-size:19px;font-weight:800}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.card a.more{color:var(--teal);font-weight:700;text-decoration:none;margin-top:auto}
+.dark{background:var(--navy);color:#fff}
+.dark .sub{color:#9fb2c8}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;padding:0;margin:0;list-style:none;position:relative}
+.steps::before{content:"";position:absolute;top:21px;right:0;left:0;height:2px;background:linear-gradient(90deg,transparent,var(--beam),transparent);opacity:.7}
+.steps li{counter-increment:s;padding:0 12px;position:relative}
+.steps li::before{content:counter(s,persian);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--navy2);border:2px solid var(--teal2);font-weight:900;margin-bottom:14px;position:relative}
+.steps b{display:block;font-size:18px}
+.steps span{color:#9fb2c8;font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+form{display:grid;gap:12px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px}
+label{font-size:14px;font-weight:600}
+input,select,textarea{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);color:var(--ink)}
+textarea{min-height:100px}
+.info p{margin:0 0 10px}
+footer{background:var(--navy);color:#9fb2c8;padding:28px 0;font-size:14px}
+
+/* ---------- mobile ---------- */
+@media (max-width:900px){
+.menu-btn{display:block}
+nav{position:fixed;inset:0;background:var(--navy);flex-direction:column;justify-content:center;align-items:center;gap:8px;clip-path:circle(0 at 92% 40px);transition:clip-path .6s cubic-bezier(.7,0,.2,1);z-index:25}
+.open nav{clip-path:circle(150% at 92% 40px)}
+nav a{font-size:26px;font-weight:800;color:#fff;opacity:0;transform:translateY(16px);transition:opacity .4s,transform .4s}
+.open nav a{opacity:1;transform:none}
+.open nav a:nth-child(1){transition-delay:.25s}.open nav a:nth-child(2){transition-delay:.33s}.open nav a:nth-child(3){transition-delay:.41s}.open nav a:nth-child(4){transition-delay:.49s}
+.bar>.btn{display:none}
+.hero .wrap,.contact{grid-template-columns:1fr}
+.grid3{grid-template-columns:1fr 1fr}
+.steps{grid-template-columns:1fr 1fr;row-gap:32px}
+.trust .wrap{grid-template-columns:1fr}
+.trust .it{border-left:0;border-bottom:1px solid var(--line);padding:18px 8px}
+}
+@media (max-width:560px){.grid3,.steps{grid-template-columns:1fr}.hero{padding-top:120px}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){
+*{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important}
+html{scroll-behavior:auto}
+.cut{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<div class="ld" aria-hidden="true"><i class="t"></i><i class="b"></i><p>فناوران پرتو لیزر سهند</p><b></b></div>
+
+<header id="hd">
+<div class="wrap bar">
+<a class="logo" href="#top"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M3 13h20M13 3v20" stroke="#ff3b30" stroke-width="2.5" stroke-linecap="round"/><circle cx="13" cy="13" r="6" fill="none" stroke="#27c4bb" stroke-width="2"/></svg>فناوران پرتو لیزر سهند</a>
+<nav id="nv" aria-label="منوی اصلی"><a href="#products">محصولات</a><a href="#services">خدمات</a><a href="#proof">نمونه‌کار</a><a href="#contact">تماس</a></nav>
+<a class="btn" href="#contact">استعلام قیمت</a>
+<button class="menu-btn" id="mb" aria-label="باز و بسته کردن منو" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<div>
+<p class="kicker">دستگاه‌های لیزر فایبر در اصفهان</p>
+<h1>برش و جوش لیزر فایبر، با پشتیبانی که پای کارتان می‌ماند</h1>
+<p class="lead">از انتخاب دستگاه مناسب کارگاه شما تا نصب، آموزش و خدمات پس از فروش، همه‌چیز را یک تیم انجام می‌دهد.</p>
+<div class="cta"><a class="btn" href="#contact">استعلام قیمت</a><a class="btn line" href="#products">دیدن محصولات</a></div>
+</div>
+<div class="stage" role="img" aria-label="نمایش برش یک قطعه فلزی با لیزر">
+<svg viewBox="0 0 400 300" aria-hidden="true">
+<rect class="plate" x="30" y="30" width="340" height="240" rx="10"/>
+<path id="p" class="cut" pathLength="100" d="M90 80H250L310 140V220H90Z"/>
+<circle class="cut" pathLength="100" cx="160" cy="150" r="26" style="animation-delay:2.2s"/>
+<circle class="head" r="5" fill="#ff3b30">
+<animateMotion dur="5s" begin="2.2s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;.8;1"><mpath href="#p"/></animateMotion>
+</circle>
+</svg>
+<span class="cap">[تصویر یا ویدیوی دستگاه جایگزین می‌شود]</span>
+</div>
+</div>
+</div>
+
+<div class="trust"><div class="wrap">
+<div class="it"><div class="num">۱۳ سال</div><div class="lab">تجربه در صنعت لیزر</div></div>
+<div class="it"><div class="num">[تعداد]</div><div class="lab">دستگاه نصب‌شده در کارگاه‌ها</div></div>
+<div class="it"><div class="num">[شماره]</div><div class="lab">گواهی ثبت اختراع</div></div>
+</div></div>
+
+<section id="products"><div class="wrap">
+<h2>محصولات</h2>
+<p class="sub">دستگاهی را انتخاب کنید و مشخصات و قیمت را ببینید.</p>
+<div class="grid3">
+<article class="card"><div class="ph">[تصویر محصول]</div><h3>[نام دستگاه برش لیزر فایبر]</h3><p>[توان، ابعاد میز، ضخامت برش]</p><a class="more" href="#contact">دریافت قیمت</a></article>
+<article class="card"><div class="ph">[تصویر محصول]</div><h3>[نام دستگاه جوش لیزر]</h3><p>[توان، کاربرد، نوع جوش]</p><a class="more" href="#contact">دریافت قیمت</a></article>
+<article class="card"><div class="ph">[تصویر محصول]</div><h3>[نام دستگاه حکاکی و مارکینگ]</h3><p>[توان، ابعاد کار، متریال]</p><a class="more" href="#contact">دریافت قیمت</a></article>
+</div></div></section>
+
+<section id="services" class="dark"><div class="wrap">
+<h2>از خرید تا راه‌اندازی</h2>
+<p class="sub">مراحلی که برای هر مشتری انجام می‌دهیم.</p>
+<ol class="steps">
+<li><b>مشاوره</b><span>نوع کار و متریال شما را می‌پرسیم و دستگاه مناسب را پیشنهاد می‌دهیم.</span></li>
+<li><b>نصب</b><span>دستگاه را در کارگاه شما نصب و تنظیم می‌کنیم.</span></li>
+<li><b>آموزش</b><span>اپراتور شما با نرم‌افزار و کار با دستگاه آشنا می‌شود.</span></li>
+<li><b>خدمات پس از فروش</b><span>تعمیر، قطعات یدکی و پشتیبانی تلفنی.</span></li>
+</ol>
+</div></section>
+
+<section id="proof"><div class="wrap">
+<h2>نمونه‌کارها</h2>
+<p class="sub">کارهایی که با دستگاه‌های ما انجام شده است.</p>
+<div class="grid3">
+<div class="card"><div class="ph" style="aspect-ratio:4/3">[عکس نمونه‌کار ۱]</div></div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3">[عکس نمونه‌کار ۲]</div></div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3">[عکس نمونه‌کار ۳]</div></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap contact">
+<div class="info">
+<h2>استعلام قیمت</h2>
+<p class="sub">دستگاه و نیازتان را بنویسید تا با شما تماس بگیریم.</p>
+<p><b>تلفن:</b> [شماره تلفن]</p>
+<p><b>واتساپ:</b> [شماره واتساپ]</p>
+<p><b>آدرس:</b> [آدرس کارگاه، اصفهان]</p>
+</div>
+<form onsubmit="return false" aria-label="فرم استعلام">
+<div><label for="n">نام</label><input id="n" autocomplete="name"></div>
+<div><label for="p2">شماره تماس</label><input id="p2" type="tel" autocomplete="tel"></div>
+<div><label for="m">دستگاه مورد نظر</label><select id="m"><option>برش لیزر فایبر</option><option>جوش لیزر</option><option>حکاکی و مارکینگ</option><option>نمی‌دانم، مشاوره می‌خواهم</option></select></div>
+<div><label for="t">توضیحات</label><textarea id="t"></textarea></div>
+<button class="btn" type="submit">ارسال درخواست</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">© ۱۴۰۵ فناوران پرتو لیزر سهند · پیش‌نمایش ۵۵</div></footer>
+
+<script>
+(function(){
+var h=document.getElementById('hd'),b=document.getElementById('mb'),d=document.documentElement;
+function s(){h.classList.toggle('s',window.scrollY>40)}
+s();window.addEventListener('scroll',s,{passive:true});
+b.addEventListener('click',function(){var o=h.classList.toggle('open');b.setAttribute('aria-expanded',o);d.style.overflow=o?'hidden':''});
+document.querySelectorAll('#nv a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('open');b.setAttribute('aria-expanded','false');d.style.overflow=''})});
+var ids=['products','services','proof','contact'],links=document.querySelectorAll('#nv a');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ids.forEach(function(i){io.observe(document.getElementById(i))})}
+})();
+</script>
+</body>
+</html>
