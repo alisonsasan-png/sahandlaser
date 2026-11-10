@@ -1,4 +1,5 @@
 name: Deploy GitHub Pages
+# Preview 2 product pages deployment
 
 on:
   push:
