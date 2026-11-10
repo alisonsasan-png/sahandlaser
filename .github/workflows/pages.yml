@@ -1,5 +1,5 @@
 name: Deploy GitHub Pages
-# Preview 2 product pages deployment
+# Standalone product card deployment
 
 on:
   push:
