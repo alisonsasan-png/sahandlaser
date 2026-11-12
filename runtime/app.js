@@ -609,8 +609,6 @@ Object.assign(PRODUCT_DIMENSION_IMAGES, {
   DZ3015S: "https://raw.githubusercontent.com/alisonsasan-png/sahandlaser/main/CUT-3015-1_0008.png",
   DZ3015H: "https://raw.githubusercontent.com/alisonsasan-png/sahandlaser/main/CUT-3015-1_0008.png",
   DZ3015E: "https://raw.githubusercontent.com/alisonsasan-png/sahandlaser/main/DZ3015E_0027.png",
-  DZT3015T: "https://raw.githubusercontent.com/alisonsasan-png/sahandlaser/main/DZT3015T_0000.png",
-  DZT6020T: "https://raw.githubusercontent.com/alisonsasan-png/sahandlaser/main/DZT6020T_0000.png"
 });
 function renderProduct(id) {
   const p = products[id];
