@@ -1,0 +1,3 @@
+'use client';
+import { useEffect, useState } from 'react';
+export default function ThemeToggle(){const [dark,setDark]=useState(false);useEffect(()=>{const saved=localStorage.getItem('sahand-theme');const value=saved==='dark'||(!saved&&window.matchMedia('(prefers-color-scheme: dark)').matches);setDark(value);document.documentElement.dataset.theme=value?'dark':'light'},[]);function toggle(){const value=!dark;setDark(value);localStorage.setItem('sahand-theme',value?'dark':'light');document.documentElement.dataset.theme=value?'dark':'light'}return <button className="theme-button" type="button" onClick={toggle} aria-label={dark?'فعال‌کردن حالت روشن':'فعال‌کردن حالت تاریک'}>{dark?'☀':'◐'}</button>}
