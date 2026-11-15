@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { products } from '@/lib/products';
+import { products } from '../../../lib/products';
 
 export function generateStaticParams(){ return products.map((p)=>({code:p.code})); }
 export default async function ProductPage({params}:{params:Promise<{code:string}>}){

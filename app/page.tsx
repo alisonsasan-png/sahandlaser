@@ -1,4 +1,4 @@
-import { categories } from '@/lib/catalog';
+import { categories } from '../lib/catalog';
 
 export default function HomePage() {
   return (
