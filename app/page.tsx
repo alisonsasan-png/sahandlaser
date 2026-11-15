@@ -5,7 +5,7 @@ export default function HomePage() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="سهند لیزر، صفحه اصلی"><span className="brand-mark">SL</span><span><b>سهند لیزر</b><small>SAHAND LASER</small></span></a>
-        <nav aria-label="منوی اصلی"><a href="#about">درباره ما</a><a href="#products">محصولات</a><a href="#services">خدمات</a><a href="#downloads">نرم‌افزار</a><a href="#contact">تماس</a></nav>
+        <nav aria-label="منوی اصلی"><a href="/about">درباره ما</a><a href="/products">محصولات</a><a href="/services">خدمات</a><a href="/downloads">نرم‌افزار</a><a href="/contact">تماس</a></nav>
         <div className="header-actions"><button className="theme-button" type="button" aria-label="تغییر تم">◐</button><a className="quote-button" href="#contact">استعلام قیمت</a></div>
       </header>
 
