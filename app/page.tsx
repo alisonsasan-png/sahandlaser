@@ -1,3 +1,4 @@
+import ThemeToggle from '../components/ThemeToggle';
 import { categories } from '../lib/catalog';
 
 export default function HomePage() {
@@ -6,7 +7,7 @@ export default function HomePage() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="سهند لیزر، صفحه اصلی"><span className="brand-mark">SL</span><span><b>سهند لیزر</b><small>SAHAND LASER</small></span></a>
         <nav aria-label="منوی اصلی"><a href="/about">درباره ما</a><a href="/products">محصولات</a><a href="/services">خدمات</a><a href="/downloads">نرم‌افزار</a><a href="/applications">کاربردها</a><a href="/faq">FAQ</a><a href="/contact">تماس</a></nav>
-        <div className="header-actions"><button className="theme-button" type="button" aria-label="تغییر تم">◐</button><a className="quote-button" href="#contact">استعلام قیمت</a></div>
+        <div className="header-actions"><ThemeToggle /><a className="quote-button" href="#contact">استعلام قیمت</a></div>
       </header>
 
       <section id="top" className="hero"><div className="hero-copy"><p className="eyebrow">SAHAND LASER / INDUSTRIAL SYSTEMS</p><h1>دقت صنعتی،<br /><em>ساخته‌شده برای تولید.</em></h1><p className="hero-text">راهکارهای مهندسی‌شدهٔ سهند لیزر برای برش، جوش، حکاکی و تمیزکاری دقیق در خطوط تولید.</p><div className="hero-actions"><a className="primary-button" href="#products">مشاهده محصولات</a><a className="text-link" href="#about">آشنایی با سهند لیزر ←</a></div></div><div className="hero-machine" aria-label="نمای مفهومی دستگاه لیزر صنعتی"><div className="machine-bed" /><div className="machine-gantry" /><div className="machine-head" /><span className="machine-label">PRECISION / 01</span></div></section>
