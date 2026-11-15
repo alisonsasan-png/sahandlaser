@@ -1,0 +1,7 @@
+'use client';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
+import { products } from '../lib/products';
+
+const filters=[['all','همه محصولات'],['دستگاه‌های برش لیزر فایبر','برش'],['دستگاه‌های جوش لیزر فایبر','جوش'],['دستگاه‌های حکاکی لیزر','حکاکی'],['دستگاه‌های تمیزکاری لیزر','تمیزکاری'],['دستگاه‌های حکاکی UV','UV'],['قطعات و تجهیزات جانبی','قطعات'],['سورس لیزر','سورس'],['چیلر و خنک‌کننده لیزر','چیلر'],['هد برش لیزر','هد برش']];
+export default function ProductCatalog(){const params=useSearchParams();const selected=params.get('category')||'all';const visible=selected==='all'?products:products.filter(p=>p.category===selected);return <><div className="catalog-filters">{filters.map(([value,label])=><Link className={selected===value?'active':''} href={value==='all'?'/products.html':`/products.html?category=${encodeURIComponent(value)}`} key={value}>{label}</Link>)}</div><p className="catalog-count">{visible.length} محصول</p><div className="product-grid">{visible.map(p=><Link className="product-card" href={`/products/${p.code}.html`} key={p.code}><div className="product-placeholder"><span>SL</span><small>PRODUCT PROFILE</small></div><span className="eyebrow">{p.code}</span><h2 dir="auto">{p.title}</h2><p dir="auto">{p.category}</p><span className="card-link">مشاهده صفحه محصول ↗</span></Link>)}</div></>}
