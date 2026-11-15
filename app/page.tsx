@@ -21,7 +21,7 @@ export default function HomePage() {
       <section id="downloads" className="section compact-section"><p className="eyebrow">RESOURCES</p><h2>دانلود نرم‌افزار و منابع فنی</h2><div className="download-row"><span>نرم‌افزارهای کنترل و طراحی دستگاه</span><a className="secondary-button" href="/downloads">ورود به مرکز دانلود</a></div></section>
 
       <section id="contact" className="contact-section"><div><p className="eyebrow">CONTACT SAHAND LASER</p><h2>برای انتخاب راهکار مناسب، با ما صحبت کنید.</h2></div><div className="contact-card"><p>اصفهان، خیابان خیام، خیابان عطاءالملک</p><a href="tel:+983131320012">۰۳۱-۳۱۳۲۰۰۱۲</a><a href="mailto:info@sahandlaser.com">info@sahandlaser.com</a></div></section>
-      <footer className="footer"><span>© سهند لیزر</span><span>تجهیزات و ماشین‌آلات لیزری صنعتی</span></footer>
+      <footer className="footer"><span>© سهند لیزر</span><span>تجهیزات و ماشین‌آلات لیزری صنعتی</span><a href="/project-report">گزارش پروژه</a></footer>
     </main>
   );
 }
