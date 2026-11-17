@@ -18,7 +18,7 @@
       c.style.display = ok ? '' : 'none'; if(ok) shown++;
     });
     chips.forEach(function(b){ b.classList.toggle('on', b.dataset.cat===cat); });
-    count.textContent = shown + ' ظ…ظˆط±ط¯';
+    count.textContent = shown + ' مورد';
   }
   chips.forEach(function(b){ b.addEventListener('click', function(){ cat=b.dataset.cat; apply(); }); });
   q.addEventListener('input', apply); apply();
@@ -26,16 +26,15 @@
   var f = document.getElementById('inq'); if(!f) return;
   function msg(){
     var d = new FormData(f), p = new URLSearchParams(location.search).get('p');
-    return 'ط¯ط±ط®ظˆط§ط³طھ ط§ط³طھط¹ظ„ط§ظ… ط§ط² ط³ط§غŒطھ ط³ظ‡ظ†ط¯ ظ„غŒط²ط±\n' + 'ظ†ط§ظ…: '+d.get('name')+'\nطھظ…ط§ط³: '+d.get('contact')+'\nظ†ظˆط¹ ظ†غŒط§ط²: '+d.get('type')+
-      (d.get('industry')?'\nطµظ†ط¹طھ: '+d.get('industry'):'') + (p?'\nظ…ط¯ظ„: '+p:'') + (d.get('message')?'\nطھظˆط¶غŒط­ط§طھ: '+d.get('message'):'');
+    return 'درخواست استعلام از سایت سهند لیزر\n' + 'نام: '+d.get('name')+'\nتماس: '+d.get('contact')+'\nنوع نیاز: '+d.get('type')+
+      (d.get('industry')?'\nصنعت: '+d.get('industry'):'') + (p?'\nمدل: '+p:'') + (d.get('message')?'\nتوضیحات: '+d.get('message'):'');
   }
   f.addEventListener('click', function(e){
     var b = e.target.closest('[data-ch]'); if(!b) return;
     if(!f.reportValidity()) return;
     if(b.dataset.ch==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(msg()),'_blank','noopener');
-    else navigator.clipboard && navigator.clipboard.writeText(msg()).then(function(){ alert('ظ…طھظ† ع©ظ¾غŒ ط´ط¯. ط¯ط± ط§غŒطھط§ غŒط§ ط¨ظ„ظ‡ ط¬ط§غŒâ€Œع¯ط°ط§ط±غŒ ع©ظ†غŒط¯.'); });
+    else navigator.clipboard && navigator.clipboard.writeText(msg()).then(function(){ alert('متن کپی شد. در ایتا یا بله جای‌گذاری کنید.'); });
   });
   var pq = new URLSearchParams(location.search).get('p');
-  if(pq) f.querySelector('#m').value = 'ظ…ط¯ظ„ ظ…ظˆط±ط¯ ظ†ط¸ط±: ' + pq + '\n';
+  if(pq) f.querySelector('#m').value = 'مدل مورد نظر: ' + pq + '\n';
 })();
-
