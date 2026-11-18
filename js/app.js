@@ -1,11 +1,28 @@
 (function(){
-  // product thumbnails: try assets/products/{code}.webp, else keep icon
+  // Product thumbnails: use the uploaded product image when one exists.
+  var productImages = {
+    'CT-001':'تک‌میز استاندارد 3015 - CUT-3015-STD.jpg',
+    'CT-002':'DZ3015H - CUT-3015-2.jpg',
+    'CT-003':'دومیز استاندارد 3015 با روتاری - CUT-3015-STD-DOUBLE-ROTARY.jpg',
+    'CT-004':'تک‌میز حرفه‌ای 3015 - CUT-3015-PRO.jpg',
+    'CT-005':'تک‌میز استاندارد 6020 - CUT-6020-STD.jpg',
+    'CT-006':'دومیز استاندارد 6020 - CUT-6020-STD-DOUBLE.jpg',
+    'CT-007':'دومیز حرفه‌ای 6020 با روتاری - CUT-6020-PRO-DOUBLE-ROTARY.jpg',
+    'CT-008':'کابین‌دار حرفه‌ای 6020 - CUT-6020-CABIN-DOUBLE.jpg',
+    'CC001':'S&A CWFL-1500 - CC001.jpg','CC002':'S&A CWFL-2000 - CC002.jpg','CC003':'S&A CWFL-3000 - CC003.jpg',
+    'CC004':'Hanli HL-1500 - CC004.jpg','CC005':'Hanli HL-2000 - CC005.jpg','CC006':'Hanli HL-3000 - CC006.jpg',
+    'CH001':'RayTools BT240S - CH001.jpg','CH002':'RayTools BM109 - CH002.jpg','CH003':'RayTools BM111 - CH003.jpg','CH004':'RayTools BM114 - CH004.jpg','CH005':'RayTools BM115 - CH005.jpg',
+    'FS002':'سورس لیزر 50 وات پالسی فایبر Q-Switched - FS002.jpg','FS003':'Raycus RFL-C1000 - FS003.jpg','FS004':'Raycus RFL-C1500 - FS004.jpg','FS005':'سورس لیزر Raycus RFL-C2000 - FS005.jpg','FS006':'Raycus 3000 وات - FS006.jpg','FS007':'Raycus 4000 وات - FS007.jpg','FS008':'Raycus 6000 وات - FS008.jpg',
+    'CN003':'نازل RayTools تک‌لایه - CN003.jpg','CN006':'نازل RayTools دولایه پرسرعت - CN006.jpg','CN007':'نازل RayTools دولایه فول‌پاور - CN007.jpg','CN008':'نازل RayTools تک‌لایه BT210-BT210S - CN008.jpg','CN009':'نازل RayTools TRA برای BM111 - CN009.jpg','CN011':'نازل RayTools دولایه - CN011.jpg','CN012':'نازل RayTools دولایه Full Power - CN012.jpg','CN013':'نازل RayTools TRA برای FL200-FL1501 - CN013.jpg',
+    'CP-CERAMIC':'سرامیک هد برش فایبر - CP-CERAMIC.jpg','ML-004':'مارکینگ UV میزدار - ML-004.jpg','WL-003':'دستگاه جوش لیزر Air-Cooled - WL-003.jpg','WELD-1500':'دستگاه جوش فایبر 1500 وات - WELD-1500.jpg','WELD-2000':'دستگاه جوش فایبر 2000 وات - WELD-2000.jpg','WELD-3000':'دستگاه جوش فایبر 3000 وات - WELD-3000.jpg','WL-001':'دستگاه جوش فایبر 800 وات - WELD-800W.jpg','CL-002':'تمیزکاری لیزری پالسی 300 وات - CLEAN-300W.jpg','CL-004':'تمیزکاری لیزری پیوسته 2000 وات - CLEAN-2000W.jpg','ML-001':'مارکینگ فایبر رومیزی - MARK-DESKTOP-FIBER.jpg','ML-002':'مارکینگ فایبر میزدار - MARK-TABLE-FIBER.jpg','ML-005':'مارکینگ فایبر پرتابل آبی - MARK-PORTABLE-BLUE.jpg'
+  };
   var prefix = location.pathname.indexOf('/products/') >= 0 ? '../' : '';
   document.querySelectorAll('.pcard .thumb').forEach(function(t){
     var code = t.querySelector('.code'); if(!code) return;
     var img = new Image();
     img.onload = function(){ t.innerHTML=''; img.alt=''; t.appendChild(img); };
-    img.src = prefix + 'assets/products/' + code.textContent.trim() + '.webp';
+    var file = productImages[code.textContent.trim()]; if(!file) return;
+    img.src = prefix + file;
   });
   // product list: search + category filter
   var list = document.getElementById('plist'); if(!list) return;
