@@ -1,4 +1,29 @@
 (function(){
+  // Inline quote modal for product pages.
+  document.querySelectorAll('a.btn-primary[href*="contact.html?p="]').forEach(function(trigger){
+    trigger.addEventListener('click', function(e){
+      e.preventDefault();
+      var product = new URL(trigger.href, location.href).searchParams.get('p') || '';
+      var modal = document.getElementById('quote-modal');
+      if(!modal){
+        modal = document.createElement('div'); modal.id='quote-modal'; modal.className='quote-modal';
+        modal.innerHTML='<div class="quote-dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title"><button class="quote-close" type="button" aria-label="بستن">×</button><h2 id="quote-title">استعلام قیمت و مشاوره</h2><p class="quote-product"></p><form class="quote-form"><div><label>نام و نام خانوادگی<input name="name" required></label></div><div><label>شماره تلفن<input name="phone" required dir="ltr" placeholder="09xxxxxxxxx"></label></div><div><label>شهر<input name="city" required></label></div><div class="full"><label>آدرس<input name="address" required></label></div><div><label>نوع محصول یا خدمات<select name="type"><option>خرید محصول</option><option>خدمات برش لیزر</option><option>خدمات جوش لیزر</option><option>تعمیر و پشتیبانی</option><option>سایر</option></select></label></div><div class="full"><label>توضیحات<textarea name="message"></textarea></label></div><div class="full quote-actions"><button type="button" class="quote-send whatsapp" data-send="wa"><span class="brand-icon wa-icon">◔</span> واتساپ</button><button type="button" class="quote-send eitaa" data-send="eitaa"><span class="brand-icon">✈</span> ایتا</button><button type="button" class="quote-send bale" data-send="bale"><span class="brand-icon">●</span> بله</button></div></form></div>';
+        document.body.appendChild(modal);
+        modal.querySelector('.quote-close').onclick=function(){modal.classList.remove('open');};
+        modal.addEventListener('click',function(ev){if(ev.target===modal) modal.classList.remove('open');});
+      }
+      modal.querySelector('.quote-product').textContent='محصول: '+product;
+      modal.dataset.product=product; modal.classList.add('open'); modal.querySelector('input[name="name"]').focus();
+    });
+  });
+  var quoteModal=document.getElementById('quote-modal');
+  document.addEventListener('click',function(e){
+    var send=e.target.closest('[data-send]'); if(!send) return;
+    var m=document.getElementById('quote-modal'), form=m&&m.querySelector('.quote-form'); if(!m||!form||!form.reportValidity()) return;
+    var d=new FormData(form), text='درخواست استعلام از سایت سهند لیزر\nمحصول: '+m.dataset.product+'\nنام: '+d.get('name')+'\nتلفن: '+d.get('phone')+'\nشهر: '+d.get('city')+'\nآدرس: '+d.get('address')+'\nنوع درخواست: '+d.get('type')+'\nتوضیحات: '+(d.get('message')||'');
+    if(send.dataset.send==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
+    else navigator.clipboard.writeText(text).then(function(){window.open(send.dataset.send==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');});
+  });
   // Product thumbnails: use the uploaded product image when one exists.
   var productImages = {
     'CT-001':'تک‌میز استاندارد 3015 - CUT-3015-STD.jpg',
