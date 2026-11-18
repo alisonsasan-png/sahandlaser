@@ -105,3 +105,5 @@ footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin-bottom:4
 .quote-send{display:inline-flex;align-items:center;gap:7px}
 .quote-send.bale{background:#00a884}
 .brand-icon{display:inline-block;width:22px;height:22px;object-fit:contain;margin-left:2px;border:0;border-radius:5px}
+
+.dimensions{margin-top:46px}.dimensions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.dimensions-grid img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 24px rgba(15,23,42,.08)}
