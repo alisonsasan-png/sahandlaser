@@ -39,18 +39,21 @@
   }
   chips.forEach(function(b){ b.addEventListener('click', function(){ cat=b.dataset.cat; apply(); }); });
   q.addEventListener('input', apply); apply();
-  // contact form: build message, send to WhatsApp or copy for eitaa/bale
+  // Contact form: build one message and send it through the selected messenger.
   var f = document.getElementById('inq'); if(!f) return;
   function msg(){
     var d = new FormData(f), p = new URLSearchParams(location.search).get('p');
-    return 'درخواست استعلام از سایت سهند لیزر\n' + 'نام: '+d.get('name')+'\nتماس: '+d.get('contact')+'\nنوع نیاز: '+d.get('type')+
-      (d.get('industry')?'\nصنعت: '+d.get('industry'):'') + (p?'\nمدل: '+p:'') + (d.get('message')?'\nتوضیحات: '+d.get('message'):'');
+    return 'درخواست استعلام از سایت سهند لیزر\n' + 'نام: '+d.get('name')+'\nتلفن/ایمیل: '+d.get('contact')+'\nشهر: '+d.get('city')+'\nآدرس: '+d.get('address')+'\nنوع نیاز: '+d.get('type')+
+      (d.get('industry')?'\nصنعت/کاربرد: '+d.get('industry'):'') + (p?'\nمدل: '+p:'') + (d.get('message')?'\nتوضیحات: '+d.get('message'):'');
   }
   f.addEventListener('click', function(e){
     var b = e.target.closest('[data-ch]'); if(!b) return;
     if(!f.reportValidity()) return;
-    if(b.dataset.ch==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(msg()),'_blank','noopener');
-    else navigator.clipboard && navigator.clipboard.writeText(msg()).then(function(){ alert('متن کپی شد. در ایتا یا بله جای‌گذاری کنید.'); });
+    var text = msg();
+    if(b.dataset.ch==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
+    else navigator.clipboard.writeText(text).then(function(){
+      window.open(b.dataset.ch==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');
+    });
   });
   var pq = new URLSearchParams(location.search).get('p');
   if(pq) f.querySelector('#m').value = 'مدل مورد نظر: ' + pq + '\n';
