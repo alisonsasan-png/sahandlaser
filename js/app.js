@@ -29,7 +29,7 @@
     var m=document.getElementById('quote-modal'), form=m&&m.querySelector('.quote-form'); if(!m||!form||!form.reportValidity()) return;
     var d=new FormData(form), text='درخواست استعلام از سایت سهند لیزر\nمحصول: '+m.dataset.product+'\nنام: '+d.get('name')+'\nتلفن: '+d.get('phone')+'\nشهر: '+d.get('city')+'\nآدرس: '+d.get('address')+'\nنوع درخواست: '+d.get('type')+'\nتوضیحات: '+(d.get('message')||'');
     if(send.dataset.send==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
-    else navigator.clipboard.writeText(text).then(function(){window.open(send.dataset.send==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');});
+    else {var copied=false;try{if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text);copied=true;}}catch(e){}if(!copied){var ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');copied=true;}catch(e){}ta.remove();}window.open(send.dataset.send==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');}
   });
   // Product thumbnails: use the uploaded product image when one exists.
   var productImages = {
