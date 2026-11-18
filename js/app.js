@@ -1,4 +1,7 @@
 (function(){
+  var serviceLinks=['installation.html','source-head-repair.html','machine-repair.html','training.html','spare-parts.html','consulting.html','laser-cutting.html','marking-engraving.html'];
+  if(location.pathname.endsWith('/services.html')||location.pathname.endsWith('services.html')) document.querySelectorAll('main .grid > .card').forEach(function(card,i){if(serviceLinks[i]){card.setAttribute('role','link');card.tabIndex=0;card.style.cursor='pointer';card.addEventListener('click',function(){location.href='services/'+serviceLinks[i];});card.addEventListener('keydown',function(e){if(e.key==='Enter')location.href='services/'+serviceLinks[i];});}});
+
   // Inline quote modal for product pages.
   document.querySelectorAll('a.btn-primary[href*="contact.html?p="]').forEach(function(trigger){
     trigger.addEventListener('click', function(e){
