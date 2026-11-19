@@ -50,7 +50,7 @@
     img.src = prefix + file;
   });
   // product list: search + category filter
-  var list = document.getElementById('plist'); if(!list) return;
+  var list = document.getElementById('plist'); if(list){
   var q = document.getElementById('q'), chips = document.querySelectorAll('#chips .chip'), count = document.getElementById('count');
   var cat = new URLSearchParams(location.search).get('cat') || 'all';
   function apply(){
@@ -64,6 +64,7 @@
   }
   chips.forEach(function(b){ b.addEventListener('click', function(){ cat=b.dataset.cat; apply(); }); });
   q.addEventListener('input', apply); apply();
+  }
   // Contact form: build one message and send it through the selected messenger.
   var f = document.getElementById('inq'); if(!f) return;
   function msg(){
@@ -76,13 +77,12 @@
     if(!f.reportValidity()) return;
     var text = msg();
     if(b.dataset.ch==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
-    else navigator.clipboard.writeText(text).then(function(){
-      window.open(b.dataset.ch==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');
-    });
+    else {
+      var openChannel=function(){window.open(b.dataset.ch==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');};
+      if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(openChannel).catch(function(){openChannel();});
+      else openChannel();
+    };
   });
   var pq = new URLSearchParams(location.search).get('p');
   if(pq) f.querySelector('#m').value = 'مدل مورد نظر: ' + pq + '\n';
-  var serviceLinks=['installation.html','source-head-repair.html','machine-repair.html','training.html','spare-parts.html','consulting.html','laser-cutting.html','marking-engraving.html'];
-  if(location.pathname.endsWith('/services.html')||location.pathname.endsWith('services.html')) document.querySelectorAll('main .grid > .card').forEach(function(card,i){if(serviceLinks[i]){card.setAttribute('role','link');card.tabIndex=0;card.style.cursor='pointer';card.addEventListener('click',function(){location.href='services/'+serviceLinks[i];});card.addEventListener('keydown',function(e){if(e.key==='Enter')location.href='services/'+serviceLinks[i];});}});
-
 })();
