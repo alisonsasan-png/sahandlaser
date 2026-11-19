@@ -40,6 +40,10 @@
     'FS002':'سورس لیزر 50 وات پالسی فایبر Q-Switched - FS002.jpg','FS003':'Raycus RFL-C1000 - FS003.jpg','FS004':'Raycus RFL-C1500 - FS004.jpg','FS005':'سورس لیزر Raycus RFL-C2000 - FS005.jpg','FS006':'Raycus 3000 وات - FS006.jpg','FS007':'Raycus 4000 وات - FS007.jpg','FS008':'Raycus 6000 وات - FS008.jpg',
     'CN003':'نازل RayTools تک‌لایه - CN003.jpg','CN001':'https://sahandlaser.com/wp-content/uploads/2022/04/CN001-8.jpg','CN006':'نازل RayTools دولایه پرسرعت - CN006.jpg','CN007':'نازل RayTools دولایه فول‌پاور - CN007.jpg','CN008':'نازل RayTools تک‌لایه BT210-BT210S - CN008.jpg','CN009':'نازل RayTools TRA برای BM111 - CN009.jpg','CN011':'نازل RayTools دولایه - CN011.jpg','CN012':'نازل RayTools دولایه Full Power - CN012.jpg','CN013':'نازل RayTools TRA برای FL200-FL1501 - CN013.jpg',
     'CP-CERAMIC':'سرامیک هد برش فایبر - CP-CERAMIC.jpg','ML-004':'مارکینگ UV میزدار - ML-004.jpg','WL-003':'دستگاه جوش لیزر Air-Cooled - WL-003.jpg','WELD-1500':'دستگاه جوش فایبر 1500 وات - WELD-1500.jpg','WELD-2000':'دستگاه جوش فایبر 2000 وات - WELD-2000.jpg','WELD-3000':'دستگاه جوش فایبر 3000 وات - WELD-3000.jpg','WL-001':'دستگاه جوش فایبر 800 وات - WELD-800W.jpg','WL-002':'WL-002_0057.jpg','WL-004':'WL-004_0060.jpg','WL-005':'WL-005_0062.jpg','CL-001':'CL-001_0001.jpg','CL-002':'تمیزکاری لیزری پالسی 300 وات - CLEAN-300W.jpg','CL-004':'تمیزکاری لیزری پیوسته 2000 وات - CLEAN-2000W.jpg','ML-001':'مارکینگ فایبر رومیزی - MARK-DESKTOP-FIBER.jpg','ML-002':'مارکینگ فایبر میزدار - MARK-TABLE-FIBER.jpg','ML-005':'مارکینگ فایبر پرتابل آبی - MARK-PORTABLE-BLUE.jpg'
+    'CH-HANLI-12000':'Hanli HL-12000 - CH-HANLI-12000.jpg',
+    'CH-HANLI-6000':'Hanli HL-6000 - CH-HANLI-6000.jpg',
+    'CT-009':'DZT6020T (کد مدل) - DZT6020T.jpg',
+
   };
   var prefix = location.pathname.indexOf('/products/') >= 0 ? '../' : '';
   document.querySelectorAll('.pcard .thumb').forEach(function(t){
@@ -50,7 +54,7 @@
     img.src = prefix + file;
   });
   // product list: search + category filter
-  var list = document.getElementById('plist'); if(!list) return;
+  var list = document.getElementById('plist'); if(list){
   var q = document.getElementById('q'), chips = document.querySelectorAll('#chips .chip'), count = document.getElementById('count');
   var cat = new URLSearchParams(location.search).get('cat') || 'all';
   function apply(){
@@ -64,6 +68,7 @@
   }
   chips.forEach(function(b){ b.addEventListener('click', function(){ cat=b.dataset.cat; apply(); }); });
   q.addEventListener('input', apply); apply();
+  }
   // Contact form: build one message and send it through the selected messenger.
   var f = document.getElementById('inq'); if(!f) return;
   function msg(){
@@ -76,13 +81,12 @@
     if(!f.reportValidity()) return;
     var text = msg();
     if(b.dataset.ch==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
-    else navigator.clipboard.writeText(text).then(function(){
-      window.open(b.dataset.ch==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');
-    });
+    else {
+      var openChannel=function(){window.open(b.dataset.ch==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');};
+      if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(openChannel).catch(function(){openChannel();});
+      else openChannel();
+    };
   });
   var pq = new URLSearchParams(location.search).get('p');
   if(pq) f.querySelector('#m').value = 'مدل مورد نظر: ' + pq + '\n';
-  var serviceLinks=['installation.html','source-head-repair.html','machine-repair.html','training.html','spare-parts.html','consulting.html','laser-cutting.html','marking-engraving.html'];
-  if(location.pathname.endsWith('/services.html')||location.pathname.endsWith('services.html')) document.querySelectorAll('main .grid > .card').forEach(function(card,i){if(serviceLinks[i]){card.setAttribute('role','link');card.tabIndex=0;card.style.cursor='pointer';card.addEventListener('click',function(){location.href='services/'+serviceLinks[i];});card.addEventListener('keydown',function(e){if(e.key==='Enter')location.href='services/'+serviceLinks[i];});}});
-
 })();
