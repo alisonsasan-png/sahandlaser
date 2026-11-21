@@ -43,6 +43,11 @@
     'CH-HANLI-12000':'assets/images/catalog/Hanli HL-12000 - CH-HANLI-12000.jpg',
     'CH-HANLI-6000':'assets/images/catalog/Hanli HL-6000 - CH-HANLI-6000.jpg',
     'CT-009':'assets/images/catalog/تک‌میز استاندارد 3015 - CUT-3015-STD.jpg',
+    'CT-010':'https://sahandlaser.com/wp-content/uploads/2022/03/back1.png',
+    'CT-011':'https://sahandlaser.com/wp-content/uploads/2022/03/back1.png',
+    'CT-012':'https://sahandlaser.com/wp-content/uploads/2022/03/back1.png',
+    'CT-013':'https://sahandlaser.com/wp-content/uploads/2022/03/back1.png',
+
 
     'CH-S&A-6000':'CH-S&A-6000.png',
     'CH-S&A-12000':'CH-S&A-12000.png',
