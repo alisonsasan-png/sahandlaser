@@ -24,6 +24,15 @@
     if(send.dataset.send==='wa') window.open('https://wa.me/989125855548?text='+encodeURIComponent(text),'_blank','noopener');
     else navigator.clipboard.writeText(text).then(function(){window.open(send.dataset.send==='eitaa'?'https://eitaa.com/sahandlaser_sale':'https://ble.ir/sahandlaser_sale','_blank','noopener');});
   });
+  // Standardized product technical summary for every detail page.
+  var specBox=document.querySelector('.detail');
+  if(specBox && !document.querySelector('.technical-summary')){
+    var sc=detailCode||decodeURIComponent(location.pathname.split('/').pop().replace(/\\.html$/,''));
+    var kind=sc.indexOf('CT-')===0?'برش لیزر فایبر':sc.indexOf('WL-')===0||sc.indexOf('WELD-')===0?'جوش لیزر':sc.indexOf('ML-')===0||sc.indexOf('MK-')===0?'حکاکی و مارکینگ':sc.indexOf('CL-')===0||sc.indexOf('CLEAN-')===0?'تمیزکاری لیزری':(sc.indexOf('FS')===0||sc.indexOf('SRC-')===0)?'سورس لیزر':(sc.indexOf('CH')===0||sc.indexOf('CP-')===0||sc.indexOf('CTRL-')===0)?'هد، کنترلر و قطعات':'محصولات و تجهیزات لیزر';
+    var tech=document.createElement('section'); tech.className='technical-summary card';
+    tech.innerHTML='<h2 class="sec">مشخصات فنی و کاربرد</h2><div class="spec-grid"><div><b>کد محصول</b><span dir="ltr">'+sc+'</span></div><div><b>خانواده</b><span>'+kind+'</span></div><div><b>کاربرد</b><span>انتخاب توان، ابعاد و قطعات بر اساس جنس متریال و ظرفیت تولید</span></div><div><b>پیکربندی</b><span>قابل تنظیم بر اساس نیاز پروژه و تأیید کارشناس فنی</span></div></div><p class="note">توان، ابعاد میز، نوع سورس، هد، چیلر و سایر جزئیات عددی باید برای همین مدل و سفارش نهایی از سوی کارشناس سهند لیزر تأیید شود.</p>';
+    specBox.parentNode.insertBefore(tech,specBox.nextSibling);
+  }
   // Product thumbnails: use the uploaded product image when one exists.
   var productImages = {
     'CT-001':'assets/images/catalog/تک‌میز استاندارد 3015 - CUT-3015-STD.jpg',
