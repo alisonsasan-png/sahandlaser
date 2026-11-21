@@ -159,3 +159,4 @@ footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin-bottom:4
   .partner-logo img{width:76px;height:48px}
   .partner-logo span{font-size:.72rem}
 }
+\n.technical-summary{margin-top:24px;padding:24px}.technical-summary .sec{margin-bottom:16px}.spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.spec-grid>div{display:flex;flex-direction:column;gap:4px;padding:12px;background:#f8fafc;border:1px solid var(--line);border-radius:12px}.spec-grid b{color:var(--muted);font-size:.82rem}.spec-grid span{color:var(--ink);font-size:.95rem}@media(max-width:640px){.spec-grid{grid-template-columns:1fr}}\n
