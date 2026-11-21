@@ -136,6 +136,13 @@
   chips.forEach(function(b){ b.addEventListener('click', function(){ cat=b.dataset.cat; apply(); }); });
   q.addEventListener('input', apply); apply();
   }
+  // Make the footer address open the official Google Maps location.
+  document.querySelectorAll('footer .cols').forEach(function(footer){
+    var address='اصفهان، خیابان خیام، خیابان عطاءالملک، بلوک ۲۴، پلاک ۳۳';
+    if(footer.innerHTML.indexOf(address)>=0 && footer.innerHTML.indexOf('maps.app.goo.gl/CjU1bXyjebqk1hFw8')<0){
+      footer.innerHTML=footer.innerHTML.replace(address,'<a href="https://maps.app.goo.gl/CjU1bXyjebqk1hFw8" target="_blank" rel="noopener noreferrer" title="مشاهدهٔ موقعیت در نقشه">'+address+'</a>');
+    }
+  });
   // Contact form: build one message and send it through the selected messenger.
   var f = document.getElementById('inq'); if(!f) return;
   function msg(){
