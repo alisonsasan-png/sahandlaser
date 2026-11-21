@@ -74,7 +74,7 @@
     'CP-LENS-WSX':'assets/images/catalog/CP-LENS-WSX.jpg',
     'FS001':'assets/images/catalog/سورس لیزر 50 وات پالسی فایبر Q-Switched - FS002.jpg',
     'MK-FIBER-GENERIC':'assets/images/catalog/MARK-PORTABLE-BLUE_0034.png',
-    'ML-003':'assets/images/catalog/ML-003.jpg',
+    'ML-003':'assets/images/catalog/مارکینگ فایبر رومیزی - MARK-DESKTOP-FIBER.jpg',
     'ML-006':'assets/images/catalog/ML-006_0038.png',
     'ML-007':'assets/images/catalog/ML-007_0040.png',
     'ML-008':'assets/images/catalog/ML-007_0040.png',
