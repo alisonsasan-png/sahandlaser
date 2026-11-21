@@ -77,7 +77,9 @@
   // Product detail hero image: detail pages use .detail .big instead of .pcard .thumb.
   var detailBox = document.querySelector('.detail .big');
   if (detailBox) {
-    var detailCode = decodeURIComponent(location.pathname.split('/').pop().replace(/\\.html$/, ''));
+    var detailCode = decodeURIComponent(location.pathname.split('/').pop().replace(/\.html$/, ''));
+    var codeNode = document.querySelector('.detail p b + span');
+    if (codeNode) detailCode = codeNode.textContent.trim();
     var detailFile = productImages[detailCode];
     if (detailFile) {
       var detailImg = new Image();
