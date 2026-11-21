@@ -102,7 +102,7 @@
   document.querySelectorAll('.pcard .thumb').forEach(function(t){
     var code = t.querySelector('.code'); if(!code) return;
     var img = new Image();
-    img.onload = function(){ t.innerHTML=''; img.alt=''; t.appendChild(img); };
+    img.onload = function(){ if(code.textContent.trim()==='ML-002') img.classList.add('rotate-180'); t.innerHTML=''; img.alt=''; t.appendChild(img); };
     var file = productImages[code.textContent.trim()]; if(!file) return;
     img.src = prefix + file;
   });
@@ -115,7 +115,7 @@
     var detailFile = productImages[detailCode];
     if (detailFile) {
       var detailImg = new Image();
-      detailImg.alt = detailCode;
+      detailImg.alt = detailCode; if(detailCode==='ML-002') detailImg.classList.add('rotate-180');
       detailImg.onload = function(){ detailBox.innerHTML=''; detailBox.appendChild(detailImg); };
       detailImg.src = prefix + detailFile;
     }
