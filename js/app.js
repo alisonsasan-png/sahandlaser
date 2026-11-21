@@ -74,6 +74,18 @@
     var file = productImages[code.textContent.trim()]; if(!file) return;
     img.src = prefix + file;
   });
+  // Product detail hero image: detail pages use .detail .big instead of .pcard .thumb.
+  var detailBox = document.querySelector('.detail .big');
+  if (detailBox) {
+    var detailCode = decodeURIComponent(location.pathname.split('/').pop().replace(/\\.html$/, ''));
+    var detailFile = productImages[detailCode];
+    if (detailFile) {
+      var detailImg = new Image();
+      detailImg.alt = detailCode;
+      detailImg.onload = function(){ detailBox.innerHTML=''; detailBox.appendChild(detailImg); };
+      detailImg.src = prefix + detailFile;
+    }
+  }
   // product list: search + category filter
   var list = document.getElementById('plist'); if(list){
   var q = document.getElementById('q'), chips = document.querySelectorAll('#chips .chip'), count = document.getElementById('count');
