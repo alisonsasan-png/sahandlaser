@@ -28,4 +28,3 @@
 .channel-buttons .button[value=bale] svg{color:#168de2}
 .channel-buttons .button[value=wa] svg{color:currentColor}
 .catalog-spec-card{margin-top:28px;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2)}.catalog-spec-card h3{margin:0 0 8px;font-size:1.2rem}.catalog-spec-card ul{margin:18px 0 0;padding-inline-start:22px;display:grid;gap:10px}.catalog-spec-card li{line-height:1.8}
-
