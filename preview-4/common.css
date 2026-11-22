@@ -20,3 +20,10 @@
 @media(max-width:360px){.shell{width:calc(100% - 26px)}.product-grid,.catalog-results .product-grid{grid-template-columns:1fr}.product-picture .image-frame,.catalog-results .product-picture .image-frame{height:240px}.product-actions{flex-direction:row}.header-quote{font-size:.7rem;padding:8px}.identity{font-size:1rem}.brand-mark{width:31px}.hero h1{font-size:2.45rem}}
 .filter-panel{min-width:0}.category-filters{min-width:0;width:100%}.family-note{position:absolute;bottom:5px;inset-inline:5px;text-align:center;background:#fffffff0;color:#536174;font-size:.7rem;padding:3px 6px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Messenger brand marks in inquiry actions */
+.channel-buttons .button{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.channel-buttons .button svg{width:19px;height:19px;flex:0 0 19px}
+.channel-buttons .button[value=eitaa] svg{color:#f58220}
+.channel-buttons .button[value=bale] svg{color:#168de2}
+.channel-buttons .button[value=wa] svg{color:currentColor}
