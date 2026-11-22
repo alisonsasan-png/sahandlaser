@@ -1,0 +1,3 @@
+Base template: uiuxlabz/industrial-services-html-template
+Template CSS retained verbatim; Sahand adaptations in sahand.css
+97 products; Persian source articles preserved.
