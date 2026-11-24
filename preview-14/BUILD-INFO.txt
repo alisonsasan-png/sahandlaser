@@ -1,0 +1,4 @@
+Base product system: preview-11.
+Home theme: VOLT Arc (MIT), adapted for Sahand Laser.
+Motion: GSAP, Lenis, ScrollTrigger and Three.js retained from the downloaded template.
+Product, service, inquiry and language routes remain independent and available.
