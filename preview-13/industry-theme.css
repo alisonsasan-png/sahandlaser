@@ -13,3 +13,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .engineering-image{box-shadow:var(--shadow);border-radius:2px}.site-footer{background:var(--dark)}.drawing-grid img,.detail-image img{background:#fff}
 @media(max-width:900px){.sahand-hero{min-height:680px}.sahand-hero .hero-bg{inset:0}.sahand-hero .hero-bg img{opacity:.28}.sahand-hero .hero-shade{background:linear-gradient(180deg,#0b1318b8,#0b1318f5)}.hero-inner{padding-top:90px}.section{padding-block:62px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Industry motion layer: restrained, decorative, and disabled for reduced-motion users. */
+@keyframes industry-pan{0%,100%{transform:scale(1.03) translate3d(0,0,0)}50%{transform:scale(1.08) translate3d(-1.5%,1%,0)}}
+@keyframes industry-scan{0%{transform:translateX(-110%);opacity:0}18%,72%{opacity:.42}100%{transform:translateX(110%);opacity:0}}
+@keyframes industry-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes industry-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.sahand-hero .hero-bg img{animation:industry-pan 18s ease-in-out infinite alternate;will-change:transform}
+.sahand-hero:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:linear-gradient(115deg,transparent 0 38%,#f28a2418 39%,transparent 40% 100%);mix-blend-mode:screen}
+.sahand-hero .hero-shade:after{content:"";position:absolute;top:0;bottom:0;width:22%;background:linear-gradient(90deg,transparent,#f28a2450,transparent);filter:blur(12px);animation:industry-scan 9s ease-in-out infinite}
+.hero-inner>*{animation:industry-rise .7s both}.hero-inner>*:nth-child(2){animation-delay:.1s}.hero-inner>*:nth-child(3){animation-delay:.18s}.hero-inner>*:nth-child(4){animation-delay:.26s}
+.category-tile,.product-card,.service-card,.article-card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.category-tile:hover,.product-card:hover,.service-card:hover,.article-card:hover{transform:translateY(-7px);box-shadow:0 26px 52px #101b2230}
+.category-tile svg,.service-card>svg{animation:industry-float 4.5s ease-in-out infinite}.section-heading .eyebrow{position:relative;display:inline-flex;align-items:center;gap:10px}.section-heading .eyebrow:before{content:"";width:34px;height:2px;background:var(--accent);display:inline-block;animation:industry-scan 4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.sahand-hero .hero-bg img,.sahand-hero .hero-shade:after,.category-tile svg,.service-card>svg,.section-heading .eyebrow:before,.hero-inner>*{animation:none!important}.hero-inner>*{opacity:1;transform:none}}
