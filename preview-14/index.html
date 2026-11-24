@@ -414,7 +414,7 @@ footer{border-top:1px solid var(--line);padding-top:clamp(48px,6vw,80px);overflo
   *{transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
 </style>
-<link rel="stylesheet" href="../preview-11/common.css?v=14-1"><style>html[dir="rtl"]{direction:rtl}body{font-family:Sahand,system-ui,sans-serif} .volt-sahand-link{position:fixed;right:24px;bottom:24px;z-index:60;background:#c6ff00;color:#0a0a0b;padding:12px 18px;border-radius:999px;font-weight:700}.volt-sahand-link:hover{transform:translateY(-3px)} </style></head>
+<link rel="stylesheet" href="../preview-11/common.css?v=14-1"><style>html[dir="rtl"]{direction:rtl}body{font-family:Sahand,system-ui,sans-serif}#gl{opacity:.08!important}.sahand-assembly{position:fixed;inset:0;z-index:1;display:grid;place-items:center;pointer-events:none;transition:opacity .7s ease}.sahand-assembly img{position:absolute;width:min(78vw,1100px);max-height:82vh;object-fit:contain;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45));transition:opacity .8s ease,transform 1.2s cubic-bezier(.2,.8,.2,1)}.sahand-assembly .exploded{opacity:1;transform:scale(1)}.sahand-assembly .assembled{opacity:0;transform:scale(.86)}.sahand-assembly.is-assembled .exploded{opacity:0;transform:scale(1.08)}.sahand-assembly.is-assembled .assembled{opacity:1;transform:scale(1)}.volt-sahand-link{position:fixed;right:24px;bottom:24px;z-index:60;background:#c6ff00;color:#0a0a0b;padding:12px 18px;border-radius:999px;font-weight:700}.volt-sahand-link:hover{transform:translateY(-3px)} </style></head>
 <body class="is-loading">
 
 <!-- Fixed full-bleed WebGL background canvas and introductory charging preloader -->
@@ -687,7 +687,7 @@ footer{border-top:1px solid var(--line);padding-top:clamp(48px,6vw,80px);overflo
   </footer>
 </main>
 
-<script>
+<script>const sa=document.getElementById("sahandAssembly");const updateAssembly=()=>{if(sa)sa.classList.toggle("is-assembled",window.scrollY>Math.max(280,innerHeight*.35))};addEventListener("scroll",updateAssembly,{passive:true});updateAssembly();</script><script>
 /* Failsafe: never leave the loader stuck if a script fails */
 setTimeout(function(){var l=document.querySelector('.loader');if(l){l.remove();document.body.classList.remove('is-loading');}},7000);
 </script>
