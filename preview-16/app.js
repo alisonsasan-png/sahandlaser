@@ -14,25 +14,25 @@
   const caption = document.querySelector('#assembly-state');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const ns = 'http://www.w3.org/2000/svg';
-  const image = 'assets/dz3015h-exploded.png';
+  const image = 'assets-dzt-exploded.webp';
   // Hand-traced silhouettes for this image (1536 x 1024), not percentage rectangles.
   // Foreground groups follow the source's physical occlusion order.
   const geometry = [
-    {id:'rear-shell', name:'پوشش انتهایی', dx:-42, dy:190, delay:.04,
+    {id:'rear-shell', name:'ظ¾ظˆط´ط´ ط§ظ†طھظ‡ط§غŒغŒ', dx:-42, dy:190, delay:.04,
       points:'1038,25 1099,6 1468,120 1480,127 1486,140 1486,246 1419,270 1393,259 1389,169 1355,155 1374,138 1038,39'},
-    {id:'rear-deck', name:'صفحهٔ عقب', dx:-42, dy:190, delay:.15,
+    {id:'rear-deck', name:'طµظپط­ظ‡ظ” ط¹ظ‚ط¨', dx:-42, dy:190, delay:.15,
       points:'889,59 912,49 913,24 949,10 995,20 1008,31 1050,44 1089,40 1366,127 1374,139 1336,149 1339,177 1318,183 1305,201 1296,200 1286,180 1258,176 1254,166 1210,153 1208,162 1199,160 1199,148 1156,136 1152,144 1141,142 1138,130 1099,119 1097,128 1085,125 1082,112 1048,103 1044,111 1034,108 1030,99 991,88 989,100 977,98 975,83 935,73 931,86 922,83 918,71 889,67'},
-    {id:'bed', name:'شبکه و قاب میز کار', dx:0, dy:102, delay:.13,
+    {id:'bed', name:'ط´ط¨ع©ظ‡ ظˆ ظ‚ط§ط¨ ظ…غŒط² ع©ط§ط±', dx:0, dy:102, delay:.13,
       points:'243,337 995,148 1272,218 1327,255 1324,297 691,504 651,503 245,370'},
-    {id:'gantry', name:'پل، هد برش و زنجیر کابل', dx:0, dy:177, delay:.27,
+    {id:'gantry', name:'ظ¾ظ„طŒ ظ‡ط¯ ط¨ط±ط´ ظˆ ط²ظ†ط¬غŒط± ع©ط§ط¨ظ„', dx:0, dy:177, delay:.27,
       points:'244,111 273,96 299,88 325,96 326,110 500,151 545,134 576,142 577,86 588,56 605,32 629,16 654,14 677,23 695,40 705,60 705,117 859,75 889,85 892,155 795,183 815,200 826,222 831,251 802,274 804,325 787,334 744,346 719,350 668,335 661,319 636,326 609,319 608,337 596,337 593,320 557,313 541,301 537,273 272,211 245,203',
       holes:['623,83 629,68 640,56 654,49 662,50 667,59 667,131 623,143'],
       islands:['255,238 360,212 385,217 279,264 258,258']},
-    {id:'left-cap', name:'پوشش سمت چپ', dx:140, dy:90, delay:0,
+    {id:'left-cap', name:'ظ¾ظˆط´ط´ ط³ظ…طھ ع†ظ¾', dx:140, dy:90, delay:0,
       points:'104,220 112,207 155,195 163,199 163,222 177,216 196,227 201,316 195,330 184,337 157,330 142,334 104,318'},
-    {id:'right-cap', name:'پوشش انتهای پنل راست', dx:-40, dy:80, delay:.01,
+    {id:'right-cap', name:'ظ¾ظˆط´ط´ ط§ظ†طھظ‡ط§غŒ ظ¾ظ†ظ„ ط±ط§ط³طھ', dx:-40, dy:80, delay:.01,
       points:'1435,302 1450,284 1487,277 1504,290 1505,426 1440,444 1437,371'},
-    {id:'right-panel', name:'پنل طولی سمت راست', dx:-40, dy:80, delay:.03,
+    {id:'right-panel', name:'ظ¾ظ†ظ„ ط·ظˆظ„غŒ ط³ظ…طھ ط±ط§ط³طھ', dx:-40, dy:80, delay:.03,
       points:'984,447 1397,295 1422,295 1435,302 1437,371 1016,520 987,510'}
   ];
   const defs = document.createElementNS(ns, 'defs');
@@ -92,9 +92,9 @@
       part.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)})`);
     }
     slider.value = String(Math.round(p * 100));
-    slider.setAttribute('aria-valuetext', `${number.format(Math.round(p * 100))} درصد باز`);
-    percent.textContent = `${number.format(Math.round(p * 100))}٪`;
-    caption.textContent = p >= .99 ? 'نمای انفجاری — برای جمع‌شدن به بالا برگردید' : p <= .01 ? 'دستگاه جمع‌شده' : 'قطعات در حال بازشدن';
+    slider.setAttribute('aria-valuetext', `${number.format(Math.round(p * 100))} ط¯ط±طµط¯ ط¨ط§ط²`);
+    percent.textContent = `${number.format(Math.round(p * 100))}ظھ`;
+    caption.textContent = p >= .99 ? 'ظ†ظ…ط§غŒ ط§ظ†ظپط¬ط§ط±غŒ â€” ط¨ط±ط§غŒ ط¬ظ…ط¹â€Œط´ط¯ظ† ط¨ظ‡ ط¨ط§ظ„ط§ ط¨ط±ع¯ط±ط¯غŒط¯' : p <= .01 ? 'ط¯ط³طھع¯ط§ظ‡ ط¬ظ…ط¹â€Œط´ط¯ظ‡' : 'ظ‚ط·ط¹ط§طھ ط¯ط± ط­ط§ظ„ ط¨ط§ط²ط´ط¯ظ†';
   }
   function paint() {
     queued = false;
@@ -116,3 +116,4 @@
   reduced.addEventListener('change', queue);
   paint();
 })();
+
