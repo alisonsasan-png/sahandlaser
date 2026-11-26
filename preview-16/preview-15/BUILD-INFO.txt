@@ -1,3 +1,0 @@
-Base template: uiuxlabz/industrial-portfolio-html-template
-Original template CSS retained in industrial-portfolio.css.
-97 products; shared content preserved from preview 11; independent preview 12.

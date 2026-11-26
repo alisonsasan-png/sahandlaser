@@ -1,3 +1,0 @@
-Base: preview-11 content and functionality.
-Theme: industry-1.0.1 visual adaptation.
-All product data, images, forms, services, languages, and routes remain inherited from preview 11.

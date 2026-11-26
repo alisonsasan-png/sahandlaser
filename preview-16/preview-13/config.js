@@ -1,1 +1,0 @@
-window.SAHAND_CONFIG={number:13,name:"سهند لیزر",signature:"SAHAND / INDUSTRIAL ENGINEERING"};
