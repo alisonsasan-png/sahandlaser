@@ -1,3 +1,27 @@
-const stage=document.getElementById('stage');const assembled=document.querySelector('.assembled');const exploded=document.querySelector('.exploded');const progress=document.getElementById('progress');const percent=document.getElementById('stagePercent');const state=document.getElementById('stageState');
-function update(){const r=stage.getBoundingClientRect();const viewport=innerHeight;const t=Math.max(0,Math.min(1,(viewport*.78-r.top)/(viewport*.95+r.height)));const eased=t*t*(3-2*t);assembled.style.opacity=String(1-eased);assembled.style.transform=`scale(${1+eased*.025})`;exploded.style.opacity=String(eased);exploded.style.transform=`scale(${.97+eased*.03})`;progress.style.height=`${eased*100}%`;percent.textContent=`${Math.round(eased*100)}٪`;state.textContent=eased>.55?'نمای انفجاری اجزا':'حالت کامل دستگاه'}
-addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+const section=document.querySelector('.explore');
+const stage=document.getElementById('stage');
+const assembled=document.querySelector('.assembled');
+const exploded=document.querySelector('.exploded');
+const progress=document.getElementById('progress');
+const percent=document.getElementById('stagePercent');
+const state=document.getElementById('stageState');
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+let queued=false;
+function paint(){
+  queued=false;
+  const distance=Math.max(1,section.offsetHeight-section.querySelector('.stage-wrap').offsetHeight);
+  const p=reduced.matches?0:Math.max(0,Math.min(1,-section.getBoundingClientRect().top/distance));
+  const e=p*p*(3-2*p);
+  assembled.style.opacity=String(1-e);
+  assembled.style.transform=`scale(${1+e*.025})`;
+  exploded.style.opacity=String(e);
+  exploded.style.transform=`scale(${.94+e*.06})`;
+  progress.style.height=`${e*100}%`;
+  percent.textContent=`${Math.round(e*100)}٪`;
+  state.textContent=e>.55?'نمای انفجاری اجزا':'حالت کامل دستگاه';
+}
+function queue(){if(!queued){queued=true;requestAnimationFrame(paint)}}
+addEventListener('scroll',queue,{passive:true});
+addEventListener('resize',queue,{passive:true});
+reduced.addEventListener('change',queue);
+paint();
