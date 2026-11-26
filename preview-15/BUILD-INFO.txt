@@ -1,4 +1,3 @@
-Independent preview 15 for Sahand Laser.
-Based on the validated preview-14 industrial motion experience.
-All product, service, inquiry, article, language and responsive routes are preserved.
-This preview has its own directory and configuration identity; previous previews are unchanged.
+Base template: uiuxlabz/industrial-portfolio-html-template
+Original template CSS retained in industrial-portfolio.css.
+97 products; shared content preserved from preview 11; independent preview 12.
