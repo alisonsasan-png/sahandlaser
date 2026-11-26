@@ -1,0 +1,1 @@
+window.SAHAND_CONFIG={number:11,name:"سهند لیزر",signature:"SAHAND / LASER ENGINEERING"};
