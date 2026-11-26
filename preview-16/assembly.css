@@ -1,0 +1,39 @@
+/* Preview 14's pinned SVG stage, with room for DZ3015H and a sticky header. */
+html { scroll-behavior: auto; }
+.assembly { position: relative; height: 310svh; background: #0b1720; scroll-margin-top: 78px; }
+.assembly-sticky { position: sticky; top: 78px; height: calc(100svh - 78px); display: flex; flex-direction: column; overflow: hidden; padding: 20px clamp(16px, 4vw, 64px) 0; }
+.assembly-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 16px; }
+.assembly-heading .eyebrow { margin: 0 0 8px; }
+.assembly-heading h2 { margin: 0; font-size: clamp(20px, 2.5vw, 36px); line-height: 1.5; }
+.assembly-heading > p { max-width: 380px; margin: 0; font-size: 14px; color: #abc4d2; }
+.machine-stage { position: relative; flex: 1; min-height: 0; width: min(1320px, 100%); margin-inline: auto; background: #fff; border-radius: 14px; overflow: hidden; }
+.assembly-svg { display: block; width: 100%; height: 100%; }
+/* Override the old percentage-clipped images. SVG coordinates follow the source pixels. */
+.assembly-svg .machine-part { position: static; inset: auto; width: auto; height: auto; opacity: 1; clip-path: none; transition: none; will-change: transform; }
+.assembly-bottom { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 13px; color: #bdd5e2; }
+.assembly-bottom label { display: flex; align-items: center; gap: 16px; }
+.assembly-bottom input { direction: ltr; width: clamp(100px, 18vw, 280px); min-height: 44px; accent-color: #20c6e9; cursor: pointer; }
+.assembly-bottom output { min-width: 42px; color: #20c6e9; }
+.assembly-progress { height: 3px; background: #264453; flex-shrink: 0; }
+.assembly-progress i { display: block; height: 100%; transform: scaleX(var(--progress, 0)); transform-origin: right; background: #20c6e9; }
+a:focus-visible, input:focus-visible { outline: 3px solid #20c6e9; outline-offset: 5px; }
+@media (max-width: 800px) {
+  .assembly { height: 280svh; scroll-margin-top: 68px; }
+  .assembly-sticky { top: 68px; height: calc(100svh - 68px); padding: 14px 12px 0; }
+  .assembly-heading { display: block; padding-bottom: 12px; }
+  .assembly-heading > p { font-size: 12px; margin-top: 8px; }
+  .assembly-bottom { flex-wrap: wrap; gap: 0 14px; padding: 8px 0; }
+  .assembly-bottom label { order: 3; width: 100%; justify-content: space-between; }
+  .assembly-bottom input { flex: 1; }
+}
+@media (max-height: 500px) {
+  .assembly-heading > p, .assembly-heading .eyebrow { display: none; }
+  .assembly-heading h2 { font-size: 18px; }
+  .assembly-sticky { padding-top: 6px; }
+  .assembly-bottom { min-height: 48px; padding: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .assembly { height: auto; }
+  .assembly-sticky { position: relative; top: 0; }
+  .assembly-svg .machine-part { will-change: auto; }
+}
