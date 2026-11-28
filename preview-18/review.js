@@ -162,5 +162,6 @@
   document.querySelector('#finish-review').addEventListener('click',()=>{if(saveDecision('approved',false))prepareEitaa();});
   document.querySelector('#export').addEventListener('click',downloadReport);
   document.querySelector('#send-eitaa').addEventListener('click',prepareEitaa);
+  document.querySelector('#send-eitaa-inline').addEventListener('click',prepareEitaa);
   loadPageCatalog();
 })();
