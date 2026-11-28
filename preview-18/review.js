@@ -87,6 +87,9 @@
     if(scroll)s.el.scrollIntoView({behavior:'smooth',block:'center'});
     document.querySelector('#current-number').textContent=fa.format(i+1);
     document.querySelector('#current-section-name').textContent=s.title;
+    const last=i===sections.length-1;
+    document.querySelector('#approve').textContent=last?'تأیید نهایی صفحه':'تأیید و رفتن به بعدی';
+    document.querySelector('#finish-review').classList.toggle('is-visible',last);
     const rec=readStore()[recordKey(i)];note.value=rec?.note||'';styleSelect.value=rec?.style||'';
     renderSections();
   }
@@ -112,6 +115,13 @@
   document.querySelector('#approve').addEventListener('click',()=>saveDecision('approved'));
   document.querySelector('#revise').addEventListener('click',()=>saveDecision('revision'));
   document.querySelector('#redesign').addEventListener('click',()=>saveDecision('redesign'));
+  document.querySelector('#finish-review').addEventListener('click',async()=>{
+    saveDecision('approved');
+    const report=readableReport();
+    try{await navigator.clipboard.writeText(report);document.querySelector('#saved-state').textContent='گزارش کپی شد؛ در ایتا ارسال کنید';}
+    catch{document.querySelector('#saved-state').textContent='گزارش آماده است؛ آن را در ایتا ارسال کنید';}
+    window.open('https://eitaa.com/Seyed7091','_blank','noopener');
+  });
   document.querySelector('#export').addEventListener('click',()=>{
     const report={project:'Sahand Laser · Preview 18',createdAt:new Date().toISOString(),storage:'local browser',decisions:Object.values(readStore())};
     const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');

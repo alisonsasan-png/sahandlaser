@@ -10,3 +10,5 @@
 @media(max-width:650px){.topbar{height:auto;min-height:66px;padding:10px 14px}.brand{font-size:16px}.brand img{width:34px;height:34px}.top-actions{gap:8px}.top-actions #saved-state{display:none}.quiet{font-size:11px;min-height:40px;padding:7px 9px}.workspace{height:auto;min-height:calc(100vh - 66px);display:flex;flex-direction:column;padding:8px}.preview-area{height:62vh;min-height:400px;order:0}.review-panel{order:1;overflow:visible}.preview-toolbar{height:44px}.section-list{max-height:150px}.panel-heading h1{font-size:22px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 .eitaa{color:#fff!important;background:#e87519!important}
+.finish{grid-column:1/-1;background:#e87519;color:#fff;display:none}
+.finish.is-visible{display:block}
