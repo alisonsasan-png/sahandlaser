@@ -1,0 +1,1127 @@
+{
+  "generatedAt": "2026-11-28T10:40:27.556Z",
+  "preview": "preview-19",
+  "categories": {
+    "cutting": "برش لیزر",
+    "welding": "جوش لیزر",
+    "marking": "حکاکی و مارکینگ",
+    "cleaning": "تمیزکاری لیزری",
+    "consumables": "مواد مصرفی",
+    "parts": "قطعات و تجهیزات جانبی",
+    "source": "سورس لیزر",
+    "head": "هد و کنترلر"
+  },
+  "products": [
+    {
+      "code": "CT-001",
+      "name": "دستگاه برش لیزر فایبر تک‌میز SH3015",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AA%DA%A9%E2%80%8C%D9%85%DB%8C%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF%203015%20-%20CUT-3015-STD.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-3015-1_0008.jpg",
+        "../assets/images/catalog/CUT-3015-1_0010.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-002",
+      "name": "دستگاه برش لیزر دو میز فایبر SH3015",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/DZ3015H%20-%20CUT-3015-2.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-3015-2_0012.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-003",
+      "name": "دستگاه برش لیزر دومیز فایبر با روتاری SH3015R",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D9%88%D9%85%DB%8C%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF%203015%20%D8%A8%D8%A7%20%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C%20-%20CUT-3015-STD-DOUBLE-ROTARY.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-3015-3_0013.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-004",
+      "name": "دستگاه برش لیزر تک‌میز فایبر حرفه‌ای SH6020",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AA%DA%A9%E2%80%8C%D9%85%DB%8C%D8%B2%20%D8%AD%D8%B1%D9%81%D9%87%E2%80%8C%D8%A7%DB%8C%203015%20-%20CUT-3015-PRO.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-005",
+      "name": "دستگاه برش لیزر فایبر تک‌میز استاندارد SH6020",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AA%DA%A9%E2%80%8C%D9%85%DB%8C%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF%206020%20-%20CUT-6020-STD.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-6020-1_0018.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-006",
+      "name": "دستگاه برش لیزر دو میز فایبر با روتاری SH6020R",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D9%88%D9%85%DB%8C%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF%206020%20-%20CUT-6020-STD-DOUBLE.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-6020-3_0020.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-007",
+      "name": "دستگاه برش لیزر تک‌میز فایبر با روتاری SH6020R",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%D8%AA%DA%A9%E2%80%8C%D9%85%DB%8C%D8%B2%20%D8%AD%D8%B1%D9%81%D9%87%E2%80%8C%D8%A7%DB%8C%206020%20-%20CUT-6020-PRO.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-6020-6_0021.jpg",
+        "../assets/images/catalog/%D8%AA%DA%A9%E2%80%8C%D9%85%DB%8C%D8%B2%20%D8%AD%D8%B1%D9%81%D9%87%E2%80%8C%D8%A7%DB%8C%206020%20-%20CUT-6020-PRO.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-008",
+      "name": "دستگاه برش لیزر فایبر کابین‌دار SH6020C",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/%DA%A9%D8%A7%D8%A8%DB%8C%D9%86%E2%80%8C%D8%AF%D8%A7%D8%B1%20%D8%AD%D8%B1%D9%81%D9%87%E2%80%8C%D8%A7%DB%8C%203015%20%D8%A8%D8%A7%20%D8%B1%D9%88%D8%AA%D8%A7%D8%B1%DB%8C%20-%20CUT-3015-CABIN-PRO-ROTARY.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-009",
+      "name": "دستگاه برش لیزری لوله افقی سری استاندارد QG-6024DZ",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "../assets/images/catalog/DZT6020T%20(%DA%A9%D8%AF%20%D9%85%D8%AF%D9%84)%20-%20DZT6020T.jpg",
+      "drawings": [
+        "../assets/images/catalog/CUT-tube_0024.jpg"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-001",
+      "name": "دستگاه جوش لیزر Smart Series / Mini 4-in-1",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/WL-001_0055-white.png?v=wl001-final-20261121",
+      "drawings": [
+        "../assets/images/catalog/WL-001_0055.jpg",
+        "../assets/images/catalog/WL-001_0056.png"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-002",
+      "name": "دستگاه جوش لیزر Medium Series / Handheld",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/WL-002_0057.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-003",
+      "name": "دستگاه جوش لیزر Air-Cooled",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%20%D8%AC%D9%88%D8%B4%20%D9%84%DB%8C%D8%B2%D8%B1%20Air-Cooled%20-%20WL-003.jpg",
+      "drawings": [
+        "../assets/images/catalog/WL-003_0058.jpg",
+        "../assets/images/catalog/WL-003_0059.png"
+      ],
+      "specCount": 2,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-004",
+      "name": "دستگاه جوش لیزر Air Cooling Portable",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/WL-004_0060.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-005",
+      "name": "دستگاه جوش لیزر QCW Laser Spot Welding",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/WL-005_0062.jpg",
+      "drawings": [
+        "../assets/images/catalog/WL-005_0061.png"
+      ],
+      "specCount": 2,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-006",
+      "name": "دستگاه جوش لیزر HP Series",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "assets/repaired/35b9f919ed3f06b250.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-007",
+      "name": "دستگاه جوش لیزر Modern Series",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "assets/repaired/37383e5ee5a8e9e10c.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-008",
+      "name": "دستگاه جوش لیزر Robotic Laser Welding",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "assets/repaired/9e8b1e7c0c4cbbdf59.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-009",
+      "name": "دستگاه جوش لیزر Jewelry Laser Welding",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "assets/repaired/039e4e48ad91fb958f.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WL-010",
+      "name": "دستگاه جوش لیزر Channel Letter Laser Welding",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "assets/repaired/0774cc14b441acdb9c.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-001",
+      "name": "دستگاه فایبر مارکینگ 30 وات",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/%D9%85%D8%A7%D8%B1%DA%A9%DB%8C%D9%86%DA%AF%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%20%D8%B1%D9%88%D9%85%DB%8C%D8%B2%DB%8C%20-%20MARK-DESKTOP-FIBER.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-002",
+      "name": "دستگاه فایبر مارکینگ 50 وات",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../%D9%85%D8%A7%D8%B1%DA%A9%DB%8C%D9%86%DA%AF%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%20%D9%85%DB%8C%D8%B2%D8%AF%D8%A7%D8%B1%20-%20MARK-TABLE-FIBER.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-003",
+      "name": "دستگاه فایبر مارکینگ 100 وات",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "assets/repaired/02985074d3428e83aa.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-004",
+      "name": "دستگاه حکاکی لیزر UV",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/%D9%85%D8%A7%D8%B1%DA%A9%DB%8C%D9%86%DA%AF%20UV%20%D9%85%DB%8C%D8%B2%D8%AF%D8%A7%D8%B1%20-%20ML-004.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-005",
+      "name": "دستگاه حکاکی لیزر پرتابل",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/%D9%85%D8%A7%D8%B1%DA%A9%DB%8C%D9%86%DA%AF%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%20%D9%BE%D8%B1%D8%AA%D8%A7%D8%A8%D9%84%20%D8%A2%D8%A8%DB%8C%20-%20MARK-PORTABLE-BLUE.jpg",
+      "drawings": [
+        "../assets/images/catalog/ML-005_0036.png",
+        "../assets/images/catalog/ML-005_0037.png"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-006",
+      "name": "دستگاه حکاکی لیزر Inline",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/ML-006_0038.png",
+      "drawings": [
+        "../assets/images/catalog/ML-006_0039.png"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-007",
+      "name": "دستگاه حکاکی لیزر رومیزی",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/MARK-DESKTOP-FIBER_0032.jpg",
+      "drawings": [
+        "../assets/images/catalog/ML-007_0040.png",
+        "../assets/images/catalog/ML-007_0041.png"
+      ],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "ML-008",
+      "name": "دستگاه حکاکی لیزر MOPA",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/مارکینگ فایبر پرتابل آبی - MARK-PORTABLE-BLUE.jpg",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CL-001",
+      "name": "دستگاه تمیزکاری لیزر پرتابل 200 وات",
+      "category": "cleaning",
+      "categoryFa": "تمیزکاری لیزری",
+      "image": "../assets/images/catalog/CL-001_0001.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CL-002",
+      "name": "دستگاه تمیزکاری لیزر پالسی 500 وات",
+      "category": "cleaning",
+      "categoryFa": "تمیزکاری لیزری",
+      "image": "../assets/images/catalog/%D8%AA%D9%85%DB%8C%D8%B2%DA%A9%D8%A7%D8%B1%DB%8C%20%D9%84%DB%8C%D8%B2%D8%B1%DB%8C%20%D9%BE%D8%A7%D9%84%D8%B3%DB%8C%20300%20%D9%88%D8%A7%D8%AA%20-%20CLEAN-300W.jpg",
+      "drawings": [
+        "../assets/images/catalog/CL-002_0002.jpg"
+      ],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CL-003",
+      "name": "دستگاه تمیزکاری لیزر پالسی 1000 وات",
+      "category": "cleaning",
+      "categoryFa": "تمیزکاری لیزری",
+      "image": "assets/repaired/ef4eb6a8fbe2cf1a90.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CL-004",
+      "name": "دستگاه تمیزکاری لیزر پیوسته 1500 وات",
+      "category": "cleaning",
+      "categoryFa": "تمیزکاری لیزری",
+      "image": "../assets/images/catalog/%D8%AA%D9%85%DB%8C%D8%B2%DA%A9%D8%A7%D8%B1%DB%8C%20%D9%84%DB%8C%D8%B2%D8%B1%DB%8C%20%D9%BE%DB%8C%D9%88%D8%B3%D8%AA%D9%87%202000%20%D9%88%D8%A7%D8%AA%20-%20CLEAN-2000W.jpg",
+      "drawings": [
+        "../assets/images/catalog/CL-004_0003.jpg",
+        "../assets/images/catalog/CL-004_0004.jpg"
+      ],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN001",
+      "name": "نازل هد برش لیزر اورجینال دو لایه برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/7bf2277b1dce6b8989.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN002",
+      "name": "نازل اورجینال هد برش لیزر TRA برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/7bf2277b1dce6b8989.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN003",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AA%DA%A9%E2%80%8C%D9%84%D8%A7%DB%8C%D9%87%20-%20CN003.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN004",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/e6e9f3e0f513d98b49.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN006",
+      "name": "نازل هد برش لیزر اورجینال دو لایه پر سرعت برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AF%D9%88%D9%84%D8%A7%DB%8C%D9%87%20%D9%BE%D8%B1%D8%B3%D8%B1%D8%B9%D8%AA%20-%20CN006.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN007",
+      "name": "نازل هد برش لیزر اورجینال دو لایه فول پاور برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AF%D9%88%D9%84%D8%A7%DB%8C%D9%87%20%D9%81%D9%88%D9%84%E2%80%8C%D9%BE%D8%A7%D9%88%D8%B1%20-%20CN007.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN008",
+      "name": "نازل هد برش لیزر اورجینال تک لایه برند Raytools برای هد برش BT210/BT210S",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AA%DA%A9%E2%80%8C%D9%84%D8%A7%DB%8C%D9%87%20BT210-BT210S%20-%20CN008.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN009",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM111",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20TRA%20%D8%A8%D8%B1%D8%A7%DB%8C%20BM111%20-%20CN009.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN010",
+      "name": "نازل هد برش لیزر اورجینال TRA مناسب برای هد برش BM114S",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/ee441ecf25eac070c7.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN011",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AF%D9%88%D9%84%D8%A7%DB%8C%D9%87%20-%20CN011.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN012",
+      "name": "نازل هد برش لیزر اورجینال دو لایه Full Power برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20%D8%AF%D9%88%D9%84%D8%A7%DB%8C%D9%87%20Full%20Power%20-%20CN012.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CN013",
+      "name": "نازل هد برش لیزر اورجینال TRA مدل FL200 و FL1501 برند Raytools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../assets/images/catalog/%D9%86%D8%A7%D8%B2%D9%84%20RayTools%20TRA%20%D8%A8%D8%B1%D8%A7%DB%8C%20FL200-FL1501%20-%20CN013.jpg",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC001",
+      "name": "چیلر فایبر S&A CWFL-1500",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/S&A%20CWFL-1500%20-%20CC001.jpg",
+      "drawings": [],
+      "specCount": 6,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC002",
+      "name": "چیلر فایبر S&A CWFL-2000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/S&A%20CWFL-2000%20-%20CC002.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC003",
+      "name": "چیلر فایبر S&A CWFL-3000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/S&A%20CWFL-3000%20-%20CC003.jpg",
+      "drawings": [],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC004",
+      "name": "چیلر فایبر Hanli HL-1500",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/Hanli%20HL-1500%20-%20CC004.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC005",
+      "name": "چیلر فایبر Hanli HL-2000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/Hanli%20HL-2000%20-%20CC005.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CC006",
+      "name": "چیلر فایبر Hanli HL-3000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/Hanli%20HL-3000%20-%20CC006.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS001",
+      "name": "سورس لیزر 30 وات پالسی فایبر Q-Switched",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "assets/repaired/8b4523bfbcf366fd0b.jpg",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS002",
+      "name": "سورس لیزر 50 وات پالسی فایبر Q-Switched",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/%D8%B3%D9%88%D8%B1%D8%B3%20%D9%84%DB%8C%D8%B2%D8%B1%2050%20%D9%88%D8%A7%D8%AA%20%D9%BE%D8%A7%D9%84%D8%B3%DB%8C%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%20Q-Switched%20-%20FS002.jpg",
+      "drawings": [],
+      "specCount": 14,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS003",
+      "name": "سورس لیزر Raycus RFL-C1000",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/Raycus%20RFL-C1000%20-%20FS003.jpg",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS004",
+      "name": "سورس فایبر Raycus RFL-C1500",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/Raycus%20RFL-C1500%20-%20FS004.jpg",
+      "drawings": [],
+      "specCount": 10,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS005",
+      "name": "سورس لیزر Raycus RFL-C2000",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/%D8%B3%D9%88%D8%B1%D8%B3%20%D9%84%DB%8C%D8%B2%D8%B1%20Raycus%20RFL-C2000%20-%20FS005.jpg",
+      "drawings": [],
+      "specCount": 14,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS006",
+      "name": "سورس لیزر فایبر 3000 وات ریکاس",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/Raycus%203000%20%D9%88%D8%A7%D8%AA%20-%20FS006.jpg",
+      "drawings": [],
+      "specCount": 14,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS007",
+      "name": "سورس لیزر فایبر 4000 وات ریکاس",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/Raycus%204000%20%D9%88%D8%A7%D8%AA%20-%20FS007.jpg",
+      "drawings": [],
+      "specCount": 13,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "FS008",
+      "name": "سورس لیزر فایبر 6000 وات ریکاس",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../assets/images/catalog/Raycus%206000%20%D9%88%D8%A7%D8%AA%20-%20FS008.jpg",
+      "drawings": [],
+      "specCount": 13,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH001",
+      "name": "هد برش ریتولز مدل BT240S",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/RayTools%20BT240S%20-%20CH001.jpg",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH002",
+      "name": "هد برش RayTools BM109",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/RayTools%20BM109%20-%20CH002.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH003",
+      "name": "هد برش فایبر RayTools BM111",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/RayTools%20BM111%20-%20CH003.jpg",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH004",
+      "name": "هد برش ریتولز مدل BM114",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/RayTools%20BM114%20-%20CH004.jpg",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH005",
+      "name": "هد برش ریتولز مدل BM115",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/RayTools%20BM115%20-%20CH005.jpg",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-SMC-ITV1050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV1050",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../CP-SMC-ITV1050.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-SMC-ITV2050",
+      "name": "رگولاتور الکتروپنوماتیک SMC ITV2050",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../CP-SMC-ITV2050.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BM110",
+      "name": "هد برش فایبر RayTools BM110",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BM110.png",
+      "drawings": [],
+      "specCount": 11,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-TRA",
+      "name": "هد برش TRA",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-TRA.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-CERAMIC",
+      "name": "سرامیک هد برش لیزر فایبر",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../assets/images/catalog/%D8%B3%D8%B1%D8%A7%D9%85%DB%8C%DA%A9%20%D9%87%D8%AF%20%D8%A8%D8%B1%D8%B4%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%20-%20CP-CERAMIC.jpg",
+      "drawings": [],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-LENS-BLT",
+      "name": "محافظ لنز سری BLT",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "../CP-LENS-BLT.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-LENS-RAY",
+      "name": "محافظ لنز RayTools",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/cd1f9832ed2830fe06.jpg",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-LENS-WSX",
+      "name": "محافظ لنز WSX",
+      "category": "consumables",
+      "categoryFa": "مواد مصرفی",
+      "image": "assets/repaired/971c02ba38fe41e2ee.jpg",
+      "drawings": [],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CTRL-FSCUT2000C",
+      "name": "سیستم کنترل برش FSCUT2000C",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CTRL-FSCUT2000C.png",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CTRL-FSCUT2000E",
+      "name": "سیستم کنترل برش FSCUT2000E",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CTRL-FSCUT2000E.png",
+      "drawings": [],
+      "specCount": 5,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CTRL-FSCUT4000E",
+      "name": "سیستم کنترل برش FSCUT4000E",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CTRL-FSCUT4000E.png",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "SRC-RAY-C3000S",
+      "name": "سورس فایبر Raycus RFL-C3000S-HP",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../SRC-RAY-C3000S.png",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "SRC-RAY-C6000S",
+      "name": "سورس فایبر Raycus RFL-C6000S-HP",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../SRC-RAY-C6000S.png",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH-S&A-6000",
+      "name": "چیلر فایبر S&A CWFL-6000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../CH-S&A-6000.png",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH-S&A-12000",
+      "name": "چیلر فایبر S&A CWFL-12000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../CH-S&A-12000.png",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH-S&A-20000",
+      "name": "چیلر فایبر S&A CWFL-20000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../CH-S&A-20000.png",
+      "drawings": [],
+      "specCount": 8,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH-HANLI-6000",
+      "name": "چیلر فایبر Hanli HL-6000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/Hanli%20HL-6000%20-%20CH-HANLI-6000.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CH-HANLI-12000",
+      "name": "چیلر فایبر Hanli HL-12000",
+      "category": "parts",
+      "categoryFa": "قطعات و تجهیزات جانبی",
+      "image": "../assets/images/catalog/Hanli%20HL-12000%20-%20CH-HANLI-12000.jpg",
+      "drawings": [],
+      "specCount": 7,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "MK-FIBER-GENERIC",
+      "name": "دستگاه حکاکی فایبر سهند لیزر",
+      "category": "marking",
+      "categoryFa": "حکاکی و مارکینگ",
+      "image": "../assets/images/catalog/MARK-PORTABLE-BLUE_0034.png",
+      "drawings": [],
+      "specCount": 1,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WELD-1500",
+      "name": "دستگاه جوش فایبر 1500 وات",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%20%D8%AC%D9%88%D8%B4%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%201500%20%D9%88%D8%A7%D8%AA%20-%20WELD-1500.jpg",
+      "drawings": [
+        "../assets/images/catalog/WELD-1500_0051.jpg",
+        "../assets/images/catalog/WELD-1500_0052.jpg"
+      ],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WELD-2000",
+      "name": "دستگاه جوش فایبر 2000 وات",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%20%D8%AC%D9%88%D8%B4%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%202000%20%D9%88%D8%A7%D8%AA%20-%20WELD-2000.jpg",
+      "drawings": [
+        "../assets/images/catalog/WELD-2000_0053.png"
+      ],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "WELD-3000",
+      "name": "دستگاه جوش فایبر 3000 وات",
+      "category": "welding",
+      "categoryFa": "جوش لیزر",
+      "image": "../assets/images/catalog/%D8%AF%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%20%D8%AC%D9%88%D8%B4%20%D9%81%D8%A7%DB%8C%D8%A8%D8%B1%203000%20%D9%88%D8%A7%D8%AA%20-%20WELD-3000.jpg",
+      "drawings": [
+        "../assets/images/catalog/WELD-3000_0054.png"
+      ],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CLEAN-GENERIC",
+      "name": "دستگاه تمیزکاری لیزری فایبر",
+      "category": "cleaning",
+      "categoryFa": "تمیزکاری لیزری",
+      "image": "assets/repaired/7c12759858e2bc6d98.jpg",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BM114E",
+      "name": "هد برش RayTools BM114-E",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BM114E.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BM115",
+      "name": "هد برش RayTools BM115",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BM115.png",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BM115E",
+      "name": "هد برش RayTools BM115-E",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BM115E.png",
+      "drawings": [],
+      "specCount": 4,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BM116E",
+      "name": "هد برش RayTools BM116-E",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BM116E.png",
+      "drawings": [],
+      "specCount": 5,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BT220",
+      "name": "هد برش RayTools BT220",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BT220.png",
+      "drawings": [],
+      "specCount": 13,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CP-RAY-BT240",
+      "name": "هد برش RayTools BT240",
+      "category": "head",
+      "categoryFa": "هد و کنترلر",
+      "image": "../CP-RAY-BT240.png",
+      "drawings": [],
+      "specCount": 3,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "SRC-RAY-C4000S",
+      "name": "سورس لیزر Raycus RFL-C4000S-HP",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../SRC-RAY-C4000S.png",
+      "drawings": [],
+      "specCount": 9,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "SRC-RAY-QCW150",
+      "name": "سورس لیزر Raycus RFL-QCW150/1500",
+      "category": "source",
+      "categoryFa": "سورس لیزر",
+      "image": "../SRC-RAY-QCW150.png",
+      "drawings": [],
+      "specCount": 15,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-010",
+      "name": "دستگاه برش لیزر تک‌میز حرفه‌ای 3015",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "https://sahandlaser.com/wp-content/uploads/2025/06/Professional-single-table-laser-cutting-machine-3015.png",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-011",
+      "name": "دستگاه برش لیزر دومیز 3015 استاندارد با روتاری",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "https://sahandlaser.com/wp-content/uploads/2025/06/Standard-3015-double-table-laser-cutting-machine-with-rotary.png",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-012",
+      "name": "دستگاه برش لیزر کابین‌دار 3015 حرفه‌ای",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "https://sahandlaser.com/wp-content/uploads/2025/06/Professional-3015-cabin-laser-cutting-machine-3.png",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    },
+    {
+      "code": "CT-013",
+      "name": "دستگاه برش لیزری لوله‌بر استاندارد",
+      "category": "cutting",
+      "categoryFa": "برش لیزر",
+      "image": "https://sahandlaser.com/wp-content/uploads/2025/06/Fiber-laser-cutting-machine-with-second-table-and-cover-1.png",
+      "drawings": [],
+      "specCount": 0,
+      "hasDescription": true,
+      "hasApplications": true
+    }
+  ]
+}
