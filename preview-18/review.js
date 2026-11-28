@@ -98,6 +98,15 @@
     renderSections();
     if(activeIndex<sections.length-1)focusSection(activeIndex+1,true);
   }
+  function readableReport(){
+    const saved=readStore(), rows=[];
+    for(const value of Object.values(saved)){
+      if(!value?.page||!value?.status)continue;
+      const status=value.status==='approved'?'تأیید شد':value.status==='revision'?'نیاز به اصلاح دارد':'تغییر مدل طراحی خواسته شده';
+      rows.push(`صفحه: ${pageTitle(value.page)}\nبخش: ${value.section||'نامشخص'}\nوضعیت: ${status}\nمدل دلخواه: ${value.style||'انتخاب نشده'}\nتوضیح: ${value.note||'بدون توضیح'}`);
+    }
+    return `گزارش بازبینی سایت سهند لیزر\n\n${rows.length?rows.join('\n\n--------------------\n\n'):'هنوز هیچ بخشی بررسی نشده است.'}`;
+  }
   select.addEventListener('change',()=>{activeUrl=select.value;activeIndex=0;frame.src=activeUrl;});
   frame.addEventListener('load',()=>{observerTimer=setTimeout(scanPage,180);});
   document.querySelector('#approve').addEventListener('click',()=>saveDecision('approved'));
@@ -107,6 +116,12 @@
     const report={project:'Sahand Laser · Preview 18',createdAt:new Date().toISOString(),storage:'local browser',decisions:Object.values(readStore())};
     const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
     a.href=url;a.download='sahand-preview18-review.json';a.click();URL.revokeObjectURL(url);
+  });
+  document.querySelector('#send-eitaa').addEventListener('click',async()=>{
+    const report=readableReport();
+    try{await navigator.clipboard.writeText(report);document.querySelector('#saved-state').textContent='گزارش کپی شد؛ در ایتا ارسال کنید';}
+    catch{document.querySelector('#saved-state').textContent='گزارش آماده است؛ آن را در ایتا ارسال کنید';}
+    window.open('https://eitaa.com/Seyed7091','_blank','noopener');
   });
   loadPageCatalog();
 })();
