@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#101a25">
+<title>بازبینی و تأیید سایت | سهند لیزر</title>
+<link rel="preload" href="assets/vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="review.css?v=18-1">
+<script defer src="data.js?v=12-1"></script>
+<script defer src="review.js?v=18-1"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="review.html"><img src="assets/logo.png" alt=""><span>سهند لیزر<small>بازبینی طراحی سایت</small></span></a>
+  <div class="top-actions"><span id="saved-state" role="status">ذخیره در همین مرورگر</span><button id="export" class="button quiet" type="button">دریافت گزارش بازبینی</button></div>
+</header>
+<main class="workspace">
+  <aside class="review-panel" aria-label="فرم بازبینی">
+    <div class="panel-heading"><span class="eyebrow">CLIENT REVIEW · PREVIEW 18</span><h1>قدم‌به‌قدم بررسی کنیم.</h1><p>صفحه و بخش را انتخاب کنید، نظر مدیر را ثبت کنید و مورد بعدی را جلو ببرید.</p></div>
+    <label class="field-label" for="page-select">صفحهٔ مورد بررسی</label>
+    <select id="page-select"></select>
+    <div class="progress-card"><div><strong id="progress-count">۰ از ۰</strong><span>بخش بررسی‌شده</span></div><div class="progress-track"><i id="progress-bar"></i></div></div>
+    <div class="section-head"><h2>بخش‌های این صفحه</h2><span id="section-count"></span></div>
+    <ol id="section-list" class="section-list"><li class="loading">در حال آماده‌سازی صفحه…</li></ol>
+    <section class="decision" aria-labelledby="decision-title">
+      <div class="decision-title"><span class="step-number" id="current-number">۱</span><div><span class="eyebrow">نظر مدیر</span><h2 id="decision-title">این بخش مورد تأیید است؟</h2></div></div>
+      <p id="current-section-name" class="current-section-name">بخش صفحه</p>
+      <label class="field-label" for="style-select">مدل یا سبک دلخواه</label>
+      <select id="style-select">
+        <option value="">انتخاب مدل (اختیاری)</option>
+        <option>حفظ سبک فعلی پیش‌نمایش ۱۲</option>
+        <option>صنعتی و تیره</option>
+        <option>روشن و مینیمال</option>
+        <option>تصویری و پرتحرک</option>
+        <option>سرمه‌ای و شرکتی</option>
+        <option>طرح پیشنهادی مدیر</option>
+      </select>
+      <label class="field-label" for="note">توضیح یا تغییر موردنظر</label>
+      <textarea id="note" rows="3" placeholder="مثلاً: عکس بزرگ‌تر شود یا ترتیب این بخش تغییر کند"></textarea>
+      <div class="decision-actions">
+        <button id="approve" class="button approve" type="button">تأیید و رفتن به بعدی</button>
+        <button id="revise" class="button revise" type="button">نیاز به اصلاح</button>
+        <button id="redesign" class="button redesign" type="button">تغییر مدل طراحی</button>
+      </div>
+      <p class="privacy-note">یادداشت‌ها و تأییدها خودکار در این مرورگر ذخیره می‌شوند. برای انتقال به طراح، گزارش بازبینی را دریافت کنید.</p>
+    </section>
+  </aside>
+  <section class="preview-area" aria-label="نمایش سایت">
+    <div class="preview-toolbar"><div><span class="live-dot"></span><span id="preview-title">پیش‌نمایش سایت</span></div><a id="open-page" href="index.html" target="_blank" rel="noopener">بازکردن در پنجرهٔ جدا ↗</a></div>
+    <iframe id="site-preview" title="پیش‌نمایش صفحه برای بازبینی مدیر" src="index.html"></iframe>
+  </section>
+</main>
+</body>
+</html>
