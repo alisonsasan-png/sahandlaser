@@ -65,7 +65,7 @@
   function syncNavigation(){const found=pages.find(p=>p.href===activeUrl);if(found)select.value=found.href;document.querySelector('#preview-title').textContent=pageTitle(activeUrl);document.querySelector('#open-page').href=activeUrl;scanPage();}
   function renderSections(){
     const saved=readStore();
-    const done=sections.filter(s=>saved[recordKey(s.index)]?.status).length;
+    const done=sections.filter(s=>['approved','revision','redesign'].includes(saved[recordKey(s.index)]?.status)).length;
     document.querySelector('#progress-count').textContent=`${fa.format(done)} از ${fa.format(sections.length)}`;
     document.querySelector('#section-count').textContent=`${fa.format(sections.length)} بخش`;
     document.querySelector('#progress-bar').style.width=(sections.length?done/sections.length*100:0)+'%';
@@ -76,10 +76,11 @@
       const number=document.createElement('span');number.className='item-number';number.textContent=fa.format(i+1);
       const title=document.createElement('span');title.className='item-name';title.textContent=s.title;
       const status=document.createElement('span');status.className='status-pill '+(rec?.status||'');
-      status.textContent=rec?.status==='approved'?'تأیید':rec?.status==='revision'?'اصلاح':rec?.status==='redesign'?'تغییر مدل':'بازبینی';
+      status.textContent=rec?.status==='approved'?'تأیید':rec?.status==='revision'?'اصلاح':rec?.status==='redesign'?'تغییر مدل':rec?.status==='draft'?'پیش‌نویس':'بازبینی';
       button.append(number,title,status);button.addEventListener('click',()=>focusSection(i,true));li.append(button);list.append(li);
     });
   }
+  function finalPageStep(i){const pageIndex=pages.findIndex(p=>p.href===activeUrl);return i===sections.length-1&&(pageIndex<0||pageIndex===pages.length-1);}
   function focusSection(i,scroll=true){
     if(!sections[i])return;
     activeIndex=i;sections.forEach(s=>s.el.classList.remove('client-review-active'));
@@ -87,51 +88,79 @@
     if(scroll)s.el.scrollIntoView({behavior:'smooth',block:'center'});
     document.querySelector('#current-number').textContent=fa.format(i+1);
     document.querySelector('#current-section-name').textContent=s.title;
-    const last=i===sections.length-1;
-    document.querySelector('#approve').textContent=last?'تأیید نهایی صفحه':'تأیید و رفتن به بعدی';
-    document.querySelector('#finish-review').classList.toggle('is-visible',last);
+    const last=i===sections.length-1, final=finalPageStep(i);
+    document.querySelector('#approve').textContent=final?'تأیید نهایی و پایان بازبینی':last?'تأیید و رفتن به صفحهٔ بعد':'تأیید و رفتن به مرحلهٔ بعد';
+    document.querySelector('#finish-review').classList.toggle('is-visible',final);
     const rec=readStore()[recordKey(i)];note.value=rec?.note||'';styleSelect.value=rec?.style||'';
     renderSections();
   }
-  function saveDecision(status){
-    if(status!=='approved'&&!note.value.trim()){note.focus();note.setCustomValidity('برای ثبت اصلاح یا تغییر مدل، لطفاً توضیح را بنویسید.');note.reportValidity();note.addEventListener('input',()=>note.setCustomValidity(''),{once:true});return;}
-    const all=readStore();all[recordKey(activeIndex)]={status,note:note.value.trim(),style:styleSelect.value,section:sections[activeIndex]?.title||'',page:activeUrl,updatedAt:new Date().toISOString()};writeStore(all);
-    const labels={approved:'تأیید شد',revision:'اصلاح ثبت شد',redesign:'درخواست تغییر مدل ثبت شد'};
+  function persistCurrentDraft(){
+    if(!sections[activeIndex])return;
+    const all=readStore(),key=recordKey(activeIndex),old=all[key]||{};
+    if(!note.value.trim()&&!styleSelect.value&&!old.status)return;
+    all[key]={...old,status:old.status||'draft',note:note.value.trim(),style:styleSelect.value,section:sections[activeIndex].title,page:activeUrl,updatedAt:new Date().toISOString()};
+    writeStore(all);
+  }
+  function advanceAfterSave(){
+    if(activeIndex<sections.length-1){focusSection(activeIndex+1,true);return;}
+    const pageIndex=pages.findIndex(p=>p.href===activeUrl);
+    if(pageIndex>=0&&pageIndex<pages.length-1){
+      const next=pages[pageIndex+1];activeUrl=next.href;activeIndex=0;select.value=next.href;
+      document.querySelector('#saved-state').textContent='بخش ثبت شد؛ صفحهٔ بعد در حال بارگذاری است';
+      frame.src=next.href;return;
+    }
+    document.querySelector('#finish-review').classList.add('is-visible');
+    document.querySelector('#saved-state').textContent='بازبینی صفحهٔ آخر تمام شد؛ گزارش را دریافت یا در ایتا آماده کنید';
+  }
+  function saveDecision(status,advance=true){
+    if(status!=='approved'&&!note.value.trim()&&!styleSelect.value){
+      note.focus();note.setCustomValidity('برای ثبت اصلاح یا تغییر مدل، توضیح بنویسید یا یک سبک انتخاب کنید.');
+      note.reportValidity();note.addEventListener('input',()=>note.setCustomValidity(''),{once:true});return false;
+    }
+    if(!sections[activeIndex]){document.querySelector('#saved-state').textContent='صفحه هنوز آماده نشده؛ چند لحظه صبر کنید';return false;}
+    const all=readStore();all[recordKey(activeIndex)]={status,note:note.value.trim(),style:styleSelect.value,section:sections[activeIndex].title,page:activeUrl,updatedAt:new Date().toISOString()};writeStore(all);
+    const labels={approved:'تأیید شد',revision:'اصلاح ثبت شد',redesign:'تغییر مدل ثبت شد'};
     document.querySelector('#saved-state').textContent=labels[status]+' · ذخیره شد';
-    renderSections();
-    if(activeIndex<sections.length-1)focusSection(activeIndex+1,true);
+    renderSections();if(advance)advanceAfterSave();return true;
+  }
+  function copyText(text){
+    if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);
+    return new Promise((resolve,reject)=>{const box=document.createElement('textarea');box.value=text;box.setAttribute('readonly','');box.style.position='fixed';box.style.opacity='0';document.body.append(box);box.select();const ok=document.execCommand('copy');box.remove();ok?resolve():reject(new Error('copy failed'));});
+  }
+  function prepareEitaa(){
+    persistCurrentDraft();
+    const report=readableReport();
+    const recipient='https://eitaa.com/Seyed7091';
+    const share='https://eitaa.com/share/url?url='+encodeURIComponent(recipient)+'&text='+encodeURIComponent(report);
+    window.open(share.length<6000?share:recipient,'_blank','noopener,noreferrer');
+    copyText(report).then(()=>{document.querySelector('#saved-state').textContent='گزارش کپی شد؛ در ایتا گفت‌وگوی @Seyed7091 را انتخاب و ارسال را تأیید کنید';})
+      .catch(()=>{document.querySelector('#saved-state').textContent='ایتا باز شد؛ اگر متن آماده نبود گزارش را دانلود و در گفت‌وگوی @Seyed7091 پیوست کنید';});
   }
   function readableReport(){
-    const saved=readStore(), rows=[];
+    const saved=readStore(),rows=[];
     for(const value of Object.values(saved)){
-      if(!value?.page||!value?.status)continue;
-      const status=value.status==='approved'?'تأیید شد':value.status==='revision'?'نیاز به اصلاح دارد':'تغییر مدل طراحی خواسته شده';
+      if(!value?.page)continue;
+      const status=value.status==='approved'?'تأیید شد':value.status==='revision'?'نیاز به اصلاح دارد':value.status==='redesign'?'تغییر مدل طراحی خواسته شده':'پیش‌نویس ذخیره‌شده';
       rows.push(`صفحه: ${pageTitle(value.page)}\nبخش: ${value.section||'نامشخص'}\nوضعیت: ${status}\nمدل دلخواه: ${value.style||'انتخاب نشده'}\nتوضیح: ${value.note||'بدون توضیح'}`);
     }
-    return `گزارش بازبینی سایت سهند لیزر\n\n${rows.length?rows.join('\n\n--------------------\n\n'):'هنوز هیچ بخشی بررسی نشده است.'}`;
+    const count=rows.length;
+    return `گزارش بازبینی سایت سهند لیزر\nمخاطب ایتا: @Seyed7091\nتاریخ: ${new Date().toLocaleString('fa-IR')}\nبخش‌های ثبت‌شده: ${fa.format(count)}\n\n${count?rows.join('\n\n--------------------\n\n'):'هنوز نظری ثبت نشده است.'}`;
+  }
+  function downloadReport(){
+    persistCurrentDraft();
+    const blob=new Blob([readableReport()],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=url;a.download='sahand-laser-review-report.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);
+    document.querySelector('#saved-state').textContent='گزارش متنی دانلود شد';
   }
   select.addEventListener('change',()=>{activeUrl=select.value;activeIndex=0;frame.src=activeUrl;});
   frame.addEventListener('load',()=>{observerTimer=setTimeout(scanPage,180);});
+  note.addEventListener('input',persistCurrentDraft);
+  styleSelect.addEventListener('change',persistCurrentDraft);
   document.querySelector('#approve').addEventListener('click',()=>saveDecision('approved'));
   document.querySelector('#revise').addEventListener('click',()=>saveDecision('revision'));
   document.querySelector('#redesign').addEventListener('click',()=>saveDecision('redesign'));
-  document.querySelector('#finish-review').addEventListener('click',async()=>{
-    saveDecision('approved');
-    const report=readableReport();
-    try{await navigator.clipboard.writeText(report);document.querySelector('#saved-state').textContent='گزارش کپی شد؛ در ایتا ارسال کنید';}
-    catch{document.querySelector('#saved-state').textContent='گزارش آماده است؛ آن را در ایتا ارسال کنید';}
-    window.open('https://eitaa.com/Seyed7091','_blank','noopener');
-  });
-  document.querySelector('#export').addEventListener('click',()=>{
-    const report={project:'Sahand Laser · Preview 18',createdAt:new Date().toISOString(),storage:'local browser',decisions:Object.values(readStore())};
-    const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-    a.href=url;a.download='sahand-preview18-review.json';a.click();URL.revokeObjectURL(url);
-  });
-  document.querySelector('#send-eitaa').addEventListener('click',async()=>{
-    const report=readableReport();
-    try{await navigator.clipboard.writeText(report);document.querySelector('#saved-state').textContent='گزارش کپی شد؛ در ایتا ارسال کنید';}
-    catch{document.querySelector('#saved-state').textContent='گزارش آماده است؛ آن را در ایتا ارسال کنید';}
-    window.open('https://eitaa.com/Seyed7091','_blank','noopener');
-  });
+  document.querySelector('#finish-review').addEventListener('click',()=>{if(saveDecision('approved',false))prepareEitaa();});
+  document.querySelector('#export').addEventListener('click',downloadReport);
+  document.querySelector('#send-eitaa').addEventListener('click',prepareEitaa);
   loadPageCatalog();
 })();
