@@ -12,3 +12,5 @@
 .eitaa{color:#fff!important;background:#e87519!important}
 .finish{grid-column:1/-1;background:#e87519;color:#fff;display:none}
 .finish.is-visible{display:block}
+
+.eitaa-inline{grid-column:1/-1;background:#e87519;color:#fff;min-height:48px}
